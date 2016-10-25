@@ -1,35 +1,4 @@
 {
-    "_id": "course",
-    "_type": "course",
-    "title": "Adapt Version 2.0 demonstration",
-    "displayTitle": "Adapt Version 2.0 demonstration",
-    "description": "A sample course demonstrating the capabilities of the Adapt Version 2.0",
-    "body": "Welcome to the demonstration build for Version 2.0 of the Adapt framework.<br><br>We’ve added some major new items of functionality to Adapt for this release, most notably accessibility to WAI level AA, Right to Left language support and greatly improved assessments. If you’d like to find out more about this, along with the the other improvements we’ve made then please read the release notes (Link to follow for demo).               ",
-    "_buttons": {
-        "_submit": {
-            "buttonText": "Submit",
-            "ariaLabel": "Submit your answer by clicking here."
-        },
-        "_reset": {
-            "buttonText": "Reset",
-            "ariaLabel": "Reset the question by clicking here."
-        },
-        "_showCorrectAnswer": {
-            "buttonText": "Correct answer",
-            "ariaLabel": "Show the correct answer by clicking here."
-        },
-        "_hideCorrectAnswer": {
-            "buttonText": "My answer",
-            "ariaLabel": "Show the answer you gave by clicking here."
-        },
-        "_showFeedback": {
-            "buttonText": "Show feedback",
-            "ariaLabel": "View the question feedback again by clicking here."
-        },
-        "remainingAttemptsText": "attempts remaining",
-        "remainingAttemptText": "final attempt",
-        "disabledAriaLabel": "This button is disabled at the moment."
-    },
     "_globals": {
         "_components": {
             "_accordion": {
@@ -43,6 +12,7 @@
             },
             "_hotgraphic": {
                 "ariaRegion": "Below is a component which allows you to select hot spots over an image. Select a hot spot to trigger a popup that includes an image with display text. Select the close button to close the popup.",
+                "ariaPoupupLabel": "Hotgraphic popup",
                 "ariaPopupLabel": "Hotgraphic popup"
             },
             "_matching": {
@@ -78,6 +48,44 @@
             }
         },
         "_menu": {
+            "_filterMenu": {
+                "filtersNotification": "Remove filters",
+                "toggleOff": "Off",
+                "toggleOn": "On",
+                "progress": " complete",
+                "stripEmpty": "No results (All items filtered)",
+                "durationLabel": "Duration: ",
+                "openDashboardAria": "Open Filter Menu Dashboard",
+                "disableFiltersAria": "Disable filters",
+                "dashboardAria": "Filter Menu dashboard",
+                "filtersAria": "Filters",
+                "tagsAria": "Tags",
+                "dashboardEndAria": "You have reached the end of the dashboard.",
+                "closeDashboardAria": "Close Filter Menu dashboard",
+                "menuAria": "Menu",
+                "stripAria": "Strip",
+                "progressAria": "You have completed ",
+                "menuItemAria": "Menu item",
+                "togglePinAria": "Toggle pin",
+                "menuItemEndAria": "End of menu item",
+                "menuEndAria": "You have reached the end of the menu.",
+                "_ariaLabels": {
+                    "openDashboard": "Open Filter Menu dashboard",
+                    "disableFilters": "Disable filters",
+                    "dashboard": "Filter Menu dashboard",
+                    "filters": "Filters",
+                    "tags": "Tags",
+                    "dashboardEnd": "You have reached the end of the dashboard.",
+                    "closeDashboard": "Close Filter Menu dashboard",
+                    "menu": "Menu",
+                    "progress": "You have completed ",
+                    "strip": "Strip",
+                    "menuItem": "Menu item",
+                    "togglePin": "Toggle pin",
+                    "menuItemEnd": "End of menu item",
+                    "menuEnd": "You have reached the end of the menu."
+                }
+            },
             "_boxmenu": {
                 "ariaRegion": "Menu",
                 "durationLabel": "Duration:",
@@ -86,8 +94,8 @@
             }
         },
         "_accessibility": {
-            "accessibilityToggleTextOn": "Turn accessibility on?",
-            "accessibilityToggleTextOff": "Turn accessibility off?",
+            "_accessibilityToggleTextOn": "Turn accessibility on?",
+            "_accessibilityToggleTextOff": "Turn accessibility off?",
             "_accessibilityInstructions": {
                 "touch": "Usage instructions. Use swipe right for next. Use swipe left for previous. Use a double tap to select. Use a two finger slide up to go to the top of the page.",
                 "notouch": "Usage instructions. Use tab for next. Use shift tab for previous. Use enter to select. Use escape to go to the top of the page.",
@@ -123,6 +131,37 @@
                 "visited": "Visited"
             }
         }
+    },
+    "_id": "course",
+    "_type": "course",
+    "title": "Be The Leader",
+    "displayTitle": "Be The Leader",
+    "description": "",
+    "body": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>",
+    "_buttons": {
+        "_submit": {
+            "buttonText": "Submit",
+            "ariaLabel": "Submit your answer by clicking here."
+        },
+        "_reset": {
+            "buttonText": "Reset",
+            "ariaLabel": "Reset the question by clicking here."
+        },
+        "_showCorrectAnswer": {
+            "buttonText": "Correct answer",
+            "ariaLabel": "Show the correct answer by clicking here."
+        },
+        "_hideCorrectAnswer": {
+            "buttonText": "My answer",
+            "ariaLabel": "Show the answer you gave by clicking here."
+        },
+        "_showFeedback": {
+            "buttonText": "Show feedback",
+            "ariaLabel": "View the question feedback again by clicking here."
+        },
+        "remainingAttemptsText": "attempts remaining",
+        "remainingAttemptText": "final attempt",
+        "disabledAriaLabel": "This button is disabled at the moment."
     },
     "_latestTrackingId": 20,
     "_pageLevelProgress": {
@@ -180,6 +219,324 @@
         "_buttons": {
             "yes": "Yes",
             "no": "No"
+        }
+    },
+    "_filterMenu": {
+        "_isProgressEnabled": false,
+        "_strips": [
+            {
+                "_id": "s-05",
+                "_isProgressEnabled": false,
+                "title": "Getting Started",
+                "_items": [
+                    {
+                        "_type": "resource",
+                        "_id": "r-05",
+                        "_isOptional": true,
+                        "title": "How to use this course",
+                        "displayTitle": "How to use this course",
+                        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                        "duration": "",
+                        "_isLocked": true,
+                        "_graphic": {
+                            "src": "course/en/images/menu_thumb_1.jpg"
+                        },
+                        "_url": "#",
+                        "_tags": [
+                            "topics"
+                        ]
+                    },
+                    {
+                        "_type": "resource",
+                        "_id": "r-10",
+                        "_isOptional": true,
+                        "title": "Hear from our Vice Chancellor",
+                        "displayTitle": "Hear from our Vice Chancellor",
+                        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                        "duration": "",
+                        "_isLocked": true,
+                        "_graphic": {
+                            "src": "course/en/images/menu_thumb_2.jpg"
+                        },
+                        "_url": "#",
+                        "_tags": [
+                            "resources",
+                            "videos"
+                        ]
+                    },
+                    {
+                        "_type": "resource",
+                        "_id": "r-15",
+                        "_isOptional": true,
+                        "title": "Take a look inside",
+                        "displayTitle": "Take a look inside",
+                        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                        "duration": "",
+                        "_isLocked": true,
+                        "_graphic": {
+                            "src": "course/en/images/menu_thumb_3.jpg"
+                        },
+                        "_url": "#",
+                        "_tags": [
+                            "resources"
+                        ]
+                    }
+                ]
+            },
+            {
+                "_id": "s-10",
+                "_isProgressEnabled": false,
+                "title": "Unleash Your Leadership Potential",
+                "_items": [
+                    {
+                        "_type": "resource",
+                        "_id": "r-20",
+                        "_isOptional": true,
+                        "title": "Imagine a world without leaders",
+                        "displayTitle": "Imagine a world without leaders",
+                        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                        "duration": "",
+                        "_isLocked": true,
+                        "_graphic": {
+                            "src": "course/en/images/menu_thumb_4.jpg"
+                        },
+                        "_url": "#",
+                        "_tags": [
+                            "topics"
+                        ]
+                    },
+                    {
+                        "_type": "contentObject",
+                        "_id": "co-05",
+                        "_tags": [
+                            "topics"
+                        ]
+                    },
+                    {
+                        "_type": "resource",
+                        "_id": "r-25",
+                        "_isOptional": true,
+                        "title": "Be an agent of change",
+                        "displayTitle": "Be an agent of change",
+                        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                        "duration": "",
+                        "_isLocked": true,
+                        "_graphic": {
+                            "src": "course/en/images/menu_thumb_6.jpg"
+                        },
+                        "_url": "#",
+                        "_tags": [
+                            "resources",
+                            "videos"
+                        ]
+                    },
+                    {
+                        "_type": "resource",
+                        "_id": "r-30",
+                        "_isOptional": true,
+                        "title": "Lead the way",
+                        "displayTitle": "Lead the way",
+                        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                        "duration": "",
+                        "_isLocked": true,
+                        "_graphic": {
+                            "src": "course/en/images/menu_thumb_7.jpg"
+                        },
+                        "_url": "#",
+                        "_tags": [
+                            "resources",
+                            "videos"
+                        ]
+                    }
+                ]
+            },
+            {
+                "_id": "s-15",
+                "_isProgressEnabled": false,
+                "title": "Explore the Principles and Practices",
+                "_items": [
+                    {
+                        "_type": "resource",
+                        "_id": "r-35",
+                        "_isOptional": true,
+                        "title": "The inspirational leader",
+                        "displayTitle": "The inspirational leader",
+                        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                        "duration": "",
+                        "_isLocked": true,
+                        "_graphic": {
+                            "src": "course/en/images/menu_thumb_8.jpg"
+                        },
+                        "_url": "#",
+                        "_tags": [
+                            "resources",
+                            "videos"
+                        ]
+                    },
+                    {
+                        "_type": "resource",
+                        "_id": "r-40",
+                        "_isOptional": true,
+                        "title": "Do managers lead?",
+                        "displayTitle": "Do managers lead?",
+                        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                        "duration": "",
+                        "_isLocked": true,
+                        "_graphic": {
+                            "src": "course/en/images/menu_thumb_9.jpg"
+                        },
+                        "_url": "#",
+                        "_tags": [
+                            "topics"
+                        ]
+                    },
+                    {
+                        "_type": "resource",
+                        "_id": "r-45",
+                        "_isOptional": true,
+                        "title": "Drill into the theory",
+                        "displayTitle": "Drill into the theory",
+                        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                        "duration": "",
+                        "_isLocked": true,
+                        "_graphic": {
+                            "src": "course/en/images/menu_thumb_10.jpg"
+                        },
+                        "_url": "#",
+                        "_tags": [
+                            "resources",
+                            "documents"
+                        ]
+                    },
+                    {
+                        "_type": "resource",
+                        "_id": "r-50",
+                        "_isOptional": true,
+                        "title": "See styles in action",
+                        "displayTitle": "See styles in action",
+                        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                        "duration": "",
+                        "_isLocked": true,
+                        "_graphic": {
+                            "src": "course/en/images/menu_thumb_11.jpg"
+                        },
+                        "_url": "#",
+                        "_tags": [
+                            "resources",
+                            "documents"
+                        ]
+                    }
+                ]
+            },
+            {
+                "_id": "s-20",
+                "_isProgressEnabled": false,
+                "title": "Create your leadership profile",
+                "_items": [
+                    {
+                        "_type": "resource",
+                        "_id": "r-55",
+                        "_isOptional": true,
+                        "title": "The need to lead",
+                        "displayTitle": "The need to lead",
+                        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                        "duration": "",
+                        "_isLocked": true,
+                        "_graphic": {
+                            "src": "course/en/images/menu_thumb_12.jpg"
+                        },
+                        "_url": "#",
+                        "_tags": [
+                            "resources",
+                            "documents"
+                        ]
+                    },
+                    {
+                        "_type": "resource",
+                        "_id": "r-60",
+                        "_isOptional": true,
+                        "title": "Know yourself",
+                        "displayTitle": "Know yourself",
+                        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                        "duration": "",
+                        "_isLocked": true,
+                        "_graphic": {
+                            "src": "course/en/images/menu_thumb_13.jpg"
+                        },
+                        "_url": "#",
+                        "_tags": [
+                            "resources",
+                            "videos"
+                        ]
+                    },
+                    {
+                        "_type": "resource",
+                        "_id": "r-65",
+                        "_isOptional": true,
+                        "title": "Be the leading difference",
+                        "displayTitle": "Be the leading difference",
+                        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                        "duration": "",
+                        "_isLocked": true,
+                        "_graphic": {
+                            "src": "course/en/images/menu_thumb_14.jpg"
+                        },
+                        "_url": "#",
+                        "_tags": [
+                            "topics"
+                        ]
+                    },
+                    {
+                        "_type": "resource",
+                        "_id": "r-70",
+                        "_isOptional": true,
+                        "title": "Get a leadership plan",
+                        "displayTitle": "Get a leadership plan",
+                        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                        "duration": "",
+                        "_isLocked": true,
+                        "_graphic": {
+                            "src": "course/en/images/menu_thumb_15.jpg"
+                        },
+                        "_url": "#",
+                        "_tags": [
+                            "topics"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "_dashboard": {
+            "_isEnabled": true,
+            "_filters": {
+                "_isEnabled": true,
+                "title": "Filters",
+                "body": "Make your choices to change what you see on the menu.",
+                "instruction": "Show me only…",
+                "_items": [
+                    {
+                        "_attribute": "_isPinned",
+                        "_value": false,
+                        "title": "Pinned items"
+                    },
+                    {
+                        "_attribute": "_isComplete",
+                        "_value": true,
+                        "title": "Incomplete items"
+                    },
+                    {
+                        "_attribute": "_isOptional",
+                        "_value": true,
+                        "title": "Mandatory items"
+                    }
+                ]
+            },
+            "_tags": {
+                "_isEnabled": true,
+                "title": "Tags",
+                "body": "You may also filter the menu items by tag.",
+                "instruction": "Show me only…"
+            }
         }
     }
 }
