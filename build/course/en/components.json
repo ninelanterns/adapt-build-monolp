@@ -1,0 +1,140 @@
+[
+	{
+		"_id": "c-05",
+		"_parentId": "b-05",
+		"_type": "component",
+		"_component": "graphic",
+		"_classes": "",
+		"_layout": "full",
+		"title": "What do our graduate researchers say?",
+		"displayTitle": "What do our graduate researchers say?",
+		"body": "Lorem ipsum dolor sit amet, etiam nonumes sed ei. Pro id commodo suscipit consectetuer. Ad usu autem reprimique. Et elitr accommodare ius. Te dolorum facilis usu, denique accumsan cu pro. Vel persius patrioque ea, veniam iudicabit definitionem in cum.",
+		"instruction": "",
+		"_graphic": {
+			"large": "course/en/images/monash-dummy-video.jpg",
+			"small": "course/en/images/monash-dummy-video.jpg",
+			"alt": "Placeholder graphic.",
+			"attribution": ""
+		},
+		"_pageLevelProgress": {
+			"_isEnabled": true
+		}
+	},
+	{
+		"_id": "c-10",
+		"_parentId": "b-10",
+		"_type": "component",
+		"_component": "accordion",
+		"_classes": "",
+		"_layout": "full",
+		"title": "Leaders in action",
+		"displayTitle": "Leaders in action",
+		"body": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.",
+		"instruction": "Select the headings to find out more.",
+		"_items": [
+			{
+				"title": "Leaders in research",
+				"body": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. ",
+				"_graphic": {
+					"src": "course/en/images/in-research.jpg",
+					"alt": "Placeholder graphic."
+				}
+			},
+			{
+				"title": "Leaders in industry",
+				"body": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. ",
+				"_graphic": {
+					"src": "course/en/images/in-industry.jpg",
+					"alt": "Placeholder graphic."
+				}
+			},
+			{
+				"title": "Leaders in government",
+				"body": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. ",
+				"_graphic": {
+					"src": "course/en/images/in-government.jpg",
+					"alt": "Placeholder graphic."
+				}
+			},
+			{
+				"title": "Leaders in the community",
+				"body": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. ",
+				"_graphic": {
+					"src": "course/en/images/in-community.jpg",
+					"alt": "Placeholder graphic."
+				}
+			}
+		],
+		"_pageLevelProgress": {
+			"_isEnabled": true
+		}
+	},
+	{
+		"_id": "c-15",
+		"_parentId": "b-15",
+		"_type": "component",
+		"_component": "mcq",
+		"_classes": "",
+		"_layout": "full",
+		"_attempts": 1,
+		"_questionWeight": 1,
+		"_canShowModelAnswer": true,
+		"_shouldDisplayAttempts": false,
+		"_isRandom": false,
+		"_selectable": 6,
+		"title": "What is leadership for you?",
+		"displayTitle": "What is leadership for you?",
+		"body": "<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.</p><p>Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque.</p>",
+		"instruction": "Select one or more of the following options.",
+		"_items": [
+			{
+				"text": "Confidence",
+				"_shouldBeSelected": true
+			},
+			{
+				"text": "Motivation",
+				"_shouldBeSelected": true
+			},
+			{
+				"text": "Inspiration",
+				"_shouldBeSelected": true
+			},
+			{
+				"text": "Passion",
+				"_shouldBeSelected": true
+			},
+			{
+				"text": "Innovation",
+				"_shouldBeSelected": true
+			},
+			{
+				"text": "Integrity",
+				"_shouldBeSelected": true
+			}
+		],
+		"_feedback": {
+			"correct": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin arcu quis quam sollicitudin, sed vestibulum dui placerat. Sed quis justo eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer scelerisque, nisl quis aliquam maximus, est mauris faucibus elit, sit amet posuere nibh libero sed dui.<br><br><em>Component facts: <strong>Multiple Choice Questions (or MCQs)</strong> are a tried and tested method for presenting learners with a simple text-based question. Component is either single or spanned.</em>",
+			"_incorrect": {
+				"final": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin arcu quis quam sollicitudin, sed vestibulum dui placerat. Sed quis justo eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer scelerisque, nisl quis aliquam maximus, est mauris faucibus elit, sit amet posuere nibh libero sed dui.<br><br><em>Component facts: <strong>Multiple Choice Questions (or MCQs)</strong> are a tried and tested method for presenting learners with a simple text-based question. Component is either single or spanned.</em>"
+			}
+		},
+		"_pageLevelProgress": {
+			"_isEnabled": true
+		}
+	},
+    {
+		"_id": "c-20",
+		"_parentId": "b-20",
+		"_type": "component",
+		"_component": "text",
+		"_classes": "",
+		"_layout": "full",
+		"title": "Think Leader. Think you.",
+		"displayTitle": "Think Leader. Think you.",
+		"body": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>",
+		"instruction": "",
+		"_pageLevelProgress": {
+			"_isEnabled": true
+		}
+	}
+]
