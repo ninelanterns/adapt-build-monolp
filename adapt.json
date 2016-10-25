@@ -1,6 +1,5 @@
 {
     "dependencies": {
-        "adapt-contrib-vanilla": "*",
         "adapt-contrib-text": "*",
         "adapt-contrib-narrative": "*",
         "adapt-contrib-media": "*",
@@ -16,7 +15,6 @@
         "adapt-contrib-assessmentResults": "*",
         "adapt-contrib-trickle": "*",
         "adapt-contrib-tutor": "*",
-        "adapt-contrib-boxMenu": "*",
         "adapt-contrib-pageLevelProgress": "*",
         "adapt-contrib-resources": "*",
         "adapt-contrib-slider": "*",
