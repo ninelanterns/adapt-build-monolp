@@ -1,0 +1,158 @@
+"_filterMenu": {
+	"_isProgressEnabled": true,
+	"_strips": [
+		{
+			"_id": "s-05",
+			"_isProgressEnabled": true,
+			"title": "Introduction",
+			"_items": [
+				{
+					"_type": "contentObject",
+					"_id": "co-05",
+					"_tags": [
+						"adapt"
+					]
+				},
+				{
+					"_type": "contentObject",
+					"_id": "co-10",
+					"_tags": [
+						"adapt"
+					]
+				},
+				{
+					"_type": "resource",
+					"_id": "r-05",
+					"title": "Vanilla Theme Swatch",
+					"displayTitle": "Vanilla Theme Swatch",
+					"body": "See the swatch for the default vanilla.",
+					"duration": "",
+					"_graphic": {
+						"src": "course/en/images/menu_thumb.jpg"
+					},
+					"_url": "course/en/images/vanilla-swatch.jpg",
+					"_tags": [
+						"adapt",
+						"resource",
+						"infographic"
+					]
+				},
+				{
+					"_type": "resource",
+					"_id": "r-10",
+					"_isOptional": true,
+					"title": "Adapt Learning YouTube Channel (optional)",
+					"displayTitle": "Adapt Learning YouTube Channel (optional)",
+					"body": "Fancy catching up on some Adapt material?",
+					"duration": "2 hrs 30 mins",
+					"_graphic": {
+						"src": "course/en/images/menu_thumb.jpg"
+					},
+					"_url": "https://www.youtube.com/channel/UCW8SlSFuCc--B66Gf9fAEcQ",
+					"_tags": [
+						"adapt",
+						"resource",
+						"vision"
+					]
+				},
+				{
+					"_type": "resource",
+					"_id": "r-15",
+					"_isOptional": true,
+					"title": "Community Site (optional)",
+					"displayTitle": "Community Site (optional)",
+					"body": "View our community site.",
+					"duration": "",
+					"_graphic": {
+						"src": "course/en/images/menu_thumb.jpg"
+					},
+					"_url": "https://community.adaptlearning.org",
+					"_tags": [
+						"adapt",
+						"resource"
+					]
+				},
+				{
+					"_type": "resource",
+					"_id": "r-20",
+					"_isOptional": true,
+					"title": "Google (optional)",
+					"displayTitle": "Google (optional)",
+					"body": "Why not try a Google search?",
+					"duration": "",
+					"_graphic": {
+						"src": "course/en/images/menu_thumb.jpg"
+					},
+					"_url": "http://www.google.co.uk",
+					"_tags": [
+						"resource"
+					]
+				}
+			]
+		},
+		{
+			"_id": "s-10",
+			"_isProgressEnabled": true,
+			"title": "Advanced",
+			"_items": [
+				{
+					"_type": "contentObject",
+					"_id": "co-15",
+					"_tags": [
+						"adapt",
+						"quiz"
+					]
+				},
+				{
+					"_type": "resource",
+					"_id": "r-25",
+					"_isOptional": true,
+					"title": "GitHub (optional)",
+					"displayTitle": "GitHub (optional)",
+					"body": "Make sure to browse our GitHub source.",
+					"duration": "",
+					"_graphic": {
+						"src": "course/en/images/menu_thumb.jpg"
+					},
+					"_url": "https://github.com/adaptlearning",
+					"_tags": [
+						"adapt",
+						"resource"
+					]
+				}
+			]
+		}
+	],
+	"_dashboard": {
+		"_isEnabled": true,
+		"_filters": {
+			"_isEnabled": true,
+			"title": "Filters",
+			"body": "Make your choices to change what you see on the menu.",
+			"instruction": "Show me only…",
+			"_items": [
+				{
+					"_attribute": "_isPinned",
+					"_value": false,
+					"title": "Pinned items"
+				},
+				{
+					"_attribute": "_isComplete",
+					"_value": true,
+					"title": "Incomplete items"
+				},
+				{
+					"_attribute": "_isOptional",
+					"_value": true,
+					"title": "Mandatory items"
+				}
+			]
+		},
+		"_tags": {
+			"_isEnabled": true,
+			"title": "Tags",
+			"body": "You may also filter the menu items by tag.",
+			"instruction": "Show me only…"
+		}
+	}
+}

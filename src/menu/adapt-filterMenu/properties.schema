@@ -1,0 +1,424 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/menu/model.schema",
+  "globals": {
+    "filtersNotification": {
+      "type": "string",
+      "default": "Filters applied",
+      "title": "Filters notification",
+      "inputType": "Text",
+      "translatable": true
+    },
+    "toggleOff": {
+      "type": "string",
+      "default": "Off",
+      "title": "Toggle off",
+      "inputType": "Text",
+      "translatable": true
+    },
+    "toggleOn": {
+      "type": "string",
+      "default": "On",
+      "title": "Toggle on",
+      "inputType": "Text",
+      "translatable": true
+    },
+    "progress": {
+      "type": "string",
+      "default": " complete",
+      "inputType": "Text",
+      "translatable": true
+    },
+    "stripEmpty": {
+      "type": "string",
+      "default": "All items filtered",
+      "title": "String empty",
+      "inputType": "Text",
+      "translatable": true
+    },
+    "durationLabel": {
+      "type": "string",
+      "default": "Duration: ",
+      "title": "Duration label",
+      "inputType": "Text",
+      "translatable": true
+    },
+    "openDashboardAria": {
+      "type": "string",
+      "default": "Open Filter Menu Dashboard",
+      "title": "Open dashboard ARIA",
+      "inputType": "Text",
+      "translatable": true
+    },
+    "disableFiltersAria": {
+      "type": "string",
+      "default": "Disable filters",
+      "title": "Disable filters ARIA",
+      "inputType": "Text",
+      "translatable": true
+    },
+    "dashboardAria": {
+      "type": "string",
+      "default": "Filter Menu dashboard",
+      "title": "Dashboard ARIA",
+      "inputType": "Text",
+      "translatable": true
+    },
+    "filtersAria": {
+      "type": "string",
+      "default": "Filters",
+      "title": "Filters ARIA",
+      "inputType": "Text",
+      "translatable": true
+    },
+    "tagsAria": {
+      "type": "string",
+      "default": "Tags",
+      "title": "Tags ARIA",
+      "inputType": "Text",
+      "translatable": true
+    },
+    "dashboardEndAria": {
+      "type": "string",
+      "default": "You have reached the end of the dashboard.",
+      "title": "Dashboard end ARIA",
+      "inputType": "Text",
+      "translatable": true
+    },
+    "closeDashboardAria": {
+      "type": "string",
+      "default": "Close Filter Menu dashboard",
+      "title": "Close dashboard ARIA",
+      "inputType": "Text",
+      "translatable": true
+    },
+    "menuAria": {
+      "type": "string",
+      "default": "Menu",
+      "title": "Menu ARIA",
+      "inputType": "Text",
+      "translatable": true
+    },
+    "stripAria": {
+      "type": "string",
+      "default": "Strip",
+      "title": "Strip ARIA",
+      "inputType": "Text",
+      "translatable": true
+    },
+    "progressAria": {
+      "type": "string",
+      "default": "You have completed ",
+      "title": "Progress ARIA",
+      "inputType": "Text",
+      "translatable": true
+    },
+    "menuItemAria": {
+      "type": "string",
+      "default": "Menu item",
+      "title": "Menu item",
+      "inputType": "Text",
+      "translatable": true
+    },
+    "togglePinAria": {
+      "type": "string",
+      "default": "Toggle pin",
+      "title": "Toggle pin ARIA",
+      "inputType": "Text",
+      "translatable": true
+    },
+    "menuItemEndAria": {
+      "type": "string",
+      "default": "End of menu item",
+      "title": "Menu item end ARIA",
+      "inputType": "Text",
+      "translatable": true
+    },
+    "menuEndAria": {
+      "type": "string",
+      "default": "You have reached the end of the menu.",
+      "title": "Menu end ARIA",
+      "inputType": "Text",
+      "translatable": true
+    }
+  },
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "properties": {
+        "course": {
+          "type": "object",
+          "properties": {
+            "_filterMenu": {
+              "type": "object",
+              "legend": "Filter Menu",
+              "properties": {
+                "_isProgressEnabled": {
+                  "type": "boolean",
+                  "default": false,
+                  "title": "Is progress enabled",
+                  "inputType": "Checkbox",
+                  "help": "Display an overall progress bar for all non-optional menu items"
+                },
+                "_strips": {
+                  "type": "array",
+                  "title": "Strips",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "_id": {
+                        "type": "string",
+                        "required": true,
+                        "title": "ID",
+                        "inputType": "Text",
+                        "validators": [
+                          "required"
+                        ],
+                        "help": "Enter a unique ID for the strip"
+                      },
+                      "_isProgressEnabled": {
+                        "type": "boolean",
+                        "default": false,
+                        "title": "Is progress enabled",
+                        "inputType": "Checkbox",
+                        "help": "Display a progress bar for the non-optional items in the strip"
+                      },
+                      "title": {
+                        "type": "string",
+                        "default": "",
+                        "inputType": "Text",
+                        "help": "Enter the strip title",
+                        "translatable": true
+                      },
+                      "_items": {
+                        "type": "array",
+                        "title": "Items",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "_type": {
+                              "type": "string",
+                              "required": true,
+                              "title": "Type",
+                              "inputType": {
+                                "type": "Select",
+                                "options": [
+                                  "contentObject",
+                                  "resource"
+                                ]
+                              },
+                              "validators": [
+                                "required"
+                              ],
+                              "help": "Choose the type of item to be linked to"
+                            },
+                            "_id": {
+                              "type": "string",
+                              "required": true,
+                              "title": "ID",
+                              "inputType": "Text",
+                              "validators": [
+                                "required"
+                              ],
+                              "help": "Enter the Adapt ID if the item is a content object or a unique ID if a resource"
+                            },
+                            "_isOptional": {
+                              "type": "boolean",
+                              "default": false,
+                              "title": "Is optional",
+                              "inputType": "Checkbox",
+                              "help": "Include the item in the progress bar (resources only)"
+                            },
+                            "title": {
+                              "type": "string",
+                              "default": "",
+                              "inputType": "Text",
+                              "help": "Enter the item title used by screen readers (resources only)",
+                              "translatable": true
+                            },
+                            "displayTitle": {
+                              "type": "string",
+                              "default": "",
+                              "title": "Display title",
+                              "inputType": "DisplayTitle",
+                              "help": "Enter the item title displayed visually (resources only)",
+                              "translatable": true
+                            },
+                            "body": {
+                              "type": "string",
+                              "default": "",
+                              "inputType": "TextArea",
+                              "help": "Enter the item body (resources only)",
+                              "translatable": true
+                            },
+                            "duration": {
+                              "type": "string",
+                              "default": "",
+                              "inputType": "Text",
+                              "help": "Enter the item duration (resources only)",
+                              "translatable": true
+                            },
+                            "_graphic": {
+                              "type": "object",
+                              "title": "Graphic",
+                              "properties": {
+                                "src": {
+                                  "type": "string",
+                                  "default": "",
+                                  "title": "Source",
+                                  "inputType": "Asset:image",
+                                  "help": "Choose the item graphic (resources only)"
+                                }
+                              }
+                            },
+                            "_url": {
+                              "type": "string",
+                              "default": "",
+                              "title": "URL",
+                              "inputType": "Text",
+                              "help": "Enter the URL which the item should link to (resources only)"
+                            },
+                            "_tags": {
+                              "type": "array",
+                              "default": [],
+                              "title": "Tags",
+                              "inputType": "List",
+                              "help": "List the tags to be associated with the item",
+                              "translatable": true
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "_dashboard": {
+                  "type": "object",
+                  "title": "Dashboard",
+                  "properties": {
+                    "_isEnabled": {
+                      "type": "boolean",
+                      "default": false,
+                      "title": "Is enabled",
+                      "inputType": "Checkbox",
+                      "help": "Enable the dashboard functionality accessed via a button on the navigation bar"
+                    },
+                    "_filters": {
+                      "type": "object",
+                      "title": "Filters",
+                      "properties": {
+                        "_isEnabled": {
+                          "type": "boolean",
+                          "default": false,
+                          "title": "Is enabled",
+                          "inputType": "Checkbox",
+                          "help": "Enable the section to filter by attribute"
+                        },
+                        "title": {
+                          "type": "string",
+                          "default": "",
+                          "inputType": "Text",
+                          "help": "Enter the filters section title",
+                          "translatable": true
+                        },
+                        "body": {
+                          "type": "string",
+                          "default": "",
+                          "inputType": "TextArea",
+                          "help": "Enter the filters section body",
+                          "translatable": true
+                        },
+                        "instruction": {
+                          "type": "string",
+                          "default": "",
+                          "inputType": "Text",
+                          "help": "Enter the filters section instruction",
+                          "translatable": true
+                        },
+                        "_items": {
+                          "type": "array",
+                          "title": "Items",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "_attribute": {
+                                "type": "string",
+                                "required": true,
+                                "title": "Attribute",
+                                "inputType": "Text",
+                                "validators": [
+                                  "required"
+                                ],
+                                "help": "Enter the attribute name to filter"
+                              },
+                              "_value": {
+                                "type": "boolean",
+                                "default": false,
+                                "title": "Value",
+                                "inputType": {
+                                  "type": "Boolean",
+                                  "options": [
+                                    true,
+                                    false
+                                  ]
+                                },
+                                "help": "Choose the attribute value to filter"
+                              },
+                              "title": {
+                                "type": "string",
+                                "default": "",
+                                "inputType": "Text",
+                                "help": "Enter the filter label",
+                                "translatable": true
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "_tags": {
+                      "type": "object",
+                      "title": "Tags",
+                      "properties": {
+                        "_isEnabled": {
+                          "type": "boolean",
+                          "default": false,
+                          "title": "Is enabled",
+                          "inputType": "Checkbox",
+                          "help": "Enable the section to filter by tag"
+                        },
+                        "title": {
+                          "type": "string",
+                          "default": "",
+                          "inputType": "Text",
+                          "help": "Enter the tags section title",
+                          "translatable": true
+                        },
+                        "body": {
+                          "type": "string",
+                          "default": "",
+                          "inputType": "TextArea",
+                          "help": "Enter the tags section body",
+                          "translatable": true
+                        },
+                        "instruction": {
+                          "type": "string",
+                          "default": "",
+                          "inputType": "Text",
+                          "help": "Enter the tags section instruction",
+                          "translatable": true
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

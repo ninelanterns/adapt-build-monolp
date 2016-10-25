@@ -1,0 +1,199 @@
+.filter-menu-dashboard-navigation {
+	float: left;
+}
+
+.filter-menu-dashboard-button.icon {
+	float: left;
+	&.selected {
+		background-color: @quaternary-color;
+		color: @quaternary-color-inverted;
+		transition: background-color @duration, color @duration;
+		.no-touch &:hover {
+			background-color: @button-color-hover;
+			color: @quaternary-color-inverted;
+		}
+	}
+}
+
+.filter-menu-dashboard-notification {
+	display: none;
+	.filtered & {
+		display: inherit;
+		float: left;
+		padding: 5px;
+		border-radius: 50px;
+		margin: 10px;
+		background-color: @button-color;
+	}
+	span {
+		float: left;
+		line-height: 34px;
+		padding: 0 5px;
+		color: @button-text-color;
+	}
+	button.icon {
+		padding: 5px;
+		border-radius: 50%;
+		float: left;
+		background-color: @validation-error;
+		color: @button-text-color;
+		transition: background-color @duration, color @duration;
+		&::-moz-focus-inner {
+			padding: 0;
+			border-style: none;
+		}
+		.no-touch &:hover {
+			background-color: darken(@validation-error, 10%);
+			color: @button-text-color-hover;
+		}
+	}
+}
+
+.filter-menu-dashboard {
+	position: fixed;
+	z-index: 1;
+	top: @navigation-padding * 2 + @icon-size;
+	width: 100%;
+	background-color: @quaternary-color;
+	color: @quaternary-color-inverted;
+	font-size: 0;
+	.touch & {
+		@media (max-width: @device-width-medium) {
+			height: 100%;
+			overflow-y: scroll;
+			-webkit-overflow-scrolling: touch;
+		}
+	}
+}
+
+.filter-menu-dashboard-inner {
+	margin: auto;
+	max-width: @device-width-large;
+	padding: (@menu-header-padding-top / 2) 0 (@menu-header-padding-bottom / 2);
+	@media (max-width: (@device-width-large + 20)) {
+		padding: (@menu-header-padding-top / 2) 20px (@menu-header-padding-bottom / 2);
+	}
+	@media (max-width: (@device-width-small + 20)) {
+		padding: 20px 10px;
+	}
+}
+
+.filter-menu-dashboard-section {
+	display: inline-block;
+	width: 50%;
+	font-size: @body-text-font-size;
+	vertical-align: top;
+	@media (max-width: @device-width-medium) {
+		width: 100%;
+	}
+}
+
+.filter-menu-dashboard-block {
+	padding: @item-padding / 2;
+}
+
+.filter-menu-dashboard-block-title {
+	.item-title;
+	margin-bottom: @menu-block-title-margin-bottom;
+}
+
+.filter-menu-dashboard-block-body {
+	margin-bottom: @menu-block-body-margin-bottom / 3;
+}
+
+.filter-menu-dashboard-block-instruction {
+	.instruction-text;
+	margin-bottom: @menu-block-instruction-margin-bottom;
+}
+
+.filter-menu-dashboard-item-container {
+	font-size: 0;
+}
+
+.filter-menu-dashboard-item {
+	font-size: @body-text-font-size;
+	input {
+		position: absolute;
+		left: -9999px;
+		.ie8 & {
+			position: inherit;
+			vertical-align: inherit;
+		}
+	}
+	.dashboard-filters & {
+		label {
+			position: relative;
+			display: inline-block;
+			width: 60px;
+			height: 30px;
+			line-height: 30px;
+			border-radius: 30px;
+			background-color: @button-color-disabled;
+			transition: background 0.2s;
+			&:before {
+				position: absolute;
+				right: 4px;
+				width: 50%;
+				content: attr(data-off);
+				text-align: center;
+				.ie8 & {
+					content: none;
+				}
+			}
+			&:after {
+				position: absolute;
+				top: 4px;
+				bottom: 4px;
+				left: 4px;
+				width: 22px;
+				border-radius: 22px;
+				background-color: @background-color;
+				content: "";
+				transition: margin @duration, background @duration;
+				.ie8 & {
+					content: none;
+				}
+			}
+			.ie8 & {
+				display: inline;
+				background-color: inherit;
+				.aria-label {
+					position: inherit !important;
+					filter: none !important;
+					font-size: inherit !important;
+				}
+			}
+		}
+		input:checked + label {
+			background-color: @button-color-hover;
+			&:before {
+				right: inherit;
+				content: attr(data-on);
+			}
+			&:after {
+				margin-left: 30px;
+			}
+		}
+		> span {
+			display: inline-block;
+			line-height: 30px;
+			margin-left: 10px;
+			vertical-align: top;
+			.ie8 & {
+				display: none;
+			}
+		}
+	}
+	.dashboard-tags & {
+		display: inline-block;
+		margin: 0 5px 5px 0;
+		label,
+		label:hover {
+			background-color: @button-color-disabled;
+			transition-timing-function: inherit;
+		}
+		input:checked + label {
+			background-color: @button-color-hover;
+		}
+	}
+}

@@ -1,0 +1,54 @@
+<div class="filter-menu-dashboard-inner">
+	<span class="aria-label prevent-default" role="region" tabindex="0">{{_globals._menu._filterMenu.dashboardAria}}</span>
+	<div class="filter-menu-dashboard-section left">
+		{{#if _filters._isEnabled}}
+		<div class="filter-menu-dashboard-block filter-menu-dashboard-block-filters">
+			<span class="aria-label prevent-default" role="region" tabindex="0">{{_globals._menu._filterMenu.filtersAria}}</span>
+			{{#if _filters.title}}
+			<div class="filter-menu-dashboard-block-title" aria-level="2" role="heading" tabindex="0">{{{_filters.title}}}</div>
+			{{/if}}
+			{{#if _filters.body}}
+			<div class="filter-menu-dashboard-block-body">{{{a11y_text _filters.body}}}</div>
+			{{/if}}
+			{{#if _filters.instruction}}
+			<div class="filter-menu-dashboard-block-instruction">{{{a11y_text _filters.instruction}}}</div>
+			{{/if}}
+			<div class="filter-menu-dashboard-item-container dashboard-filters">
+				{{#each _filters._items}}
+				<div class="filter-menu-dashboard-item dashboard-filter">
+					<input id="dashboard-filter-{{@index}}" type="checkbox">
+					<label for="dashboard-filter-{{@index}}" data-off="{{../_globals._menu._filterMenu.toggleOff}}" data-on="{{../_globals._menu._filterMenu.toggleOn}}"><span class="aria-label">{{{title}}}</span></label>
+					<span>{{{title}}}</span>
+				</div>
+				{{/each}}
+			</div>
+		</div>
+		{{/if}}
+	</div>
+	<div class="filter-menu-dashboard-section right">
+		{{#if _tags._isEnabled}}
+		<div class="filter-menu-dashboard-block filter-menu-dashboard-block-tags">
+			<span class="aria-label prevent-default" role="region" tabindex="0">{{_globals._menu._filterMenu.tagsAria}}</span>
+			{{#if _tags.title}}
+			<div class="filter-menu-dashboard-block-title" aria-level="2" role="heading" tabindex="0">{{{_tags.title}}}</div>
+			{{/if}}
+			{{#if _tags.body}}
+			<div class="filter-menu-dashboard-block-body">{{{a11y_text _tags.body}}}</div>
+			{{/if}}
+			{{#if _tags.instruction}}
+			<div class="filter-menu-dashboard-block-instruction">{{{a11y_text _tags.instruction}}}</div>
+			{{/if}}
+			<div class="filter-menu-dashboard-item-container dashboard-tags">
+				{{#each _tags._items}}
+				<div class="filter-menu-dashboard-item dashboard-tag">
+					<input id="dashboard-tag-{{@index}}" type="checkbox" data-tag="{{@key}}">
+					<label class="button" for="dashboard-tag-{{@index}}">{{@key}}</label>
+				</div>
+				{{/each}}
+			</div>
+		</div>
+		{{/if}}
+	</div>
+	<div class="aria-label prevent-default" role="region" tabindex="0">{{_globals._menu._filterMenu.dashboardEndAria}}</div>
+	<button class="filter-menu-dashboard-close relative aria-label">{{_globals._menu._filterMenu.closeDashboardAria}}</button>
+</div>

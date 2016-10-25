@@ -1,0 +1,30 @@
+<div class="filter-menu">
+	<span class="aria-label prevent-default" role="region" tabindex="0">{{_globals._menu._filterMenu.menuAria}}</span>
+	<div class="filter-menu-inner">
+		<div class="filter-menu-header">
+			<div class="filter-menu-header-inner">
+				{{#if displayTitle}}
+				<div class="filter-menu-title" aria-level="1" role="heading" tabindex="0">{{{displayTitle}}}</div>
+				{{/if}}
+				{{#if body}}
+				<div class="filter-menu-body">{{{a11y_text body}}}</div>
+				{{/if}}
+				{{#if instruction}}
+				<div class="filter-menu-instruction">{{{a11y_text instruction}}}</div>
+				{{/if}}
+				{{#if _filterMenu._isProgressEnabled}}
+				<div class="filter-menu-progress">
+					<div class="filter-menu-progress-inner">
+						<div class="filter-menu-progress-bar"></div>
+					</div>
+					<div class="filter-menu-progress-text"></div>
+				</div>
+				{{/if}}
+			</div>
+		</div>
+	</div>
+	<div class="filter-menu-strips">
+		<span class="aria-label prevent-default" role="region" tabindex="0">{{_globals._menu._filterMenu.stripAria}}</span>
+	</div>
+	<span class="aria-label prevent-default" role="region" tabindex="0">{{_globals._menu._filterMenu.menuEndAria}}</span>
+</div>
