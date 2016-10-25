@@ -1,0 +1,23 @@
+{
+  "name": "adapt-theme-monolp",
+  "version": "0.1.0",
+  "framework": "^2.0.10",
+  "homepage": "https://github.com/ninelanterns/adapt-build-monolp",
+  "issues": "",
+  "displayName": "Monash Graduate Online Learning Program",
+  "theme": "monolp",
+  "description": "A core bundled theme",
+  "main": "js/monolp.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-theme"
+  ],
+  "license": "GPLv3",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,43 @@
+// Navigation styling
+// ==================
+
+.navigation {
+    width: 100%;
+    overflow: hidden;
+    height: (@navigation-padding * 2) + @icon-size;
+    transition: all 0.5s;
+
+    .ie8 & {
+        max-width: @ie8-max-width;
+    }
+
+    .icon {
+        padding: @navigation-padding;
+        color: @foreground-color-inverted;
+        .transition-color;
+        transition: all 0.5s;
+
+        .no-touch &:hover {
+            color: @primary-color;
+        }
+
+        &.icon-controls-small-left,
+        &.icon-menu {
+            font-size: @icon-size-big;
+            padding: @navigation-padding - 4;
+        }
+    }
+
+    &.navigation-opaque {
+        background-color: @navigation-color;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+
+        .icon {
+            color: @navigation-icon-color;
+
+            .no-touch &:hover {
+                color: @navigation-icon-color-hover;
+            }
+        }
+    }
+}

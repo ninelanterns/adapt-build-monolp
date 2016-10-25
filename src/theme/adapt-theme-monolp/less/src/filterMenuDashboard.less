@@ -1,0 +1,96 @@
+
+
+.filter-menu-dashboard-button.icon {
+    background-color: transparent;
+
+	&.selected {
+        background-color: transparent;
+
+		.no-touch &:hover {
+			background-color: transparent;
+			color: @foreground-color-inverted;
+		}
+	}
+}
+
+.filter-menu-dashboard-notification {
+
+	.filtered & {
+		background-color: transparent;
+        border: 1px solid @button-text-color;
+	}
+	button.icon {
+		background-color: @button-text-color;
+		color: @primary-color;
+
+		.no-touch &:hover {
+			background-color: @button-text-color;
+            color: @primary-color;
+		}
+	}
+}
+
+
+.navigation-opaque {
+
+    .filter-menu-dashboard-button.icon {
+        background-color: transparent;
+
+    	&.selected {
+
+    		.no-touch &:hover {
+    			color: @foreground-color;
+    		}
+    	}
+    }
+
+    .filter-menu-dashboard-notification {
+        border-color: @foreground-color;
+        color: @foreground-color;
+
+        span {
+            color: @foreground-color;
+        }
+
+    	.filtered & {
+    		background-color: transparent;
+            border: 1px solid @foreground-color;
+    	}
+    	button.icon {
+    		background-color: @foreground-color;
+    		color: @foreground-color-inverted;
+    	}
+    }
+}
+
+.filter-menu-dashboard {
+	top: 0;
+	z-index: 5;
+    padding-top: @navigation-padding * 2 + @icon-size;
+}
+
+.filter-menu-dashboard-item {
+
+	.dashboard-filters & {
+		label {
+			background-color: transparent;
+            border: 1px solid @foreground-color-inverted;
+		}
+		input:checked + label {
+			background-color: @gold;
+            color: @gold-dark;
+		}
+	}
+	.dashboard-tags & {
+
+		label,
+		label:hover {
+			background-color: transparent;
+            border: 1px solid @foreground-color-inverted;
+		}
+		input:checked + label {
+			background-color: @gold;
+            color: @gold-dark;
+		}
+	}
+}
