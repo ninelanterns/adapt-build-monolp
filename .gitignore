@@ -1,10 +1,14 @@
+# Ignore all installable modules via the adapt cli
+# If you are using a non-installable module - exclude only installable.
 src/components
-src/theme
-src/menu
 src/extensions
-src/less
-src/less/adapt.less
-build
+src/menu/adapt-contrib-boxMenu
+src/theme/adapt-contrib-vanilla
+
+# Include build sp we may serve it on github pages
+#build
+
+# Ignore all istallable modules from third parties
 bower_components
 node_modules
 .DS_Store
