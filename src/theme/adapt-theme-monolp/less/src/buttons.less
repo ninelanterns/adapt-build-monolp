@@ -63,6 +63,19 @@
     button {
         width:49.5%;
         float:left;
+        background-color: @button-color;
+        border: 1px solid @button-border-color;
+        .hero-text;
+
+        &:hover {
+            background-color: @button-color-hover;
+        }
+
+        &[disabled="disabled"] {
+            background-color: @button-color-disabled;
+            color: @button-text-color-disabled;
+            border-color: @button-border-color-disabled;
+        }
 
         .dir-rtl & {
             float: right;
@@ -137,26 +150,5 @@
     .buttons-display-inner {
         padding: @button-padding;
         text-align: center;
-    }
-}
-
-.primary-background {
-    .buttons {
-
-        button {
-            background-color: transparent;
-            border: 1px solid @foreground-color-inverted;
-            .hero-text;
-
-            &:hover {
-                background-color: @item-color-hover;
-            }
-
-            &[disabled="disabled"] {
-                background-color: transparent !important;
-                color: fade(@foreground-color-inverted, 50%) !important;
-                border-color: fade(@foreground-color-inverted, 50%) !important;
-            }
-        }
     }
 }

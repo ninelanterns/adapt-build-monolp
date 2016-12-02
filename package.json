@@ -162,6 +162,7 @@
   "scripts": {
     "watch": "grunt dev",
     "serve": "browser-sync start --server --startPath \"build/index.html\" --files \"build/**\"",
-    "dev": "npm-run-all --parallel watch serve"
+    "dev": "npm-run-all --parallel watch serve",
+    "resize": "node image-resize.js"
   }
 }

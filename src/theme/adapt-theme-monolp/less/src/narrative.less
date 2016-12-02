@@ -1,13 +1,13 @@
 // Narrative styling
 // ==================
-.narrative-component {   
+.narrative-component {
 
     .narrative-content-title {
         margin-bottom: @title-text-margin;
         .item-title;
     }
     .narrative-content {
-        background: @item-color;
+        background: none;
         color: @item-text-color;
     }
 
@@ -16,10 +16,12 @@
         height: (@icon-size * 2.5);
         margin-top: -(@icon-size * 2);
         background-color:@item-color;
+        border: 1px solid @item-border-color;
 
         &:hover {
             background-color:@item-color-hover;
-            
+            border-color: @item-border-color;
+
             .icon {
                 color:@item-text-color-hover;
             }
@@ -45,11 +47,11 @@
 
 
     .narrative-progress {
-        background-color: darken(@component-background-color, 10%);
-        border:inherit;
+        background-color: none;
+        border: 1px solid @primary-color-inverted;
 
         &.selected {
-            background-color: @item-color;
+            background-color: @primary-color-inverted;
         }
     }
 
@@ -73,11 +75,11 @@
 
         }
     }
-    
+
     .narrative-strapline-title-inner {
         padding-left: (@item-padding-left);
         padding-right: (@item-padding-left + @item-padding-right + @icon-size);
-        
+
         .dir-rtl & {
           padding-right: (@item-padding-left);
           padding-left: (@item-padding-left + @item-padding-right + @icon-size);

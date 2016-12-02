@@ -6,9 +6,10 @@
 		"_classes": "",
 		"title": "What is leadership?",
 		"displayTitle": "What is leadership?",
-		"pageBody": "Lorem ipsum dolor sit amet, etiam nonumes sed ei. Pro id commodo suscipit consectetuer. Ad usu autem reprimique. Et elitr accommodare ius.",
+		"pageBody": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio nibh vulputate cursus a. Morbi accumsan ipsum velit.  Te dolorum facilis usu, denique accumsan cu pro. Vel persius patrioque ea, veniam iudicabit definitionem.",
 		"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 		"_graphic": {
+			"large": "course/en/images/monash-page-header-bg.jpg",
 			"src": "course/en/images/menu_thumb_5.jpg",
 			"alt": "Placeholder graphic."
 		},

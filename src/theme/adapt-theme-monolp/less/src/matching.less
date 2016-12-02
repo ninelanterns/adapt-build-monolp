@@ -10,6 +10,7 @@
 
   .matching-select-container {
     background-color: @item-color;
+    border: 1px solid @item-border-color;
 
     @media all and (max-width:@device-width-medium) {
       width:100%;
@@ -37,7 +38,7 @@
     @media all and (max-width:@device-width-medium) and (min-width:@device-width-small) {
         width:105%;
     }
-      
+
     @media all and (max-width:(@device-width-small - 1)) {
        width:110%;
     }
@@ -56,6 +57,11 @@
     &.submitted {
       .matching-select-container {
         background-color: @item-color-disabled;
+        border-color: @item-border-color-disabled;
+      }
+
+      .matching-select-icon {
+        color: @item-text-color-disabled;
       }
     }
 

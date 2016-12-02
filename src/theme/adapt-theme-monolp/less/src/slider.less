@@ -20,8 +20,15 @@
 
 .slider-widget {
     .slider-holder {
+        .rangeslider--horizontal {
+            height: 10px;
+        }
+
         .rangeslider__handle {
           background-color: @item-color;
+          top: -15px;
+          border: 1px solid @item-border-color;
+
           &:hover {
             .no-touch & {
               background-color: @item-color-hover;
@@ -29,7 +36,7 @@
           }
         }
         .rangeslider__fill {
-          background-color: @item-color;
+          background-color: @gold;
         }
         .rangeslider {
           background-color: @background-color;

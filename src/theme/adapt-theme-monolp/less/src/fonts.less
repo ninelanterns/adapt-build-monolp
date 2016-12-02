@@ -87,6 +87,14 @@ body {
     @media all and (max-width: @device-width-small) {
         font-size: (@component-title-font-size - 10px);
     }
+
+    .component-left &,
+    .component-right & {
+        text-transform: none;
+        letter-spacing: normal;
+        text-align: left;
+        .item-title;
+    }
 }
 
 .item-title {

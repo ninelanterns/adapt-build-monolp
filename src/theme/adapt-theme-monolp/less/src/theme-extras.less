@@ -78,57 +78,53 @@
 // blank component demo - applied at block level to add a background image in place of a blank component
 // ====================
 
-.blank-background {
-	background-image: url(assets/blank-bg.jpg);
-	background-repeat: no-repeat;
-    min-height: 80vh;
-	background-position: center;
-
-	@media all and (max-width: @device-width-large) {
-		background-image: url(assets/blank-bg-900.jpg);
-		background-position: right;
-	}
-
-	@media all and (max-width: @device-width-medium) {
-		background-image: none;
-	}
-}
+// .blank-background {
+// 	background-image: url(assets/blank-bg.jpg);
+// 	background-repeat: no-repeat;
+//     min-height: 80vh;
+// 	background-position: center;
+//
+// 	@media all and (max-width: @device-width-large) {
+// 		background-image: url(assets/blank-bg-900.jpg);
+// 		background-position: right;
+// 	}
+//
+// 	@media all and (max-width: @device-width-medium) {
+// 		background-image: none;
+// 	}
+// }
 
 // MONASH MODS
 // Below are mods for the prototype - need to house them better later
 // ====================
 
 .page-header {
-    background-image: url("../../course/en/images/monash-page-header-bg.jpg");
+    // background-image: url("../../course/en/images/monash-page-header-bg.jpg");
     background-position: center;
     background-size: cover;
 }
 
 .image-background {
-    background-image: url("../../course/en/images/monash-accordion-bg.jpg");
+    // background-image: attr(data-image);
     background-position: center top;
     background-size: cover;
     color: @foreground-color-inverted;
 
     @media all and (max-width: @device-width-small) {
-        background-image: url("../../course/en/images/monash-accordion-bg-narrow.jpg");
+        // background-image: attr(data-image-narrow);
         background-repeat: no-repeat;
         background-position: right top;
         background-size: auto;
     }
 
-    .block-title,
-    .component-title {
-        color: @foreground-color-inverted;
+    .component-container {
+        background-color: @primary-color-faded;
+        color: @primary-color-inverted;
     }
 
-    &.image-background-alt {
-        background-image: url("../../course/en/images/monash-text-bg.jpg");
-
-        @media all and (max-width: @device-width-small) {
-            background-position: center top;
-            background-size: cover;
-        }
+    .block-title,
+    .component-title {
+        color: @primary-color-inverted;
     }
 }
 
@@ -144,4 +140,22 @@
 
 .block-container .block:last-child .block-inner {
     padding-bottom: @block-padding-bottom * 2;
+}
+
+.mejs-overlay-button {
+    background-image: none !important;
+    background: none;
+    width: 200px;
+    height: 50px;
+    margin: -25px 0 0 -100px;
+    border: 1px solid @foreground-color-inverted;
+    color: @foreground-color-inverted;
+
+    &:before {
+        content: 'Play video';
+        display: block;
+        line-height: 50px;
+        text-align: center;
+        .hero-text;
+    }
 }

@@ -7,8 +7,10 @@
 @light-grey: #fafafa;
 @mid-grey: #546e7a;
 @dark-grey: darken(@mid-grey, 20%);
-@red: #EF2C2C;
-@green: #4FBF17;
+// @red: #EF2C2C;
+@red: #b50f00;
+// @green: #4FBF17;
+@green: #00b53f;
 @gold: #f1c982;
 @gold-dark: #553b08;
 @silver: #fafafa;
@@ -24,6 +26,8 @@
 // Components
 @primary-color: @blue;
 @primary-color-inverted: @white;
+@primary-color-faded: fade(@primary-color, 50%);
+@primary-color-hover: #00446e;
 // Buttons
 @secondary-color: @black;
 @secondary-color-inverted: @white;
@@ -43,8 +47,8 @@
 @validation-success: @green;
 // Disabled States
 // @disabled-color: #727272;
-@disabled-color: lighten(@black, 30%);
-@disabled-color-inverted: #ccc;
+@disabled-color: fade(@primary-color, 40%);
+@disabled-color-inverted: fade(@primary-color-inverted, 40%);
 
 @transparency: rgba(255,255,255,0.8);
 @transparency-fallback-png: url('assets/transparency-light.png');
@@ -59,17 +63,17 @@
 @title-color-inverted: @foreground-color-inverted;
 
 // Buttons
-@button-color: @secondary-color;
-@button-color-hover: darken(@button-color, 40%);
+@button-color: @primary-color;
+@button-color-hover: @primary-color-hover;
 @button-color-disabled: @disabled-color;
 
-@button-text-color: @secondary-color-inverted;
-@button-text-color-hover: @secondary-color-inverted;
+@button-text-color: @primary-color-inverted;
+@button-text-color-hover: @button-text-color;
 @button-text-color-disabled: @disabled-color-inverted;
 
-@button-border-color: @button-color;
-@button-border-color-hover: @button-color-hover;
-@button-border-color-disabled: @button-color-disabled;
+@button-border-color: @primary-color-inverted;
+@button-border-color-hover: @button-border-color;
+@button-border-color-disabled: @disabled-color-inverted;
 
 // Navigation
 @navigation-color: @tertiary-color;
@@ -111,28 +115,28 @@
 @component-background-color: transparent;
 
 @item-color: @primary-color;
-@item-color-hover: darken(@item-color, 12%);
+@item-color-hover: @primary-color-hover;
 @item-color-disabled: @disabled-color;
-@item-color-visited: desaturate(@item-color, 90%);
+@item-color-visited: @item-color-disabled;
 @item-color-selected: @item-color-hover;
 
 @item-color-alt: lighten(desaturate(@item-color, 50%), 12%);
 
 @item-text-color: @primary-color-inverted;
 @item-text-color-hover: @item-text-color;
-@item-text-color-disabled: @item-text-color;
-@item-text-color-visited: @item-text-color;
+@item-text-color-disabled: @disabled-color-inverted;
+@item-text-color-visited: @item-text-color-disabled;
 @item-text-color-selected: @item-text-color;
 
-@item-body-color: @background-color;
-@item-body-text-color: @foreground-color;
+@item-body-color: @item-color-selected;
+@item-body-text-color: @item-text-color;
 
-@item-border-color: @item-color;
-@item-border-color-hover: @item-color-hover;
-@item-border-color-disabled: @item-color-disabled;
-@item-border-color-visited: @item-color-visited;
-@item-border-color-selected: @item-color-selected;
-@item-border-color-inverted: @item-text-color;
+@item-border-color: @primary-color-inverted;
+@item-border-color-hover: @item-border-color;
+@item-border-color-disabled: @disabled-color-inverted;
+@item-border-color-visited: @item-border-color-disabled;
+@item-border-color-selected: @item-border-color;
+@item-border-color-inverted: @item-color;
 
 // Menu
 @menu-item-color: @primary-color;

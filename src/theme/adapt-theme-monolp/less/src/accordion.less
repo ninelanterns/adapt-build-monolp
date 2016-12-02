@@ -17,7 +17,8 @@
         padding-top: @item-padding-top;
         padding-bottom: @item-padding-bottom;
         padding-left: (@icon-size+(@item-padding-left*2));
-        .item-title;
+        border: 1px solid @item-border-color;
+        .hero-text;
 
         .dir-rtl & {
             padding-left:inherit;
@@ -38,6 +39,7 @@
             color: @item-text-color-selected;
             background-color: @item-color-selected;
             border-color: @item-border-color-selected;
+            border-bottom: none;
 
             .accordion-item-title-icon {
                 color: @item-text-color-selected;
@@ -47,7 +49,6 @@
             &:hover {
                 color: @item-text-color-hover;
                 background-color: @item-color-hover;
-                border-color: @item-border-color-hover;
 
                 .accordion-item-title-icon {
                     color: @item-text-color-hover;
@@ -56,7 +57,7 @@
             &.visited:hover {
                 color: @item-text-color-hover;
                 background-color: @item-color-hover;
-                border-color: @item-border-color-hover;
+                border-color: @item-border-color;
 
                 .accordion-item-title-icon {
                     color: @item-text-color-hover;
@@ -71,9 +72,8 @@
 
     .accordion-item-body {
         color: @item-body-text-color;
-        background-color: @item-body-color;
-        border: @item-border;
-        border-color: @item-border-color-selected;
+        background-color: @item-color-selected;
+        border: 1px solid @item-border-color;
         border-top: 0;
     }
 
@@ -82,48 +82,5 @@
         padding-bottom: @item-padding-bottom;
         padding-left: @item-padding-left;
         padding-right: @item-padding-right;
-    }
-
-}
-
-.image-background {
-
-    .accordion-item {
-        border: 1px solid @foreground-color-inverted;
-    }
-
-    .accordion-item-title {
-        background-color: fade(@item-color, 50%);
-        .hero-text;
-
-        &:hover {
-            background-color: fade(@background-color, 50%);
-        }
-        &.visited {
-            background-color: fade(@item-color, 50%);
-        }
-        &.selected {
-            color: @foreground-color-inverted;
-            background-color: @primary-color;
-            border-color: @primary-color;
-        }
-
-        .no-touch & {
-            &:hover {
-                background-color: fade(@background-color, 50%);
-            }
-            &.visited:hover {
-                background-color: fade(@item-color, 50%);
-            }
-            &.selected:hover {
-				background-color: @primary-color;
-			}
-        }
-    }
-
-    .accordion-item-body {
-        background-color: @primary-color;
-        color: @foreground-color-inverted;
-        border-color: @primary-color;
     }
 }

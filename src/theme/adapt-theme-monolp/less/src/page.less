@@ -23,11 +23,13 @@
     .page-header-content {
         max-width: @device-width-large;
         margin: auto;
-        color: @foreground-color-inverted;
+        background-color: @primary-color-faded;
+        color: @primary-color-inverted;
+        overflow: hidden;
     }
 
     .page-header-content-inner {
-        text-align: center;
+        margin: 60px 30px 30px 30px;
     }
 
     .page-title {
@@ -35,11 +37,11 @@
         .hero-text;
         letter-spacing: 0.2em;
         margin-bottom: 1em;
+        text-align: center;
     }
 
     .page-body {
         margin-bottom: @page-body-margin-bottom;
-        width: 70%;
         margin: auto;
     }
 

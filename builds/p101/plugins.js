@@ -7406,8 +7406,13 @@ define('components/adapt-contrib-accordion/js/adapt-contrib-accordion',['require
             var $button = $('button', $itemEl).first();
             var $icon = $('.accordion-item-title-icon', $itemEl).first();
 
-            $body.stop(true, true).slideUp(this.toggleSpeed);
-            $button.removeClass('selected');
+            // $body.stop(true, true).slideUp(this.toggleSpeed);
+            // $button.removeClass('selected');
+            // CORE HACK -------
+            $body.stop(true, true).slideUp(this.toggleSpeed, function() {
+              $button.removeClass('selected');
+            });
+            // END ------------
             $button.attr('aria-expanded', false);
             $icon.addClass('icon-plus');
             $icon.removeClass('icon-minus');
@@ -18203,7 +18208,7 @@ define('menu/adapt-filterMenu/js/adapt-filterMenu',[
 	});
 
 });
-define('theme/adapt-contrib-vanilla/js/theme-block',['require','coreJS/adapt','backbone'],function(require) {
+define('theme/adapt-theme-monolp/js/theme-block',['require','coreJS/adapt','backbone'],function(require) {
 	
 	var Adapt = require('coreJS/adapt');
 	var Backbone = require('backbone');
@@ -18263,11 +18268,11 @@ define('theme/adapt-contrib-vanilla/js/theme-block',['require','coreJS/adapt','b
 	
 });
 
-define('theme/adapt-contrib-vanilla/js/vanilla',['require','coreJS/adapt','backbone','theme/adapt-contrib-vanilla/js/theme-block'],function(require) {
+define('theme/adapt-theme-monolp/js/monolp',['require','coreJS/adapt','backbone','theme/adapt-theme-monolp/js/theme-block'],function(require) {
 
 	var Adapt = require('coreJS/adapt');
 	var Backbone = require('backbone');
-	var ThemeBlock = require('theme/adapt-contrib-vanilla/js/theme-block');
+	var ThemeBlock = require('theme/adapt-theme-monolp/js/theme-block');
 
 	// Block View
 	// ==========
@@ -18291,17 +18296,48 @@ define('theme/adapt-contrib-vanilla/js/vanilla',['require','coreJS/adapt','backb
         changeNavigation('.filter-menu-inner');
     });
 
-    Adapt.once('pageView:ready', function() {
+    Adapt.once('pageView:ready', function(view) {
         changeNavigation('.page-header');
+
+        // console.log(view);
+
+        var _graphic = view.model.get('_graphic');
+
+        view.$el.find('.page-header').css({
+            backgroundImage: 'url('+ _graphic.large +')'
+        });
+
+        var backgroundLength = 5;
+        var backgrounds = [];
+
+        for (var i = 0; i < backgroundLength; i++) {
+          backgrounds.push('image-background-'+ i);
+        }
+
+        view.$el.find('.image-background').each(function(i) {
+            // Get random number from current amount in the array
+            var random = Math.floor(Math.random() * backgrounds.length);
+            var image = backgrounds[random];
+
+            // Remove the item from the array
+            backgrounds.splice(random, 1);
+
+            $(this).css({
+              backgroundImage: 'url(adapt/css/assets/'+ image +'.jpg)'
+            });
+
+            // TODO manage narrow images
+            // 'url(assets/'+ image +'-narrow.jpg)'
+        });
     });
 
     function changeNavigation(selector) {
 
-        var $window = $(window),
-            $navigation = $('.navigation'),
-            navigationHeight = $navigation.height(),
-            $clear = $(selector),
-            clearHeight = $clear.height();
+        var $window = $(window);
+        var $navigation = $('.navigation');
+        var navigationHeight = $navigation.height();
+        var $clear = $(selector);
+        var clearHeight = $clear.height();
 
         $window.on('scroll', function() {
             if ($window.scrollTop() > clearHeight - navigationHeight) {
@@ -18312,57 +18348,8 @@ define('theme/adapt-contrib-vanilla/js/vanilla',['require','coreJS/adapt','backb
             }
         });
     }
-});
-
-define('theme/adapt-theme-monolp/js/monolp',['require','coreJS/adapt','backbone','theme/adapt-contrib-vanilla/js/theme-block'],function(require) {
-
-	var Adapt = require('coreJS/adapt');
-	var Backbone = require('backbone');
-	var ThemeBlock = require('theme/adapt-contrib-vanilla/js/theme-block');
-
-	// Block View
-	// ==========
-
-	Adapt.on('blockView:postRender', function(view) {
-		var theme = view.model.get('_theme');
-
-		if (theme) {
-			new ThemeBlock({
-				model: new Backbone.Model({
-					_themeBlockConfig: theme
-				}),
-				el: view.$el
-			});
-		}
-	});
 
 
-
-    Adapt.once('menuView:ready', function() {
-        changeNavigation('.filter-menu-inner');
-    });
-
-    Adapt.once('pageView:ready', function() {
-        changeNavigation('.page-header');
-    });
-
-    function changeNavigation(selector) {
-
-        var $window = $(window),
-            $navigation = $('.navigation'),
-            navigationHeight = $navigation.height(),
-            $clear = $(selector),
-            clearHeight = $clear.height();
-
-        $window.on('scroll', function() {
-            if ($window.scrollTop() > clearHeight - navigationHeight) {
-                $navigation.addClass('navigation-opaque');
-            }
-            else {
-                $navigation.removeClass('navigation-opaque');
-            }
-        });
-    }
 });
 
 define('plugins',[
@@ -18388,8 +18375,5 @@ define('plugins',[
 	"components/adapt-contrib-text/js/adapt-contrib-text",
 	"components/adapt-contrib-textInput/js/adapt-contrib-textInput",
 	"menu/adapt-filterMenu/js/adapt-filterMenu",
-	"theme/adapt-contrib-vanilla/js/vanilla",
 	"theme/adapt-theme-monolp/js/monolp"
 ],function(){});
-
-//# sourceMappingURL=plugins.js.map

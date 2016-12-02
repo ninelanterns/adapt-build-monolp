@@ -21,6 +21,5 @@ define([
 	"components/adapt-contrib-text/js/adapt-contrib-text",
 	"components/adapt-contrib-textInput/js/adapt-contrib-textInput",
 	"menu/adapt-filterMenu/js/adapt-filterMenu",
-	"theme/adapt-contrib-vanilla/js/vanilla",
 	"theme/adapt-theme-monolp/js/monolp"
 ],function(){});
