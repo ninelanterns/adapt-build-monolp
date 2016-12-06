@@ -99,22 +99,30 @@
 // ====================
 
 .page-header {
-    // background-image: url("../../course/en/images/monash-page-header-bg.jpg");
-    background-position: center;
     background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 -5px 20px rgba(0,0,0,0.2),
+                inset 0 5px 20px rgba(0,0,0,0.2);
+
+    @media all and (max-width: @device-width-small) {
+        background-position: right top;
+        background-size: cover;
+        background-attachment: scroll;
+    }
 }
 
 .image-background {
-    // background-image: attr(data-image);
-    background-position: center top;
-    background-size: cover;
     color: @foreground-color-inverted;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0 -5px 20px rgba(0,0,0,0.2),
+                inset 0 5px 20px rgba(0,0,0,0.2);
 
     @media all and (max-width: @device-width-small) {
-        // background-image: attr(data-image-narrow);
-        background-repeat: no-repeat;
         background-position: right top;
-        background-size: auto;
+        background-size: cover;
+        background-attachment: scroll;
     }
 
     .component-container {

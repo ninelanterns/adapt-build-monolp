@@ -18274,6 +18274,8 @@ define('theme/adapt-theme-monolp/js/monolp',['require','coreJS/adapt','backbone'
 	var Backbone = require('backbone');
 	var ThemeBlock = require('theme/adapt-theme-monolp/js/theme-block');
 
+  var backgroundImages = [];
+
 	// Block View
 	// ==========
 
@@ -18292,62 +18294,70 @@ define('theme/adapt-theme-monolp/js/monolp',['require','coreJS/adapt','backbone'
 
 
 
-    Adapt.once('menuView:ready', function() {
-        changeNavigation('.filter-menu-inner');
-    });
+  Adapt.once('menuView:ready', function() {
+      changeNavigation('.filter-menu-inner');
+  });
 
-    Adapt.once('pageView:ready', function(view) {
-        changeNavigation('.page-header');
+  Adapt.once('pageView:ready', function(view) {
 
-        // console.log(view);
+      changeNavigation('.page-header');
 
-        var _graphic = view.model.get('_graphic');
+      var graphic = view.model.get('_graphic');
+      var graphicPath = Adapt.device.screenSize === 'small' ? graphic.narrow : graphic.wide;
 
-        view.$el.find('.page-header').css({
-            backgroundImage: 'url('+ _graphic.large +')'
-        });
+      view.$el.find('.page-header').css({
+        backgroundImage: 'url('+ graphicPath +')'
+      });
 
-        var backgroundLength = 5;
-        var backgrounds = [];
+      view.$el.find('.image-background').each(function(i) {
+        // We may deplete all of the images in the array, so lets replenish the pool when it empties
+        if (! backgroundImages.length) buildBackgroundImageArray();
 
-        for (var i = 0; i < backgroundLength; i++) {
-          backgrounds.push('image-background-'+ i);
+        // Get random number from current amount in the array
+        var randomIndex = Math.floor(Math.random() * backgroundImages.length);
+        var backgroundImage = backgroundImages[randomIndex];
+
+        if (Adapt.device.screenSize === 'small') {
+          backgroundImage += '-narrow'
         }
 
-        view.$el.find('.image-background').each(function(i) {
-            // Get random number from current amount in the array
-            var random = Math.floor(Math.random() * backgrounds.length);
-            var image = backgrounds[random];
+        // Remove the item from the array
+        backgroundImages.splice(randomIndex, 1);
 
-            // Remove the item from the array
-            backgrounds.splice(random, 1);
-
-            $(this).css({
-              backgroundImage: 'url(adapt/css/assets/'+ image +'.jpg)'
-            });
-
-            // TODO manage narrow images
-            // 'url(assets/'+ image +'-narrow.jpg)'
+        $(this).css({
+          backgroundImage: 'url(adapt/css/assets/'+ backgroundImage +'.jpg)'
         });
-    });
 
-    function changeNavigation(selector) {
+        // TODO manage narrow images
+        // 'url(assets/'+ image +'-narrow.jpg)'
+      });
+  });
 
-        var $window = $(window);
-        var $navigation = $('.navigation');
-        var navigationHeight = $navigation.height();
-        var $clear = $(selector);
-        var clearHeight = $clear.height();
+  function changeNavigation(selector) {
 
-        $window.on('scroll', function() {
-            if ($window.scrollTop() > clearHeight - navigationHeight) {
-                $navigation.addClass('navigation-opaque');
-            }
-            else {
-                $navigation.removeClass('navigation-opaque');
-            }
-        });
+      var $window = $(window);
+      var $navigation = $('.navigation');
+      var navigationHeight = $navigation.height();
+      var $clear = $(selector);
+      var clearHeight = $clear.height();
+
+      $window.on('scroll', function() {
+          if ($window.scrollTop() > clearHeight - navigationHeight) {
+              $navigation.addClass('navigation-opaque');
+          }
+          else {
+              $navigation.removeClass('navigation-opaque');
+          }
+      });
+  }
+
+  function buildBackgroundImageArray() {
+    var poolSize = 5;
+
+    for (var i = 0; i < poolSize; i++) {
+      backgroundImages.push('image-background-'+ i);
     }
+  }
 
 
 });
@@ -18377,3 +18387,5 @@ define('plugins',[
 	"menu/adapt-filterMenu/js/adapt-filterMenu",
 	"theme/adapt-theme-monolp/js/monolp"
 ],function(){});
+
+//# sourceMappingURL=plugins.js.map
