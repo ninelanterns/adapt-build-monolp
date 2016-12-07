@@ -5377,15 +5377,10 @@ select {
   color: #b50f00;
 }
 .matching-component .matching-select {
-  padding: 10px;
-  padding-left: 20px;
+  padding: 20px 20px 20px 20px;
   font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", Roboto, Arial, sans-serif;
   font-size: 18px;
   font-weight: 300;
-}
-.matching-component .matching-select > option {
-  font-size: 16px;
-  padding: 10px;
 }
 .dir-rtl .matching-component .matching-select {
   padding: 20px 20px 20px 20px;
