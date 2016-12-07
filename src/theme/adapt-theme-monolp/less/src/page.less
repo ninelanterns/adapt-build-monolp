@@ -6,6 +6,19 @@
 
     .page-header {
         background-color: @background-color-inverted;
+
+        // The arrow indicator
+        &:after {
+            content: '';
+            display: block;
+            margin: -35px auto 0 auto;
+            width: 35px;
+            height: 35px;
+            border: 1px solid @primary-color-inverted;
+            border-top: none;
+            border-left: none;
+            transform: translateY(-130px) rotate(45deg);
+        }
     }
 
     .page-header-inner {

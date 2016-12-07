@@ -4499,7 +4499,6 @@ button[disabled="disabled"] {
 .filter-menu-header-inner {
   width: 70%;
   margin: auto;
-  text-align: center;
 }
 .size-small .filter-menu-header-inner {
   width: auto;
@@ -4509,6 +4508,7 @@ button[disabled="disabled"] {
   font-family: "Century Schoolbook", "Times New Roman", Times, serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  text-align: center;
   margin-bottom: 1em;
 }
 .filter-menu-header,
@@ -5994,6 +5994,17 @@ select {
 }
 .page .page-header {
   background-color: #546e7a;
+}
+.page .page-header:after {
+  content: '';
+  display: block;
+  margin: -35px auto 0 auto;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #ffffff;
+  border-top: none;
+  border-left: none;
+  transform: translateY(-130px) rotate(45deg);
 }
 .page .page-header-inner {
   padding: 280px 0 280px;
