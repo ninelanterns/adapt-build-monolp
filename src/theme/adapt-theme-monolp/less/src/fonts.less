@@ -57,9 +57,12 @@ body {
 }
 
 .article-title {
+    font-family: @component-title-font-family;
     font-size: @component-title-font-size;
     font-weight: @component-title-font-weight;
     line-height: @component-title-line-height;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
 
     @media all and (max-width: @device-width-small) {
         font-size: (@component-title-font-size - 10px);
@@ -67,9 +70,12 @@ body {
 }
 
 .block-title {
+    font-family: @component-title-font-family;
     font-size: @component-title-font-size;
     font-weight: @component-title-font-weight;
     line-height: @component-title-line-height;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
 
     @media all and (max-width: @device-width-small) {
         font-size: (@component-title-font-size - 10px);

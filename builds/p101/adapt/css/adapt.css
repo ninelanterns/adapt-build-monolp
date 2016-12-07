@@ -4009,7 +4009,7 @@ input:checked + .filter-menu-item-pin:before {
 .article .article-title {
   margin-bottom: 1em;
   color: #686a6c;
-  text-align: left;
+  text-align: center;
 }
 .dir-rtl .article .article-title {
   text-align: right;
@@ -4054,7 +4054,7 @@ input:checked + .filter-menu-item-pin:before {
 .block .block-title {
   margin-bottom: 1em;
   color: #686a6c;
-  text-align: left;
+  text-align: center;
 }
 .dir-rtl .block .block-title {
   text-align: right;
@@ -4714,9 +4714,12 @@ body {
   }
 }
 .article-title {
+  font-family: "HelveticaNeueLightCondensed", "HelveticaNeue-Light-Condensed", "Helvetica Neue Light Condensed", "Roboto Condensed", Arial, sans-serif;
   font-size: 43px;
   font-weight: 300;
   line-height: 120%;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 @media all and (max-width: 520px) {
   .article-title {
@@ -4724,9 +4727,12 @@ body {
   }
 }
 .block-title {
+  font-family: "HelveticaNeueLightCondensed", "HelveticaNeue-Light-Condensed", "Helvetica Neue Light Condensed", "Roboto Condensed", Arial, sans-serif;
   font-size: 43px;
   font-weight: 300;
   line-height: 120%;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 @media all and (max-width: 520px) {
   .block-title {
@@ -5371,7 +5377,15 @@ select {
   color: #b50f00;
 }
 .matching-component .matching-select {
-  padding: 20px 20px 20px 20px;
+  padding: 10px;
+  padding-left: 20px;
+  font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", Roboto, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+.matching-component .matching-select > option {
+  font-size: 16px;
+  padding: 10px;
 }
 .dir-rtl .matching-component .matching-select {
   padding: 20px 20px 20px 20px;
@@ -5398,6 +5412,12 @@ select {
 }
 .matching-component .matching-widget.submitted .matching-select-icon {
   color: rgba(255, 255, 255, 0.4);
+}
+.matching-component .matching-widget.submitted .matching-select-icon.matching-correct-icon {
+  color: #00b53f;
+}
+.matching-component .matching-widget.submitted .matching-select-icon.matching-incorrect-icon {
+  color: #b50f00;
 }
 .no-touch .matching-select-icon:hover {
   color: #ffffff;
