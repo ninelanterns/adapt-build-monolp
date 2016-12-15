@@ -18,7 +18,10 @@ define([ "core/js/views/adaptView", "core/js/adapt" ], function(AdaptView, Adapt
 		},
 
 		events: {
-			"click .filter-menu-item-button": "onItemClick",
+			// "click .filter-menu-item-button": "onItemClick",
+			// CORE HACK -------
+  		"click .filter-menu-item-button, .filter-menu-item-title, .filter-menu-item-body": "onItemClick",
+      // -----------------
 			"change input": "togglePin"
 		},
 

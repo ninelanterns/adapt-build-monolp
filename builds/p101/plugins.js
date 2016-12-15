@@ -17639,7 +17639,10 @@ define('menu/adapt-filterMenu/js/adapt-filterMenuItemView',[ "core/js/views/adap
 		},
 
 		events: {
-			"click .filter-menu-item-button": "onItemClick",
+			// "click .filter-menu-item-button": "onItemClick",
+			// CORE HACK -------
+  		"click .filter-menu-item-button, .filter-menu-item-title, .filter-menu-item-body": "onItemClick",
+      // -----------------
 			"change input": "togglePin"
 		},
 
@@ -17710,6 +17713,7 @@ define('menu/adapt-filterMenu/js/adapt-filterMenuItemView',[ "core/js/views/adap
 	return FilterMenuItemView;
 
 });
+
 define('menu/adapt-filterMenu/js/adapt-filterMenuStripView',[
 	"core/js/views/adaptView",
 	"core/js/adapt",
