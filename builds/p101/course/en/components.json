@@ -2,30 +2,28 @@
 	{
 		"_id": "c-05",
 		"_parentId": "b-05",
-    "_type":"component",
-    "_component":"media",
-    "_classes":"",
-    "_layout":"full",
-    "title":"Minim ponderum periculis vix mundi tamquam",
+    "_type": "component",
+    "_component": "media",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Minim ponderum periculis vix mundi tamquam",
     "displayTitle": "Minim ponderum periculis vix mundi tamquam",
     "body": "Lorem ipsum dolor sit amet, etiam nonumes sed ei. Pro id commodo suscipit consectetuer. Ad usu autem reprimique. Et elitr accommodare ius. Te dolorum facilis usu, denique accumsan cu pro. Vel persius patrioque ea, veniam iudicabit definitionem in cum.",
     "instruction": "",
-    "_setCompletionOn":"inview",
-    "_useClosedCaptions":true,
-    "_startLanguage":"en",
+    "_setCompletionOn": "inview",
+    "_useClosedCaptions": false,
+    "_startLanguage": "en",
     "_media": {
 			"mp4": "course/en/video/c-05.mp4",
-			"poster": "course/en/video/c-05.jpg",
-			"cc": [
-  				{
-  					"srclang": "en",
-  					"src": "course/en/video/c-05.vtt"
-  				}
-		    ]
+			"poster": "course/en/video/c-05.jpg"
     },
 		"_pageLevelProgress": {
 			"_isEnabled": true
-		}
+		},
+    "_playerOptions": {
+        "features": ["playpause","current","progress","duration","tracks","volume","fullscreen"],
+        "hideCaptionsButtonWhenEmpty": true
+    }
 	},
 	{
 		"_id": "c-10",
