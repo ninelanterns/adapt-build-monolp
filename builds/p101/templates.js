@@ -1620,6 +1620,18 @@ define("templates",["handlebars"],function(Handlebars){Handlebars.templates={};H
     + "</span></label>\r\n	</div>\r\n	<span class=\"aria-label prevent-default\" tabindex=\"0\" role=\"region\">"
     + container.escapeExpression(container.lambda(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0._globals : depth0)) != null ? stack1._menu : stack1)) != null ? stack1._filterMenu : stack1)) != null ? stack1.menuItemEndAria : stack1), depth0))
     + "</span>\r\n</div>\r\n";
+},"useData":true});Handlebars.templates['filterMenuStrip']=Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+    return "	<div class=\"filter-menu-strip-progress\">\r\n		<div class=\"filter-menu-strip-progress-bar\"></div>\r\n	</div>\r\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "<div class=\"filter-menu-strip-inner\">\r\n"
+    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},(depth0 != null ? depth0._isProgressEnabled : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "	<div class=\"filter-menu-strip-top\">\r\n		<div class=\"filter-menu-strip-title\" aria-level=\"2\" role=\"heading\" tabindex=\"0\">"
+    + ((stack1 = container.lambda((depth0 != null ? depth0.title : depth0), depth0)) != null ? stack1 : "")
+    + "</div>\r\n		<div class=\"filter-menu-strip-empty\">"
+    + ((stack1 = (helpers.a11y_text || (depth0 && depth0.a11y_text) || helpers.helperMissing).call(depth0 != null ? depth0 : {},((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0._globals : depth0)) != null ? stack1._menu : stack1)) != null ? stack1._filterMenu : stack1)) != null ? stack1.stripEmpty : stack1),{"name":"a11y_text","hash":{},"data":data})) != null ? stack1 : "")
+    + "</div>\r\n	</div>\r\n	<div class=\"filter-menu-items-bottom\">\r\n		<div class=\"filter-menu-items-background\"></div>\r\n		<div class=\"filter-menu-items-container\">\r\n			<div class=\"filter-menu-items\"></div>\r\n		</div>\r\n		<button class=\"base filter-menu-control left icon icon-controls-left a11y-ignore display-none\" tabindex=\"-1\"></button>\r\n		<button class=\"base filter-menu-control right icon icon-controls-right a11y-ignore display-none\" tabindex=\"-1\"></button>\r\n	</div>\r\n</div>\r\n";
 },"useData":true});Handlebars.templates['loading']=Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     return "<div class=\"loading\">\n    <div class=\"loader-gif\"><div role=\"heading\" tabindex=\"0\" class=\"h3\" aria-level=\"1\">Loading...</div></div>\n</div>";
 },"useData":true});Handlebars.templates['navigation']=Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {

@@ -1,0 +1,19 @@
+<div class="filter-menu-strip-inner">
+	{{#if _isProgressEnabled}}
+	<div class="filter-menu-strip-progress">
+		<div class="filter-menu-strip-progress-bar"></div>
+	</div>
+	{{/if}}
+	<div class="filter-menu-strip-top">
+		<div class="filter-menu-strip-title" aria-level="2" role="heading" tabindex="0">{{{this.title}}}</div>
+		<div class="filter-menu-strip-empty">{{{a11y_text _globals._menu._filterMenu.stripEmpty}}}</div>
+	</div>
+	<div class="filter-menu-items-bottom">
+		<div class="filter-menu-items-background"></div>
+		<div class="filter-menu-items-container">
+			<div class="filter-menu-items"></div>
+		</div>
+		<button class="base filter-menu-control left icon icon-controls-left a11y-ignore display-none" tabindex="-1"></button>
+		<button class="base filter-menu-control right icon icon-controls-right a11y-ignore display-none" tabindex="-1"></button>
+	</div>
+</div>

@@ -49,7 +49,7 @@
 		opacity: 1;
 	}
 
-    &:hover {
+    .no-touch &:hover {
         .filter-menu-item-details {
             background-color: @primary-color;
             color: @foreground-color-inverted;
@@ -65,6 +65,8 @@
             }
         }
     }
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.2);
 }
 
 .filter-menu-strip-top {
@@ -95,6 +97,27 @@
         float: right;
         margin-right: 1px;
     }
+}
+
+.icon.filter-menu-control {
+    top: 50%;
+	height: @filter-menu-image-height;
+    margin-top: -(@filter-menu-image-height / 2);
+	padding: 0 @button-padding;
+	filter: alpha(opacity=50);
+	background-color: @background-color;
+	background-color: fade(@background-color, 50%);
+	color: @background-color-inverted;
+
+    // @foreground-color-inverted: @white;
+    // @background-color-inverted: @mid-grey;
+
+	.no-touch &:hover {
+		filter: alpha(opacity=70);
+		background-color: @background-color;
+		background-color: fade(@background-color, 70%);
+    	color: @background-color-inverted;
+	}
 }
 
 .filter-menu-item-details {

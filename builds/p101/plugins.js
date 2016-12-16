@@ -18391,5 +18391,3 @@ define('plugins',[
 	"menu/adapt-filterMenu/js/adapt-filterMenu",
 	"theme/adapt-theme-monolp/js/monolp"
 ],function(){});
-
-//# sourceMappingURL=plugins.js.map

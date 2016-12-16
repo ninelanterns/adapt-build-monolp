@@ -417,15 +417,15 @@
             "text": "Lorum ipsum doar sit amit.",
             "_options": [
                 {
-                    "text": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor",
+                    "text": "Proin gravida nibh vel velit",
                     "_isCorrect": false
                 },
                 {
-                    "text": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor (correct)",
+                    "text": "Proin gravida (correct)",
                     "_isCorrect": true
                 },
                 {
-                    "text": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor",
+                    "text": "Proin gravida nibh vel velit",
                     "_isCorrect": false
                 }
             ]
@@ -434,15 +434,15 @@
             "text": "Ea explicari imperdiet mel.",
             "_options": [
                 {
-                    "text": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor",
+                    "text": "Proin gravida nibh vel velit",
                     "_isCorrect": false
                 },
                 {
-                    "text": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor",
+                    "text": "Proin gravida nibh vel velit",
                     "_isCorrect": false
                 },
                 {
-                    "text": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor (correct)",
+                    "text": "Proin gravida (correct)",
                     "_isCorrect": true
                 }
             ]
@@ -451,15 +451,15 @@
             "text": "Fuisset iracundia honestatis.",
             "_options": [
                 {
-                    "text": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor (correct)",
+                    "text": "Proin gravida (correct)",
                     "_isCorrect": true
                 },
                 {
-                    "text": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor",
+                    "text": "Proin gravida nibh vel velit",
                     "_isCorrect": false
                 },
                 {
-                    "text": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor",
+                    "text": "Proin gravida nibh vel velit",
                     "_isCorrect": false
                 }
             ]
