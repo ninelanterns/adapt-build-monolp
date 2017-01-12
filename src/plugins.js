@@ -1,4 +1,5 @@
 define([
+	"extensions/adapt-articleBlockSlider/js/articleBlockSlider",
 	"extensions/adapt-contrib-assessment/js/adapt-assessmentArticleExtension",
 	"extensions/adapt-contrib-bookmarking/js/adapt-contrib-bookmarking",
 	"extensions/adapt-contrib-languagePicker/js/adapt-languagePicker",
@@ -10,6 +11,7 @@ define([
 	"components/adapt-contrib-accordion/js/adapt-contrib-accordion",
 	"components/adapt-contrib-assessmentResults/js/adapt-contrib-assessmentResults",
 	"components/adapt-contrib-blank/js/adapt-contrib-blank",
+	"components/adapt-contrib-confidenceSlider/js/adapt-contrib-confidenceSlider",
 	"components/adapt-contrib-gmcq/js/adapt-contrib-gmcq",
 	"components/adapt-contrib-graphic/js/adapt-contrib-graphic",
 	"components/adapt-contrib-hotgraphic/js/adapt-contrib-hotgraphic",
