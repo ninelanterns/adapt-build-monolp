@@ -1,0 +1,391 @@
+[
+  {
+    "_id": "c-05",
+    "_parentId": "b-05",
+    "_type": "component",
+    "_component": "narrative",
+    "_classes": "",
+    "_layout": "full",
+    "_setCompletionOn": "allItems",
+    "_hasNavigationInTextArea": false,
+    "title": "Getting around",
+    "displayTitle": "Getting around",
+    "body": "To help you tailor the course to your preferences, we've broken the content down into short topics. You're able to filter what you see on the menu and pin the things you find most helpful.",
+    "instruction": "Select the arrows to find out more.",
+    "mobileInstruction": "Select the arrows and then the plus icons to find out more.",
+    "_items": [
+      {
+        "title": "The way you want",
+        "body": "Use the filter menu at the top left of the page to organise the content on the screen by completion status, bookmarked items or sections of interest.",
+        "_graphic": {
+          "src": "course/en/images/c-00-1.jpg",
+          "alt": ""
+        },
+        "strapline": "The way you want"
+      },
+      {
+        "title": "Bookmarking",
+        "body": "If you find something you like or want to save it for later, you can pin it to your menu by selecting the pin icon. The filter menu at the top left allows you to display pinned items only.",
+        "_graphic": {
+          "src": "course/en/images/c-00-2.jpg",
+          "alt": ""
+        },
+        "strapline": "Bookmarking"
+      },
+      {
+        "title": "Dashboard",
+        "body": "To help track your progress throughout the topics, in the top right of the screen you will have access to the dashboard. This dashboard is a useful tool that can tell you how you're tracking and will give you guidance on your progress.",
+        "_graphic": {
+          "src": "course/en/images/c-00-3.jpg",
+          "alt": ""
+        },
+        "strapline": "Dashboard"
+      },
+      {
+        "title": "Resources",
+        "body": "Use the Resources menu at the top right of the page to explore further resources available in this course.",
+        "_graphic": {
+          "src": "course/en/images/c-00-4.jpg",
+          "alt": ""
+        },
+        "strapline": "Resources"
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+  {
+    "_id": "c-10",
+    "_parentId": "b-10",
+    "_type": "component",
+    "_component": "media",
+    "_classes": "",
+    "_layout": "full",
+    "_setCompletionOn": "play",
+    "_useClosedCaptions": true,
+    "_allowFullScreen": true,
+    "title": "A world of possibilities",
+    "displayTitle": "A world of possibilities",
+    "body": "Whether you're thinking local or global, the Monash Doctoral Program will support your research journey and professional development so you emerge ready to make the greatest possible impact.",
+    "instruction": "Select Play to hear from our Vice Chancellor.",
+    "_media": {
+      "mp4": "course/en/video/c-00.mp4",
+      "poster": "course/en/video/c-00.jpg"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+  {
+    "_id": "c-15",
+    "_parentId": "b-15",
+    "_type": "component",
+    "_component": "narrative",
+    "_classes": "",
+    "_layout": "full",
+    "_setCompletionOn": "allItems",
+    "_hasNavigationInTextArea": false,
+    "title": "What s in this course",
+    "displayTitle": "What s in this course",
+    "body": "Let's take a look at what's involved in completing this course.",
+    "instruction": "Select the arrows to find out more.",
+    "mobileInstruction": "Select the arrows and then the plus icons to find out more.",
+    "_items": [
+      {
+        "title": "Straight to the point",
+        "body": "Each topic has been broken down into small, focused learning bites using video, graphics and web articles. Scroll down the menu page to find the topic you want, then use the navigation arrows to cycle through the learning bites. You can explore the topics in any order, but we suggest you start with 'What is leadership' and work your way through.",
+        "_graphic": {
+          "src": "course/en/images/c-15-1.jpg",
+          "alt": ""
+        },
+        "strapline": "Straight to the point"
+      },
+      {
+        "title": "Want to know more",
+        "body": "We've incorporated additional resources to help you develop your leadership skills further. These include Quick Reference Guides, documents and web articles with extra insights into leadership. You can access them via the Resources menu at the top right of the page. This reading is estimated to take approximately 30 minutes and can be included in your professional development hours.",
+        "_graphic": {
+          "src": "course/en/images/c-15-2.jpg",
+          "alt": ""
+        },
+        "strapline": "Want to know more"
+      },
+      {
+        "title": "The next steps",
+        "body": "We want you to think about how you can build skills for the 21st century – leadership being one of them. That's why this course includes a Leadership Development Plan (LDP). It's a critical component of your course, which once completed, will need to be given to your supervisor for review and sign-off. Download and save the LDP from the Resources menu. We'll refer you to LDP activities throughout this course, which need to be completed offline. It's estimated that these activities will take approximately 90 minutes and can be recorded as part of your professional development hours.",
+        "_graphic": {
+          "src": "course/en/images/c-15-3.jpg",
+          "alt": ""
+        },
+        "strapline": "The next steps"
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+  {
+    "_id": "c-20",
+    "_parentId": "b-20",
+    "_type": "component",
+    "_component": "media",
+    "_classes": "",
+    "_layout": "full",
+    "_setCompletionOn": "play",
+    "_useClosedCaptions": true,
+    "_allowFullScreen": true,
+    "title": "What do our graduate researchers say",
+    "displayTitle": "What do our graduate researchers say",
+    "body": "How do our graduate researchers define leadership? What role have leadership skills played in their PhD experience and beyond?",
+    "instruction": "Select Play to find out.",
+    "_media": {
+      "mp4": "course/en/video/c-00.mp4",
+      "poster": "course/en/video/c-00.jpg"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-25",
+    "_parentId": "b-25",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "What is leadership for you",
+    "displayTitle": "What is leadership for you",
+    "body": "What does leadership mean to you? Before recording your thoughts let’s see what others have to say. Select the arrow to find out more.",
+    "instruction": "",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-30",
+    "_parentId": "b-30",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "",
+    "displayTitle": "",
+    "body": "\"Leadership is the art of motivating a group of people to act towards achieving a common goal.\" – Anon",
+    "instruction": "",
+    "_pageLevelProgress": {
+      "_isEnabled": false
+    }
+  },
+  {
+    "_id": "c-35",
+    "_parentId": "b-35",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "",
+    "displayTitle": "",
+    "body": "\"Leadership is a function of knowing yourself, having a vision that is well communicated, building trust among colleagues, and taking effective action to realise your own leadership potential.\" – Warren Bennis",
+    "instruction": "",
+    "_pageLevelProgress": {
+      "_isEnabled": false
+    }
+  },
+  {
+    "_id": "c-40",
+    "_parentId": "b-40",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "",
+    "displayTitle": "",
+    "body": "\"All of us must lead if we are to create sustainable change and make our world better.\" – Barack Obama",
+    "instruction": "",
+    "_pageLevelProgress": {
+      "_isEnabled": false
+    }
+  },
+  {
+    "_id": "c-45",
+    "_parentId": "b-45",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "",
+    "displayTitle": "",
+    "body": "Identifying what leadership means to you and others, will help you communicate, influence and lead people around you. It's now time to write down your thoughts. Download and save your LDP from the Resources menu. In your LDP you'll find the What is leadership for you? activity. Please take the time to complete that now.",
+    "instruction": "",
+    "_pageLevelProgress": {
+      "_isEnabled": false
+    }
+  },
+  {
+    "_id": "c-50",
+    "_parentId": "b-50",
+    "_type": "component",
+    "_component": "accordion",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Imagine a world without leaders",
+    "displayTitle": "Imagine a world without leaders",
+    "body": "Leaders are invaluable - think of a world with no teachers, no parents, no role models, no coaches, no innovators. Leadership is pervasive, it exists in every part of life, at university, in careers, amongst family and friends, in our communities and even in us.",
+    "instruction": "Select each heading to find out what a world without leaders might look like.",
+    "_items": [
+      {
+        "title": "What direction do we take?",
+        "body": "Without clear direction it makes it harder or impossible for teams, groups or you to achieve goals. What do I want to achieve? How will I achieve it? Which path will I take? Is the vision flawed? Leaders play a big part in looking forward and moving themselves or others in a certain direction.",
+        "_graphic": {
+          "src": "course/en/images/c-50-1.jpg",
+          "alt": ""
+        },
+        "_classes": "image-left"
+      },
+      {
+        "title": "Who will inspire us?",
+        "body": "Great! Awesome! Remarkable! We all benefit from a little motivation, inspiration and encouragement – it could be the leader of a team or your inner voice giving you a pat on the back. Leaders motivate and encourage others to give their best performance all the time.",
+        "_graphic": {
+          "src": "course/en/images/c-50-2.jpg",
+          "alt": ""
+        },
+        "_classes": ""
+      },
+      {
+        "title": "Who will keep us focused?",
+        "body": "Without focus, organisation and follow through, teams, groups and individuals may find themselves wasting money, time and resources. Leaders help us plan ahead and stay on the track.",
+        "_graphic": {
+          "src": "course/en/images/c-50-3.jpg",
+          "alt": ""
+        },
+        "_classes": "image-right"
+      },
+      {
+        "title": "What about change?",
+        "body": "Leaders inspire change! Their impact and influence surrounds us every day. It could be the dedicated researcher, the inspiring teacher, the optimistic coach or the risk taking colleague. We need all types of leaders to create impact or change - without them the world would seem a pretty dull place.",
+        "_graphic": {
+          "src": "course/en/images/c-50-4.jpg",
+          "alt": ""
+        },
+        "_classes": ""
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-55",
+    "_parentId": "b-55",
+    "_type": "component",
+    "_component": "mcq",
+    "_classes": "",
+    "_layout": "full",
+    "_attempts": 1,
+    "_shouldDisplayAttempts": false,
+    "_questionWeight": 1,
+    "_isRandom": true,
+    "_selectable": 6,
+    "_canShowModelAnswer": true,
+    "_canShowMarking": true,
+    "_recordInteraction":true,
+    "title": "Think leader. Think you",
+    "displayTitle": "Think leader. Think you",
+    "body": "There's a potential leader in all of us. However, many of us have misconceptions about leadership and our leadership potential. Do any of the common leadership misconceptions below resonate with you?",
+    "instruction": "Select one or more of the following options and select Submit.",
+    "_items": [
+      {
+        "text": "I wasn't born to lead.",
+        "_shouldBeSelected": false
+      },
+      {
+        "text": "I don't have any opportunities to develop as a leader.",
+        "_shouldBeSelected": false
+      },
+      {
+        "text": "I'm pretty introverted, I don't see any point in pretending I could be a leader.",
+        "_shouldBeSelected": false
+      },
+      {
+        "text": "Great leaders are in command; they tell everyone what to do.",
+        "_shouldBeSelected": false
+      },
+      {
+        "text": "People don't see me as a leader.",
+        "_shouldBeSelected": false
+      },
+      {
+        "text": "It's not important for me to develop skills not directly relevant to my research.",
+        "_shouldBeSelected": false
+      }
+    ],
+    "_feedback":{
+      "correct": "Some of us are too quick to dismiss or discount our own leadership potential. But the truth is that leadership can be earned and learned over time. Everyone has leadership potential and leadership responsibility. Look for, and take on, any leadership opportunities possible – the leadership competencies you develop will help you on campus, at work and in life. Now's it's time to select your LDP from the Resources menu to complete the activity:<br><br><strong>Think leader. Think you.</strong>",
+      "_incorrect": {
+        "notFinal": "",
+        "final": "Some of us are too quick to dismiss or discount our own leadership potential. But the truth is that leadership can be earned and learned over time. Everyone has leadership potential and leadership responsibility. Look for, and take on, any leadership opportunities possible – the leadership competencies you develop will help you on campus, at work and in life. Now's it's time to select your LDP from the Resources menu to complete the activity:<br><br><strong>Think leader. Think you.</strong>"
+      },
+      "_partlyCorrect": {
+        "notFinal": "",
+        "final": "Some of us are too quick to dismiss or discount our own leadership potential. But the truth is that leadership can be earned and learned over time. Everyone has leadership potential and leadership responsibility. Look for, and take on, any leadership opportunities possible – the leadership competencies you develop will help you on campus, at work and in life. Now's it's time to select your <strong>LDP</strong> from the Resources menu to complete the activity:<br><br><strong>Think leader. Think you.</strong>"
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "Submit",
+        "ariaLabel": "Select here to submit your answer."
+      },
+      "_reset": {
+        "buttonText": "Reset",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "Correct Answer",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "My Answer",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "Show feedback",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "attempts remaining",
+      "remainingAttemptText": "final attempt"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  }
+]
