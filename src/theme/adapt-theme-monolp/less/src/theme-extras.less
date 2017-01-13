@@ -150,6 +150,28 @@
     background-color: transparent;
 }
 
+.white-background {
+
+    .slider-component,
+    .confidenceSlider-component {
+
+        .slider-scale-number:hover {
+            color: @foreground-color;
+        }
+
+        .slider-scaler-wrapper {
+
+            .slider-scaler {
+              background-color: @foreground-color;
+            }
+        }
+
+        .slider-line {
+            background-color: @foreground-color;
+        }
+    }
+}
+
 // Give the last block on the page more padding
 // .article:last-child .block-container .block:last-child .block-inner {
 //     padding-bottom: @block-padding-bottom * 2;

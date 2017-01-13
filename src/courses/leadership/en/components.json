@@ -387,5 +387,303 @@
     "_pageLevelProgress": {
       "_isEnabled": true
     }
+  },
+
+
+
+
+
+
+
+
+
+
+  {
+    "_id": "c-60",
+    "_parentId": "b-60",
+    "_type": "component",
+    "_component": "confidenceSlider",
+    "_classes": "",
+    "_layout": "full",
+    "title": "What's your leadership experience?",
+    "displayTitle": "What's your leadership experience?",
+    "body": "Leadership situations may arise with little notice. You might be asked to coach undergraduates, help heal rifts in a team you work with, take the lead amongst a group of motivated researchers, or help deal with challenging group members. Would you know what to do? What's your leadership experience?",
+    "disabledBody": "You need to measure your confidence in the linked part before you can do this part.",
+    "instruction": "Select one of the following options and select Submit.",
+    "_attempts": 1,
+    "_canShowFeedback": true,
+    "_recordInteraction": true,
+    "_showNumber": true,
+    "_showScaleIndicator": true,
+    "_showScale": true,
+    "labelStart": "I've rarely led people",
+    "labelMid": "I've sometimes led people",
+    "labelEnd": "I'm an experienced leader",
+    "_scaleStart": 1,
+    "_scaleEnd": 10,
+    "_scaleStep": 1,
+    "_buttons": {
+      "_submit": {
+        "buttonText": "Submit",
+        "ariaLabel": "Submit your answer by clicking here."
+      },
+      "_reset": {
+        "buttonText": "Reset",
+        "ariaLabel": "Reset the question by clicking here."
+      },
+      "_showFeedback": {
+        "buttonText": "Show feedback",
+        "ariaLabel": "View the question feedback again by clicking here."
+      }
+    },
+    "_feedback": {
+      "feedbackSeparator": " ",
+      "generic": "",
+      "_comparison": {
+        "lower": "Oh you like it less? That's a shame.",
+        "same": "Well, at least you don't like it less.",
+        "higher": "It looks like you're seeing the benefits more and more!"
+      },
+      "_threshold": [
+        {
+          "_values": {
+            "_low": 1,
+            "_high": 3
+          },
+          "text": "You don't seem very confident, so it's great that you're completing this course."
+        },
+        {
+          "_values": {
+            "_low": 4,
+            "_high": 7
+          },
+          "text": "It's great that you have some experience in leadership that you can build on! You should take a look at this course and see if it answers some of the questions that you have regarding leadership."
+        },
+        {
+          "_values": {
+            "_low": 8,
+            "_high": 10
+          },
+          "text": "It's great that you have some experience in leadership that you can build on! You should take a look at this course and see if it answers some of the questions that you have regarding leadership."
+        }
+      ]
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-65",
+    "_parentId": "b-65",
+    "_type": "component",
+    "_component": "media",
+    "_classes": "",
+    "_layout": "full",
+    "_setCompletionOn": "play",
+    "_useClosedCaptions": true,
+    "_allowFullScreen": true,
+    "title": "Why learn to lead?",
+    "displayTitle": "Why learn to lead?",
+    "body": "The world is demanding different things from leaders. In these times of rapid change and environmental complexity, leadership has taken on a greater importance than ever before.",
+    "instruction": "Select play to find out more.",
+    "_media": {
+      "mp4": "course/en/video/c-00.mp4",
+      "poster": "course/en/video/c-00.jpg"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-70",
+    "_parentId": "b-70",
+    "_type": "component",
+    "_component": "narrative",
+    "_classes": "",
+    "_layout": "full",
+    "_setCompletionOn": "allItems",
+    "_hasNavigationInTextArea": false,
+    "title": "Leading in the future",
+    "displayTitle": "Leading in the future",
+    "body": "We live in changing times. An era of disruptive innovation fuelled by the pace of technological advancement, urbanisation, demographic change, sustainability challenges, the economic rise of Asia and other inter-related factors. How will this impact future leaders?",
+    "instruction": "Select the arrows to find out more.",
+    "mobileInstruction": "Select the arrows and then the plus icons to find out more.",
+    "_items": [
+      {
+        "title": "Technological advancements",
+        "body": "Advanced technologies and continuous innovation will foster an era of collaboration and knowledge sharing. What does this mean for leaders? Leaders will require exceptional collaboration and influencing skills. They'll need to keep up to date with progress in their own fields and in fields they may not fully understand.",
+        "_graphic": {
+          "src": "course/en/images/c-70-1.jpg",
+          "alt": ""
+        },
+        "strapline": "Technological advancements"
+      },
+      {
+        "title": "Changing nature of work",
+        "body": "Workplaces are changing. Hot-desking and agile workplaces are becoming the norm. Working from home, in the local café, client sites and other locations is now a reality for many people. Leaders need to collaborate with diverse and highly individualised teams. Listening skills and empathy will be vital to identify what motivates others and inspire them to unlock their potential.",
+        "_graphic": {
+          "src": "course/en/images/c-70-2.jpg",
+          "alt": ""
+        },
+        "strapline": "Changing nature of work"
+      },
+      {
+        "title": "Digital era",
+        "body": "Technology has changed how we communicate and work with teams. Software tools and applications on laptops, desktops and mobile devices are increasingly used to collaborate. Leaders will need to engage with diverse individuals with different degrees of digital competence. Also, with the increase of transparency, leaders must display high standards of integrity and sincerity.",
+        "_graphic": {
+          "src": "course/en/images/c-70-3.jpg",
+          "alt": ""
+        },
+        "strapline": "Digital era"
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-75",
+    "_parentId": "b-75",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Be ready to lead",
+    "displayTitle": "Be ready to lead",
+    "body": "What do all these changes mean for you and your field? For one, you'll need to be ready to collaborate, welcome different points of view, accept ambiguity and create a culture of trust and openness. You'll also need to consider how changes in your field will impact your current research and your future opportunities.<br><br>Consider this:<br><br>Are mega-trends relating to issues such as urbanisation, an ageing population, digital agriculture or globalisation creating new interest or demand for insights from your research? How could you find out?<br><br>Reflect on this and other thought provoking questions. Open your <strong>LDP</strong> to complete the activity: <strong>Be ready to lead.</strong>",
+    "instruction": "",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+  {
+    "_id": "c-80",
+    "_parentId": "b-80",
+    "_type": "component",
+    "_component": "media",
+    "_classes": "",
+    "_layout": "full",
+    "_setCompletionOn": "play",
+    "_useClosedCaptions": true,
+    "_allowFullScreen": true,
+    "title": "Your leadership matters",
+    "displayTitle": "Your leadership matters",
+    "body": "It's essential that you see yourself as a potential agent of change – not just in contributing new knowledge to help advance your field, but more broadly in society; an individual with valuable skills, insights and competencies that we need to help create a better world.",
+    "instruction": "Select play to hear how one graduate researcher did just that.",
+    "_media": {
+      "mp4": "course/en/video/c-00.mp4",
+      "poster": "course/en/video/c-00.jpg"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-85",
+    "_parentId": "b-85",
+    "_type": "component",
+    "_component": "narrative",
+    "_classes": "",
+    "_layout": "full",
+    "_setCompletionOn": "allItems",
+    "_hasNavigationInTextArea": false,
+    "title": "Enhance your phd research ride",
+    "displayTitle": "Enhance your phd research ride",
+    "body": "You have the potential to become an important agent of change. Taking on leadership activities will not only develop your skills, but allow you to embrace opportunities to deliver change.",
+    "instruction": "Select the arrows to find out what steps you can take.",
+    "mobileInstruction": "Select the arrows and then the plus icons to find out what steps you can take.",
+    "_items": [
+      {
+        "title": "Collaborate and share",
+        "body": "Look for opportunities to collaborate. Take on student leadership roles and identify change opportunities, (e.g. club / society committee member, festival director, debate committee member, magazine editor). Liaise with individuals or organisations involved in your doctoral research to identify areas of improvement. (e.g. community groups, government, landholders, industry, households, educators, etc.)",
+        "_graphic": {
+          "src": "course/en/images/c-85-1.jpg",
+          "alt": ""
+        },
+        "strapline": "Collaborate and share"
+      },
+      {
+        "title": "Keep up the good work",
+        "body": "Take on roles that allow you to gain valuable insights and spot new opportunities for growth. Work as a research assistant. Be a tutor to undergraduate and masters students. Volunteer your time with not-for-profit organisations (e.g. social or environmental organisations, international or local organisations). Look for part-time work in industry.",
+        "_graphic": {
+          "src": "course/en/images/c-85-2.jpg",
+          "alt": ""
+        },
+        "strapline": "Keep up the good work"
+      },
+      {
+        "title": "Share your thoughts",
+        "body": "Change is about shifting people's thinking. Speak or engage at research-related conferences and forums (e.g. conferences, presenting papers, research groups). Disseminate research findings and insights via various communication channels (e.g. articles in peer reviewed journals, magazines, blogs, formal and informal presentations, panel discussions).",
+        "_graphic": {
+          "src": "course/en/images/c-85-3.jpg",
+          "alt": ""
+        },
+        "strapline": "Share your thoughts"
+      },
+      {
+        "title": "Think bigger than today",
+        "body": "Think about the entrepreneurial opportunities arising from doctoral research. Join incubator/entrepreneurship programs. You've got to think beyond now and even beyond the most immediate future. What will you do as a post-doctorate in society? What career will be most rewarding?",
+        "_graphic": {
+          "src": "course/en/images/c-85-4.jpg",
+          "alt": ""
+        },
+        "strapline": "Think bigger than today"
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-90",
+    "_parentId": "b-90",
+    "_type": "component",
+    "_component": "accordion",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Impact the future",
+    "displayTitle": "Impact the future",
+    "body": "In unleashing your potential where might you find yourself? Developing professional skills, such as leadership, will help you make the greatest possible impact whatever your discipline and vision. Let's see the impact these Monash PhD graduates are making.",
+    "instruction": "Select each heading to find out.",
+    "_items": [
+      {
+        "title": "Law",
+        "body": "Dr Noel Villaroman works for the UN, providing advice on international legal protection of ethnic and religious minorities. His training as a PhD in Law researcher at Monash equipped him with the knowledge and skills required for his current job. He believes that more than anything else, patience, diligence, thoroughness and precision traits that he honed during his PhD candidature, are proving to be of great use in the real world.",
+        "_classes": ""
+      },
+      {
+        "title": "Medicine",
+        "body": "Dr Hannah Kirk completed a PhD at the Faculty of Medicine, Nursing and Health Sciences. During her PhD, Hannah (in collaboration with her supervisor Professor Kim Cornish) created a gaming technology known as the TALI Attention Training Program, which assists children with developmental disabilities. After completing her PhD, Hannah was appointed the Chief Research Officer at Avexa Limited, a medtech company that acquired the TALI technology that Hannah created.",
+        "_classes": ""
+      },
+      {
+        "title": "Science",
+        "body": "Dr Nurin Veis completed a PhD at the Faculty of Science in Biochemistry. She is regarded as one of the world's leading curators of human biology and medicine. She is now the Manager of Scienceworks (Museum Victoria).",
+        "_classes": ""
+      },
+      {
+        "title": "Engineering",
+        "body": "Dr Daniel Edgington-Mitchell was awarded his PhD from Monash University in 2013. He now works as an academic in the Department of Mechanical and Aerospace Engineering at Monash University, and nurtures the next generation of researchers.",
+        "_classes": ""
+      },
+      {
+        "title": "Education",
+        "body": "Professor Greg Leigh AO completed his PhD at the Faculty of Education in 1995. He now runs the Renwick Centre (what was the Royal Institute for the Deaf and the blind). He has an order of Australia and has made significant contributions to education of those with a sensory impairment in Australia.",
+        "_classes": ""
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
   }
 ]

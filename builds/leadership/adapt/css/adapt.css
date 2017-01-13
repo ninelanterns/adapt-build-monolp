@@ -4735,6 +4735,30 @@ button[disabled="disabled"] {
     padding: 53.33333333px 0 0;
   }
 }
+.confidenceSlider-component .slider-scale-labels {
+  height: 30px;
+}
+.confidenceSlider-component .slider-scale-start {
+  width: 33%;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  text-align: left;
+}
+.confidenceSlider-component .slider-scale-mid {
+  width: 33%;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  text-align: center;
+}
+.confidenceSlider-component .slider-scale-end {
+  width: 33%;
+  height: 30px;
+  line-height: 30px;
+  float: right;
+  text-align: right;
+}
 .drawer {
   background-color: #0076b5;
   color: #ffffff;
@@ -6591,6 +6615,18 @@ select {
 }
 .transparent-background {
   background-color: transparent;
+}
+.white-background .slider-component .slider-scale-number:hover,
+.white-background .confidenceSlider-component .slider-scale-number:hover {
+  color: #686a6c;
+}
+.white-background .slider-component .slider-scaler-wrapper .slider-scaler,
+.white-background .confidenceSlider-component .slider-scaler-wrapper .slider-scaler {
+  background-color: #686a6c;
+}
+.white-background .slider-component .slider-line,
+.white-background .confidenceSlider-component .slider-line {
+  background-color: #686a6c;
 }
 .mejs-overlay-button {
   background-image: none !important;
