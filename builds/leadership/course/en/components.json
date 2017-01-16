@@ -685,5 +685,903 @@
     "_pageLevelProgress": {
       "_isEnabled": true
     }
+  },
+
+
+
+
+
+
+
+
+
+
+  {
+    "_id": "c-95",
+    "_parentId": "b-95",
+    "_type": "component",
+    "_component": "media",
+    "_classes": "",
+    "_layout": "full",
+    "_setCompletionOn": "play",
+    "_useClosedCaptions": true,
+    "_allowFullScreen": true,
+    "title": "What do we want?",
+    "displayTitle": "What do we want?",
+    "body": "What do people expect from their leaders? Effective communication, active listening, interpersonal skills, empowerment? Let's hear what some of our graduate researchers want from their leaders?",
+    "instruction": "Select play to find out.",
+    "_media": {
+      "mp4": "course/en/video/c-00.mp4",
+      "poster": "course/en/video/c-00.jpg"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-100",
+    "_parentId": "b-100",
+    "_type": "component",
+    "_component": "mcq",
+    "_classes": "",
+    "_layout": "full",
+    "_attempts": 1,
+    "_shouldDisplayAttempts": false,
+    "_questionWeight": 1,
+    "_isRandom": true,
+    "_selectable": 7,
+    "_canShowModelAnswer": true,
+    "_canShowMarking": true,
+    "_recordInteraction":true,
+    "title": "What matters to you?",
+    "displayTitle": "What matters to you?",
+    "body": "What do you believe the characteristics of a good leader are? What type of leader do you want to be?  Successful leaders demonstrate particular skills and attributes. Which of these are important to you?",
+    "instruction": "Select one or more from the following options and select submit.",
+    "_items": [
+      {
+        "text": "Being honest",
+        "_shouldBeSelected": true
+      },
+      {
+        "text": "Coaching, mentoring, role modelling",
+        "_shouldBeSelected": true
+      },
+      {
+        "text": "Being flexible in approach",
+        "_shouldBeSelected": true
+      },
+      {
+        "text": "Making decisions and solving problems",
+        "_shouldBeSelected": true
+      },
+      {
+        "text": "Caring about people",
+        "_shouldBeSelected": true
+      },
+      {
+        "text": "Competent",
+        "_shouldBeSelected": true
+      },
+      {
+        "text": "Forward-looking",
+        "_shouldBeSelected": true
+      }
+    ],
+    "_feedback":{
+      "correct": "While leadership is easy to explain, leadership is not so easy to practice. Few people are born to be leaders. Most of us need to practise being a good leader. That's why taking the time to identify leadership qualities and skills is an important step in your leadership development. Select the <strong>What makes a successful leader?</strong> document and the <strong>Leadership competencies</strong> article from the Resources menu. These delve more into key leadership skills and attributes.",
+      "_incorrect": {
+        "notFinal": "",
+        "final": "While leadership is easy to explain, leadership is not so easy to practice. Few people are born to be leaders. Most of us need to practise being a good leader. That's why taking the time to identify leadership qualities and skills is an important step in your leadership development. Select the <strong>What makes a successful leader?</strong> document and the <strong>Leadership competencies</strong> article from the Resources menu. These delve more into key leadership skills and attributes."
+      },
+      "_partlyCorrect": {
+        "notFinal": "",
+        "final": "While leadership is easy to explain, leadership is not so easy to practice. Few people are born to be leaders. Most of us need to practise being a good leader. That's why taking the time to identify leadership qualities and skills is an important step in your leadership development. Select the <strong>What makes a successful leader?</strong> document and the <strong>Leadership competencies</strong> article from the Resources menu. These delve more into key leadership skills and attributes."
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "Submit",
+        "ariaLabel": "Select here to submit your answer."
+      },
+      "_reset": {
+        "buttonText": "Reset",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "Correct Answer",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "My Answer",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "Show feedback",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "attempts remaining",
+      "remainingAttemptText": "final attempt"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-105",
+    "_parentId": "b-105",
+    "_type": "component",
+    "_component": "accordion",
+    "_classes": "",
+    "_layout": "full",
+    "title": "How to lead",
+    "displayTitle": "How to lead",
+    "body": "So what do the experts think? A synthesis of leadership literature suggests that there are some core characteristics that are found in good leaders. These qualities can be developed or may be naturally part of their personality.",
+    "instruction": "Select each heading to find out more.",
+    "_items": [
+      {
+        "title": "Core values and clear vision",
+        "body": "Leaders have a set of core values aligned with their own or organisation's vison. Great leaders display both their values and their ethics in their leadership approach and actions. They ensure their vision and direction is one that other people want to share and follow."
+      },
+      {
+        "title": "Pro social behaviour",
+        "body": "Leaders are concerned with the rights, feelings and needs of others; they believe people are important. They co-operate with others to achieve goals and assist people in developing to their full potential. Integrity is key to their success. They embody honesty, effort, reliability and humility when collaborating and communicating with others."
+      },
+      {
+        "title": "Inspire others",
+        "body": "They inspire others to achieve common goals. How? Enthusiasm, passion, communication and confidence. Leaders who convey confidence, dedication and integrity motivate and encourage the best efforts from team members, colleagues, friends or family."
+      },
+      {
+        "title": "Resilience",
+        "body": "People look to leaders in time of crisis or uncertainty. Good leaders show a high resilience to obstacles and stress. They are optimistic and portray confidence and a positive demeanour. They remain level-headed and composed and lead people to a solution."
+      },
+      {
+        "title": "Creative and innovative",
+        "body": "Good leaders develop creative and innovative solutions; they challenge the status quo. They anticipate trends, take risks and explore opportunities in the achievement of goals. They also collaborate with others and provide opportunities for them to express ideas."
+      },
+      {
+        "title": "Good decision makers",
+        "body": "Often leaders must make tough decisions; decisions that require a firmness, authority, and finality that will not please everyone. Good leaders make decisions based on logic and fact and gain the confidence of others. They also know when it's important to foster collaborative decision making."
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-110",
+    "_parentId": "b-110",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "The key to leading",
+    "displayTitle": "The key to leading",
+    "body": "While some people seem to have a natural tendency to leadership qualities, it does not mean that they will be good leaders, or that others will be lessor leaders.<br><br>Good leaders are followed because people trust and respect them, rather than because of specific skills they possess. It’s time to identify a leader who inspires you. Select your <strong>LDP</strong> from the Resources menu to complete the activity: <strong>The key to leading.</strong>",
+    "instruction": "",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+  {
+    "_id": "c-115",
+    "_parentId": "b-115",
+    "_type": "component",
+    "_component": "media",
+    "_classes": "",
+    "_layout": "full",
+    "_setCompletionOn": "play",
+    "_useClosedCaptions": true,
+    "_allowFullScreen": true,
+    "title": "What do the experts say?",
+    "displayTitle": "What do the experts say?",
+    "body": "Leadership is quite complex. Behaviours, personality, influence, ethics and situation all play some part in how leadership is defined and practised. ",
+    "instruction": "Select Play to find out more.",
+    "_media": {
+      "mp4": "course/en/video/c-00.mp4",
+      "poster": "course/en/video/c-00.jpg"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-120",
+    "_parentId": "b-120",
+    "_type": "component",
+    "_component": "hotgraphic",
+    "_classes": "",
+    "_layout": "full",
+    "_setCompletionOn": "allItems",
+    "_canCycleThroughPagination": false,
+    "_hidePagination": false,
+    "_useGraphicsAsPins": false,
+    "title": "Get to know the theory",
+    "displayTitle": "Get to know the theory",
+    "body": "So, what makes the leader stand apart from the crowd? Is it their characteristics and behaviours? Is it their leadership style? Is it based on the relationships they form? What does the theory tell us?",
+    "instruction": "Select the icons to find out about each leadership theory.",
+    "mobileInstruction": "Select the arrows and then the plus icons to find out about each leadership theory.",
+    "_graphic": {
+      "src": "course/en/images/c-120.jpg",
+      "alt": ""
+    },
+    "_items": [
+      {
+        "title": "'Great man'",
+        "body": "Have you ever heard someone being described as a 'born leader'? The 'Great Man' theory assumes that leaders are born with innate qualities and are destined to lead. The term 'man' was intentional, since at that time, leadership was a concept that was primarily male, military and Western.",
+        "_graphic": {
+          "src": "course/en/images/c-120-1.jpg",
+          "alt": "",
+          "_classes": ""
+        },
+        "strapline": "'Great man'",
+        "_classes": "",
+        "_top": 10,
+        "_left": 10
+      },
+      {
+        "title": "Trait theories",
+        "body": "Successful leaders exhibit specific traits -  they're born with extraversion, integrity and courage. The lists of traits are many and continue to be produced. They draw on virtually all the adjectives in the dictionary, which describe some positive or virtuous human attribute, from ambition to zest for life.",
+        "_graphic": {
+          "src": "course/en/images/c-120-2.jpg",
+          "alt": "",
+          "_classes": ""
+        },
+        "strapline": "Trait theories",
+        "_classes": "",
+        "_top": 10,
+        "_left": 20
+      },
+      {
+        "title": "Behaviourist theories",
+        "body": "Leaders are made, not born – they can learn leadership through teaching and observation. This theory concentrates on what leaders actually do rather than on their traits or source of power. Different patterns of behaviour are observed and categorised as 'styles of leadership'.",
+        "_graphic": {
+          "src": "course/en/images/c-120-3.jpg",
+          "alt": "",
+          "_classes": ""
+        },
+        "strapline": "Behaviourist theories",
+        "_classes": "",
+        "_top": 10,
+        "_left": 30
+      },
+      {
+        "title": "Situational leadership",
+        "body": "Which leadership style does the situation call for? Situational theories propose that leaders choose the best course of action based on the situation at hand. This means not one leadership style is suitable in all situations. Whilst some situations may require an autocratic style, others may need a more participative approach.",
+        "_graphic": {
+          "src": "course/en/images/c-120-4.jpg",
+          "alt": "",
+          "_classes": ""
+        },
+        "strapline": "Situational leadership",
+        "_classes": "",
+        "_top": 10,
+        "_left": 40
+      },
+      {
+        "title": "Contingency theory",
+        "body": "It's not just about your leadership style! Effective leadership is contingent or dependent on various other situational factors. The leader's capabilities, personality and preferred leadership style, along with the behaviours of followers, all play a part in the leader's success.",
+        "_graphic": {
+          "src": "course/en/images/c-120-5.jpg",
+          "alt": "",
+          "_classes": ""
+        },
+        "strapline": "Contingency theory",
+        "_classes": "",
+        "_top": 10,
+        "_left": 50
+      },
+      {
+        "title": "Transactional theory",
+        "body": "Transactional theories focus on the relationship between leader and followers. It assumes there's a form of 'contract' in place, where the leader issues the assigned work, praises or criticises, rewards or punishes the followers for their commitment, work and loyalty.",
+        "_graphic": {
+          "src": "course/en/images/c-120-6.jpg",
+          "alt": "",
+          "_classes": ""
+        },
+        "strapline": "Transactional theory",
+        "_classes": "",
+        "_top": 10,
+        "_left": 60
+      },
+      {
+        "title": "Transformational theory",
+        "body": "It's all about change. Leaders inspire others to follow, support and be part of a vision. Tasks and work are flexible and followers take responsibility for new ideas. Passion, enthusiasm and energy are key to the leaders' success. People follow because of their connection to the leader and the vision, not because they have to.",
+        "_graphic": {
+          "src": "course/en/images/c-120-7.jpg",
+          "alt": "",
+          "_classes": ""
+        },
+        "strapline": "Transformational theory",
+        "_classes": "",
+        "_top": 10,
+        "_left": 70
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-125",
+    "_parentId": "b-125",
+    "_type": "component",
+    "_component": "matching",
+    "_classes": "",
+    "_layout": "full",
+    "_attempts": 1,
+    "_questionWeight": 1,
+    "_canShowModelAnswer": true,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": true,
+    "title": "Transformational or transactional leadership?",
+    "displayTitle": "Transformational or transactional leadership?",
+    "body": "Is one better than the other? In this modern age, a leader is someone that energises people to action, develops followers into leaders, and transforms others into agents of change. Let's look into transformational leadership in more detail. How does it differ from transactional leadership?",
+    "instruction": "Consider the statements below. Select the leadership theory it represents and select Submit.",
+    "placeholder": "Select an option",
+    "_items": [
+      {
+        "text": "Responsive leadership that mainly deals with present issues.",
+        "_options": [
+          {
+            "text": "Transformational",
+            "_isCorrect": false
+          },
+          {
+            "text": "Transactional",
+            "_isCorrect": true
+          }
+        ]
+      },
+      {
+        "text": "Leaders create learning opportunities to stimulate followers to solve problems.",
+        "_options": [
+          {
+            "text": "Transformational",
+            "_isCorrect": true
+          },
+          {
+            "text": "Transactional",
+            "_isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "It relies on a mutually beneficial relationship.",
+        "_options": [
+          {
+            "text": "Transformational",
+            "_isCorrect": false
+          },
+          {
+            "text": "Transactional",
+            "_isCorrect": true
+          }
+        ]
+      },
+      {
+        "text": "Motivates followers by encouraging them to put group interests first.",
+        "_options": [
+          {
+            "text": "Transformational",
+            "_isCorrect": true
+          },
+          {
+            "text": "Transactional",
+            "_isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Preoccupied with purposes and values, morals, and ethics.",
+        "_options": [
+          {
+            "text": "Transformational",
+            "_isCorrect": true
+          },
+          {
+            "text": "Transactional",
+            "_isCorrect": false
+          }
+        ]
+      }
+    ],
+    "_feedback": {
+      "correct": "That's right. Transactional leadership involves exchanging rewards for loyalty and performance. Transformational leadership works on building trust and increasing motivation. Rather than elevating one particular theory over another, researchers talk of the need for an integrative approach. Select <strong>Leadership theories</strong> from the Resources menu. This article provides you with further insight into each of the theories. Then visit your <strong>LDP</strong> to complete the activity: <strong>Making sense of leadership theory.</strong>",
+      "_partlyCorrect": {
+        "final": "That's not quite right. Transactional leadership involves exchanging rewards for loyalty and performance. Transformational leadership works on building trust and increasing motivation. Rather than elevating one particular theory over another, researchers talk of the need for an integrative approach. Select <strong>Leadership theories</strong> from the Resources menu. This article provides you with further insight into each of the theories. Then visit your <strong>LDP</strong> to complete the activity: <strong>Making sense of leadership theory.</strong>"
+      },
+      "_incorrect": {
+        "final": "That's not right. Transactional leadership involves exchanging rewards for loyalty and performance. Transformational leadership works on building trust and increasing motivation. Rather than elevating one particular theory over another, researchers talk of the need for an integrative approach. Select <strong>Leadership theories</strong> from the Resources menu. This article provides you with further insight into each of the theories. Then visit your <strong>LDP</strong> to complete the activity: <strong>Making sense of leadership theory.</strong>"
+      }
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+  {
+    "_id": "c-130",
+    "_parentId": "b-130",
+    "_type": "component",
+    "_component": "media",
+    "_classes": "",
+    "_layout": "full",
+    "_setCompletionOn": "play",
+    "_useClosedCaptions": true,
+    "_allowFullScreen": true,
+    "title": "See styles in action",
+    "displayTitle": "See styles in action",
+    "body": "How do people approach leadership situations? It all depends on the circumstances, position, beliefs, preferences and values of the people involved. Let's see the coaching style in action.",
+    "instruction": "Select play.",
+    "_media": {
+      "mp4": "course/en/video/c-00.mp4",
+      "poster": "course/en/video/c-00.jpg"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-135",
+    "_parentId": "b-135",
+    "_type": "component",
+    "_component": "accordion",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Explore the choices",
+    "displayTitle": "Explore the choices",
+    "body": "Leading a team? Coaching a sports team? Trying to influence a peer? Whatever the situation, understanding leadership styles and their impact, can help you get the right results. There are many different models of leadership styles, from those that look at how much 'control' you want to others based around 'potential'. One of the best-known models is Daniel Goleman's Six Leadership Styles.",
+    "instruction": "Select each heading to learn more about each style.",
+    "_items": [
+      {
+        "title": "Coercive – \"Do what I tell you\"",
+        "body": "Leaders show initiative, self-control and demand immediate obedience. Is there a time and a place for such leadership? It's most effective in times of crisis, such as in a company turnaround, or during an actual emergency. It can also help control a problem team member, when everything else has failed. It doesn't encourage initiative, and often has a negative effect on how people feel."
+      },
+      {
+        "title": "Pacesetting - \"Do as I do now\"",
+        "body": "Leaders expect and model excellence and self-direction. They lead by example, show initiative and conscientiousness, and ask the same from everyone. Works well with a highly-competent and well-motivated team, and when quick results are the goal. What are the consequences? It can decrease team morale – as people feel restricted and overwhelmed by the leader's demands for excellence."
+      },
+      {
+        "title": "Authoritative – \"Come with me\"",
+        "body": "Leaders are high in self-confidence and empathy. They act as a change catalyst by drawing people into the vision and engaging them with the future. Promotes innovation and allows people to experiment and take calculated risks. It works best when teams need a new vision or clear direction. It's not the best fit when the leader is working with a team of experts who know more than them."
+      },
+      {
+        "title": "Affiliative – \"People come first\"",
+        "body": "Leaders value and create emotional bonds and harmony. They demonstrate empathy, strong communication skills, and are very good at building relationships. Works best in times of stress, when teams need to heal from a difficult experience, or need to rebuild trust. What about the team goals? It's not very goal-oriented, so using it for a long period of time won't necessarily 'get the job done'."
+      },
+      {
+        "title": "Democratic – \"What do you think?\"",
+        "body": "Leaders build consensus through participation. They show high levels of collaboration, team leadership and strong communication skills. Most effective when the leader needs the team to own and buy into a decision, plan, or project. It's not the best choice in an emergency situation, as it takes quite a bit of time for momentum to build and the team to reach a consensus."
+      },
+      {
+        "title": "Coaching – \"Try this\"",
+        "body": "Leaders develop people. They allow people to try different approaches to problem solving and achieving a goal. They show high levels of empathy, self-awareness and skills in developing others. It's useful when employees show initiative and an organisation values long-term staff development. It may not work well if people are defiant and unwilling to change or learn, or if the leader lacks proficiency."
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-140",
+    "_parentId": "b-140",
+    "_type": "component",
+    "_component": "matching",
+    "_classes": "",
+    "_layout": "full",
+    "_attempts": 1,
+    "_questionWeight": 1,
+    "_canShowModelAnswer": true,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": true,
+    "title": "Make the call",
+    "displayTitle": "Make the call",
+    "body": "Successful leaders adapt and adjust their leadership style to suit the situation, the people and the outcome they're looking for. Will you be able to lead the way and make the right call? Reflect on the situations below and choose the leadership style you feel will be most appropriate and deliver the best results.",
+    "instruction": "Select your response from the options below and select Submit.",
+    "placeholder": "Select an option",
+    "_items": [
+      {
+        "text": "The research team is competent, but the deadline is looming and you need them to step it up a notch.",
+        "_options": [
+          {
+            "text": "Pacesetting",
+            "_isCorrect": true
+          },
+          {
+            "text": "Coaching",
+            "_isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "You would like to implement a new research direction and convince the team to follow your lead.",
+        "_options": [
+          {
+            "text": "Coercive",
+            "_isCorrect": false
+          },
+          {
+            "text": "Authoritative",
+            "_isCorrect": true
+          }
+        ]
+      },
+      {
+        "text": "The team isn't collaborating. Everyone seems to be doing their own thing and internal rifts are popping up.",
+        "_options": [
+          {
+            "text": "Affiliative",
+            "_isCorrect": true
+          },
+          {
+            "text": "Pacesetting",
+            "_isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "You're starting a new project. Your team is experienced and you're trying to get them to come up with fresh ideas.",
+        "_options": [
+          {
+            "text": "Pacesetting",
+            "_isCorrect": true
+          },
+          {
+            "text": "Democratic",
+            "_isCorrect": false
+          }
+        ]
+      }
+    ],
+    "_feedback": {
+      "correct": "That's right. You seem to have a grip on the leadership styles and their use. Effective leaders adopt and exhibit many styles, particularly the authoritative, democratic, affiliative and coaching styles - as they have an overall positive impact on climate and performance. Select the Leadership that gets results article from the Resources menu to learn more about Goleman's leadership style framework.",
+      "_partlyCorrect": {
+        "final": "That's not right. Pacesetting works well if you would like to get quick results from a highly motivated and competent team. Changing team direction is best suited to an authoritative approach. The affiliative style helps to heal rifts in a team or to motivate people during stressful circumstances. The democratic approach draws on people's knowledge and skills, and creates a group commitment to the resulting goals. Select the Leadership that gets results article from the Resources menu to learn more about Goleman's leadership style framework."
+      },
+      "_incorrect": {
+        "final": "That's not quite right. Pacesetting works well if you would like to get quick results from a highly motivated and competent team. Changing team direction is best suited to an authoritative approach. The affiliative style helps to heal rifts in a team or to motivate people during stressful circumstances. The democratic approach draws on people's knowledge and skills, and creates a group commitment to the resulting goals. Select the Leadership that gets results article from the Resources menu to learn more about Goleman's leadership style framework."
+      }
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-145",
+    "_parentId": "b-145",
+    "_type": "component",
+    "_component": "media",
+    "_classes": "",
+    "_layout": "full",
+    "_setCompletionOn": "play",
+    "_useClosedCaptions": true,
+    "_allowFullScreen": true,
+    "title": "Leverage the differences",
+    "displayTitle": "Leverage the differences",
+    "body": "Understanding different personalities, perspectives and motivations (including your own), is at the heart of learning to lead, and choosing the appropriate leadership style. The most effective leaders don't use just one leadership style, they're able to move between styles, choosing the one that best suits the situation. They're responsive; they adapt by leveraging different qualities to drive their teams forward and gain a positive outcome.",
+    "instruction": "Select Play to learn more.",
+    "_media": {
+      "mp4": "course/en/video/c-00.mp4",
+      "poster": "course/en/video/c-00.jpg"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+  {
+    "_id": "c-150",
+    "_parentId": "b-150",
+    "_type": "component",
+    "_component": "accordion",
+    "_classes": "",
+    "_layout": "full",
+    "title": "The keys to emotional intelligence",
+    "displayTitle": "The keys to emotional intelligence",
+    "body": "So how do leaders show emotional intelligence? Can they manage themselves and their relationships effectively? When under stress, do they lose control, or do they calmly assess the situation? Overcoming stress, identifying and reacting well to emotions, and being aware of how you impact others is described as emotional intelligence.",
+    "instruction": "Select each heading to find out more.",
+    "_items": [
+      {
+        "title": "Self-awareness",
+        "body": "Self-awareness is the ability to recognise your own emotions and values and how they impact others. Do you have a strong and positive sense of self-worth? Do you take the time to reflect on why you make certain decisions? Do you evaluate your strengths and limitations? People with a strong understanding of who they are and what they want to work on, show high emotional intelligence."
+      },
+      {
+        "title": "Self-management",
+        "body": "What are the keys to self-management? Great leaders practise self-control; they think before they act. They control or redirect disruptive emotions and adapt to changing situations. They work to keep the team moving in a positive direction by being trustworthy, conscientious and ready to seize opportunities. People with a strong sense of commitment and personal accountability, can create a unified and positive team culture."
+      },
+      {
+        "title": "Social awareness",
+        "body": "Empathy is key! People who show social awareness take the time to understand the wants, needs, and viewpoints of those around them. Building social awareness involves taking an active interest in what others have to say, removing judgements and stereotypes and improving personal connections. Positive and productive relationships and networks are the result."
+      },
+      {
+        "title": "Social skill",
+        "body": "We all want a leader who can manage conflict, communicate well and help others develop and shine. Leaders who excel in social skills are good at handling other people's emotions. They collaborate with others and think beyond their own success. They inspire a shared direction and vision, initiate new ideas and influence others to follow their lead."
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-155",
+    "_parentId": "b-155",
+    "_type": "component",
+    "_component": "media",
+    "_classes": "",
+    "_layout": "full",
+    "_setCompletionOn": "play",
+    "_useClosedCaptions": true,
+    "_allowFullScreen": true,
+    "title": "Eyes open!",
+    "displayTitle": "Eyes open!",
+    "body": "Emotional intelligence is a skill that can be developed. Those who lack emotional intelligence simply need to become more aware of their emotions and the emotions of others. They also need to learn how to pick up on signs or cues and respond to them effectively.",
+    "instruction": "Select Play.",
+    "_media": {
+      "mp4": "course/en/video/c-00.mp4",
+      "poster": "course/en/video/c-00.jpg"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-160",
+    "_parentId": "b-160",
+    "_type": "component",
+    "_component": "mcq",
+    "_classes": "",
+    "_layout": "full",
+    "_attempts": 1,
+    "_shouldDisplayAttempts": false,
+    "_questionWeight": 1,
+    "_isRandom": true,
+    "_selectable": 1,
+    "_canShowModelAnswer": true,
+    "_canShowMarking": true,
+    "_recordInteraction":true,
+    "title": "How did Janice go?",
+    "displayTitle": "How did Janice go?",
+    "body": "What levels of emotional intelligence were used? It seems there were things that Janice could've have improved on. What went wrong?",
+    "instruction": "What levels of emotional intelligence were used? It seems there were things that Janice could've have improved on. What went wrong?",
+    "_items": [
+      {
+        "text": "Used incorrect name",
+        "_shouldBeSelected": true
+      },
+      {
+        "text": "Openly talked about fudging the research data",
+        "_shouldBeSelected": true
+      },
+      {
+        "text": "Failed to notice how her research impacted others",
+        "_shouldBeSelected": true
+      },
+      {
+        "text": "Referred to her notes often",
+        "_shouldBeSelected": true
+      },
+      {
+        "text": "Focused on negative impacts",
+        "_shouldBeSelected": true
+      }
+    ],
+    "_feedback":{
+      "correct": "That's right. Janice showed a lack of emotional intelligence. She did not show a solid understanding of how her opinions and actions affected the other person. She also lacked confidence and was openly dishonest. Emotional intelligence is a powerful tool. It can help you improve relationships, achieve your goals and create a productive and positive working environment. What can you do to improve yours? Select your <strong>LDP</strong> from the Resources menu to complete the activity: <strong>Build your emotional intelligence.</strong>",
+      "_incorrect": {
+        "notFinal": "",
+        "final": "That's not right. Janice showed a lack of emotional intelligence. She did not show a solid understanding of how her opinions and actions affected the other person. She also lacked confidence and was openly dishonest. Emotional intelligence is a powerful tool. It can help you improve relationships, achieve your goals and create a productive and positive working environment. What can you do to improve yours? Select your <strong>LDP</strong> from the Resources menu to complete the activity: <strong>Build your emotional intelligence.</strong>"
+      },
+      "_partlyCorrect": {
+        "notFinal": "",
+        "final": "That's not quite right. Janice showed a lack of emotional intelligence. She did not show a solid understanding of how her opinions and actions affected the other person. She also lacked confidence and was openly dishonest. Emotional intelligence is a powerful tool. It can help you improve relationships, achieve your goals and create a productive and positive working environment. What can you do to improve yours? Select your <strong>LDP</strong> from the Resources menu to complete the activity: <strong>Build your emotional intelligence.</strong>"
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "Submit",
+        "ariaLabel": "Select here to submit your answer."
+      },
+      "_reset": {
+        "buttonText": "Reset",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "Correct Answer",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "My Answer",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "Show feedback",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "attempts remaining",
+      "remainingAttemptText": "final attempt"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-165",
+    "_parentId": "b-165",
+    "_type": "component",
+    "_component": "media",
+    "_classes": "",
+    "_layout": "full",
+    "_setCompletionOn": "play",
+    "_useClosedCaptions": true,
+    "_allowFullScreen": true,
+    "title": "The two roles",
+    "displayTitle": "The two roles",
+    "body": "Managers work mainly with processes, models and systems and manage others to do the job well. Leaders focus on where a team is headed, what their vision should be and motivating and empowering people to achieve it.",
+    "instruction": "Select Play to find out more.",
+    "_media": {
+      "mp4": "course/en/video/c-00.mp4",
+      "poster": "course/en/video/c-00.jpg"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-170",
+    "_parentId": "b-170",
+    "_type": "component",
+    "_component": "narrative",
+    "_classes": "",
+    "_layout": "full",
+    "_setCompletionOn": "allItems",
+    "_hasNavigationInTextArea": false,
+    "title": "What's the difference?",
+    "displayTitle": "What's the difference?",
+    "body": "Managers and leaders use different styles to motivate people to achieve short and long-term objectives. Leaders have followers, people who follow them voluntarily. Managers have subordinates, people who work for them. Taking the time to think about what it means to manage, and what it means to lead, can help us be better at both.",
+    "instruction": "Select the arrows to find out the key differences.",
+    "mobileInstruction": "Select the arrows and then the plus icons to find out the key differences.",
+    "_items": [
+      {
+        "title": "The manager...",
+        "body": "<ul><li>Administers</li><li>Maintains</li><li>Focuses on systems and structure</li><li>Controls systems and people</li><li>Accepts the status quo</li><li>Has a short-term view</li><li>Manages tasksshort-term view</li><li>Manages tasks</li></ul>",
+        "_graphic": {
+          "src": "course/en/images/c-170-1.jpg",
+          "alt": ""
+        },
+        "strapline": "The manager..."
+      },
+      {
+        "title": "The leader...",
+        "body": "<ul><li>Innovates</li><li>Develops</li><li>Focuses on people and emotions</li><li>Inspires people</li><li>Challenges the status quo</li><li>Has a long-term perspective</li><li>Leads people</li></ul>",
+        "_graphic": {
+          "src": "course/en/images/c-170-2.jpg",
+          "alt": ""
+        },
+        "strapline": "The leader..."
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-175",
+    "_parentId": "b-175",
+    "_type": "component",
+    "_component": "mcq",
+    "_classes": "",
+    "_layout": "full",
+    "_attempts": 1,
+    "_shouldDisplayAttempts": false,
+    "_questionWeight": 1,
+    "_isRandom": true,
+    "_selectable": 1,
+    "_canShowModelAnswer": true,
+    "_canShowMarking": true,
+    "_recordInteraction":true,
+    "title": "Do managers lead?",
+    "displayTitle": "Do managers lead?",
+    "body": "Are all managers leaders? Are all leaders managers? Is a good manager automatically a good leader? Reflect on the statements below and select which of the following you believe to be true regarding leadership and management.",
+    "instruction": "Select one or more of the following options and select Submit.",
+    "_items": [
+      {
+        "text": "Management and leadership are not mutually exclusive.",
+        "_shouldBeSelected": true
+      },
+      {
+        "text": "Most managers never need to act as leaders.",
+        "_shouldBeSelected": false
+      },
+      {
+        "text": "Leadership is not only a characteristic of people who hold positions of authority.",
+        "_shouldBeSelected": true
+      },
+      {
+        "text": "Good leaders are always bad managers.",
+        "_shouldBeSelected": false
+      },
+      {
+        "text": "Leaders are often more comfortable with risk.",
+        "_shouldBeSelected": true
+      },
+      {
+        "text": "It's not possible to be a leader unless you have formal management responsibilities.",
+        "_shouldBeSelected": false
+      },
+      {
+        "text": "To be a leader, you need to have followers.",
+        "_shouldBeSelected": false
+      },
+      {
+        "text": "Followers never become leaders.",
+        "_shouldBeSelected": false
+      }
+    ],
+    "_feedback":{
+      "correct": "That's right. It's possible to be both a manager and a leader, and sometimes both at the same time. Sometimes you need to ensure that you're managing goals, and other times, you're setting new goals and inspiring new ways of thinking. It's also possible to be a leader even when you have no formal management responsibilities. The key distinction is in whether you have followers, people who have chosen to follow your lead. Select the article <strong>Managers and Leaders: Are they Different?</strong> from the Resources tab to explore the potential differences in more detail.",
+      "_incorrect": {
+        "notFinal": "",
+        "final": "That's not right. It's possible to be both a manager and a leader, and sometimes both at the same time. Sometimes you need to ensure that you're managing goals, and other times, you're setting new goals and inspiring new ways of thinking. It's also possible to be a leader even when you have no formal management responsibilities. The key distinction is in whether you have followers, people who have chosen to follow your lead. Select the article <strong>Managers and Leaders: Are they Different?</strong> from the Resources tab to explore the potential differences in more detail."
+      },
+      "_partlyCorrect": {
+        "notFinal": "",
+        "final": "That's not quite right. It's possible to be both a manager and a leader, and sometimes both at the same time. Sometimes you need to ensure that you're managing goals, and other times, you're setting new goals and inspiring new ways of thinking. It's also possible to be a leader even when you have no formal management responsibilities. The key distinction is in whether you have followers, people who have chosen to follow your lead. Select the article <strong>Managers and Leaders: Are they Different?</strong> from the Resources tab to explore the potential differences in more detail."
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "Submit",
+        "ariaLabel": "Select here to submit your answer."
+      },
+      "_reset": {
+        "buttonText": "Reset",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "Correct Answer",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "My Answer",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "Show feedback",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "attempts remaining",
+      "remainingAttemptText": "final attempt"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
   }
 ]
