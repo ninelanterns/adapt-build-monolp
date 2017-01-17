@@ -62,70 +62,7 @@ define("templates",["handlebars"],function(Handlebars){Handlebars.templates={};H
     + "    </div>\n</div>\n";
 },"usePartial":true,"useData":true});Handlebars.templates['blank']=Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     return "<div class=\"blank-inner component-inner\"></div>\n";
-},"useData":true});Handlebars.templates['confidenceSlider']=Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
-    return "tabindex=\"0\"";
-},"3":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return " disabled "
-    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},(depth0 != null ? depth0._isComplete : depth0),{"name":"if","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
-},"4":function(container,depth0,helpers,partials,data) {
-    return " complete";
-},"6":function(container,depth0,helpers,partials,data) {
-    var helper;
-
-  return "                    <button tabindex=\"0\" class=\"base slider-scale-number\" data-id=\""
-    + container.escapeExpression(((helper = (helper = helpers.value || (depth0 != null ? depth0.value : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"value","hash":{},"data":data}) : helper)))
-    + "\">"
-    + container.escapeExpression(((helper = (helper = helpers.value || (depth0 != null ? depth0.value : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"value","hash":{},"data":data}) : helper)))
-    + "</button>\n";
-},"8":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},(depth0 != null ? depth0._isCorrect : depth0),{"name":"if","hash":{},"fn":container.program(9, data, 0),"inverse":container.program(11, data, 0),"data":data})) != null ? stack1 : "");
-},"9":function(container,depth0,helpers,partials,data) {
-    return "correct";
-},"11":function(container,depth0,helpers,partials,data) {
-    return "incorrect";
-},"13":function(container,depth0,helpers,partials,data) {
-    var helper;
-
-  return container.escapeExpression(((helper = (helper = helpers._userAnswer || (depth0 != null ? depth0._userAnswer : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"_userAnswer","hash":{},"data":data}) : helper)));
-},"15":function(container,depth0,helpers,partials,data) {
-    var helper;
-
-  return container.escapeExpression(((helper = (helper = helpers._scaleStart || (depth0 != null ? depth0._scaleStart : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"_scaleStart","hash":{},"data":data}) : helper)));
-},"17":function(container,depth0,helpers,partials,data) {
-    return " disabled";
-},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var stack1, helper;
-
-  return "<div class=\"confidence slider-inner component-inner\" role=\"region\" aria-label=\""
-    + container.escapeExpression(container.lambda(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0._globals : depth0)) != null ? stack1._components : stack1)) != null ? stack1._confidenceSlider : stack1)) != null ? stack1.ariaRegion : stack1), depth0))
-    + "\" "
-    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0._globals : depth0)) != null ? stack1._components : stack1)) != null ? stack1._confidenceSlider : stack1)) != null ? stack1.ariaRegion : stack1),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + ">\n"
-    + ((stack1 = container.invokePartial(partials.component,depth0,{"name":"component","data":data,"indent":"    ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + "    <div class=\"slider-widget component-widget "
-    + ((stack1 = helpers.unless.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0._isEnabled : depth0),{"name":"unless","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\">\n        <div class=\"slider-holder clearfix\">\n            <div class=\"slider-scale-labels\">\n                <div class=\"slider-scale-start\" tabindex=\"0\" role=\"region\">"
-    + container.escapeExpression(((helper = (helper = helpers.labelStart || (depth0 != null ? depth0.labelStart : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"labelStart","hash":{},"data":data}) : helper)))
-    + "</div>\n                <div class=\"slider-scale-end\" tabindex=\"0\" role=\"region\">"
-    + container.escapeExpression(((helper = (helper = helpers.labelEnd || (depth0 != null ? depth0.labelEnd : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"labelEnd","hash":{},"data":data}) : helper)))
-    + "</div>\n            </div>\n            <div class=\"slider-scale-numbers clearfix\">\n"
-    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0._items : depth0),{"name":"each","hash":{},"fn":container.program(6, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "                <div class=\"slider-modelranges\"></div>\n                <div class=\"slider-answer component-item-color component-item-text-color\"></div>\n                <div class=\"slider-scale-marker component-item-color component-item-text-color a11y-ignore\" aria-hidden=\"true\" tabindex=\"-1\"></div>\n            </div>\n            <div class=\"slider-scaler-wrapper clearfix\">\n               <div class=\"slider-scaler component-item-color\">\n                  <div class=\"slider-markers\"></div>\n              </div>\n          </div>\n\n            <div class=\"slider-background\">\n                <div class=\"slider-item component-item "
-    + ((stack1 = helpers.unless.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0._isEnabled : depth0),{"name":"unless","hash":{},"fn":container.program(8, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\">\n                  <input type=\"range\" name=\"\" value=\""
-    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},(depth0 != null ? depth0._userAnswer : depth0),{"name":"if","hash":{},"fn":container.program(13, data, 0),"inverse":container.program(15, data, 0),"data":data})) != null ? stack1 : "")
-    + "\" min=\""
-    + container.escapeExpression(((helper = (helper = helpers._scaleStart || (depth0 != null ? depth0._scaleStart : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"_scaleStart","hash":{},"data":data}) : helper)))
-    + "\" max=\""
-    + container.escapeExpression(((helper = (helper = helpers._scaleEnd || (depth0 != null ? depth0._scaleEnd : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"_scaleEnd","hash":{},"data":data}) : helper)))
-    + "\" "
-    + ((stack1 = helpers.unless.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0._isEnabled : depth0),{"name":"unless","hash":{},"fn":container.program(17, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + ">\n                </div>\n            </div>\n        </div>    \n    </div>\n    <div class=\"buttons\">\n    </div>\n</div>\n";
-},"usePartial":true,"useData":true});Handlebars.templates['gmcq']=Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+},"useData":true});Handlebars.templates['gmcq']=Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var stack1;
 
   return " disabled "
@@ -939,107 +876,7 @@ define("templates",["handlebars"],function(Handlebars){Handlebars.templates={};H
     + "\">\n"
     + ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0._items : depth0),{"name":"each","hash":{},"fn":container.program(7, data, 0, blockParams, depths),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "    </div>\n    <div class=\"buttons\">\n    </div>\n</div>\n";
-},"usePartial":true,"useData":true,"useDepths":true});Handlebars.templates['articleBlockSlider-article']=Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "<div class=\"article-inner-top\" style=\"background-image:url("
-    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0._articleBackgroundTop : depth0)) != null ? stack1.src : stack1), depth0))
-    + "); height:"
-    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0._articleBackgroundTop : depth0)) != null ? stack1.height : stack1), depth0))
-    + "px\"></div>\r\n";
-},"3":function(container,depth0,helpers,partials,data) {
-    var stack1, helper;
-
-  return "    <div class=\"article-title\">\r\n        <div class=\"article-title-inner h2\" tabindex=\"0\" role=\"heading\" aria-level=\"2\">\r\n            "
-    + ((stack1 = ((helper = (helper = helpers.displayTitle || (depth0 != null ? depth0.displayTitle : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"displayTitle","hash":{},"data":data}) : helper))) != null ? stack1 : "")
-    + "\r\n        </div>\r\n    </div>\r\n";
-},"5":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "    <div class=\"article-body\">\r\n        <div class=\"article-body-inner\">\r\n            "
-    + ((stack1 = (helpers.a11y_text || (depth0 && depth0.a11y_text) || helpers.helperMissing).call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.body : depth0),{"name":"a11y_text","hash":{},"data":data})) != null ? stack1 : "")
-    + "\r\n        </div>\r\n    </div>\r\n";
-},"7":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "    <div class=\"article-instruction\">\r\n        <div class=\"article-instruction-inner\">\r\n            "
-    + ((stack1 = (helpers.a11y_text || (depth0 && depth0.a11y_text) || helpers.helperMissing).call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.instruction : depth0),{"name":"a11y_text","hash":{},"data":data})) != null ? stack1 : "")
-    + "\r\n        </div>\r\n    </div>\r\n";
-},"9":function(container,depth0,helpers,partials,data) {
-    return " has-arrows";
-},"11":function(container,depth0,helpers,partials,data) {
-    return " has-tabs";
-},"13":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "tabindex=\"0\" aria-label=\""
-    + container.escapeExpression(container.lambda(((stack1 = ((stack1 = (depth0 != null ? depth0._accessibility : depth0)) != null ? stack1._ariaRegions : stack1)) != null ? stack1.articleBlockSlider : stack1), depth0))
-    + "\"";
-},"15":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "style=\"min-height: "
-    + ((stack1 = container.lambda(((stack1 = (depth0 != null ? depth0._articleBlockSlider : depth0)) != null ? stack1._minHeight : stack1), depth0)) != null ? stack1 : "")
-    + "px\"";
-},"17":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "	                <button class=\"base item-button-arrow\" data-block-slider=\"left\" aria-label=\""
-    + container.escapeExpression(container.lambda(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0._globals : depth0)) != null ? stack1._accessibility : stack1)) != null ? stack1._ariaLabels : stack1)) != null ? stack1.previous : stack1), depth0))
-    + "\">\r\n	                    <div class=\"icon icon-controls-left\"></div>\r\n	                </button>\r\n";
-},"19":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "	                <button class=\"base item-button-arrow\" data-block-slider=\"right\" aria-label=\""
-    + container.escapeExpression(container.lambda(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0._globals : depth0)) != null ? stack1._accessibility : stack1)) != null ? stack1._ariaLabels : stack1)) != null ? stack1.next : stack1), depth0))
-    + "\">\r\n	                    <div class=\"icon icon-controls-right\"></div>\r\n	                </button>\r\n";
-},"21":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0._itemButtons : depth0),{"name":"each","hash":{},"fn":container.program(22, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
-},"22":function(container,depth0,helpers,partials,data) {
-    var helper;
-
-  return "	                <button class=\"base item-button "
-    + container.escapeExpression(((helper = (helper = helpers._className || (depth0 != null ? depth0._className : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"_className","hash":{},"data":data}) : helper)))
-    + "\" aria-label=\""
-    + container.escapeExpression(((helper = (helper = helpers._title || (depth0 != null ? depth0._title : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"_title","hash":{},"data":data}) : helper)))
-    + "\" data-block-slider=\"index\" data-block-slider-index=\""
-    + container.escapeExpression(container.lambda((depth0 != null ? depth0._index : depth0), depth0))
-    + "\"><span class=\"item-button-inner\">"
-    + container.escapeExpression(((helper = (helper = helpers._title || (depth0 != null ? depth0._title : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"_title","hash":{},"data":data}) : helper)))
-    + "</span></button>\r\n";
-},"24":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "<div class=\"article-inner-bottom\" style=\"background-image:url("
-    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0._articleBackgroundBottom : depth0)) != null ? stack1.src : stack1), depth0))
-    + "); height:"
-    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0._articleBackgroundBottom : depth0)) != null ? stack1.height : stack1), depth0))
-    + "px\"></div>";
-},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},(depth0 != null ? depth0._articleBackgroundTop : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\r\n<div class=\"article-inner\">\r\n"
-    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.displayTitle : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.body : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.instruction : depth0),{"name":"if","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "    <div class=\"article-block-organise"
-    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},((stack1 = (depth0 != null ? depth0._articleBlockSlider : depth0)) != null ? stack1._hasArrows : stack1),{"name":"if","hash":{},"fn":container.program(9, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},((stack1 = (depth0 != null ? depth0._articleBlockSlider : depth0)) != null ? stack1._hasTabs : stack1),{"name":"if","hash":{},"fn":container.program(11, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\" role=\"region\" "
-    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},((stack1 = ((stack1 = (depth0 != null ? depth0._accessibility : depth0)) != null ? stack1._ariaRegions : stack1)) != null ? stack1.articleBlockSlider : stack1),{"name":"if","hash":{},"fn":container.program(13, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + ">\r\n	    <div class=\"article-block-slider clearfix\" "
-    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},((stack1 = (depth0 != null ? depth0._articleBlockSlider : depth0)) != null ? stack1._minHeight : stack1),{"name":"if","hash":{},"fn":container.program(15, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + ">\r\n	        <div class=\"block-container clearfix\">\r\n\r\n	        </div>\r\n	    </div>\r\n	    <div class=\"article-block-toolbar clearfix\">\r\n	        \r\n	        <div class=\"item-button-container clearfix\">\r\n"
-    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},((stack1 = (depth0 != null ? depth0._articleBlockSlider : depth0)) != null ? stack1._hasArrows : stack1),{"name":"if","hash":{},"fn":container.program(17, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},((stack1 = (depth0 != null ? depth0._articleBlockSlider : depth0)) != null ? stack1._hasArrows : stack1),{"name":"if","hash":{},"fn":container.program(19, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},((stack1 = (depth0 != null ? depth0._articleBlockSlider : depth0)) != null ? stack1._hasTabs : stack1),{"name":"if","hash":{},"fn":container.program(21, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "	            \r\n	        </div>\r\n	         \r\n	    </div>\r\n	</div>\r\n	<div class=\"article-block-bottombar clearfix\"></div>\r\n</div>\r\n\r\n"
-    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},(depth0 != null ? depth0._articleBackgroundBottom : depth0),{"name":"if","hash":{},"fn":container.program(24, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\r\n";
-},"useData":true});Handlebars.templates['languagePickerDrawerView']=Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+},"usePartial":true,"useData":true,"useDepths":true});Handlebars.templates['languagePickerDrawerView']=Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var stack1, helper;
 
   return "        <div class=\"languagepicker-language drawer-item "
@@ -1655,72 +1492,7 @@ define("templates",["handlebars"],function(Handlebars){Handlebars.templates={};H
     + "</button>\n    </div>\n"
     + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},(depth0 != null ? depth0._shouldDisplayAttempts : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "</div>";
-},"useData":true});Handlebars.templates['confidenceSlider']=Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
-    return "tabindex=\"0\"";
-},"3":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return " disabled "
-    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},(depth0 != null ? depth0._isComplete : depth0),{"name":"if","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
-},"4":function(container,depth0,helpers,partials,data) {
-    return " complete";
-},"6":function(container,depth0,helpers,partials,data) {
-    var helper;
-
-  return "                    <button tabindex=\"0\" class=\"base slider-scale-number\" data-id=\""
-    + container.escapeExpression(((helper = (helper = helpers.value || (depth0 != null ? depth0.value : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"value","hash":{},"data":data}) : helper)))
-    + "\">"
-    + container.escapeExpression(((helper = (helper = helpers.value || (depth0 != null ? depth0.value : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"value","hash":{},"data":data}) : helper)))
-    + "</button>\n";
-},"8":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},(depth0 != null ? depth0._isCorrect : depth0),{"name":"if","hash":{},"fn":container.program(9, data, 0),"inverse":container.program(11, data, 0),"data":data})) != null ? stack1 : "");
-},"9":function(container,depth0,helpers,partials,data) {
-    return "correct";
-},"11":function(container,depth0,helpers,partials,data) {
-    return "incorrect";
-},"13":function(container,depth0,helpers,partials,data) {
-    var helper;
-
-  return container.escapeExpression(((helper = (helper = helpers._userAnswer || (depth0 != null ? depth0._userAnswer : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"_userAnswer","hash":{},"data":data}) : helper)));
-},"15":function(container,depth0,helpers,partials,data) {
-    var helper;
-
-  return container.escapeExpression(((helper = (helper = helpers._scaleStart || (depth0 != null ? depth0._scaleStart : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"_scaleStart","hash":{},"data":data}) : helper)));
-},"17":function(container,depth0,helpers,partials,data) {
-    return " disabled";
-},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var stack1, helper;
-
-  return "<div class=\"confidence slider-inner component-inner\" role=\"region\" aria-label=\""
-    + container.escapeExpression(container.lambda(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0._globals : depth0)) != null ? stack1._components : stack1)) != null ? stack1._confidenceSlider : stack1)) != null ? stack1.ariaRegion : stack1), depth0))
-    + "\" "
-    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0._globals : depth0)) != null ? stack1._components : stack1)) != null ? stack1._confidenceSlider : stack1)) != null ? stack1.ariaRegion : stack1),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + ">\n"
-    + ((stack1 = container.invokePartial(partials.component,depth0,{"name":"component","data":data,"indent":"    ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + "    <div class=\"slider-widget component-widget "
-    + ((stack1 = helpers.unless.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0._isEnabled : depth0),{"name":"unless","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\">\n        <div class=\"slider-holder clearfix\">\n            <div class=\"slider-scale-labels\">\n                <div class=\"slider-scale-start\" tabindex=\"0\" role=\"region\">"
-    + container.escapeExpression(((helper = (helper = helpers.labelStart || (depth0 != null ? depth0.labelStart : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"labelStart","hash":{},"data":data}) : helper)))
-    + "</div>\n                <div class=\"slider-scale-mid\" tabindex=\"0\" role=\"region\">"
-    + container.escapeExpression(((helper = (helper = helpers.labelMid || (depth0 != null ? depth0.labelMid : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"labelMid","hash":{},"data":data}) : helper)))
-    + "</div>\n                <div class=\"slider-scale-end\" tabindex=\"0\" role=\"region\">"
-    + container.escapeExpression(((helper = (helper = helpers.labelEnd || (depth0 != null ? depth0.labelEnd : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"labelEnd","hash":{},"data":data}) : helper)))
-    + "</div>\n            </div>\n            <div class=\"slider-scale-numbers clearfix\">\n"
-    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0._items : depth0),{"name":"each","hash":{},"fn":container.program(6, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "                <div class=\"slider-modelranges\"></div>\n                <div class=\"slider-answer component-item-color component-item-text-color\"></div>\n                <div class=\"slider-scale-marker component-item-color component-item-text-color a11y-ignore\" aria-hidden=\"true\" tabindex=\"-1\"></div>\n            </div>\n            <div class=\"slider-scaler-wrapper clearfix\">\n               <div class=\"slider-scaler component-item-color\">\n                  <div class=\"slider-markers\"></div>\n              </div>\n          </div>\n\n            <div class=\"slider-background\">\n                <div class=\"slider-item component-item "
-    + ((stack1 = helpers.unless.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0._isEnabled : depth0),{"name":"unless","hash":{},"fn":container.program(8, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\">\n                  <input type=\"range\" name=\"\" value=\""
-    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},(depth0 != null ? depth0._userAnswer : depth0),{"name":"if","hash":{},"fn":container.program(13, data, 0),"inverse":container.program(15, data, 0),"data":data})) != null ? stack1 : "")
-    + "\" min=\""
-    + container.escapeExpression(((helper = (helper = helpers._scaleStart || (depth0 != null ? depth0._scaleStart : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"_scaleStart","hash":{},"data":data}) : helper)))
-    + "\" max=\""
-    + container.escapeExpression(((helper = (helper = helpers._scaleEnd || (depth0 != null ? depth0._scaleEnd : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"_scaleEnd","hash":{},"data":data}) : helper)))
-    + "\" "
-    + ((stack1 = helpers.unless.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0._isEnabled : depth0),{"name":"unless","hash":{},"fn":container.program(17, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + ">\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"buttons\">\n    </div>\n</div>\n";
-},"usePartial":true,"useData":true});Handlebars.templates['drawer']=Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+},"useData":true});Handlebars.templates['drawer']=Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
   return "<div class=\"drawer-inner\">\n	<span class='aria-label prevent-default' tabindex='0' role='region'>"
@@ -1848,18 +1620,6 @@ define("templates",["handlebars"],function(Handlebars){Handlebars.templates={};H
     + "</span></label>\r\n	</div>\r\n	<span class=\"aria-label prevent-default\" tabindex=\"0\" role=\"region\">"
     + container.escapeExpression(container.lambda(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0._globals : depth0)) != null ? stack1._menu : stack1)) != null ? stack1._filterMenu : stack1)) != null ? stack1.menuItemEndAria : stack1), depth0))
     + "</span>\r\n</div>\r\n";
-},"useData":true});Handlebars.templates['filterMenuStrip']=Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
-    return "	<div class=\"filter-menu-strip-progress\">\r\n		<div class=\"filter-menu-strip-progress-bar\"></div>\r\n	</div>\r\n";
-},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "<div class=\"filter-menu-strip-inner\">\r\n"
-    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},(depth0 != null ? depth0._isProgressEnabled : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "	<div class=\"filter-menu-strip-top\">\r\n		<div class=\"filter-menu-strip-title\" aria-level=\"2\" role=\"heading\" tabindex=\"0\">"
-    + ((stack1 = container.lambda((depth0 != null ? depth0.title : depth0), depth0)) != null ? stack1 : "")
-    + "</div>\r\n		<div class=\"filter-menu-strip-empty\">"
-    + ((stack1 = (helpers.a11y_text || (depth0 && depth0.a11y_text) || helpers.helperMissing).call(depth0 != null ? depth0 : {},((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0._globals : depth0)) != null ? stack1._menu : stack1)) != null ? stack1._filterMenu : stack1)) != null ? stack1.stripEmpty : stack1),{"name":"a11y_text","hash":{},"data":data})) != null ? stack1 : "")
-    + "</div>\r\n	</div>\r\n	<div class=\"filter-menu-items-bottom\">\r\n		<div class=\"filter-menu-items-background\"></div>\r\n		<div class=\"filter-menu-items-container\">\r\n			<div class=\"filter-menu-items\"></div>\r\n		</div>\r\n		<button class=\"base filter-menu-control left icon icon-controls-left a11y-ignore display-none\" tabindex=\"-1\"></button>\r\n		<button class=\"base filter-menu-control right icon icon-controls-right a11y-ignore display-none\" tabindex=\"-1\"></button>\r\n	</div>\r\n</div>\r\n";
 },"useData":true});Handlebars.templates['loading']=Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     return "<div class=\"loading\">\n    <div class=\"loader-gif\"><div role=\"heading\" tabindex=\"0\" class=\"h3\" aria-level=\"1\">Loading...</div></div>\n</div>";
 },"useData":true});Handlebars.templates['navigation']=Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
