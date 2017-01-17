@@ -187,21 +187,45 @@
         "_resourcesItems": [
             {
                 "_type": "document",
-                "title": "Vanilla Theme Swatch",
-                "description": "See the swatch for the default vanilla by clicking here.",
-                "_link": "course/en/images/vanilla-swatch.jpg"
+                "title": "Leadership Development Plan",
+                "description": "",
+                "_link": "course/en/resources/monash-leadership_development_plan.docx"
             },
             {
-                "_type": "media",
-                "title": "Adapt Learning YouTube Channel",
-                "description": "Fancy catching up on some Adapt material? Click here.",
-                "_link": "https://www.youtube.com/channel/UCW8SlSFuCc--B66Gf9fAEcQ"
+                "_type": "document",
+                "title": "What makes a successful leader?",
+                "description": "",
+                "_link": "course/en/resources/monash-what_makes_a_successful_leader.pdf"
             },
             {
                 "_type": "link",
-                "title": "Community Site",
-                "description": "View our community site by clicking here.",
-                "_link": "https://community.adaptlearning.org"
+                "title": "Leadership competencies",
+                "description": "The Most Important Leadership Competencies, According to Leaders Around the World",
+                "_link": "http://ezproxy.lib.monash.edu.au/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=bth&AN=118706315&site=ehost-live&scope=site"
+            },
+            {
+                "_type": "document",
+                "title": "Leadership theories",
+                "description": "David A. Van Seters Richard H.G. Field, (1990), \"The Evolution of Leadership Theory\", Journal of Organizational Change Management, Vol. 3 Iss 3 pp. 29 – 45",
+                "_link": "course/en/resources/university_of_exeter-review_leadership_theory_competency_frameworks.pdf"
+            },
+            {
+                "_type": "link",
+                "title": "Leadership that gets results",
+                "description": "Goleman article",
+                "_link": "http://ezproxy.lib.monash.edu.au/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=bth&AN=2839618&site=ehost-live&scope=site"
+            },
+            {
+                "_type": "link",
+                "title": "Managers and Leaders: Are they Different?",
+                "description": "",
+                "_link": "https://hbr.org/2004/01/managers-and-leaders-are-they-different"
+            },
+            {
+                "_type": "document",
+                "title": "Developing leadership styles",
+                "description": "",
+                "_link": "course/en/resources/monash-developing_leadership_styles.pdf"
             }
         ]
     },
@@ -390,5 +414,5 @@
             }
         }
     },
-    "_latestTrackingId": 34
+    "_latestTrackingId": 47
 }

@@ -1583,5 +1583,561 @@
     "_pageLevelProgress": {
       "_isEnabled": true
     }
+  },
+  {
+    "_id": "c-180",
+    "_parentId": "b-180",
+    "_type": "component",
+    "_component": "accordion",
+    "_classes": "",
+    "_layout": "full",
+    "title": "What sort of leader are you?",
+    "displayTitle": "What sort of leader are you?",
+    "body": "Which of the six styles do you tend to use? Are these styles well suited to the challenges you face? How might you improve your effectiveness as a leader?",
+    "instruction": "Select each heading to find out how to develop your leadership profile.",
+    "_items": [
+      {
+        "title": "What s your default style?",
+        "body": "First, reflect on what kind of leader you are naturally. Stop and think how you try to influence people around you. Are you predominantly a coercive leader, adopting the \"my way is best\" approach? Or perhaps more of a coaching leader, encouraging people to \"try this\"? Maybe you're more authoritative, working to ensure everyone's on the same page, \"let's consider why we need to change direction\"."
+      },
+      {
+        "title": "Develop your style",
+        "body": "Next, consider how you can shape up your leadership form. Everyone can improve on their default style and develop alternative styles. It takes a combination of self-awareness, self-discipline and action. Work on developing the styles you're least sure of. Watch others whose style you would like to learn. Seek feedback from peers, supervisors or friends about your approach."
+      },
+      {
+        "title": "Change it up",
+        "body": "Remember, there's no perfect leadership style. Some will be better suited to particular situations; however, one style will not work in all situations. Each person you lead will have different needs and their own unique style. How do you get the best results? Be the right leader, at the right time. Adapt your style to reflect the situation, the people and the result you're after."
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-185",
+    "_parentId": "b-185",
+    "_type": "component",
+    "_component": "media",
+    "_classes": "",
+    "_layout": "full",
+    "_setCompletionOn": "play",
+    "_useClosedCaptions": true,
+    "_allowFullScreen": true,
+    "title": "The team's dilemma",
+    "displayTitle": "The team's dilemma",
+    "body": "What causes conflict in a team? It may be individual differences, personality clashes, poor communication or differing goals. Different people think about the same things in a different way, have different skills and styles and may want totally different things.",
+    "instruction": "Select Play to see the team's dilemma.",
+    "_media": {
+      "mp4": "course/en/video/c-00.mp4",
+      "poster": "course/en/video/c-00.jpg"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-190",
+    "_parentId": "b-190",
+    "_type": "component",
+    "_component": "mcq",
+    "_classes": "",
+    "_layout": "full",
+    "_attempts": 1,
+    "_shouldDisplayAttempts": false,
+    "_questionWeight": 1,
+    "_isRandom": true,
+    "_selectable": 1,
+    "_canShowModelAnswer": true,
+    "_canShowMarking": true,
+    "_recordInteraction":true,
+    "title": "Which style will work?",
+    "displayTitle": "Which style will work?",
+    "body": "You don't agree with Charlie's decision or approach. However, you need to reach a consensus and make a decision on how the team will proceed. What steps would you take?",
+    "instruction": "Select one or more of the following options and select Submit.",
+    "_items": [
+      {
+        "text": "Try to understand his point of view.",
+        "_shouldBeSelected": true
+      },
+      {
+        "text": "Give in to his suggestion.",
+        "_shouldBeSelected": false
+      },
+      {
+        "text": "State your opinions and goals again.",
+        "_shouldBeSelected": true
+      },
+      {
+        "text": "Fight back and demand compliance.",
+        "_shouldBeSelected": false
+      },
+      {
+        "text": "Change the subject.",
+        "_shouldBeSelected": false
+      },
+      {
+        "text": "Look for mutual goals.",
+        "_shouldBeSelected": true
+      }
+    ],
+    "_feedback":{
+      "correct": "That's right. Any time you bring people together to solve a problem or make a decision you may end up with a conflict. Conflict is only negative if it's not resolved or properly managed. A leader must be able to negotiate and assist people to come to agreement. This requires assertiveness and a balanced ― emotionally intelligent ― approach to handling conflict.",
+      "_incorrect": {
+        "notFinal": "",
+        "final": "That's not right. Any time you bring people together to solve a problem or make a decision you may end up with a conflict. Conflict is only negative if it's not resolved or properly managed. This is not a crisis, there's no need to fight back, it may trigger further conflict. Also, avoiding the situation by changing the subject or giving in undermines your position as a leader and the issue will remain unresolved. A leader must be able to negotiate and assist people to come to agreement. This requires assertiveness and a balanced ― emotionally intelligent ― approach to handling conflict."
+      },
+      "_partlyCorrect": {
+        "notFinal": "",
+        "final": "That's not quite right. Any time you bring people together to solve a problem or make a decision you may end up with a conflict. Conflict is only negative if it's not resolved or properly managed. This is not a crisis, there's no need to fight back, it may trigger further conflict. Also, avoiding the situation by changing the subject or giving in undermines your position as a leader and the issue will remain unresolved. A leader must be able to negotiate and assist people to come to agreement. This requires assertiveness and a balanced ― emotionally intelligent ― approach to handling conflict."
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "Submit",
+        "ariaLabel": "Select here to submit your answer."
+      },
+      "_reset": {
+        "buttonText": "Reset",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "Correct Answer",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "My Answer",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "Show feedback",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "attempts remaining",
+      "remainingAttemptText": "final attempt"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-195",
+    "_parentId": "b-195",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Work on the styles",
+    "displayTitle": "Work on the styles",
+    "body": "It's important when faced with certain situations, you're ready to deal with it. Versatility – your ability to adapt, using diverse styles in various situations with different people is key to your success.<br><br>If you're naturally a democratic or affiliative leader, how will you take command or swift action in a crisis? You'll need to find a way to adopt the coercive style in a way that feels true to you, perhaps by injecting some humour into your orders. Once you've grasped the key skills for each style, you should be in a good position to start to put the new leadership style into practice. To learn more select the <strong>Developing leadership styles</strong> guide from the Resources menu.<br><br>Time to think about your own leadership style. Visit your <strong>LDP</strong> to complete the activity: <strong>Develop your style.</strong>",
+    "instruction": "",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+  {
+    "_id": "c-200",
+    "_parentId": "b-200",
+    "_type": "component",
+    "_component": "media",
+    "_classes": "",
+    "_layout": "full",
+    "_setCompletionOn": "play",
+    "_useClosedCaptions": true,
+    "_allowFullScreen": true,
+    "title": "Personal power",
+    "displayTitle": "Personal power",
+    "body": "Personal power is more an attitude or state of mind than an attempt to manoeuvre or control others. It's based on competence, vision and positive personal qualities.",
+    "instruction": "Select Play to hear how building your personal power can make the difference.",
+    "_media": {
+      "mp4": "course/en/video/c-00.mp4",
+      "poster": "course/en/video/c-00.jpg"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-205",
+    "_parentId": "b-205",
+    "_type": "component",
+    "_component": "accordion",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Get results",
+    "displayTitle": "Get results",
+    "body": "Personal power is a core leadership competency that everyone needs to develop before they can lead others. One of the key elements of influencing and using your personal power is credibility. How can you establish your credibility as a leader and start to get the results you want?",
+    "instruction": "Select the headings to find out more.",
+    "_items": [
+      {
+        "title": "Be clear",
+        "body": "Do you have a clear sense of where you're going and what you want to achieve? Can you describe it to others? People with high levels of personal power are clear and focused on what is important. They have clear goals and take deliberate action.",
+        "_graphic": {
+          "src": "course/en/images/c-205-1.jpg",
+          "alt": ""
+        },
+        "_classes": "image-left"
+      },
+      {
+        "title": "Walk your talk",
+        "body": "Do you deliver what you promise? Do your actions speak louder than words? Credibility is earned through honesty, integrity, reliability and practising what you preach. Credible leaders take full responsibility for their actions and decisions, are transparent with their actions and foster an honest environment where unethical behaviour isn't tolerated.",
+        "_graphic": {
+          "src": "course/en/images/c-205-2.jpg",
+          "alt": ""
+        },
+        "_classes": ""
+      },
+      {
+        "title": "Communicate well",
+        "body": "Communication builds a bridge between people. Leaders are great communicators that make others feel they are being heard, attended to, consulted and valued. Ask questions to show interest in what others have to say. Actively listen, seek first to understand, then to be understood.",
+        "_graphic": {
+          "src": "course/en/images/c-205-3.jpg",
+          "alt": ""
+        },
+        "_classes": "image-right"
+      },
+      {
+        "title": "Generate enthusiasm",
+        "body": "Want to motivate and influence others? Use energy and enthusiasm. Find out what energises other people around you; once you understand this, you can adapt the way you work with them and they're likely to be more energised and motivated to work with you.",
+        "_graphic": {
+          "src": "course/en/images/c-205-4.jpg",
+          "alt": ""
+        },
+        "_classes": "image-right"
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-210",
+    "_parentId": "b-210",
+    "_type": "component",
+    "_component": "mcq",
+    "_classes": "",
+    "_layout": "full",
+    "_attempts": 1,
+    "_shouldDisplayAttempts": false,
+    "_questionWeight": 1,
+    "_isRandom": true,
+    "_selectable": 1,
+    "_canShowModelAnswer": true,
+    "_canShowMarking": true,
+    "_recordInteraction":true,
+    "title": "Reap the rewards",
+    "displayTitle": "Reap the rewards",
+    "body": "What leadership situations, opportunities or challenges do you face? Are you leading people as part of your research? Are you working with others to get tasks done or deliver particular outcomes? Are you inspiring or motivating others by the findings of your work? Reflect on the importance of personal power. What could you do to harness your personal power and reap the rewards.",
+    "instruction": "Select one or more of the following options and select Submit.",
+    "_items": [
+      {
+        "text": "Develop solutions to problem and situations you're faced with.",
+        "_shouldBeSelected": true
+      },
+      {
+        "text": "Include others in decision-making processes.",
+        "_shouldBeSelected": true
+      },
+      {
+        "text": "Communicate assertively.",
+        "_shouldBeSelected": true
+      },
+      {
+        "text": "Support others while they do important work.",
+        "_shouldBeSelected": true
+      },
+      {
+        "text": "Offer and receive encouragement and reinforcement.",
+        "_shouldBeSelected": true
+      },
+      {
+        "text": "Continually expand your knowledge and expertise.",
+        "_shouldBeSelected": true
+      }
+    ],
+    "_feedback":{
+      "correct": "That's right. These activities will help you establish credibility, as well as help you in your journey of learning to lead. You don't always need formal authority to lead. In fact, respect is earned mostly from personal sources of power. Personal power transfers from your personality, learning, experience and abilities. Building your personal power is a process. It involves time, effort, and patience, but it's totally worth investing in for successful leadership. Visit your <strong>LDP</strong> to comple<strong>Make an immediate impact.</strong>immediate impact.",
+      "_incorrect": {
+        "notFinal": "",
+        "final": "That's not right. All these activities will help you establish credibility, as well as help you in your journey of learning to lead. You don't always need formal authority to lead. In fact, respect is earned mostly from personal sources of power. Personal power transfers from your personality, learning, experience and abilities. Building your personal power is a process. It involves time, effort, and patience, but it's totally worth investing in for successful leadership. Visit your <strong>LDP</strong> to comple<strong>Make an immediate impact.</strong>immediate impact."
+      },
+      "_partlyCorrect": {
+        "notFinal": "",
+        "final": "That's not quite right. All these activities will help you establish credibility, as well as help you in your journey of learning to lead. You don't always need formal authority to lead. In fact, respect is earned mostly from personal sources of power. Personal power transfers from your personality, learning, experience and abilities. Building your personal power is a process. It involves time, effort, and patience, but it's totally worth investing in for successful leadership. Visit y<strong>Make an immediate impact.</strong>to complete the activity: Make an immediate impact."
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "Submit",
+        "ariaLabel": "Select here to submit your answer."
+      },
+      "_reset": {
+        "buttonText": "Reset",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "Correct Answer",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "My Answer",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "Show feedback",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "attempts remaining",
+      "remainingAttemptText": "final attempt"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+  {
+    "_id": "c-215",
+    "_parentId": "b-215",
+    "_type": "component",
+    "_component": "media",
+    "_classes": "",
+    "_layout": "full",
+    "_setCompletionOn": "play",
+    "_useClosedCaptions": true,
+    "_allowFullScreen": true,
+    "title": "Welcome the opportunities",
+    "displayTitle": "Welcome the opportunities",
+    "body": "Let's hear how some of our graduate researchers took the leadership challenge and developed their leadership skills.",
+    "instruction": "Select Play.",
+    "_media": {
+      "mp4": "course/en/video/c-00.mp4",
+      "poster": "course/en/video/c-00.jpg"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-220",
+    "_parentId": "b-220",
+    "_type": "component",
+    "_component": "narrative",
+    "_classes": "",
+    "_layout": "full",
+    "_setCompletionOn": "allItems",
+    "_hasNavigationInTextArea": false,
+    "title": "Learning to lead",
+    "displayTitle": "Learning to lead",
+    "body": "Learning to lead is a lifelong journey. Good leaders never stop learning. So what can you do to continue learning to lead?",
+    "instruction": "Select the arrows to find out more.",
+    "mobileInstruction": "Select the arrows and then the plus icons to find out more.",
+    "_items": [
+      {
+        "title": "Experience matters",
+        "body": "In learning to lead nothing beats experience, including learning from your mistakes. Take the opportunity to learn new things by putting yourself in leadership situations. For example, run a PhD group, be a research assistant, tutor undergraduate students or take on part-time employment.",
+        "_graphic": {
+          "src": "course/en/images/c-220-1.jpg",
+          "alt": ""
+        },
+        "strapline": "Experience matters"
+      },
+      {
+        "title": "Learn from others",
+        "body": "Learn about leadership from people around you. Here are some tips:<br><ul><li>Read books by recognised leadership experts.</li><li>Read biographies or autobiographies about leaders you admire.</li><li>Source articles on leadership – as well as academic literature specific to your field.</li><li>Watch videos and clips by inspiring or effective leaders.</li><li>Spend time with people who are experienced leaders (within academia or elsewhere).</li><li>Think about who could help as a mentor or coach for you.</li></ul>",
+        "_graphic": {
+          "src": "course/en/images/c-220-2.jpg",
+          "alt": ""
+        },
+        "strapline": "Learn from others"
+      },
+      {
+        "title": "Extend your network",
+        "body": "It's worth thinking about and creating a simple stakeholder map. A map of people you know, or who might be useful to know, given your research and ambitions for the future. These might be people or groups you might want to manage closely, keep informed, keep satisfied, or just monitor.",
+        "_graphic": {
+          "src": "course/en/images/c-220-3.jpg",
+          "alt": ""
+        },
+        "strapline": "Extend your network"
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-225",
+    "_parentId": "b-225",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Take the leadership challenge",
+    "displayTitle": "Take the leadership challenge",
+    "body": "How can you become a better leader? Commit to continually learning to lead. Take on leadership challenges and commit to practising your skills. This might include becoming a better speaker, building stronger relationships or taking yourself out of your comfort zone.<br><br>For example, building and growing your relationships will help you become a better leader. The more connected you are, the more people you have to collaborate and share feedback with, the better off you'll be.<br><br>What steps will you take? Visit your <strong>LDP</strong> to complete the activity: <strong>Take the leadership challenge.</strong>",
+    "instruction": "INSTRUCTION",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-230",
+    "_parentId": "b-230",
+    "_type": "component",
+    "_component": "accordion",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Developing your plan",
+    "displayTitle": "Developing your plan",
+    "body": "Research conducted by Nick Petrie from the Centre for Creative Leadership (CCL) suggests that there are five important steps required to ensure that you apply the learning from a leadership development program.",
+    "instruction": "Select each heading to find out more.",
+    "_items": [
+      {
+        "title": "Make achievable commitments",
+        "body": "Rather than over-committing, identify two or three realistic commitments about what you can do to improve your leadership performance. For example, \"I will not avoid having difficult conversations with my colleagues or supervisors, when I believe an important issue needs to be discussed.\""
+      },
+      {
+        "title": "Share your commitments",
+        "body": "People are more likely to live up to their commitments if they share them with other people. Identify people who can help you and share your leadership commitments with them. You may also wish to share your commitments with a broader audience."
+      },
+      {
+        "title": "Seek feed forward suggestions",
+        "body": "Feed-forward is a process where people provide positive suggestions about how you can work towards achieving a goal or commitment. Think about how you can achieve your commitments or ask others to provide you with ideas."
+      },
+      {
+        "title": "Make your commitments visible",
+        "body": "Write your commitments down, make them visible (to yourself and others). You could use coloured pens, pictures or postcard images – anything that will serve as a visual daily reminder of your commitments."
+      },
+      {
+        "title": "Identify clear actions",
+        "body": "Once you are clear about your commitments, identify the action steps you can take to achieve them. The actions that you develop may have been areas you have self-identified or may come from the feed-forward suggestions you received from others."
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-235",
+    "_parentId": "b-235",
+    "_type": "component",
+    "_component": "mcq",
+    "_classes": "",
+    "_layout": "full",
+    "_attempts": 1,
+    "_shouldDisplayAttempts": false,
+    "_questionWeight": 1,
+    "_isRandom": true,
+    "_selectable": 1,
+    "_canShowModelAnswer": true,
+    "_canShowMarking": true,
+    "_recordInteraction":true,
+    "title": "PLAN FOR THE PRESENT. PREPARE FOR THE FUTURE.",
+    "displayTitle": "PLAN FOR THE PRESENT. PREPARE FOR THE FUTURE.",
+    "body": "Developing your leadership capabilities will help enhance your research and prepare you for life after your degree. Ask yourself, \"What do I need to work on to be a better leader\"?",
+    "instruction": "Select one or more of the following options and select Submit.",
+    "_items": [
+      {
+        "text": "Build my leadership confidence.",
+        "_shouldBeSelected": true
+      },
+      {
+        "text": "Build my emotional intelligence.",
+        "_shouldBeSelected": true
+      },
+      {
+        "text": "Develop my leadership style.",
+        "_shouldBeSelected": true
+      },
+      {
+        "text": "Develop alternative leadership styles.",
+        "_shouldBeSelected": true
+      },
+      {
+        "text": "Improve my motivation skills.",
+        "_shouldBeSelected": true
+      },
+      {
+        "text": "Build my personal power.",
+        "_shouldBeSelected": true
+      }
+    ],
+    "_feedback":{
+      "correct": "These are just a few suggestions. Take the time to identify what you would like to work on to become a better leader. Identify a set of clear actions that you can take, in order to achieve your commitments. For example, you may want to build your leadership confidence by running a PhD group. Time to make the commitment! Open your <strong>LDP</strong> to complete your <strong>LDP action plan</strong>. Discuss your plan with your supervisor, mentor, coach or industry expert and find out how they can help yo<strong></strong>u implement your development plan.",
+      "_incorrect": {
+        "notFinal": "",
+        "final": "INCORRECT"
+      },
+      "_partlyCorrect": {
+        "notFinal": "",
+        "final": "PARTIAL"
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "Submit",
+        "ariaLabel": "Select here to submit your answer."
+      },
+      "_reset": {
+        "buttonText": "Reset",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "Correct Answer",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "My Answer",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "Show feedback",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "attempts remaining",
+      "remainingAttemptText": "final attempt"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-240",
+    "_parentId": "b-240",
+    "_type": "component",
+    "_component": "media",
+    "_classes": "",
+    "_layout": "full",
+    "_setCompletionOn": "play",
+    "_useClosedCaptions": true,
+    "_allowFullScreen": true,
+    "title": "It's all up to you",
+    "displayTitle": "It's all up to you",
+    "body": "In today's world, career paths are becoming more flexible and diverse and new opportunities are appearing. Be prepared to take advantage of such opportunities by developing your leadership skills. It's a critical factor in your career success. Let's hear how developing leadership skills made all the difference.",
+    "instruction": "Select Play.",
+    "_media": {
+      "mp4": "course/en/video/c-00.mp4",
+      "poster": "course/en/video/c-00.jpg"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
   }
 ]

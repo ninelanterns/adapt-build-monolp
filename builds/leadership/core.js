@@ -4635,5 +4635,3 @@ require([
 
 define("core/js/app", ["core/js/accessibility","core/js/adapt","core/js/adaptCollection","core/js/device","core/js/drawer","core/js/helpers","core/js/notify","core/js/offlineStorage","core/js/popupManager","core/js/router","core/js/startController","core/js/models/adaptModel","core/js/models/articleModel","core/js/models/blockModel","core/js/models/componentModel","core/js/models/configModel","core/js/models/contentObjectModel","core/js/models/courseModel","core/js/models/lockingModel","core/js/models/notifyModel","core/js/models/questionModel","core/js/models/routerModel","core/js/views/accessibilityView","core/js/views/adaptView","core/js/views/articleView","core/js/views/blockView","core/js/views/buttonsView","core/js/views/componentView","core/js/views/drawerView","core/js/views/menuView","core/js/views/navigationView","core/js/views/notifyPushView","core/js/views/notifyView","core/js/views/pageView","core/js/views/questionView"], function(){});
 
-
-//# sourceMappingURL=core.js.map

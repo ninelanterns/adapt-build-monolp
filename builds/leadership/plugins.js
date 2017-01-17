@@ -19367,15 +19367,20 @@ define('theme/adapt-theme-monolp/js/monolp',['require','coreJS/adapt','backbone'
 	});
 
 
-
-  Adapt.once('menuView:ready', function() {
+  // Menu view
+  // =========
+  Adapt.on('menuView:ready', function() {
       changeNavigation('.filter-menu-inner');
   });
 
-  Adapt.once('pageView:ready', function(view) {
+
+  // Page view
+  // =========
+  Adapt.on('pageView:ready', function(view) {
 
       changeNavigation('.page-header');
 
+      // Insert the header bg image
       var graphic = view.model.get('_graphic');
       var graphicPath = Adapt.device.screenSize === 'small' ? graphic.narrow : graphic.wide;
 
@@ -19383,14 +19388,16 @@ define('theme/adapt-theme-monolp/js/monolp',['require','coreJS/adapt','backbone'
         backgroundImage: 'url('+ graphicPath +')'
       });
 
+      // Insert bg images into blocks that have the image-background class
       view.$el.find('.image-background').each(function(i) {
         // We may deplete all of the images in the array, so lets replenish the pool when it empties
-        if (! backgroundImages.length) buildBackgroundImageArray();
+        if (backgroundImages.length < 1) buildBackgroundImageArray();
 
         // Get random number from current amount in the array
         var randomIndex = Math.floor(Math.random() * backgroundImages.length);
         var backgroundImage = backgroundImages[randomIndex];
 
+        // Use narrow images for mobile
         if (Adapt.device.screenSize === 'small') {
           backgroundImage += '-narrow'
         }
@@ -19401,11 +19408,10 @@ define('theme/adapt-theme-monolp/js/monolp',['require','coreJS/adapt','backbone'
         $(this).css({
           backgroundImage: 'url(adapt/css/assets/'+ backgroundImage +'.jpg)'
         });
-
-        // TODO manage narrow images
-        // 'url(assets/'+ image +'-narrow.jpg)'
       });
   });
+
+
 
   function changeNavigation(selector) {
 
@@ -19424,6 +19430,8 @@ define('theme/adapt-theme-monolp/js/monolp',['require','coreJS/adapt','backbone'
           }
       });
   }
+
+
 
   function buildBackgroundImageArray() {
     var poolSize = 5;
@@ -19463,5 +19471,3 @@ define('plugins',[
 	"menu/adapt-filterMenu/js/adapt-filterMenu",
 	"theme/adapt-theme-monolp/js/monolp"
 ],function(){});
-
-//# sourceMappingURL=plugins.js.map
