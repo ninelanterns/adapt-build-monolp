@@ -4,6 +4,9 @@
             "_accordion": {
                 "ariaRegion": "This component is an accordion comprised of collapsible content panels containing display text. Select the item titles to toggle the visibility of these content panels."
             },
+            "_confidenceSlider": {
+                "ariaRegion": "This component requires you to answer the question by selecting the relevant value. After selecting a value select the submit button below."
+            },
             "_gmcq": {
                 "ariaRegion": "This component is a graphical multiple choice question. Once you have selected an option select the submit button below."
             },
