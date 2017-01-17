@@ -6,7 +6,8 @@
         "_classes": "",
         "title": "b-05",
         "displayTitle": "",
-        "body": ""
+        "body": "",
+        "_trackingId": 0
     },
     {
         "_id": "b-10",
@@ -15,7 +16,8 @@
         "_classes": "",
         "title": "b-10",
         "displayTitle": "",
-        "body": ""
+        "body": "",
+        "_trackingId": 1
     },
     {
         "_id": "b-15",
@@ -24,7 +26,8 @@
         "_classes": "",
         "title": "b-15",
         "displayTitle": "",
-        "body": ""
+        "body": "",
+        "_trackingId": 2
     },
     {
         "_id": "b-20",
@@ -33,7 +36,8 @@
         "_classes": "",
         "title": "b-20",
         "displayTitle": "",
-        "body": ""
+        "body": "",
+        "_trackingId": 3
     },
     {
         "_id": "b-25",
@@ -42,7 +46,8 @@
         "_classes": "",
         "title": "b-25",
         "displayTitle": "",
-        "body": ""
+        "body": "",
+        "_trackingId": 4
     },
     {
         "_id": "b-30",
@@ -51,7 +56,8 @@
         "_classes": "",
         "title": "b-30",
         "displayTitle": "",
-        "body": ""
+        "body": "",
+        "_trackingId": 5
     },
     {
         "_id": "b-35",
@@ -60,7 +66,8 @@
         "_classes": "",
         "title": "b-35",
         "displayTitle": "",
-        "body": ""
+        "body": "",
+        "_trackingId": 6
     },
     {
         "_id": "b-40",
@@ -69,7 +76,8 @@
         "_classes": "",
         "title": "b-40",
         "displayTitle": "",
-        "body": ""
+        "body": "",
+        "_trackingId": 7
     },
     {
         "_id": "b-45",
@@ -78,7 +86,8 @@
         "_classes": "",
         "title": "b-45",
         "displayTitle": "",
-        "body": ""
+        "body": "",
+        "_trackingId": 8
     },
     {
         "_id": "b-50",
@@ -87,7 +96,8 @@
         "_classes": "",
         "title": "b-50",
         "displayTitle": "",
-        "body": ""
+        "body": "",
+        "_trackingId": 9
     },
     {
         "_id": "b-55",
@@ -96,7 +106,8 @@
         "_classes": "",
         "title": "b-55",
         "displayTitle": "",
-        "body": ""
+        "body": "",
+        "_trackingId": 10
     },
     {
         "_id": "b-60",
@@ -105,7 +116,8 @@
         "_classes": "",
         "title": "b-60",
         "displayTitle": "",
-        "body": ""
+        "body": "",
+        "_trackingId": 11
     },
     {
         "_id": "b-70",
@@ -137,7 +149,8 @@
                 "_isLockedOnRevisit": false
             },
             "_scrollTo": "@block +1"
-        }
+        },
+        "_trackingId": 12
     },
     {
         "_id": "b-75",
@@ -169,7 +182,8 @@
                 "_isLockedOnRevisit": false
             },
             "_scrollTo": "@block +1"
-        }
+        },
+        "_trackingId": 13
     },
     {
         "_id": "b-80",
@@ -201,7 +215,8 @@
                 "_isLockedOnRevisit": false
             },
             "_scrollTo": "@block +1"
-        }
+        },
+        "_trackingId": 14
     },
     {
         "_id": "b-85",
@@ -233,7 +248,8 @@
                 "_isLockedOnRevisit": false
             },
             "_scrollTo": "@block +1"
-        }
+        },
+        "_trackingId": 15
     },
     {
         "_id": "b-90",
@@ -265,7 +281,8 @@
                 "_isLockedOnRevisit": false
             },
             "_scrollTo": "@block +1"
-        }
+        },
+        "_trackingId": 16
     },
     {
         "_id": "b-95",
@@ -297,7 +314,8 @@
                 "_isLockedOnRevisit": false
             },
             "_scrollTo": "@block +1"
-        }
+        },
+        "_trackingId": 17
     },
     {
         "_id": "b-100",
@@ -329,7 +347,8 @@
                 "_isLockedOnRevisit": false
             },
             "_scrollTo": "@block +1"
-        }
+        },
+        "_trackingId": 18
     },
     {
         "_id": "b-105",
@@ -361,7 +380,8 @@
                 "_isLockedOnRevisit": false
             },
             "_scrollTo": "@block +1"
-        }
+        },
+        "_trackingId": 19
     },
     {
         "_id": "b-110",
@@ -370,6 +390,7 @@
         "_classes": "",
         "title": "b-110",
         "displayTitle": "",
-        "body": ""
+        "body": "",
+        "_trackingId": 20
     }
 ]
