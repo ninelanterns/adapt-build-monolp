@@ -1,4 +1,9 @@
 {
+    "screenSize": {
+        "small": 520,
+        "medium": 760,
+        "large": 900
+    },
     "_defaultLanguage": "en",
     "_defaultDirection": "ltr",
     "_questionWeight": 1,
@@ -27,11 +32,9 @@
             "_onAssessmentFailure": "incomplete"
         }
     },
-    "_disableAnimationFor": [".ie8", ".iPhone.version-7\\.0"],
-    "build": {},
-    "screenSize": {
-        "small": 520,
-        "medium": 760,
-        "large": 900
-    }
+    "_disableAnimationFor": [
+        ".ie8",
+        ".iPhone.version-7\\.0"
+    ],
+    "build": {}
 }
