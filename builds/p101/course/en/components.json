@@ -1,576 +1,567 @@
 [
-	{
-		"_id": "c-05",
-		"_parentId": "b-05",
-    "_type": "component",
-    "_component": "media",
-    "_classes": "",
-    "_layout": "full",
-    "title": "Minim ponderum periculis vix mundi tamquam",
-    "displayTitle": "Minim ponderum periculis vix mundi tamquam",
-    "body": "Lorem ipsum dolor sit amet, etiam nonumes sed ei. Pro id commodo suscipit consectetuer. Ad usu autem reprimique. Et elitr accommodare ius. Te dolorum facilis usu, denique accumsan cu pro. Vel persius patrioque ea, veniam iudicabit definitionem in cum.",
-    "instruction": "",
-    "_setCompletionOn": "inview",
-    "_useClosedCaptions": false,
-    "_startLanguage": "en",
-    "_media": {
-			"mp4": "course/en/video/c-05.mp4",
-			"poster": "course/en/video/c-05.jpg"
-    },
-		"_pageLevelProgress": {
-			"_isEnabled": true
-		},
-    "_playerOptions": {
-        "features": ["playpause","current","progress","duration","tracks","volume","fullscreen"],
-        "hideCaptionsButtonWhenEmpty": true
-    }
-	},
-	{
-		"_id": "c-10",
-		"_parentId": "b-10",
-		"_type": "component",
-		"_component": "accordion",
-		"_classes": "",
-		"_layout": "full",
-		"title": "Cu sit erat decore",
-		"displayTitle": "Cu sit erat decore",
-		"body": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.",
-		"instruction": "Select the headings to find out more.",
-		"_items": [
-			{
-				"title": "Vix ne natum error",
-				"body": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. ",
-				"_graphic": {
-					"src": "course/en/images/in-research.jpg",
-					"alt": "Placeholder graphic."
-				}
-			},
-			{
-				"title": "Qui id diceret mandamus",
-				"body": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. ",
-				"_graphic": {
-					"src": "course/en/images/in-industry.jpg",
-					"alt": "Placeholder graphic."
-				}
-			},
-			{
-				"title": "An eos erant exerci",
-				"body": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. ",
-				"_graphic": {
-					"src": "course/en/images/in-government.jpg",
-					"alt": "Placeholder graphic."
-				}
-			},
-			{
-				"title": "His consul vivendum",
-				"body": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. ",
-				"_graphic": {
-					"src": "course/en/images/in-community.jpg",
-					"alt": "Placeholder graphic."
-				}
-			}
-		],
-		"_pageLevelProgress": {
-			"_isEnabled": true
-		}
-  },
-	{
-		"_id": "c-15",
-		"_parentId": "b-15",
-    "_type": "component",
-    "_component": "mcq",
-    "_classes": "",
-    "_layout": "full",
-    "_attempts": 1,
-    "_shouldDisplayAttempts": false,
-    "_questionWeight": 1,
-    "_isRandom": false,
-    "_selectable": 1,
-    "_canShowModelAnswer": true,
-    "_canShowMarking": true,
-    "_recordInteraction":true,
-    "title": "Consequat liberavisse ex eos",
-    "displayTitle": "Consequat liberavisse ex eos",
-    "body": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.<br /><br />Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque.",
-    "instruction": "Id errem meliore mnesarchum vix.",
-    "_items": [
-      {
-        "text": "This is option 1.",
-        "_shouldBeSelected":true
-      },
-      {
-        "text": "This is option 2.",
-        "_shouldBeSelected":false
-      },
-      {
-        "text": "This is option 3.",
-        "_shouldBeSelected":false
-      },
-      {
-        "text": "This is option 4.",
-        "_shouldBeSelected":false
-      }
-    ],
-    "_feedback":{
-      "correct":"Congratulations, this is the correct feedback.<br /><br />Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.<br /><br />Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque.",
-      "_incorrect": {
-        "notFinal": "",
-        "final": "This feedback will appear if you answered the question incorrectly.<br /><br />Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.<br /><br />Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque."
-      },
-      "_partlyCorrect": {
-        "notFinal": "",
-        "final": "This feedback will appear if you answered the question correctly.<br /><br />Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.<br /><br />Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque."
-      }
-    },
-    "_buttons": {
-      "_submit": {
-        "buttonText": "Submit",
-        "ariaLabel": "Select here to submit your answer."
-      },
-      "_reset": {
-        "buttonText": "Reset",
-        "ariaLabel": ""
-      },
-      "_showCorrectAnswer": {
-        "buttonText": "Correct Answer",
-        "ariaLabel": ""
-      },
-      "_hideCorrectAnswer": {
-        "buttonText": "My Answer",
-        "ariaLabel": ""
-      },
-      "_showFeedback": {
-        "buttonText": "Show feedback",
-        "ariaLabel": ""
-      },
-      "remainingAttemptsText": "attempts remaining",
-      "remainingAttemptText": "final attempt"
-    },
-    "_pageLevelProgress": {
-      "_isEnabled": true
-    }
-  },
-	{
-		"_id": "c-20",
-		"_parentId": "b-20",
-    "_classes": "",
-    "_type":"component",
-    "_layout": "full",
-    "_component": "narrative",
-    "title": "Nominati iudicabit te eos",
-    "displayTitle": "Nominati iudicabit te eos",
-    "body": "Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit. Condimentum fermentum nunc.",
-    "instruction": "Sed non mauris vitae erat consequat auctor eu in elit.",
-    "_hasNavigationInTextArea": false,
-    "mobileInstruction": "Sed non mauris vitae erat consequat auctor eu in elit. ",
-    "_setCompletionOn": "allItems",
-    "_items": [
-        {
-            "title": "Lorum ipsum dolar",
-            "body": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.",
-            "_graphic": {
-                "src": "course/en/images/image-slider-1.jpg",
-                "alt": "First graphic"
-            },
-            "strapline": "Lorum ipsum dolar"
+    {
+        "_id": "c-05",
+        "_parentId": "b-05",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Minim ponderum periculis vix mundi tamquam",
+        "displayTitle": "Minim ponderum periculis vix mundi tamquam",
+        "body": "Lorem ipsum dolor sit amet, etiam nonumes sed ei. Pro id commodo suscipit consectetuer. Ad usu autem reprimique. Et elitr accommodare ius. Te dolorum facilis usu, denique accumsan cu pro. Vel persius patrioque ea, veniam iudicabit definitionem in cum.",
+        "instruction": "",
+        "_setCompletionOn": "inview",
+        "_useClosedCaptions": false,
+        "_startLanguage": "en",
+        "_media": {
+            "mp4": "course/en/video/c-05.mp4",
+            "poster": "course/en/video/c-05.jpg"
         },
-        {
-            "title": "Etiam pharetra",
-            "body": "Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit. Condimentum fermentum nunc.",
-            "_graphic": {
-                "src": "course/en/images/image-slider-2.jpg",
-                "alt": "Second graphic"
-            },
-            "strapline": "Etiam pharetra"
+        "_pageLevelProgress": {
+            "_isEnabled": true
         },
-        {
-            "title": "Aenean sollicitudin",
-            "body": "Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.",
-            "_graphic": {
-                "src": "course/en/images/image-slider-3.jpg",
-                "alt": "Third graphic"
-            },
-            "strapline": "Aenean sollicitudin"
+        "_playerOptions": {
+            "features": ["playpause", "current", "progress", "duration", "tracks", "volume", "fullscreen"],
+            "hideCaptionsButtonWhenEmpty": true
         }
-    ],
-    "_pageLevelProgress": {
-      "_isEnabled": true
-    }
-  },
-	{
-		"_id": "c-25",
-		"_parentId": "b-25",
-    "_type":"component",
-    "_component":"gmcq",
-    "_classes":"",
-    "_layout":"full",
-    "_attempts":1,
-    "_shouldDisplayAttempts": false,
-    "_questionWeight":1,
-    "_isRandom":false,
-    "_selectable":1,
-    "_canShowModelAnswer": true,
-    "_recordInteraction":true,
-    "_columns": 4,
-    "title": "Morbi accumsan ipsum veli",
-    "displayTitle": "Morbi accumsan ipsum veli",
-    "body": "Etiam pharetra, erat sed fermentum feugiat, ut aliquam massa nisl quis neque. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.",
-    "instruction": "Sed non mauris vitae erat consequat auctor eu in elit.",
-    "_items": [
-        {
-            "text": "Option one",
-            "_shouldBeSelected":true,
-            "_graphic": {
-                "alt": "Alt text for option 1",
-                "large": "course/en/images/gqcq-1.jpg",
-                "small": "course/en/images/gqcq-1.jpg"
-            }
-        },
-        {
-            "text": "Option two",
-            "_shouldBeSelected":false,
-            "_graphic": {
-                "alt": "Alt text for option 2",
-                "large": "course/en/images/gqcq-2.jpg",
-                "small": "course/en/images/gqcq-2.jpg"
-            }
-        },
-        {
-            "text": "Option three",
-            "_shouldBeSelected":true,
-            "_graphic": {
-                "alt": "Alt text for option 3",
-                "large": "course/en/images/gqcq-3.jpg",
-                "small": "course/en/images/gqcq-3.jpg"
-            }
-        },
-        {
-            "text": "Option four",
-            "_shouldBeSelected":false,
-            "_graphic": {
-                "alt": "Alt text for option 4",
-                "large": "course/en/images/gqcq-4.jpg",
-                "small": "course/en/images/gqcq-4.jpg"
-            }
-        }
-    ],
-    "_feedback":{
-      "correct":"Congratulations, this is the correct feedback.<br /><br />Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.<br /><br />Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque.",
-      "_incorrect": {
-        "notFinal": "",
-        "final": "This feedback will appear if you answered the question incorrectly.<br /><br />Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.<br /><br />Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque."
-      },
-      "_partlyCorrect": {
-        "notFinal": "",
-        "final": "This feedback will appear if you answered the question correctly.<br /><br />Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.<br /><br />Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque."
-      }
     },
-    "_buttons": {
-      "_submit": {
-        "buttonText": "Submit",
-        "ariaLabel": "Select here to submit your answer."
-      },
-      "_reset": {
-        "buttonText": "Reset",
-        "ariaLabel": ""
-      },
-      "_showCorrectAnswer": {
-        "buttonText": "Correct Answer",
-        "ariaLabel": ""
-      },
-      "_hideCorrectAnswer": {
-        "buttonText": "My Answer",
-        "ariaLabel": ""
-      },
-      "_showFeedback": {
-        "buttonText": "Show feedback",
-        "ariaLabel": ""
-      },
-      "remainingAttemptsText": "attempts remaining",
-      "remainingAttemptText": "final attempt"
-    }
-  },
-	{
-		"_id": "c-30",
-		"_parentId": "b-30",
-    "_type":"component",
-    "_component":"slider",
-    "_classes":"",
-    "_layout":"full",
-    "title": "Nonumy ubique aperir",
-    "displayTitle":"Nonumy ubique aperir",
-    "body":"Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio nibh vulputate cursus a. Morbi accumsan ipsum velit.",
-    "instruction": "Sed non  mauris vitae erat consequat auctor eu in elit.",
-    "_attempts": 2,
-    "_shouldDisplayAttempts": false,
-    "_questionWeight": 1,
-    "_canShowModelAnswer": true,
-    "_canShowMarking": true,
-    "_recordInteraction": true,
-    "_showNumber": true,
-    "_showScaleIndicator": true,
-    "_showScale": true,
-    "labelStart": "incomplete",
-    "labelEnd": "complete",
-    "_scaleStart": 1,
-    "_scaleEnd": 10,
-    "_scaleStep": 1,
-    "_correctAnswer": "",
-    "_correctRange": {
-        "_bottom": 4,
-        "_top": 9
-    },
-    "_buttons": {
-      "_submit": {
-        "buttonText": "Submit",
-        "ariaLabel": "Select here to submit your answer."
-      },
-      "_reset": {
-        "buttonText": "Reset",
-        "ariaLabel": ""
-      },
-      "_showCorrectAnswer": {
-        "buttonText": "Correct Answer",
-        "ariaLabel": ""
-      },
-      "_hideCorrectAnswer": {
-        "buttonText": "My Answer",
-        "ariaLabel": ""
-      },
-      "_showFeedback": {
-        "buttonText": "Show feedback",
-        "ariaLabel": ""
-      },
-      "remainingAttemptsText": "attempts remaining",
-      "remainingAttemptText": "final attempt"
-    },
-    "_feedback":{
-      "correct":"Congratulations, this is the correct feedback.<br /><br />Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.<br /><br />Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque.",
-      "_incorrect": {
-        "notFinal": "",
-        "final": "This feedback will appear if you answered the question incorrectly.<br /><br />Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.<br /><br />Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque."
-      },
-      "_partlyCorrect": {
-        "notFinal": "",
-        "final": "This feedback will appear if you answered the question correctly.<br /><br />Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.<br /><br />Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque."
-      }
-    },
-    "_pageLevelProgress": {
-        "_isEnabled": true
-    }
-  },
-	{
-		"_id": "c-35",
-		"_parentId": "b-35",
-    "_classes": "",
-    "_layout": "full",
-    "_type": "component",
-    "_component": "matching",
-    "_attempts": 2,
-    "_shouldDisplayAttempts": false,
-    "_isRandom": true,
-    "_canShowModelAnswer": true,
-    "_recordInteraction": true,
-    "_questionWeight": 10,
-    "title": "His consul vivendum mandamus",
-    "displayTitle": "His consul vivendum mandamus",
-    "body": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.<br /><br />Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque.",
-    "instruction":"Sed non mauris vitae erat consequat auctor eu in elit.",
-    "_buttons": {
-      "_submit": {
-        "buttonText": "Submit",
-        "ariaLabel": "Select here to submit your answer."
-      },
-      "_reset": {
-        "buttonText": "Reset",
-        "ariaLabel": ""
-      },
-      "_showCorrectAnswer": {
-        "buttonText": "Correct Answer",
-        "ariaLabel": ""
-      },
-      "_hideCorrectAnswer": {
-        "buttonText": "My Answer",
-        "ariaLabel": ""
-      },
-      "_showFeedback": {
-        "buttonText": "Show feedback",
-        "ariaLabel": ""
-      },
-      "remainingAttemptsText": "attempts remaining",
-      "remainingAttemptText": "final attempt"
-    },
-    "_feedback":{
-      "correct":"Congratulations, this is the correct feedback.<br /><br />Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.<br /><br />Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque.",
-      "_incorrect": {
-        "notFinal": "",
-        "final": "This feedback will appear if you answered the question incorrectly.<br /><br />Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.<br /><br />Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque."
-      },
-      "_partlyCorrect": {
-        "notFinal": "",
-        "final": "This feedback will appear if you answered the question correctly.<br /><br />Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.<br /><br />Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque."
-      }
-    },
-    "placeholder": "select an option",
-    "_items": [
-        {
-            "text": "Lorum ipsum doar sit amit.",
-            "_options": [
-                {
-                    "text": "Proin gravida nibh vel velit",
-                    "_isCorrect": false
-                },
-                {
-                    "text": "Proin gravida (correct)",
-                    "_isCorrect": true
-                },
-                {
-                    "text": "Proin gravida nibh vel velit",
-                    "_isCorrect": false
+    {
+        "_id": "c-10",
+        "_parentId": "b-10",
+        "_type": "component",
+        "_component": "accordion",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Cu sit erat decore",
+        "displayTitle": "Cu sit erat decore",
+        "body": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.",
+        "instruction": "Select the headings to find out more.",
+        "_items": [{
+                "title": "Vix ne natum error",
+                "body": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. ",
+                "_graphic": {
+                    "src": "course/en/images/in-research.jpg",
+                    "alt": "Placeholder graphic."
                 }
-            ]
-        },
-        {
-            "text": "Ea explicari imperdiet mel.",
-            "_options": [
-                {
-                    "text": "Proin gravida nibh vel velit",
-                    "_isCorrect": false
-                },
-                {
-                    "text": "Proin gravida nibh vel velit",
-                    "_isCorrect": false
-                },
-                {
-                    "text": "Proin gravida (correct)",
-                    "_isCorrect": true
+            },
+            {
+                "title": "Qui id diceret mandamus",
+                "body": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. ",
+                "_graphic": {
+                    "src": "course/en/images/in-industry.jpg",
+                    "alt": "Placeholder graphic."
                 }
-            ]
-        },
-        {
-            "text": "Fuisset iracundia honestatis.",
-            "_options": [
-                {
-                    "text": "Proin gravida (correct)",
-                    "_isCorrect": true
-                },
-                {
-                    "text": "Proin gravida nibh vel velit",
-                    "_isCorrect": false
-                },
-                {
-                    "text": "Proin gravida nibh vel velit",
-                    "_isCorrect": false
+            },
+            {
+                "title": "An eos erant exerci",
+                "body": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. ",
+                "_graphic": {
+                    "src": "course/en/images/in-government.jpg",
+                    "alt": "Placeholder graphic."
                 }
-            ]
+            },
+            {
+                "title": "His consul vivendum",
+                "body": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. ",
+                "_graphic": {
+                    "src": "course/en/images/in-community.jpg",
+                    "alt": "Placeholder graphic."
+                }
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
         }
-    ]
-  },
-	{
-		"_id": "c-40",
-		"_parentId": "b-40",
-    "_classes": "",
-    "_type":"component",
-    "_component": "hotgraphic",
-    "_layout": "full",
-    "title": "Lorum ipsum doar sit amit",
-    "displayTitle": "Lorum ipsum doar sit amit",
-    "body": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-    "mobileBody": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-    "instruction":"Sed non mauris vitae erat consequat auctor eu in elit.",
-    "mobileInstruction": "Sed non mauris vitae erat consequat auctor eu in elit.",
-    "_setCompletionOn":"allItems",
-    "_useGraphicsAsPins": false,
-    "_canCycleThroughPagination": false,
-    "_hidePagination": false,
-    "_graphic": {
-      "src": "course/en/images/hot_graphic.jpg",
-      "alt": "alt text"
     },
-    "_items": [
-        {
-            "title": "Hotspot 1 title",
-            "body": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-            "_graphic": {
-                "src": "course/en/images/hotgraphic-1.jpg",
-                "alt": "alt text",
-                "_classes": ""
+    {
+        "_id": "c-15",
+        "_parentId": "b-15",
+        "_type": "component",
+        "_component": "mcq",
+        "_classes": "",
+        "_layout": "full",
+        "_attempts": 1,
+        "_shouldDisplayAttempts": false,
+        "_questionWeight": 1,
+        "_isRandom": false,
+        "_selectable": 1,
+        "_canShowModelAnswer": true,
+        "_canShowMarking": true,
+        "_recordInteraction": true,
+        "title": "Consequat liberavisse ex eos",
+        "displayTitle": "Consequat liberavisse ex eos",
+        "body": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.<br /><br />Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque.",
+        "instruction": "Id errem meliore mnesarchum vix.",
+        "_items": [{
+                "text": "This is option 1.",
+                "_shouldBeSelected": true
             },
-            "pinAlt": "alt text",
-            "strapline": "strapline...",
-            "_classes": "top-left",
-            "_top": 5,
-            "_left": 20
+            {
+                "text": "This is option 2.",
+                "_shouldBeSelected": false
+            },
+            {
+                "text": "This is option 3.",
+                "_shouldBeSelected": false
+            },
+            {
+                "text": "This is option 4.",
+                "_shouldBeSelected": false
+            }
+        ],
+        "_feedback": {
+            "correct": "Congratulations, this is the correct feedback.<br /><br />Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.<br /><br />Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque.",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "This feedback will appear if you answered the question incorrectly.<br /><br />Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.<br /><br />Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque."
+            },
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "This feedback will appear if you answered the question correctly.<br /><br />Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.<br /><br />Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque."
+            }
         },
-        {
-            "title": "Hotspot 2 title",
-            "body": "Lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-            "_graphic": {
-                "src": "course/en/images/hotgraphic-2.jpg",
-                "alt": "alt text",
-                "_classes": ""
+        "_buttons": {
+            "_submit": {
+                "buttonText": "Submit",
+                "ariaLabel": "Select here to submit your answer."
             },
-            "pinAlt": "alt text",
-            "strapline": "strapline...",
-            "_classes": "center",
-            "_top": 25,
-            "_left": 60
+            "_reset": {
+                "buttonText": "Reset",
+                "ariaLabel": ""
+            },
+            "_showCorrectAnswer": {
+                "buttonText": "Correct Answer",
+                "ariaLabel": ""
+            },
+            "_hideCorrectAnswer": {
+                "buttonText": "My Answer",
+                "ariaLabel": ""
+            },
+            "_showFeedback": {
+                "buttonText": "Show feedback",
+                "ariaLabel": ""
+            },
+            "remainingAttemptsText": "attempts remaining",
+            "remainingAttemptText": "final attempt"
         },
-        {
-            "title": "Hotspot 3 title",
-            "body": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-            "_graphic": {
-                "src": "course/en/images/hotgraphic-3.jpg",
-                "alt": "alt text",
-                "_classes": ""
-            },
-            "pinAlt": "alt text",
-            "strapline": "strapline...",
-            "_classes": "bottom-right",
-            "_top": 85,
-            "_left": 40
+        "_pageLevelProgress": {
+            "_isEnabled": true
         }
-    ]
-  },
-	{
-		"_id": "c-45-1",
-		"_parentId": "b-45",
-    "_type":"component",
-    "_component":"graphic",
-    "_classes":"",
-    "_layout":"left",
-    "title":"Graphic",
-    "displayTitle":"",
-    "body":"",
-    "instruction":"",
-    "_graphic": {
-        "alt": "Chart graphic",
-        "large": "course/en/images/chart_graphic.png",
-        "small": "course/en/images/chart_graphic.png"
+    },
+    {
+        "_id": "c-20",
+        "_parentId": "b-20",
+        "_classes": "",
+        "_type": "component",
+        "_layout": "full",
+        "_component": "narrative",
+        "title": "Nominati iudicabit te eos",
+        "displayTitle": "Nominati iudicabit te eos",
+        "body": "Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit. Condimentum fermentum nunc.",
+        "instruction": "Sed non mauris vitae erat consequat auctor eu in elit.",
+        "_hasNavigationInTextArea": false,
+        "mobileInstruction": "Sed non mauris vitae erat consequat auctor eu in elit. ",
+        "_setCompletionOn": "allItems",
+        "_items": [{
+                "title": "Lorum ipsum dolar",
+                "body": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.",
+                "_graphic": {
+                    "src": "course/en/images/image-slider-1.jpg",
+                    "alt": "First graphic"
+                },
+                "strapline": "Lorum ipsum dolar"
+            },
+            {
+                "title": "Etiam pharetra",
+                "body": "Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit. Condimentum fermentum nunc.",
+                "_graphic": {
+                    "src": "course/en/images/image-slider-2.jpg",
+                    "alt": "Second graphic"
+                },
+                "strapline": "Etiam pharetra"
+            },
+            {
+                "title": "Aenean sollicitudin",
+                "body": "Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.",
+                "_graphic": {
+                    "src": "course/en/images/image-slider-3.jpg",
+                    "alt": "Third graphic"
+                },
+                "strapline": "Aenean sollicitudin"
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-25",
+        "_parentId": "b-25",
+        "_type": "component",
+        "_component": "gmcq",
+        "_classes": "",
+        "_layout": "full",
+        "_attempts": 1,
+        "_shouldDisplayAttempts": false,
+        "_questionWeight": 1,
+        "_isRandom": false,
+        "_selectable": 1,
+        "_canShowModelAnswer": true,
+        "_recordInteraction": true,
+        "_columns": 4,
+        "title": "Morbi accumsan ipsum veli",
+        "displayTitle": "Morbi accumsan ipsum veli",
+        "body": "Etiam pharetra, erat sed fermentum feugiat, ut aliquam massa nisl quis neque. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.",
+        "instruction": "Sed non mauris vitae erat consequat auctor eu in elit.",
+        "_items": [{
+                "text": "Option one",
+                "_shouldBeSelected": true,
+                "_graphic": {
+                    "alt": "Alt text for option 1",
+                    "large": "course/en/images/gqcq-1.jpg",
+                    "small": "course/en/images/gqcq-1.jpg"
+                }
+            },
+            {
+                "text": "Option two",
+                "_shouldBeSelected": false,
+                "_graphic": {
+                    "alt": "Alt text for option 2",
+                    "large": "course/en/images/gqcq-2.jpg",
+                    "small": "course/en/images/gqcq-2.jpg"
+                }
+            },
+            {
+                "text": "Option three",
+                "_shouldBeSelected": true,
+                "_graphic": {
+                    "alt": "Alt text for option 3",
+                    "large": "course/en/images/gqcq-3.jpg",
+                    "small": "course/en/images/gqcq-3.jpg"
+                }
+            },
+            {
+                "text": "Option four",
+                "_shouldBeSelected": false,
+                "_graphic": {
+                    "alt": "Alt text for option 4",
+                    "large": "course/en/images/gqcq-4.jpg",
+                    "small": "course/en/images/gqcq-4.jpg"
+                }
+            }
+        ],
+        "_feedback": {
+            "correct": "Congratulations, this is the correct feedback.<br /><br />Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.<br /><br />Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque.",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "This feedback will appear if you answered the question incorrectly.<br /><br />Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.<br /><br />Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque."
+            },
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "This feedback will appear if you answered the question correctly.<br /><br />Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.<br /><br />Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque."
+            }
+        },
+        "_buttons": {
+            "_submit": {
+                "buttonText": "Submit",
+                "ariaLabel": "Select here to submit your answer."
+            },
+            "_reset": {
+                "buttonText": "Reset",
+                "ariaLabel": ""
+            },
+            "_showCorrectAnswer": {
+                "buttonText": "Correct Answer",
+                "ariaLabel": ""
+            },
+            "_hideCorrectAnswer": {
+                "buttonText": "My Answer",
+                "ariaLabel": ""
+            },
+            "_showFeedback": {
+                "buttonText": "Show feedback",
+                "ariaLabel": ""
+            },
+            "remainingAttemptsText": "attempts remaining",
+            "remainingAttemptText": "final attempt"
+        }
+    },
+    {
+        "_id": "c-30",
+        "_parentId": "b-30",
+        "_type": "component",
+        "_component": "slider",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Nonumy ubique aperir",
+        "displayTitle": "Nonumy ubique aperir",
+        "body": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio nibh vulputate cursus a. Morbi accumsan ipsum velit.",
+        "instruction": "Sed non  mauris vitae erat consequat auctor eu in elit.",
+        "_attempts": 2,
+        "_shouldDisplayAttempts": false,
+        "_questionWeight": 1,
+        "_canShowModelAnswer": true,
+        "_canShowMarking": true,
+        "_recordInteraction": true,
+        "_showNumber": true,
+        "_showScaleIndicator": true,
+        "_showScale": true,
+        "labelStart": "incomplete",
+        "labelEnd": "complete",
+        "_scaleStart": 1,
+        "_scaleEnd": 10,
+        "_scaleStep": 1,
+        "_correctAnswer": "",
+        "_correctRange": {
+            "_bottom": 4,
+            "_top": 9
+        },
+        "_buttons": {
+            "_submit": {
+                "buttonText": "Submit",
+                "ariaLabel": "Select here to submit your answer."
+            },
+            "_reset": {
+                "buttonText": "Reset",
+                "ariaLabel": ""
+            },
+            "_showCorrectAnswer": {
+                "buttonText": "Correct Answer",
+                "ariaLabel": ""
+            },
+            "_hideCorrectAnswer": {
+                "buttonText": "My Answer",
+                "ariaLabel": ""
+            },
+            "_showFeedback": {
+                "buttonText": "Show feedback",
+                "ariaLabel": ""
+            },
+            "remainingAttemptsText": "attempts remaining",
+            "remainingAttemptText": "final attempt"
+        },
+        "_feedback": {
+            "correct": "Congratulations, this is the correct feedback.<br /><br />Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.<br /><br />Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque.",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "This feedback will appear if you answered the question incorrectly.<br /><br />Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.<br /><br />Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque."
+            },
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "This feedback will appear if you answered the question correctly.<br /><br />Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.<br /><br />Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque."
+            }
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-35",
+        "_parentId": "b-35",
+        "_classes": "",
+        "_layout": "full",
+        "_type": "component",
+        "_component": "matching",
+        "_attempts": 2,
+        "_shouldDisplayAttempts": false,
+        "_isRandom": true,
+        "_canShowModelAnswer": true,
+        "_recordInteraction": true,
+        "_questionWeight": 10,
+        "title": "His consul vivendum mandamus",
+        "displayTitle": "His consul vivendum mandamus",
+        "body": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.<br /><br />Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque.",
+        "instruction": "Sed non mauris vitae erat consequat auctor eu in elit.",
+        "_buttons": {
+            "_submit": {
+                "buttonText": "Submit",
+                "ariaLabel": "Select here to submit your answer."
+            },
+            "_reset": {
+                "buttonText": "Reset",
+                "ariaLabel": ""
+            },
+            "_showCorrectAnswer": {
+                "buttonText": "Correct Answer",
+                "ariaLabel": ""
+            },
+            "_hideCorrectAnswer": {
+                "buttonText": "My Answer",
+                "ariaLabel": ""
+            },
+            "_showFeedback": {
+                "buttonText": "Show feedback",
+                "ariaLabel": ""
+            },
+            "remainingAttemptsText": "attempts remaining",
+            "remainingAttemptText": "final attempt"
+        },
+        "_feedback": {
+            "correct": "Congratulations, this is the correct feedback.<br /><br />Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.<br /><br />Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque.",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "This feedback will appear if you answered the question incorrectly.<br /><br />Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.<br /><br />Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque."
+            },
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "This feedback will appear if you answered the question correctly.<br /><br />Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.<br /><br />Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque."
+            }
+        },
+        "placeholder": "select an option",
+        "_items": [{
+                "text": "Lorum ipsum doar sit amit.",
+                "_options": [{
+                        "text": "Proin gravida nibh vel velit",
+                        "_isCorrect": false
+                    },
+                    {
+                        "text": "Proin gravida (correct)",
+                        "_isCorrect": true
+                    },
+                    {
+                        "text": "Proin gravida nibh vel velit",
+                        "_isCorrect": false
+                    }
+                ]
+            },
+            {
+                "text": "Ea explicari imperdiet mel.",
+                "_options": [{
+                        "text": "Proin gravida nibh vel velit",
+                        "_isCorrect": false
+                    },
+                    {
+                        "text": "Proin gravida nibh vel velit",
+                        "_isCorrect": false
+                    },
+                    {
+                        "text": "Proin gravida (correct)",
+                        "_isCorrect": true
+                    }
+                ]
+            },
+            {
+                "text": "Fuisset iracundia honestatis.",
+                "_options": [{
+                        "text": "Proin gravida (correct)",
+                        "_isCorrect": true
+                    },
+                    {
+                        "text": "Proin gravida nibh vel velit",
+                        "_isCorrect": false
+                    },
+                    {
+                        "text": "Proin gravida nibh vel velit",
+                        "_isCorrect": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "c-40",
+        "_parentId": "b-40",
+        "_classes": "",
+        "_type": "component",
+        "_component": "hotgraphic",
+        "_layout": "full",
+        "title": "Lorum ipsum doar sit amit",
+        "displayTitle": "Lorum ipsum doar sit amit",
+        "body": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
+        "mobileBody": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
+        "instruction": "Sed non mauris vitae erat consequat auctor eu in elit.",
+        "mobileInstruction": "Sed non mauris vitae erat consequat auctor eu in elit.",
+        "_setCompletionOn": "allItems",
+        "_useGraphicsAsPins": false,
+        "_canCycleThroughPagination": false,
+        "_hidePagination": false,
+        "_graphic": {
+            "src": "course/en/images/hot_graphic.jpg",
+            "alt": "alt text"
+        },
+        "_items": [{
+                "title": "Hotspot 1 title",
+                "body": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
+                "_graphic": {
+                    "src": "course/en/images/hotgraphic-1.jpg",
+                    "alt": "alt text",
+                    "_classes": ""
+                },
+                "pinAlt": "alt text",
+                "strapline": "strapline...",
+                "_classes": "top-left",
+                "_top": 5,
+                "_left": 20
+            },
+            {
+                "title": "Hotspot 2 title",
+                "body": "Lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
+                "_graphic": {
+                    "src": "course/en/images/hotgraphic-2.jpg",
+                    "alt": "alt text",
+                    "_classes": ""
+                },
+                "pinAlt": "alt text",
+                "strapline": "strapline...",
+                "_classes": "center",
+                "_top": 25,
+                "_left": 60
+            },
+            {
+                "title": "Hotspot 3 title",
+                "body": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
+                "_graphic": {
+                    "src": "course/en/images/hotgraphic-3.jpg",
+                    "alt": "alt text",
+                    "_classes": ""
+                },
+                "pinAlt": "alt text",
+                "strapline": "strapline...",
+                "_classes": "bottom-right",
+                "_top": 85,
+                "_left": 40
+            }
+        ]
+    },
+    {
+        "_id": "c-45-1",
+        "_parentId": "b-45",
+        "_type": "component",
+        "_component": "graphic",
+        "_classes": "",
+        "_layout": "left",
+        "title": "Graphic",
+        "displayTitle": "",
+        "body": "",
+        "instruction": "",
+        "_graphic": {
+            "alt": "Chart graphic",
+            "large": "course/en/images/chart_graphic.png",
+            "small": "course/en/images/chart_graphic.png"
+        }
+    },
+    {
+        "_id": "c-45-2",
+        "_parentId": "b-45",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "right",
+        "title": "Lorem ipsum dolor",
+        "displayTitle": "Lorem ipsum dolor",
+        "body": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. ",
+        "instruction": ""
+    },
+    {
+        "_id": "c-50",
+        "_parentId": "b-50",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Ea explicari imperdiet mel",
+        "displayTitle": "Ea explicari imperdiet mel",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br /><br />Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+        "instruction": ""
     }
-  },
-	{
-		"_id": "c-45-2",
-		"_parentId": "b-45",
-    "_type":"component",
-    "_component":"text",
-    "_classes":"",
-    "_layout":"right",
-    "title":"Lorem ipsum dolor",
-    "displayTitle":"Lorem ipsum dolor",
-    "body":"Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. ",
-    "instruction":""
-  },
-	{
-		"_id": "c-50",
-		"_parentId": "b-50",
-    "_type":"component",
-    "_component":"text",
-    "_classes":"",
-    "_layout":"full",
-    "title":"Ea explicari imperdiet mel",
-    "displayTitle":"Ea explicari imperdiet mel",
-    "body":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br /><br />Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
-    "instruction":""
-  }
 ]

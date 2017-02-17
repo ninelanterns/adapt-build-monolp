@@ -1,3 +1,711 @@
+define('extensions/adapt-articleBlockSlider/js/adapt-articleView',[
+    'coreJS/adapt',
+    'coreViews/articleView'
+], function(Adapt, AdaptArticleView) {
+
+    var BlockSliderView = {
+
+        _disableAnimationOnce: false,
+        _disableAnimations: false,
+
+        events: {
+            "click [data-block-slider]": "_onBlockSliderClick"
+        },
+
+        preRender: function() {
+
+            AdaptArticleView.prototype.preRender.call(this);
+            if (this.model.isBlockSliderEnabled()) this._blockSliderPreRender();
+
+        },
+
+        _blockSliderPreRender: function() {
+            this._disableAnimations = $('html').is(".ie8") || $('html').is(".iPhone.version-7\\.0");
+            this._blockSliderSetupEventListeners();
+        },
+
+        _blockSliderSetupEventListeners: function() {
+
+            this._onBlockSliderResize = _.bind(this._onBlockSliderResize, this);
+            this._blockSliderResizeHeight = _.bind(this._blockSliderResizeHeight, this);
+
+            this.listenTo(Adapt, "device:resize", this._onBlockSliderResize);
+            this.listenTo(Adapt, "device:changed", this._onBlockSliderDeviceChanged);
+
+            this.listenToOnce(Adapt, "remove", this._onBlockSliderRemove);
+            this.listenToOnce(this.model, "change:_isReady", this._onBlockSliderReady);
+
+            this.listenTo(Adapt, "page:scrollTo", this._onBlockSliderPageScrollTo);
+            this.listenTo(Adapt, "page:scrolledTo", this._onBlockSliderPageScrolledTo);
+
+        },
+
+        render: function() {
+
+            if (this.model.isBlockSliderEnabled()) {
+
+                this._blockSliderRender();
+
+            } else AdaptArticleView.prototype.render.call(this);
+
+        },
+
+        _blockSliderRender: function() {
+            Adapt.trigger(this.constructor.type + 'View:preRender', this);
+
+            this._blockSliderConfigureVariables();
+
+            var data = this.model.toJSON();
+            var template = Handlebars.templates['articleBlockSlider-article'];
+            this.$el.html(template(data));
+
+            this.addChildren();
+
+            _.defer(_.bind(function() {
+                this._blockSliderPostRender();
+
+            }, this));
+
+            this.$el.addClass('article-block-slider-enabled');
+
+            this.delegateEvents();
+
+            return this;
+        },
+
+        _blockSliderConfigureVariables: function() {
+            var blocks = this.model.getChildren().models;
+            var totalBlocks = blocks.length;
+
+            this.model.set("_currentBlock", 0);
+            this.model.set("_totalBlocks", totalBlocks);
+
+            var itemButtons = [];
+
+            for (var i = 0, l = totalBlocks; i < l; i++) {
+                itemButtons.push({
+                    _className: (i === 0 ? "home" : "not-home") + (" i"+i),
+                    _index: i,
+                    _includeNumber: i != 0,
+                    _title: blocks[i].get('title')
+                });
+            }
+
+            this.model.set("_itemButtons", itemButtons);
+        },
+
+        _blockSliderConfigureControls: function(animate) {
+
+            var duration = this.model.get("_articleBlockSlider")._slideAnimationDuration || 200;
+
+            if (this._disableAnimationOnce) animate = false;
+            if (this._disableAnimations) animate = false;
+
+            var _currentBlock = this.model.get("_currentBlock");
+            var _totalBlocks = this.model.get("_totalBlocks");
+
+            var $left = this.$el.find("[data-block-slider='left']");
+            var $right = this.$el.find("[data-block-slider='right']");
+
+            if (_currentBlock === 0) {
+                $left.a11y_cntrl_enabled(false);
+                $right.a11y_cntrl_enabled(true);
+            } else if (_currentBlock == _totalBlocks - 1 ) {
+                $left.a11y_cntrl_enabled(true);
+                $right.a11y_cntrl_enabled(false);
+            } else {
+                $left.a11y_cntrl_enabled(true);
+                $right.a11y_cntrl_enabled(true);
+            }
+
+            var $indexes = this.$el.find("[data-block-slider='index']");
+            $indexes.a11y_cntrl_enabled(true).removeClass("selected");
+            $indexes.eq(_currentBlock).a11y_cntrl_enabled(false).addClass("selected visited");
+
+            var $blocks = this.$el.find(".block");
+
+            $blocks.a11y_on(false).eq(_currentBlock).a11y_on(true);
+
+            _.delay(_.bind(function() {
+                if ($blocks.eq(_currentBlock).onscreen().onscreen) $blocks.eq(_currentBlock).a11y_focus();
+            }, this), duration);
+
+        },
+
+        _blockSliderSetButtonLayout: function() {
+            var buttonsLength = this.model.get('_itemButtons').length;
+            var itemwidth = 100 / buttonsLength;
+            this.$('.item-button').css({
+                width: itemwidth + '%'
+            });
+        },
+
+        _blockSliderPostRender: function() {
+            this._blockSliderConfigureControls(false);
+
+
+
+            if (this.model.get("_articleBlockSlider")._hasTabs) {
+                var parentHeight = this.$('.item-button').parent().height();
+                this.$('.item-button').css({
+                    height: parentHeight + 'px'
+                });
+
+                var toolbarHeight = this.$('.article-block-toolbar').height();
+                var additionalMargin = '30';
+                this.$('.article-block-toolbar').css({
+                    top: '-' + (toolbarHeight + (additionalMargin/2)) + 'px'
+                });
+
+                var toolbarMargin = parseFloat(toolbarHeight) + parseFloat(additionalMargin);
+                this.$('.article-block-slider').css({
+                    marginTop: toolbarMargin + 'px'
+                });
+                this._blockSliderSetButtonLayout();
+            }
+
+            this._onBlockSliderDeviceChanged();
+
+            var startIndex = this.model.get("_articleBlockSlider")._startIndex || 0;
+
+            this._blockSliderMoveIndex(startIndex, false);
+
+            Adapt.trigger(this.constructor.type + 'View:postRender', this);
+
+        },
+
+        _onBlockSliderReady: function() {
+            this._blockSliderHideOthers();
+            _.delay(_.bind(function(){
+                this._blockSliderConfigureControls(false);
+            },this),250);
+            this.$(".component").on("resize", this._blockSliderResizeHeight);
+        },
+
+        _onBlockSliderClick: function(event) {
+            event.preventDefault();
+
+            var id = $(event.currentTarget).attr("data-block-slider");
+
+            switch(id) {
+            case "left":
+                this._blockSliderMoveLeft();
+                break;
+            case "index":
+                var index = parseInt($(event.currentTarget).attr("data-block-slider-index"));
+                this._blockSliderMoveIndex(index);
+                break;
+            case "right":
+                this._blockSliderMoveRight();
+                break;
+            }
+
+        },
+
+        _blockSliderMoveLeft: function() {
+            if (this.model.get("_currentBlock") === 0) return;
+
+            var index = this.model.get("_currentBlock");
+            index--;
+            this._blockSliderMoveIndex(index);
+        },
+
+        _blockSliderMoveIndex: function(index, animate) {
+            if (this.model.get("_currentBlock") != index) {
+
+                this.model.set("_currentBlock", index);
+                this._blockSliderSetVisible(this.model.getChildren().models[index], true);
+
+                this._blockSliderResizeHeight(animate);
+                this._blockSliderScrollToCurrent(animate);
+                this._blockSliderConfigureControls(animate);
+            }
+
+            var duration = this.model.get("_articleBlockSlider")._slideAnimationDuration || 200;
+
+            if (this._disableAnimationOnce) animate = false;
+            if (this._disableAnimations) animate = false;
+
+            if (animate !== false) {
+                _.delay(function() {
+                    $(window).resize();
+                }, duration);
+            } else {
+                $(window).resize();
+            }
+        },
+
+        _blockSliderMoveRight: function() {
+            if (this.model.get("_currentBlock") == this.model.get("_totalBlocks") - 1 ) return;
+
+            var index = this.model.get("_currentBlock");
+            index++;
+            this._blockSliderMoveIndex(index);
+        },
+
+        _blockSliderScrollToCurrent: function(animate) {
+            var isEnabled = this._blockSliderIsEnabledOnScreenSizes();
+            var $container = this.$el.find(".article-block-slider");
+
+            if (!isEnabled) {
+                return $container.scrollLeft(0);
+            }
+
+            var blocks = this.$el.find(".block");
+            var blockWidth = $(blocks[0]).outerWidth();
+            var totalLeft = this.model.get("_currentBlock") * blockWidth;
+
+            this._blockSliderShowAll();
+
+            var duration = this.model.get("_articleBlockSlider")._slideAnimationDuration || 200;
+
+            var currentBlock = this.model.get("_currentBlock")
+            var $currentBlock = $(blocks[currentBlock]);
+
+            if (this._disableAnimationOnce) animate = false;
+            if (this._disableAnimations) animate = false;
+
+            if (animate === false) {
+                _.defer(_.bind(function(){
+                    $container.scrollLeft(totalLeft );
+                    this._blockSliderHideOthers();
+                }, this));
+            } else {
+                $container.stop(true).animate({scrollLeft:totalLeft}, duration, _.bind(function() {
+                    $container.scrollLeft(totalLeft );
+                    this._blockSliderHideOthers();
+                }, this));
+            }
+
+        },
+
+        _blockSliderIsEnabledOnScreenSizes: function() {
+            var isEnabledOnScreenSizes = this.model.get("_articleBlockSlider")._isEnabledOnScreenSizes;
+
+            var sizes = isEnabledOnScreenSizes.split(" ");
+            if (_.indexOf(sizes, Adapt.device.screenSize) > -1) {
+                return true;
+            }
+            return false;
+        },
+
+        _blockSliderShowAll: function() {
+            var blocks = this.model.getChildren().models;
+            var currentIndex = this.model.get("_currentBlock");
+
+            for (var i = 0, l = blocks.length; i < l; i++) {
+                this._blockSliderSetVisible(blocks[i], true);
+            }
+        },
+
+        _blockSliderHideOthers: function() {
+            var blocks = this.model.getChildren().models;
+            var currentIndex = this.model.get("_currentBlock");
+
+            for (var i = 0, l = blocks.length; i < l; i++) {
+                if (i != currentIndex) {
+                    this._blockSliderSetVisible(blocks[i], false);
+                } else {
+                    this._blockSliderSetVisible(blocks[i], true);
+                }
+            }
+
+        },
+
+        _blockSliderSetVisible: function(model, value) {
+            var id = model.get("_id");
+
+            this.$el.find("."+id + " *").css("visibility", value ? "" : "hidden");
+
+        },
+
+        _onBlockSliderResize: function() {
+
+            this._blockSliderResizeWidth(false);
+            this._blockSliderResizeHeight(false);
+            this._blockSliderScrollToCurrent(false);
+
+        },
+
+        _blockSliderResizeHeight: function(animate) {
+            var $container = this.$el.find(".article-block-slider");
+            var isEnabled = this._blockSliderIsEnabledOnScreenSizes();
+
+            if (!isEnabled) {
+                this._blockSliderShowAll();
+                return $container.velocity("stop").css({"height": "", "min-height": ""});
+            }
+
+            var currentBlock = this.model.get("_currentBlock");
+            var $blocks = this.$el.find(".block");
+
+            var currentHeight = $container.height();
+            var blockHeight = $blocks.eq(currentBlock).height();
+
+            var maxHeight = -1;
+            $container.find(".block").each(function() {
+            
+            if ($(this).height() > maxHeight)
+                maxHeight = $(this).height();
+            });
+
+            var duration = (this.model.get("_articleBlockSlider")._heightAnimationDuration || 200) * 2;
+
+            if (this._disableAnimationOnce) animate = false;
+            if (this._disableAnimations) animate = false;
+
+            if (this.model.get("_articleBlockSlider")._hasUniformHeight) {
+                if (animate === false) {
+                    $container.css({"height": maxHeight+"px"});
+                } else {
+                    $container.velocity("stop").velocity({"height": maxHeight+"px"}, {duration: duration });//, easing: "ease-in"});
+                }
+            } else if (currentHeight <= blockHeight) {
+
+                if (animate === false) {
+                    $container.css({"height": blockHeight+"px"});
+                } else {
+                    $container.velocity("stop").velocity({"height": blockHeight+"px"}, {duration: duration });//, easing: "ease-in"});
+                }
+
+            } else if (currentHeight > blockHeight) {
+
+                if (animate === false) {
+                    $container.css({"height": blockHeight+"px"});
+                } else {
+                    $container.velocity("stop").velocity({"height": blockHeight+"px"}, {duration: duration });//, easing: "ease-in"});
+                }
+
+            }
+
+            var minHeight = this.model.get("_articleBlockSlider")._minHeight;
+            if (minHeight) {
+                $container.css({"min-height": minHeight+"px"});
+            }
+        },
+
+        _blockSliderResizeWidth: function() {
+            var isEnabled = this._blockSliderIsEnabledOnScreenSizes();
+            var $blockContainer = this.$el.find(".block-container");
+            var $blocks = this.$el.find(".block");
+
+            if (!isEnabled) {
+                $blocks.css("width", "");
+                return $blockContainer.css({"width": "100%"});
+            }
+
+            var $container = this.$el.find(".article-block-slider");
+
+            $blocks.css("width", $container.width()+"px");
+
+            var blockWidth = $($blocks[0]).outerWidth();
+            var totalWidth = $blocks.length * (blockWidth);
+
+            $blockContainer.width(totalWidth + "px");
+
+        },
+
+        _onBlockSliderDeviceChanged: function() {
+            var isEnabled = this._blockSliderIsEnabledOnScreenSizes();
+
+            if (isEnabled) {
+                this.$(".article-block-toolbar, .article-block-bottombar").removeClass("display-none")
+            } else {
+                this.$(".article-block-toolbar, .article-block-bottombar").addClass("display-none");
+            }
+
+            _.delay(function() {
+                $(window).resize();
+            }, 250);
+        },
+
+        _onBlockSliderPageScrollTo: function(selector) {
+            this._disableAnimationOnce = true;
+            _.defer(_.bind(function() {
+                this._disableAnimationOnce = false;
+            }, this));
+
+            if (typeof selector === "object") selector = selector.selector;
+
+            var isEnabled = this._blockSliderIsEnabledOnScreenSizes();
+            if (!isEnabled) {
+                return;
+            }
+
+            if (this.$el.find(selector).length == 0) return;
+
+            var id = selector.substr(1);
+
+            var model = Adapt.findById(id);
+            if (!model) return;
+
+            var block;
+            if (model.get("_type") == "block") block = model;
+            else block = model.findAncestor("blocks");
+            if (!block) return;
+
+            var children = this.model.getChildren();
+            for (var i = 0, item; item = children.models[i++];) {
+                if (item.get("_id") == block.get("_id")) {
+                    _.defer(_.bind(function() {
+                        this._blockSliderMoveIndex(i-1, false);
+                    }, this));
+                    return;
+                }
+            }
+
+        },
+
+        _onBlockSliderPageScrolledTo: function() {
+            _.defer(_.bind(function() {
+                this._blockSliderScrollToCurrent(false);
+            }, this));
+        },
+
+        _onBlockSliderRemove: function() {
+            this._blockSliderRemoveEventListeners();
+        },
+
+        _blockSliderRemoveEventListeners: function() {
+            this.$(".component").off("resize", this._blockSliderResizeHeight);
+            this.stopListening(Adapt, "device:changed", this._onBlockSliderDeviceChanged);
+        }
+    };
+
+    return BlockSliderView;
+
+});
+
+define('extensions/adapt-articleBlockSlider/js/adapt-articleModel',[
+	'coreJS/adapt'
+], function(Adapt) {
+
+	var BlockSliderModel = {
+
+		isBlockSliderEnabled: function() {
+			return this.get("_articleBlockSlider") && this.get("_articleBlockSlider")._isEnabled;
+		}
+
+	};
+
+	return BlockSliderModel;
+});
+
+//https://github.com/cgkineo/jquery.resize 2016-09-30
+
+(function() {
+
+  if ($.fn.off.elementResizeOriginalOff) return;
+
+
+  var orig = $.fn.on;
+  $.fn.on = function () {
+    if (arguments[0] !== "resize") return $.fn.on.elementResizeOriginalOn.apply(this, _.toArray(arguments));
+    if (this[0] === window) return $.fn.on.elementResizeOriginalOn.apply(this, _.toArray(arguments));
+
+    addResizeListener.call(this, (new Date()).getTime());
+
+    return $.fn.on.elementResizeOriginalOn.apply(this, _.toArray(arguments));
+  };
+  $.fn.on.elementResizeOriginalOn = orig;
+  var orig = $.fn.off;
+  $.fn.off = function () {
+    if (arguments[0] !== "resize") return $.fn.off.elementResizeOriginalOff.apply(this, _.toArray(arguments));
+    if (this[0] === window) return $.fn.off.elementResizeOriginalOff.apply(this, _.toArray(arguments));
+
+    removeResizeListener.call(this, (new Date()).getTime());
+
+    return $.fn.off.elementResizeOriginalOff.apply(this, _.toArray(arguments));
+  };
+  $.fn.off.elementResizeOriginalOff = orig;
+
+  var expando = $.expando;
+  var expandoIndex = 0;
+
+  function checkExpando(element) {
+    if (!element[expando]) element[expando] = ++expandoIndex;
+    }
+
+  //element + event handler storage
+  var resizeObjs = {};
+
+  //jQuery element + event handler attachment / removal
+  var addResizeListener = function(data) {
+      checkExpando(this);
+      var $item = $(this);
+      var measure = getDimensions($item);
+      resizeObjs[data.guid + "-" + this[expando]] = { 
+        data: data, 
+        $element: $item,
+        _resizeData: measure.uniqueMeasurementId
+      };
+  };
+
+  var removeResizeListener = function(data) {
+    try { 
+      delete resizeObjs[data.guid + "-" + this[expando]]; 
+    } catch(e) {
+
+    }
+  };
+
+  function checkLoopExpired() {
+    if ((new Date()).getTime() - loopData.lastEvent > 1500) {
+      stopLoop()
+      return true;
+    }
+  }
+
+  function resizeLoop () {
+    if (checkLoopExpired()) return;
+
+    var resizeHandlers = getEventHandlers("resize");
+
+    if (resizeHandlers.length === 0) {
+      //nothing to resize
+      stopLoop();
+      resizeIntervalDuration = 500;
+      repeatLoop();
+    } else {
+      //something to resize
+      stopLoop();
+      resizeIntervalDuration = 250;
+      repeatLoop();
+    }
+
+    if  (resizeHandlers.length > 0) {
+      var items = resizeHandlers;
+      for (var i = 0; i < items.length; i++) {
+        var item = items[i];
+        triggerResize(item);
+      }
+    }
+
+  }
+
+  function getEventHandlers(eventName) {
+    var items = [];
+    
+    switch (eventName) {
+    case "resize":
+      for (var k in resizeObjs) {
+        items.push(resizeObjs[k]);
+      }
+      break;
+    }
+
+    return items;
+  }
+
+  function getDimensions($element) {
+      var height = $element.outerHeight();
+      var width = $element.outerWidth();
+
+      return {
+        uniqueMeasurementId: height+","+width
+      };
+  }
+
+  function triggerResize(item) {
+    var measure = getDimensions(item.$element);
+    //check if measure has the same values as last
+    if (item._resizeData !== undefined && item._resizeData === measure.uniqueMeasurementId) return;
+    item._resizeData = measure.uniqueMeasurementId;
+    
+    //make sure to keep listening until no more resize changes are found
+    loopData.lastEvent = (new Date()).getTime();
+    
+    item.$element.trigger('resize');
+  }
+
+
+  //checking loop interval duration
+  var resizeIntervalDuration = 250;
+
+  var loopData = {
+    lastEvent: 0,
+    interval: null
+  };
+
+  //checking loop start and end
+  function startLoop() {
+    loopData.lastEvent = (new Date()).getTime();
+    if (loopData.interval !== null) {
+      stopLoop();
+    }
+    loopData.interval = setTimeout(resizeLoop, resizeIntervalDuration);
+  }
+
+  function repeatLoop() {
+    if (loopData.interval !== null) {
+      stopLoop();
+    }
+    loopData.interval = setTimeout(resizeLoop, resizeIntervalDuration);
+  }
+
+  function stopLoop() {
+    clearInterval(loopData.interval);
+    loopData.interval = null;
+  }
+
+  $('body').on("mousedown mouseup keyup keydown", startLoop);
+  $(window).on("resize", startLoop);
+
+
+})();
+
+define("extensions/adapt-articleBlockSlider/js/lib/jquery.resize", function(){});
+
+define('extensions/adapt-articleBlockSlider/js/adapt-articleExtension',[
+	'coreJS/adapt',
+	'coreViews/articleView',
+	'coreModels/articleModel',
+	'./adapt-articleView',
+	'./adapt-articleModel',
+	'./lib/jquery.resize'
+], function(Adapt, ArticleView, ArticleModel, ArticleViewExtension, ArticleModelExtension) {
+
+	/*	
+		Here we are extending the articleView and articleModel in Adapt.
+		This is to accomodate the block slider functionality on the article.
+		The advantage of this method is that the block slider behaviour can utilize all of the predefined article behaviour in both the view and the model.
+	*/	
+
+	//Extends core/js/views/articleView.js
+	var ArticleViewInitialize = ArticleView.prototype.initialize;
+	ArticleView.prototype.initialize = function(options) {
+		if (this.model.get("_articleBlockSlider")) {
+			//extend the articleView with new functionality
+			_.extend(this, ArticleViewExtension);
+		}
+		//initialize the article in the normal manner
+		return ArticleViewInitialize.apply(this, arguments);
+	};
+
+	//Extends core/js/models/articleModel.js
+	var ArticleModelInitialize = ArticleModel.prototype.initialize;
+	ArticleModel.prototype.initialize = function(options) {
+		if (this.get("_articleBlockSlider")) {
+			//extend the articleModel with new functionality
+			_.extend(this, ArticleModelExtension);
+
+			//initialize the article in the normal manner
+			var returnValue = ArticleModelInitialize.apply(this, arguments);
+
+			return returnValue;
+		}
+
+		//initialize the article in the normal manner if no assessment
+		return ArticleModelInitialize.apply(this, arguments);
+	};
+
+});
+define('extensions/adapt-articleBlockSlider/js/articleBlockSlider',[
+	'coreJS/adapt',
+	'./adapt-articleExtension'
+], function(Adapt) {
+
+});
 define('extensions/adapt-contrib-assessment/js/adapt-assessmentArticleView',[
     'coreJS/adapt',
     'coreViews/articleView'
@@ -7807,6 +8515,1417 @@ define('components/adapt-contrib-blank/js/adapt-contrib-blank',['require','coreV
 
     return Blank;
 
+});
+
+/*! rangeslider.js - v2.1.1 | (c) 2016 @andreruffert | MIT license | https://github.com/andreruffert/rangeslider.js */
+(function(factory) {
+    'use strict';
+
+    if (typeof define === 'function' && define.amd) {
+        // AMD. Register as an anonymous module.
+        define('components/adapt-contrib-slider/js/rangeslider.js',['jquery'], factory);
+    } else if (typeof exports === 'object') {
+        // CommonJS
+        module.exports = factory(require('jquery'));
+    } else {
+        // Browser globals
+        factory(jQuery);
+    }
+}(function($) {
+    'use strict';
+
+    // Polyfill Number.isNaN(value)
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isNaN
+    Number.isNaN = Number.isNaN || function(value) {
+        return typeof value === 'number' && value !== value;
+    };
+
+    /**
+     * Range feature detection
+     * @return {Boolean}
+     */
+    function supportsRange() {
+        var input = document.createElement('input');
+        input.setAttribute('type', 'range');
+        return input.type !== 'text';
+    }
+
+    var pluginName = 'rangeslider',
+        pluginIdentifier = 0,
+        hasInputRangeSupport = supportsRange(),
+        defaults = {
+            polyfill: true,
+            orientation: 'horizontal',
+            rangeClass: 'rangeslider',
+            disabledClass: 'rangeslider--disabled',
+            horizontalClass: 'rangeslider--horizontal',
+            verticalClass: 'rangeslider--vertical',
+            fillClass: 'rangeslider__fill',
+            handleClass: 'rangeslider__handle',
+            startEvent: ['mousedown', 'touchstart', 'pointerdown'],
+            moveEvent: ['mousemove', 'touchmove', 'pointermove'],
+            endEvent: ['mouseup', 'touchend', 'pointerup']
+        },
+        constants = {
+            orientation: {
+                horizontal: {
+                    dimension: 'width',
+                    direction: 'left',
+                    directionStyle: 'left',
+                    coordinate: 'x'
+                },
+                vertical: {
+                    dimension: 'height',
+                    direction: 'top',
+                    directionStyle: 'bottom',
+                    coordinate: 'y'
+                }
+            }
+        };
+
+    /**
+     * Delays a function for the given number of milliseconds, and then calls
+     * it with the arguments supplied.
+     *
+     * @param  {Function} fn   [description]
+     * @param  {Number}   wait [description]
+     * @return {Function}
+     */
+    function delay(fn, wait) {
+        var args = Array.prototype.slice.call(arguments, 2);
+        return setTimeout(function(){ return fn.apply(null, args); }, wait);
+    }
+
+    /**
+     * Returns a debounced function that will make sure the given
+     * function is not triggered too much.
+     *
+     * @param  {Function} fn Function to debounce.
+     * @param  {Number}   debounceDuration OPTIONAL. The amount of time in milliseconds for which we will debounce the function. (defaults to 100ms)
+     * @return {Function}
+     */
+    function debounce(fn, debounceDuration) {
+        debounceDuration = debounceDuration || 100;
+        return function() {
+            if (!fn.debouncing) {
+                var args = Array.prototype.slice.apply(arguments);
+                fn.lastReturnVal = fn.apply(window, args);
+                fn.debouncing = true;
+            }
+            clearTimeout(fn.debounceTimeout);
+            fn.debounceTimeout = setTimeout(function(){
+                fn.debouncing = false;
+            }, debounceDuration);
+            return fn.lastReturnVal;
+        };
+    }
+
+    /**
+     * Check if a `element` is visible in the DOM
+     *
+     * @param  {Element}  element
+     * @return {Boolean}
+     */
+    function isHidden(element) {
+        return (
+            element && (
+                element.offsetWidth === 0 ||
+                element.offsetHeight === 0 ||
+                // Also Consider native `<details>` elements.
+                element.open === false
+            )
+        );
+    }
+
+    /**
+     * Get hidden parentNodes of an `element`
+     *
+     * @param  {Element} element
+     * @return {[type]}
+     */
+    function getHiddenParentNodes(element) {
+        var parents = [],
+            node    = element.parentNode;
+
+        while (isHidden(node)) {
+            parents.push(node);
+            node = node.parentNode;
+        }
+        return parents;
+    }
+
+    /**
+     * Returns dimensions for an element even if it is not visible in the DOM.
+     *
+     * @param  {Element} element
+     * @param  {String}  key     (e.g. offsetWidth …)
+     * @return {Number}
+     */
+    function getDimension(element, key) {
+        var hiddenParentNodes       = getHiddenParentNodes(element),
+            hiddenParentNodesLength = hiddenParentNodes.length,
+            inlineStyle             = [],
+            dimension               = element[key];
+
+        // Used for native `<details>` elements
+        function toggleOpenProperty(element) {
+            if (typeof element.open !== 'undefined') {
+                element.open = (element.open) ? false : true;
+            }
+        }
+
+        if (hiddenParentNodesLength) {
+            for (var i = 0; i < hiddenParentNodesLength; i++) {
+
+                // Cache style attribute to restore it later.
+                inlineStyle[i] = hiddenParentNodes[i].style.cssText;
+
+                // visually hide
+                if (hiddenParentNodes[i].style.setProperty) {
+                    hiddenParentNodes[i].style.setProperty('display', 'block', 'important');
+                } else {
+                    hiddenParentNodes[i].style.cssText += ';display: block !important';
+                }
+                hiddenParentNodes[i].style.height = '0';
+                hiddenParentNodes[i].style.overflow = 'hidden';
+                hiddenParentNodes[i].style.visibility = 'hidden';
+                toggleOpenProperty(hiddenParentNodes[i]);
+            }
+
+            // Update dimension
+            dimension = element[key];
+
+            for (var j = 0; j < hiddenParentNodesLength; j++) {
+
+                // Restore the style attribute
+                hiddenParentNodes[j].style.cssText = inlineStyle[j];
+                toggleOpenProperty(hiddenParentNodes[j]);
+            }
+        }
+        return dimension;
+    }
+
+    /**
+     * Returns the parsed float or the default if it failed.
+     *
+     * @param  {String}  str
+     * @param  {Number}  defaultValue
+     * @return {Number}
+     */
+    function tryParseFloat(str, defaultValue) {
+        var value = parseFloat(str);
+        return Number.isNaN(value) ? defaultValue : value;
+    }
+
+    /**
+     * Capitalize the first letter of string
+     *
+     * @param  {String} str
+     * @return {String}
+     */
+    function ucfirst(str) {
+        return str.charAt(0).toUpperCase() + str.substr(1);
+    }
+
+    /**
+     * Plugin
+     * @param {String} element
+     * @param {Object} options
+     */
+    function Plugin(element, options) {
+        this.$window            = $(window);
+        this.$document          = $(document);
+        this.$element           = $(element);
+        this.options            = $.extend( {}, defaults, options );
+        this.polyfill           = this.options.polyfill;
+        this.orientation        = this.$element[0].getAttribute('data-orientation') || this.options.orientation;
+        this.onInit             = this.options.onInit;
+        this.onSlide            = this.options.onSlide;
+        this.onSlideEnd         = this.options.onSlideEnd;
+        this.DIMENSION          = constants.orientation[this.orientation].dimension;
+        this.DIRECTION          = constants.orientation[this.orientation].direction;
+        this.DIRECTION_STYLE    = constants.orientation[this.orientation].directionStyle;
+        this.COORDINATE         = constants.orientation[this.orientation].coordinate;
+
+        // Plugin should only be used as a polyfill
+        if (this.polyfill) {
+            // Input range support?
+            if (hasInputRangeSupport) { return false; }
+        }
+
+        this.identifier = 'js-' + pluginName + '-' +(pluginIdentifier++);
+        this.startEvent = this.options.startEvent.join('.' + this.identifier + ' ') + '.' + this.identifier;
+        this.moveEvent  = this.options.moveEvent.join('.' + this.identifier + ' ') + '.' + this.identifier;
+        this.endEvent   = this.options.endEvent.join('.' + this.identifier + ' ') + '.' + this.identifier;
+        this.toFixed    = (this.step + '').replace('.', '').length - 1;
+        this.$fill      = $('<div class="' + this.options.fillClass + '" />');
+        this.$handle    = $('<div class="' + this.options.handleClass + '" />');
+        this.$range     = $('<div class="' + this.options.rangeClass + ' ' + this.options[this.orientation + 'Class'] + '" id="' + this.identifier + '" />').insertAfter(this.$element).prepend(this.$fill, this.$handle);
+
+        // visually hide the input
+        this.$element.css({
+            'position': 'absolute',
+            'width': '1px',
+            'height': '1px',
+            'overflow': 'hidden',
+            'opacity': '0'
+        });
+
+        // Store context
+        this.handleDown = $.proxy(this.handleDown, this);
+        this.handleMove = $.proxy(this.handleMove, this);
+        this.handleEnd  = $.proxy(this.handleEnd, this);
+
+        this.init();
+
+        // Attach Events
+        var _this = this;
+        this.$window.on('resize.' + this.identifier, debounce(function() {
+            // Simulate resizeEnd event.
+            delay(function() { _this.update(false, false); }, 300);
+        }, 20));
+
+        this.$document.on(this.startEvent, '#' + this.identifier + ':not(.' + this.options.disabledClass + ')', this.handleDown);
+
+        // Listen to programmatic value changes
+        this.$element.on('change.' + this.identifier, function(e, data) {
+            if (data && data.origin === _this.identifier) {
+                return;
+            }
+
+            var value = e.target.value,
+                pos = _this.getPositionFromValue(value);
+            _this.setPosition(pos);
+        });
+    }
+
+    Plugin.prototype.init = function() {
+        this.update(true, false);
+
+        if (this.onInit && typeof this.onInit === 'function') {
+            this.onInit();
+        }
+    };
+
+    Plugin.prototype.update = function(updateAttributes, triggerSlide) {
+        updateAttributes = updateAttributes || false;
+
+        if (updateAttributes) {
+            this.min    = tryParseFloat(this.$element[0].getAttribute('min'), 0);
+            this.max    = tryParseFloat(this.$element[0].getAttribute('max'), 100);
+            this.value  = tryParseFloat(this.$element[0].value, Math.round(this.min + (this.max-this.min)/2));
+            this.step   = tryParseFloat(this.$element[0].getAttribute('step'), 1);
+        }
+
+        this.handleDimension    = getDimension(this.$handle[0], 'offset' + ucfirst(this.DIMENSION));
+        this.rangeDimension     = getDimension(this.$range[0], 'offset' + ucfirst(this.DIMENSION));
+        this.maxHandlePos       = this.rangeDimension - this.handleDimension;
+        this.grabPos            = this.handleDimension / 2;
+        this.position           = this.getPositionFromValue(this.value);
+
+        // Consider disabled state
+        if (this.$element[0].disabled) {
+            this.$range.addClass(this.options.disabledClass);
+        } else {
+            this.$range.removeClass(this.options.disabledClass);
+        }
+
+        this.setPosition(this.position, triggerSlide);
+    };
+
+    Plugin.prototype.handleDown = function(e) {
+        this.$document.on(this.moveEvent, this.handleMove);
+        this.$document.on(this.endEvent, this.handleEnd);
+
+        // If we click on the handle don't set the new position
+        if ((' ' + e.target.className + ' ').replace(/[\n\t]/g, ' ').indexOf(this.options.handleClass) > -1) {
+            return;
+        }
+
+        var pos         = this.getRelativePosition(e),
+            rangePos    = this.$range[0].getBoundingClientRect()[this.DIRECTION],
+            handlePos   = this.getPositionFromNode(this.$handle[0]) - rangePos,
+            setPos      = (this.orientation === 'vertical') ? (this.maxHandlePos - (pos - this.grabPos)) : (pos - this.grabPos);
+
+        this.setPosition(setPos);
+
+        if (pos >= handlePos && pos < handlePos + this.handleDimension) {
+            this.grabPos = pos - handlePos;
+        }
+    };
+
+    Plugin.prototype.handleMove = function(e) {
+        e.preventDefault();
+        var pos = this.getRelativePosition(e);
+        var setPos = (this.orientation === 'vertical') ? (this.maxHandlePos - (pos - this.grabPos)) : (pos - this.grabPos);
+        this.setPosition(setPos);
+    };
+
+    Plugin.prototype.handleEnd = function(e) {
+        e.preventDefault();
+        this.$document.off(this.moveEvent, this.handleMove);
+        this.$document.off(this.endEvent, this.handleEnd);
+
+        // Ok we're done fire the change event
+        this.$element.trigger('change', { origin: this.identifier });
+
+        if (this.onSlideEnd && typeof this.onSlideEnd === 'function') {
+            this.onSlideEnd(this.position, this.value);
+        }
+    };
+
+    Plugin.prototype.cap = function(pos, min, max) {
+        if (pos < min) { return min; }
+        if (pos > max) { return max; }
+        return pos;
+    };
+
+    Plugin.prototype.setPosition = function(pos, triggerSlide) {
+        var value, newPos;
+
+        if (triggerSlide === undefined) {
+            triggerSlide = true;
+        }
+
+        // Snapping steps
+        value = this.getValueFromPosition(this.cap(pos, 0, this.maxHandlePos));
+        newPos = this.getPositionFromValue(value);
+
+        // Update ui
+        this.$fill[0].style[this.DIMENSION] = value == this.max ? '100%' : (newPos + this.grabPos) + 'px';
+        this.$handle[0].style[this.DIRECTION_STYLE] = newPos + 'px';
+        this.setValue(value);
+
+        // Update globals
+        this.position = newPos;
+        this.value = value;
+
+        if (triggerSlide && this.onSlide && typeof this.onSlide === 'function') {
+            this.onSlide(newPos, value);
+        }
+    };
+
+    // Returns element position relative to the parent
+    Plugin.prototype.getPositionFromNode = function(node) {
+        var i = 0;
+        while (node !== null) {
+            i += node.offsetLeft;
+            node = node.offsetParent;
+        }
+        return i;
+    };
+
+    Plugin.prototype.getRelativePosition = function(e) {
+        // Get the offset DIRECTION relative to the viewport
+        var ucCoordinate = ucfirst(this.COORDINATE),
+            rangePos = this.$range[0].getBoundingClientRect()[this.DIRECTION],
+            pageCoordinate = 0;
+
+        if (typeof e['page' + ucCoordinate] !== 'undefined') {
+            pageCoordinate = e['client' + ucCoordinate];
+        }
+        else if (typeof e.originalEvent['client' + ucCoordinate] !== 'undefined') {
+            pageCoordinate = e.originalEvent['client' + ucCoordinate];
+        }
+        else if (e.originalEvent.touches && e.originalEvent.touches[0] && typeof e.originalEvent.touches[0]['client' + ucCoordinate] !== 'undefined') {
+            pageCoordinate = e.originalEvent.touches[0]['client' + ucCoordinate];
+        }
+        else if(e.currentPoint && typeof e.currentPoint[this.COORDINATE] !== 'undefined') {
+            pageCoordinate = e.currentPoint[this.COORDINATE];
+        }
+
+        return pageCoordinate - rangePos;
+    };
+
+    Plugin.prototype.getPositionFromValue = function(value) {
+        var percentage, pos;
+        percentage = (value - this.min)/(this.max - this.min);
+        pos = (!Number.isNaN(percentage)) ? percentage * this.maxHandlePos : 0;
+        return pos;
+    };
+
+    Plugin.prototype.getValueFromPosition = function(pos) {
+        var percentage, value;
+        percentage = ((pos) / (this.maxHandlePos || 1));
+        value = this.step * Math.round(percentage * (this.max - this.min) / this.step) + this.min;
+        return Number((value).toFixed(this.toFixed));
+    };
+
+    Plugin.prototype.setValue = function(value) {
+        if (value === this.value && this.$element[0].value !== '') {
+            return;
+        }
+
+        // Set the new value and fire the `input` event
+        this.$element
+            .val(value)
+            .trigger('input', { origin: this.identifier });
+    };
+
+    Plugin.prototype.destroy = function() {
+        this.$document.off('.' + this.identifier);
+        this.$window.off('.' + this.identifier);
+
+        this.$element
+            .off('.' + this.identifier)
+            .removeAttr('style')
+            .removeData('plugin_' + pluginName);
+
+        // Remove the generated markup
+        if (this.$range && this.$range.length) {
+            this.$range[0].parentNode.removeChild(this.$range[0]);
+        }
+    };
+
+    // A really lightweight plugin wrapper around the constructor,
+    // preventing against multiple instantiations
+    $.fn[pluginName] = function(options) {
+        var args = Array.prototype.slice.call(arguments, 1);
+
+        return this.each(function() {
+            var $this = $(this),
+                data  = $this.data('plugin_' + pluginName);
+
+            // Create a new instance.
+            if (!data) {
+                $this.data('plugin_' + pluginName, (data = new Plugin(this, options)));
+            }
+
+            // Make it possible to access methods from public.
+            // e.g `$element.rangeslider('method');`
+            if (typeof options === 'string') {
+                data[options].apply(data, args);
+            }
+        });
+    };
+
+    return 'rangeslider.js is available in jQuery context e.g $(selector).rangeslider(options);';
+
+}));
+
+define('components/adapt-contrib-slider/js/adapt-contrib-slider',[
+  'coreViews/questionView',
+  'coreJS/adapt',
+  './rangeslider.js'
+], function(QuestionView, Adapt, Rangeslider) {
+
+    var Slider = QuestionView.extend({
+
+        tempValue:true,
+
+        events: {
+            'click .slider-scale-number': 'onNumberSelected',
+            'focus input[type="range"]':'onHandleFocus',
+            'blur input[type="range"]':'onHandleBlur'
+        },
+
+        // Used by the question to reset the question when revisiting the component
+        resetQuestionOnRevisit: function() {
+            this.setAllItemsEnabled(true);
+            this.deselectAllItems();
+            this.resetQuestion();
+        },
+
+        // Used by question to setup itself just before rendering
+        setupQuestion: function() {
+            if(!this.model.get('_items')) {
+                this.setupModelItems();
+            }
+
+            this.restoreUserAnswers();
+            if (this.model.get('_isSubmitted')) return;
+
+            this.selectItem(0, true);
+        },
+
+        setupRangeslider: function () {
+            this.$sliderScaleMarker = this.$('.slider-scale-marker');
+            this.$slider = this.$('input[type="range"]');
+
+            if(this.model.has('_scaleStep')) {
+                this.$slider.attr({"step": this.model.get('_scaleStep')});
+            }
+
+            this.$slider.rangeslider({
+                polyfill: false,
+                onSlide: _.bind(this.handleSlide, this)
+            });
+            this.oldValue = 0;
+            
+            if (this._deferEnable) {
+                this.setAllItemsEnabled(true);
+            }
+        },
+
+        handleSlide: function (position, value) {
+            if (this.oldValue === value) {
+               return;
+            }
+            if(this.model.get('_marginDir') == 'right'){
+                if(this.tempValue && (this.model.get('_userAnswer') == undefined)){
+                    value = this.model.get('_items').length - value + 1;
+                    this.tempValue = false;
+                    var tempPixels = this.mapIndexToPixels(value);
+                    var rangeSliderWidth = this.$('.rangeslider').width();
+                    var handleLeft = parseInt(this.$('.rangeslider__handle').css('left'));
+                    var sliderWidth = this.$('.rangeslider__fill').width();
+                    handleLeft = rangeSliderWidth - handleLeft -this.$('.rangeslider__handle').width();
+                    sliderWidth = rangeSliderWidth - sliderWidth;
+                    this.$('.rangeslider__handle').css('left',handleLeft);
+                    this.$('.rangeslider__fill').width(sliderWidth);
+                }
+            }
+            var itemIndex = this.getIndexFromValue(value);
+            var pixels = this.mapIndexToPixels(itemIndex);
+            this.selectItem(itemIndex, false);
+            this.animateToPosition(pixels);
+            this.oldValue = value;
+            this.tempValue = true;
+        },
+
+        setupModelItems: function() {
+            var items = [];
+            var answer = this.model.get('_correctAnswer');
+            var range = this.model.get('_correctRange');
+            var start = this.model.get('_scaleStart');
+            var end = this.model.get('_scaleEnd');
+            var step = this.model.get('_scaleStep') || 1;
+
+            for (var i = start; i <= end; i += step) {
+                if (answer) {
+                    items.push({value: i, selected: false, correct: (i == answer)});
+                } else {
+                    items.push({value: i, selected: false, correct: (i >= range._bottom && i <= range._top)});
+                }
+            }
+
+            this.model.set('_items', items);
+            this.model.set('_marginDir', (Adapt.config.get('_defaultDirection') === 'rtl' ? 'right' : 'left'));
+        },
+
+        restoreUserAnswers: function() {
+            if (!this.model.get('_isSubmitted')) {
+                this.model.set({
+                    _selectedItem: {},
+                    _userAnswer: undefined
+                });
+                return;
+            };
+
+            var items = this.model.get('_items');
+            var userAnswer = this.model.get('_userAnswer');
+            for (var i = 0, l = items.length; i < l; i++) {
+                var item = items[i];
+                if (item.value == userAnswer) {
+                    this.model.set('_selectedItem', item);
+                    this.selectItem(this.getIndexFromValue(item.value), true);
+                    break;
+                }
+            }
+
+            this.setQuestionAsSubmitted();
+            this.markQuestion();
+            this.setScore();
+            this.showMarking();
+            this.setupFeedback();
+        },
+
+        // Used by question to disable the question during submit and complete stages
+        disableQuestion: function() {
+            this.setAllItemsEnabled(false);
+        },
+
+        // Used by question to enable the question during interactions
+        enableQuestion: function() {
+            this.setAllItemsEnabled(true);
+        },
+
+        setAllItemsEnabled: function(isEnabled) {
+            if (isEnabled) {
+                if (this.$slider) {
+                    this.$('.slider-widget').removeClass('disabled');
+                    this.$slider.prop('disabled', false);
+                    this.$slider.rangeslider('update', true);
+                } else {
+                    this._deferEnable = true; // slider is not yet ready
+                }
+            } else {
+                this.$('.slider-widget').addClass('disabled');
+                this.$slider.prop('disabled', true);
+                this.$slider.rangeslider('update', true);
+            }
+        },
+
+        // Used by question to setup itself just after rendering
+        onQuestionRendered: function() {
+            this.setupRangeslider();
+            this.setScalePositions();
+            this.onScreenSizeChanged();
+            this.showScaleMarker(true);
+            this.listenTo(Adapt, 'device:resize', this.onScreenSizeChanged);
+            this.setAltText(this.model.get('_scaleStart'));
+            this.setReadyStatus();
+        },
+
+        // this should make the slider handle, slider marker and slider bar to animate to give position
+        animateToPosition: function(newPosition) {
+            if (!this.$sliderScaleMarker) return;
+
+            if(this.model.get('_marginDir') == 'right'){
+                this.$sliderScaleMarker
+                  .velocity('stop')
+                  .velocity({
+                    right: newPosition
+                  }, {
+                    duration: 200,
+                    easing: "linear"
+                  });
+            }
+            else{
+                this.$sliderScaleMarker
+                  .velocity('stop')
+                  .velocity({
+                    left: newPosition
+                  }, {
+                    duration: 200,
+                    easing: "linear"
+                  });
+            }
+        },
+
+        // this shoud give the index of item using given slider value
+        getIndexFromValue: function(itemValue) {
+            var scaleStart = this.model.get('_scaleStart'),
+                scaleEnd = this.model.get('_scaleEnd');
+            return Math.floor(this.mapValue(itemValue, scaleStart, scaleEnd, 0, this.model.get('_items').length - 1));
+        },
+
+        // this should set given value to slider handle
+        setAltText: function(value) {
+            this.$('.slider-handle').attr('aria-valuenow', value);
+        },
+
+        mapIndexToPixels: function(value, $widthObject) {
+            var numberOfItems = this.model.get('_items').length,
+                width = $widthObject ? $widthObject.width() : this.$('.slider-scaler').width();
+
+            return Math.round(this.mapValue(value, 0, numberOfItems - 1, 0, width));
+        },
+
+        mapPixelsToIndex: function(value) {
+            var numberOfItems = this.model.get('_items').length,
+                width = this.$('.slider-sliderange').width();
+
+            return Math.round(this.mapValue(value, 0, width, 0, numberOfItems - 1));
+        },
+
+        normalise: function(value, low, high) {
+            var range = high - low;
+            return (value - low) / range;
+        },
+
+        mapValue: function(value, inputLow, inputHigh, outputLow, outputHigh) {
+            var normal = this.normalise(value, inputLow, inputHigh);
+            return normal * (outputHigh - outputLow) + outputLow;
+        },
+
+        onHandleFocus: function(event) {
+            event.preventDefault();
+            this.$slider.on('keydown', _.bind(this.onKeyDown, this));
+        },
+
+        onHandleBlur: function(event) {
+            event.preventDefault();
+            this.$slider.off('keydown');
+        },
+
+        onKeyDown: function(event) {
+            if(event.which == 9) return; // tab key
+            event.preventDefault();
+
+            var newItemIndex = this.getIndexFromValue(this.model.get('_selectedItem').value);
+
+            switch (event.which) {
+                case 40: // ↓ down
+                case 37: // ← left
+                    newItemIndex = Math.max(newItemIndex - 1, 0);
+                    break;
+                case 38: // ↑ up
+                case 39: // → right
+                    newItemIndex = Math.min(newItemIndex + 1, this.model.get('_items').length - 1);
+                    break;
+            }
+
+            this.selectItem(newItemIndex);
+            if(typeof newItemIndex == 'number') this.showScaleMarker(true);
+            this.animateToPosition(this.mapIndexToPixels(newItemIndex));
+            this.setSliderValue(this.getValueFromIndex(newItemIndex));
+            this.setAltText(this.getValueFromIndex(newItemIndex));
+        },
+
+        onNumberSelected: function(event) {
+            event.preventDefault();
+            this.tempValue = false;
+
+            if (this.model.get('_isInteractionComplete')) {
+              return;
+            }
+
+            // when component is not reset, selecting a number should be prevented
+            if (this.$slider.prop('disabled')) {
+              return;
+            }
+
+            var itemValue = parseInt($(event.currentTarget).attr('data-id'));
+            var index = this.getIndexFromValue(itemValue);
+            this.selectItem(index);
+            this.animateToPosition(this.mapIndexToPixels(index));
+            this.setAltText(itemValue);
+            this.setSliderValue(itemValue)
+        },
+
+        getValueFromIndex: function(index) {
+          return this.model.get('_items')[index].value;
+        },
+
+        resetControlStyles: function() {
+            this.$('.slider-handle').empty();
+            this.showScaleMarker(false);
+            this.$('.slider-bar').animate({width:'0px'});
+            this.setSliderValue(this.model.get('_items')[0].value);
+        },
+
+        /**
+        * allow the user to submit immediately; the slider handle may already be in the position they want to choose
+        */
+        canSubmit: function() {
+            return true;
+        },
+
+        // Blank method for question to fill out when the question cannot be submitted
+        onCannotSubmit: function() {},
+
+        //This preserves the state of the users answers for returning or showing the users answer
+        storeUserAnswer: function() {
+            this.model.set('_userAnswer', this.model.get('_selectedItem').value);
+        },
+
+        isCorrect: function() {
+            var numberOfCorrectAnswers = 0;
+
+            _.each(this.model.get('_items'), function(item, index) {
+                if(item.selected && item.correct)  {
+                    this.model.set('_isAtLeastOneCorrectSelection', true);
+                    numberOfCorrectAnswers++;
+                }
+            }, this);
+
+            this.model.set('_numberOfCorrectAnswers', numberOfCorrectAnswers);
+
+            return this.model.get('_isAtLeastOneCorrectSelection') ? true : false;
+        },
+
+        // Used to set the score based upon the _questionWeight
+        setScore: function() {
+            var numberOfCorrectAnswers = this.model.get('_numberOfCorrectAnswers');
+            var questionWeight = this.model.get('_questionWeight');
+            var score = questionWeight * numberOfCorrectAnswers;
+            this.model.set('_score', score);
+        },
+
+        setSliderValue: function (value) {
+          if (this.$slider) {
+            this.$slider.val(value).change();
+          }
+        },
+
+        // This is important and should give the user feedback on how they answered the question
+        // Normally done through ticks and crosses by adding classes
+        showMarking: function() {
+            if (!this.model.get('_canShowMarking')) return;
+
+            this.$('.slider-widget').removeClass('correct incorrect')
+                .addClass(this.model.get('_selectedItem').correct ? 'correct' : 'incorrect');
+        },
+
+        isPartlyCorrect: function() {
+            return this.model.get('_isAtLeastOneCorrectSelection');
+        },
+
+        // Used by the question view to reset the stored user answer
+        resetUserAnswer: function() {
+            this.model.set({
+                _selectedItem: {},
+                _userAnswer: undefined
+            });
+        },
+
+        // Used by the question view to reset the look and feel of the component.
+        // This could also include resetting item data
+        resetQuestion: function() {
+            this.selectItem(0, true);
+            this.animateToPosition(0);
+            this.resetControlStyles();
+            this.showScaleMarker(true);
+            this.setAltText(this.model.get('_scaleStart'));
+        },
+
+        setScalePositions: function() {
+            var numberOfItems = this.model.get('_items').length;
+            _.each(this.model.get('_items'), function(item, index) {
+                var normalisedPosition = this.normalise(index, 0, numberOfItems -1);
+                this.$('.slider-scale-number').eq(index).data('normalisedPosition', normalisedPosition);
+            }, this);
+        },
+
+        showScale: function () {
+            this.$('.slider-markers').empty();
+            if (this.model.get('_showScale') === false) {
+                this.$('.slider-markers').eq(0).css({display: 'none'});
+                this.model.get('_showScaleIndicator')
+                    ? this.$('.slider-scale-numbers').eq(0).css({visibility: 'hidden'})
+                    : this.$('.slider-scale-numbers').eq(0).css({display: 'none'});
+            } else {
+                var $scaler = this.$('.slider-scaler');
+                var $markers = this.$('.slider-markers');
+                for (var i = 0, count = this.model.get('_items').length; i < count; i++) {
+                    $markers.append("<div class='slider-line component-item-color'>");
+                    $('.slider-line', $markers).eq(i).css({left: this.mapIndexToPixels(i, $scaler) + 'px'});
+                }
+                var scaleWidth = $scaler.width(),
+                    $numbers = this.$('.slider-scale-number');
+                for (var i = 0, count = this.model.get('_items').length; i < count; i++) {
+                    var $number = $numbers.eq(i),
+                        newLeft = Math.round($number.data('normalisedPosition') * scaleWidth);
+                    if($('html').hasClass('ie9') && this.model.get('_marginDir')=='right'){
+						$number.css({right: newLeft});
+					}
+					else{
+						$number.css({left: newLeft});
+                    }
+                }
+            }
+        },
+
+        //Labels are enabled in slider.hbs. Here we manage their containing div.
+        showLabels: function () {
+            if(!this.model.get('labelStart') && !this.model.get('labelEnd')) {
+                this.$('.slider-scale-labels').eq(0).css({display: 'none'});
+            }
+        },
+
+        remapSliderBar: function() {
+            var $scaler = this.$('.slider-scaler');
+            var currentIndex = this.getIndexFromValue(this.model.get('_selectedItem').value);
+            var left = this.mapIndexToPixels(currentIndex, $scaler);
+            this.$('.slider-handle').css({left: left + 'px'});
+            this.$('.slider-scale-marker').css({left: left + 'px'});
+            this.$('.slider-bar').width(left);
+        },
+
+        onScreenSizeChanged: function() {
+            this.showScale();
+            this.showLabels();
+            this.remapSliderBar();
+            if (this.$('.slider-widget').hasClass('show-user-answer')) {
+                this.hideCorrectAnswer();
+            } else if (this.$('.slider-widget').hasClass('show-correct-answer')) {
+                this.showCorrectAnswer();
+            }
+        },
+
+        showCorrectAnswer: function() {
+            var answers = [];
+
+            if(this.model.has('_correctAnswer')) {
+                var correctAnswer = this.model.get('_correctAnswer');
+            }
+
+            if (this.model.has('_correctRange')) {
+                var bottom = this.model.get('_correctRange')._bottom;
+                var top = this.model.get('_correctRange')._top;
+                var step = (this.model.has('_scaleStep') ? this.model.get('_scaleStep') : 1);
+            }
+
+            this.showScaleMarker(false);
+
+            //are we dealing with a single correct answer or a range?
+            if (correctAnswer) {
+                answers.push(correctAnswer);
+            } else if (bottom !== undefined && top !== undefined) {
+                var answer = this.model.get('_correctRange')._bottom;
+                var topOfRange = this.model.get('_correctRange')._top;
+                while(answer <= topOfRange) {
+                    answers.push(answer);
+                    answer += step;
+                }
+            } else {
+                console.log("adapt-contrib-slider::WARNING: no correct answer or correct range set in JSON")
+            }
+
+            var middleAnswer = answers[Math.floor(answers.length / 2)];
+            this.animateToPosition(this.mapIndexToPixels(this.getIndexFromValue(middleAnswer)));
+
+            this.showModelAnswers(answers);
+
+            this.setSliderValue(middleAnswer);
+        },
+
+        showModelAnswers: function(correctAnswerArray) {
+            var $parentDiv = this.$('.slider-modelranges');
+            _.each(correctAnswerArray, function(correctAnswer, index) {
+                $parentDiv.append($("<div class='slider-model-answer component-item-color component-item-text-color'>"));
+
+                var $element = $(this.$('.slider-modelranges .slider-model-answer')[index]),
+                    startingLeft = this.mapIndexToPixels(this.getIndexFromValue(this.model.get('_selectedItem').value));
+
+                if(this.model.get('_showNumber')) $element.html(correctAnswer);
+
+                $element.css({left:startingLeft}).fadeIn(0, _.bind(function() {
+                    $element.animate({left: this.mapIndexToPixels(this.getIndexFromValue(correctAnswer))});
+                }, this));
+            }, this);
+        },
+
+        // Used by the question to display the users answer and
+        // hide the correct answer
+        // Should use the values stored in storeUserAnswer
+        hideCorrectAnswer: function() {
+            var userAnswerIndex = this.getIndexFromValue(this.model.get('_userAnswer'));
+            this.$('.slider-modelranges').empty();
+
+            this.showScaleMarker(true);
+            this.selectItem(userAnswerIndex, true);
+            this.animateToPosition(this.mapIndexToPixels(userAnswerIndex));
+            this.setSliderValue(this.model.get('_userAnswer'));
+        },
+
+        // according to given item index this should make the item as selected
+        selectItem: function(itemIndex, noFocus) {
+            this.$el.a11y_selected(false);
+            _.each(this.model.get('_items'), function(item, index) {
+                item.selected = (index == itemIndex);
+                if(item.selected) {
+                    this.model.set('_selectedItem', item);
+                    this.$('.slider-scale-number[data-id="'+item.value+'"]').a11y_selected(true, noFocus);
+                }
+            }, this);
+            this.showNumber(true);
+        },
+
+        // this should reset the selected state of each item
+        deselectAllItems: function() {
+            _.each(this.model.get('_items'), function(item) {
+                item.selected = false;
+            }, this);
+        },
+
+        // this makes the marker visible or hidden
+        showScaleMarker: function(show) {
+            var $scaleMarker = this.$('.slider-scale-marker');
+            if (this.model.get('_showScaleIndicator')) {
+                this.showNumber(show);
+                if(show) {
+                    $scaleMarker.addClass('display-block');
+                } else {
+                    $scaleMarker.removeClass('display-block');
+                }
+            }
+        },
+
+        // this should add the current slider value to the marker
+        showNumber: function(show) {
+            var $scaleMarker = this.$('.slider-scale-marker');
+            if(this.model.get('_showNumber')) {
+                if(show) {
+                    $scaleMarker.html(this.model.get('_selectedItem').value);
+                } else {
+                    $scaleMarker.html = "";
+                }
+            }
+        },
+
+        /**
+        * Used by adapt-contrib-spoor to get the user's answers in the format required by the cmi.interactions.n.student_response data field
+        */
+        getResponse:function() {
+            return this.model.get('_userAnswer').toString();
+        },
+
+        /**
+        * Used by adapt-contrib-spoor to get the type of this question in the format required by the cmi.interactions.n.type data field
+        */
+        getResponseType:function() {
+            return "numeric";
+        }
+
+    });
+
+    Adapt.register('slider', Slider);
+
+    return Slider;
+});
+
+define('components/adapt-contrib-confidenceSlider/js/adapt-contrib-confidenceSlider',[
+    'components/adapt-contrib-slider/js/adapt-contrib-slider',
+    'core/js/adapt'
+], function(Slider, Adapt) {
+
+    var ConfidenceSlider = Slider.extend({
+
+        /* override */
+        preRender:function() {
+            this.model.set('_isEnabled', true);
+            Slider.prototype.preRender.apply(this, arguments);
+        },
+
+        /* override */
+        setupDefaultSettings: function() {
+            Slider.prototype.setupDefaultSettings.apply(this, arguments);
+            this.model.set('_canShowModelAnswer', false);
+            if (!this.model.has('_attempts') || this.model.get('_attempts') > 1) this.model.set('_attempts', 1);
+        },
+
+        /* override */
+        setupQuestion: function() {
+            if (this.model.get('_linkedToId')) {
+                this._setupLinkedModel();
+                this.listenTo(Adapt, "buttonsView:postRender", this.onButtonsRendered);
+            }
+            Slider.prototype.setupQuestion.apply(this, arguments);
+        },
+
+        /* override */
+        disableQuestion: function() {
+            if (this.model.get('_isReady')) this.setAllItemsEnabled(false);
+            if (this.model.has('_linkedModel')) this.$('.buttons-action').a11y_cntrl_enabled(false);
+        },
+
+        /* override */
+        enableQuestion: function() {
+            if (this.model.get('_isReady')) this.setAllItemsEnabled(true);
+            if (this.model.has('_linkedModel')) this.$('.buttons-action').a11y_cntrl_enabled(true);
+        },
+
+        /* override to indicate that all options are correct */
+        setupModelItems: function() {
+            var items = [];
+            var start = this.model.get('_scaleStart');
+            var end = this.model.get('_scaleEnd');
+            var step = this.model.get('_scaleStep') || 1;
+
+            for (var i = start; i <= end; i += step) {
+                items.push({value: i, selected: false, correct: true});
+            }
+
+            this.model.set('_items', items);
+            this.model.set('_marginDir', (Adapt.config.get('_defaultDirection') === 'rtl' ? 'right' : 'left'));
+        },
+
+        /* override */
+        restoreUserAnswers: function() {
+            if (!this.model.get('_isSubmitted')) {
+                this.model.set({
+                    _selectedItem: {},
+                    _userAnswer: undefined
+                });
+                return;
+            }
+
+            // this is only necessary to avoid an issue when using adapt-devtools
+            if (!this.model.has('_userAnswer')) this.model.set('_userAnswer', this.model.get('_items')[0].value);
+
+            Slider.prototype.restoreUserAnswers.apply(this, arguments);
+        },
+
+        /* override */
+        canSubmit: function() {
+            return !this.model.has('_linkedModel') || this.model.get('_linkedModel').get('_isSubmitted');
+        },
+
+        /* override */
+        setupFeedback: function(){
+            this.model.set('feedbackTitle', this.model.get('title'));
+            this.model.set('feedbackMessage', this._getFeedbackString());
+        },
+
+        /* override */
+        updateButtons: function() {
+            if (this.model.get('_attempts') > 0) {
+                Slider.prototype.updateButtons.apply(this, arguments);
+            }
+            else {
+                this.model.set('_buttonState', this.model.get('_isEnabled') ? 'submit' : 'reset');
+            }
+
+        },
+
+        _setupLinkedModel: function() {
+            var linkedModel = Adapt.components.findWhere({_id: this.model.get('_linkedToId')});
+            this.model.set({
+                '_showNumber':linkedModel.get('_showNumber'),
+                '_showScaleIndicator':linkedModel.get('_showScaleIndicator'),
+                '_showScale':linkedModel.get('_showScale'),
+                'labelStart':linkedModel.get('labelStart'),
+                'labelEnd':linkedModel.get('labelEnd'),
+                '_scaleStart':linkedModel.get('_scaleStart'),
+                '_scaleEnd':linkedModel.get('_scaleEnd')
+            });
+            this.model.set('_linkedModel', linkedModel);
+            if (this.model.get('_attempts') < 0) linkedModel.set('_attempts', 1);
+        },
+
+        _listenToLinkedModel: function() {
+            this.listenTo(this.model.get('_linkedModel'), 'change:_selectedItem', this.onLinkedConfidenceChanged);
+            this.listenTo(this.model.get('_linkedModel'), 'change:_isSubmitted', this.onLinkedSubmittedChanged);
+        },
+
+        _updateLinkedConfidenceIndicator: function() {
+            var lm = this.model.get('_linkedModel');
+            var linkedValue = 0;
+            var rangeslider = this.$slider.data('plugin_rangeslider');
+
+            //if (lm.get('_isSubmitted')) {
+                linkedValue = lm.has('_userAnswer') ? lm.get('_userAnswer') : lm.get('_selectedItem').value;
+            //}
+
+            if (linkedValue == this.model.get('_scaleEnd')) {
+                this.$('.linked-confidence-bar').css({width: '100%'});
+            }
+            else {
+                // follow rangeslider setPosition method
+                this.$('.linked-confidence-bar').css({width: (rangeslider.getPositionFromValue(linkedValue) + rangeslider.grabPos) + 'px'});
+            }
+        },
+
+        _getFeedbackString: function() {
+            var feedbackSeparator = this.model.get('_feedback').feedbackSeparator,
+                genericFeedback = this._getGenericFeedback(),
+                comparisonFeedback = this.model.has('_linkedModel') && this.model.get('_linkedModel').get('_isSubmitted') ? this._getComparisonFeedback() : null,
+                thresholdFeedback = this._getThresholdFeedback(),
+                needsSeparator = false,
+                feedbackString = "";
+
+            if (genericFeedback) {
+                feedbackString += genericFeedback;
+                needsSeparator = true;
+            }
+            if (comparisonFeedback) {
+                if(needsSeparator) feedbackString += feedbackSeparator;
+                feedbackString += comparisonFeedback;
+                needsSeparator = true;
+            }
+            if (thresholdFeedback) {
+                if(needsSeparator) feedbackString += feedbackSeparator;
+                feedbackString += thresholdFeedback;
+            }
+
+            return feedbackString;
+
+        },
+
+        _getGenericFeedback: function() {
+            return this.model.get('_feedback').generic;
+        },
+
+        _getComparisonFeedback: function() {
+            var lm = this.model.get('_linkedModel'),
+                confidence = this.model.get('_selectedItem').value,
+                linkedConfidence = lm.has('_userAnswer') ? lm.get('_userAnswer') : lm.get('_selectedItem').value,
+                feedbackString;
+            if (linkedConfidence < confidence) {
+                feedbackString = this.model.get('_feedback')._comparison.higher;
+            } else if (linkedConfidence > confidence) {
+                feedbackString = this.model.get('_feedback')._comparison.lower;
+            } else {
+                feedbackString = this.model.get('_feedback')._comparison.same;
+            }
+            return feedbackString;
+        },
+
+        _getThresholdFeedback: function() {
+            var feedbackList = this.model.get('_feedback')._threshold;
+
+            if (!feedbackList) return;
+
+            var confidenceValue = this.model.get('_selectedItem').value;
+
+            for (var i = 0, j = feedbackList.length; i < j; i++) {
+                var feedback = feedbackList[i];
+                var values = feedback._values;
+
+                if (confidenceValue >= values._low && confidenceValue <= values._high) {
+                    return feedback.text;
+                }
+            }
+        },
+
+        _getTrackingData:function() {
+            if (this.model.get('_isInteractionComplete') === false || this.model.get('_isComplete') === false) {
+                return null;
+            }
+
+            var hasUserAnswer = (this.model.get('_userAnswer') !== undefined);
+            var isUserAnswerArray = (this.model.get('_userAnswer') instanceof Array);
+
+            var numericParameters = [
+                    this.model.get('_score') || 0,
+                    this.model.get('_attemptsLeft') || 0
+                ];
+
+            var booleanParameters = [
+                    hasUserAnswer ? 1 : 0,
+                    isUserAnswerArray ? 1 : 0,
+                    this.model.get('_isInteractionComplete') ? 1 : 0,
+                    this.model.get('_isSubmitted') ? 1 : 0,
+                    this.model.get('_isCorrect') ? 1 : 0
+                ];
+
+            var data = [
+                numericParameters,
+                booleanParameters
+            ];
+
+
+            if (hasUserAnswer) {
+                var userAnswer = isUserAnswerArray ? this.model.get('_userAnswer') : [this.model.get('_userAnswer')];
+
+                data.push(userAnswer);
+            }
+
+            return data;
+        },
+
+        _updateTracking:function() {
+            // should we track this component?
+            if (this.model.get('_shouldStoreResponses')) {
+                // is tracking is enabled?
+                if (Adapt.config.has('_spoor') && Adapt.config.get('_spoor')._isEnabled) {
+                    // if spoor is handling response tracking we don't need to do anything
+                    if (!Adapt.config.get('_spoor')._tracking._shouldStoreResponses) {
+                        // otherwise write custom tracking data
+                        Adapt.offlineStorage.set(this.model.get('_id'), this._getTrackingData());
+                    }
+                }
+            }
+        },
+
+        onQuestionRendered: function() {
+            Slider.prototype.onQuestionRendered.apply(this, arguments);
+
+            if (this.model.has('_linkedModel')) {
+                this.$('.rangeslider').prepend($('<div class="linked-confidence-bar"/>'));
+                this._listenToLinkedModel();
+                if (this.model.get('_linkedModel').get('_isSubmitted')) {
+                    this.onLinkedConfidenceChanged();
+                } else {
+                    this.model.set('_isEnabled', false);
+                    this.$('.component-body-inner').html(this.model.get('disabledBody'));
+                }
+            }
+
+            if (this.model.get('_isSubmitted') && this.model.has('_userAnswer')) {
+                this.model.set('feedbackTitle', this.model.get('title'));
+                this.model.set('feedbackMessage', this._getFeedbackString());
+            }
+        },
+
+        onScreenSizeChanged: function() {
+            Slider.prototype.onScreenSizeChanged.apply(this, arguments);
+
+            // if linked slider on same page update it with user interaction
+            if (this.model.has('_linkedModel') && this.model.get('_linkedModel').get('_isReady')) {
+                this._updateLinkedConfidenceIndicator();
+            }
+        },
+
+        onResetClicked: function() {
+            Slider.prototype.onResetClicked.apply(this, arguments);
+
+            this.model.reset('hard', true);
+
+            this._updateTracking();
+        },
+
+        onSubmitClicked: function() {
+            Slider.prototype.onSubmitClicked.apply(this, arguments);
+
+            this._updateTracking();
+        },
+
+        onButtonsRendered:function(buttonsView) {
+            // necessary due to deferred ButtonsView::postRender
+            if (this.buttonsView == buttonsView) {
+                if (!this.model.get('_isEnabled')) {
+                    if (!this.model.has('_linkedModel') || !this.model.get('_linkedModel').get('_isSubmitted')) {
+                        this.$('.buttons-action').a11y_cntrl_enabled(false);
+                    }
+                }
+            }
+        },
+
+        onLinkedConfidenceChanged: function() {
+            this._updateLinkedConfidenceIndicator();
+        },
+
+        onLinkedSubmittedChanged: function(linkedModel) {
+            if (linkedModel.get('_isSubmitted')) {
+                this.model.set('_isEnabled', true);
+            }
+            else {
+                this.model.set('_isEnabled', false);
+            }
+        }
+    }, {
+        template:'confidenceSlider'
+    });
+    
+    Adapt.register("confidenceSlider", ConfidenceSlider);
+
+    Adapt.on('app:dataReady', function() {
+        // is tracking enabled?
+        if (Adapt.config.has('_spoor') && Adapt.config.get('_spoor')._isEnabled) {
+            // if spoor is handling response tracking we don't need to do anything
+            if (!Adapt.config.get('_spoor')._tracking._shouldStoreResponses) {
+                // ensure data is setup
+                Adapt.offlineStorage.get();
+
+                _.each(Adapt.components.where({'_component':'confidenceSlider', '_shouldStoreResponses':true}), function(confidenceSlider) {
+                    var dataItem = Adapt.offlineStorage.get(confidenceSlider.get('_id'));
+
+                    if (!dataItem) return;
+
+                    var numericParameters = dataItem[0];
+                    var booleanParameters = dataItem[1];
+
+                    var score = numericParameters[0];
+                    var attemptsLeft = numericParameters[1] || 0;
+
+                    var hasUserAnswer = booleanParameters[0];
+                    var isUserAnswerArray = booleanParameters[1];
+                    var isInteractionComplete = booleanParameters[2];
+                    var isSubmitted = booleanParameters[3];
+                    var isCorrect = booleanParameters[4];
+
+                    confidenceSlider.set("_isComplete", true);
+                    confidenceSlider.set("_isInteractionComplete", isInteractionComplete);
+                    confidenceSlider.set("_isSubmitted", isSubmitted);
+                    confidenceSlider.set("_score", score);
+                    confidenceSlider.set("_isCorrect", isCorrect);
+                    confidenceSlider.set("_attemptsLeft", attemptsLeft);
+
+                    if (hasUserAnswer) {
+                        var userAnswer = dataItem[2];
+                        if (!isUserAnswerArray) userAnswer = userAnswer[0];
+
+                        confidenceSlider.set("_userAnswer", userAnswer);
+                    }
+                });
+            }
+        }
+    });
+    
+    return ConfidenceSlider;
 });
 
 define('components/adapt-contrib-mcq/js/adapt-contrib-mcq',['require','coreViews/questionView','coreJS/adapt'],function(require) {
@@ -16190,1055 +18309,6 @@ define('components/adapt-contrib-narrative/js/adapt-contrib-narrative',['require
 
 });
 
-/*! rangeslider.js - v2.1.1 | (c) 2016 @andreruffert | MIT license | https://github.com/andreruffert/rangeslider.js */
-(function(factory) {
-    'use strict';
-
-    if (typeof define === 'function' && define.amd) {
-        // AMD. Register as an anonymous module.
-        define('components/adapt-contrib-slider/js/rangeslider.js',['jquery'], factory);
-    } else if (typeof exports === 'object') {
-        // CommonJS
-        module.exports = factory(require('jquery'));
-    } else {
-        // Browser globals
-        factory(jQuery);
-    }
-}(function($) {
-    'use strict';
-
-    // Polyfill Number.isNaN(value)
-    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isNaN
-    Number.isNaN = Number.isNaN || function(value) {
-        return typeof value === 'number' && value !== value;
-    };
-
-    /**
-     * Range feature detection
-     * @return {Boolean}
-     */
-    function supportsRange() {
-        var input = document.createElement('input');
-        input.setAttribute('type', 'range');
-        return input.type !== 'text';
-    }
-
-    var pluginName = 'rangeslider',
-        pluginIdentifier = 0,
-        hasInputRangeSupport = supportsRange(),
-        defaults = {
-            polyfill: true,
-            orientation: 'horizontal',
-            rangeClass: 'rangeslider',
-            disabledClass: 'rangeslider--disabled',
-            horizontalClass: 'rangeslider--horizontal',
-            verticalClass: 'rangeslider--vertical',
-            fillClass: 'rangeslider__fill',
-            handleClass: 'rangeslider__handle',
-            startEvent: ['mousedown', 'touchstart', 'pointerdown'],
-            moveEvent: ['mousemove', 'touchmove', 'pointermove'],
-            endEvent: ['mouseup', 'touchend', 'pointerup']
-        },
-        constants = {
-            orientation: {
-                horizontal: {
-                    dimension: 'width',
-                    direction: 'left',
-                    directionStyle: 'left',
-                    coordinate: 'x'
-                },
-                vertical: {
-                    dimension: 'height',
-                    direction: 'top',
-                    directionStyle: 'bottom',
-                    coordinate: 'y'
-                }
-            }
-        };
-
-    /**
-     * Delays a function for the given number of milliseconds, and then calls
-     * it with the arguments supplied.
-     *
-     * @param  {Function} fn   [description]
-     * @param  {Number}   wait [description]
-     * @return {Function}
-     */
-    function delay(fn, wait) {
-        var args = Array.prototype.slice.call(arguments, 2);
-        return setTimeout(function(){ return fn.apply(null, args); }, wait);
-    }
-
-    /**
-     * Returns a debounced function that will make sure the given
-     * function is not triggered too much.
-     *
-     * @param  {Function} fn Function to debounce.
-     * @param  {Number}   debounceDuration OPTIONAL. The amount of time in milliseconds for which we will debounce the function. (defaults to 100ms)
-     * @return {Function}
-     */
-    function debounce(fn, debounceDuration) {
-        debounceDuration = debounceDuration || 100;
-        return function() {
-            if (!fn.debouncing) {
-                var args = Array.prototype.slice.apply(arguments);
-                fn.lastReturnVal = fn.apply(window, args);
-                fn.debouncing = true;
-            }
-            clearTimeout(fn.debounceTimeout);
-            fn.debounceTimeout = setTimeout(function(){
-                fn.debouncing = false;
-            }, debounceDuration);
-            return fn.lastReturnVal;
-        };
-    }
-
-    /**
-     * Check if a `element` is visible in the DOM
-     *
-     * @param  {Element}  element
-     * @return {Boolean}
-     */
-    function isHidden(element) {
-        return (
-            element && (
-                element.offsetWidth === 0 ||
-                element.offsetHeight === 0 ||
-                // Also Consider native `<details>` elements.
-                element.open === false
-            )
-        );
-    }
-
-    /**
-     * Get hidden parentNodes of an `element`
-     *
-     * @param  {Element} element
-     * @return {[type]}
-     */
-    function getHiddenParentNodes(element) {
-        var parents = [],
-            node    = element.parentNode;
-
-        while (isHidden(node)) {
-            parents.push(node);
-            node = node.parentNode;
-        }
-        return parents;
-    }
-
-    /**
-     * Returns dimensions for an element even if it is not visible in the DOM.
-     *
-     * @param  {Element} element
-     * @param  {String}  key     (e.g. offsetWidth …)
-     * @return {Number}
-     */
-    function getDimension(element, key) {
-        var hiddenParentNodes       = getHiddenParentNodes(element),
-            hiddenParentNodesLength = hiddenParentNodes.length,
-            inlineStyle             = [],
-            dimension               = element[key];
-
-        // Used for native `<details>` elements
-        function toggleOpenProperty(element) {
-            if (typeof element.open !== 'undefined') {
-                element.open = (element.open) ? false : true;
-            }
-        }
-
-        if (hiddenParentNodesLength) {
-            for (var i = 0; i < hiddenParentNodesLength; i++) {
-
-                // Cache style attribute to restore it later.
-                inlineStyle[i] = hiddenParentNodes[i].style.cssText;
-
-                // visually hide
-                if (hiddenParentNodes[i].style.setProperty) {
-                    hiddenParentNodes[i].style.setProperty('display', 'block', 'important');
-                } else {
-                    hiddenParentNodes[i].style.cssText += ';display: block !important';
-                }
-                hiddenParentNodes[i].style.height = '0';
-                hiddenParentNodes[i].style.overflow = 'hidden';
-                hiddenParentNodes[i].style.visibility = 'hidden';
-                toggleOpenProperty(hiddenParentNodes[i]);
-            }
-
-            // Update dimension
-            dimension = element[key];
-
-            for (var j = 0; j < hiddenParentNodesLength; j++) {
-
-                // Restore the style attribute
-                hiddenParentNodes[j].style.cssText = inlineStyle[j];
-                toggleOpenProperty(hiddenParentNodes[j]);
-            }
-        }
-        return dimension;
-    }
-
-    /**
-     * Returns the parsed float or the default if it failed.
-     *
-     * @param  {String}  str
-     * @param  {Number}  defaultValue
-     * @return {Number}
-     */
-    function tryParseFloat(str, defaultValue) {
-        var value = parseFloat(str);
-        return Number.isNaN(value) ? defaultValue : value;
-    }
-
-    /**
-     * Capitalize the first letter of string
-     *
-     * @param  {String} str
-     * @return {String}
-     */
-    function ucfirst(str) {
-        return str.charAt(0).toUpperCase() + str.substr(1);
-    }
-
-    /**
-     * Plugin
-     * @param {String} element
-     * @param {Object} options
-     */
-    function Plugin(element, options) {
-        this.$window            = $(window);
-        this.$document          = $(document);
-        this.$element           = $(element);
-        this.options            = $.extend( {}, defaults, options );
-        this.polyfill           = this.options.polyfill;
-        this.orientation        = this.$element[0].getAttribute('data-orientation') || this.options.orientation;
-        this.onInit             = this.options.onInit;
-        this.onSlide            = this.options.onSlide;
-        this.onSlideEnd         = this.options.onSlideEnd;
-        this.DIMENSION          = constants.orientation[this.orientation].dimension;
-        this.DIRECTION          = constants.orientation[this.orientation].direction;
-        this.DIRECTION_STYLE    = constants.orientation[this.orientation].directionStyle;
-        this.COORDINATE         = constants.orientation[this.orientation].coordinate;
-
-        // Plugin should only be used as a polyfill
-        if (this.polyfill) {
-            // Input range support?
-            if (hasInputRangeSupport) { return false; }
-        }
-
-        this.identifier = 'js-' + pluginName + '-' +(pluginIdentifier++);
-        this.startEvent = this.options.startEvent.join('.' + this.identifier + ' ') + '.' + this.identifier;
-        this.moveEvent  = this.options.moveEvent.join('.' + this.identifier + ' ') + '.' + this.identifier;
-        this.endEvent   = this.options.endEvent.join('.' + this.identifier + ' ') + '.' + this.identifier;
-        this.toFixed    = (this.step + '').replace('.', '').length - 1;
-        this.$fill      = $('<div class="' + this.options.fillClass + '" />');
-        this.$handle    = $('<div class="' + this.options.handleClass + '" />');
-        this.$range     = $('<div class="' + this.options.rangeClass + ' ' + this.options[this.orientation + 'Class'] + '" id="' + this.identifier + '" />').insertAfter(this.$element).prepend(this.$fill, this.$handle);
-
-        // visually hide the input
-        this.$element.css({
-            'position': 'absolute',
-            'width': '1px',
-            'height': '1px',
-            'overflow': 'hidden',
-            'opacity': '0'
-        });
-
-        // Store context
-        this.handleDown = $.proxy(this.handleDown, this);
-        this.handleMove = $.proxy(this.handleMove, this);
-        this.handleEnd  = $.proxy(this.handleEnd, this);
-
-        this.init();
-
-        // Attach Events
-        var _this = this;
-        this.$window.on('resize.' + this.identifier, debounce(function() {
-            // Simulate resizeEnd event.
-            delay(function() { _this.update(false, false); }, 300);
-        }, 20));
-
-        this.$document.on(this.startEvent, '#' + this.identifier + ':not(.' + this.options.disabledClass + ')', this.handleDown);
-
-        // Listen to programmatic value changes
-        this.$element.on('change.' + this.identifier, function(e, data) {
-            if (data && data.origin === _this.identifier) {
-                return;
-            }
-
-            var value = e.target.value,
-                pos = _this.getPositionFromValue(value);
-            _this.setPosition(pos);
-        });
-    }
-
-    Plugin.prototype.init = function() {
-        this.update(true, false);
-
-        if (this.onInit && typeof this.onInit === 'function') {
-            this.onInit();
-        }
-    };
-
-    Plugin.prototype.update = function(updateAttributes, triggerSlide) {
-        updateAttributes = updateAttributes || false;
-
-        if (updateAttributes) {
-            this.min    = tryParseFloat(this.$element[0].getAttribute('min'), 0);
-            this.max    = tryParseFloat(this.$element[0].getAttribute('max'), 100);
-            this.value  = tryParseFloat(this.$element[0].value, Math.round(this.min + (this.max-this.min)/2));
-            this.step   = tryParseFloat(this.$element[0].getAttribute('step'), 1);
-        }
-
-        this.handleDimension    = getDimension(this.$handle[0], 'offset' + ucfirst(this.DIMENSION));
-        this.rangeDimension     = getDimension(this.$range[0], 'offset' + ucfirst(this.DIMENSION));
-        this.maxHandlePos       = this.rangeDimension - this.handleDimension;
-        this.grabPos            = this.handleDimension / 2;
-        this.position           = this.getPositionFromValue(this.value);
-
-        // Consider disabled state
-        if (this.$element[0].disabled) {
-            this.$range.addClass(this.options.disabledClass);
-        } else {
-            this.$range.removeClass(this.options.disabledClass);
-        }
-
-        this.setPosition(this.position, triggerSlide);
-    };
-
-    Plugin.prototype.handleDown = function(e) {
-        this.$document.on(this.moveEvent, this.handleMove);
-        this.$document.on(this.endEvent, this.handleEnd);
-
-        // If we click on the handle don't set the new position
-        if ((' ' + e.target.className + ' ').replace(/[\n\t]/g, ' ').indexOf(this.options.handleClass) > -1) {
-            return;
-        }
-
-        var pos         = this.getRelativePosition(e),
-            rangePos    = this.$range[0].getBoundingClientRect()[this.DIRECTION],
-            handlePos   = this.getPositionFromNode(this.$handle[0]) - rangePos,
-            setPos      = (this.orientation === 'vertical') ? (this.maxHandlePos - (pos - this.grabPos)) : (pos - this.grabPos);
-
-        this.setPosition(setPos);
-
-        if (pos >= handlePos && pos < handlePos + this.handleDimension) {
-            this.grabPos = pos - handlePos;
-        }
-    };
-
-    Plugin.prototype.handleMove = function(e) {
-        e.preventDefault();
-        var pos = this.getRelativePosition(e);
-        var setPos = (this.orientation === 'vertical') ? (this.maxHandlePos - (pos - this.grabPos)) : (pos - this.grabPos);
-        this.setPosition(setPos);
-    };
-
-    Plugin.prototype.handleEnd = function(e) {
-        e.preventDefault();
-        this.$document.off(this.moveEvent, this.handleMove);
-        this.$document.off(this.endEvent, this.handleEnd);
-
-        // Ok we're done fire the change event
-        this.$element.trigger('change', { origin: this.identifier });
-
-        if (this.onSlideEnd && typeof this.onSlideEnd === 'function') {
-            this.onSlideEnd(this.position, this.value);
-        }
-    };
-
-    Plugin.prototype.cap = function(pos, min, max) {
-        if (pos < min) { return min; }
-        if (pos > max) { return max; }
-        return pos;
-    };
-
-    Plugin.prototype.setPosition = function(pos, triggerSlide) {
-        var value, newPos;
-
-        if (triggerSlide === undefined) {
-            triggerSlide = true;
-        }
-
-        // Snapping steps
-        value = this.getValueFromPosition(this.cap(pos, 0, this.maxHandlePos));
-        newPos = this.getPositionFromValue(value);
-
-        // Update ui
-        this.$fill[0].style[this.DIMENSION] = value == this.max ? '100%' : (newPos + this.grabPos) + 'px';
-        this.$handle[0].style[this.DIRECTION_STYLE] = newPos + 'px';
-        this.setValue(value);
-
-        // Update globals
-        this.position = newPos;
-        this.value = value;
-
-        if (triggerSlide && this.onSlide && typeof this.onSlide === 'function') {
-            this.onSlide(newPos, value);
-        }
-    };
-
-    // Returns element position relative to the parent
-    Plugin.prototype.getPositionFromNode = function(node) {
-        var i = 0;
-        while (node !== null) {
-            i += node.offsetLeft;
-            node = node.offsetParent;
-        }
-        return i;
-    };
-
-    Plugin.prototype.getRelativePosition = function(e) {
-        // Get the offset DIRECTION relative to the viewport
-        var ucCoordinate = ucfirst(this.COORDINATE),
-            rangePos = this.$range[0].getBoundingClientRect()[this.DIRECTION],
-            pageCoordinate = 0;
-
-        if (typeof e['page' + ucCoordinate] !== 'undefined') {
-            pageCoordinate = e['client' + ucCoordinate];
-        }
-        else if (typeof e.originalEvent['client' + ucCoordinate] !== 'undefined') {
-            pageCoordinate = e.originalEvent['client' + ucCoordinate];
-        }
-        else if (e.originalEvent.touches && e.originalEvent.touches[0] && typeof e.originalEvent.touches[0]['client' + ucCoordinate] !== 'undefined') {
-            pageCoordinate = e.originalEvent.touches[0]['client' + ucCoordinate];
-        }
-        else if(e.currentPoint && typeof e.currentPoint[this.COORDINATE] !== 'undefined') {
-            pageCoordinate = e.currentPoint[this.COORDINATE];
-        }
-
-        return pageCoordinate - rangePos;
-    };
-
-    Plugin.prototype.getPositionFromValue = function(value) {
-        var percentage, pos;
-        percentage = (value - this.min)/(this.max - this.min);
-        pos = (!Number.isNaN(percentage)) ? percentage * this.maxHandlePos : 0;
-        return pos;
-    };
-
-    Plugin.prototype.getValueFromPosition = function(pos) {
-        var percentage, value;
-        percentage = ((pos) / (this.maxHandlePos || 1));
-        value = this.step * Math.round(percentage * (this.max - this.min) / this.step) + this.min;
-        return Number((value).toFixed(this.toFixed));
-    };
-
-    Plugin.prototype.setValue = function(value) {
-        if (value === this.value && this.$element[0].value !== '') {
-            return;
-        }
-
-        // Set the new value and fire the `input` event
-        this.$element
-            .val(value)
-            .trigger('input', { origin: this.identifier });
-    };
-
-    Plugin.prototype.destroy = function() {
-        this.$document.off('.' + this.identifier);
-        this.$window.off('.' + this.identifier);
-
-        this.$element
-            .off('.' + this.identifier)
-            .removeAttr('style')
-            .removeData('plugin_' + pluginName);
-
-        // Remove the generated markup
-        if (this.$range && this.$range.length) {
-            this.$range[0].parentNode.removeChild(this.$range[0]);
-        }
-    };
-
-    // A really lightweight plugin wrapper around the constructor,
-    // preventing against multiple instantiations
-    $.fn[pluginName] = function(options) {
-        var args = Array.prototype.slice.call(arguments, 1);
-
-        return this.each(function() {
-            var $this = $(this),
-                data  = $this.data('plugin_' + pluginName);
-
-            // Create a new instance.
-            if (!data) {
-                $this.data('plugin_' + pluginName, (data = new Plugin(this, options)));
-            }
-
-            // Make it possible to access methods from public.
-            // e.g `$element.rangeslider('method');`
-            if (typeof options === 'string') {
-                data[options].apply(data, args);
-            }
-        });
-    };
-
-    return 'rangeslider.js is available in jQuery context e.g $(selector).rangeslider(options);';
-
-}));
-
-define('components/adapt-contrib-slider/js/adapt-contrib-slider',[
-  'coreViews/questionView',
-  'coreJS/adapt',
-  './rangeslider.js'
-], function(QuestionView, Adapt, Rangeslider) {
-
-    var Slider = QuestionView.extend({
-
-        tempValue:true,
-
-        events: {
-            'click .slider-scale-number': 'onNumberSelected',
-            'focus input[type="range"]':'onHandleFocus',
-            'blur input[type="range"]':'onHandleBlur'
-        },
-
-        // Used by the question to reset the question when revisiting the component
-        resetQuestionOnRevisit: function() {
-            this.setAllItemsEnabled(true);
-            this.deselectAllItems();
-            this.resetQuestion();
-        },
-
-        // Used by question to setup itself just before rendering
-        setupQuestion: function() {
-            if(!this.model.get('_items')) {
-                this.setupModelItems();
-            }
-
-            this.restoreUserAnswers();
-            if (this.model.get('_isSubmitted')) return;
-
-            this.selectItem(0, true);
-        },
-
-        setupRangeslider: function () {
-            this.$sliderScaleMarker = this.$('.slider-scale-marker');
-            this.$slider = this.$('input[type="range"]');
-
-            if(this.model.has('_scaleStep')) {
-                this.$slider.attr({"step": this.model.get('_scaleStep')});
-            }
-
-            this.$slider.rangeslider({
-                polyfill: false,
-                onSlide: _.bind(this.handleSlide, this)
-            });
-            this.oldValue = 0;
-            
-            if (this._deferEnable) {
-                this.setAllItemsEnabled(true);
-            }
-        },
-
-        handleSlide: function (position, value) {
-            if (this.oldValue === value) {
-               return;
-            }
-            if(this.model.get('_marginDir') == 'right'){
-                if(this.tempValue && (this.model.get('_userAnswer') == undefined)){
-                    value = this.model.get('_items').length - value + 1;
-                    this.tempValue = false;
-                    var tempPixels = this.mapIndexToPixels(value);
-                    var rangeSliderWidth = this.$('.rangeslider').width();
-                    var handleLeft = parseInt(this.$('.rangeslider__handle').css('left'));
-                    var sliderWidth = this.$('.rangeslider__fill').width();
-                    handleLeft = rangeSliderWidth - handleLeft -this.$('.rangeslider__handle').width();
-                    sliderWidth = rangeSliderWidth - sliderWidth;
-                    this.$('.rangeslider__handle').css('left',handleLeft);
-                    this.$('.rangeslider__fill').width(sliderWidth);
-                }
-            }
-            var itemIndex = this.getIndexFromValue(value);
-            var pixels = this.mapIndexToPixels(itemIndex);
-            this.selectItem(itemIndex, false);
-            this.animateToPosition(pixels);
-            this.oldValue = value;
-            this.tempValue = true;
-        },
-
-        setupModelItems: function() {
-            var items = [];
-            var answer = this.model.get('_correctAnswer');
-            var range = this.model.get('_correctRange');
-            var start = this.model.get('_scaleStart');
-            var end = this.model.get('_scaleEnd');
-            var step = this.model.get('_scaleStep') || 1;
-
-            for (var i = start; i <= end; i += step) {
-                if (answer) {
-                    items.push({value: i, selected: false, correct: (i == answer)});
-                } else {
-                    items.push({value: i, selected: false, correct: (i >= range._bottom && i <= range._top)});
-                }
-            }
-
-            this.model.set('_items', items);
-            this.model.set('_marginDir', (Adapt.config.get('_defaultDirection') === 'rtl' ? 'right' : 'left'));
-        },
-
-        restoreUserAnswers: function() {
-            if (!this.model.get('_isSubmitted')) {
-                this.model.set({
-                    _selectedItem: {},
-                    _userAnswer: undefined
-                });
-                return;
-            };
-
-            var items = this.model.get('_items');
-            var userAnswer = this.model.get('_userAnswer');
-            for (var i = 0, l = items.length; i < l; i++) {
-                var item = items[i];
-                if (item.value == userAnswer) {
-                    this.model.set('_selectedItem', item);
-                    this.selectItem(this.getIndexFromValue(item.value), true);
-                    break;
-                }
-            }
-
-            this.setQuestionAsSubmitted();
-            this.markQuestion();
-            this.setScore();
-            this.showMarking();
-            this.setupFeedback();
-        },
-
-        // Used by question to disable the question during submit and complete stages
-        disableQuestion: function() {
-            this.setAllItemsEnabled(false);
-        },
-
-        // Used by question to enable the question during interactions
-        enableQuestion: function() {
-            this.setAllItemsEnabled(true);
-        },
-
-        setAllItemsEnabled: function(isEnabled) {
-            if (isEnabled) {
-                if (this.$slider) {
-                    this.$('.slider-widget').removeClass('disabled');
-                    this.$slider.prop('disabled', false);
-                    this.$slider.rangeslider('update', true);
-                } else {
-                    this._deferEnable = true; // slider is not yet ready
-                }
-            } else {
-                this.$('.slider-widget').addClass('disabled');
-                this.$slider.prop('disabled', true);
-                this.$slider.rangeslider('update', true);
-            }
-        },
-
-        // Used by question to setup itself just after rendering
-        onQuestionRendered: function() {
-            this.setupRangeslider();
-            this.setScalePositions();
-            this.onScreenSizeChanged();
-            this.showScaleMarker(true);
-            this.listenTo(Adapt, 'device:resize', this.onScreenSizeChanged);
-            this.setAltText(this.model.get('_scaleStart'));
-            this.setReadyStatus();
-        },
-
-        // this should make the slider handle, slider marker and slider bar to animate to give position
-        animateToPosition: function(newPosition) {
-            if (!this.$sliderScaleMarker) return;
-
-            if(this.model.get('_marginDir') == 'right'){
-                this.$sliderScaleMarker
-                  .velocity('stop')
-                  .velocity({
-                    right: newPosition
-                  }, {
-                    duration: 200,
-                    easing: "linear"
-                  });
-            }
-            else{
-                this.$sliderScaleMarker
-                  .velocity('stop')
-                  .velocity({
-                    left: newPosition
-                  }, {
-                    duration: 200,
-                    easing: "linear"
-                  });
-            }
-        },
-
-        // this shoud give the index of item using given slider value
-        getIndexFromValue: function(itemValue) {
-            var scaleStart = this.model.get('_scaleStart'),
-                scaleEnd = this.model.get('_scaleEnd');
-            return Math.floor(this.mapValue(itemValue, scaleStart, scaleEnd, 0, this.model.get('_items').length - 1));
-        },
-
-        // this should set given value to slider handle
-        setAltText: function(value) {
-            this.$('.slider-handle').attr('aria-valuenow', value);
-        },
-
-        mapIndexToPixels: function(value, $widthObject) {
-            var numberOfItems = this.model.get('_items').length,
-                width = $widthObject ? $widthObject.width() : this.$('.slider-scaler').width();
-
-            return Math.round(this.mapValue(value, 0, numberOfItems - 1, 0, width));
-        },
-
-        mapPixelsToIndex: function(value) {
-            var numberOfItems = this.model.get('_items').length,
-                width = this.$('.slider-sliderange').width();
-
-            return Math.round(this.mapValue(value, 0, width, 0, numberOfItems - 1));
-        },
-
-        normalise: function(value, low, high) {
-            var range = high - low;
-            return (value - low) / range;
-        },
-
-        mapValue: function(value, inputLow, inputHigh, outputLow, outputHigh) {
-            var normal = this.normalise(value, inputLow, inputHigh);
-            return normal * (outputHigh - outputLow) + outputLow;
-        },
-
-        onHandleFocus: function(event) {
-            event.preventDefault();
-            this.$slider.on('keydown', _.bind(this.onKeyDown, this));
-        },
-
-        onHandleBlur: function(event) {
-            event.preventDefault();
-            this.$slider.off('keydown');
-        },
-
-        onKeyDown: function(event) {
-            if(event.which == 9) return; // tab key
-            event.preventDefault();
-
-            var newItemIndex = this.getIndexFromValue(this.model.get('_selectedItem').value);
-
-            switch (event.which) {
-                case 40: // ↓ down
-                case 37: // ← left
-                    newItemIndex = Math.max(newItemIndex - 1, 0);
-                    break;
-                case 38: // ↑ up
-                case 39: // → right
-                    newItemIndex = Math.min(newItemIndex + 1, this.model.get('_items').length - 1);
-                    break;
-            }
-
-            this.selectItem(newItemIndex);
-            if(typeof newItemIndex == 'number') this.showScaleMarker(true);
-            this.animateToPosition(this.mapIndexToPixels(newItemIndex));
-            this.setSliderValue(this.getValueFromIndex(newItemIndex));
-            this.setAltText(this.getValueFromIndex(newItemIndex));
-        },
-
-        onNumberSelected: function(event) {
-            event.preventDefault();
-            this.tempValue = false;
-
-            if (this.model.get('_isInteractionComplete')) {
-              return;
-            }
-
-            // when component is not reset, selecting a number should be prevented
-            if (this.$slider.prop('disabled')) {
-              return;
-            }
-
-            var itemValue = parseInt($(event.currentTarget).attr('data-id'));
-            var index = this.getIndexFromValue(itemValue);
-            this.selectItem(index);
-            this.animateToPosition(this.mapIndexToPixels(index));
-            this.setAltText(itemValue);
-            this.setSliderValue(itemValue)
-        },
-
-        getValueFromIndex: function(index) {
-          return this.model.get('_items')[index].value;
-        },
-
-        resetControlStyles: function() {
-            this.$('.slider-handle').empty();
-            this.showScaleMarker(false);
-            this.$('.slider-bar').animate({width:'0px'});
-            this.setSliderValue(this.model.get('_items')[0].value);
-        },
-
-        /**
-        * allow the user to submit immediately; the slider handle may already be in the position they want to choose
-        */
-        canSubmit: function() {
-            return true;
-        },
-
-        // Blank method for question to fill out when the question cannot be submitted
-        onCannotSubmit: function() {},
-
-        //This preserves the state of the users answers for returning or showing the users answer
-        storeUserAnswer: function() {
-            this.model.set('_userAnswer', this.model.get('_selectedItem').value);
-        },
-
-        isCorrect: function() {
-            var numberOfCorrectAnswers = 0;
-
-            _.each(this.model.get('_items'), function(item, index) {
-                if(item.selected && item.correct)  {
-                    this.model.set('_isAtLeastOneCorrectSelection', true);
-                    numberOfCorrectAnswers++;
-                }
-            }, this);
-
-            this.model.set('_numberOfCorrectAnswers', numberOfCorrectAnswers);
-
-            return this.model.get('_isAtLeastOneCorrectSelection') ? true : false;
-        },
-
-        // Used to set the score based upon the _questionWeight
-        setScore: function() {
-            var numberOfCorrectAnswers = this.model.get('_numberOfCorrectAnswers');
-            var questionWeight = this.model.get('_questionWeight');
-            var score = questionWeight * numberOfCorrectAnswers;
-            this.model.set('_score', score);
-        },
-
-        setSliderValue: function (value) {
-          if (this.$slider) {
-            this.$slider.val(value).change();
-          }
-        },
-
-        // This is important and should give the user feedback on how they answered the question
-        // Normally done through ticks and crosses by adding classes
-        showMarking: function() {
-            if (!this.model.get('_canShowMarking')) return;
-
-            this.$('.slider-widget').removeClass('correct incorrect')
-                .addClass(this.model.get('_selectedItem').correct ? 'correct' : 'incorrect');
-        },
-
-        isPartlyCorrect: function() {
-            return this.model.get('_isAtLeastOneCorrectSelection');
-        },
-
-        // Used by the question view to reset the stored user answer
-        resetUserAnswer: function() {
-            this.model.set({
-                _selectedItem: {},
-                _userAnswer: undefined
-            });
-        },
-
-        // Used by the question view to reset the look and feel of the component.
-        // This could also include resetting item data
-        resetQuestion: function() {
-            this.selectItem(0, true);
-            this.animateToPosition(0);
-            this.resetControlStyles();
-            this.showScaleMarker(true);
-            this.setAltText(this.model.get('_scaleStart'));
-        },
-
-        setScalePositions: function() {
-            var numberOfItems = this.model.get('_items').length;
-            _.each(this.model.get('_items'), function(item, index) {
-                var normalisedPosition = this.normalise(index, 0, numberOfItems -1);
-                this.$('.slider-scale-number').eq(index).data('normalisedPosition', normalisedPosition);
-            }, this);
-        },
-
-        showScale: function () {
-            this.$('.slider-markers').empty();
-            if (this.model.get('_showScale') === false) {
-                this.$('.slider-markers').eq(0).css({display: 'none'});
-                this.model.get('_showScaleIndicator')
-                    ? this.$('.slider-scale-numbers').eq(0).css({visibility: 'hidden'})
-                    : this.$('.slider-scale-numbers').eq(0).css({display: 'none'});
-            } else {
-                var $scaler = this.$('.slider-scaler');
-                var $markers = this.$('.slider-markers');
-                for (var i = 0, count = this.model.get('_items').length; i < count; i++) {
-                    $markers.append("<div class='slider-line component-item-color'>");
-                    $('.slider-line', $markers).eq(i).css({left: this.mapIndexToPixels(i, $scaler) + 'px'});
-                }
-                var scaleWidth = $scaler.width(),
-                    $numbers = this.$('.slider-scale-number');
-                for (var i = 0, count = this.model.get('_items').length; i < count; i++) {
-                    var $number = $numbers.eq(i),
-                        newLeft = Math.round($number.data('normalisedPosition') * scaleWidth);
-                    if($('html').hasClass('ie9') && this.model.get('_marginDir')=='right'){
-						$number.css({right: newLeft});
-					}
-					else{
-						$number.css({left: newLeft});
-                    }
-                }
-            }
-        },
-
-        //Labels are enabled in slider.hbs. Here we manage their containing div.
-        showLabels: function () {
-            if(!this.model.get('labelStart') && !this.model.get('labelEnd')) {
-                this.$('.slider-scale-labels').eq(0).css({display: 'none'});
-            }
-        },
-
-        remapSliderBar: function() {
-            var $scaler = this.$('.slider-scaler');
-            var currentIndex = this.getIndexFromValue(this.model.get('_selectedItem').value);
-            var left = this.mapIndexToPixels(currentIndex, $scaler);
-            this.$('.slider-handle').css({left: left + 'px'});
-            this.$('.slider-scale-marker').css({left: left + 'px'});
-            this.$('.slider-bar').width(left);
-        },
-
-        onScreenSizeChanged: function() {
-            this.showScale();
-            this.showLabels();
-            this.remapSliderBar();
-            if (this.$('.slider-widget').hasClass('show-user-answer')) {
-                this.hideCorrectAnswer();
-            } else if (this.$('.slider-widget').hasClass('show-correct-answer')) {
-                this.showCorrectAnswer();
-            }
-        },
-
-        showCorrectAnswer: function() {
-            var answers = [];
-
-            if(this.model.has('_correctAnswer')) {
-                var correctAnswer = this.model.get('_correctAnswer');
-            }
-
-            if (this.model.has('_correctRange')) {
-                var bottom = this.model.get('_correctRange')._bottom;
-                var top = this.model.get('_correctRange')._top;
-                var step = (this.model.has('_scaleStep') ? this.model.get('_scaleStep') : 1);
-            }
-
-            this.showScaleMarker(false);
-
-            //are we dealing with a single correct answer or a range?
-            if (correctAnswer) {
-                answers.push(correctAnswer);
-            } else if (bottom !== undefined && top !== undefined) {
-                var answer = this.model.get('_correctRange')._bottom;
-                var topOfRange = this.model.get('_correctRange')._top;
-                while(answer <= topOfRange) {
-                    answers.push(answer);
-                    answer += step;
-                }
-            } else {
-                console.log("adapt-contrib-slider::WARNING: no correct answer or correct range set in JSON")
-            }
-
-            var middleAnswer = answers[Math.floor(answers.length / 2)];
-            this.animateToPosition(this.mapIndexToPixels(this.getIndexFromValue(middleAnswer)));
-
-            this.showModelAnswers(answers);
-
-            this.setSliderValue(middleAnswer);
-        },
-
-        showModelAnswers: function(correctAnswerArray) {
-            var $parentDiv = this.$('.slider-modelranges');
-            _.each(correctAnswerArray, function(correctAnswer, index) {
-                $parentDiv.append($("<div class='slider-model-answer component-item-color component-item-text-color'>"));
-
-                var $element = $(this.$('.slider-modelranges .slider-model-answer')[index]),
-                    startingLeft = this.mapIndexToPixels(this.getIndexFromValue(this.model.get('_selectedItem').value));
-
-                if(this.model.get('_showNumber')) $element.html(correctAnswer);
-
-                $element.css({left:startingLeft}).fadeIn(0, _.bind(function() {
-                    $element.animate({left: this.mapIndexToPixels(this.getIndexFromValue(correctAnswer))});
-                }, this));
-            }, this);
-        },
-
-        // Used by the question to display the users answer and
-        // hide the correct answer
-        // Should use the values stored in storeUserAnswer
-        hideCorrectAnswer: function() {
-            var userAnswerIndex = this.getIndexFromValue(this.model.get('_userAnswer'));
-            this.$('.slider-modelranges').empty();
-
-            this.showScaleMarker(true);
-            this.selectItem(userAnswerIndex, true);
-            this.animateToPosition(this.mapIndexToPixels(userAnswerIndex));
-            this.setSliderValue(this.model.get('_userAnswer'));
-        },
-
-        // according to given item index this should make the item as selected
-        selectItem: function(itemIndex, noFocus) {
-            this.$el.a11y_selected(false);
-            _.each(this.model.get('_items'), function(item, index) {
-                item.selected = (index == itemIndex);
-                if(item.selected) {
-                    this.model.set('_selectedItem', item);
-                    this.$('.slider-scale-number[data-id="'+item.value+'"]').a11y_selected(true, noFocus);
-                }
-            }, this);
-            this.showNumber(true);
-        },
-
-        // this should reset the selected state of each item
-        deselectAllItems: function() {
-            _.each(this.model.get('_items'), function(item) {
-                item.selected = false;
-            }, this);
-        },
-
-        // this makes the marker visible or hidden
-        showScaleMarker: function(show) {
-            var $scaleMarker = this.$('.slider-scale-marker');
-            if (this.model.get('_showScaleIndicator')) {
-                this.showNumber(show);
-                if(show) {
-                    $scaleMarker.addClass('display-block');
-                } else {
-                    $scaleMarker.removeClass('display-block');
-                }
-            }
-        },
-
-        // this should add the current slider value to the marker
-        showNumber: function(show) {
-            var $scaleMarker = this.$('.slider-scale-marker');
-            if(this.model.get('_showNumber')) {
-                if(show) {
-                    $scaleMarker.html(this.model.get('_selectedItem').value);
-                } else {
-                    $scaleMarker.html = "";
-                }
-            }
-        },
-
-        /**
-        * Used by adapt-contrib-spoor to get the user's answers in the format required by the cmi.interactions.n.student_response data field
-        */
-        getResponse:function() {
-            return this.model.get('_userAnswer').toString();
-        },
-
-        /**
-        * Used by adapt-contrib-spoor to get the type of this question in the format required by the cmi.interactions.n.type data field
-        */
-        getResponseType:function() {
-            return "numeric";
-        }
-
-    });
-
-    Adapt.register('slider', Slider);
-
-    return Slider;
-});
-
 define('components/adapt-contrib-text/js/adapt-contrib-text',['require','coreViews/componentView','coreJS/adapt'],function(require) {
 
     var ComponentView = require('coreViews/componentView');
@@ -18274,99 +19344,145 @@ define('theme/adapt-theme-monolp/js/theme-block',['require','coreJS/adapt','back
 
 define('theme/adapt-theme-monolp/js/monolp',['require','coreJS/adapt','backbone','theme/adapt-theme-monolp/js/theme-block'],function(require) {
 
-	var Adapt = require('coreJS/adapt');
-	var Backbone = require('backbone');
-	var ThemeBlock = require('theme/adapt-theme-monolp/js/theme-block');
+    var Adapt = require('coreJS/adapt');
+    var Backbone = require('backbone');
+    var ThemeBlock = require('theme/adapt-theme-monolp/js/theme-block');
 
-  var backgroundImages = [];
+    var backgroundImages = [];
+    var menuSections = [];
 
-	// Block View
-	// ==========
+    // Block View
+    // ==========
+    //
+    Adapt.on('blockView:postRender', function(view) {
+        var theme = view.model.get('_theme');
 
-	Adapt.on('blockView:postRender', function(view) {
-		var theme = view.model.get('_theme');
-
-		if (theme) {
-			new ThemeBlock({
-				model: new Backbone.Model({
-					_themeBlockConfig: theme
-				}),
-				el: view.$el
-			});
-		}
-	});
-
-
-
-  Adapt.once('menuView:ready', function() {
-      changeNavigation('.filter-menu-inner');
-  });
-
-  Adapt.once('pageView:ready', function(view) {
-
-      changeNavigation('.page-header');
-
-      var graphic = view.model.get('_graphic');
-      var graphicPath = Adapt.device.screenSize === 'small' ? graphic.narrow : graphic.wide;
-
-      view.$el.find('.page-header').css({
-        backgroundImage: 'url('+ graphicPath +')'
-      });
-
-      view.$el.find('.image-background').each(function(i) {
-        // We may deplete all of the images in the array, so lets replenish the pool when it empties
-        if (! backgroundImages.length) buildBackgroundImageArray();
-
-        // Get random number from current amount in the array
-        var randomIndex = Math.floor(Math.random() * backgroundImages.length);
-        var backgroundImage = backgroundImages[randomIndex];
-
-        if (Adapt.device.screenSize === 'small') {
-          backgroundImage += '-narrow'
+        if (theme) {
+            new ThemeBlock({
+                model: new Backbone.Model({_themeBlockConfig: theme}),
+                el: view.$el
+            });
         }
+    });
 
-        // Remove the item from the array
-        backgroundImages.splice(randomIndex, 1);
+    // Menu view
+    // =========
+    //
+    Adapt.on('menuView:ready', function(view) {
 
-        $(this).css({
-          backgroundImage: 'url(adapt/css/assets/'+ backgroundImage +'.jpg)'
+        changeNavigation('.filter-menu-inner');
+
+        // Check the config if this is an accordion layout
+        var accordionLayout = Adapt.course.get('_globals')._menu._filterMenu.accordionLayout;
+
+        if (accordionLayout) {
+
+            var $menuStrip = $('.filter-menu-strip');
+
+            $menuStrip.each(function(i) {
+                // Check if user left this section open
+                if (menuSections[i]) {
+                    $menuStrip.eq(i).find('.filter-menu-items-bottom').show();
+                }
+                else {
+                    // First visit, build the array
+                    menuSections[i] = false;
+                }
+            });
+
+            $menuStrip.on('click', function(e) {
+
+                switch (e.target.className) {
+                    case 'filter-menu-strip-top':
+                    case 'filter-menu-strip-title':
+                    case 'filter-menu-strip-icon':
+                        // Slide the section open/close and update icon
+                        var $thisStrip = $(this);
+                        $thisStrip.find('.filter-menu-items-bottom').slideToggle();
+                        $thisStrip.find('.filter-menu-strip-icon').toggleClass('icon-plus').toggleClass('icon-minus');
+
+                        // Toggle section open/close and save to global var
+                        var index = $menuStrip.index(this);
+                        menuSections[index] = ! menuSections[index];
+                        break;
+                }
+            });
+        }
+    });
+
+    // Page view
+    // =========
+    //
+    Adapt.on('pageView:ready', function(view) {
+
+        changeNavigation('.page-header');
+
+        // Insert the header bg image
+        var graphic = view.model.get('_graphic');
+        var graphicPath = Adapt.device.screenSize === 'small' ? graphic.narrow : graphic.wide;
+
+        view.$el.find('.page-header').css({
+            backgroundImage: 'url(' + graphicPath + ')'
         });
 
-        // TODO manage narrow images
-        // 'url(assets/'+ image +'-narrow.jpg)'
-      });
-  });
+        // Insert bg images into blocks that have the image-background class
+        view.$el.find('.image-background').each(function(i) {
+            // We may deplete all of the images in the array, so lets replenish the pool when it empties
+            if (backgroundImages.length < 1) buildBackgroundImageArray(12);
 
-  function changeNavigation(selector) {
+            // Get random number from current amount in the array
+            var randomIndex = Math.floor(Math.random() * backgroundImages.length);
+            var backgroundImage = backgroundImages[randomIndex];
 
-      var $window = $(window);
-      var $navigation = $('.navigation');
-      var navigationHeight = $navigation.height();
-      var $clear = $(selector);
-      var clearHeight = $clear.height();
+            // Use narrow images for mobile
+            if (Adapt.device.screenSize === 'small') {
+                backgroundImage += '-narrow'
+            }
 
-      $window.on('scroll', function() {
-          if ($window.scrollTop() > clearHeight - navigationHeight) {
-              $navigation.addClass('navigation-opaque');
-          }
-          else {
-              $navigation.removeClass('navigation-opaque');
-          }
-      });
-  }
+            // Remove the item from the array
+            backgroundImages.splice(randomIndex, 1);
 
-  function buildBackgroundImageArray() {
-    var poolSize = 5;
+            $(this).css({
+                backgroundImage: 'url(course/en/images/backgrounds/' + backgroundImage + '.jpg)'
+            });
+        });
+    });
 
-    for (var i = 0; i < poolSize; i++) {
-      backgroundImages.push('image-background-'+ i);
+    /**
+     * Add a class to the nav bar when we scroll past the image header
+     */
+    function changeNavigation(selector) {
+
+        var $window = $(window);
+        var $navigation = $('.navigation');
+        var navigationHeight = $navigation.height();
+        var $clear = $(selector);
+        var clearHeight = $clear.height();
+
+        $window.on('scroll', function() {
+            if ($window.scrollTop() > clearHeight - navigationHeight) {
+                $navigation.addClass('navigation-opaque');
+            }
+            else {
+                $navigation.removeClass('navigation-opaque');
+            }
+        });
     }
-  }
 
+    /**
+     * Creates an array of image file names for random selection
+     */
+    function buildBackgroundImageArray(size) {
+
+        for (var i = 0; i < size; i++) {
+            backgroundImages.push('image-background-' + i);
+        }
+    }
 
 });
 
 define('plugins',[
+	"extensions/adapt-articleBlockSlider/js/articleBlockSlider",
 	"extensions/adapt-contrib-assessment/js/adapt-assessmentArticleExtension",
 	"extensions/adapt-contrib-bookmarking/js/adapt-contrib-bookmarking",
 	"extensions/adapt-contrib-languagePicker/js/adapt-languagePicker",
@@ -18378,6 +19494,7 @@ define('plugins',[
 	"components/adapt-contrib-accordion/js/adapt-contrib-accordion",
 	"components/adapt-contrib-assessmentResults/js/adapt-contrib-assessmentResults",
 	"components/adapt-contrib-blank/js/adapt-contrib-blank",
+	"components/adapt-contrib-confidenceSlider/js/adapt-contrib-confidenceSlider",
 	"components/adapt-contrib-gmcq/js/adapt-contrib-gmcq",
 	"components/adapt-contrib-graphic/js/adapt-contrib-graphic",
 	"components/adapt-contrib-hotgraphic/js/adapt-contrib-hotgraphic",
@@ -18391,3 +19508,5 @@ define('plugins',[
 	"menu/adapt-filterMenu/js/adapt-filterMenu",
 	"theme/adapt-theme-monolp/js/monolp"
 ],function(){});
+
+//# sourceMappingURL=plugins.js.map

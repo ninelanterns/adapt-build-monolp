@@ -170,6 +170,55 @@
             background-color: @foreground-color;
         }
     }
+
+    .narrative-component .narrative-content {
+        color: @foreground-color;
+    }
+
+    .narrative-component .narrative-progress {
+        border-color: @primary-color;
+
+        &.selected {
+            background: @primary-color;
+        }
+    }
+}
+
+blockquote {
+    margin-bottom: 1em;
+
+    &:before {
+        font-family: 'vanilla';
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content:'\e903';
+        font-size: @icon-size;
+    }
+
+    p {
+        font-size: 1.2em;
+        padding-left: 20px;
+        font-style: italic;
+        margin: 10px;
+        border-left: 5px solid rgba(255, 255, 255, 0.3);
+    }
+
+    footer {
+        font-weight: @font-weight-bold;
+        margin: 10px;
+        padding-left: 25px;
+
+        &:before {
+            content: '—';
+            margin-right: 10px;
+        }
+    }
 }
 
 // Give the last block on the page more padding

@@ -69,6 +69,7 @@
                 "togglePinAria": "Toggle pin",
                 "menuItemEndAria": "End of menu item",
                 "menuEndAria": "You have reached the end of the menu.",
+                "accordionLayout": true,
                 "_ariaLabels": {
                     "openDashboard": "Open Filter Menu dashboard",
                     "disableFilters": "Disable filters",

@@ -5,6 +5,8 @@ src/extensions
 src/menu/adapt-contrib-boxMenu
 src/theme/adapt-contrib-vanilla
 
+content graphics-selected
+
 # Include build sp we may serve it on github pages
 #build
 

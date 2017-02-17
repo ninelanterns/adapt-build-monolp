@@ -5,6 +5,9 @@
 	</div>
 	{{/if}}
 	<div class="filter-menu-strip-top">
+        {{#if _globals._menu._filterMenu.accordionLayout}}
+            <div class="filter-menu-strip-icon icon icon-plus a11y-ignore display-none"></div>
+        {{/if}}
 		<div class="filter-menu-strip-title" aria-level="2" role="heading" tabindex="0">{{{this.title}}}</div>
 		<div class="filter-menu-strip-empty">{{{a11y_text _globals._menu._filterMenu.stripEmpty}}}</div>
 	</div>
