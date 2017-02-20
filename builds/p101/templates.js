@@ -1857,11 +1857,13 @@ define("templates",["handlebars"],function(Handlebars){Handlebars.templates={};H
 },"3":function(container,depth0,helpers,partials,data) {
     return "            <div class=\"filter-menu-strip-icon icon icon-plus a11y-ignore display-none\"></div>\r\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var stack1;
+    var stack1, helper;
 
   return "<div class=\"filter-menu-strip-inner\">\r\n"
     + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},(depth0 != null ? depth0._isProgressEnabled : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "	<div class=\"filter-menu-strip-top\">\r\n"
+    + "    "
+    + container.escapeExpression(((helper = (helper = helpers.menuSections || (depth0 != null ? depth0.menuSections : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"menuSections","hash":{},"data":data}) : helper)))
+    + "\r\n	<div class=\"filter-menu-strip-top\">\r\n"
     + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0._globals : depth0)) != null ? stack1._menu : stack1)) != null ? stack1._filterMenu : stack1)) != null ? stack1.accordionLayout : stack1),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "		<div class=\"filter-menu-strip-title\" aria-level=\"2\" role=\"heading\" tabindex=\"0\">"
     + ((stack1 = container.lambda((depth0 != null ? depth0.title : depth0), depth0)) != null ? stack1 : "")

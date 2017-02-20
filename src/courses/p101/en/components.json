@@ -88,6 +88,7 @@
         "_canShowModelAnswer": true,
         "_canShowMarking": true,
         "_recordInteraction": true,
+        "_instantSubmit": true,
         "title": "Consequat liberavisse ex eos",
         "displayTitle": "Consequat liberavisse ex eos",
         "body": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate amet mauris. Morbi accumsan ipsum velit.  condimentum fermentum nunc.<br /><br />Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque.",

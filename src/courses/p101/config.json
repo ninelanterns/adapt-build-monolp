@@ -13,12 +13,12 @@
         "_duration": 400
     },
     "_spoor": {
-        "_isEnabled": false,
+        "_isEnabled": true,
         "_tracking": {
             "_requireCourseCompleted": true,
             "_requireAssessmentPassed": true,
-            "_shouldSubmitScore": false,
-            "_shouldStoreResponses": false,
+            "_shouldSubmitScore": true,
+            "_shouldStoreResponses": true,
             "_shouldRecordInteractions": true
         },
         "_reporting": {

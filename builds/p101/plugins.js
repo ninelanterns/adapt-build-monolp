@@ -19368,7 +19368,7 @@ define('theme/adapt-theme-monolp/js/monolp',['require','coreJS/adapt','backbone'
     // Menu view
     // =========
     //
-    Adapt.on('menuView:ready', function(view) {
+    Adapt.on('filterMenu:ready', function(view) {
 
         changeNavigation('.filter-menu-inner');
 
@@ -19382,7 +19382,9 @@ define('theme/adapt-theme-monolp/js/monolp',['require','coreJS/adapt','backbone'
             $menuStrip.each(function(i) {
                 // Check if user left this section open
                 if (menuSections[i]) {
-                    $menuStrip.eq(i).find('.filter-menu-items-bottom').show();
+                    $menuStrip.eq(i)
+                        .find('.filter-menu-strip-icon').toggleClass('icon-plus').toggleClass('icon-minus').end()
+                        .find('.filter-menu-items-bottom').show();
                 }
                 else {
                     // First visit, build the array
@@ -19390,21 +19392,19 @@ define('theme/adapt-theme-monolp/js/monolp',['require','coreJS/adapt','backbone'
                 }
             });
 
-            $menuStrip.on('click', function(e) {
+            $menuStrip.off('.accordionLayout').on('click.accordionLayout', function(e) {
 
-                switch (e.target.className) {
-                    case 'filter-menu-strip-top':
-                    case 'filter-menu-strip-title':
-                    case 'filter-menu-strip-icon':
-                        // Slide the section open/close and update icon
-                        var $thisStrip = $(this);
-                        $thisStrip.find('.filter-menu-items-bottom').slideToggle();
-                        $thisStrip.find('.filter-menu-strip-icon').toggleClass('icon-plus').toggleClass('icon-minus');
+                // console.log('sfdag');
 
-                        // Toggle section open/close and save to global var
-                        var index = $menuStrip.index(this);
-                        menuSections[index] = ! menuSections[index];
-                        break;
+                if (e.target.className && e.target.className.match(/filter-menu-strip-top|filter-menu-strip-title|filter-menu-strip-icon/)) {
+                    // Slide the section open/close and update icon
+                    var $thisStrip = $(this);
+                    $thisStrip.find('.filter-menu-items-bottom').slideToggle();
+                    $thisStrip.find('.filter-menu-strip-icon').toggleClass('icon-plus').toggleClass('icon-minus');
+
+                    // Toggle section open/close and save to global var
+                    var index = $menuStrip.index(this);
+                    menuSections[index] = ! menuSections[index];
                 }
             });
         }
@@ -19459,7 +19459,7 @@ define('theme/adapt-theme-monolp/js/monolp',['require','coreJS/adapt','backbone'
         var $clear = $(selector);
         var clearHeight = $clear.height();
 
-        $window.on('scroll', function() {
+        $window.off('.changeNavigation').on('scroll.changeNavigation', function() {
             if ($window.scrollTop() > clearHeight - navigationHeight) {
                 $navigation.addClass('navigation-opaque');
             }

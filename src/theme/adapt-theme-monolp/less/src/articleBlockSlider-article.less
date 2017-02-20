@@ -25,48 +25,15 @@
         }
 	}
 
-	// // Arrow Buttons
-	// .item-button-arrow {
-	// 	background-color: @button-color;
-	// 	display: block;
-	// 	height: (@icon-size*2.5);
-	// 	margin-top: -(@icon-size*1.25);
-	// 	position: absolute;
-	// 	text-decoration: none;
-	// 	top: 50%;
-	// 	width: (@icon-size*2.5);
-	// 	z-index: 10;
-    //
-	// 	.icon {
-	// 		color: @button-text-color;
-	// 		font-size: (@icon-size*1.25);
-	// 		font-weight: bold;
-	// 		margin: (@icon-size/1.5);
-	// 	}
-    //
-	// 	.no-touch &:hover {
-	// 		background-color: @button-color-hover;
-    //
-	// 		.icon {
-	// 			color: @button-text-color-hover;
-	// 		}
-	// 	}
-    //
-	// 	&[disabled="disabled"] {
-	// 		background-color: @button-color-disabled;
-	// 		cursor: default;
-    //
-	// 		.no-touch &:hover {
-	// 			background-color: @button-color-disabled;
-	// 		}
-	// 	}
-    //
-	// 	&[data-block-slider='left'] {
-	// 		left: 0;
-	// 	}
-    //
-	// 	&[data-block-slider='right'] {
-	// 		right: 0;
-	// 	}
-	// }
+	// Arrow Buttons
+	.item-button-arrow {
+        border: 1px solid @primary-color-inverted;
+
+		.icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 15px;
+        }
+	}
 }
