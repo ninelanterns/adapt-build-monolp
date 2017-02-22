@@ -10,9 +10,16 @@ src/theme/adapt-contrib-vanilla
 # Include build so we may serve it on github pages
 #build
 
-# Ignore all istallable modules from third parties
+# Ignore all third party installables
+*.zip
+.buildkit
+.DS_Store
+.idea
+_assets
 bower_components
 buildkit
 node_modules
-.DS_Store
-.idea
+rub
+rub.bat
+rub-check.log
+rubconfig.json.tmp
