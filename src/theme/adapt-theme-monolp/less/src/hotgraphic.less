@@ -73,4 +73,24 @@
 		.item-title;
 		margin-bottom: @title-text-margin;
 	}
+
+    &.hidden-pins {
+
+        .hotgraphic-graphic-pin {
+            background: none;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+
+            &:hover,
+            &.visited {
+                background: @foreground-color;
+                opacity: 0.1;
+            }
+        }
+
+        .hotgraphic-graphic-pin-icon {
+            display: none !important;
+        }
+    }
 }

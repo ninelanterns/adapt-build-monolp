@@ -18,7 +18,7 @@
         "title": "The way you want",
         "body": "Use the filter menu at the top left of the page to organise the content on the screen by completion status, bookmarked items or sections of interest.",
         "_graphic": {
-          "src": "course/en/images/c-00-1.jpg",
+          "src": "course/en/images/c-05-001.jpg",
           "alt": ""
         },
         "strapline": "The way you want"
@@ -27,7 +27,7 @@
         "title": "Bookmarking",
         "body": "If you find something you like or want to save it for later, you can pin it to your menu by selecting the pin icon. The filter menu at the top left allows you to display pinned items only.",
         "_graphic": {
-          "src": "course/en/images/c-00-2.jpg",
+          "src": "course/en/images/c-05-002.jpg",
           "alt": ""
         },
         "strapline": "Bookmarking"
@@ -36,7 +36,7 @@
         "title": "Dashboard",
         "body": "To help track your progress throughout the topics, in the top right of the screen you will have access to the dashboard. This dashboard is a useful tool that can tell you how you're tracking and will give you guidance on your progress.",
         "_graphic": {
-          "src": "course/en/images/c-00-3.jpg",
+          "src": "course/en/images/c-05-003.jpg",
           "alt": ""
         },
         "strapline": "Dashboard"
@@ -45,7 +45,7 @@
         "title": "Resources",
         "body": "Use the Resources menu at the top right of the page to explore further resources available in this course.",
         "_graphic": {
-          "src": "course/en/images/c-00-4.jpg",
+          "src": "course/en/images/c-05-004.jpg",
           "alt": ""
         },
         "strapline": "Resources"
@@ -101,43 +101,37 @@
     "_id": "c-15",
     "_parentId": "b-15",
     "_type": "component",
-    "_component": "narrative",
+    "_component": "accordion",
     "_classes": "",
     "_layout": "full",
-    "_setCompletionOn": "allItems",
-    "_hasNavigationInTextArea": false,
-    "title": "What s in this course",
-    "displayTitle": "What s in this course",
+    "title": "What's in this course",
+    "displayTitle": "What's in this course",
     "body": "Let's take a look at what's involved in completing this course.",
-    "instruction": "Select the arrows to find out more.",
-    "mobileInstruction": "Select the arrows and then the plus icons to find out more.",
+    "instruction": "Select each heading to find out more.",
     "_items": [
       {
         "title": "Straight to the point",
         "body": "Each topic has been broken down into small, focused learning bites using video, graphics and web articles. Scroll down the menu page to find the topic you want, then use the navigation arrows to cycle through the learning bites. You can explore the topics in any order, but we suggest you start with 'What is leadership' and work your way through.",
         "_graphic": {
-          "src": "course/en/images/c-15-1.jpg",
+          "src": "course/en/images/c-15-001.jpg",
           "alt": ""
-        },
-        "strapline": "Straight to the point"
+        }
       },
       {
-        "title": "Want to know more",
-        "body": "We've incorporated additional resources to help you develop your leadership skills further. These include Quick Reference Guides, documents and web articles with extra insights into leadership. You can access them via the Resources menu at the top right of the page. This reading is estimated to take approximately 30 minutes and can be included in your professional development hours.",
+        "title": "Want to know more?",
+        "body": "We've incorporated additional resources to help you develop your leadership skills. These include quick reference guides, documents and web articles with extra insights into leadership. You can access them via the Resources menu at the top right of the page. This reading is estimated to take approximately 30 minutes and can be included in your professional development hours.",
         "_graphic": {
-          "src": "course/en/images/c-15-2.jpg",
+          "src": "course/en/images/c-15-002.jpg",
           "alt": ""
-        },
-        "strapline": "Want to know more"
+        }
       },
       {
         "title": "The next steps",
-        "body": "We want you to think about how you can build skills for the 21st century – leadership being one of them. That's why this course includes a Leadership Development Plan (LDP). It's a critical component of your course, which once completed, will need to be given to your supervisor for review and sign-off. Download and save the LDP from the Resources menu. We'll refer you to LDP activities throughout this course, which need to be completed offline. It's estimated that these activities will take approximately 90 minutes and can be recorded as part of your professional development hours.",
+        "body": "We want you to think about how you can build skills for the 21st century – leadership being one of them. That's why this course includes a Leadership Development Plan (LDP). It's a critical component, which once completed, will need to be given to your supervisor for review and sign-off. Download and save the <strong>LDP</strong> from the Resources menu. We'll refer you to LDP activities throughout this course, which need to be completed offline. It's estimated that these activities will take approximately 90 minutes and can be recorded as part of your professional development hours.",
         "_graphic": {
-          "src": "course/en/images/c-15-3.jpg",
+          "src": "course/en/images/c-15-003.jpg",
           "alt": ""
-        },
-        "strapline": "The next steps"
+        }
       }
     ],
     "_pageLevelProgress": {
@@ -200,7 +194,7 @@
     "_layout": "full",
     "title": "",
     "displayTitle": "",
-    "body": "\"Leadership is the art of motivating a group of people to act towards achieving a common goal.\" – Anon",
+    "body": "<blockquote><p>Leadership is the art of motivating a group of people to act towards achieving a common goal.</p><footer>Anon</footer></blockquote>",
     "instruction": "",
     "_pageLevelProgress": {
       "_isEnabled": false
@@ -215,7 +209,7 @@
     "_layout": "full",
     "title": "",
     "displayTitle": "",
-    "body": "\"Leadership is a function of knowing yourself, having a vision that is well communicated, building trust among colleagues, and taking effective action to realise your own leadership potential.\" – Warren Bennis",
+    "body": "<blockquote><p>Leadership is a function of knowing yourself, having a vision that is well communicated, building trust among colleagues, and taking effective action to realise your own leadership potential.</p><footer>Warren Bennis</footer></blockquote>",
     "instruction": "",
     "_pageLevelProgress": {
       "_isEnabled": false
@@ -230,7 +224,7 @@
     "_layout": "full",
     "title": "",
     "displayTitle": "",
-    "body": "\"All of us must lead if we are to create sustainable change and make our world better.\" – Barack Obama",
+    "body": "<blockquote><p>All of us must lead if we are to create sustainable change and make our world better.</p><footer>Barack Obama</footer></blockquote>",
     "instruction": "",
     "_pageLevelProgress": {
       "_isEnabled": false
@@ -267,7 +261,7 @@
         "title": "What direction do we take?",
         "body": "Without clear direction it makes it harder or impossible for teams, groups or you to achieve goals. What do I want to achieve? How will I achieve it? Which path will I take? Is the vision flawed? Leaders play a big part in looking forward and moving themselves or others in a certain direction.",
         "_graphic": {
-          "src": "course/en/images/c-50-1.jpg",
+          "src": "course/en/images/c-50-001.jpg",
           "alt": ""
         },
         "_classes": "image-left"
@@ -276,7 +270,7 @@
         "title": "Who will inspire us?",
         "body": "Great! Awesome! Remarkable! We all benefit from a little motivation, inspiration and encouragement – it could be the leader of a team or your inner voice giving you a pat on the back. Leaders motivate and encourage others to give their best performance all the time.",
         "_graphic": {
-          "src": "course/en/images/c-50-2.jpg",
+          "src": "course/en/images/c-50-002.jpg",
           "alt": ""
         },
         "_classes": ""
@@ -285,7 +279,7 @@
         "title": "Who will keep us focused?",
         "body": "Without focus, organisation and follow through, teams, groups and individuals may find themselves wasting money, time and resources. Leaders help us plan ahead and stay on the track.",
         "_graphic": {
-          "src": "course/en/images/c-50-3.jpg",
+          "src": "course/en/images/c-50-003.jpg",
           "alt": ""
         },
         "_classes": "image-right"
@@ -294,7 +288,7 @@
         "title": "What about change?",
         "body": "Leaders inspire change! Their impact and influence surrounds us every day. It could be the dedicated researcher, the inspiring teacher, the optimistic coach or the risk taking colleague. We need all types of leaders to create impact or change - without them the world would seem a pretty dull place.",
         "_graphic": {
-          "src": "course/en/images/c-50-4.jpg",
+          "src": "course/en/images/c-50-004.jpg",
           "alt": ""
         },
         "_classes": ""
@@ -513,7 +507,7 @@
         "title": "Technological advancements",
         "body": "Advanced technologies and continuous innovation will foster an era of collaboration and knowledge sharing. What does this mean for leaders? Leaders will require exceptional collaboration and influencing skills. They'll need to keep up to date with progress in their own fields and in fields they may not fully understand.",
         "_graphic": {
-          "src": "course/en/images/c-70-1.jpg",
+          "src": "course/en/images/c-70-001.jpg",
           "alt": ""
         },
         "strapline": "Technological advancements"
@@ -522,7 +516,7 @@
         "title": "Changing nature of work",
         "body": "Workplaces are changing. Hot-desking and agile workplaces are becoming the norm. Working from home, in the local café, client sites and other locations is now a reality for many people. Leaders need to collaborate with diverse and highly individualised teams. Listening skills and empathy will be vital to identify what motivates others and inspire them to unlock their potential.",
         "_graphic": {
-          "src": "course/en/images/c-70-2.jpg",
+          "src": "course/en/images/c-70-002.jpg",
           "alt": ""
         },
         "strapline": "Changing nature of work"
@@ -531,7 +525,7 @@
         "title": "Digital era",
         "body": "Technology has changed how we communicate and work with teams. Software tools and applications on laptops, desktops and mobile devices are increasingly used to collaborate. Leaders will need to engage with diverse individuals with different degrees of digital competence. Also, with the increase of transparency, leaders must display high standards of integrity and sincerity.",
         "_graphic": {
-          "src": "course/en/images/c-70-3.jpg",
+          "src": "course/en/images/c-70-003.jpg",
           "alt": ""
         },
         "strapline": "Digital era"
@@ -607,7 +601,7 @@
         "title": "Collaborate and share",
         "body": "Look for opportunities to collaborate. Take on student leadership roles and identify change opportunities, (e.g. club / society committee member, festival director, debate committee member, magazine editor). Liaise with individuals or organisations involved in your doctoral research to identify areas of improvement. (e.g. community groups, government, landholders, industry, households, educators, etc.)",
         "_graphic": {
-          "src": "course/en/images/c-85-1.jpg",
+          "src": "course/en/images/c-85-001.jpg",
           "alt": ""
         },
         "strapline": "Collaborate and share"
@@ -616,7 +610,7 @@
         "title": "Keep up the good work",
         "body": "Take on roles that allow you to gain valuable insights and spot new opportunities for growth. Work as a research assistant. Be a tutor to undergraduate and masters students. Volunteer your time with not-for-profit organisations (e.g. social or environmental organisations, international or local organisations). Look for part-time work in industry.",
         "_graphic": {
-          "src": "course/en/images/c-85-2.jpg",
+          "src": "course/en/images/c-85-002.jpg",
           "alt": ""
         },
         "strapline": "Keep up the good work"
@@ -625,7 +619,7 @@
         "title": "Share your thoughts",
         "body": "Change is about shifting people's thinking. Speak or engage at research-related conferences and forums (e.g. conferences, presenting papers, research groups). Disseminate research findings and insights via various communication channels (e.g. articles in peer reviewed journals, magazines, blogs, formal and informal presentations, panel discussions).",
         "_graphic": {
-          "src": "course/en/images/c-85-3.jpg",
+          "src": "course/en/images/c-85-003.jpg",
           "alt": ""
         },
         "strapline": "Share your thoughts"
@@ -634,7 +628,7 @@
         "title": "Think bigger than today",
         "body": "Think about the entrepreneurial opportunities arising from doctoral research. Join incubator/entrepreneurship programs. You've got to think beyond now and even beyond the most immediate future. What will you do as a post-doctorate in society? What career will be most rewarding?",
         "_graphic": {
-          "src": "course/en/images/c-85-4.jpg",
+          "src": "course/en/images/c-85-004.jpg",
           "alt": ""
         },
         "strapline": "Think bigger than today"
@@ -768,14 +762,14 @@
       }
     ],
     "_feedback":{
-      "correct": "While leadership is easy to explain, leadership is not so easy to practice. Few people are born to be leaders. Most of us need to practise being a good leader. That's why taking the time to identify leadership qualities and skills is an important step in your leadership development. Select the <strong>What makes a successful leader?</strong> document and the <strong>Leadership competencies</strong> article from the Resources menu. These delve more into key leadership skills and attributes.",
+      "correct": "While leadership is easy to explain, leadership is not so easy to practice. Few people are born to be leaders. Most of us need to practise being a good leader. That's why taking the time to identify leadership qualities and skills is an important step in your leadership development. Select the <strong>What makes a successful leader?</strong> document and <strong>'The most important leadership competencies'</strong> article from the Resources menu. These delve more into key leadership skills and attributes.",
       "_incorrect": {
         "notFinal": "",
-        "final": "While leadership is easy to explain, leadership is not so easy to practice. Few people are born to be leaders. Most of us need to practise being a good leader. That's why taking the time to identify leadership qualities and skills is an important step in your leadership development. Select the <strong>What makes a successful leader?</strong> document and the <strong>Leadership competencies</strong> article from the Resources menu. These delve more into key leadership skills and attributes."
+        "final": "While leadership is easy to explain, leadership is not so easy to practice. Few people are born to be leaders. Most of us need to practise being a good leader. That's why taking the time to identify leadership qualities and skills is an important step in your leadership development. Select the <strong>What makes a successful leader?</strong> document and <strong>'The most important leadership competencies'</strong> article from the Resources menu. These delve more into key leadership skills and attributes."
       },
       "_partlyCorrect": {
         "notFinal": "",
-        "final": "While leadership is easy to explain, leadership is not so easy to practice. Few people are born to be leaders. Most of us need to practise being a good leader. That's why taking the time to identify leadership qualities and skills is an important step in your leadership development. Select the <strong>What makes a successful leader?</strong> document and the <strong>Leadership competencies</strong> article from the Resources menu. These delve more into key leadership skills and attributes."
+        "final": "While leadership is easy to explain, leadership is not so easy to practice. Few people are born to be leaders. Most of us need to practise being a good leader. That's why taking the time to identify leadership qualities and skills is an important step in your leadership development. Select the <strong>What makes a successful leader?</strong> document and <strong>'The most important leadership competencies'</strong> article from the Resources menu. These delve more into key leadership skills and attributes."
       }
     },
     "_buttons": {
@@ -899,7 +893,7 @@
     "_parentId": "b-120",
     "_type": "component",
     "_component": "hotgraphic",
-    "_classes": "",
+    "_classes": "hidden-pins",
     "_layout": "full",
     "_setCompletionOn": "allItems",
     "_canCycleThroughPagination": false,
@@ -911,7 +905,7 @@
     "instruction": "Select the icons to find out about each leadership theory.",
     "mobileInstruction": "Select the arrows and then the plus icons to find out about each leadership theory.",
     "_graphic": {
-      "src": "course/en/images/c-120.jpg",
+      "src": "course/en/images/c-120-001.png",
       "alt": ""
     },
     "_items": [
@@ -919,92 +913,92 @@
         "title": "'Great man'",
         "body": "Have you ever heard someone being described as a 'born leader'? The 'Great Man' theory assumes that leaders are born with innate qualities and are destined to lead. The term 'man' was intentional, since at that time, leadership was a concept that was primarily male, military and Western.",
         "_graphic": {
-          "src": "course/en/images/c-120-1.jpg",
+          "src": "course/en/images/c-120-002.png",
           "alt": "",
           "_classes": ""
         },
         "strapline": "'Great man'",
         "_classes": "",
-        "_top": 10,
-        "_left": 10
+        "_top": 4.5,
+        "_left": 44
       },
       {
-        "title": "Trait theories",
+        "title": "Trait",
         "body": "Successful leaders exhibit specific traits -  they're born with extraversion, integrity and courage. The lists of traits are many and continue to be produced. They draw on virtually all the adjectives in the dictionary, which describe some positive or virtuous human attribute, from ambition to zest for life.",
         "_graphic": {
-          "src": "course/en/images/c-120-2.jpg",
+          "src": "course/en/images/c-120-003.png",
           "alt": "",
           "_classes": ""
         },
-        "strapline": "Trait theories",
+        "strapline": "Trait",
         "_classes": "",
-        "_top": 10,
-        "_left": 20
+        "_top": 18,
+        "_left": 63
       },
       {
-        "title": "Behaviourist theories",
+        "title": "Behavioural",
         "body": "Leaders are made, not born – they can learn leadership through teaching and observation. This theory concentrates on what leaders actually do rather than on their traits or source of power. Different patterns of behaviour are observed and categorised as 'styles of leadership'.",
         "_graphic": {
-          "src": "course/en/images/c-120-3.jpg",
+          "src": "course/en/images/c-120-004.png",
           "alt": "",
           "_classes": ""
         },
-        "strapline": "Behaviourist theories",
+        "strapline": "Behavioural",
         "_classes": "",
-        "_top": 10,
-        "_left": 30
+        "_top": 48.5,
+        "_left": 68
       },
       {
-        "title": "Situational leadership",
+        "title": "Situational",
         "body": "Which leadership style does the situation call for? Situational theories propose that leaders choose the best course of action based on the situation at hand. This means not one leadership style is suitable in all situations. Whilst some situations may require an autocratic style, others may need a more participative approach.",
         "_graphic": {
-          "src": "course/en/images/c-120-4.jpg",
+          "src": "course/en/images/c-120-005.png",
           "alt": "",
           "_classes": ""
         },
-        "strapline": "Situational leadership",
+        "strapline": "Situational",
         "_classes": "",
-        "_top": 10,
-        "_left": 40
+        "_top": 73,
+        "_left": 54.5
       },
       {
-        "title": "Contingency theory",
+        "title": "Contingency",
         "body": "It's not just about your leadership style! Effective leadership is contingent or dependent on various other situational factors. The leader's capabilities, personality and preferred leadership style, along with the behaviours of followers, all play a part in the leader's success.",
         "_graphic": {
-          "src": "course/en/images/c-120-5.jpg",
+          "src": "course/en/images/c-120-006.png",
           "alt": "",
           "_classes": ""
         },
-        "strapline": "Contingency theory",
+        "strapline": "Contingency",
         "_classes": "",
-        "_top": 10,
-        "_left": 50
+        "_top": 73,
+        "_left": 33.5
       },
       {
-        "title": "Transactional theory",
+        "title": "Transactional",
         "body": "Transactional theories focus on the relationship between leader and followers. It assumes there's a form of 'contract' in place, where the leader issues the assigned work, praises or criticises, rewards or punishes the followers for their commitment, work and loyalty.",
         "_graphic": {
-          "src": "course/en/images/c-120-6.jpg",
+          "src": "course/en/images/c-120-007.png",
           "alt": "",
           "_classes": ""
         },
-        "strapline": "Transactional theory",
+        "strapline": "Transactional",
         "_classes": "",
-        "_top": 10,
-        "_left": 60
+        "_top": 48.5,
+        "_left": 20.5
       },
       {
-        "title": "Transformational theory",
+        "title": "Transformational",
         "body": "It's all about change. Leaders inspire others to follow, support and be part of a vision. Tasks and work are flexible and followers take responsibility for new ideas. Passion, enthusiasm and energy are key to the leaders' success. People follow because of their connection to the leader and the vision, not because they have to.",
         "_graphic": {
-          "src": "course/en/images/c-120-7.jpg",
+          "src": "course/en/images/c-120-008.png",
           "alt": "",
           "_classes": ""
         },
-        "strapline": "Transformational theory",
+        "strapline": "Transformational",
         "_classes": "",
-        "_top": 10,
-        "_left": 70
+        "_top": 18,
+        "_left": 25
       }
     ],
     "_pageLevelProgress": {
@@ -1253,12 +1247,12 @@
       }
     ],
     "_feedback": {
-      "correct": "That's right. You seem to have a grip on the leadership styles and their use. Effective leaders adopt and exhibit many styles, particularly the authoritative, democratic, affiliative and coaching styles - as they have an overall positive impact on climate and performance. Select the Leadership that gets results article from the Resources menu to learn more about Goleman's leadership style framework.",
+      "correct": "That's right. You seem to have a grip on the leadership styles and their use. Effective leaders adopt and exhibit many styles, particularly the authoritative, democratic, affiliative and coaching styles - as they have an overall positive impact on climate and performance. Select the <strong>'Leadership that gets results'</strong> article from the Resources menu to learn more about Goleman's leadership style framework.",
       "_partlyCorrect": {
-        "final": "That's not right. Pacesetting works well if you would like to get quick results from a highly motivated and competent team. Changing team direction is best suited to an authoritative approach. The affiliative style helps to heal rifts in a team or to motivate people during stressful circumstances. The democratic approach draws on people's knowledge and skills, and creates a group commitment to the resulting goals. Select the Leadership that gets results article from the Resources menu to learn more about Goleman's leadership style framework."
+        "final": "That's not quite right. Pacesetting works well if you would like to get quick results from a highly motivated and competent team. Changing team direction is best suited to an authoritative approach. The affiliative style helps to heal rifts in a team or to motivate people during stressful circumstances. The democratic approach draws on people's knowledge and skills, and creates a group commitment to the resulting goals. Select the <strong>'Leadership that gets results'</strong> article from the Resources menu to learn more about Goleman's leadership style framework."
       },
       "_incorrect": {
-        "final": "That's not quite right. Pacesetting works well if you would like to get quick results from a highly motivated and competent team. Changing team direction is best suited to an authoritative approach. The affiliative style helps to heal rifts in a team or to motivate people during stressful circumstances. The democratic approach draws on people's knowledge and skills, and creates a group commitment to the resulting goals. Select the Leadership that gets results article from the Resources menu to learn more about Goleman's leadership style framework."
+        "final": "That's not right. Pacesetting works well if you would like to get quick results from a highly motivated and competent team. Changing team direction is best suited to an authoritative approach. The affiliative style helps to heal rifts in a team or to motivate people during stressful circumstances. The democratic approach draws on people's knowledge and skills, and creates a group commitment to the resulting goals. Select the <strong>'Leadership that gets results'</strong> article from the Resources menu to learn more about Goleman's leadership style framework."
       }
     },
     "_pageLevelProgress": {
@@ -1473,7 +1467,7 @@
         "title": "The manager...",
         "body": "<ul><li>Administers</li><li>Maintains</li><li>Focuses on systems and structure</li><li>Controls systems and people</li><li>Accepts the status quo</li><li>Has a short-term view</li><li>Manages tasksshort-term view</li><li>Manages tasks</li></ul>",
         "_graphic": {
-          "src": "course/en/images/c-170-1.jpg",
+          "src": "course/en/images/c-170-001.jpg",
           "alt": ""
         },
         "strapline": "The manager..."
@@ -1482,7 +1476,7 @@
         "title": "The leader...",
         "body": "<ul><li>Innovates</li><li>Develops</li><li>Focuses on people and emotions</li><li>Inspires people</li><li>Challenges the status quo</li><li>Has a long-term perspective</li><li>Leads people</li></ul>",
         "_graphic": {
-          "src": "course/en/images/c-170-2.jpg",
+          "src": "course/en/images/c-170-002.jpg",
           "alt": ""
         },
         "strapline": "The leader..."
@@ -1546,14 +1540,14 @@
       }
     ],
     "_feedback":{
-      "correct": "That's right. It's possible to be both a manager and a leader, and sometimes both at the same time. Sometimes you need to ensure that you're managing goals, and other times, you're setting new goals and inspiring new ways of thinking. It's also possible to be a leader even when you have no formal management responsibilities. The key distinction is in whether you have followers, people who have chosen to follow your lead. Select the article <strong>Managers and Leaders: Are they Different?</strong> from the Resources tab to explore the potential differences in more detail.",
+      "correct": "That's right. It's possible to be both a manager and a leader, and sometimes both at the same time. Sometimes you need to ensure that you're managing goals, and other times, you're setting new goals and inspiring new ways of thinking. It's also possible to be a leader even when you have no formal management responsibilities. The key distinction is in whether you have followers, people who have chosen to follow your lead. Select the article <strong>'Managers and Leaders: Are they Different?'</strong> from the Resources tab to explore the potential differences in more detail.",
       "_incorrect": {
         "notFinal": "",
-        "final": "That's not right. It's possible to be both a manager and a leader, and sometimes both at the same time. Sometimes you need to ensure that you're managing goals, and other times, you're setting new goals and inspiring new ways of thinking. It's also possible to be a leader even when you have no formal management responsibilities. The key distinction is in whether you have followers, people who have chosen to follow your lead. Select the article <strong>Managers and Leaders: Are they Different?</strong> from the Resources tab to explore the potential differences in more detail."
+        "final": "That's not right. It's possible to be both a manager and a leader, and sometimes both at the same time. Sometimes you need to ensure that you're managing goals, and other times, you're setting new goals and inspiring new ways of thinking. It's also possible to be a leader even when you have no formal management responsibilities. The key distinction is in whether you have followers, people who have chosen to follow your lead. Select the article <strong>'Managers and Leaders: Are they Different?'</strong> from the Resources tab to explore the potential differences in more detail."
       },
       "_partlyCorrect": {
         "notFinal": "",
-        "final": "That's not quite right. It's possible to be both a manager and a leader, and sometimes both at the same time. Sometimes you need to ensure that you're managing goals, and other times, you're setting new goals and inspiring new ways of thinking. It's also possible to be a leader even when you have no formal management responsibilities. The key distinction is in whether you have followers, people who have chosen to follow your lead. Select the article <strong>Managers and Leaders: Are they Different?</strong> from the Resources tab to explore the potential differences in more detail."
+        "final": "That's not quite right. It's possible to be both a manager and a leader, and sometimes both at the same time. Sometimes you need to ensure that you're managing goals, and other times, you're setting new goals and inspiring new ways of thinking. It's also possible to be a leader even when you have no formal management responsibilities. The key distinction is in whether you have followers, people who have chosen to follow your lead. Select the article <strong>'Managers and Leaders: Are they Different?'</strong> from the Resources tab to explore the potential differences in more detail."
       }
     },
     "_buttons": {
@@ -1782,7 +1776,7 @@
         "title": "Be clear",
         "body": "Do you have a clear sense of where you're going and what you want to achieve? Can you describe it to others? People with high levels of personal power are clear and focused on what is important. They have clear goals and take deliberate action.",
         "_graphic": {
-          "src": "course/en/images/c-205-1.jpg",
+          "src": "course/en/images/c-205-001.jpg",
           "alt": ""
         },
         "_classes": "image-left"
@@ -1791,7 +1785,7 @@
         "title": "Walk your talk",
         "body": "Do you deliver what you promise? Do your actions speak louder than words? Credibility is earned through honesty, integrity, reliability and practising what you preach. Credible leaders take full responsibility for their actions and decisions, are transparent with their actions and foster an honest environment where unethical behaviour isn't tolerated.",
         "_graphic": {
-          "src": "course/en/images/c-205-2.jpg",
+          "src": "course/en/images/c-205-002.jpg",
           "alt": ""
         },
         "_classes": ""
@@ -1800,7 +1794,7 @@
         "title": "Communicate well",
         "body": "Communication builds a bridge between people. Leaders are great communicators that make others feel they are being heard, attended to, consulted and valued. Ask questions to show interest in what others have to say. Actively listen, seek first to understand, then to be understood.",
         "_graphic": {
-          "src": "course/en/images/c-205-3.jpg",
+          "src": "course/en/images/c-205-003.jpg",
           "alt": ""
         },
         "_classes": "image-right"
@@ -1809,7 +1803,7 @@
         "title": "Generate enthusiasm",
         "body": "Want to motivate and influence others? Use energy and enthusiasm. Find out what energises other people around you; once you understand this, you can adapt the way you work with them and they're likely to be more energised and motivated to work with you.",
         "_graphic": {
-          "src": "course/en/images/c-205-4.jpg",
+          "src": "course/en/images/c-205-004.jpg",
           "alt": ""
         },
         "_classes": "image-right"
@@ -1954,7 +1948,7 @@
         "title": "Experience matters",
         "body": "In learning to lead nothing beats experience, including learning from your mistakes. Take the opportunity to learn new things by putting yourself in leadership situations. For example, run a PhD group, be a research assistant, tutor undergraduate students or take on part-time employment.",
         "_graphic": {
-          "src": "course/en/images/c-220-1.jpg",
+          "src": "course/en/images/c-220-001.jpg",
           "alt": ""
         },
         "strapline": "Experience matters"
@@ -1963,7 +1957,7 @@
         "title": "Learn from others",
         "body": "Learn about leadership from people around you. Here are some tips:<br><ul><li>Read books by recognised leadership experts.</li><li>Read biographies or autobiographies about leaders you admire.</li><li>Source articles on leadership – as well as academic literature specific to your field.</li><li>Watch videos and clips by inspiring or effective leaders.</li><li>Spend time with people who are experienced leaders (within academia or elsewhere).</li><li>Think about who could help as a mentor or coach for you.</li></ul>",
         "_graphic": {
-          "src": "course/en/images/c-220-2.jpg",
+          "src": "course/en/images/c-220-002.jpg",
           "alt": ""
         },
         "strapline": "Learn from others"
@@ -1972,7 +1966,7 @@
         "title": "Extend your network",
         "body": "It's worth thinking about and creating a simple stakeholder map. A map of people you know, or who might be useful to know, given your research and ambitions for the future. These might be people or groups you might want to manage closely, keep informed, keep satisfied, or just monitor.",
         "_graphic": {
-          "src": "course/en/images/c-220-3.jpg",
+          "src": "course/en/images/c-220-003.jpg",
           "alt": ""
         },
         "strapline": "Extend your network"
@@ -1992,7 +1986,7 @@
     "title": "Take the leadership challenge",
     "displayTitle": "Take the leadership challenge",
     "body": "How can you become a better leader? Commit to continually learning to lead. Take on leadership challenges and commit to practising your skills. This might include becoming a better speaker, building stronger relationships or taking yourself out of your comfort zone.<br><br>For example, building and growing your relationships will help you become a better leader. The more connected you are, the more people you have to collaborate and share feedback with, the better off you'll be.<br><br>What steps will you take? Visit your <strong>LDP</strong> to complete the activity: <strong>Take the leadership challenge.</strong>",
-    "instruction": "INSTRUCTION",
+    "instruction": "",
     "_pageLevelProgress": {
       "_isEnabled": true
     }

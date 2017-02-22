@@ -1741,35 +1741,39 @@ define("templates",["handlebars"],function(Handlebars){Handlebars.templates={};H
     + ((stack1 = (helpers.a11y_text || (depth0 && depth0.a11y_text) || helpers.helperMissing).call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.description : depth0),{"name":"a11y_text","hash":{},"data":data})) != null ? stack1 : "")
     + "</div>\n	</div>\n</button>";
 },"useData":true});Handlebars.templates['filterMenu']=Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+    return "filter-menu-accordion";
+},"3":function(container,depth0,helpers,partials,data) {
     var stack1, helper;
 
   return "				<div class=\"filter-menu-title\" aria-level=\"1\" role=\"heading\" tabindex=\"0\">"
     + ((stack1 = ((helper = (helper = helpers.displayTitle || (depth0 != null ? depth0.displayTitle : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"displayTitle","hash":{},"data":data}) : helper))) != null ? stack1 : "")
     + "</div>\r\n";
-},"3":function(container,depth0,helpers,partials,data) {
+},"5":function(container,depth0,helpers,partials,data) {
     var stack1;
 
   return "				<div class=\"filter-menu-body\">"
     + ((stack1 = (helpers.a11y_text || (depth0 && depth0.a11y_text) || helpers.helperMissing).call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.body : depth0),{"name":"a11y_text","hash":{},"data":data})) != null ? stack1 : "")
     + "</div>\r\n";
-},"5":function(container,depth0,helpers,partials,data) {
+},"7":function(container,depth0,helpers,partials,data) {
     var stack1;
 
   return "				<div class=\"filter-menu-instruction\">"
     + ((stack1 = (helpers.a11y_text || (depth0 && depth0.a11y_text) || helpers.helperMissing).call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.instruction : depth0),{"name":"a11y_text","hash":{},"data":data})) != null ? stack1 : "")
     + "</div>\r\n";
-},"7":function(container,depth0,helpers,partials,data) {
+},"9":function(container,depth0,helpers,partials,data) {
     return "				<div class=\"filter-menu-progress\">\r\n					<div class=\"filter-menu-progress-inner\">\r\n						<div class=\"filter-menu-progress-bar\"></div>\r\n					</div>\r\n					<div class=\"filter-menu-progress-text\"></div>\r\n				</div>\r\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "<div class=\"filter-menu\">\r\n	<span class=\"aria-label prevent-default\" role=\"region\" tabindex=\"0\">"
+  return "<div class=\"filter-menu "
+    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0._globals : depth0)) != null ? stack1._menu : stack1)) != null ? stack1._filterMenu : stack1)) != null ? stack1.accordionLayout : stack1),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\">\r\n	<span class=\"aria-label prevent-default\" role=\"region\" tabindex=\"0\">"
     + container.escapeExpression(container.lambda(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0._globals : depth0)) != null ? stack1._menu : stack1)) != null ? stack1._filterMenu : stack1)) != null ? stack1.menuAria : stack1), depth0))
     + "</span>\r\n	<div class=\"filter-menu-inner\">\r\n		<div class=\"filter-menu-header\">\r\n			<div class=\"filter-menu-header-inner\">\r\n"
-    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.displayTitle : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.body : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.instruction : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},((stack1 = (depth0 != null ? depth0._filterMenu : depth0)) != null ? stack1._isProgressEnabled : stack1),{"name":"if","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.displayTitle : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.body : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.instruction : depth0),{"name":"if","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},((stack1 = (depth0 != null ? depth0._filterMenu : depth0)) != null ? stack1._isProgressEnabled : stack1),{"name":"if","hash":{},"fn":container.program(9, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "			</div>\r\n		</div>\r\n	</div>\r\n	<div class=\"filter-menu-strips\">\r\n		<span class=\"aria-label prevent-default\" role=\"region\" tabindex=\"0\">"
     + container.escapeExpression(container.lambda(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0._globals : depth0)) != null ? stack1._menu : stack1)) != null ? stack1._filterMenu : stack1)) != null ? stack1.stripAria : stack1), depth0))
     + "</span>\r\n	</div>\r\n	<span class=\"aria-label prevent-default\" role=\"region\" tabindex=\"0\">"
@@ -1850,12 +1854,18 @@ define("templates",["handlebars"],function(Handlebars){Handlebars.templates={};H
     + "</span>\r\n</div>\r\n";
 },"useData":true});Handlebars.templates['filterMenuStrip']=Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     return "	<div class=\"filter-menu-strip-progress\">\r\n		<div class=\"filter-menu-strip-progress-bar\"></div>\r\n	</div>\r\n";
+},"3":function(container,depth0,helpers,partials,data) {
+    return "            <div class=\"filter-menu-strip-icon icon icon-plus a11y-ignore display-none\"></div>\r\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var stack1;
+    var stack1, helper;
 
   return "<div class=\"filter-menu-strip-inner\">\r\n"
     + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},(depth0 != null ? depth0._isProgressEnabled : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "	<div class=\"filter-menu-strip-top\">\r\n		<div class=\"filter-menu-strip-title\" aria-level=\"2\" role=\"heading\" tabindex=\"0\">"
+    + "    "
+    + container.escapeExpression(((helper = (helper = helpers.menuSections || (depth0 != null ? depth0.menuSections : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"menuSections","hash":{},"data":data}) : helper)))
+    + "\r\n	<div class=\"filter-menu-strip-top\">\r\n"
+    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0._globals : depth0)) != null ? stack1._menu : stack1)) != null ? stack1._filterMenu : stack1)) != null ? stack1.accordionLayout : stack1),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "		<div class=\"filter-menu-strip-title\" aria-level=\"2\" role=\"heading\" tabindex=\"0\">"
     + ((stack1 = container.lambda((depth0 != null ? depth0.title : depth0), depth0)) != null ? stack1 : "")
     + "</div>\r\n		<div class=\"filter-menu-strip-empty\">"
     + ((stack1 = (helpers.a11y_text || (depth0 && depth0.a11y_text) || helpers.helperMissing).call(depth0 != null ? depth0 : {},((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0._globals : depth0)) != null ? stack1._menu : stack1)) != null ? stack1._filterMenu : stack1)) != null ? stack1.stripEmpty : stack1),{"name":"a11y_text","hash":{},"data":data})) != null ? stack1 : "")
