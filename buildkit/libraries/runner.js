@@ -128,10 +128,10 @@ var pub =  _.extend(eventEmitter, {
 
 		loadConfigFiles();
 		loadBuildConfig();
-
+		
 		setDirectoryLayout(terminalOptions);
 		setSwitches(terminalOptions);
-		setDefaults(terminalOptions);
+		setDefaults(terminalOptions);		
 
 		function loadConfigFiles() {
 
@@ -296,7 +296,7 @@ var pub =  _.extend(eventEmitter, {
 					for (var key in terminalOptions.switches) {
 						var value = terminalOptions.switches[key];
 						if (!value) continue;
-
+						
 						if (item['@onlyOnSwitches'].indexOf(key) != -1) {
 							found = true;
 							break
@@ -352,7 +352,7 @@ var pub =  _.extend(eventEmitter, {
 
 	startBuildOperations: function(actions) {
 		logger.holdErrors = true;
-
+		
 		taskqueue.reset();
 
 		switch(pub._terminalOptions.switches.type) {
@@ -372,7 +372,7 @@ var pub =  _.extend(eventEmitter, {
 		function buildBuildCoursesFolders(terminalOptions, actions) {
 			var courseFolderList = fsext.list(fsext.expand(terminalOptions.outputDest));
 			var dirs = _.pluck(courseFolderList.dirs, "filename");
-
+			
 			for (var i = 0, l = dirs.length; i < l; i++) {
 				var dir = dirs[i];
 
@@ -427,7 +427,7 @@ var pub =  _.extend(eventEmitter, {
 
 				if (actionOptions["@serverReloadType"]) {
 
-					pub._serverReloadType = actionOptions["@serverReloadType"];
+					pub._serverReloadType = actionOptions["@serverReloadType"];	
 				}
 
 				var actionName = actionOptions['@action'];
@@ -441,8 +441,8 @@ var pub =  _.extend(eventEmitter, {
 				var task = {
 					options: actionOptions,
 					start: function(actionOptions, taskDone) {
-
-
+						
+		
 						pub.emit("action:prep", actionOptions, this);
 
 						this.perform(actionOptions, taskDone, _.bind(started, this));
@@ -472,7 +472,7 @@ var pub =  _.extend(eventEmitter, {
 					context: action
 				};
 
-				taskqueue.add(task);
+				taskqueue.add(task);				
 			}
 
 		}
@@ -523,7 +523,7 @@ var pub =  _.extend(eventEmitter, {
 					for (var key in pub._terminalOptions.switches) {
 						var value = pub._terminalOptions.switches[key];
 						if (!value) continue;
-
+						
 						if (item['@onlyOnSwitches'].indexOf(key) != -1) {
 							found = true;
 							break
@@ -537,7 +537,7 @@ var pub =  _.extend(eventEmitter, {
 				for (var key in pub._terminalOptions.switches) {
 					var value = pub._terminalOptions.switches[key];
 					if (!value) continue;
-
+					
 					if (item['@excludeOnSwitches'].indexOf(key) != -1) {
 						return false;
 					}
@@ -576,7 +576,7 @@ var pub =  _.extend(eventEmitter, {
 
 		}
 
-
+		
 		function onFilesChangedProgress(changeType, changeFileStat, data) {
 
 			var terminalOptions = data.terminalOptions;
@@ -594,7 +594,7 @@ var pub =  _.extend(eventEmitter, {
 				logger.log(changeFileStat.filename+changeFileStat.extname + " was deleted.",1);
 				break;
 			}
-
+			
 			for (var a = 0, al = data.actions.length; a < al; a++) {
 				var actionName = data.actions[a];
 				if (!pub._indexedActions[actionName]) {
@@ -632,7 +632,7 @@ var pub =  _.extend(eventEmitter, {
 				}
 
 				pub.emit("actions:wait");
-
+				
 				logger.flushErrors();
 				logger.log("Watching for changes...\n", 1);
 
@@ -644,3 +644,5 @@ var pub =  _.extend(eventEmitter, {
 });
 
 module.exports = pub;
+
+
