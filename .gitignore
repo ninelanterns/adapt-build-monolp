@@ -1,25 +1,15 @@
-# Ignore all installable modules via the adapt cli
-src/components/*
-src/extensions/*
-src/menu/adapt-contrib-boxMenu
-src/theme/adapt-contrib-vanilla
-
-# You may want to include non-installable extensions (eg. custom components)
-#!src/components/adapt-contrib-accordion
-
-# Include build so we may serve it on github pages
-#build
-
-# Ignore all third party installables
-*.zip
-.buildkit
-.DS_Store
-.idea
-_assets
+builds
 bower_components
-buildkit
 node_modules
+buildkit
+.buildkit
 rub
 rub.bat
+_assets
 rub-check.log
 rubconfig.json.tmp
+.DS_Store
+.idea
+*.zip
+*.tmp
+*.log
