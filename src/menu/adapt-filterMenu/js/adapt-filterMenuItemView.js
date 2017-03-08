@@ -18,10 +18,12 @@ define([ "core/js/views/adaptView", "core/js/adapt" ], function(AdaptView, Adapt
 		},
 
 		events: {
-			// "click .filter-menu-item-button": "onItemClick",
-			// CORE HACK -------
-  		"click .filter-menu-item-button, .filter-menu-item-title, .filter-menu-item-body": "onItemClick",
-      // -----------------
+            // ORIGINAL --------
+            // "click .filter-menu-item-button": "onItemClick",
+            // CORE HACK -------
+            // Make the entire menu item clickable apart from the pin
+            "click .filter-menu-item-button, .filter-menu-item-details": "onItemClick",
+            // -----------------
 			"change input": "togglePin"
 		},
 
@@ -42,7 +44,11 @@ define([ "core/js/views/adaptView", "core/js/adapt" ], function(AdaptView, Adapt
 			return components.findWhere("_isComplete", true);
 		},
 
-		onItemClick: function() {
+		onItemClick: function(e) {
+            // CORE HACK -------
+            // Make the entire menu item clickable apart from the pin
+            if ($(e.target).is('label, input')) return;
+            // -----------------
 			if (this.model.get("_isLocked")) return;
 
 			if (this.model.get("_type") === "resource") this.openResource();

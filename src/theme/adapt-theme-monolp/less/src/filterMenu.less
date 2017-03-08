@@ -2,6 +2,10 @@
     max-width: none;
     padding: 0;
     margin: 0;
+
+    input {
+        float: right;
+    }
 }
 
 .filter-menu-inner {
@@ -122,6 +126,8 @@
 
 .filter-menu-item-details {
     background-color: @light-grey;
+    position: relative;
+    overflow: hidden;
 }
 
 .filter-menu-item-title {
@@ -138,9 +144,10 @@
 }
 
 .filter-menu-item-pin {
-	float: right;
-    padding: 5px 10px;
-    margin-right: -10px;
+	position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px 20px 18px 20px;
 
 	&:before {
 		content: "\e904";
