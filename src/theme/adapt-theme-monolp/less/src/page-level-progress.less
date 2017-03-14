@@ -9,6 +9,10 @@
 
         .page-level-progress-navigation-completion {
             border-color: @primary-color;
+
+            &.page-level-progress-navigation-completion-complete {
+                background-color: @foreground-color-inverted;
+            }
         }
 
         .page-level-progress-navigation-bar {
@@ -29,6 +33,10 @@
     -moz-border-radius: 50px;
     border-radius: 50px;
     .transition-all-colors;
+
+    &.page-level-progress-navigation-completion-complete {
+        background-color: @foreground-color-inverted;
+    }
 }
 
 .page-level-progress-navigation-bar {
@@ -51,6 +59,10 @@
             .page-level-progress-navigation-completion {
                 background-color: @navigation-progress-background-color-hover;
                 border-color: @navigation-progress-border-color;
+
+                &.page-level-progress-navigation-completion-complete {
+                    background-color: @navigation-progress-color;
+                }
             }
 
             .page-level-progress-navigation-bar {
@@ -67,6 +79,10 @@
     .page-level-progress-navigation-completion {
         background-color: @navigation-progress-background-color;
         border: 2px solid @navigation-progress-border-color;
+
+        &.page-level-progress-navigation-completion-complete {
+            background-color: @navigation-progress-color;
+        }
     }
 
     .page-level-progress-navigation-bar {
@@ -127,6 +143,7 @@
 }
 
 .page-level-progress-indicator-complete {
+    background-color: @drawer-progress-color;
 
     .page-level-progress-indicator-bar {
         background-color: @drawer-progress-color;

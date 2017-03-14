@@ -127,7 +127,7 @@
       },
       {
         "title": "The next steps",
-        "body": "We want you to think about how you can build skills for the 21st century – leadership being one of them. That's why this course includes a Leadership Development Plan (LDP). It's a critical component, which once completed, will need to be given to your supervisor for review and sign-off. Download and save the <strong>LDP</strong> from the Resources menu. We'll refer you to LDP activities throughout this course, which need to be completed offline. It's estimated that these activities will take approximately 90 minutes and can be recorded as part of your professional development hours.",
+        "body": "We want you to think about how you can build skills for the 21st century – leadership being one of them. That's why this course includes a <strong>Leadership Development Plan (LDP)</strong>. It's a critical component, which once completed, will need to be given to your supervisor for review and sign-off. Download and save the <strong>LDP</strong> from the Resources menu. We'll refer you to LDP activities throughout this course, which need to be completed offline. It's estimated that these activities will take approximately 90 minutes and can be recorded as part of your professional development hours.",
         "_graphic": {
           "src": "course/en/images/c-15-003.jpg",
           "alt": ""
@@ -239,7 +239,7 @@
     "_layout": "full",
     "title": "",
     "displayTitle": "",
-    "body": "Identifying what leadership means to you and others, will help you communicate, influence and lead people around you. It's now time to write down your thoughts. Download and save your LDP from the Resources menu. In your LDP you'll find the What is leadership for you? activity. Please take the time to complete that now.",
+    "body": "Identifying what leadership means to you and others, will help you communicate, influence and lead people around you. It's now time to write down your thoughts.<br><br>Download and save your <strong>LDP</strong> from the Resources menu. In your <strong>LDP</strong> you'll find the <strong>What is leadership for you?</strong> activity.<br><br>Please take the time to complete that now.",
     "instruction": "",
     "_pageLevelProgress": {
       "_isEnabled": false
@@ -259,7 +259,7 @@
     "_items": [
       {
         "title": "What direction do we take?",
-        "body": "Without clear direction it makes it harder or impossible for teams, groups or you to achieve goals. What do I want to achieve? How will I achieve it? Which path will I take? Is the vision flawed? Leaders play a big part in looking forward and moving themselves or others in a certain direction.",
+        "body": "Without clear direction it makes it harder or impossible for teams, groups or you to achieve goals.<br><br><em>What do I want to achieve? How will I achieve it? Which path will I take? Is the vision flawed?</em><br><br>Leaders play a big part in looking forward and moving themselves or others in a certain direction.",
         "_graphic": {
           "src": "course/en/images/c-50-001.jpg",
           "alt": ""
@@ -268,7 +268,7 @@
       },
       {
         "title": "Who will inspire us?",
-        "body": "Great! Awesome! Remarkable! We all benefit from a little motivation, inspiration and encouragement – it could be the leader of a team or your inner voice giving you a pat on the back. Leaders motivate and encourage others to give their best performance all the time.",
+        "body": "<em>Great! Awesome! Remarkable!</em><br><br>We all benefit from a little motivation, inspiration and encouragement – it could be the leader of a team or your inner voice giving you a pat on the back. Leaders motivate and encourage others to give their best performance all the time.",
         "_graphic": {
           "src": "course/en/images/c-50-002.jpg",
           "alt": ""
@@ -313,8 +313,8 @@
     "_canShowModelAnswer": true,
     "_canShowMarking": true,
     "_recordInteraction":true,
-    "title": "Think leader. Think you",
-    "displayTitle": "Think leader. Think you",
+    "title": "Think leader. Think you.",
+    "displayTitle": "Think leader. Think you.",
     "body": "There's a potential leader in all of us. However, many of us have misconceptions about leadership and our leadership potential. Do any of the common leadership misconceptions below resonate with you?",
     "instruction": "Select one or more of the following options and select Submit.",
     "_items": [
@@ -672,7 +672,7 @@
       },
       {
         "title": "Education",
-        "body": "Professor Greg Leigh AO completed his PhD at the Faculty of Education in 1995. He now runs the Renwick Centre (what was the Royal Institute for the Deaf and the blind). He has an order of Australia and has made significant contributions to education of those with a sensory impairment in Australia.",
+        "body": "Professor Greg Leigh AO completed his PhD at the Faculty of Education in 1995. He now runs the Renwick Centre (what was the Royal Institute for Deaf and Blind Children). He has an order of Australia and has made significant contributions to education of those with a sensory impairment in Australia.",
         "_classes": ""
       }
     ],
@@ -817,7 +817,7 @@
         "body": "Leaders have a set of core values aligned with their own or organisation's vison. Great leaders display both their values and their ethics in their leadership approach and actions. They ensure their vision and direction is one that other people want to share and follow."
       },
       {
-        "title": "Pro social behaviour",
+        "title": "Pro-social behaviour",
         "body": "Leaders are concerned with the rights, feelings and needs of others; they believe people are important. They co-operate with others to achieve goals and assist people in developing to their full potential. Integrity is key to their success. They embody honesty, effort, reliability and humility when collaborating and communicating with others."
       },
       {
@@ -1016,7 +1016,7 @@
     "_questionWeight": 1,
     "_canShowModelAnswer": true,
     "_shouldDisplayAttempts": false,
-    "_isRandom": true,
+    "_isRandom": false,
     "title": "Transformational or transactional leadership?",
     "displayTitle": "Transformational or transactional leadership?",
     "body": "Is one better than the other? In this modern age, a leader is someone that energises people to action, develops followers into leaders, and transforms others into agents of change. Let's look into transformational leadership in more detail. How does it differ from transactional leadership?",
@@ -1497,7 +1497,7 @@
     "_shouldDisplayAttempts": false,
     "_questionWeight": 1,
     "_isRandom": true,
-    "_selectable": 1,
+    "_selectable": 8,
     "_canShowModelAnswer": true,
     "_canShowMarking": true,
     "_recordInteraction":true,
@@ -1591,7 +1591,7 @@
     "instruction": "Select each heading to find out how to develop your leadership profile.",
     "_items": [
       {
-        "title": "What s your default style?",
+        "title": "What's your default style?",
         "body": "First, reflect on what kind of leader you are naturally. Stop and think how you try to influence people around you. Are you predominantly a coercive leader, adopting the \"my way is best\" approach? Or perhaps more of a coaching leader, encouraging people to \"try this\"? Maybe you're more authoritative, working to ensure everyone's on the same page, \"let's consider why we need to change direction\"."
       },
       {
@@ -1640,7 +1640,7 @@
     "_shouldDisplayAttempts": false,
     "_questionWeight": 1,
     "_isRandom": true,
-    "_selectable": 1,
+    "_selectable": 6,
     "_canShowModelAnswer": true,
     "_canShowMarking": true,
     "_recordInteraction":true,
@@ -1675,14 +1675,14 @@
       }
     ],
     "_feedback":{
-      "correct": "That's right. Any time you bring people together to solve a problem or make a decision you may end up with a conflict. Conflict is only negative if it's not resolved or properly managed. A leader must be able to negotiate and assist people to come to agreement. This requires assertiveness and a balanced ― emotionally intelligent ― approach to handling conflict.",
+      "correct": "That's right. Any time you bring people together to solve a problem or make a decision you may end up with a conflict. Conflict is only negative if it's not resolved or properly managed. A leader must be able to negotiate and assist people to come to agreement. This requires assertiveness and a balanced <strong>emotionally intelligent</strong> approach to handling conflict.",
       "_incorrect": {
         "notFinal": "",
-        "final": "That's not right. Any time you bring people together to solve a problem or make a decision you may end up with a conflict. Conflict is only negative if it's not resolved or properly managed. This is not a crisis, there's no need to fight back, it may trigger further conflict. Also, avoiding the situation by changing the subject or giving in undermines your position as a leader and the issue will remain unresolved. A leader must be able to negotiate and assist people to come to agreement. This requires assertiveness and a balanced ― emotionally intelligent ― approach to handling conflict."
+        "final": "That's not right. Any time you bring people together to solve a problem or make a decision you may end up with a conflict. Conflict is only negative if it's not resolved or properly managed. This is not a crisis, there's no need to fight back, it may trigger further conflict. Also, avoiding the situation by changing the subject or giving in undermines your position as a leader and the issue will remain unresolved. A leader must be able to negotiate and assist people to come to agreement. This requires assertiveness and a balanced <strong>emotionally intelligent</strong> approach to handling conflict."
       },
       "_partlyCorrect": {
         "notFinal": "",
-        "final": "That's not quite right. Any time you bring people together to solve a problem or make a decision you may end up with a conflict. Conflict is only negative if it's not resolved or properly managed. This is not a crisis, there's no need to fight back, it may trigger further conflict. Also, avoiding the situation by changing the subject or giving in undermines your position as a leader and the issue will remain unresolved. A leader must be able to negotiate and assist people to come to agreement. This requires assertiveness and a balanced ― emotionally intelligent ― approach to handling conflict."
+        "final": "That's not quite right. Any time you bring people together to solve a problem or make a decision you may end up with a conflict. Conflict is only negative if it's not resolved or properly managed. This is not a crisis, there's no need to fight back, it may trigger further conflict. Also, avoiding the situation by changing the subject or giving in undermines your position as a leader and the issue will remain unresolved. A leader must be able to negotiate and assist people to come to agreement. This requires assertiveness and a balanced <strong>emotionally intelligent</strong> approach to handling conflict."
       }
     },
     "_buttons": {
@@ -1722,7 +1722,7 @@
     "_layout": "full",
     "title": "Work on the styles",
     "displayTitle": "Work on the styles",
-    "body": "It's important when faced with certain situations, you're ready to deal with it. Versatility – your ability to adapt, using diverse styles in various situations with different people is key to your success.<br><br>If you're naturally a democratic or affiliative leader, how will you take command or swift action in a crisis? You'll need to find a way to adopt the coercive style in a way that feels true to you, perhaps by injecting some humour into your orders. Once you've grasped the key skills for each style, you should be in a good position to start to put the new leadership style into practice. To learn more select the <strong>Developing leadership styles</strong> guide from the Resources menu.<br><br>Time to think about your own leadership style. Visit your <strong>LDP</strong> to complete the activity: <strong>Develop your style.</strong>",
+    "body": "It's important when faced with certain situations, that you're ready to deal with it. Versatility – your ability to adapt, using diverse styles in various situations with different people – is key to your success.<br><br>If you're naturally a democratic or affiliative leader, how will you take command or swift action in a crisis? You'll need to find a way to adopt the coercive style in a way that feels true to you, perhaps by injecting some humour into your orders. Once you've grasped the key skills for each style, you should be in a good position to start to put the new leadership style into practice. To learn more select the <strong>Developing leadership styles</strong> guide from the Resources menu.<br><br>Time to think about your own leadership style. Visit your <strong>LDP</strong> to complete the activity: <strong>Develop your style.</strong>",
     "instruction": "",
     "_pageLevelProgress": {
       "_isEnabled": true
@@ -1824,7 +1824,7 @@
     "_shouldDisplayAttempts": false,
     "_questionWeight": 1,
     "_isRandom": true,
-    "_selectable": 1,
+    "_selectable": 6,
     "_canShowModelAnswer": true,
     "_canShowMarking": true,
     "_recordInteraction":true,
@@ -1866,7 +1866,7 @@
       },
       "_partlyCorrect": {
         "notFinal": "",
-        "final": "That's not quite right. All these activities will help you establish credibility, as well as help you in your journey of learning to lead. You don't always need formal authority to lead. In fact, respect is earned mostly from personal sources of power. Personal power transfers from your personality, learning, experience and abilities. Building your personal power is a process. It involves time, effort, and patience, but it's totally worth investing in for successful leadership. Visit y<strong>Make an immediate impact.</strong>to complete the activity: Make an immediate impact."
+        "final": "That's not quite right. All these activities will help you establish credibility, as well as help you in your journey of learning to lead. You don't always need formal authority to lead. In fact, respect is earned mostly from personal sources of power. Personal power transfers from your personality, learning, experience and abilities. Building your personal power is a process. It involves time, effort, and patience, but it's totally worth investing in for successful leadership. Visit your <strong>LDP</strong> to comple<strong>Make an immediate impact.</strong>immediate impact."
       }
     },
     "_buttons": {
@@ -1955,7 +1955,7 @@
       },
       {
         "title": "Learn from others",
-        "body": "Learn about leadership from people around you. Here are some tips:<br><ul><li>Read books by recognised leadership experts.</li><li>Read biographies or autobiographies about leaders you admire.</li><li>Source articles on leadership – as well as academic literature specific to your field.</li><li>Watch videos and clips by inspiring or effective leaders.</li><li>Spend time with people who are experienced leaders (within academia or elsewhere).</li><li>Think about who could help as a mentor or coach for you.</li></ul>",
+        "body": "Learn about leadership from people around you. Here are some tips:<br><ul><li>Read books by recognised leadership experts.</li><li>Read biographies or autobiographies about leaders you admire.</li><li>Source articles on leadership, as well as academic literature specific to your field.</li><li>Watch videos and clips by inspiring or effective leaders.</li><li>Spend time with people who are experienced leaders (within academia or elsewhere).</li><li>Think about who could help as a mentor or coach for you.</li></ul>",
         "_graphic": {
           "src": "course/en/images/c-220-002.jpg",
           "alt": ""
@@ -2039,7 +2039,7 @@
     "_shouldDisplayAttempts": false,
     "_questionWeight": 1,
     "_isRandom": true,
-    "_selectable": 1,
+    "_selectable": 6,
     "_canShowModelAnswer": true,
     "_canShowMarking": true,
     "_recordInteraction":true,
@@ -2074,14 +2074,14 @@
       }
     ],
     "_feedback":{
-      "correct": "These are just a few suggestions. Take the time to identify what you would like to work on to become a better leader. Identify a set of clear actions that you can take, in order to achieve your commitments. For example, you may want to build your leadership confidence by running a PhD group. Time to make the commitment! Open your <strong>LDP</strong> to complete your <strong>LDP action plan</strong>. Discuss your plan with your supervisor, mentor, coach or industry expert and find out how they can help yo<strong></strong>u implement your development plan.",
+      "correct": "All of these are correct, and these are just a few suggestions. Take the time to identify what you would like to work on to become a better leader. Identify a set of clear actions that you can take, in order to achieve your commitments. For example, you may want to build your leadership confidence by running a PhD group. Time to make the commitment! Open your <strong>LDP</strong> to complete your <strong>LDP action plan</strong>. Discuss your plan with your supervisor, mentor, coach or industry expert and find out how they can help you implement your development plan.",
       "_incorrect": {
         "notFinal": "",
-        "final": "INCORRECT"
+        "final": "All of these are correct, and these are just a few suggestions. Take the time to identify what you would like to work on to become a better leader. Identify a set of clear actions that you can take, in order to achieve your commitments. For example, you may want to build your leadership confidence by running a PhD group. Time to make the commitment! Open your <strong>LDP</strong> to complete your <strong>LDP action plan</strong>. Discuss your plan with your supervisor, mentor, coach or industry expert and find out how they can help you implement your development plan."
       },
       "_partlyCorrect": {
         "notFinal": "",
-        "final": "PARTIAL"
+        "final": "All of these are correct, and these are just a few suggestions. Take the time to identify what you would like to work on to become a better leader. Identify a set of clear actions that you can take, in order to achieve your commitments. For example, you may want to build your leadership confidence by running a PhD group. Time to make the commitment! Open your <strong>LDP</strong> to complete your <strong>LDP action plan</strong>. Discuss your plan with your supervisor, mentor, coach or industry expert and find out how they can help you implement your development plan."
       }
     },
     "_buttons": {

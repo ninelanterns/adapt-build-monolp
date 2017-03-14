@@ -231,13 +231,13 @@
         ]
     },
     "_assessment": {
-        "_postTotalScoreToLms": true,
+        "_postTotalScoreToLms": false,
         "_isPercentageBased": true,
         "_scoreToPass": 75
     },
     "_bookmarking": {
         "_isEnabled": true,
-        "_level": "block",
+        "_level": "component",
         "title": "Bookmarking",
         "body": "Would you like to continue where you left off?",
         "_buttons": {

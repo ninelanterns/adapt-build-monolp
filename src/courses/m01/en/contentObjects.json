@@ -1,287 +1,286 @@
-[
-	{
-		"_id": "co-05",
-		"_parentId": "course",
-		"_type": "page",
-		"_classes": "",
-		"title": "How to use this course",
-		"displayTitle": "How to use this course",
-		"pageBody": "We want you to have control of your learning. We're giving you complete freedom over what you view and when you view it, so you can have things just the way you like them.",
-		"body": "Some quick tips to help you get the most out of your course and give it your personal touch.",
-		"_graphic": {
-      "wide": "course/en/images/co-05-page.jpg",
-      "narrow": "course/en/images/co-05-page-narrow.jpg",
-      "src": "course/en/images/co-05-menu.jpg",
-      "alt": ""
-		},
-		"linkText": "View",
-		"durationLabel": "Duration:",
-		"duration": "1 min"
-	},
-	{
-		"_id": "co-10",
-		"_parentId": "course",
-		"_type": "page",
-		"_classes": "",
-		"title": "Hear from our Vice Chancellor",
-		"displayTitle": "Hear from our Vice Chancellor",
-		"pageBody": "The Monash Doctoral Program provides you with a variety of innovative training opportunities that help you build a dynamic combination of skills. No matter where you see yourself going, these skills will complement your thesis and improve the range of opportunities available to you.",
-		"body": "Hear how the Monash Doctoral Program supports the development of your professional skills.",
-		"_graphic": {
-      "wide": "course/en/images/co-10-page.jpg",
-      "narrow": "course/en/images/co-10-page-narrow.jpg",
-      "src": "course/en/images/co-10-menu.jpg",
-      "alt": ""
-		},
-		"linkText": "View",
-		"durationLabel": "Duration:",
-		"duration": "2 mins"
-	},
-	{
-		"_id": "co-15",
-		"_parentId": "course",
-		"_type": "page",
-		"_classes": "",
-		"title": "Take a look inside",
-		"displayTitle": "Take a look inside",
-		"pageBody": "Explore twelve short topics to learn all about leadership, why it's important to you, key leadership principles and practices and what's involved in creating your leadership profile.",
-		"body": "Learn about the structure and key components of the course.",
-		"_graphic": {
-      "wide": "course/en/images/co-15-page.jpg",
-      "narrow": "course/en/images/co-15-page-narrow.jpg",
-      "src": "course/en/images/co-15-menu.jpg",
-      "alt": ""
-		},
-		"linkText": "View",
-		"durationLabel": "Duration:",
-		"duration": "1 min"
-	},
-	{
-		"_id": "co-20",
-		"_parentId": "course",
-		"_type": "page",
-		"_classes": "",
-		"title": "What is leadership?",
-		"displayTitle": "What is leadership?",
-		"pageBody": "Does leadership mean the same to all of us? It's fair to say that leadership means different things to different people.<br><br>The English Oxford Living Dictionaries defines leadership as, \"The action of leading a group of people or an organisation, or the ability to do this.\"",
-		"body": "What does the word 'leadership' mean to you and others?",
-		"_graphic": {
-      "wide": "course/en/images/co-20-page.jpg",
-      "narrow": "course/en/images/co-20-page-narrow.jpg",
-      "src": "course/en/images/co-20-menu.jpg",
-      "alt": ""
-		},
-		"linkText": "View",
-		"durationLabel": "Duration:",
-		"duration": "5 mins"
-	},
-	{
-		"_id": "co-25",
-		"_parentId": "course",
-		"_type": "page",
-		"_classes": "",
-		"title": "The need to lead",
-		"displayTitle": "The need to lead",
-		"pageBody": "Why is learning to lead important to you? Learning to lead can increase your success when working with others to get results, improve project or career opportunities and can positively influence how others see you, and the impact you achieve.",
-		"body": "Find out why learning to lead matters.",
-		"_graphic": {
-      "wide": "course/en/images/co-25-page.jpg",
-      "narrow": "course/en/images/co-25-page-narrow.jpg",
-      "src": "course/en/images/co-25-menu.jpg",
-      "alt": ""
-		},
-		"linkText": "View",
-		"durationLabel": "Duration:",
-		"duration": "5 mins"
-	},
-	{
-		"_id": "co-30",
-		"_parentId": "course",
-		"_type": "page",
-		"_classes": "",
-		"title": "Be an agent of change",
-		"displayTitle": "Be an agent of change",
-		"pageBody": "Agents of change act as catalysts – helping bring to life particular events, projects, new ways of thinking or working, or transformations that would otherwise be difficult to achieve. How can you become an agent of change?",
-		"body": "Consider the opportunities for being an agent of change.",
-		"_graphic": {
-      "wide": "course/en/images/co-30-page.jpg",
-      "narrow": "course/en/images/co-30-page-narrow.jpg",
-      "src": "course/en/images/co-30-menu.jpg",
-      "alt": ""
-		},
-		"linkText": "View",
-		"durationLabel": "Duration:",
-		"duration": "4 mins"
-	},
-	{
-		"_id": "co-35",
-		"_parentId": "course",
-		"_type": "page",
-		"_classes": "",
-		"title": "The inspirational leader",
-		"displayTitle": "The inspirational leader",
-		"pageBody": "Leadership - good or bad - has a direct impact on the person or people being led. So, what makes a good leader? ",
-		"body": "What makes a successful leader? Learn about leadership skills and qualities.",
-		"_graphic": {
-      "wide": "course/en/images/co-35-page.jpg",
-      "narrow": "course/en/images/co-35-page-narrow.jpg",
-      "src": "course/en/images/co-35-menu.jpg",
-      "alt": ""
-		},
-		"linkText": "View",
-		"durationLabel": "Duration:",
-		"duration": "6 mins"
-	},
-	{
-		"_id": "co-40",
-		"_parentId": "course",
-		"_type": "page",
-		"_classes": "",
-		"title": "Drill into the theory",
-		"displayTitle": "Drill into the theory",
-		"pageBody": "A number of different leadership theories have evolved to explain exactly how and why certain people become great leaders. Let's learn more about these theories.",
-		"body": "What does leadership theory tell us about leaders and their approach?",
-		"_graphic": {
-      "wide": "course/en/images/co-40-page.jpg",
-      "narrow": "course/en/images/co-40-page-narrow.jpg",
-      "src": "course/en/images/co-40-menu.jpg",
-      "alt": ""
-		},
-		"linkText": "View",
-		"durationLabel": "Duration:",
-		"duration": "5 mins"
-	},
-	{
-		"_id": "co-45",
-		"_parentId": "course",
-		"_type": "page",
-		"_classes": "",
-		"title": "Leadership styles",
-		"displayTitle": "Leadership styles",
-		"pageBody": "What leadership styles are available? There are many distinct leadership styles that have evolved, each focusing on a different set of traits and skills. Understanding these leadership styles and their impact, is key to becoming a better leader.",
-		"body": "Learn about different leadership styles and why we use them.",
-		"_graphic": {
-      "wide": "course/en/images/co-45-page.jpg",
-      "narrow": "course/en/images/co-45-page-narrow.jpg",
-      "src": "course/en/images/co-45-menu.jpg",
-      "alt": ""
-		},
-		"linkText": "View",
-		"durationLabel": "Duration:",
-		"duration": "7 mins"
-	},
-	{
-		"_id": "co-50",
-		"_parentId": "course",
-		"_type": "page",
-		"_classes": "",
-		"title": "What's emotional intelligence",
-		"displayTitle": "What's emotional intelligence",
-		"pageBody": "What else do 'great leaders' do? They gauge the needs of others. They control their emotions and impulses and sense other people's emotions. They understand how their communication affects others. These are qualities of someone with a high degree of emotional intelligence.<br><br>Emotional intelligence contributes to effective leadership. In the words of Goleman:<br><blockquote><\"If your emotional abilities aren't in hand, if you don't have self-awareness, if you are not able to manage your distressing emotions, if you can't have empathy and have effective relationships, then no matter how smart you are, you are not going to get very far.\"</blockquote>",
-		"body": "Discover how emotional intelligence helps you lead.",
-		"_graphic": {
-      "wide": "course/en/images/co-50-page.jpg",
-      "narrow": "course/en/images/co-50-page-narrow.jpg",
-      "src": "course/en/images/co-50-menu.jpg",
-      "alt": ""
-		},
-		"linkText": "View",
-		"durationLabel": "Duration:",
-		"duration": "5 mins"
-	},
-	{
-		"_id": "co-55",
-		"_parentId": "course",
-		"_type": "page",
-		"_classes": "",
-		"title": "Leadership vs. management",
-		"displayTitle": "Leadership vs. management",
-		"pageBody": "People often confuse the terms 'manager' and 'leader'. While it is possible to be both, and even at the same time, the two are not the same. Warren Bennis, a pioneering scholar in leadership studies, captures the essence of the difference.<br><blockquote>\"Managers do things right. Leaders do the right things.\"</blockquote>",
-		"body": "What's the difference between managers and leaders?",
-		"_graphic": {
-      "wide": "course/en/images/co-55-page.jpg",
-      "narrow": "course/en/images/co-55-page-narrow.jpg",
-      "src": "course/en/images/co-55-menu.jpg",
-      "alt": ""
-		},
-		"linkText": "View",
-		"durationLabel": "Duration:",
-		"duration": "4 mins"
-	},
-	{
-		"_id": "co-60",
-		"_parentId": "course",
-		"_type": "page",
-		"_classes": "",
-		"title": "What's your style?",
-		"displayTitle": "What's your style?",
-		"pageBody": "The key to being an effective and long-lasting leader is working on your leadership style and being able to lead in a variety of situations, with a variety of different people. Let's find out how.",
-		"body": "Discover how you can develop and adapt your leadership style.",
-		"_graphic": {
-      "wide": "course/en/images/co-60-page.jpg",
-      "narrow": "course/en/images/co-60-page-narrow.jpg",
-      "src": "course/en/images/co-60-menu.jpg",
-      "alt": ""
-		},
-		"linkText": "View",
-		"durationLabel": "Duration:",
-		"duration": "5 mins"
-	},
-	{
-		"_id": "co-65",
-		"_parentId": "course",
-		"_type": "page",
-		"_classes": "",
-		"title": "Be the leading difference",
-		"displayTitle": "Be the leading difference",
-		"pageBody": "In learning to lead, the concept of 'personal power' has value. As Firestone and Cattlett explain in The Ethics of Interpersonal Relationships (2009), personal power is the source of influence and authority a person has over his or her followers. So, how can you build your personal power?",
-		"body": "How can you build credibility as a leader?",
-		"_graphic": {
-      "wide": "course/en/images/co-65-page.jpg",
-      "narrow": "course/en/images/co-65-page-narrow.jpg",
-      "src": "course/en/images/co-65-menu.jpg",
-      "alt": ""
-		},
-		"linkText": "View",
-		"durationLabel": "Duration:",
-		"duration": "4 mins"
-	},
-	{
-		"_id": "co-70",
-		"_parentId": "course",
-		"_type": "page",
-		"_classes": "",
-		"title": "Lead the way",
-		"displayTitle": "Lead the way",
-		"pageBody": "Leading people is rewarding – getting involved in leadership opportunities may be one of the most satisfying things you do. It's also a great way to acquire and improve on your leadership qualities.",
-		"body": "What steps can you take to learn to lead and unlock your potential?",
-		"_graphic": {
-      "wide": "course/en/images/co-70-page.jpg",
-      "narrow": "course/en/images/co-70-page-narrow.jpg",
-      "src": "course/en/images/co-70-menu.jpg",
-      "alt": ""
-		},
-		"linkText": "View",
-		"durationLabel": "Duration:",
-		"duration": "5 mins"
-	},
-	{
-		"_id": "co-75",
-		"_parentId": "course",
-		"_type": "page",
-		"_classes": "",
-		"title": "Get a leadership plan",
-		"displayTitle": "Get a leadership plan",
-		"pageBody": "It's time to put a plan in place and set yourself up for success! How? Reflect on your leadership training, knowledge and experience and plan for your future leadership development.",
-		"body": "Put what you've learned into practice.",
-		"_graphic": {
-      "wide": "course/en/images/co-75-page.jpg",
-      "narrow": "course/en/images/co-75-page-narrow.jpg",
-      "src": "course/en/images/co-75-menu.jpg",
-      "alt": ""
-		},
-		"linkText": "View",
-		"durationLabel": "Duration:",
-		"duration": "5 mins"
-	}
+[{
+        "_id": "co-05",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "How to use this course",
+        "displayTitle": "How to use this course",
+        "pageBody": "We want you to have control of your learning. We're giving you complete freedom over what you view and when you view it, so you can have things just the way you like them.",
+        "body": "Some quick tips to help you get the most out of your course and give it your personal touch.",
+        "_graphic": {
+            "wide": "course/en/images/co-05-page.jpg",
+            "narrow": "course/en/images/co-05-page-narrow.jpg",
+            "src": "course/en/images/co-05-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "1 min"
+    },
+    {
+        "_id": "co-10",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "Hear from our Vice Chancellor",
+        "displayTitle": "Hear from our Vice Chancellor",
+        "pageBody": "The Monash Doctoral Program provides you with a variety of innovative training opportunities that help you build a dynamic combination of skills. No matter where you see yourself going, these skills will complement your thesis and improve the range of opportunities available to you.",
+        "body": "Hear how the Monash Doctoral Program supports the development of your professional skills.",
+        "_graphic": {
+            "wide": "course/en/images/co-10-page.jpg",
+            "narrow": "course/en/images/co-10-page-narrow.jpg",
+            "src": "course/en/images/co-10-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "2 mins"
+    },
+    {
+        "_id": "co-15",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "Take a look inside",
+        "displayTitle": "Take a look inside",
+        "pageBody": "Explore twelve short topics to learn all about leadership, why it's important to you, key leadership principles and practices and what's involved in creating your leadership profile.",
+        "body": "Learn about the structure and key components of the course.",
+        "_graphic": {
+            "wide": "course/en/images/co-15-page.jpg",
+            "narrow": "course/en/images/co-15-page-narrow.jpg",
+            "src": "course/en/images/co-15-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "1 min"
+    },
+    {
+        "_id": "co-20",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "What is leadership?",
+        "displayTitle": "What is leadership?",
+        "pageBody": "Does leadership mean the same to all of us? It's fair to say that leadership means different things to different people.<br><br>The English Oxford Living Dictionaries defines leadership as, \"The action of leading a group of people or an organisation, or the ability to do this.\"",
+        "body": "What does the word 'leadership' mean to you and others?",
+        "_graphic": {
+            "wide": "course/en/images/co-20-page.jpg",
+            "narrow": "course/en/images/co-20-page-narrow.jpg",
+            "src": "course/en/images/co-20-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "5 mins"
+    },
+    {
+        "_id": "co-25",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "The need to lead",
+        "displayTitle": "The need to lead",
+        "pageBody": "Why is learning to lead important to you? Learning to lead can increase your success when working with others to get results, improve project or career opportunities and can positively influence how others see you, and the impact you achieve.",
+        "body": "Find out why learning to lead matters.",
+        "_graphic": {
+            "wide": "course/en/images/co-25-page.jpg",
+            "narrow": "course/en/images/co-25-page-narrow.jpg",
+            "src": "course/en/images/co-25-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "5 mins"
+    },
+    {
+        "_id": "co-30",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "Be an agent of change",
+        "displayTitle": "Be an agent of change",
+        "pageBody": "Agents of change act as catalysts – helping bring to life particular events, projects, new ways of thinking or working, or transformations that would otherwise be difficult to achieve. How can you become an agent of change?",
+        "body": "Consider the opportunities for being an agent of change.",
+        "_graphic": {
+            "wide": "course/en/images/co-30-page.jpg",
+            "narrow": "course/en/images/co-30-page-narrow.jpg",
+            "src": "course/en/images/co-30-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "4 mins"
+    },
+    {
+        "_id": "co-35",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "The inspirational leader",
+        "displayTitle": "The inspirational leader",
+        "pageBody": "Leadership - good or bad - has a direct impact on the person or people being led. So, what makes a good leader? ",
+        "body": "What makes a successful leader? Learn about leadership skills and qualities.",
+        "_graphic": {
+            "wide": "course/en/images/co-35-page.jpg",
+            "narrow": "course/en/images/co-35-page-narrow.jpg",
+            "src": "course/en/images/co-35-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "6 mins"
+    },
+    {
+        "_id": "co-40",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "Drill into the theory",
+        "displayTitle": "Drill into the theory",
+        "pageBody": "A number of different leadership theories have evolved to explain exactly how and why certain people become great leaders. Let's learn more about these theories.",
+        "body": "What does leadership theory tell us about leaders and their approach?",
+        "_graphic": {
+            "wide": "course/en/images/co-40-page.jpg",
+            "narrow": "course/en/images/co-40-page-narrow.jpg",
+            "src": "course/en/images/co-40-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "5 mins"
+    },
+    {
+        "_id": "co-45",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "Leadership styles",
+        "displayTitle": "Leadership styles",
+        "pageBody": "What leadership styles are available? There are many distinct leadership styles that have evolved, each focusing on a different set of traits and skills. Understanding these leadership styles and their impact, is key to becoming a better leader.",
+        "body": "Learn about different leadership styles and why we use them.",
+        "_graphic": {
+            "wide": "course/en/images/co-45-page.jpg",
+            "narrow": "course/en/images/co-45-page-narrow.jpg",
+            "src": "course/en/images/co-45-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "7 mins"
+    },
+    {
+        "_id": "co-50",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "What's emotional intelligence",
+        "displayTitle": "What's emotional intelligence",
+        "pageBody": "What else do 'great leaders' do? They gauge the needs of others. They control their emotions and impulses and sense other people's emotions. They understand how their communication affects others. These are qualities of someone with a high degree of emotional intelligence.<br><br>Emotional intelligence contributes to effective leadership. In the words of Goleman:<br><blockquote><\"If your emotional abilities aren't in hand, if you don't have self-awareness, if you are not able to manage your distressing emotions, if you can't have empathy and have effective relationships, then no matter how smart you are, you are not going to get very far.\"</blockquote>",
+        "body": "Discover how emotional intelligence helps you lead.",
+        "_graphic": {
+            "wide": "course/en/images/co-50-page.jpg",
+            "narrow": "course/en/images/co-50-page-narrow.jpg",
+            "src": "course/en/images/co-50-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "5 mins"
+    },
+    {
+        "_id": "co-55",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "Leadership vs. management",
+        "displayTitle": "Leadership vs. management",
+        "pageBody": "People often confuse the terms 'manager' and 'leader'. While it is possible to be both, even at the same time, the two are not the same. Warren Bennis, a pioneering scholar in leadership studies, captures the essence of the difference.<br><blockquote>\"Managers do things right. Leaders do the right things.\"</blockquote>",
+        "body": "What's the difference between managers and leaders?",
+        "_graphic": {
+            "wide": "course/en/images/co-55-page.jpg",
+            "narrow": "course/en/images/co-55-page-narrow.jpg",
+            "src": "course/en/images/co-55-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "4 mins"
+    },
+    {
+        "_id": "co-60",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "What's your style?",
+        "displayTitle": "What's your style?",
+        "pageBody": "The key to being an effective and long-lasting leader is working on your leadership style and being able to lead in a variety of situations, with a variety of different people. Let's find out how.",
+        "body": "Discover how you can develop and adapt your leadership style.",
+        "_graphic": {
+            "wide": "course/en/images/co-60-page.jpg",
+            "narrow": "course/en/images/co-60-page-narrow.jpg",
+            "src": "course/en/images/co-60-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "5 mins"
+    },
+    {
+        "_id": "co-65",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "Be the leading difference",
+        "displayTitle": "Be the leading difference",
+        "pageBody": "In learning to lead, the concept of 'personal power' has value. As Firestone and Cattlett explain in <em>The Ethics of Interpersonal Relationships</em> (2009), personal power is the source of influence and authority a person has over his or her followers. So, how can you build your personal power?",
+        "body": "How can you build credibility as a leader?",
+        "_graphic": {
+            "wide": "course/en/images/co-65-page.jpg",
+            "narrow": "course/en/images/co-65-page-narrow.jpg",
+            "src": "course/en/images/co-65-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "4 mins"
+    },
+    {
+        "_id": "co-70",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "Lead the way",
+        "displayTitle": "Lead the way",
+        "pageBody": "Leading people is rewarding – getting involved in leadership opportunities may be one of the most satisfying things you do. It's also a great way to acquire and improve on your leadership qualities.",
+        "body": "What steps can you take to learn to lead and unlock your potential?",
+        "_graphic": {
+            "wide": "course/en/images/co-70-page.jpg",
+            "narrow": "course/en/images/co-70-page-narrow.jpg",
+            "src": "course/en/images/co-70-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "5 mins"
+    },
+    {
+        "_id": "co-75",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "Get a leadership plan",
+        "displayTitle": "Get a leadership plan",
+        "pageBody": "It's time to put a plan in place and set yourself up for success! How? Reflect on your leadership training, knowledge and experience and plan for your future leadership development.",
+        "body": "Put what you've learned into practice.",
+        "_graphic": {
+            "wide": "course/en/images/co-75-page.jpg",
+            "narrow": "course/en/images/co-75-page-narrow.jpg",
+            "src": "course/en/images/co-75-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "5 mins"
+    }
 ]

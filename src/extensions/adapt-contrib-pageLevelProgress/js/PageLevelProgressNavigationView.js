@@ -20,13 +20,13 @@ define(function(require) {
             this.listenTo(this.model, 'change:_isInteractionComplete', this.updateProgressBar);
             this.$el.attr('role', 'button');
             this.ariaText = '';
-            
+
             if (Adapt.course.has('_globals') && Adapt.course.get('_globals')._extensions && Adapt.course.get('_globals')._extensions._pageLevelProgress && Adapt.course.get('_globals')._extensions._pageLevelProgress.pageLevelProgressIndicatorBar) {
                 this.ariaText = Adapt.course.get('_globals')._extensions._pageLevelProgress.pageLevelProgressIndicatorBar +  ' ';
             }
-            
+
             this.render();
-            
+
             _.defer(_.bind(function() {
                 this.updateProgressBar();
             }, this));
@@ -41,28 +41,28 @@ define(function(require) {
             var data = {
                 components: components,
                 _globals: Adapt.course.get('_globals')
-            };            
+            };
 
             var template = Handlebars.templates['pageLevelProgressNavigation'];
             $('.navigation-drawer-toggle-button').after(this.$el.html(template(data)));
             return this;
         },
-        
+
         refreshProgressBar: function() {
             var currentPageComponents = this.model.findDescendants('components').where({'_isAvailable': true});
             var availableChildren = completionCalculations.filterAvailableChildren(currentPageComponents);
             var enabledProgressComponents = completionCalculations.getPageLevelProgressEnabledModels(availableChildren);
-            
+
             this.collection = new Backbone.Collection(enabledProgressComponents);
             this.updateProgressBar();
         },
 
         updateProgressBar: function() {
             var completionObject = completionCalculations.calculateCompletion(this.model);
-            
+
             //take all assessment, nonassessment and subprogress into percentage
             //this allows the user to see if assessments have been passed, if assessment components can be retaken, and all other component's completion
-            
+
             var completed = completionObject.nonAssessmentCompleted + completionObject.assessmentCompleted + completionObject.subProgressCompleted;
             var total  = completionObject.nonAssessmentTotal + completionObject.assessmentTotal + completionObject.subProgressTotal;
 
@@ -76,6 +76,13 @@ define(function(require) {
 
             // Set percentage of completed components to model attribute to update progress on MenuView
             this.model.set('completedChildrenAsPercentage', percentageComplete);
+
+            // CORE HACK -------
+            // Add styl-able class to progress element
+            if (percentageComplete >= 100) {
+                this.$('.page-level-progress-navigation-completion').addClass('page-level-progress-navigation-completion-complete');
+            }
+            // END ------------
         },
 
         onProgressClicked: function(event) {
