@@ -1,0 +1,419 @@
+{
+    "_id": "course",
+    "_type": "course",
+    "title": "Unleash your leadership",
+    "displayTitle": "Unleash your leadership",
+    "description": "",
+    "body": "Why is learning to lead important and how will it help you during your PhD and beyond? Maybe you're aiming to lead an initiative, required to lead a project team or hoping to take a leadership position in the future. Whatever your focus and ambition, building personal leadership skills and finding your leadership voice, is essential to your long-term achievements and success. <br><br>Delve into the menu items below to learn all about unleashing your leadership potential. You can explore the menu items in any order, but it's a good idea to start with the 'Getting Started' section and work your way down.",
+    "_buttons": {
+        "_submit": {
+            "buttonText": "Submit",
+            "ariaLabel": "Submit your answer by clicking here."
+        },
+        "_reset": {
+            "buttonText": "Reset",
+            "ariaLabel": "Reset the question by clicking here."
+        },
+        "_showCorrectAnswer": {
+            "buttonText": "Correct answer",
+            "ariaLabel": "Show the correct answer by clicking here."
+        },
+        "_hideCorrectAnswer": {
+            "buttonText": "My answer",
+            "ariaLabel": "Show the answer you gave by clicking here."
+        },
+        "_showFeedback": {
+            "buttonText": "Show feedback",
+            "ariaLabel": "View the question feedback again by clicking here."
+        },
+        "remainingAttemptsText": "attempts remaining",
+        "remainingAttemptText": "final attempt",
+        "disabledAriaLabel": "This button is disabled at the moment."
+    },
+    "_pageLevelProgress": {
+        "_isEnabled": true,
+        "_altText": "of components completed on this page."
+    },
+    "_globals": {
+        "_components": {
+            "_accordion": {
+                "ariaRegion": "This component is an accordion comprised of collapsible content panels containing display text. Select the item titles to toggle the visibility of these content panels."
+            },
+            "_gmcq": {
+                "ariaRegion": "This component is a graphical multiple choice question. Once you have selected an option select the submit button below."
+            },
+            "_graphic": {
+                "ariaRegion": ""
+            },
+            "_hotgraphic": {
+                "ariaRegion": "Below is a component which allows you to select hot spots over an image. Select a hot spot to trigger a popup that includes an image with display text. Select the close button to close the popup.",
+                "ariaPoupupLabel": "Hotgraphic popup",
+                "ariaPopupLabel": "Hotgraphic popup"
+            },
+            "_matching": {
+                "ariaRegion": "This question component requires you to select the matching answer from a drop down list below. When you have selected your answers select the submit button."
+            },
+            "_mcq": {
+                "ariaRegion": "This component is a multiple choice question. Once you have selected an option select the submit button below"
+            },
+            "_media": {
+                "ariaRegion": "This is a media component which plays a video. Select the play / pause button to watch or listen.",
+                "transcriptButton": "Alternatively you can select the link below for the transcript."
+            },
+            "_narrative": {
+                "ariaRegion": "This component displays an image gallery with accompanying text. Use the next and back navigation controls to work through the narrative."
+            },
+            "_slider": {
+                "ariaRegion": "This component requires you to answer the question by selecting the relevant value. After selecting a value select the submit button below."
+            },
+            "_text": {
+                "ariaRegion": ""
+            },
+            "_textinput": {
+                "ariaRegion": "This question component requires you to input your answer in the textbox provided. When you have answered the question select the submit button below."
+            }
+        },
+        "_extensions": {
+            "_pageLevelProgress": {
+                "pageLevelProgress": "Page sections",
+                "pageLevelProgressIndicatorBar": "Progress bar. Select here to view your current progress, and select an item to navigate to it. You have completed ",
+                "pageLevelProgressMenuBar": "You have completed ",
+                "pageLevelProgressEnd": "You have reached the end of the list of page sections.",
+                "optionalContent": "Optional Content"
+            }
+        },
+        "_menu": {
+            "_filterMenu": {
+                "filtersNotification": "Remove filters",
+                "toggleOff": "Off",
+                "toggleOn": "On",
+                "progress": " complete",
+                "stripEmpty": "No results (All items filtered)",
+                "durationLabel": "Duration: ",
+                "openDashboardAria": "Open Filter Menu Dashboard",
+                "disableFiltersAria": "Disable filters",
+                "dashboardAria": "Filter Menu dashboard",
+                "filtersAria": "Filters",
+                "tagsAria": "Tags",
+                "dashboardEndAria": "You have reached the end of the dashboard.",
+                "closeDashboardAria": "Close Filter Menu dashboard",
+                "menuAria": "Menu",
+                "stripAria": "Strip",
+                "progressAria": "You have completed ",
+                "menuItemAria": "Menu item",
+                "togglePinAria": "Toggle pin",
+                "menuItemEndAria": "End of menu item",
+                "menuEndAria": "You have reached the end of the menu.",
+                "accordionLayout": true,
+                "_ariaLabels": {
+                    "openDashboard": "Open Filter Menu dashboard",
+                    "disableFilters": "Disable filters",
+                    "dashboard": "Filter Menu dashboard",
+                    "filters": "Filters",
+                    "tags": "Tags",
+                    "dashboardEnd": "You have reached the end of the dashboard.",
+                    "closeDashboard": "Close Filter Menu dashboard",
+                    "menu": "Menu",
+                    "progress": "You have completed ",
+                    "strip": "Strip",
+                    "menuItem": "Menu item",
+                    "togglePin": "Toggle pin",
+                    "menuItemEnd": "End of menu item",
+                    "menuEnd": "You have reached the end of the menu."
+                }
+            },
+            "_boxmenu": {
+                "ariaRegion": "Menu",
+                "durationLabel": "Duration:",
+                "menuItem": "Menu item.",
+                "menuEnd": "You have reached the end of the menu."
+            }
+        },
+        "_accessibility": {
+            "_accessibilityToggleTextOn": "Turn accessibility on?",
+            "_accessibilityToggleTextOff": "Turn accessibility off?",
+            "_accessibilityInstructions": {
+                "touch": "Usage instructions. Use swipe right for next. Use swipe left for previous. Use a double tap to select. Use a two finger slide up to go to the top of the page.",
+                "notouch": "Usage instructions. Use tab for next. Use shift tab for previous. Use enter to select. Use escape to go to the top of the page.",
+                "ipad": "Usage instructions for touchscreens. Use swipe right for next. Use swipe left for previous. Use a double tap to select. Use a two finger slide up to go to the top of the page. Usage instructions for keyboard access. Use right for next. Use left for previous. Use up and down together to select."
+            },
+            "_ariaLabels": {
+                "navigation": "Course navigation bar",
+                "menuLoaded": "Menu Loaded.",
+                "menu": "Menu",
+                "page": "Page",
+                "pageLoaded": "Page Loaded.",
+                "pageEnd": "You have reached the end of the page.",
+                "previous": "Back",
+                "navigationBack": "Navigate back",
+                "navigationDrawer": "Open course resources.",
+                "close": "Close",
+                "closeDrawer": "Close Drawer",
+                "closeResources": "Close resources",
+                "resourcesEnd": "You have reached the end of the list of resources.",
+                "drawerBack": "Back to drawer",
+                "drawer": "Top of side drawer",
+                "closePopup": "Close popup",
+                "next": "Next",
+                "done": "Done",
+                "complete": "Completed",
+                "incomplete": "Incomplete",
+                "incorrect": "Incorrect",
+                "correct": "Correct",
+                "locked": "Locked",
+                "accessibilityToggleButton": "By selecting this button you can set whether accessibility is turned on or off",
+                "feedbackPopUp": "Popup opened.",
+                "menuBack": "Back to menu",
+                "visited": "Visited"
+            }
+        }
+    },
+    "_resources": {
+        "_isEnabled": true,
+        "title": "Resources",
+        "description": "View resources for this course by clicking here.",
+        "_filterButtons": {
+            "all": "All",
+            "document": "Document",
+            "media": "Media",
+            "link": "Link"
+        },
+        "_filterAria": {
+            "allAria": "View all resources",
+            "documentAria": "View document resources",
+            "mediaAria": "View media resources",
+            "linkAria": "View resource links"
+        },
+        "itemAriaExternal": "This content will open in a new window",
+        "_resourcesItems": [
+            {
+                "_type": "document",
+                "title": "Leadership Development Plan",
+                "description": "",
+                "_link": "course/en/resources/monash-leadership_development_plan.docx"
+            },
+            {
+                "_type": "document",
+                "title": "What makes a successful leader?",
+                "description": "",
+                "_link": "course/en/resources/monash-what_makes_a_successful_leader.pdf"
+            },
+            {
+                "_type": "link",
+                "title": "Leadership competencies",
+                "description": "The Most Important Leadership Competencies, According to Leaders Around the World",
+                "_link": "http://ezproxy.lib.monash.edu.au/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=bth&AN=118706315&site=ehost-live&scope=site"
+            },
+            {
+                "_type": "document",
+                "title": "Leadership theories",
+                "description": "David A. Van Seters Richard H.G. Field, (1990), \"The Evolution of Leadership Theory\", Journal of Organizational Change Management, Vol. 3 Iss 3 pp. 29 – 45",
+                "_link": "course/en/resources/university_of_exeter-review_leadership_theory_competency_frameworks.pdf"
+            },
+            {
+                "_type": "link",
+                "title": "Leadership that gets results",
+                "description": "Goleman article",
+                "_link": "http://ezproxy.lib.monash.edu.au/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=bth&AN=2839618&site=ehost-live&scope=site"
+            },
+            {
+                "_type": "link",
+                "title": "Managers and Leaders: Are they Different?",
+                "description": "",
+                "_link": "https://hbr.org/2004/01/managers-and-leaders-are-they-different"
+            },
+            {
+                "_type": "document",
+                "title": "Developing leadership styles",
+                "description": "",
+                "_link": "course/en/resources/monash-developing_leadership_styles.pdf"
+            }
+        ]
+    },
+    "_assessment": {
+        "_postTotalScoreToLms": false,
+        "_isPercentageBased": true,
+        "_scoreToPass": 75
+    },
+    "_bookmarking": {
+        "_isEnabled": true,
+        "_level": "component",
+        "title": "Bookmarking",
+        "body": "Would you like to continue where you left off?",
+        "_buttons": {
+            "yes": "Yes",
+            "no": "No"
+        }
+    },
+    "_filterMenu": {
+        "_isProgressEnabled": false,
+        "_strips": [
+            {
+                "_id": "s-05",
+                "_isProgressEnabled": false,
+                "title": "Getting Started",
+                "_items": [
+                    {
+                        "_type": "contentObject",
+                        "_id": "co-05",
+                        "_tags": [
+                            "topics"
+                        ]
+                    },
+                    {
+                        "_type": "contentObject",
+                        "_id": "co-10",
+                        "_tags": [
+                            "topics"
+                        ]
+                    },
+                    {
+                        "_type": "contentObject",
+                        "_id": "co-15",
+                        "_tags": [
+                            "topics"
+                        ]
+                    }
+                ]
+            },
+            {
+                "_id": "s-10",
+                "_isProgressEnabled": false,
+                "title": "Be the Leader",
+                "_items": [
+                    {
+                        "_type": "contentObject",
+                        "_id": "co-20",
+                        "_tags": [
+                            "topics"
+                        ]
+                    },
+                    {
+                        "_type": "contentObject",
+                        "_id": "co-25",
+                        "_tags": [
+                            "topics"
+                        ]
+                    },
+                    {
+                        "_type": "contentObject",
+                        "_id": "co-30",
+                        "_tags": [
+                            "topics"
+                        ]
+                    },
+                    {
+                        "_type": "contentObject",
+                        "_id": "co-35",
+                        "_tags": [
+                            "topics"
+                        ]
+                    }
+                ]
+            },
+            {
+                "_id": "s-15",
+                "_isProgressEnabled": false,
+                "title": "Explore the Principles and Practices",
+                "_items": [
+                    {
+                        "_type": "contentObject",
+                        "_id": "co-40",
+                        "_tags": [
+                            "topics"
+                        ]
+                    },
+                    {
+                        "_type": "contentObject",
+                        "_id": "co-45",
+                        "_tags": [
+                            "topics"
+                        ]
+                    },
+                    {
+                        "_type": "contentObject",
+                        "_id": "co-50",
+                        "_tags": [
+                            "topics"
+                        ]
+                    },
+                    {
+                        "_type": "contentObject",
+                        "_id": "co-55",
+                        "_tags": [
+                            "topics"
+                        ]
+                    }
+                ]
+            },
+            {
+                "_id": "s-20",
+                "_isProgressEnabled": false,
+                "title": "Create your leadership profile",
+                "_items": [
+                    {
+                        "_type": "contentObject",
+                        "_id": "co-60",
+                        "_tags": [
+                            "topics"
+                        ]
+                    },
+                    {
+                        "_type": "contentObject",
+                        "_id": "co-65",
+                        "_tags": [
+                            "topics"
+                        ]
+                    },
+                    {
+                        "_type": "contentObject",
+                        "_id": "co-70",
+                        "_tags": [
+                            "topics"
+                        ]
+                    },
+                    {
+                        "_type": "contentObject",
+                        "_id": "co-75",
+                        "_tags": [
+                            "topics"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "_dashboard": {
+            "_isEnabled": true,
+            "_filters": {
+                "_isEnabled": true,
+                "title": "Filters",
+                "body": "Make your choices to change what you see on the menu.",
+                "instruction": "Show me only…",
+                "_items": [
+                    {
+                        "_attribute": "_isPinned",
+                        "_value": false,
+                        "title": "Pinned items"
+                    },
+                    {
+                        "_attribute": "_isComplete",
+                        "_value": true,
+                        "title": "Incomplete items"
+                    },
+                    {
+                        "_attribute": "_isOptional",
+                        "_value": true,
+                        "title": "Mandatory items"
+                    }
+                ]
+            },
+            "_tags": {
+                "_isEnabled": true,
+                "title": "Tags",
+                "body": "You may also filter the menu items by tag.",
+                "instruction": "Show me only…"
+            }
+        }
+    },
+    "_latestTrackingId": 47
+}
