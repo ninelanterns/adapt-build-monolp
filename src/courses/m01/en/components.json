@@ -312,7 +312,7 @@
     "_selectable": 6,
     "_canShowModelAnswer": true,
     "_canShowMarking": true,
-    "_recordInteraction":true,
+    "_recordInteraction": true,
     "title": "Think leader. Think you.",
     "displayTitle": "Think leader. Think you.",
     "body": "There's a potential leader in all of us. However, many of us have misconceptions about leadership and our leadership potential. Do any of the common leadership misconceptions below resonate with you?",
@@ -344,14 +344,14 @@
       }
     ],
     "_feedback":{
-      "correct": "Some of us are too quick to dismiss or discount our own leadership potential. But the truth is that leadership can be earned and learned over time. Everyone has leadership potential and leadership responsibility. Look for, and take on, any leadership opportunities possible – the leadership competencies you develop will help you on campus, at work and in life. Now's it's time to select your LDP from the Resources menu to complete the activity:<br><br><strong>Think leader. Think you.</strong>",
+      "correct": "Some of us are too quick to dismiss or discount our own leadership potential. But the truth is that leadership can be earned and learned over time. Everyone has leadership potential and leadership responsibility. Look for, and take on, any leadership opportunities possible – the leadership competencies you develop will help you on campus, at work and in life. Now's it's time to select your <strong>LDP</strong> from the Resources menu to complete the activity. <strong>Think leader. Think you.</strong>",
       "_incorrect": {
         "notFinal": "",
-        "final": "Some of us are too quick to dismiss or discount our own leadership potential. But the truth is that leadership can be earned and learned over time. Everyone has leadership potential and leadership responsibility. Look for, and take on, any leadership opportunities possible – the leadership competencies you develop will help you on campus, at work and in life. Now's it's time to select your LDP from the Resources menu to complete the activity:<br><br><strong>Think leader. Think you.</strong>"
+        "final": "Some of us are too quick to dismiss or discount our own leadership potential. But the truth is that leadership can be earned and learned over time. Everyone has leadership potential and leadership responsibility. Look for, and take on, any leadership opportunities possible – the leadership competencies you develop will help you on campus, at work and in life. Now's it's time to select your <strong>LDP</strong> from the Resources menu to complete the activity. <strong>Think leader. Think you.</strong>"
       },
       "_partlyCorrect": {
         "notFinal": "",
-        "final": "Some of us are too quick to dismiss or discount our own leadership potential. But the truth is that leadership can be earned and learned over time. Everyone has leadership potential and leadership responsibility. Look for, and take on, any leadership opportunities possible – the leadership competencies you develop will help you on campus, at work and in life. Now's it's time to select your <strong>LDP</strong> from the Resources menu to complete the activity:<br><br><strong>Think leader. Think you.</strong>"
+        "final": "Some of us are too quick to dismiss or discount our own leadership potential. But the truth is that leadership can be earned and learned over time. Everyone has leadership potential and leadership responsibility. Look for, and take on, any leadership opportunities possible – the leadership competencies you develop will help you on campus, at work and in life. Now's it's time to select your <strong>LDP</strong> from the Resources menu to complete the activity. <strong>Think leader. Think you.</strong>"
       }
     },
     "_buttons": {
@@ -1357,7 +1357,7 @@
     "_shouldDisplayAttempts": false,
     "_questionWeight": 1,
     "_isRandom": true,
-    "_selectable": 1,
+    "_selectable": 5,
     "_canShowModelAnswer": true,
     "_canShowMarking": true,
     "_recordInteraction":true,
@@ -1859,14 +1859,14 @@
       }
     ],
     "_feedback":{
-      "correct": "That's right. These activities will help you establish credibility, as well as help you in your journey of learning to lead. You don't always need formal authority to lead. In fact, respect is earned mostly from personal sources of power. Personal power transfers from your personality, learning, experience and abilities. Building your personal power is a process. It involves time, effort, and patience, but it's totally worth investing in for successful leadership. Visit your <strong>LDP</strong> to comple<strong>Make an immediate impact.</strong>immediate impact.",
+      "correct": "That's right. These activities will help you establish credibility, as well as help you in your journey of learning to lead. You don't always need formal authority to lead. In fact, respect is earned mostly from personal sources of power. Personal power transfers from your personality, learning, experience and abilities. Building your personal power is a process. It involves time, effort, and patience, but it's totally worth investing in for successful leadership. Visit your <strong>LDP</strong> to complete the activity: <strong>Make an immediate impact.</strong>",
       "_incorrect": {
         "notFinal": "",
-        "final": "That's not right. All these activities will help you establish credibility, as well as help you in your journey of learning to lead. You don't always need formal authority to lead. In fact, respect is earned mostly from personal sources of power. Personal power transfers from your personality, learning, experience and abilities. Building your personal power is a process. It involves time, effort, and patience, but it's totally worth investing in for successful leadership. Visit your <strong>LDP</strong> to comple<strong>Make an immediate impact.</strong>immediate impact."
+        "final": "That's not right. All these activities will help you establish credibility, as well as help you in your journey of learning to lead. You don't always need formal authority to lead. In fact, respect is earned mostly from personal sources of power. Personal power transfers from your personality, learning, experience and abilities. Building your personal power is a process. It involves time, effort, and patience, but it's totally worth investing in for successful leadership. Visit your <strong>LDP</strong> to complete the activity: <strong>Make an immediate impact.</strong>"
       },
       "_partlyCorrect": {
         "notFinal": "",
-        "final": "That's not quite right. All these activities will help you establish credibility, as well as help you in your journey of learning to lead. You don't always need formal authority to lead. In fact, respect is earned mostly from personal sources of power. Personal power transfers from your personality, learning, experience and abilities. Building your personal power is a process. It involves time, effort, and patience, but it's totally worth investing in for successful leadership. Visit your <strong>LDP</strong> to comple<strong>Make an immediate impact.</strong>immediate impact."
+        "final": "That's not quite right. All these activities will help you establish credibility, as well as help you in your journey of learning to lead. You don't always need formal authority to lead. In fact, respect is earned mostly from personal sources of power. Personal power transfers from your personality, learning, experience and abilities. Building your personal power is a process. It involves time, effort, and patience, but it's totally worth investing in for successful leadership. Visit your <strong>LDP</strong> to complete the activity: <strong>Make an immediate impact.</strong>"
       }
     },
     "_buttons": {
