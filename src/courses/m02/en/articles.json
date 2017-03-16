@@ -1,166 +1,102 @@
-[
-	{
-		"_id": "a-05",
-		"_parentId": "co-05",
-		"_type": "article",
-		"_classes": "",
-		"title": "a-05",
-		"displayTitle": "",
-		"body": ""
-	},
-	{
-		"_id": "a-10",
-		"_parentId": "co-10",
-		"_type": "article",
-		"_classes": "",
-		"title": "a-10",
-		"displayTitle": "",
-		"body": ""
-	},
-	{
-		"_id": "a-15",
-		"_parentId": "co-15",
-		"_type": "article",
-		"_classes": "",
-		"title": "a-15",
-		"displayTitle": "",
-		"body": ""
-	},
-	{
-		"_id": "a-20",
-		"_parentId": "co-20",
-		"_type": "article",
-		"_classes": "",
-		"title": "a-20",
-		"displayTitle": "",
-		"body": ""
-	},
-	{
-		"_id": "a-21",
-		"_parentId": "co-20",
-		"_type": "article",
-		"_classes": "image-background",
-		"title": "a-21",
-		"displayTitle": "",
-		"body": "",
-    "_articleBlockSlider": {
-      "_minHeight": 0,
-      "_hasUniformHeight": true,
-      "_startIndex": 0,
-      "_hasArrows": true,
-      "_hasTabs": false,
-      "_isEnabledOnScreenSizes": "large",
-      "_heightAnimationDuration": 300,
-      "_slideAnimationDuration": 600,
-      "_isEnabled": true
+[{
+        "_id": "a-05",
+        "_parentId": "co-05",
+        "_type": "article",
+        "_classes": "",
+        "title": "a-05",
+        "displayTitle": "",
+        "body": ""
+    },
+    {
+        "_id": "a-10",
+        "_parentId": "co-10",
+        "_type": "article",
+        "_classes": "",
+        "title": "a-10",
+        "displayTitle": "",
+        "body": ""
+    },
+    {
+        "_id": "a-15",
+        "_parentId": "co-15",
+        "_type": "article",
+        "_classes": "",
+        "title": "a-15",
+        "displayTitle": "",
+        "body": ""
+    },
+    {
+        "_id": "a-20",
+        "_parentId": "co-20",
+        "_type": "article",
+        "_classes": "",
+        "title": "a-20",
+        "displayTitle": "",
+        "body": ""
+    },
+    {
+        "_id": "a-25",
+        "_parentId": "co-25",
+        "_type": "article",
+        "_classes": "",
+        "title": "a-25",
+        "displayTitle": "",
+        "body": ""
+    },
+    {
+        "_id": "a-30",
+        "_parentId": "co-30",
+        "_type": "article",
+        "_classes": "",
+        "title": "a-30",
+        "displayTitle": "",
+        "body": ""
+    },
+    {
+        "_id": "a-35",
+        "_parentId": "co-35",
+        "_type": "article",
+        "_classes": "",
+        "title": "a-35",
+        "displayTitle": "",
+        "body": ""
+    },
+    {
+        "_id": "a-40",
+        "_parentId": "co-40",
+        "_type": "article",
+        "_classes": "",
+        "title": "a-40",
+        "displayTitle": "",
+        "body": ""
+    },
+    {
+        "_id": "a-45",
+        "_parentId": "co-45",
+        "_type": "article",
+        "_classes": "",
+        "title": "a-45",
+        "displayTitle": "",
+        "body": ""
+    },
+    {
+        "_id": "a-46",
+        "_parentId": "co-45",
+        "_type": "article",
+        "_classes": "primary-background",
+        "title": "a-46",
+        "displayTitle": "",
+        "body": "",
+        "_articleBlockSlider": {
+            "_minHeight": 0,
+            "_hasUniformHeight": true,
+            "_startIndex": 0,
+            "_hasArrows": true,
+            "_hasTabs": false,
+            "_isEnabledOnScreenSizes": "large",
+            "_heightAnimationDuration": 300,
+            "_slideAnimationDuration": 600,
+            "_isEnabled": true
+        }
     }
-	},
-	{
-		"_id": "a-22",
-		"_parentId": "co-20",
-		"_type": "article",
-		"_classes": "",
-		"title": "a-22",
-		"displayTitle": "",
-		"body": ""
-	},
-	{
-		"_id": "a-25",
-		"_parentId": "co-25",
-		"_type": "article",
-		"_classes": "",
-		"title": "a-25",
-		"displayTitle": "",
-		"body": ""
-	},
-	{
-		"_id": "a-30",
-		"_parentId": "co-30",
-		"_type": "article",
-		"_classes": "",
-		"title": "a-30",
-		"displayTitle": "",
-		"body": ""
-	},
-	{
-		"_id": "a-35",
-		"_parentId": "co-35",
-		"_type": "article",
-		"_classes": "",
-		"title": "a-35",
-		"displayTitle": "",
-		"body": ""
-	},
-	{
-		"_id": "a-40",
-		"_parentId": "co-40",
-		"_type": "article",
-		"_classes": "",
-		"title": "a-40",
-		"displayTitle": "",
-		"body": ""
-	},
-	{
-		"_id": "a-45",
-		"_parentId": "co-45",
-		"_type": "article",
-		"_classes": "",
-		"title": "a-45",
-		"displayTitle": "",
-		"body": ""
-	},
-	{
-		"_id": "a-50",
-		"_parentId": "co-50",
-		"_type": "article",
-		"_classes": "",
-		"title": "a-50",
-		"displayTitle": "",
-		"body": ""
-	},
-	{
-		"_id": "a-55",
-		"_parentId": "co-55",
-		"_type": "article",
-		"_classes": "",
-		"title": "a-55",
-		"displayTitle": "",
-		"body": ""
-	},
-	{
-		"_id": "a-60",
-		"_parentId": "co-60",
-		"_type": "article",
-		"_classes": "",
-		"title": "a-60",
-		"displayTitle": "",
-		"body": ""
-	},
-	{
-		"_id": "a-65",
-		"_parentId": "co-65",
-		"_type": "article",
-		"_classes": "",
-		"title": "a-65",
-		"displayTitle": "",
-		"body": ""
-	},
-	{
-		"_id": "a-70",
-		"_parentId": "co-70",
-		"_type": "article",
-		"_classes": "",
-		"title": "a-70",
-		"displayTitle": "",
-		"body": ""
-	},
-	{
-		"_id": "a-75",
-		"_parentId": "co-75",
-		"_type": "article",
-		"_classes": "",
-		"title": "a-75",
-		"displayTitle": "",
-		"body": ""
-	}
 ]

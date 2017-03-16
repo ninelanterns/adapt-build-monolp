@@ -224,7 +224,7 @@
         }
     },
     {
-        "_id": "co-30",
+        "_id": "c-30",
         "_parentId": "b-30",
         "_type": "component",
         "_component": "mcq",
@@ -318,7 +318,7 @@
 
 
     {
-        "_id": "co-35",
+        "_id": "c-35",
         "_parentId": "b-35",
         "_type": "component",
         "_component": "media",
@@ -332,19 +332,19 @@
         "body": "What makes for good communication? Is it just the words we use? Good communication is made of many factors. Everything from how we say things, our ability to listen and the way we respond to others. When you ask people to define good communication, their responses will vary.",
         "instruction": "Select Play to hear what some of our graduate researchers think?",
         "_media": {
-            "mp4": "course/en/video/co-00.mp4",
-            "poster": "course/en/video/co-00.jpg"
+            "mp4": "course/en/video/c-00.mp4",
+            "poster": "course/en/video/c-00.jpg"
         },
         "_pageLevelProgress": {
             "_isEnabled": true
         }
     },
     {
-        "_id": "co-40",
+        "_id": "c-40",
         "_parentId": "b-40",
         "_type": "component",
         "_component": "hotgraphic",
-        "_classes": "",
+        "_classes": "hidden-pins",
         "_layout": "full",
         "_setCompletionOn": "allItems",
         "_canCycleThroughPagination": false,
@@ -374,71 +374,848 @@
                 "_left": 44
             },
             {
-                "title": "MESSAGE",
+                "title": "Message",
                 "body": "The subject matter of the communication. What does the communication involve? What is its purpose? What information will be included? How much detail will it include?",
                 "_graphic": {
                     "src": "course/en/images/c-120-003.png",
                     "alt": "",
                     "_classes": ""
                 },
-                "strapline": "MESSAGE",
+                "strapline": "Message",
                 "_classes": "",
                 "_top": 18,
                 "_left": 63
             },
             {
-                "title": "TRANSMISSION",
+                "title": "Transmission",
                 "body": "The act of conveying the message, verbally or non-verbally. Verbal communication includes written and oral communication. Non-verbal communication, or body language, includes facial expressions, eye contact, body posture, gestures, tone of voice, touch, etc.",
                 "_graphic": {
                     "src": "course/en/images/c-120-004.png",
                     "alt": "",
                     "_classes": ""
                 },
-                "strapline": "TRANSMISSION",
+                "strapline": "Transmission",
                 "_classes": "",
                 "_top": 48.5,
                 "_left": 68
             },
             {
-                "title": "CHANNEL",
+                "title": "Channel",
                 "body": "The medium used to transmit the message. How would you communicate the findings of your research? You could use traditional academic channels, like journal articles, texts, conferences or reports. Or perhaps 'old' media, such as newspapers, magazines, radio and television. And of course there's the 'new' media, like web pages, blogs and social media.",
                 "_graphic": {
                     "src": "course/en/images/c-120-005.png",
                     "alt": "",
                     "_classes": ""
                 },
-                "strapline": "CHANNEL",
+                "strapline": "Channel",
                 "_classes": "",
                 "_top": 73,
                 "_left": 54.5
             },
             {
-                "title": "RECEIVER",
+                "title": "Receiver",
                 "body": "Who is the message meant for? Who will be reading your report? Who will be listening to your presentation? Take into consideration the factors that might affect the behaviour of the intended receiver or audience.",
                 "_graphic": {
                     "src": "course/en/images/c-120-006.png",
                     "alt": "",
                     "_classes": ""
                 },
-                "strapline": "RECEIVER",
+                "strapline": "Receiver",
                 "_classes": "",
                 "_top": 73,
                 "_left": 33.5
             },
             {
-                "title": "RESPONSE",
+                "title": "Response",
                 "body": "How did the receiver reply or react? Did they have any questions? What was the result of the communication? Did you achieve your objectives?",
                 "_graphic": {
                     "src": "course/en/images/c-120-007.png",
                     "alt": "",
                     "_classes": ""
                 },
-                "strapline": "RESPONSE",
+                "strapline": "Response",
                 "_classes": "",
                 "_top": 48.5,
                 "_left": 20.5
             }
         ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-45",
+        "_parentId": "b-45",
+        "_type": "component",
+        "_component": "accordion",
+        "_classes": "",
+        "_layout": "full",
+        "title": "The right message",
+        "displayTitle": "The right message",
+        "body": "The communicator is the person delivering the message. Their message is what they produce and use – their presentation, email, article, paper or report. Before sending a message it's a good idea to consider what will make it clear and complete.",
+        "instruction": "Select each heading to find out.",
+        "_items": [
+            {
+                "title": "Understandable",
+                "body": "We don't want to confuse our listeners or readers. Use language that is straightforward and easy to comprehend. Follow a logical and coherent sequence. This reduces misunderstandings and allows the right message to come across.",
+                "_graphic": {
+                    "src": "course/en/images/c-45-001.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Clear",
+                "body": "What's your story? Why does it matter? Why now? A clear message has a well-defined purpose or objective, and avoids ambiguity. It's specific and concrete about what it wants to achieve and what actions you want the receiver to take.",
+                "_graphic": {
+                    "src": "course/en/images/c-45-002.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Adequate",
+                "body": "Is the core information there? Incomplete information can cause misunderstandings, problems and serious consequences. A complete message contains sufficient information to serve the purpose of the communication.",
+                "_graphic": {
+                    "src": "course/en/images/c-45-003.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Appropriate channel",
+                "body": "Stage 4 display text: Good communication uses the right channel mix. It takes into account the nature of communication, urgency of communication, audience preferences and geographic considerations.",
+                "_graphic": {
+                    "src": "course/en/images/c-45-004.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Accurate",
+                "body": "Is it accurate? False and misleading statements may do damage to your reputation or the reputation of the organisation or university you represent. Consider the quality of your evidence and use correct facts and figures.",
+                "_graphic": {
+                    "src": "course/en/images/c-45-005.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Courtesy",
+                "body": "Is your message courteous, respectful and polite? People tend not to respond well to people that are rude. Is it friendly, open, and honest? Courtesy implies taking into consideration both viewpoints, as well as the feelings of the receiver.",
+                "_graphic": {
+                    "src": "course/en/images/c-45-006.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-50",
+        "_parentId": "b-50",
+        "_type": "component",
+        "_component": "matching",
+        "_classes": "",
+        "_layout": "full",
+        "_attempts": 1,
+        "_questionWeight": 1,
+        "_canShowModelAnswer": true,
+        "_shouldDisplayAttempts": false,
+        "_isRandom": true,
+        "title": "The way we communicate",
+        "displayTitle": "The way we communicate",
+        "body": "What channels do you use to communicate? Communication comes in many shapes and forms. You might be interested in publishing your research as a series of journal papers. Maybe you're keen to enter a Three Minute Thesis (3MT) competition. You may be aiming to have a poster at a big national conference or start a blog related to your research. Consider the scenarios below and choose the most appropriate channel to deliver the message.",
+        "instruction": "Select your response from the options below and select Submit.",
+        "placeholder": "Select an option",
+        "_items": [
+            {
+                "text": "Your research findings are complex and may stir up some emotions.",
+                "_options": [
+                    {
+                        "text": "Email",
+                        "_isCorrect": false
+                    },
+                    {
+                        "text": "Face-to-face report",
+                        "_isCorrect": true
+                    },
+                    {
+                        "text": "Blog",
+                        "_isCorrect": false
+                    }
+                ]
+            },
+            {
+                "text": "You want to create interest in a topic quickly and reach as many people as possible.",
+                "_options": [
+                    {
+                        "text": "Report",
+                        "_isCorrect": false
+                    },
+                    {
+                        "text": "Twitter",
+                        "_isCorrect": true
+                    },
+                    {
+                        "text": "Newspaper",
+                        "_isCorrect": false
+                    }
+                ]
+            },
+            {
+                "text": "You need to send quick project updates to your industry partner.",
+                "_options": [
+                    {
+                        "text": "Blog",
+                        "_isCorrect": false
+                    },
+                    {
+                        "text": "Email",
+                        "_isCorrect": true
+                    },
+                    {
+                        "text": "Journal papers",
+                        "_isCorrect": false
+                    }
+                ]
+            },
+            {
+                "text": "You want to incorporate visual graphics and extended written content.",
+                "_options": [
+                    {
+                        "text": "Magazines",
+                        "_isCorrect": true
+                    },
+                    {
+                        "text": "Email",
+                        "_isCorrect": false
+                    },
+                    {
+                        "text": "Twitter",
+                        "_isCorrect": false
+                    }
+                ]
+            }
+        ],
+        "_feedback": {
+            "correct": "That's right. It pays to stop and think, and select the most appropriate channel – one that encourages a specific behaviour or outcome. If your message is complex, face-to-face channels are best because they allow for interaction and opportunities to clarify ambiguity. Email, internet and social media platforms are less personal, but are efficient in relaying a message one-on-one or to a large group. If your message doesn't require much of a response from the receiver, written communication should be used to provide all the relevant information. Now it's time to select your <strong>CDP</strong> from the Resources menu to complete the activity: <strong>Your communication choices</strong>.",
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "That's not quite right. It pays to stop and think, and select the most appropriate channel – one that encourages a specific behaviour or outcome. If your message is complex, face-to-face channels are best because they allow for interaction and opportunities to clarify ambiguity. Email, internet and social media platforms are less personal, but are efficient in relaying a message one-on-one or to a large group. If your message doesn't require much of a response from the receiver, written communication should be used to provide all the relevant information. Now it's time to select your <strong>CDP</strong> from the Resources menu to complete the activity: <strong>Your communication choices</strong>."
+            },
+            "_incorrect": {
+                "notFinal": "",
+                "final": "That's not right. It pays to stop and think, and select the most appropriate channel – one that encourages a specific behaviour or outcome. If your message is complex, face-to-face channels are best because they allow for interaction and opportunities to clarify ambiguity. Email, internet and social media platforms are less personal, but are efficient in relaying a message one-on-one or to a large group. If your message doesn't require much of a response from the receiver, written communication should be used to provide all the relevant information. Now it's time to select your <strong>CDP</strong> from the Resources menu to complete the activity: <strong>Your communication choices</strong>."
+            }
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-55",
+        "_parentId": "b-55",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "play",
+        "_useClosedCaptions": true,
+        "_allowFullScreen": true,
+        "title": "Communicate to connect",
+        "displayTitle": "Communicate to connect",
+        "body": "Good communicators connect. They go about communicating in a way that promotes shared understanding, and shows respect for their audience. How do you communicate to connect?",
+        "instruction": "Select Play to find out.",
+        "_media": {
+            "mp4": "course/en/video/c-00.mp4",
+            "poster": "course/en/video/c-00.jpg"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-60",
+        "_parentId": "b-60",
+        "_type": "component",
+        "_component": "mcq",
+        "_classes": "",
+        "_layout": "full",
+        "_attempts": 1,
+        "_shouldDisplayAttempts": false,
+        "_questionWeight": 1,
+        "_isRandom": true,
+        "_selectable": 4,
+        "_canShowModelAnswer": true,
+        "_canShowMarking": true,
+        "_recordInteraction": true,
+        "title": "Tips to connect",
+        "displayTitle": "Tips to connect",
+        "body": "What were some key behaviours that Emily and Lisa discussed? What did they think would help Lisa connect with her audience?",
+        "instruction": "Select one or more from the following options and select Submit.",
+        "_items": [
+            {
+                "text": "Ask questions to gather more details",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Use facial expressions and gestures to convey the message",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Encourage others to express their ideas",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Rephrase key points to confirm understanding",
+                "_shouldBeSelected": true
+            }
+        ],
+        "_feedback": {
+            "correct": "That's right. All the above behaviours would help you connect. They promote a shared understanding and show respect for the listener. Using these techniques increases the odds that what you have to say, the message they you're trying to deliver, will have relevance and impact. What do you think? How would you describe a good communicator? Open your <strong>CDP</strong> to complete the activity: <strong>The good communicator</strong>.",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "That's not right. All the above behaviours would help you connect. They promote a shared understanding and show respect for the listener. Using these techniques increases the odds that what you have to say, the message they you're trying to deliver, will have relevance and impact. What do you think? How would you describe a good communicator? Open your <strong>CDP</strong> to complete the activity: <strong>The good communicator</strong>."
+            },
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "That's not quite right. All the above behaviours would help you connect. They promote a shared understanding and show respect for the listener. Using these techniques increases the odds that what you have to say, the message they you're trying to deliver, will have relevance and impact. What do you think? How would you describe a good communicator? Open your <strong>CDP</strong> to complete the activity: <strong>The good communicator</strong>."
+            }
+        },
+        "_buttons": {
+            "_submit": {
+                "buttonText": "Submit",
+                "ariaLabel": "Select here to submit your answer."
+            },
+            "_reset": {
+                "buttonText": "Reset",
+                "ariaLabel": ""
+            },
+            "_showCorrectAnswer": {
+                "buttonText": "Correct Answer",
+                "ariaLabel": ""
+            },
+            "_hideCorrectAnswer": {
+                "buttonText": "My Answer",
+                "ariaLabel": ""
+            },
+            "_showFeedback": {
+                "buttonText": "Show feedback",
+                "ariaLabel": ""
+            },
+            "remainingAttemptsText": "attempts remaining",
+            "remainingAttemptText": "final attempt"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-65L",
+        "_parentId": "b-65",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "left",
+        "title": "What do good communicators do?",
+        "displayTitle": "What do good communicators do?",
+        "body": "Good communicators:<br><ul><li>treat others how they'd like to be treated</li><li>recognise preferred forms of communication</li><li>think before speaking</li><li>listen before talking or typing</li><li>ask questions to better understand</li><li>are aware of non-verbal behaviour</li><li>are professional in handling differing points of view</li><li>are open to new ideas or contributions</li><li>don't commit to things they don't want to, or can't do</li><li>recognise that emotions may be at play.</li></ul><br>Want to know more. Select the <strong>What do good communicators do?</strong> document from the Resources menu. This delves more into the above communication skills and attributes.",
+        "instruction": "",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-65R",
+        "_parentId": "b-65",
+        "_type": "component",
+        "_component": "graphic",
+        "_classes": "",
+        "_layout": "right",
+        "title": "",
+        "displayTitle": "",
+        "body": "",
+        "instruction": "",
+        "_graphic": {
+            "large": "course/en/images/c-65.jpg",
+            "small": "course/en/images/c-65.jpg",
+            "alt": "",
+            "attribution": ""
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-70",
+        "_parentId": "b-70",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "play",
+        "_useClosedCaptions": true,
+        "_allowFullScreen": true,
+        "title": "The non-academic audience",
+        "displayTitle": "The non-academic audience",
+        "body": "You need to be able to communicate with non-academic audiences and researchers in other fields. However, bridging the gap between societal and academic discourse is often a challenge. Communicating the relevance of your research and what you really want, particularly to non-academic audiences, is important. Why?",
+        "instruction": "Select Play to hear from our expert.",
+        "_media": {
+            "mp4": "course/en/video/c-00.mp4",
+            "poster": "course/en/video/c-00.jpg"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-75",
+        "_parentId": "b-75",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "full",
+        "title": "The curse of knowledge",
+        "displayTitle": "The curse of knowledge",
+        "body": "Do you suffer from 'the curse of knowledge'? It might not always feel like it, but your knowledge of your field is beyond that of most people. To the outside world, you're becoming an expert. However, it's easy to fall prey to 'the curse of knowledge' – a cognitive bias that occurs when people are unable to ignore the knowledge they have when predicting the interests or behaviours of others. <br><br>Brothers Chip and Dan Heath, experts in effective communication, have written about this issue in their article. Select <strong>'The curse of knowledge'</strong> from the Resources Menu to learn more.",
+        "instruction": "STORY BOARD SAYS ACCORDION HERE, BUT NO CONTENT FOR ACCORDIONS",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-80",
+        "_parentId": "b-80",
+        "_type": "component",
+        "_component": "mcq",
+        "_classes": "",
+        "_layout": "full",
+        "_attempts": 1,
+        "_shouldDisplayAttempts": false,
+        "_questionWeight": 1,
+        "_isRandom": true,
+        "_selectable": 6,
+        "_canShowModelAnswer": true,
+        "_canShowMarking": true,
+        "_recordInteraction": true,
+        "title": "Meet trang",
+        "displayTitle": "Meet trang",
+        "body": "Trang is a graduate student investigating a chemical reaction with an industry partner. She finds it difficult communicating the relevance of her deep scientific knowledge, and her insights into the commercial world, to potential employers and collaborators that aren't directly involved in her field. <br><br>Which of the following do you think will help her communicate and connect with her non-academic audience?",
+        "instruction": "Select one or more from the following options and select Submit.",
+        "_items": [
+            {
+                "text": "Tell a story",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Use scientific terms that will impress",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Use a real case study",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Use concrete language",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Use specific language",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Use a lecture style format",
+                "_shouldBeSelected": true
+            }
+        ],
+        "_feedback": {
+            "correct": "That's right. Trang needs to turn quite complex issues into straightforward communication. The more specific, particular, real and tangible her communication, the more likely her research will resonate with a non-academic audience. Effective communication avoids jargon and general, vague, or abstract language, which can confuse or patronise your audience. What will you do to communicate the relevance of your research and ensure it connects with your audience? Open your <strong>CDP</strong> to complete the activity: <strong>What's your research story?</strong>",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "That's not right. Trang needs to turn quite complex issues into straightforward communication. The more specific, particular, real and tangible her communication, the more likely her research will resonate with a non-academic audience. Effective communication avoids jargon and general, vague, or abstract language, which can confuse or patronise your audience. What will you do to communicate the relevance of your research and ensure it connects with your audience? Open your <strong>CDP</strong> to complete the activity: <strong>What's your research story?</strong>"
+            },
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "That's not quite right. Trang needs to turn quite complex issues into straightforward communication. The more specific, particular, real and tangible her communication, the more likely her research will resonate with a non-academic audience. Effective communication avoids jargon and general, vague, or abstract language, which can confuse or patronise your audience. What will you do to communicate the relevance of your research and ensure it connects with your audience? Open your <strong>CDP</strong> to complete the activity: <strong>What's your research story?</strong>"
+            }
+        },
+        "_buttons": {
+            "_submit": {
+                "buttonText": "Submit",
+                "ariaLabel": "Select here to submit your answer."
+            },
+            "_reset": {
+                "buttonText": "Reset",
+                "ariaLabel": ""
+            },
+            "_showCorrectAnswer": {
+                "buttonText": "Correct Answer",
+                "ariaLabel": ""
+            },
+            "_hideCorrectAnswer": {
+                "buttonText": "My Answer",
+                "ariaLabel": ""
+            },
+            "_showFeedback": {
+                "buttonText": "Show feedback",
+                "ariaLabel": ""
+            },
+            "remainingAttemptsText": "attempts remaining",
+            "remainingAttemptText": "final attempt"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-85",
+        "_parentId": "b-85",
+        "_type": "component",
+        "_component": "hotgraphic",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "allItems",
+        "_canCycleThroughPagination": false,
+        "_hidePagination": false,
+        "_useGraphicsAsPins": false,
+        "title": "The right focus",
+        "displayTitle": "The right focus",
+        "body": "One of your goals as a graduate researcher is to make meaningful connections with your audience. This involves thinking beyond your own research and taking into consideration your audience's perspective.",
+        "instruction": "Select the icons to find out more.",
+        "mobileInstruction": "Select the arrows and then the plus icons to find out more.",
+        "_graphic": {
+            "src": "course/en/images/c-85-001.jpg",
+            "alt": ""
+        },
+        "_items": [
+            {
+                "title": "Research centric",
+                "body": "Do you adopt a 'research centric' approach? Many people spend time talking at length about their project, their research and themselves, without taking the time to understand their audience or to explore the potential relevance of their work to the broader community.",
+                "_graphic": {
+                    "src": "course/en/images/c-85-002.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Research centric",
+                "_classes": "",
+                "_top": 10,
+                "_left": 10
+            },
+            {
+                "title": "Audience centric",
+                "body": "Do you put the audience at the centre of your research story? Do you focus on what directly matters to them, their needs, wants and desires? In an audience centric approach, the audience determines the research content, language used and the outcomes and expectations.",
+                "_graphic": {
+                    "src": "course/en/images/c-85-003.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Audience centric",
+                "_classes": "",
+                "_top": 10,
+                "_left": 20
+            },
+            {
+                "title": "Meet in the middle",
+                "body": "How do you bridge the gap between research and audience centric communication? Challenge yourself to think more simply and develop an open mind set every time you communicate. Take time to explore: <br><ul><li>your audience(s) – who do you want to reach and connect with?</li><li>your message(s) – what you might say that connects?</li><li>the outcome(s) - what are you are trying to achieve and why are you connecting?</li></ul>",
+                "_graphic": {
+                    "src": "course/en/images/c-85-004.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Meet in the middle",
+                "_classes": "",
+                "_top": 10,
+                "_left": 30
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-90",
+        "_parentId": "b-90",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "play",
+        "_useClosedCaptions": true,
+        "_allowFullScreen": true,
+        "title": "Make the connection",
+        "displayTitle": "Make the connection",
+        "body": "Are you focused on your audience or your research? How do you work to connect the two? Let's see our graduate researchers in action.",
+        "instruction": "Select Play.",
+        "_media": {
+            "mp4": "course/en/video/c-00.mp4",
+            "poster": "course/en/video/c-00.jpg"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-95",
+        "_parentId": "b-95",
+        "_type": "component",
+        "_component": "mcq",
+        "_classes": "",
+        "_layout": "full",
+        "_attempts": 1,
+        "_shouldDisplayAttempts": false,
+        "_questionWeight": 1,
+        "_isRandom": true,
+        "_selectable": 7,
+        "_canShowModelAnswer": true,
+        "_canShowMarking": true,
+        "_recordInteraction": true,
+        "title": "The analysis",
+        "displayTitle": "The analysis",
+        "body": "What do you want from the audience? You may want to provide them information about your findings, consult with them regarding your research, ask them questions or involve them in a project. To do this effectively you need to know how they are likely to feel about and react to your idea, project or report. You also need to know how best to engage them and communicate with them. <br><br>Which of the following questions are key to analysing your audience?",
+        "instruction": "Select one or more from the following options and select Submit.",
+        "_items": [
+            {
+                "text": "What interest do they have in the outcome of your work?",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "What motivates them?",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "What information do they want from you?",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "What will win them around to support your project?",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "How will you manage their opposition?",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "How do they want to receive information from you?",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "What is their current opinion of your work?",
+                "_shouldBeSelected": true
+            }
+        ],
+        "_feedback": {
+            "correct": "That's right. Answering these questions and others like these will help you adapt your message so that your listeners and readers will respond. Apart from these questions think about the demographics of your audience (their age, gender, culture and educational level). Also, their attitude, beliefs and values and how they'll impact your message. Visit your <strong>CDP</strong> to complete the activity: <strong>Research that connects</strong>.",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "That's not right. All these questions and others like these will help you adapt your message so that your listeners and readers will respond. Apart from these questions think about the demographics of your audience (their age, gender, culture and educational level). Also, their attitude, beliefs and values and how they'll impact your message. Visit your <strong>CDP</strong> to complete the activity: <strong>Research that connects</strong>."
+            },
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "That's not quite right. All these questions and others like these will help you adapt your message so that your listeners and readers will respond. Apart from these questions think about the demographics of your audience (their age, gender, culture and educational level). Also, their attitude, beliefs and values and how they'll impact your message. Visit your <strong>CDP</strong> to complete the activity: <strong>Research that connects</strong>."
+            }
+        },
+        "_buttons": {
+            "_submit": {
+                "buttonText": "Submit",
+                "ariaLabel": "Select here to submit your answer."
+            },
+            "_reset": {
+                "buttonText": "Reset",
+                "ariaLabel": ""
+            },
+            "_showCorrectAnswer": {
+                "buttonText": "Correct Answer",
+                "ariaLabel": ""
+            },
+            "_hideCorrectAnswer": {
+                "buttonText": "My Answer",
+                "ariaLabel": ""
+            },
+            "_showFeedback": {
+                "buttonText": "Show feedback",
+                "ariaLabel": ""
+            },
+            "remainingAttemptsText": "attempts remaining",
+            "remainingAttemptText": "final attempt"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-100",
+        "_parentId": "b-100",
+        "_type": "component",
+        "_component": "hotgraphic",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "allItems",
+        "_canCycleThroughPagination": false,
+        "_hidePagination": false,
+        "_useGraphicsAsPins": false,
+        "title": "Work on your S.P.I.N.",
+        "displayTitle": "Work on your S.P.I.N.",
+        "body": "What's S.P.I.N.? It's a conceptual framework that helps you think about your message in a structured way and in a way that connects. S.P.I.N. may be used in various situations. It's a useful tool to help you think through how to communicate ideas, your research, requests for funding, etc.",
+        "instruction": "Select the icons to find out more about S.P.I.N.",
+        "mobileInstruction": "Select the arrows and then the plus icons to find out more about S.P.I.N.",
+        "_graphic": {
+            "src": "course/en/images/c-100-001.jpg",
+            "alt": ""
+        },
+        "_items": [
+            {
+                "title": "Situation",
+                "body": "Start with determining the situation or context surrounding your research. Context gives your research meaning and direction. This stage is about identifying the wider context before jumping into the details. It makes the <strong>why</strong> of your research clear.",
+                "_graphic": {
+                    "src": "course/en/images/c-100-002.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Situation",
+                "_classes": "",
+                "_top": 10,
+                "_left": 10
+            },
+            {
+                "title": "Problems",
+                "body": "Next, communicate the real-world problems, challenges (or opportunities) that might arise because of this situation. Communicating the problems highlights the implied need of your research.",
+                "_graphic": {
+                    "src": "course/en/images/c-100-003.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Problems",
+                "_classes": "",
+                "_top": 10,
+                "_left": 20
+            },
+            {
+                "title": "Implications",
+                "body": "From this, communicate the implications or effects of these issues. Why the problem or opportunity you have described matters and needs to be addressed?",
+                "_graphic": {
+                    "src": "course/en/images/c-100-004.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Implications",
+                "_classes": "",
+                "_top": 10,
+                "_left": 30
+            },
+            {
+                "title": "Need",
+                "body": "Only when you have communicated, S.P. and I., do you lunge into N. Time to communicate what you're doing or intending to do that helps address the issues and overcome the implications you have described – the need that exists, and the focus of your research.",
+                "_graphic": {
+                    "src": "course/en/images/c-100-005.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Need",
+                "_classes": "",
+                "_top": 10,
+                "_left": 40
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-105",
+        "_parentId": "b-105",
+        "_type": "component",
+        "_component": "accordion",
+        "_classes": "",
+        "_layout": "full",
+        "title": "What goes wrong?",
+        "displayTitle": "What goes wrong?",
+        "body": "Have you ever had a conversation with someone where you had absolutely no idea what they were talking about? Communication often goes off track because its purpose and direction isn't clear. Without a plan, the message fails to pack a punch and the relevance isn't clear.",
+        "instruction": "Select each heading to learn where researchers may go wrong.",
+        "_items": [
+            {
+                "title": "Observation #1",
+                "body": "When communicating, people tend to talk about themselves – what they want, what they're researching, what facilities they have access to. For instance: <br><ul><li>\"My research investigates a new technique for studying the mating behaviour of parrots.\"</li><li>\"I'm working in a lab studying a particular type of protein in wheat.\"</li><li>\"I'm researching the portrayal of heroes in early American literature.\"</li></ul>",
+                "_graphic": {
+                    "src": "course/en/images/c-105-001.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Observation #2",
+                "body": "Sometimes people ignore, or fail to consider audience interests. The may use language that audiences are unfamiliar with or fail to demonstrate the relevance of the research. For instance: <br><ul><li>\"Bowl systems occur in loose groups used by a number of males as traditional courtship areas and are unrelated to feeding or nesting.\"</li><li>\"While monomeric gluten proteins (gliadin) show viscous behaviour, polymeric gluten proteins (glutenin) are elastic.\"</li><li>\"American heroes have been depicted in literature since the seventeenth century. Essentially, the depictions are stereotyped, pejorative, and unauthentic.\"</li></ul>",
+                "_graphic": {
+                    "src": "course/en/images/c-105-002.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Observation #3",
+                "body": "As a result of the first two observations, audiences often switch off, minds wander, and the communicator fails to make the most of the opportunity – they fail to connect. Leaving researchers thinking: <br><ul><li>\"I think it went straight over their head, they didn't seem that interested in my research into bowl systems used by the Kakapo Strigops habroptilus of New Zealand.\"</li><li>\"I think my talk fell flat, I found it difficult to connect – I was trying to explain about the importance of monomeric gluten proteins but it all got a bit technical.\"</li><li>\"Most of the literature I spoke about, the audience had never heard of – I'm starting to question the relevance of my research.\"</li></ul>",
+                "_graphic": {
+                    "src": "course/en/images/c-105-003.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-110",
+        "_parentId": "b-110",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Bringing S.P.I.N. to life",
+        "displayTitle": "Bringing S.P.I.N. to life",
+        "body": "By using S.P.I.N. and exploring ways to connect, you can become more relevant and achieve greater impact. Select the arrow to see some examples of communicating with impact.",
+        "instruction": "",
         "_pageLevelProgress": {
             "_isEnabled": true
         }
