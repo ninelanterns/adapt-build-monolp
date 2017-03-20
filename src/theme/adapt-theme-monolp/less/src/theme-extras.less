@@ -130,6 +130,7 @@
         color: @primary-color-inverted;
     }
 
+    .article-title,
     .block-title,
     .component-title {
         color: @primary-color-inverted;
@@ -140,9 +141,14 @@
     background-color: @primary-color;
     color: @foreground-color-inverted;
 
+    .article-title,
     .block-title,
     .component-title {
         color: @foreground-color-inverted;
+    }
+
+    &.article-block-slider-enabled .block {
+        background: transparent;
     }
 }
 
@@ -204,6 +210,10 @@ blockquote {
             margin-right: 10px;
         }
     }
+}
+
+.white-background blockquote p {
+    border-left: 5px solid lighten(@foreground-color, 40%);
 }
 
 // Give the last block on the page more padding
