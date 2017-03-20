@@ -80,12 +80,59 @@
         "body": ""
     },
     {
-        "_id": "a-46",
+        "_id": "a-47",
         "_parentId": "co-45",
         "_type": "article",
         "_classes": "primary-background",
-        "title": "a-46",
+        "title": "Bringing S.P.I.N. to life",
+        "displayTitle": "Bringing S.P.I.N. to life",
+        "body": " ",
+        "_articleBlockSlider": {
+            "_minHeight": 0,
+            "_hasUniformHeight": true,
+            "_startIndex": 0,
+            "_hasArrows": true,
+            "_hasTabs": false,
+            "_isEnabledOnScreenSizes": "large",
+            "_heightAnimationDuration": 300,
+            "_slideAnimationDuration": 600,
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "a-48",
+        "_parentId": "co-45",
+        "_type": "article",
+        "_classes": "",
+        "title": "a-48",
         "displayTitle": "",
+        "body": ""
+    },
+    {
+        "_id": "a-50",
+        "_parentId": "co-50",
+        "_type": "article",
+        "_classes": "",
+        "title": "a-50",
+        "displayTitle": "",
+        "body": ""
+    },
+    {
+        "_id": "a-55",
+        "_parentId": "co-55",
+        "_type": "article",
+        "_classes": "",
+        "title": "a-55",
+        "displayTitle": "",
+        "body": ""
+    },
+    {
+        "_id": "a-60",
+        "_parentId": "co-60",
+        "_type": "article",
+        "_classes": "white-background",
+        "title": "Authenticity counts",
+        "displayTitle": "Authenticity counts",
         "body": "",
         "_articleBlockSlider": {
             "_minHeight": 0,
@@ -98,5 +145,41 @@
             "_slideAnimationDuration": 600,
             "_isEnabled": true
         }
+    },
+    {
+        "_id": "a-62",
+        "_parentId": "co-60",
+        "_type": "article",
+        "_classes": "",
+        "title": "a-62",
+        "displayTitle": "",
+        "body": ""
+    },
+    {
+        "_id": "a-65",
+        "_parentId": "co-65",
+        "_type": "article",
+        "_classes": "",
+        "title": "a-65",
+        "displayTitle": "",
+        "body": ""
+    },
+    {
+        "_id": "a-70",
+        "_parentId": "co-70",
+        "_type": "article",
+        "_classes": "",
+        "title": "a-70",
+        "displayTitle": "",
+        "body": ""
+    },
+    {
+        "_id": "a-75",
+        "_parentId": "co-75",
+        "_type": "article",
+        "_classes": "",
+        "title": "a-75",
+        "displayTitle": "",
+        "body": ""
     }
 ]

@@ -356,7 +356,7 @@
         "instruction": "Select the icons to find out.",
         "mobileInstruction": "Select the arrows and then the plus icons to find out.",
         "_graphic": {
-            "src": "course/en/images/c-120-001.png",
+            "src": "course/en/images/c-40-001.gif",
             "alt": ""
         },
         "_items": [
@@ -364,79 +364,79 @@
                 "title": "Communicator",
                 "body": "The sender, speaker, issuer, or writer who intends to convey or transmit a message. Are you the communicator? Before communicating the message, it's a good idea to consider what you are doing, why you are doing it, how you should do it and what you expect the result to be.",
                 "_graphic": {
-                    "src": "course/en/images/c-120-002.png",
+                    "src": "course/en/images/c-40-002.gif",
                     "alt": "",
                     "_classes": ""
                 },
                 "strapline": "Communicator",
                 "_classes": "",
-                "_top": 4.5,
+                "_top": 6,
                 "_left": 44
             },
             {
                 "title": "Message",
                 "body": "The subject matter of the communication. What does the communication involve? What is its purpose? What information will be included? How much detail will it include?",
                 "_graphic": {
-                    "src": "course/en/images/c-120-003.png",
+                    "src": "course/en/images/c-40-003.gif",
                     "alt": "",
                     "_classes": ""
                 },
                 "strapline": "Message",
                 "_classes": "",
-                "_top": 18,
-                "_left": 63
+                "_top": 22.2,
+                "_left": 64.9
             },
             {
                 "title": "Transmission",
                 "body": "The act of conveying the message, verbally or non-verbally. Verbal communication includes written and oral communication. Non-verbal communication, or body language, includes facial expressions, eye contact, body posture, gestures, tone of voice, touch, etc.",
                 "_graphic": {
-                    "src": "course/en/images/c-120-004.png",
+                    "src": "course/en/images/c-40-004.gif",
                     "alt": "",
                     "_classes": ""
                 },
                 "strapline": "Transmission",
                 "_classes": "",
-                "_top": 48.5,
-                "_left": 68
+                "_top": 57.5,
+                "_left": 64.8
             },
             {
                 "title": "Channel",
                 "body": "The medium used to transmit the message. How would you communicate the findings of your research? You could use traditional academic channels, like journal articles, texts, conferences or reports. Or perhaps 'old' media, such as newspapers, magazines, radio and television. And of course there's the 'new' media, like web pages, blogs and social media.",
                 "_graphic": {
-                    "src": "course/en/images/c-120-005.png",
+                    "src": "course/en/images/c-40-005.gif",
                     "alt": "",
                     "_classes": ""
                 },
                 "strapline": "Channel",
                 "_classes": "",
-                "_top": 73,
-                "_left": 54.5
+                "_top": 73.4,
+                "_left": 44.2
             },
             {
                 "title": "Receiver",
                 "body": "Who is the message meant for? Who will be reading your report? Who will be listening to your presentation? Take into consideration the factors that might affect the behaviour of the intended receiver or audience.",
                 "_graphic": {
-                    "src": "course/en/images/c-120-006.png",
+                    "src": "course/en/images/c-40-006.gif",
                     "alt": "",
                     "_classes": ""
                 },
                 "strapline": "Receiver",
                 "_classes": "",
-                "_top": 73,
-                "_left": 33.5
+                "_top": 57.2,
+                "_left": 23.5
             },
             {
                 "title": "Response",
                 "body": "How did the receiver reply or react? Did they have any questions? What was the result of the communication? Did you achieve your objectives?",
                 "_graphic": {
-                    "src": "course/en/images/c-120-007.png",
+                    "src": "course/en/images/c-40-007.gif",
                     "alt": "",
                     "_classes": ""
                 },
                 "strapline": "Response",
                 "_classes": "",
-                "_top": 48.5,
-                "_left": 20.5
+                "_top": 22.2,
+                "_left": 23.6
             }
         ],
         "_pageLevelProgress": {
@@ -457,57 +457,27 @@
         "_items": [
             {
                 "title": "Understandable",
-                "body": "We don't want to confuse our listeners or readers. Use language that is straightforward and easy to comprehend. Follow a logical and coherent sequence. This reduces misunderstandings and allows the right message to come across.",
-                "_graphic": {
-                    "src": "course/en/images/c-45-001.jpg",
-                    "alt": ""
-                },
-                "_classes": ""
+                "body": "We don't want to confuse our listeners or readers. Use language that is straightforward and easy to comprehend. Follow a logical and coherent sequence. This reduces misunderstandings and allows the right message to come across."
             },
             {
                 "title": "Clear",
-                "body": "What's your story? Why does it matter? Why now? A clear message has a well-defined purpose or objective, and avoids ambiguity. It's specific and concrete about what it wants to achieve and what actions you want the receiver to take.",
-                "_graphic": {
-                    "src": "course/en/images/c-45-002.jpg",
-                    "alt": ""
-                },
-                "_classes": ""
+                "body": "What's your story? Why does it matter? Why now? A clear message has a well-defined purpose or objective, and avoids ambiguity. It's specific and concrete about what it wants to achieve and what actions you want the receiver to take."
             },
             {
                 "title": "Adequate",
-                "body": "Is the core information there? Incomplete information can cause misunderstandings, problems and serious consequences. A complete message contains sufficient information to serve the purpose of the communication.",
-                "_graphic": {
-                    "src": "course/en/images/c-45-003.jpg",
-                    "alt": ""
-                },
-                "_classes": ""
+                "body": "Is the core information there? Incomplete information can cause misunderstandings, problems and serious consequences. A complete message contains sufficient information to serve the purpose of the communication."
             },
             {
                 "title": "Appropriate channel",
-                "body": "Stage 4 display text: Good communication uses the right channel mix. It takes into account the nature of communication, urgency of communication, audience preferences and geographic considerations.",
-                "_graphic": {
-                    "src": "course/en/images/c-45-004.jpg",
-                    "alt": ""
-                },
-                "_classes": ""
+                "body": "Stage 4 display text: Good communication uses the right channel mix. It takes into account the nature of communication, urgency of communication, audience preferences and geographic considerations."
             },
             {
                 "title": "Accurate",
-                "body": "Is it accurate? False and misleading statements may do damage to your reputation or the reputation of the organisation or university you represent. Consider the quality of your evidence and use correct facts and figures.",
-                "_graphic": {
-                    "src": "course/en/images/c-45-005.jpg",
-                    "alt": ""
-                },
-                "_classes": ""
+                "body": "Is it accurate? False and misleading statements may do damage to your reputation or the reputation of the organisation or university you represent. Consider the quality of your evidence and use correct facts and figures."
             },
             {
                 "title": "Courtesy",
-                "body": "Is your message courteous, respectful and polite? People tend not to respond well to people that are rude. Is it friendly, open, and honest? Courtesy implies taking into consideration both viewpoints, as well as the feelings of the receiver.",
-                "_graphic": {
-                    "src": "course/en/images/c-45-006.jpg",
-                    "alt": ""
-                },
-                "_classes": ""
+                "body": "Is your message courteous, respectful and polite? People tend not to respond well to people that are rude. Is it friendly, open, and honest? Courtesy implies taking into consideration both viewpoints, as well as the feelings of the receiver."
             }
         ],
         "_pageLevelProgress": {
@@ -732,7 +702,7 @@
         "_classes": "",
         "_layout": "left",
         "title": "What do good communicators do?",
-        "displayTitle": "What do good communicators do?",
+        "displayTitle": "",
         "body": "Good communicators:<br><ul><li>treat others how they'd like to be treated</li><li>recognise preferred forms of communication</li><li>think before speaking</li><li>listen before talking or typing</li><li>ask questions to better understand</li><li>are aware of non-verbal behaviour</li><li>are professional in handling differing points of view</li><li>are open to new ideas or contributions</li><li>don't commit to things they don't want to, or can't do</li><li>recognise that emotions may be at play.</li></ul><br>Want to know more. Select the <strong>What do good communicators do?</strong> document from the Resources menu. This delves more into the above communication skills and attributes.",
         "instruction": "",
         "_pageLevelProgress": {
@@ -799,7 +769,7 @@
         "title": "The curse of knowledge",
         "displayTitle": "The curse of knowledge",
         "body": "Do you suffer from 'the curse of knowledge'? It might not always feel like it, but your knowledge of your field is beyond that of most people. To the outside world, you're becoming an expert. However, it's easy to fall prey to 'the curse of knowledge' – a cognitive bias that occurs when people are unable to ignore the knowledge they have when predicting the interests or behaviours of others. <br><br>Brothers Chip and Dan Heath, experts in effective communication, have written about this issue in their article. Select <strong>'The curse of knowledge'</strong> from the Resources Menu to learn more.",
-        "instruction": "STORY BOARD SAYS ACCORDION HERE, BUT NO CONTENT FOR ACCORDIONS",
+        "instruction": "",
         "_pageLevelProgress": {
             "_isEnabled": true
         }
@@ -947,7 +917,7 @@
             },
             {
                 "title": "Meet in the middle",
-                "body": "How do you bridge the gap between research and audience centric communication? Challenge yourself to think more simply and develop an open mind set every time you communicate. Take time to explore: <br><ul><li>your audience(s) – who do you want to reach and connect with?</li><li>your message(s) – what you might say that connects?</li><li>the outcome(s) - what are you are trying to achieve and why are you connecting?</li></ul>",
+                "body": "How do you bridge the gap between research and audience centric communication? Challenge yourself to think more simply and develop an open mind set every time you communicate. Take time to explore:<br><br><ul><li>Your audience(s) – who do you want to reach and connect with?</li><li>Your message(s) – what you might say that connects?</li><li>The outcome(s) - what are you are trying to achieve and why are you connecting?</li></ul>",
                 "_graphic": {
                     "src": "course/en/images/c-85-004.jpg",
                     "alt": "",
@@ -1213,9 +1183,1155 @@
         "_classes": "",
         "_layout": "full",
         "title": "Bringing S.P.I.N. to life",
-        "displayTitle": "Bringing S.P.I.N. to life",
-        "body": "By using S.P.I.N. and exploring ways to connect, you can become more relevant and achieve greater impact. Select the arrow to see some examples of communicating with impact.",
+        "displayTitle": "",
+        "body": "<div class=\"component-padder\" style=\"padding-top:35px\"></div>By using S.P.I.N. and exploring ways to connect, you can become more relevant and achieve greater impact. Select the arrow to see some examples of communicating with impact.",
         "instruction": "",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-115",
+        "_parentId": "b-115",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Bringing S.P.I.N. to life",
+        "displayTitle": "",
+        "body": "<div class=\"component-padder\" style=\"padding-top:15px\"></div>\"This image shows a rare New Zealand parrot, they're amazing creatures that some of you may have heard about. My research is helping scientists, governments and conservationists learn how to better protect this species, and it also has broader relevance to other endangered species in New Zealand and elsewhere.\"",
+        "instruction": ""
+    },
+    {
+        "_id": "c-120",
+        "_parentId": "b-120",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Bringing S.P.I.N. to life",
+        "displayTitle": "",
+        "body": "<div class=\"component-padder\" style=\"padding-top:15px\"></div>\"How many of you love the smell and taste of fresh bread in the morning? My research is helping us better understand the proteins in wheat that give bread dough its elasticity – helping to make better, nicer bread for people who are gluten intolerant. That's millions of people around the world.\"",
+        "instruction": ""
+    },
+    {
+        "_id": "c-125",
+        "_parentId": "b-125",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Bringing S.P.I.N. to life",
+        "displayTitle": "",
+        "body": "\"Who has not become fascinated by American politics of late, the presidential campaign and America's standing in the world? My research explores American heroes, and how these have changed over time. It helps make sense of why particular personality types and personas resonate, and what this means in the modern age – with potential relevance to governments, organisations and anyone interested in leadership today.\"",
+        "instruction": ""
+    },
+    {
+        "_id": "c-130",
+        "_parentId": "b-130",
+        "_type": "component",
+        "_component": "gmcq",
+        "_classes": "",
+        "_layout": "full",
+        "_attempts": 1,
+        "_shouldDisplayAttempts": false,
+        "_questionWeight": 1,
+        "_isRandom": false,
+        "_selectable": 1,
+        "_canShowModelAnswer": true,
+        "_recordInteraction": true,
+        "_columns": 5,
+        "title": "The value of S.P.I.N.",
+        "displayTitle": "The value of S.P.I.N.",
+        "body": "Becoming familiar with S.P.I.N. is a valuable exercise as the framework can be applied to help you structure many different types of communications. <br><br>Think about your research and career aspirations. In which situations would S.P.I.N. be useful for you?",
+        "instruction": "Select one or more from the following options and select Submit.",
+        "_items": [
+            {
+                "text": "Elevator pitch",
+                "_shouldBeSelected": true,
+                "_graphic": {
+                    "alt": "",
+                    "large": "course/en/images/c-130-001-large.gif",
+                    "small": "course/en/images/c-130-001-small.gif"
+                }
+            },
+            {
+                "text": "Grant applications",
+                "_shouldBeSelected": true,
+                "_graphic": {
+                    "alt": "",
+                    "large": "course/en/images/c-130-002-large.gif",
+                    "small": "course/en/images/c-130-002-small.gif"
+                }
+            },
+            {
+                "text": "Interviews",
+                "_shouldBeSelected": true,
+                "_graphic": {
+                    "alt": "",
+                    "large": "course/en/images/c-130-003-large.gif",
+                    "small": "course/en/images/c-130-003-small.gif"
+                }
+            },
+            {
+                "text": "Three Minute Thesis (3MT) presentation",
+                "_shouldBeSelected": true,
+                "_graphic": {
+                    "alt": "",
+                    "large": "course/en/images/c-130-004-large.gif",
+                    "small": "course/en/images/c-130-004-small.gif"
+                }
+            },
+            {
+                "text": "Funding pitch",
+                "_shouldBeSelected": true,
+                "_graphic": {
+                    "alt": "",
+                    "large": "course/en/images/c-130-005-large.gif",
+                    "small": "course/en/images/c-130-005-small.gif"
+                }
+            }
+        ],
+        "_feedback":{
+            "correct": "S.P.I.N. can help you develop your elevator pitch – a 30 second spiel on what you're doing. It can help you structure grant applications to compellingly communicate the importance of a project, how it aligns with government priorities, and the implications if the project is or isn't funded. It can assist you to 'think on your feet' during career interviews. Are you an entrepreneur? It can help develop your ideas and funding pitches. Whether you're presenting to leadership or executive teams or preparing for a 3MT presentation, S.P.I.N is the tool for you.",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "S.P.I.N. can help you develop your elevator pitch – a 30 second spiel on what you're doing. It can help you structure grant applications to compellingly communicate the importance of a project, how it aligns with government priorities, and the implications if the project is or isn't funded. It can assist you to 'think on your feet' during career interviews. Are you an entrepreneur? It can help develop your ideas and funding pitches. Whether you're presenting to leadership or executive teams or preparing for a 3MT presentation, S.P.I.N is the tool for you."
+            },
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "S.P.I.N. can help you develop your elevator pitch – a 30 second spiel on what you're doing. It can help you structure grant applications to compellingly communicate the importance of a project, how it aligns with government priorities, and the implications if the project is or isn't funded. It can assist you to 'think on your feet' during career interviews. Are you an entrepreneur? It can help develop your ideas and funding pitches. Whether you're presenting to leadership or executive teams or preparing for a 3MT presentation, S.P.I.N is the tool for you."
+            }
+        },
+        "_buttons": {
+            "_submit": {
+                "buttonText": "Submit",
+                "ariaLabel": "Select here to submit your answer."
+            },
+            "_reset": {
+                "buttonText": "Reset",
+                "ariaLabel": ""
+            },
+            "_showCorrectAnswer": {
+                "buttonText": "Correct Answer",
+                "ariaLabel": ""
+            },
+            "_hideCorrectAnswer": {
+                "buttonText": "My Answer",
+                "ariaLabel": ""
+            },
+            "_showFeedback": {
+                "buttonText": "Show feedback",
+                "ariaLabel": ""
+            },
+            "remainingAttemptsText": "attempts remaining",
+            "remainingAttemptText": "final attempt"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-135",
+        "_parentId": "b-135",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "play",
+        "_useClosedCaptions": true,
+        "_allowFullScreen": true,
+        "title": "S.P.I.N. in action",
+        "displayTitle": "S.P.I.N. in action",
+        "body": "Working with S.P.I.N. is about asking the right questions when preparing to communicate. This will significantly increase the likelihood of you meeting your communication objectives. For example, the right questions could speed up the process, whereas the wrong questions could stall it or even halt it completely.",
+        "instruction": "Select Play to see how graduate researchers are putting a S.P.I.N. on their research.",
+        "_media": {
+            "mp4": "course/en/video/c-00.mp4",
+            "poster": "course/en/video/c-00.jpg"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-140",
+        "_parentId": "b-140",
+        "_type": "component",
+        "_component": "narrative",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "allItems",
+        "_hasNavigationInTextArea": false,
+        "title": "Ask the right questions",
+        "displayTitle": "Ask the right questions",
+        "body": "Michael Marquardt wrote an insightful book called Leading with Questions, his premise being that too often when we prepare to communicate we make statements when we should be asking questions. Thinking about communicating your research using S.P.I.N is made easier by asking yourself the right types of questions.",
+        "instruction": "Select the arrows to find out more.",
+        "mobileInstruction": "Select the arrows and then the plus icons to find out more.",
+        "_items": [
+            {
+                "title": "Situation questions",
+                "body": "Take a step back from your research and think about the following questions: <br><ul><li>What societal trends or issues might your research relate to?</li><li>What key facts and insights can you identify relating to the status quo?</li><li>Relating to these topics, what might be of interest to your audience?</li></ul>",
+                "_graphic": {
+                    "src": "course/en/images/c-140-001.jpg",
+                    "alt": ""
+                },
+                "strapline": "Situation questions"
+            },
+            {
+                "title": "Problem questions",
+                "body": "Relating to these trends and the status quo (the situation) consider: <br><ul><li>What problems or challenges might exist?</li><li>What are the limitations, current responses or gaps in knowledge?</li><li>Of these issues, are any particularly relevant (important or of interest) to your audience and research?</li></ul>",
+                "_graphic": {
+                    "src": "course/en/images/c-140-002.jpg",
+                    "alt": ""
+                },
+                "strapline": "Problem questions"
+            },
+            {
+                "title": "Implication questions",
+                "body": "Why do these problems matter to the audience: <br><ul><li>If nothing is done, what is likely to happen? What will we miss out on?</li><li>If the challenges are addressed, what tangible, specific benefits might arise?</li><li>Who, or what, will benefit from taking action, how does this relate to your audience?</li></ul>",
+                "_graphic": {
+                    "src": "course/en/images/c-140-003.jpg",
+                    "alt": ""
+                },
+                "strapline": "Implication questions"
+            },
+            {
+                "title": "Need questions",
+                "body": "This is the bit when you explain how your research is helping: <br><ul><li>What are you doing or proposing to do to help address this problem or opportunity?</li><li>Why is your research important or unique?</li><li>Why are you credible to help resolve this issue?</li></ul>",
+                "_graphic": {
+                    "src": "course/en/images/c-140-004.jpg",
+                    "alt": ""
+                },
+                "strapline": "Need questions"
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-145",
+        "_parentId": "b-145",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Refine your research story",
+        "displayTitle": "Refine your research story",
+        "body": "Asking the right S.P.I.N. questions is key to being able to understand your audience, your key message/s and the relevance of your research. However, can you answer the S.P.I.N questions when communicating your research? Select the <strong>S.P.I.N. framework</strong> document from the Resources menu. This provides you with some examples to get you thinking of how can apply S.P.I.N to your research. Then take some time to reflect and refine your own research story. Visit your <strong>CDP</strong> to complete the activity: <strong>Your research S.P.I.N.</strong>",
+        "instruction": "",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-150",
+        "_parentId": "b-150",
+        "_type": "component",
+        "_component": "narrative",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "allItems",
+        "_hasNavigationInTextArea": false,
+        "title": "The sticky principles",
+        "displayTitle": "The sticky principles",
+        "body": "How do you make your message memorable? The book, Made to Stick, by brothers Chip and Dan Heath explains that making your communication stickier is about applying six principles or traits.",
+        "instruction": "Select each heading to find out more.",
+        "mobileInstruction": "Select each heading to find out more.",
+        "_items": [
+            {
+                "title": "Simple",
+                "body": "The core concept and message. <br><br>\"Saying something short is not the mission – sound bites are not the ideal. Proverbs are the ideal. We must create ideas that are both simple and profound. The Golden Rule (do unto others as you would have them do unto you) is the ultimate model of simplicity: a one-sentence statement so profound that an individual could spend a lifetime learning to follow it.\"",
+                "_graphic": {
+                    "src": "course/en/images/c-150-001.jpg",
+                    "alt": ""
+                },
+                "strapline": "Simple"
+            },
+            {
+                "title": "Unexpected",
+                "body": "Grab their attention by using the element of surprise.<br><br>\"How do we get our audience to pay attention to our ideas, and how do we maintain their interest when we need time to get the ideas across? We need to violate people's expectations.\"",
+                "_graphic": {
+                    "src": "course/en/images/c-150-002.jpg",
+                    "alt": ""
+                },
+                "strapline": "Unexpected"
+            },
+            {
+                "title": "Concrete",
+                "body": "Can the idea be grasped and remembered?<br><br>\"Naturally sticky ideas are full of concrete images – ice-filled bathtubs, apples with razors – because our brains are wired to remember concrete data. In proverbs, abstract truths are often encoded in concrete language: \"A bird in hand is worth two in the bush.\"",
+                "_graphic": {
+                    "src": "course/en/images/c-150-003.jpg",
+                    "alt": ""
+                },
+                "strapline": "Concrete"
+            },
+            {
+                "title": "Credible",
+                "body": "Will they believe it? <br><br>\"Sticky ideas have to carry their own credentials. We need ways to help people test our ideas for themselves – a \"try before you buy\" philosophy for the world of ideas.\"",
+                "_graphic": {
+                    "src": "course/en/images/c-150-003.jpg",
+                    "alt": ""
+                },
+                "strapline": "Credible"
+            },
+            {
+                "title": "Emotional",
+                "body": "Let people see the importance of your idea. <br><br>\"How do we get people to care about our ideas? We make them feel something.\"",
+                "_graphic": {
+                    "src": "course/en/images/c-150-003.jpg",
+                    "alt": ""
+                },
+                "strapline": "Emotional"
+            },
+            {
+                "title": "Stories",
+                "body": "Use narratives to empower people. <br><br>\"How do we get people to act on our ideas? We tell stories. Firefighters naturally swap stories after every fire, and by doing so they multiply their experience.\"",
+                "_graphic": {
+                    "src": "course/en/images/c-150-003.jpg",
+                    "alt": ""
+                },
+                "strapline": "Stories"
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-155",
+        "_parentId": "b-155",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "play",
+        "_useClosedCaptions": true,
+        "_allowFullScreen": true,
+        "title": "Making it sticky",
+        "displayTitle": "Making it sticky",
+        "body": "Consider how you can make your communication stickier. What can you do to develop credibility? How can you make people stand up and notice? Let's see one approach.",
+        "instruction": "Select Play to hear some tips.",
+        "_media": {
+            "mp4": "course/en/video/c-00.mp4",
+            "poster": "course/en/video/c-00.jpg"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-160",
+        "_parentId": "b-160",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "full",
+        "title": "The key to sticky success",
+        "displayTitle": "The key to sticky success",
+        "body": "\"The Heath brothers have taught me that if anyone is going to \"get\" my idea – need it, buy it, fund it, use it – I need to radically shorten my elevator pitch. No more pretending that every building's a skyscraper. I can live in a world of complexity, and my theory of change can and should mirror the system I am working to change, but I'd better talk about it in a way that leaves my target wanting more, not less. Just because I have a theory of change doesn't mean I have to wear it on my sleeve.\" <br><br><em>Judith Samuelson (2007), Review: Made to Stick, Stanford Social Innovation Review.</em> <br><br>Select <strong>'Made to stick'</strong> from the Resources menu to learn more about how you can make an idea, concept or theory more memorable or interesting.",
+        "instruction": "",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-165",
+        "_parentId": "b-165",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "full",
+        "title": "",
+        "displayTitle": "",
+        "body": "Authentic communication is an open and two-way conversation. It's about creating a climate of trust, where our voice is heard and our opinion is respected. Being an authentic speaker helps you establish rapport, cement relationships and enhance communication. Select the arrow to hear what people think about being authentic.",
+        "instruction": "",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-170",
+        "_parentId": "b-170",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "full",
+        "title": "",
+        "displayTitle": "",
+        "body": "<div class=\"component-padder\" style=\"padding-top:1em\"></div><blockquote><p>I think the bar is higher these days in terms of audience expectations of authenticity.</p><footer>Shawn Ryan</footer></blockquote>",
+        "instruction": "",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-175",
+        "_parentId": "b-175",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "full",
+        "title": "",
+        "displayTitle": "",
+        "body": "<div class=\"component-padder\" style=\"padding-top:1em\"><blockquote><p>Authenticity is absolutely the key to a great tweet.</p><footer>Dick Costolo</footer></blockquote>",
+        "instruction": "",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-180",
+        "_parentId": "b-180",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "full",
+        "title": "",
+        "displayTitle": "",
+        "body": "<div class=\"component-padder\" style=\"padding-top:0.5em\"><blockquote><p>I had no idea that being your authentic self could make me as rich as I've become. If I had, I'd have done it a lot earlier.</p><footer>Oprah Winfrey</footer></blockquote>",
+        "instruction": "",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-185",
+        "_parentId": "b-185",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "full",
+        "title": "",
+        "displayTitle": "",
+        "body": "<div class=\"component-padder\" style=\"padding-top:0.5em\"><blockquote><p>Always be a first-rate version of yourself and not a second-rate version of someone else.</p><footer>Judy Garland</footer></blockquote>",
+        "instruction": "",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-190",
+        "_parentId": "b-190",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "play",
+        "_useClosedCaptions": true,
+        "_allowFullScreen": true,
+        "title": "Becoming authentic",
+        "displayTitle": "Becoming authentic",
+        "body": "Authentic communicators understand themselves and they understand what motivates others. They are willing to be flexible with their communication style to meet their goals, as well as to help others meet their goals. What can you do to become an authentic speaker?",
+        "instruction": "Select Play to hear from our expert.",
+        "_media": {
+            "mp4": "course/en/video/c-00.mp4",
+            "poster": "course/en/video/c-00.jpg"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-195",
+        "_parentId": "b-195",
+        "_type": "component",
+        "_component": "accordion",
+        "_classes": "",
+        "_layout": "full",
+        "title": "What should you avoid",
+        "displayTitle": "What should you avoid",
+        "body": "We've talked about good communicators, but what shouldn't you do? In an article titled, 'How to pitch a brilliant idea' Kimberly Elsbach describes four stereotypical communicators that typically fail to connect and could be regarded as inauthentic – communicators that tend to kill ideas.",
+        "instruction": "Select each heading to find out more.",
+        "_items": [
+            {
+                "title": "The robot",
+                "body": "Presents in a formulaic way, as if they're repeating a memorised script or recipe."
+            },
+            {
+                "title": "The pushover",
+                "body": "Someone who walks away from their ideas. For example, \"I could change it to green, but if you don't like that, I could do it in yellow.\""
+            },
+            {
+                "title": "The charity case",
+                "body": "Someone who's desperate for a job or pleading for an opportunity."
+            },
+            {
+                "title": "The used-car salesman",
+                "body": "The person who's overly insistent and fails to listen to feedback."
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-200",
+        "_parentId": "b-200",
+        "_type": "component",
+        "_component": "mcq",
+        "_classes": "",
+        "_layout": "full",
+        "_attempts": 1,
+        "_shouldDisplayAttempts": false,
+        "_questionWeight": 1,
+        "_isRandom": true,
+        "_selectable": 5,
+        "_canShowModelAnswer": true,
+        "_canShowMarking": true,
+        "_recordInteraction": true,
+        "title": "What should you do?",
+        "displayTitle": "What should you do?",
+        "body": "You're preparing to present at a conference and want to make sure you're authentic. Which of the following will help?",
+        "instruction": "Select one or more of the following options and select Submit.",
+        "_items": [
+            {
+                "text": "Think about what your listeners might be feeling.",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Focus not on what you want to say but on why your message is important.",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Focus on how you feel about the message.",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Focus on your audience's motivators and priorities.",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Put yourself in the audience's shoes.",
+                "_shouldBeSelected": true
+            }
+        ],
+        "_feedback": {
+            "correct": "That's right. All these techniques will help you deliver an authentic message. Your message should include four powerful aims: to be open, to connect, to be passionate and to listen. Select the article <strong>'How to become an authentic speaker'</strong> from the Resources menu to explore these and other techniques in more detail. Then visit your <strong>CDP</strong> to complete the activity: <strong>Keeping it real</strong>.",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "That's not right. All these techniques will help you deliver an authentic message. Your message should include four powerful aims: to be open, to connect, to be passionate and to listen. Select the article <strong>'How to become an authentic speaker'</strong> from the Resources menu to explore these and other techniques in more detail. Then visit your <strong>CDP</strong> to complete the activity: <strong>Keeping it real</strong>."
+            },
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "That's not quite right. All these techniques will help you deliver an authentic message. Your message should include four powerful aims: to be open, to connect, to be passionate and to listen. Select the article <strong>'How to become an authentic speaker'</strong> from the Resources menu to explore these and other techniques in more detail. Then visit your <strong>CDP</strong> to complete the activity: <strong>Keeping it real</strong>."
+            }
+        },
+        "_buttons": {
+            "_submit": {
+                "buttonText": "Submit",
+                "ariaLabel": "Select here to submit your answer."
+            },
+            "_reset": {
+                "buttonText": "Reset",
+                "ariaLabel": ""
+            },
+            "_showCorrectAnswer": {
+                "buttonText": "Correct Answer",
+                "ariaLabel": ""
+            },
+            "_hideCorrectAnswer": {
+                "buttonText": "My Answer",
+                "ariaLabel": ""
+            },
+            "_showFeedback": {
+                "buttonText": "Show feedback",
+                "ariaLabel": ""
+            },
+            "remainingAttemptsText": "attempts remaining",
+            "remainingAttemptText": "final attempt"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-205",
+        "_parentId": "b-205",
+        "_type": "component",
+        "_component": "hotgraphic",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "allItems",
+        "_canCycleThroughPagination": false,
+        "_hidePagination": false,
+        "_useGraphicsAsPins": false,
+        "title": "Styles of talking",
+        "displayTitle": "Styles of talking",
+        "body": "What's linguistic style? In 'The power of talk: who gets heard and why', Deborah Tannen explores linguistic style and how it impacts the way you connect. She refers to linguistic style as a person's characteristic speaking pattern, which includes various features. Next we'll look at how we need to adapt our style, but for now let's look at what the styles are.",
+        "instruction": "Select the icons to find out more.",
+        "mobileInstruction": "Select the arrows and then the plus icons to find out more.",
+        "_graphic": {
+            "src": "course/en/images/c-205.jpg",
+            "alt": ""
+        },
+        "_items": [
+            {
+                "title": "Sharing credit",
+                "body": "Uses \"we\" rather than \"I\" to describe personal accomplishments. Why? \"I\" can seem too self-promotional.",
+                "_graphic": {
+                    "src": "course/en/images/c-205-001.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Sharing credit",
+                "_classes": "",
+                "_top": 10,
+                "_left": 10
+            },
+            {
+                "title": "Acting modestly",
+                "body": "Downplays their certainty in the material being presented. Why? Confident behaviour can be perceived as too boastful.",
+                "_graphic": {
+                    "src": "course/en/images/c-205-002.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Acting modestly",
+                "_classes": "",
+                "_top": 10,
+                "_left": 20
+            },
+            {
+                "title": "Asking questions",
+                "body": "Frequently asks questions. Why? Questions help the speaker generate knowledge.",
+                "_graphic": {
+                    "src": "course/en/images/c-205-002.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Asking questions",
+                "_classes": "",
+                "_top": 10,
+                "_left": 30
+            },
+            {
+                "title": "Apologising",
+                "body": "Apologises frequently. Why? Apologies express concern for others.",
+                "_graphic": {
+                    "src": "course/en/images/c-205-002.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Apologising",
+                "_classes": "",
+                "_top": 10,
+                "_left": 40
+            },
+            {
+                "title": "Giving feedback",
+                "body": "Discusses weaknesses only after first identifying strengths. Why? Buffering criticism saves face for the individual receiving feedback.",
+                "_graphic": {
+                    "src": "course/en/images/c-205-002.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Giving feedback",
+                "_classes": "",
+                "_top": 10,
+                "_left": 50
+            },
+            {
+                "title": "Avoiding verbal opposition",
+                "body": "Avoids challenging others' ideas and hedges when stating own ideas. Why? Verbal opposition signals destructive fighting.",
+                "_graphic": {
+                    "src": "course/en/images/c-205-002.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Avoiding verbal opposition",
+                "_classes": "",
+                "_top": 10,
+                "_left": 60
+            },
+            {
+                "title": "Managing up",
+                "body": "Avoids talking up achievements in front of people with more seniority. Why? Emphasising achievements to people higher-up is often perceived as boasting.",
+                "_graphic": {
+                    "src": "course/en/images/c-205-003.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Managing up",
+                "_classes": "",
+                "_top": 10,
+                "_left": 70
+            },
+            {
+                "title": "Being indirect",
+                "body": "Speaks indirectly rather than bluntly when telling subordinates what to do. Why? Blatantly directing others is too bossy.",
+                "_graphic": {
+                    "src": "course/en/images/c-205-003.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Being indirect",
+                "_classes": "",
+                "_top": 10,
+                "_left": 80
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-210",
+        "_parentId": "b-210",
+        "_type": "component",
+        "_component": "matching",
+        "_classes": "",
+        "_layout": "full",
+        "_attempts": 1,
+        "_questionWeight": 1,
+        "_canShowModelAnswer": true,
+        "_shouldDisplayAttempts": false,
+        "_isRandom": true,
+        "title": "The consequences",
+        "displayTitle": "The consequences",
+        "body": "Reflect on styles of talking and why people use them when communicating. What's the best way to communicate? There's no one best way. In one situation and with a particular person, a particular style may make sense. In another situation and with a different audience, it could be disastrous. Consider the following situations and reflect on what the audience may think of the speaker.",
+        "instruction": "Select your response from the options below and select Submit.",
+        "placeholder": "Select an option",
+        "_items": [
+            {
+                "text": "James is presenting to his research team and is asking a lot of questions.",
+                "_options": [
+                    {
+                        "text": "Lack of collaboration",
+                        "_isCorrect": false
+                    },
+                    {
+                        "text": "Lack of knowledge",
+                        "_isCorrect": true
+                    }
+                ]
+            },
+            {
+                "text": "Lisa avoids challenging other's ideas when discussing her findings.",
+                "_options": [
+                    {
+                        "text": "Lack of strong ideas",
+                        "_isCorrect": true
+                    },
+                    {
+                        "text": "Lack of collaboration",
+                        "_isCorrect": false
+                    }
+                ]
+            },
+            {
+                "text": "Mark needs his research team to make a change, but is being indirect in his requests.",
+                "_options": [
+                    {
+                        "text": "Lack of competence",
+                        "_isCorrect": true
+                    },
+                    {
+                        "text": "Lack of assertiveness",
+                        "_isCorrect": false
+                    }
+                ]
+            }
+        ],
+        "_feedback": {
+            "correct": "That's right. Asking questions frequently may make you appear ignorant to others; but if you fail to ask the right questions valuable knowledge remains buried. Not sticking up for your ideas may make your ideas look weak and not credible. Being indirect, when directness is required, shows a lack of assertiveness and clear thinking. People may conclude your directives are unimportant. Your style will be influenced by the situation, the people involved, the culture and your own experience. Select <strong>'The power of talk'</strong> article from the Resources Menu to delve into the importance of linguistic style.",
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "That's not quite right. Asking questions frequently may make you appear ignorant to others; but if you fail to ask the right questions valuable knowledge remains buried. Not sticking up for your ideas may make your ideas look weak and not credible. Being indirect, when directness is required, shows a lack of assertiveness and clear thinking. People may conclude your directives are unimportant. Your style will be influenced by the situation, the people involved, the culture and your own experience. Select <strong>'The power of talk'</strong> article from the Resources Menu to delve into the importance of linguistic style."
+            },
+            "_incorrect": {
+                "notFinal": "",
+                "final": "That's not right. Asking questions frequently may make you appear ignorant to others; but if you fail to ask the right questions valuable knowledge remains buried. Not sticking up for your ideas may make your ideas look weak and not credible. Being indirect, when directness is required, shows a lack of assertiveness and clear thinking. People may conclude your directives are unimportant. Your style will be influenced by the situation, the people involved, the culture and your own experience. Select <strong>'The power of talk'</strong> article from the Resources Menu to delve into the importance of linguistic style."
+            }
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-215",
+        "_parentId": "b-215",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "play",
+        "_useClosedCaptions": true,
+        "_allowFullScreen": true,
+        "title": "Considering diversity",
+        "displayTitle": "Considering diversity",
+        "body": "One of the barriers to effective communication is not considering the cultural, personal and social differences of your audience. Diversity matters, and should be taken into account when thinking about potential audiences and how you communicate. The key to communicating effectively with culturally and linguistically diverse audiences is to be flexible.",
+        "instruction": "Select play",
+        "_media": {
+            "mp4": "course/en/video/c-00.mp4",
+            "poster": "course/en/video/c-00.jpg"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-220",
+        "_parentId": "b-220",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "play",
+        "_useClosedCaptions": true,
+        "_allowFullScreen": true,
+        "title": "Is persuasion important?",
+        "displayTitle": "Is persuasion important?",
+        "body": "Do you need to persuade others? You may need to persuade your confirmation panel that your research is viable. You may want to convince people to participate in a survey or focus group. What if you need access to research infrastructure or you need someone to give you an opportunity (be that a grant, job, etc.)? These are all situations where the power of persuasion is needed. Let's hear how the power of persuasion can work.",
+        "instruction": "Select play",
+        "_media": {
+            "mp4": "course/en/video/c-00.mp4",
+            "poster": "course/en/video/c-00.jpg"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-225",
+        "_parentId": "b-225",
+        "_type": "component",
+        "_component": "accordion",
+        "_classes": "",
+        "_layout": "full",
+        "title": "The steps to being persuasive",
+        "displayTitle": "The steps to being persuasive",
+        "body": "Professor Jay Conger, an expert in leadership and communication, wrote about being persuasive in his article 'The necessary art of persuasion'. According to Conger, persuasive communication involves four steps.",
+        "instruction": "Select each heading to find out more.",
+        "_items": [
+            {
+                "title": "Establishing credibility",
+                "body": "Credibility is based on your expertise and relationships. This is your chance to 'earn the right'! You may want to use a brief self–introduction that establishes your credibility. Some people struggle with this – they interpret it as big noting themselves. Keep it simple and with the formality of the occasion – it will certainly help.",
+                "_graphic": {
+                    "src": "course/en/images/c-225-001.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Framing goals on common ground",
+                "body": "Take the time to look for shared advantages when you describe your position. Find interests or outcomes that overlap and explore those in your message. Point to areas where there are mutual advantages and look for a shared higher purpose.",
+                "_graphic": {
+                    "src": "course/en/images/c-225-002.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Vividly reinforcing your position",
+                "body": "Make your evidence and data more compelling via examples, stories and metaphors. Support your message and provide evidence to back up what you're saying.",
+                "_graphic": {
+                    "src": "course/en/images/c-225-003.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Connecting emotionally",
+                "body": "Emotional awareness means being attuned to the emotional messages being conveyed in a communication. These are not only with the words being spoken but the way they are delivered. It's about adjusting your own emotional tone to match each audience's ability to receive your message.",
+                "_graphic": {
+                    "src": "course/en/images/c-225-004.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-230",
+        "_parentId": "b-230",
+        "_type": "component",
+        "_component": "matching",
+        "_classes": "",
+        "_layout": "full",
+        "_attempts": 1,
+        "_questionWeight": 1,
+        "_canShowModelAnswer": true,
+        "_shouldDisplayAttempts": false,
+        "_isRandom": true,
+        "title": "Persuasive language",
+        "displayTitle": "Persuasive language",
+        "body": "We use persuasive language to convince others to agree with our facts, share our values, accept our argument and conclusions and adopt our way of thinking. Reflect on the persuasive language techniques below. Which do you think sound more persuasive?",
+        "instruction": "Select your response from the options below and select Submit.",
+        "placeholder": "Select an option",
+        "_items": [
+            {
+                "text": "Be specific.",
+                "_options": [
+                    {
+                        "text": "90% of people see results in 2 weeks.",
+                        "_isCorrect": true
+                    },
+                    {
+                        "text": "Results can be seen in 2 weeks.",
+                        "_isCorrect": false
+                    }
+                ]
+            },
+            {
+                "text": "Be positive.",
+                "_options": [
+                    {
+                        "text": "Failure to act on the recommendations will...",
+                        "_isCorrect": false
+                    },
+                    {
+                        "text": "Acting on the recommendations will...",
+                        "_isCorrect": true
+                    }
+                ]
+            },
+            {
+                "text": "Use positive framing.",
+                "_options": [
+                    {
+                        "text": "I don't know much about this industry.",
+                        "_isCorrect": false
+                    },
+                    {
+                        "text": "Your industry is intriguing to me.",
+                        "_isCorrect": true
+                    }
+                ]
+            }
+        ],
+        "_feedback": {
+            "correct": "That's right. By adopting a positive tone and positively framing your message you put your audience in a receptive frame of mind. Great communicators use language to create mental pictures and stir emotions. Being specific and clear helps to persuade people to part with their money, make a strategic decision or generally shake things up. What steps will you take? Select the article <strong>'The necessary art of persuasion'</strong> from the Resources menu to delve more into persuasive techniques. Then open your <strong>CDP</strong> to complete the activity: <strong>The persuasive challenge</strong>.",
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "That's not quite right. By adopting a positive tone and positively framing your message you put your audience in a receptive frame of mind. Great communicators use language to create mental pictures and stir emotions. Being specific and clear helps to persuade people to part with their money, make a strategic decision or generally shake things up. What steps will you take? Select the article <strong>'The necessary art of persuasion'</strong> from the Resources menu to delve more into persuasive techniques. Then open your <strong>CDP</strong> to complete the activity: <strong>The persuasive challenge</strong>."
+            },
+            "_incorrect": {
+                "notFinal": "",
+                "final": "That's not right. By adopting a positive tone and positively framing your message you put your audience in a receptive frame of mind. Great communicators use language to create mental pictures and stir emotions. Being specific and clear helps to persuade people to part with their money, make a strategic decision or generally shake things up. What steps will you take? Select the article <strong>'The necessary art of persuasion'</strong> from the Resources menu to delve more into persuasive techniques. Then open your <strong>CDP</strong> to complete the activity: <strong>The persuasive challenge</strong>."
+            }
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-235",
+        "_parentId": "b-235",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "play",
+        "_useClosedCaptions": true,
+        "_allowFullScreen": true,
+        "title": "It's in your hands",
+        "displayTitle": "It's in your hands",
+        "body": "In today's world, career paths are becoming more flexible and diverse and new opportunities are appearing. Be prepared to take advantage of such opportunities by developing your communication skills. It's a critical factor in your career success. What can you do to improve your communication skills?",
+        "instruction": "Select play.",
+        "_media": {
+            "mp4": "course/en/video/c-235.mp4",
+            "poster": "course/en/video/c-235.jpg"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-240",
+        "_parentId": "b-240",
+        "_type": "component",
+        "_component": "accordion",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Devise a plan",
+        "displayTitle": "Devise a plan",
+        "body": "Ultimately, having a plan or strategy is about two things: what's important and what's worth doing. What activities can you add to your communication plan?",
+        "instruction": "Select each heading to find out more.",
+        "_items": [
+            {
+                "title": "Observe others",
+                "body": "Keep an eye out for and attend talks and presentations. Make use of accessible talks online (e.g. <a href=\"http://www.ted.com\" target=\"_blank\">www.ted.com</a>). Reflect on what presenters did well, why their communication worked or didn't work and what you can incorporate in your future communication approach.",
+                "_graphic": {
+                    "src": "course/en/images/c-240-001.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Learn from experts",
+                "body": "Read books and articles on effective communication (e.g. Make it Stick by Chip and Dan Heath or Harvard Business Review's '10 must reads on communication'). Find out about other communication courses and online resources offered by the University. Seek out vodcasts or podcasts.",
+                "_graphic": {
+                    "src": "course/en/images/c-240-002.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Explore communication frameworks",
+                "body": "Build on what you've already learnt in this course. Spend more time using S.P.I.N. or other communication frameworks that will help with your communication flow.",
+                "_graphic": {
+                    "src": "course/en/images/c-240-003.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Have a go",
+                "body": "Actively seek out opportunities to present and communicate your ideas to both academic and non-academic audiences. You may want to participate in the <a href=\"www.threeminutethesis.org\" target=\"_blank\">Three Minute Thesis (3MT) competition</a>. Remember, practice doesn't always make perfect, but it sure helps!",
+                "_graphic": {
+                    "src": "course/en/images/c-240-004.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-245",
+        "_parentId": "b-245",
+        "_type": "component",
+        "_component": "mcq",
+        "_classes": "",
+        "_layout": "full",
+        "_attempts": 1,
+        "_shouldDisplayAttempts": false,
+        "_questionWeight": 1,
+        "_isRandom": true,
+        "_selectable": 6,
+        "_canShowModelAnswer": true,
+        "_canShowMarking": true,
+        "_recordInteraction": true,
+        "title": "Plan for the present. Prepare for the future.",
+        "displayTitle": "Plan for the present. Prepare for the future.",
+        "body": "Developing your communication capabilities will enhance your research and prepare you for life after your degree. Ask yourself, \"What do I need to work on to be a better communicator\"?",
+        "instruction": "Select one or more of the following options and select submit.",
+        "_items": [
+            {
+                "text": "Use persuasion techniques.",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Make my communication stickier.",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Use a communication framework, like S.P.I.N.",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Practise good communication techniques.",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Use various communication channels.",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Work on connecting to my audience.",
+                "_shouldBeSelected": true
+            }
+        ],
+        "_feedback": {
+            "correct": "These are just a few suggestions we've covered in this course. Time to identify what you would like to work on to become a better communicator. Identify a set of clear actions you can take to achieve your commitments. For example, you may want to practise your communication techniques by participating in a Three Minute Thesis (3MT) competition. Open your <strong>CDP</strong> to complete your <strong>CDP action plan</strong>. Discuss your plan with your supervisor, mentor, coach or industry expert and find out how they can help you implement your development plan.",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "These are just a few suggestions we've covered in this course. Time to identify what you would like to work on to become a better communicator. Identify a set of clear actions you can take to achieve your commitments. For example, you may want to practise your communication techniques by participating in a Three Minute Thesis (3MT) competition. Open your <strong>CDP</strong> to complete your <strong>CDP action plan</strong>. Discuss your plan with your supervisor, mentor, coach or industry expert and find out how they can help you implement your development plan."
+            },
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "These are just a few suggestions we've covered in this course. Time to identify what you would like to work on to become a better communicator. Identify a set of clear actions you can take to achieve your commitments. For example, you may want to practise your communication techniques by participating in a Three Minute Thesis (3MT) competition. Open your <strong>CDP</strong> to complete your <strong>CDP action plan</strong>. Discuss your plan with your supervisor, mentor, coach or industry expert and find out how they can help you implement your development plan."
+            }
+        },
+        "_buttons": {
+            "_submit": {
+                "buttonText": "Submit",
+                "ariaLabel": "Select here to submit your answer."
+            },
+            "_reset": {
+                "buttonText": "Reset",
+                "ariaLabel": ""
+            },
+            "_showCorrectAnswer": {
+                "buttonText": "Correct Answer",
+                "ariaLabel": ""
+            },
+            "_hideCorrectAnswer": {
+                "buttonText": "My Answer",
+                "ariaLabel": ""
+            },
+            "_showFeedback": {
+                "buttonText": "Show feedback",
+                "ariaLabel": ""
+            },
+            "remainingAttemptsText": "attempts remaining",
+            "remainingAttemptText": "final attempt"
+        },
         "_pageLevelProgress": {
             "_isEnabled": true
         }
