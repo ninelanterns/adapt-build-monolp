@@ -356,7 +356,7 @@
         "instruction": "Select the icons to find out.",
         "mobileInstruction": "Select the arrows and then the plus icons to find out.",
         "_graphic": {
-            "src": "course/en/images/c-40-001.gif",
+            "src": "course/en/images/c-40-001.jpg",
             "alt": ""
         },
         "_items": [
@@ -364,7 +364,7 @@
                 "title": "Communicator",
                 "body": "The sender, speaker, issuer, or writer who intends to convey or transmit a message. Are you the communicator? Before communicating the message, it's a good idea to consider what you are doing, why you are doing it, how you should do it and what you expect the result to be.",
                 "_graphic": {
-                    "src": "course/en/images/c-40-002.gif",
+                    "src": "course/en/images/c-40-002.jpg",
                     "alt": "",
                     "_classes": ""
                 },
@@ -377,7 +377,7 @@
                 "title": "Message",
                 "body": "The subject matter of the communication. What does the communication involve? What is its purpose? What information will be included? How much detail will it include?",
                 "_graphic": {
-                    "src": "course/en/images/c-40-003.gif",
+                    "src": "course/en/images/c-40-003.jpg",
                     "alt": "",
                     "_classes": ""
                 },
@@ -390,7 +390,7 @@
                 "title": "Transmission",
                 "body": "The act of conveying the message, verbally or non-verbally. Verbal communication includes written and oral communication. Non-verbal communication, or body language, includes facial expressions, eye contact, body posture, gestures, tone of voice, touch, etc.",
                 "_graphic": {
-                    "src": "course/en/images/c-40-004.gif",
+                    "src": "course/en/images/c-40-004.jpg",
                     "alt": "",
                     "_classes": ""
                 },
@@ -403,7 +403,7 @@
                 "title": "Channel",
                 "body": "The medium used to transmit the message. How would you communicate the findings of your research? You could use traditional academic channels, like journal articles, texts, conferences or reports. Or perhaps 'old' media, such as newspapers, magazines, radio and television. And of course there's the 'new' media, like web pages, blogs and social media.",
                 "_graphic": {
-                    "src": "course/en/images/c-40-005.gif",
+                    "src": "course/en/images/c-40-005.jpg",
                     "alt": "",
                     "_classes": ""
                 },
@@ -416,7 +416,7 @@
                 "title": "Receiver",
                 "body": "Who is the message meant for? Who will be reading your report? Who will be listening to your presentation? Take into consideration the factors that might affect the behaviour of the intended receiver or audience.",
                 "_graphic": {
-                    "src": "course/en/images/c-40-006.gif",
+                    "src": "course/en/images/c-40-006.jpg",
                     "alt": "",
                     "_classes": ""
                 },
@@ -429,7 +429,7 @@
                 "title": "Response",
                 "body": "How did the receiver reply or react? Did they have any questions? What was the result of the communication? Did you achieve your objectives?",
                 "_graphic": {
-                    "src": "course/en/images/c-40-007.gif",
+                    "src": "course/en/images/c-40-007.jpg",
                     "alt": "",
                     "_classes": ""
                 },
@@ -703,7 +703,7 @@
         "_layout": "left",
         "title": "What do good communicators do?",
         "displayTitle": "",
-        "body": "Good communicators:<br><ul><li>treat others how they'd like to be treated</li><li>recognise preferred forms of communication</li><li>think before speaking</li><li>listen before talking or typing</li><li>ask questions to better understand</li><li>are aware of non-verbal behaviour</li><li>are professional in handling differing points of view</li><li>are open to new ideas or contributions</li><li>don't commit to things they don't want to, or can't do</li><li>recognise that emotions may be at play.</li></ul><br>Want to know more. Select the <strong>What do good communicators do?</strong> document from the Resources menu. This delves more into the above communication skills and attributes.",
+        "body": "Good communicators:<br><br><ul><li>Treat others how they'd like to be treated</li><li>Recognise preferred forms of communication</li><li>Think before speaking</li><li>Listen before talking or typing</li><li>Ask questions to better understand</li><li>Are aware of non-verbal behaviour</li><li>Are professional in handling differing points of view</li><li>Are open to new ideas or contributions</li><li>Don't commit to things they don't want to, or can't do</li><li>Recognise that emotions may be at play.</li></ul><br>Want to know more. Select the <strong>What do good communicators do?</strong> document from the Resources menu. This delves more into the above communication skills and attributes.",
         "instruction": "",
         "_pageLevelProgress": {
             "_isEnabled": true
@@ -873,7 +873,7 @@
         "_parentId": "b-85",
         "_type": "component",
         "_component": "hotgraphic",
-        "_classes": "",
+        "_classes": "transparent-pins",
         "_layout": "full",
         "_setCompletionOn": "allItems",
         "_canCycleThroughPagination": false,
@@ -899,8 +899,8 @@
                 },
                 "strapline": "Research centric",
                 "_classes": "",
-                "_top": 10,
-                "_left": 10
+                "_top": 39,
+                "_left": 35.5
             },
             {
                 "title": "Audience centric",
@@ -912,8 +912,8 @@
                 },
                 "strapline": "Audience centric",
                 "_classes": "",
-                "_top": 10,
-                "_left": 20
+                "_top": 39,
+                "_left": 55.5
             },
             {
                 "title": "Meet in the middle",
@@ -925,8 +925,8 @@
                 },
                 "strapline": "Meet in the middle",
                 "_classes": "",
-                "_top": 10,
-                "_left": 30
+                "_top": 55,
+                "_left": 45.3
             }
         ],
         "_pageLevelProgress": {
@@ -1058,7 +1058,7 @@
         "_parentId": "b-100",
         "_type": "component",
         "_component": "hotgraphic",
-        "_classes": "",
+        "_classes": "transparent-pins",
         "_layout": "full",
         "_setCompletionOn": "allItems",
         "_canCycleThroughPagination": false,
@@ -1084,8 +1084,8 @@
                 },
                 "strapline": "Situation",
                 "_classes": "",
-                "_top": 10,
-                "_left": 10
+                "_top": 12,
+                "_left": 56
             },
             {
                 "title": "Problems",
@@ -1097,8 +1097,8 @@
                 },
                 "strapline": "Problems",
                 "_classes": "",
-                "_top": 10,
-                "_left": 20
+                "_top": 50,
+                "_left": 63
             },
             {
                 "title": "Implications",
@@ -1110,8 +1110,8 @@
                 },
                 "strapline": "Implications",
                 "_classes": "",
-                "_top": 10,
-                "_left": 30
+                "_top": 58,
+                "_left": 36.5
             },
             {
                 "title": "Need",
@@ -1123,8 +1123,8 @@
                 },
                 "strapline": "Need",
                 "_classes": "",
-                "_top": 10,
-                "_left": 40
+                "_top": 22,
+                "_left": 30.5
             }
         ],
         "_pageLevelProgress": {
@@ -1146,28 +1146,16 @@
             {
                 "title": "Observation #1",
                 "body": "When communicating, people tend to talk about themselves – what they want, what they're researching, what facilities they have access to. For instance: <br><ul><li>\"My research investigates a new technique for studying the mating behaviour of parrots.\"</li><li>\"I'm working in a lab studying a particular type of protein in wheat.\"</li><li>\"I'm researching the portrayal of heroes in early American literature.\"</li></ul>",
-                "_graphic": {
-                    "src": "course/en/images/c-105-001.jpg",
-                    "alt": ""
-                },
                 "_classes": ""
             },
             {
                 "title": "Observation #2",
                 "body": "Sometimes people ignore, or fail to consider audience interests. The may use language that audiences are unfamiliar with or fail to demonstrate the relevance of the research. For instance: <br><ul><li>\"Bowl systems occur in loose groups used by a number of males as traditional courtship areas and are unrelated to feeding or nesting.\"</li><li>\"While monomeric gluten proteins (gliadin) show viscous behaviour, polymeric gluten proteins (glutenin) are elastic.\"</li><li>\"American heroes have been depicted in literature since the seventeenth century. Essentially, the depictions are stereotyped, pejorative, and unauthentic.\"</li></ul>",
-                "_graphic": {
-                    "src": "course/en/images/c-105-002.jpg",
-                    "alt": ""
-                },
                 "_classes": ""
             },
             {
                 "title": "Observation #3",
                 "body": "As a result of the first two observations, audiences often switch off, minds wander, and the communicator fails to make the most of the opportunity – they fail to connect. Leaving researchers thinking: <br><ul><li>\"I think it went straight over their head, they didn't seem that interested in my research into bowl systems used by the Kakapo Strigops habroptilus of New Zealand.\"</li><li>\"I think my talk fell flat, I found it difficult to connect – I was trying to explain about the importance of monomeric gluten proteins but it all got a bit technical.\"</li><li>\"Most of the literature I spoke about, the audience had never heard of – I'm starting to question the relevance of my research.\"</li></ul>",
-                "_graphic": {
-                    "src": "course/en/images/c-105-003.jpg",
-                    "alt": ""
-                },
                 "_classes": ""
             }
         ],
@@ -2192,8 +2180,8 @@
         "body": "In today's world, career paths are becoming more flexible and diverse and new opportunities are appearing. Be prepared to take advantage of such opportunities by developing your communication skills. It's a critical factor in your career success. What can you do to improve your communication skills?",
         "instruction": "Select play.",
         "_media": {
-            "mp4": "course/en/video/c-235.mp4",
-            "poster": "course/en/video/c-235.jpg"
+            "mp4": "course/en/video/c-00.mp4",
+            "poster": "course/en/video/c-00.jpg"
         },
         "_pageLevelProgress": {
             "_isEnabled": true
@@ -2214,37 +2202,21 @@
             {
                 "title": "Observe others",
                 "body": "Keep an eye out for and attend talks and presentations. Make use of accessible talks online (e.g. <a href=\"http://www.ted.com\" target=\"_blank\">www.ted.com</a>). Reflect on what presenters did well, why their communication worked or didn't work and what you can incorporate in your future communication approach.",
-                "_graphic": {
-                    "src": "course/en/images/c-240-001.jpg",
-                    "alt": ""
-                },
                 "_classes": ""
             },
             {
                 "title": "Learn from experts",
                 "body": "Read books and articles on effective communication (e.g. Make it Stick by Chip and Dan Heath or Harvard Business Review's '10 must reads on communication'). Find out about other communication courses and online resources offered by the University. Seek out vodcasts or podcasts.",
-                "_graphic": {
-                    "src": "course/en/images/c-240-002.jpg",
-                    "alt": ""
-                },
                 "_classes": ""
             },
             {
                 "title": "Explore communication frameworks",
                 "body": "Build on what you've already learnt in this course. Spend more time using S.P.I.N. or other communication frameworks that will help with your communication flow.",
-                "_graphic": {
-                    "src": "course/en/images/c-240-003.jpg",
-                    "alt": ""
-                },
                 "_classes": ""
             },
             {
                 "title": "Have a go",
                 "body": "Actively seek out opportunities to present and communicate your ideas to both academic and non-academic audiences. You may want to participate in the <a href=\"www.threeminutethesis.org\" target=\"_blank\">Three Minute Thesis (3MT) competition</a>. Remember, practice doesn't always make perfect, but it sure helps!",
-                "_graphic": {
-                    "src": "course/en/images/c-240-004.jpg",
-                    "alt": ""
-                },
                 "_classes": ""
             }
         ],
