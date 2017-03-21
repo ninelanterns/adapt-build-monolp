@@ -49,10 +49,12 @@ define(function(require) {
             });
 
             $menuStrip.off('.accordionLayout').on('click.accordionLayout', function(e) {
+                // Only execute if screen is small and a target element is clicked
+                var screenSmall = Adapt.device.screenSize === 'small';
+                var isTarget = e.target.className
+                            && e.target.className.match(/filter-menu-strip-top|filter-menu-strip-title|filter-menu-strip-icon/);
 
-                // console.log('sfdag');
-
-                if (e.target.className && e.target.className.match(/filter-menu-strip-top|filter-menu-strip-title|filter-menu-strip-icon/)) {
+                if (screenSmall && isTarget) {
                     // Slide the section open/close and update icon
                     var $thisStrip = $(this);
                     $thisStrip.find('.filter-menu-items-bottom').slideToggle();
