@@ -125,6 +125,10 @@
         background-attachment: scroll;
     }
 
+    a {
+        color: @foreground-color-inverted;
+    }
+
     .component-container {
         background-color: @primary-color-faded;
         color: @primary-color-inverted;
@@ -140,6 +144,10 @@
 .primary-background {
     background-color: @primary-color;
     color: @foreground-color-inverted;
+
+    a {
+        color: @foreground-color-inverted;
+    }
 
     .article-title,
     .block-title,
@@ -237,4 +245,8 @@ blockquote {
         text-align: center;
         .hero-text;
     }
+}
+
+.columns-with-graphic .component .component-body {
+    margin: 0;
 }
