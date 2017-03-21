@@ -1465,7 +1465,7 @@
     "_items": [
       {
         "title": "The manager...",
-        "body": "<ul><li>Administers</li><li>Maintains</li><li>Focuses on systems and structure</li><li>Controls systems and people</li><li>Accepts the status quo</li><li>Has a short-term view</li><li>Manages tasksshort-term view</li><li>Manages tasks</li></ul>",
+        "body": "<ul><li>Administers</li><li>Maintains</li><li>Focuses on systems and structure</li><li>Controls systems and people</li><li>Accepts the status quo</li><li>Has a short-term view</li><li>Manages tasks</li></ul>",
         "_graphic": {
           "src": "course/en/images/c-170-001.jpg",
           "alt": ""
@@ -1474,7 +1474,7 @@
       },
       {
         "title": "The leader...",
-        "body": "<ul><li>Innovates</li><li>Develops</li><li>Focuses on people and emotions</li><li>Inspires people</li><li>Challenges the status quo</li><li>Has a long-term perspective</li><li>Leads people</li></ul>",
+        "body": "<ul><li>Innovates</li><li>Develops</li><li>Focuses on people and emotions</li><li>Inspires people</li><li>Challenges the status quo</li><li>Has a long-term perspective</li></ul>",
         "_graphic": {
           "src": "course/en/images/c-170-002.jpg",
           "alt": ""
