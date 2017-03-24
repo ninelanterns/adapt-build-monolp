@@ -1,24 +1,30 @@
 .hotgraphic-component {
 
 	.hotgraphic-graphic-pin {
-		background-color: @item-text-color;
+		background-color: transparent;
+
+        .hotgraphic-graphic-pin-icon {
+    		color: @item-text-color;
+            background-color: @item-color;
+            border-radius: 50%;
+            // box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    	}
 
 		&.visited {
 			.hotgraphic-graphic-pin-icon {
-				color: @item-color-visited;
+        		color: @item-text-color;
+				background-color: @item-color-visited;
+                opacity: 0.7;
+                // box-shadow: none;
 			}
 		}
 		.no-touch &:hover {
-			background-color: @item-text-color;
-
 			.hotgraphic-graphic-pin-icon {
-				color: @item-color-hover;
+        		color: @item-text-color;
+				background-color: @item-color-hover;
+                opacity: 1;
 			}
 		}
-	}
-
-	.hotgraphic-graphic-pin-icon {
-		color: @item-color;
 	}
 
 	.hotgraphic-popup {
@@ -73,36 +79,4 @@
 		.item-title;
 		margin-bottom: @title-text-margin;
 	}
-
-    &.hidden-pins {
-
-        .hotgraphic-graphic-pin {
-            background: none;
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-
-            &:hover,
-            &.visited {
-                background: @foreground-color;
-                opacity: 0.1;
-            }
-        }
-
-        .hotgraphic-graphic-pin-icon {
-            display: none !important;
-        }
-    }
-
-    &.transparent-pins {
-
-        .hotgraphic-graphic-pin {
-            background: transparent;
-
-            &:hover,
-            &.visited {
-                background: transparent;
-            }
-        }
-    }
 }

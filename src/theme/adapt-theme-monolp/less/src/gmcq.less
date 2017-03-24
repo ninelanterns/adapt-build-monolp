@@ -162,3 +162,42 @@
         }
     }
 }
+
+.image-background {
+    .gmcq-component {
+
+        .gmcq-item label {
+            color: @item-text-color;
+            background-color: transparent;
+
+            .gmcq-answer-icon {
+                color: @item-text-color !important;
+
+                &.checkbox {
+                    border: 3px solid @item-text-color;
+                }
+            }
+
+            .gmcq-item-inner {
+                color: @item-text-color !important;
+            }
+
+            &.selected {
+                color: @item-text-color-selected;
+                background-color: transparent;
+
+                .gmcq-answer-icon {
+                    &.checkbox {
+                        border-color: @item-text-color-selected;
+                    }
+                }
+
+                .gmcq-item-inner {
+                    color: @item-text-color;
+                }
+            }
+        }
+    }
+}
+
+// .no-touch .gmcq-component .gmcq-widget:not(.disabled) .gmcq-item label:hover .gmcq-item-inner
