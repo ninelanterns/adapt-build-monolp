@@ -344,7 +344,7 @@
         "_parentId": "b-40",
         "_type": "component",
         "_component": "hotgraphic",
-        "_classes": "hidden-pins",
+        "_classes": "",
         "_layout": "full",
         "_setCompletionOn": "allItems",
         "_canCycleThroughPagination": false,
@@ -370,8 +370,8 @@
                 },
                 "strapline": "Communicator",
                 "_classes": "",
-                "_top": 6,
-                "_left": 44
+                "_top": 0,
+                "_left": 48.7
             },
             {
                 "title": "Message",
@@ -383,8 +383,8 @@
                 },
                 "strapline": "Message",
                 "_classes": "",
-                "_top": 22.2,
-                "_left": 64.9
+                "_top": 15,
+                "_left": 68.5
             },
             {
                 "title": "Transmission",
@@ -396,8 +396,8 @@
                 },
                 "strapline": "Transmission",
                 "_classes": "",
-                "_top": 57.5,
-                "_left": 64.8
+                "_top": 51.5,
+                "_left": 68.5
             },
             {
                 "title": "Channel",
@@ -409,8 +409,8 @@
                 },
                 "strapline": "Channel",
                 "_classes": "",
-                "_top": 73.4,
-                "_left": 44.2
+                "_top": 68,
+                "_left": 48
             },
             {
                 "title": "Receiver",
@@ -422,8 +422,8 @@
                 },
                 "strapline": "Receiver",
                 "_classes": "",
-                "_top": 57.2,
-                "_left": 23.5
+                "_top": 51.5,
+                "_left": 27.5
             },
             {
                 "title": "Response",
@@ -435,8 +435,8 @@
                 },
                 "strapline": "Response",
                 "_classes": "",
-                "_top": 22.2,
-                "_left": 23.6
+                "_top": 15.5,
+                "_left": 27.5
             }
         ],
         "_pageLevelProgress": {
@@ -873,7 +873,7 @@
         "_parentId": "b-85",
         "_type": "component",
         "_component": "hotgraphic",
-        "_classes": "transparent-pins",
+        "_classes": "",
         "_layout": "full",
         "_setCompletionOn": "allItems",
         "_canCycleThroughPagination": false,
@@ -1058,7 +1058,7 @@
         "_parentId": "b-100",
         "_type": "component",
         "_component": "hotgraphic",
-        "_classes": "transparent-pins",
+        "_classes": "",
         "_layout": "full",
         "_setCompletionOn": "allItems",
         "_canCycleThroughPagination": false,
@@ -1225,7 +1225,7 @@
         "_shouldDisplayAttempts": false,
         "_questionWeight": 1,
         "_isRandom": false,
-        "_selectable": 1,
+        "_selectable": 5,
         "_canShowModelAnswer": true,
         "_recordInteraction": true,
         "_columns": 5,
@@ -1239,8 +1239,8 @@
                 "_shouldBeSelected": true,
                 "_graphic": {
                     "alt": "",
-                    "large": "course/en/images/c-130-001-large.gif",
-                    "small": "course/en/images/c-130-001-small.gif"
+                    "large": "course/en/images/c-130-001.png",
+                    "small": "course/en/images/c-130-001.png"
                 }
             },
             {
@@ -1248,8 +1248,8 @@
                 "_shouldBeSelected": true,
                 "_graphic": {
                     "alt": "",
-                    "large": "course/en/images/c-130-002-large.gif",
-                    "small": "course/en/images/c-130-002-small.gif"
+                    "large": "course/en/images/c-130-002.png",
+                    "small": "course/en/images/c-130-002.png"
                 }
             },
             {
@@ -1257,8 +1257,8 @@
                 "_shouldBeSelected": true,
                 "_graphic": {
                     "alt": "",
-                    "large": "course/en/images/c-130-003-large.gif",
-                    "small": "course/en/images/c-130-003-small.gif"
+                    "large": "course/en/images/c-130-003.png",
+                    "small": "course/en/images/c-130-003.png"
                 }
             },
             {
@@ -1266,8 +1266,8 @@
                 "_shouldBeSelected": true,
                 "_graphic": {
                     "alt": "",
-                    "large": "course/en/images/c-130-004-large.gif",
-                    "small": "course/en/images/c-130-004-small.gif"
+                    "large": "course/en/images/c-130-004.png",
+                    "small": "course/en/images/c-130-004.png"
                 }
             },
             {
@@ -1275,8 +1275,8 @@
                 "_shouldBeSelected": true,
                 "_graphic": {
                     "alt": "",
-                    "large": "course/en/images/c-130-005-large.gif",
-                    "small": "course/en/images/c-130-005-small.gif"
+                    "large": "course/en/images/c-130-005.png",
+                    "small": "course/en/images/c-130-005.png"
                 }
             }
         ],
@@ -1789,7 +1789,7 @@
         "instruction": "Select the icons to find out more.",
         "mobileInstruction": "Select the arrows and then the plus icons to find out more.",
         "_graphic": {
-            "src": "course/en/images/c-205.jpg",
+            "src": "course/en/images/c-205-001.jpg",
             "alt": ""
         },
         "_items": [
@@ -1797,105 +1797,105 @@
                 "title": "Sharing credit",
                 "body": "Uses \"we\" rather than \"I\" to describe personal accomplishments. Why? \"I\" can seem too self-promotional.",
                 "_graphic": {
-                    "src": "course/en/images/c-205-001.jpg",
+                    "src": "course/en/images/c-205-002.jpg",
                     "alt": "",
                     "_classes": ""
                 },
                 "strapline": "Sharing credit",
                 "_classes": "",
-                "_top": 10,
-                "_left": 10
+                "_top": 0,
+                "_left": 58.5
             },
             {
                 "title": "Acting modestly",
                 "body": "Downplays their certainty in the material being presented. Why? Confident behaviour can be perceived as too boastful.",
                 "_graphic": {
-                    "src": "course/en/images/c-205-002.jpg",
+                    "src": "course/en/images/c-205-003.jpg",
                     "alt": "",
                     "_classes": ""
                 },
                 "strapline": "Acting modestly",
                 "_classes": "",
-                "_top": 10,
-                "_left": 20
+                "_top": 19.5,
+                "_left": 72.5
             },
             {
                 "title": "Asking questions",
                 "body": "Frequently asks questions. Why? Questions help the speaker generate knowledge.",
                 "_graphic": {
-                    "src": "course/en/images/c-205-002.jpg",
+                    "src": "course/en/images/c-205-004.jpg",
                     "alt": "",
                     "_classes": ""
                 },
                 "strapline": "Asking questions",
                 "_classes": "",
-                "_top": 10,
-                "_left": 30
+                "_top": 47,
+                "_left": 71
             },
             {
                 "title": "Apologising",
                 "body": "Apologises frequently. Why? Apologies express concern for others.",
                 "_graphic": {
-                    "src": "course/en/images/c-205-002.jpg",
+                    "src": "course/en/images/c-205-005.jpg",
                     "alt": "",
                     "_classes": ""
                 },
                 "strapline": "Apologising",
                 "_classes": "",
-                "_top": 10,
-                "_left": 40
+                "_top": 66.7,
+                "_left": 58.7
             },
             {
                 "title": "Giving feedback",
                 "body": "Discusses weaknesses only after first identifying strengths. Why? Buffering criticism saves face for the individual receiving feedback.",
                 "_graphic": {
-                    "src": "course/en/images/c-205-002.jpg",
+                    "src": "course/en/images/c-205-006.jpg",
                     "alt": "",
                     "_classes": ""
                 },
                 "strapline": "Giving feedback",
                 "_classes": "",
-                "_top": 10,
-                "_left": 50
+                "_top": 66.5,
+                "_left": 38.5
             },
             {
                 "title": "Avoiding verbal opposition",
                 "body": "Avoids challenging others' ideas and hedges when stating own ideas. Why? Verbal opposition signals destructive fighting.",
                 "_graphic": {
-                    "src": "course/en/images/c-205-002.jpg",
+                    "src": "course/en/images/c-205-007.jpg",
                     "alt": "",
                     "_classes": ""
                 },
                 "strapline": "Avoiding verbal opposition",
                 "_classes": "",
-                "_top": 10,
-                "_left": 60
+                "_top": 48,
+                "_left": 24.5
             },
             {
                 "title": "Managing up",
                 "body": "Avoids talking up achievements in front of people with more seniority. Why? Emphasising achievements to people higher-up is often perceived as boasting.",
                 "_graphic": {
-                    "src": "course/en/images/c-205-003.jpg",
+                    "src": "course/en/images/c-205-008.jpg",
                     "alt": "",
                     "_classes": ""
                 },
                 "strapline": "Managing up",
                 "_classes": "",
-                "_top": 10,
-                "_left": 70
+                "_top": 20,
+                "_left": 26
             },
             {
                 "title": "Being indirect",
                 "body": "Speaks indirectly rather than bluntly when telling subordinates what to do. Why? Blatantly directing others is too bossy.",
                 "_graphic": {
-                    "src": "course/en/images/c-205-003.jpg",
+                    "src": "course/en/images/c-205-009.jpg",
                     "alt": "",
                     "_classes": ""
                 },
                 "strapline": "Being indirect",
                 "_classes": "",
-                "_top": 10,
-                "_left": 80
+                "_top": 0,
+                "_left": 38
             }
         ],
         "_pageLevelProgress": {
