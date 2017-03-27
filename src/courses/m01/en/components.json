@@ -905,7 +905,7 @@
     "instruction": "Select the icons to find out about each leadership theory.",
     "mobileInstruction": "Select the arrows and then the plus icons to find out about each leadership theory.",
     "_graphic": {
-      "src": "course/en/images/c-120-001.png",
+      "src": "course/en/images/c-120-001.jpg",
       "alt": ""
     },
     "_items": [
@@ -913,92 +913,92 @@
         "title": "'Great man'",
         "body": "Have you ever heard someone being described as a 'born leader'? The 'Great Man' theory assumes that leaders are born with innate qualities and are destined to lead. The term 'man' was intentional, since at that time, leadership was a concept that was primarily male, military and Western.",
         "_graphic": {
-          "src": "course/en/images/c-120-002.png",
+          "src": "course/en/images/c-120-002.jpg",
           "alt": "",
           "_classes": ""
         },
         "strapline": "'Great man'",
         "_classes": "",
-        "_top": 4.5,
-        "_left": 44
+        "_top": 1,
+        "_left": 47.5
       },
       {
         "title": "Trait",
         "body": "Successful leaders exhibit specific traits -  they're born with extraversion, integrity and courage. The lists of traits are many and continue to be produced. They draw on virtually all the adjectives in the dictionary, which describe some positive or virtuous human attribute, from ambition to zest for life.",
         "_graphic": {
-          "src": "course/en/images/c-120-003.png",
+          "src": "course/en/images/c-120-003.jpg",
           "alt": "",
           "_classes": ""
         },
         "strapline": "Trait",
         "_classes": "",
-        "_top": 18,
-        "_left": 63
+        "_top": 14,
+        "_left": 67
       },
       {
         "title": "Behavioural",
         "body": "Leaders are made, not born – they can learn leadership through teaching and observation. This theory concentrates on what leaders actually do rather than on their traits or source of power. Different patterns of behaviour are observed and categorised as 'styles of leadership'.",
         "_graphic": {
-          "src": "course/en/images/c-120-004.png",
+          "src": "course/en/images/c-120-004.jpg",
           "alt": "",
           "_classes": ""
         },
         "strapline": "Behavioural",
         "_classes": "",
-        "_top": 48.5,
-        "_left": 68
+        "_top": 43.5,
+        "_left": 71.8
       },
       {
         "title": "Situational",
         "body": "Which leadership style does the situation call for? Situational theories propose that leaders choose the best course of action based on the situation at hand. This means not one leadership style is suitable in all situations. Whilst some situations may require an autocratic style, others may need a more participative approach.",
         "_graphic": {
-          "src": "course/en/images/c-120-005.png",
+          "src": "course/en/images/c-120-005.jpg",
           "alt": "",
           "_classes": ""
         },
         "strapline": "Situational",
         "_classes": "",
-        "_top": 73,
-        "_left": 54.5
+        "_top": 67,
+        "_left": 58.7
       },
       {
         "title": "Contingency",
         "body": "It's not just about your leadership style! Effective leadership is contingent or dependent on various other situational factors. The leader's capabilities, personality and preferred leadership style, along with the behaviours of followers, all play a part in the leader's success.",
         "_graphic": {
-          "src": "course/en/images/c-120-006.png",
+          "src": "course/en/images/c-120-006.jpg",
           "alt": "",
           "_classes": ""
         },
         "strapline": "Contingency",
         "_classes": "",
-        "_top": 73,
-        "_left": 33.5
+        "_top": 67,
+        "_left": 37.2
       },
       {
         "title": "Transactional",
         "body": "Transactional theories focus on the relationship between leader and followers. It assumes there's a form of 'contract' in place, where the leader issues the assigned work, praises or criticises, rewards or punishes the followers for their commitment, work and loyalty.",
         "_graphic": {
-          "src": "course/en/images/c-120-007.png",
+          "src": "course/en/images/c-120-007.jpg",
           "alt": "",
           "_classes": ""
         },
         "strapline": "Transactional",
         "_classes": "",
-        "_top": 48.5,
-        "_left": 20.5
+        "_top": 43,
+        "_left": 24.5
       },
       {
         "title": "Transformational",
         "body": "It's all about change. Leaders inspire others to follow, support and be part of a vision. Tasks and work are flexible and followers take responsibility for new ideas. Passion, enthusiasm and energy are key to the leaders' success. People follow because of their connection to the leader and the vision, not because they have to.",
         "_graphic": {
-          "src": "course/en/images/c-120-008.png",
+          "src": "course/en/images/c-120-008.jpg",
           "alt": "",
           "_classes": ""
         },
         "strapline": "Transformational",
         "_classes": "",
-        "_top": 18,
-        "_left": 25
+        "_top": 13,
+        "_left": 28.8
       }
     ],
     "_pageLevelProgress": {
