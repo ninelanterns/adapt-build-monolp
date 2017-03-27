@@ -220,6 +220,10 @@ blockquote {
     }
 }
 
+q {
+    font-style: italic;
+}
+
 .white-background blockquote p {
     border-left: 5px solid lighten(@foreground-color, 40%);
 }
@@ -249,4 +253,11 @@ blockquote {
 
 .columns-with-graphic .component .component-body {
     margin: 0;
+}
+
+.menu-title-long .filter-menu-item-body {
+    height: 104px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: auto;
 }
