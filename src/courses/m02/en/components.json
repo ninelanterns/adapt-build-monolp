@@ -469,7 +469,7 @@
             },
             {
                 "title": "Appropriate channel",
-                "body": "Stage 4 display text: Good communication uses the right channel mix. It takes into account the nature of communication, urgency of communication, audience preferences and geographic considerations."
+                "body": "Good communication uses the right channel mix. It takes into account the nature of communication, urgency of communication, audience preferences and geographic considerations."
             },
             {
                 "title": "Accurate",
@@ -917,7 +917,7 @@
             },
             {
                 "title": "Meet in the middle",
-                "body": "How do you bridge the gap between research and audience centric communication? Challenge yourself to think more simply and develop an open mind set every time you communicate. Take time to explore:<br><br><ul><li>Your audience(s) – who do you want to reach and connect with?</li><li>Your message(s) – what you might say that connects?</li><li>The outcome(s) - what are you are trying to achieve and why are you connecting?</li></ul>",
+                "body": "How do you bridge the gap between research and audience centric communication? Challenge yourself to think more simply and develop an open mind set every time you communicate. Take time to explore:<br><br><ul><li>Your audience(s) – who do you want to reach and connect with?</li><li>Your message(s) – what you might say that connects?</li><li>The outcome(s) – what are you are trying to achieve and why are you connecting?</li></ul>",
                 "_graphic": {
                     "src": "course/en/images/c-85-004.jpg",
                     "alt": "",
@@ -1362,7 +1362,7 @@
         "_hasNavigationInTextArea": false,
         "title": "Ask the right questions",
         "displayTitle": "Ask the right questions",
-        "body": "Michael Marquardt wrote an insightful book called Leading with Questions, his premise being that too often when we prepare to communicate we make statements when we should be asking questions. Thinking about communicating your research using S.P.I.N is made easier by asking yourself the right types of questions.",
+        "body": "Michael Marquardt wrote an insightful book called <cite>Leading with Questions</cite>, his premise being that too often when we prepare to communicate we make statements when we should be asking questions. Thinking about communicating your research using S.P.I.N is made easier by asking yourself the right types of questions.",
         "instruction": "Select the arrows to find out more.",
         "mobileInstruction": "Select the arrows and then the plus icons to find out more.",
         "_items": [
@@ -1436,70 +1436,43 @@
         "_id": "c-150",
         "_parentId": "b-150",
         "_type": "component",
-        "_component": "narrative",
+        "_component": "accordion",
         "_classes": "",
         "_layout": "full",
-        "_setCompletionOn": "allItems",
-        "_hasNavigationInTextArea": false,
         "title": "The sticky principles",
         "displayTitle": "The sticky principles",
-        "body": "How do you make your message memorable? The book, Made to Stick, by brothers Chip and Dan Heath explains that making your communication stickier is about applying six principles or traits.",
+        "body": "How do you make your message memorable? The book, <cite>Made to Stick</cite>, by brothers Chip and Dan Heath explains that making your communication stickier is about applying six principles or traits.",
         "instruction": "Select each heading to find out more.",
-        "mobileInstruction": "Select each heading to find out more.",
         "_items": [
             {
                 "title": "Simple",
                 "body": "The core concept and message. <br><br>\"Saying something short is not the mission – sound bites are not the ideal. Proverbs are the ideal. We must create ideas that are both simple and profound. The Golden Rule (do unto others as you would have them do unto you) is the ultimate model of simplicity: a one-sentence statement so profound that an individual could spend a lifetime learning to follow it.\"",
-                "_graphic": {
-                    "src": "course/en/images/c-150-001.jpg",
-                    "alt": ""
-                },
-                "strapline": "Simple"
+                "_classes": ""
             },
             {
                 "title": "Unexpected",
                 "body": "Grab their attention by using the element of surprise.<br><br>\"How do we get our audience to pay attention to our ideas, and how do we maintain their interest when we need time to get the ideas across? We need to violate people's expectations.\"",
-                "_graphic": {
-                    "src": "course/en/images/c-150-002.jpg",
-                    "alt": ""
-                },
-                "strapline": "Unexpected"
+                "_classes": ""
             },
             {
                 "title": "Concrete",
                 "body": "Can the idea be grasped and remembered?<br><br>\"Naturally sticky ideas are full of concrete images – ice-filled bathtubs, apples with razors – because our brains are wired to remember concrete data. In proverbs, abstract truths are often encoded in concrete language: \"A bird in hand is worth two in the bush.\"",
-                "_graphic": {
-                    "src": "course/en/images/c-150-003.jpg",
-                    "alt": ""
-                },
-                "strapline": "Concrete"
+                "_classes": ""
             },
             {
                 "title": "Credible",
                 "body": "Will they believe it? <br><br>\"Sticky ideas have to carry their own credentials. We need ways to help people test our ideas for themselves – a \"try before you buy\" philosophy for the world of ideas.\"",
-                "_graphic": {
-                    "src": "course/en/images/c-150-003.jpg",
-                    "alt": ""
-                },
-                "strapline": "Credible"
+                "_classes": ""
             },
             {
                 "title": "Emotional",
                 "body": "Let people see the importance of your idea. <br><br>\"How do we get people to care about our ideas? We make them feel something.\"",
-                "_graphic": {
-                    "src": "course/en/images/c-150-003.jpg",
-                    "alt": ""
-                },
-                "strapline": "Emotional"
+                "_classes": ""
             },
             {
                 "title": "Stories",
                 "body": "Use narratives to empower people. <br><br>\"How do we get people to act on our ideas? We tell stories. Firefighters naturally swap stories after every fire, and by doing so they multiply their experience.\"",
-                "_graphic": {
-                    "src": "course/en/images/c-150-003.jpg",
-                    "alt": ""
-                },
-                "strapline": "Stories"
+                "_classes": ""
             }
         ],
         "_pageLevelProgress": {
@@ -1537,7 +1510,7 @@
         "_layout": "full",
         "title": "The key to sticky success",
         "displayTitle": "The key to sticky success",
-        "body": "\"The Heath brothers have taught me that if anyone is going to \"get\" my idea – need it, buy it, fund it, use it – I need to radically shorten my elevator pitch. No more pretending that every building's a skyscraper. I can live in a world of complexity, and my theory of change can and should mirror the system I am working to change, but I'd better talk about it in a way that leaves my target wanting more, not less. Just because I have a theory of change doesn't mean I have to wear it on my sleeve.\" <br><br><em>Judith Samuelson (2007), Review: Made to Stick, Stanford Social Innovation Review.</em> <br><br>Select <strong>'Made to stick'</strong> from the Resources menu to learn more about how you can make an idea, concept or theory more memorable or interesting.",
+        "body": "\"The Heath brothers have taught me that if anyone is going to \"get\" my idea – need it, buy it, fund it, use it – I need to radically shorten my elevator pitch. No more pretending that every building's a skyscraper. I can live in a world of complexity, and my theory of change can and should mirror the system I am working to change, but I'd better talk about it in a way that leaves my target wanting more, not less. Just because I have a theory of change doesn't mean I have to wear it on my sleeve.\" <br><br><cite>Judith Samuelson (2007), Review: Made to Stick, Stanford Social Innovation Review.</em> <br><br>Select <strong>'Made to stick'</strong> from the Resources menu to learn more about how you can make an idea, concept or theory more memorable or interesting.",
         "instruction": "",
         "_pageLevelProgress": {
             "_isEnabled": true
@@ -1657,8 +1630,8 @@
         "_component": "accordion",
         "_classes": "",
         "_layout": "full",
-        "title": "What should you avoid",
-        "displayTitle": "What should you avoid",
+        "title": "What should you avoid?",
+        "displayTitle": "What should you avoid?",
         "body": "We've talked about good communicators, but what shouldn't you do? In an article titled, 'How to pitch a brilliant idea' Kimberly Elsbach describes four stereotypical communicators that typically fail to connect and could be regarded as inauthentic – communicators that tend to kill ideas.",
         "instruction": "Select each heading to find out more.",
         "_items": [
@@ -2043,7 +2016,7 @@
         "_items": [
             {
                 "title": "Establishing credibility",
-                "body": "Credibility is based on your expertise and relationships. This is your chance to 'earn the right'! You may want to use a brief self–introduction that establishes your credibility. Some people struggle with this – they interpret it as big noting themselves. Keep it simple and with the formality of the occasion – it will certainly help.",
+                "body": "Credibility is based on your expertise and relationships. This is your chance to 'earn the right'! You may want to use a brief self-introduction that establishes your credibility. Some people struggle with this – they interpret it as big noting themselves. Keep it simple and with the formality of the occasion – it will certainly help.",
                 "_graphic": {
                     "src": "course/en/images/c-225-001.jpg",
                     "alt": ""
@@ -2206,7 +2179,7 @@
             },
             {
                 "title": "Learn from experts",
-                "body": "Read books and articles on effective communication (e.g. Make it Stick by Chip and Dan Heath or Harvard Business Review's '10 must reads on communication'). Find out about other communication courses and online resources offered by the University. Seek out vodcasts or podcasts.",
+                "body": "Read books and articles on effective communication (e.g. <cite>Make it Stick</cite> by Chip and Dan Heath or Harvard Business Review's '10 must reads on communication'). Find out about other communication courses and online resources offered by the University. Seek out vodcasts or podcasts.",
                 "_classes": ""
             },
             {
@@ -2216,7 +2189,7 @@
             },
             {
                 "title": "Have a go",
-                "body": "Actively seek out opportunities to present and communicate your ideas to both academic and non-academic audiences. You may want to participate in the <a href=\"www.threeminutethesis.org\" target=\"_blank\">Three Minute Thesis (3MT) competition</a>. Remember, practice doesn't always make perfect, but it sure helps!",
+                "body": "Actively seek out opportunities to present and communicate your ideas to both academic and non-academic audiences. You may want to participate in the <a href=\"http://threeminutethesis.org\" target=\"_blank\">Three Minute Thesis (3MT) competition</a>. Remember, practice doesn't always make perfect, but it sure helps!",
                 "_classes": ""
             }
         ],
@@ -2241,7 +2214,7 @@
         "_recordInteraction": true,
         "title": "Plan for the present. Prepare for the future.",
         "displayTitle": "Plan for the present. Prepare for the future.",
-        "body": "Developing your communication capabilities will enhance your research and prepare you for life after your degree. Ask yourself, \"What do I need to work on to be a better communicator\"?",
+        "body": "Developing your communication capabilities will enhance your research and prepare you for life after your degree. Ask yourself, \"What do I need to work on to be a better communicator?\"",
         "instruction": "Select one or more of the following options and select submit.",
         "_items": [
             {
