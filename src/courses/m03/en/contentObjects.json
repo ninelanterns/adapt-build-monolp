@@ -1,0 +1,287 @@
+[
+    {
+        "_id": "co-05",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "How to use this course",
+        "displayTitle": "How to use this course",
+        "pageBody": "We want you to have control of your learning. We're giving you complete freedom over what you view and when you view it, so you can have things just the way you like them.",
+        "body": "Some quick tips to help you get the most out of your course and give it your personal touch.",
+        "_graphic": {
+            "wide": "course/en/images/co-05-page.jpg",
+            "narrow": "course/en/images/co-05-page-narrow.jpg",
+            "src": "course/en/images/co-05-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "1 min"
+    },
+    {
+        "_id": "co-10",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "Hear from our Vice Chancellor",
+        "displayTitle": "Hear from our Vice Chancellor",
+        "pageBody": "The Monash Doctoral Program provides you with a variety of innovative training opportunities that help you build a dynamic combination of skills. No matter where you see yourself going, these skills will complement your thesis and improve the range of opportunities available to you.",
+        "body": "Hear how the Monash Doctoral Program supports the development of your professional skills.",
+        "_graphic": {
+            "wide": "course/en/images/co-10-page.jpg",
+            "narrow": "course/en/images/co-10-page-narrow.jpg",
+            "src": "course/en/images/co-10-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "2 mins"
+    },
+    {
+        "_id": "co-15",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "Take a look inside",
+        "displayTitle": "Take a look inside",
+        "pageBody": "Explore twelve short topics to learn all about communication, why it's important to you, key communications principles and practices, and what's involved in creating your communication profile.",
+        "body": "Learn about the structure and key components of the course.",
+        "_graphic": {
+            "wide": "course/en/images/co-15-page.jpg",
+            "narrow": "course/en/images/co-15-page-narrow.jpg",
+            "src": "course/en/images/co-15-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "1 min"
+    },
+    {
+        "_id": "co-20",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "Communicating matters",
+        "displayTitle": "Communicating matters",
+        "pageBody": "Being able to communicate your thoughts, feelings and ideas helps you solve problems, build relationships and foster cooperation and productivity. It's one of the most important things we all do, and something we can all improve on. Get it right, and you will give yourself every chance to ensure your PhD results in more than a thesis.",
+        "body": "Find out why learning to communicate effectively is important for you.",
+        "_graphic": {
+            "wide": "course/en/images/co-20-page.jpg",
+            "narrow": "course/en/images/co-20-page-narrow.jpg",
+            "src": "course/en/images/co-20-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "4 mins"
+    },
+    {
+        "_id": "co-25",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "What is communication?",
+        "displayTitle": "What is communication?",
+        "pageBody": "What is communication and what makes it successful? Communication means the imparting or exchanging of information by speaking, writing, or using some other medium. Effective communication is more than telling someone something, it's about connecting with people in a way that resonates. George Bernard Shaw states that <q>\"The single biggest problem in communication is the illusion that it has taken place.\"</q>",
+        "body": "Does successful communication mean the same to all of us? Find out here.",
+        "_graphic": {
+            "wide": "course/en/images/co-25-page.jpg",
+            "narrow": "course/en/images/co-25-page-narrow.jpg",
+            "src": "course/en/images/co-25-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "5 mins"
+    },
+    {
+        "_id": "co-30",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "The communicator",
+        "displayTitle": "The communicator",
+        "pageBody": "Imagine not communicating at all for the rest of the day, or even a whole week. No talking, body language, texts, emails, television, etc. – it's not that easy or practical. In reality, we spend many waking hours communicating, and time when we're asleep processing this information. It's easy to understand why being a good communicator is one of the most important skills you can have. But, what are the characteristics of good communicators?",
+        "body": "What makes a good communicator? Learn about their skills and qualities.",
+        "_graphic": {
+            "wide": "course/en/images/co-30-page.jpg",
+            "narrow": "course/en/images/co-30-page-narrow.jpg",
+            "src": "course/en/images/co-30-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "5 mins"
+    },
+    {
+        "_id": "co-35",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "Communicating your research",
+        "displayTitle": "Communicating your research",
+        "pageBody": "Can you communicate the relevance of your research? This doesn't mean dumbing down your research, but rather thinking quite deliberately about what you communicate and why. It's also about how you connect. Rather than asking who's interested in your PhD, our interest lies in helping you explore the question: to whom is your research potentially relevant and why should they take note?",
+        "body": "Learn about getting your research message across.",
+        "_graphic": {
+            "wide": "course/en/images/co-35-page.jpg",
+            "narrow": "course/en/images/co-35-page-narrow.jpg",
+            "src": "course/en/images/co-35-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "5 mins"
+    },
+    {
+        "_id": "co-40",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "The audience factor",
+        "displayTitle": "The audience factor",
+        "pageBody": "Who's your audience? In general, your audience is anyone who has a stake or interest in your efforts. To connect your research to the audience you need to consider who will be reading your research message or listening to you speak. Think of all the people impacted by your research, who have influence or power over it, or have an interest in its success.",
+        "body": "Who do you need to connect with and why? Find out here.",
+        "_graphic": {
+            "wide": "course/en/images/co-40-page.jpg",
+            "narrow": "course/en/images/co-40-page-narrow.jpg",
+            "src": "course/en/images/co-40-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "5 mins"
+    },
+    {
+        "_id": "co-45",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "The S.P.I.N. framework",
+        "displayTitle": "The S.P.I.N. framework",
+        "pageBody": "There's a logical and formal structure to good communication – it's not just left to chance. Do you have a plan or do you operate on instinct when communicating? You know you want to talk to your research team about their findings, but do you know how you will approach that conversation? Being aware of communication frameworks and building these into your personal communication, will help you get more out of each interaction and enhance your relationships with supervisors, colleagues, family and friends.",
+        "body": "Learn about the S.P.I.N. framework and why it helps.",
+        "_graphic": {
+            "wide": "course/en/images/co-45-page.jpg",
+            "narrow": "course/en/images/co-45-page-narrow.jpg",
+            "src": "course/en/images/co-45-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "6 mins"
+    },
+    {
+        "_id": "co-50",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "Your research S.P.I.N.",
+        "displayTitle": "Your research S.P.I.N.",
+        "pageBody": "Once you've mastered the basics of S.P.I.N., it makes it easier to then think about your audience, the appropriateness of particular communication channels, and how to best prepare and deliver in a way that resonates. Remember, S.P.I.N stands for <strong>S</strong>ituation, <strong>P</strong>roblems, <strong>I</strong>mplications and <strong>N</strong>eed. If you haven't had a chance to complete the topic THE S.P.I.N. FRAMEWORK, please do that now. It will help you in working through the current topic.",
+        "body": "Discover how to apply S.P.I.N. to your research.",
+        "_graphic": {
+            "wide": "course/en/images/co-50-page.jpg",
+            "narrow": "course/en/images/co-50-page-narrow.jpg",
+            "src": "course/en/images/co-50-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "6 mins"
+    },
+    {
+        "_id": "co-55",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "Make it stick",
+        "displayTitle": "Make it stick",
+        "pageBody": "Things that are sticky get attached; they last, and are difficult to shake off. Powerful communication that makes an impact is often sticky - it's memorable and shareable.",
+        "body": "Learn how to make your message stick.",
+        "_graphic": {
+            "wide": "course/en/images/co-55-page.jpg",
+            "narrow": "course/en/images/co-55-page-narrow.jpg",
+            "src": "course/en/images/co-55-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "5 mins"
+    },
+    {
+        "_id": "co-60",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "Be authentic",
+        "displayTitle": "Be authentic",
+        "pageBody": "Why is it important to be an authentic speaker? Consider this – you've learned all about being a good communicator and what to avoid, developed a compelling presentation, rehearsed thoroughly and mastered your body language. But as your talk ends, something doesn't feel right and the audience shows little enthusiasm. What went wrong? The answer may be that you failed to be authentic.",
+        "body": "What makes communication authentic? Learn all about it here.",
+        "_graphic": {
+            "wide": "course/en/images/co-60-page.jpg",
+            "narrow": "course/en/images/co-60-page-narrow.jpg",
+            "src": "course/en/images/co-60-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "5 mins"
+    },
+    {
+        "_id": "co-65",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "What's your style?",
+        "displayTitle": "What's your style?",
+        "pageBody": "What's your style of talking? Do you consider the influence of culture and factors such as gender, seniority and experience? The way you talk can convey a good deal of information about who you are, where you're from, your level of education and about how you view the situation and people you are speaking with.",
+        "body": "Find out about linguistic style and its impact on your communication.",
+        "_graphic": {
+            "wide": "course/en/images/co-65-page.jpg",
+            "narrow": "course/en/images/co-65-page-narrow.jpg",
+            "src": "course/en/images/co-65-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "5 mins"
+    },
+    {
+        "_id": "co-70",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "The power of persuasion",
+        "displayTitle": "The power of persuasion",
+        "pageBody": "In an increasingly urbanised, technologically-mediated world, people are not short of communications competing for their attention – via TV ads, journals they can read, conferences they can attend, emails they can respond to or talks they can listen to. Regardless of how good your ideas, research or skills are, people often don't have to respond to your communication – they have options and you may need to persuade them.",
+        "body": "Discover how persuasion techniques can improve your communication.",
+        "_graphic": {
+            "wide": "course/en/images/co-70-page.jpg",
+            "narrow": "course/en/images/co-70-page-narrow.jpg",
+            "src": "course/en/images/co-70-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "4 mins"
+    },
+    {
+        "_id": "co-75",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "menu-title-long",
+        "title": "Get a communication plan",
+        "displayTitle": "Get a communication plan",
+        "pageBody": "Being a graduate student is a time to experiment, to try things out and have a go. For, as stated by Albert Einstein, \"play is the highest form of research\". What are your goals for the next couple of years? We recommend making communication – improving as a communicator – a priority.",
+        "body": "Put a plan in place and take the communication challenge.",
+        "_graphic": {
+            "wide": "course/en/images/co-75-page.jpg",
+            "narrow": "course/en/images/co-75-page-narrow.jpg",
+            "src": "course/en/images/co-75-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "5 mins"
+    }
+]
