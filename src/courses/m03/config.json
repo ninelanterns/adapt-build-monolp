@@ -28,6 +28,10 @@
         }
     },
     "_imsmanifest": {
+        "man_id": "adapt_manifest_monolp_m03_career",
+        "org_id": "adapt_scorm_monolp_m03_career",
+        "title": "Unleash your career",
+        "description": "Why is a career plan important"
     },
     "_tutor": {
         "_isEnabled": true

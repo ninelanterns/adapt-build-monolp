@@ -1,3 +1,668 @@
 [
-    
+    {
+        "_id": "c-05",
+        "_parentId": "b-05",
+        "_type": "component",
+        "_component": "narrative",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "allItems",
+        "_hasNavigationInTextArea": false,
+        "title": "Getting around",
+        "displayTitle": "Getting around",
+        "body": "To help you tailor the course to your preferences, we've broken the content down into short topics. You're able to filter what you see on the menu and pin the things you find most helpful.",
+        "instruction": "Select the arrows to find out more.",
+        "mobileInstruction": "Select the arrows and then the plus icons to find out more.",
+        "_items": [
+            {
+                "title": "The way you want",
+                "body": "Use the filter menu at the top left of the page to organise the content on the screen by completion status, bookmarked items or sections of interest.",
+                "_graphic": {
+                    "src": "course/en/images/c-05-001.jpg",
+                    "alt": ""
+                },
+                "strapline": "The way you want"
+            },
+            {
+                "title": "Bookmarking",
+                "body": "If you find something you like or want to save it for later, you can pin it to your menu by selecting the pin icon. The filter menu at the top left allows you to display pinned items only.",
+                "_graphic": {
+                    "src": "course/en/images/c-05-002.jpg",
+                    "alt": ""
+                },
+                "strapline": "Bookmarking"
+            },
+            {
+                "title": "Dashboard",
+                "body": "To help track your progress throughout the topics, in the top right of the screen you will have access to the dashboard. This dashboard is a useful tool that can tell you how you're tracking and will give you guidance on your progress.",
+                "_graphic": {
+                    "src": "course/en/images/c-05-002.jpg",
+                    "alt": ""
+                },
+                "strapline": "Dashboard"
+            },
+            {
+                "title": "Resources",
+                "body": "Use the Resources menu at the top right of the page to explore further resources available in this course.",
+                "_graphic": {
+                    "src": "course/en/images/c-05-003.jpg",
+                    "alt": ""
+                },
+                "strapline": "Resources"
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-10",
+        "_parentId": "b-10",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "play",
+        "_useClosedCaptions": true,
+        "_allowFullScreen": true,
+        "title": "A world of possibilities",
+        "displayTitle": "A world of possibilities",
+        "body": "Whether you're thinking local or global, the Monash Doctoral Program will support your research journey and professional development so you emerge ready to make the greatest possible impact.",
+        "instruction": "Select Play to hear from our Vice Chancellor.",
+        "_media": {
+            "mp4": "course/en/video/c-10.mp4",
+            "poster": "course/en/video/c-10.jpg"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-15",
+        "_parentId": "b-15",
+        "_type": "component",
+        "_component": "accordion",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Whats in this course",
+        "displayTitle": "What's in this course",
+        "body": "Let's take a look at what's involved in completing this course.",
+        "instruction": "Select each heading to find out more.",
+        "_items": [
+            {
+                "title": "Straight to the point",
+                "body": "Each topic has been broken down into small, focused learning bites using video, graphics and web articles. Scroll down the menu page to find the topic you want, then use the navigation arrows to cycle through the learning bites. You can explore the topics in any order, but we suggest you start with 'Your career starts now' and work your way through.",
+                "_graphic": {
+                    "src": "course/en/images/c-15-001.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Want to know more?",
+                "body": "We've incorporated additional resources to help you develop your leadership skills. These include quick reference guides, documents and web articles with extra insights into leadership. You can access them via the Resources menu at the top right of the page. This reading is estimated to take approximately 30 minutes and can be included in your professional development hours.",
+                "_graphic": {
+                    "src": "course/en/images/c-15-002.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "The next steps",
+                "body": "We want you to think about how you can build skills for the 21st century – career development being one of them. That's why this course includes a Career Development Plan (CDP). It's a critical component, which once completed, will need to be given to your supervisor for review and sign-off. Download and save the CDP from the Resources menu. We'll refer you to CDP activities throughout this course, which need to be completed offline. It's estimated that these activities will take approximately 90 minutes and can be recorded as part of your professional development hours.",
+                "_graphic": {
+                    "src": "course/en/images/c-15-003.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-20",
+        "_parentId": "b-20",
+        "_type": "component",
+        "_component": "accordion",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Why plan your career?",
+        "displayTitle": "Why plan your career?",
+        "body": "Your perfect career doesn't happen by accident. It involves hard work, the right opportunities and a carefully thought out plan. Why do you need to work on that plan now?",
+        "instruction": "Your perfect career doesn't happen by accident. It involves hard work, the right opportunities and a carefully thought out plan. Why do you need to work on that plan now?",
+        "_items": [
+            {
+                "title": "Sense of direction",
+                "body": "Have you thought about where you're going? Do you want to stay in research or work at the university? Do you want to work in industry? A career plan will help you discover a career direction that's designed to meet your values, lifestyle, interest and financial goals.",
+                "_graphic": {
+                    "src": "course/en/images/c-20-001.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Path to career success",
+                "body": "Want to achieve clear results? This may be difficult, especially when you have things pulling you in different directions –  research, work, family, etc. Develop and maintain a career development plan – it will give you the confidence, knowledge and self–awareness you need to plan your career goals and implement steps to achieve them.",
+                "_graphic": {
+                    "src": "course/en/images/c-20-002.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Reach your potential",
+                "body": "A well thought out career plan is an important part of your personal growth and development. It helps you identify your strengths, areas of improvement and allows you to research and prioritise ideas for further development. Include them in your career plan and career conversations with your supervisor to unleash your career potential.",
+                "_graphic": {
+                    "src": "course/en/images/c-20-003.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Stay motivated",
+                "body": "Setting yourself career goals and specific timeframes is an effective way to ensure you never lose motivation along the way.",
+                "_graphic": {
+                    "src": "course/en/images/c-20-004.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-25",
+        "_parentId": "b-25",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "play",
+        "_useClosedCaptions": true,
+        "_allowFullScreen": true,
+        "title": "Steps to success",
+        "displayTitle": "Steps to success",
+        "body": "Have you thought about what you'll do after your PhD? As you plan, carry out and complete your PhD, the work you choose to do, or not do, will influence your career options once you graduate. From the choice of topic, to the methods you use, to the equipment you access and the other people you work/collaborate with. We plan these – so why not our career more broadly?",
+        "instruction": "Select Play.",
+        "_media": {
+            "mp4": "course/en/video/c-25.mp4",
+            "poster": "course/en/video/c-25.jpg"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-30",
+        "_parentId": "b-30",
+        "_type": "component",
+        "_component": "hotgraphic",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "allItems",
+        "_canCycleThroughPagination": false,
+        "_hidePagination": false,
+        "_useGraphicsAsPins": false,
+        "title": "THE MOVING PARTS",
+        "displayTitle": "The moving parts",
+        "body": "In planning your PhD, and therefore your career, there are four factors that you need to consider. You may have already considered these factors in the context of your research – but what about your career?",
+        "instruction": "Select the icons to find out more.",
+        "mobileInstruction": "Select the arrows and then the plus icons to find out more.",
+        "_graphic": {
+            "src": "course/en/images/c-30-001.jpg",
+            "alt": ""
+        },
+        "_items": [
+            {
+                "title": "Topic",
+                "body": "Consider the research topic you chose, or avoided. Do you have a clear topic of interest? For many researchers, their first Post-Doctoral position is a continuation of their PhD research – not necessarily in the direct sense, but often following in the same topic area. After all, you would've, or should've become the expert in that field during your PhD.",
+                "_graphic": {
+                    "src": "course/en/images/c-30-002.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Topic",
+                "_classes": "",
+                "_top": 10,
+                "_left": 10
+            },
+            {
+                "title": "Method",
+                "body": "As a student, planning your career, think about how your method is relevant to the data you are collecting, as well as your research question. But, also think about how useful the techniques will be beyond your PhD. For example, is this a method you can see yourself performing in the years after your PhD?",
+                "_graphic": {
+                    "src": "course/en/images/c-30-003.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Method",
+                "_classes": "",
+                "_top": 10,
+                "_left": 20
+            },
+            {
+                "title": "Infrastructure",
+                "body": "Don't settle for second best. It's important to realise having experience with specific infrastructure is also a key factor in career development. Look for opportunities to use the best equipment available.",
+                "_graphic": {
+                    "src": "course/en/images/c-30-004.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Infrastructure",
+                "_classes": "",
+                "_top": 10,
+                "_left": 30
+            },
+            {
+                "title": "People",
+                "body": "Learning to work with other people is essential to career success. How you deal with these situations will be important as a student, but even more important for your career. Collaborate with people within your research group, or department, but also work with others in different organisations. At the very least, you'll get a perspective of how their organisation works and you'll also get a feel for what cross-institutional collaboration is like.",
+                "_graphic": {
+                    "src": "course/en/images/c-30-005.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "People",
+                "_classes": "",
+                "_top": 10,
+                "_left": 40
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-35",
+        "_parentId": "b-35",
+        "_type": "component",
+        "_component": "mcq",
+        "_classes": "",
+        "_layout": "full",
+        "_attempts": 1,
+        "_shouldDisplayAttempts": false,
+        "_questionWeight": 1,
+        "_isRandom": true,
+        "_selectable": 5,
+        "_canShowModelAnswer": true,
+        "_canShowMarking": true,
+        "_recordInteraction": true,
+        "title": "You and your career",
+        "displayTitle": "You and your career",
+        "body": "Career planning involves knowing what you're good at, what kind of work you want to be doing and how you'll make a difference. The clearer the plan, the clearer your career opportunities will become. So, why do people fail to plan for their career? Some people make some career mistakes because they have misconceptions about how to build and sustain a long-term career: Do any of the common misconceptions below resonate with you?",
+        "instruction": "Select one or more of the following options and select Submit.",
+        "_items": [
+            {
+                "text": "I don't need a plan right now.",
+                "_shouldBeSelected": false
+            },
+            {
+                "text": "All I need is skills and achievements.",
+                "_shouldBeSelected": false
+            },
+            {
+                "text": "I'll definitely get a job with the University after my PhD.",
+                "_shouldBeSelected": false
+            },
+            {
+                "text": "I don't have time for anything but my PhD research.",
+                "_shouldBeSelected": false
+            },
+            {
+                "text": "My supervisor will lead my career development.",
+                "_shouldBeSelected": false
+            }
+        ],
+        "_feedback": {
+            "correct": "Career planning may not be high up your agenda. You may feel your PhD and career development are two separate things, that are developed independently – in fact, the two can be developed together. Although skills are extremely important – intangible qualities, such as your connections, personality, or additional abilities are also a big part of your success. And yes, your supervisor will help, but they're not your career counsellor or responsible for your career success. Whatever your career goals, we encourage you to take charge and navigate your career in the direction you desire. Time to select your <strong>CDP</strong> from the Resources menu to complete the activity: <strong>Your PhD plan</strong>.",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "Career planning may not be high up your agenda. You may feel your PhD and career development are two separate things, that are developed independently – in fact, the two can be developed together. Although skills are extremely important – intangible qualities, such as your connections, personality, or additional abilities are also a big part of your success. And yes, your supervisor will help, but they're not your career counsellor or responsible for your career success. Whatever your career goals, we encourage you to take charge and navigate your career in the direction you desire. Time to select your <strong>CDP</strong> from the Resources menu to complete the activity: <strong>Your PhD plan</strong>."
+            },
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "Career planning may not be high up your agenda. You may feel your PhD and career development are two separate things, that are developed independently – in fact, the two can be developed together. Although skills are extremely important – intangible qualities, such as your connections, personality, or additional abilities are also a big part of your success. And yes, your supervisor will help, but they're not your career counsellor or responsible for your career success. Whatever your career goals, we encourage you to take charge and navigate your career in the direction you desire. Time to select your <strong>CDP</strong> from the Resources menu to complete the activity: <strong>Your PhD plan</strong>."
+            }
+        },
+        "_buttons": {
+            "_submit": {
+                "buttonText": "Submit",
+                "ariaLabel": "Select here to submit your answer."
+            },
+            "_reset": {
+                "buttonText": "Reset",
+                "ariaLabel": ""
+            },
+            "_showCorrectAnswer": {
+                "buttonText": "Correct Answer",
+                "ariaLabel": ""
+            },
+            "_hideCorrectAnswer": {
+                "buttonText": "My Answer",
+                "ariaLabel": ""
+            },
+            "_showFeedback": {
+                "buttonText": "Show feedback",
+                "ariaLabel": ""
+            },
+            "remainingAttemptsText": "attempts remaining",
+            "remainingAttemptText": "final attempt"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-40",
+        "_parentId": "b-40",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "play",
+        "_useClosedCaptions": true,
+        "_allowFullScreen": true,
+        "title": "The publicity factor",
+        "displayTitle": "The publicity factor",
+        "body": "Why should you regularly communicate your work? Well, it could make all the difference to your employment prospects, gain the respect of your peers, win you that research grant or help you climb the job ladder. Let's hear Sam's story.",
+        "instruction": "Select Play.",
+        "_media": {
+            "mp4": "course/en/video/c-40.mp4",
+            "poster": "course/en/video/c-40.jpg"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-45",
+        "_parentId": "b-45",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Your communication plan",
+        "displayTitle": "Your communication plan",
+        "body": "<p>As a PhD student it's important to document, or at least have in mind, a peer reviewed journal plan – a publication plan. However, it's better to think of this as a communication plan – including all of the different ways you might discuss your research in public. When doing so, start with the end in mind – think about what sort of academic, scholar or worker you want to be. These answers then inform the rest of your decisions. The following are some key factors to take into account when considering what you could communicate or publish:</p><ul><li>Writing up the work – from log books to (journal) manuscript.</li><li>Research topic – the overall topic or field of research the work fits within. Could you write about your broader field as a blog?</li><li>Journal selection – take into account various factors such as topic, potential for impact, manuscript length and significance to the field.</li><li>Submission/Review – journal requirements, but also what review process might be necessary for a blog or other social or new media post.</li><li>Revision – what your response will be regarding revisions (or other comments received), if any.</li><li>Publication – what you might do once the article is published. For journal articles this might mean emailing co-authors and/or other researchers referenced in the work. The same is also true for blogs. You might choose to send out a tweet or post information on Facebook or Instagram using relevant hashtags or @ mentions.</li></ul>",
+        "instruction": "",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-50",
+        "_parentId": "b-50",
+        "_type": "component",
+        "_component": "narrative",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "allItems",
+        "_hasNavigationInTextArea": false,
+        "title": "More than a paper",
+        "displayTitle": "More than a paper",
+        "body": "Publishing tends to be viewed as peer reviewed research – but it should be about \"writing something and getting it into print\" (Logan Wilson, The Academic Man), not just peer reviewed research. New models of publication are constantly emerging, changing expectations of individuals and institutions.",
+        "instruction": "Select the arrows to find out more.",
+        "mobileInstruction": "Select the arrows and then the plus icons to find out more.",
+        "_items": [
+            {
+                "title": "New approaches",
+                "body": "The idea of publish or perish was put forward when publish was limited to peer reviewed journals and newspapers – printed on paper. In the current web 2.0 and social media climate, publication can be in many forms – from blogs, to tweets, to videos or sound bites. This isn't about giving away or disclosing intellectual property, it's about maintaining regular communication with the research and non-research public. Hence, \"communicate or die\" might be a better description – it's certainly a starker one.",
+                "_graphic": {
+                    "src": "course/en/images/c-50-001.jpg",
+                    "alt": ""
+                },
+                "strapline": "New approaches"
+            },
+            {
+                "title": "What should you do?",
+                "body": "Publishing (peer reviewed publishing) is a difficult and demanding skill. Working on it early, and more often, is key to your success. Think about how you might get publications earlier in your PhD. For example, could a literature review, arguably required for greater understanding of a field, be properly documented and turned into a peer reviewed publication? Also challenge yourself to get that article written quicker. Select <strong>'Write that journal article – in 7 days!'</strong> from the Resources menu to learn more.",
+                "_graphic": {
+                    "src": "course/en/images/c-50-002.jpg",
+                    "alt": ""
+                },
+                "strapline": "What should you do?"
+            },
+            {
+                "title": "Career impact",
+                "body": "Publishing (peer reviewed publishing) is a difficult and demanding skill. Working on it early, and more often, is key to your success. Think about how you might get publications earlier in your PhD. For example, could a literature review, arguably required for greater understanding of a field, be properly documented and turned into a peer reviewed publication? Also challenge yourself to get that article written quicker. Select 'Write that journal article – in 7 days!' from the Resources menu to learn more.",
+                "_graphic": {
+                    "src": "course/en/images/c-50-003.jpg",
+                    "alt": ""
+                },
+                "strapline": "Career impact"
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-55",
+        "_parentId": "b-55",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Start writing",
+        "displayTitle": "Start writing",
+        "body": "So, get your ideas out there, build on them and create dialogue with others. Submit articles to journals – it's one way to stay connected to your field – but recognise there are other publication options. When creating your PhD publication/communication plan, take into account your broader career goals, as well as your research goals. Start by visiting your <strong>CDP</strong> to complete the activity: <strong>Your publication plan</strong>. You should also check out the 'Unleash your Communication' course in this series.",
+        "instruction": "",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-60",
+        "_parentId": "b-60",
+        "_type": "component",
+        "_component": "hotgraphic",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "allItems",
+        "_canCycleThroughPagination": false,
+        "_hidePagination": false,
+        "_useGraphicsAsPins": false,
+        "title": "What does the data say?",
+        "displayTitle": "What does the data say?",
+        "body": "Current data suggests that at least half, or maybe more, of all PhD students will not have long-term careers as academics – 10 years or more post their PhD. So, a career outside research is highly likely – if not the most likely outcome of a PhD.",
+        "instruction": "Select the icons to find out more.",
+        "mobileInstruction": "Select the icons to find out more.",
+        "_graphic": {
+            "src": "course/en/images/c-60.jpg",
+            "alt": ""
+        },
+        "_items": [
+            {
+                "title": "Australia",
+                "body": "<p>Per year, between 2011 and 2015, there were approximately:</p><ul><li>43,000 PhD enrolments (62,000 if you include overseas students)</li><li>6,500 completions (9,200 if you include overseas students)</li><li>only 2,500 head count growth in staff.</li></ul><p>Even allowing for 3,000 retirement positions to be taken up by new students, i.e. so there's no net growth in staff count, there's still an annual short-fall of approximately more than 1,000. This picture is further worsened if you look at the 2014-2015 figures, where total staff growth across the entire university sector in Australia was less than 700 people.</p>",
+                "_graphic": {
+                    "src": "course/en/images/c-60-001.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Australia",
+                "_classes": "",
+                "_top": 10,
+                "_left": 10
+            },
+            {
+                "title": "America",
+                "body": "Outside Australia, data from the American Association for Cell Biology indicates that within six years about 10% of PhD graduates will be faculty, and a further 15% will be research fellows. The remaining 75% will be outside university altogether.",
+                "_graphic": {
+                    "src": "course/en/images/c-60-002.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "America",
+                "_classes": "",
+                "_top": 10,
+                "_left": 20
+            },
+            {
+                "title": "UK",
+                "body": "The UK Royal Society data states that, longer term, only 0.45% of PhD graduates become professors; 3.5% are permanent research staff, with the remainder not at university, but perhaps in research or outside research/university all together.",
+                "_graphic": {
+                    "src": "course/en/images/c-60-003.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "UK",
+                "_classes": "",
+                "_top": 10,
+                "_left": 30
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-65",
+        "_parentId": "b-65",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "play",
+        "_useClosedCaptions": true,
+        "_allowFullScreen": true,
+        "title": "Hear from the non-academic",
+        "displayTitle": "Hear from the non-academic",
+        "body": "Some graduates go on to careers in universities. Others join major corporations or form companies of their own. Others use their skills to advise governments of all sizes or work for bodies such as the United nations. Let's hear from a researcher who chose an alternative career path and why it has worked for them.",
+        "instruction": "Select Play.",
+        "_media": {
+            "mp4": "course/en/video/c-65.mp4",
+            "poster": "course/en/video/c-65.jpg"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-70",
+        "_parentId": "b-70",
+        "_type": "component",
+        "_component": "confidenceSlider",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Your impact",
+        "displayTitle": "Your impact",
+        "body": "Perhaps you will successfully achieve an academic career. If not, have you considered a future career-path? A UK survey of third year PhD students found 50% didn't know what they wanted from their career. The same study also found fewer than one in six doctoral researchers had well-formed career ideas when they started. It seems, PhD students, and students in general, lack a career plan – they don't know why they're doing something. Do you know what you want to do? Have you developed a plan?",
+        "disabledBody": "You need to measure your confidence in the linked part before you can do this part.",
+        "instruction": "Select one of the following options and select Submit.",
+        "_attempts": 1,
+        "_canShowFeedback": true,
+        "_recordInteraction": true,
+        "_shouldStoreResponses": false,
+        "_linkedToId": "",
+        "_showNumber": true,
+        "_showScaleIndicator": true,
+        "_showScale": true,
+        "labelStart": "I don't have a clear career plan.",
+        "labelEnd": "I know what I want to do and have a plan.",
+        "_scaleStart": 1,
+        "_scaleEnd": 10,
+        "_scaleStep": 1,
+        "_buttons": {
+            "_submit": {
+                "buttonText": "Submit",
+                "ariaLabel": "Submit your answer by clicking here."
+            },
+            "_reset": {
+                "buttonText": "Reset",
+                "ariaLabel": "Reset the question by clicking here."
+            },
+            "_showFeedback": {
+                "buttonText": "Show feedback",
+                "ariaLabel": "View the question feedback again by clicking here."
+            }
+        },
+        "_feedback": {
+            "feedbackSeparator": " ",
+            "generic": "Thanks for measuring your confidence.",
+            "_comparison": {
+                "lower": "Oh you like it less? That's a shame.",
+                "same": "Well, at least you don't like it less.",
+                "higher": "It looks like you're seeing the benefits more and more!"
+            },
+            "_threshold": [
+                {
+                    "_values": {
+                        "_low": 1,
+                        "_high": 3
+                    },
+                    "text": "You don't have a plan, so it's great that you're completing this course. Whatever you choose to do beyond your PhD – the first step is to plan ahead. Take the time to think about the knowledge, competencies and experience you've gained during your research – these may help you understand what you would like from your career. Open your <strong>CDP</strong> to complete the activity: <strong>Career profiles</strong> and get to know the career options you have."
+                },
+                {
+                    "_values": {
+                        "_low": 4,
+                        "_high": 7
+                    },
+                    "text": "It's great that you have started thinking about your career plan. It's time to build on it. Take a look at this course and see if it answers some of the questions that you have regarding career development. Whatever you choose to do beyond your PhD – the first step is to plan ahead. Take the time to think about the knowledge, competencies and experience you've gained during your research – these may help you understand what you would like from your career. Get to know the career options you have. Open your <strong>CDP</strong> to complete the activity: <strong>Career profiles</strong> and get to know the career options you have."
+                },
+                {
+                    "_values": {
+                        "_low": 8,
+                        "_high": 10
+                    },
+                    "text": "Sounds like you're pretty confident! While it's great that you have a solid foundation to build on, it's probably still good that you take a look at this course to make sure you're up to speed with the most current information on career development. There might even be a few hints or bits of information that are new to you. Get to know the career options you have. Open your <strong>CDP</strong> to complete the activity: <strong>Career profiles</strong> and get to know the career options you have."
+                }
+            ]
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    }
 ]

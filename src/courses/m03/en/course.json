@@ -273,7 +273,7 @@
             {
                 "_id": "s-10",
                 "_isProgressEnabled": false,
-                "title": "Be the Leader",
+                "title": "Be the career planner",
                 "_items": [
                     {
                         "_type": "contentObject",
@@ -308,7 +308,7 @@
             {
                 "_id": "s-15",
                 "_isProgressEnabled": false,
-                "title": "Explore the Principles and Practices",
+                "title": "Explore the principles and practices",
                 "_items": [
                     {
                         "_type": "contentObject",
@@ -343,7 +343,7 @@
             {
                 "_id": "s-20",
                 "_isProgressEnabled": false,
-                "title": "Create your leadership profile",
+                "title": "Create your career profile",
                 "_items": [
                     {
                         "_type": "contentObject",
@@ -409,5 +409,5 @@
             }
         }
     },
-    "_latestTrackingId": 48
+    "_latestTrackingId": 58
 }
