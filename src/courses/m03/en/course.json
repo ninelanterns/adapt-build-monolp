@@ -1,7 +1,10 @@
 {
     "_id": "course",
     "_type": "course",
+    "title": "Unleash your career",
+    "displayTitle": "Unleash your career",
     "description": "",
+    "body": "Career planning is a lifelong process. It's about managing the direction you want your career to take, identifying the skills and knowledge you'll need, and how you can get them. Why is a career plan important? Do you need help developing your career plan? What steps can you take now to help you head in the right direction? <br><br>Delve into the menu items below to learn all about unleashing your career potential. You can explore the menu items in any order, but it's a good idea to start with the 'Getting Started' section and work your way down.",
     "_buttons": {
         "_submit": {
             "buttonText": "Submit",
@@ -185,51 +188,39 @@
         "_resourcesItems": [
             {
                 "_type": "document",
-                "title": "Communication Development Plan",
+                "title": "Career development plan",
                 "description": "",
-                "_link": "course/en/resources/monash-communication-development-plan.docx"
+                "_link": "course/en/resources/monash-career-development-plan.docx"
             },
             {
                 "_type": "document",
-                "title": "What do good communicators do?",
+                "title": "Mentoring relationships",
                 "description": "",
-                "_link": "course/en/resources/monash-what-do-good-communicators-do.docx"
+                "_link": "course/en/resources/monash-mentoring-relationships.docx"
             },
             {
                 "_type": "link",
-                "title": "The Curse of Knowledge",
+                "title": "Write that journal article – in 7 days!",
                 "description": "",
-                "_link": "http://ezproxy.lib.monash.edu.au/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=bth&AN=23081213&site=ehost-live&scope=site"
+                "_link": "https://www.slideshare.net/ingermewburn/write-that-journal-article-in-7-days-12742195"
             },
             {
                 "_type": "document",
-                "title": "S.P.I.N. framework",
+                "title": "10-year plan",
                 "description": "",
-                "_link": "course/en/resources/monash-spin-framework.docx"
+                "_link": "course/en/resources/monash-10-year-plan.docx"
             },
             {
-                "_type": "link",
-                "title": "Made to stick",
+                "_type": "document",
+                "title": "Work I love",
                 "description": "",
-                "_link": "http://heathbrothers.com/download/mts-made-to-stick-model.pdf"
+                "_link": "course/en/resources/monash-work-i-love.docx"
             },
             {
-                "_type": "link",
-                "title": "How to become an authentic speaker",
+                "_type": "document",
+                "title": "Skills in need",
                 "description": "",
-                "_link": "http://ezproxy.lib.monash.edu.au/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=bth&AN=34870342&site=ehost-live&scope=site"
-            },
-            {
-                "_type": "link",
-                "title": "The Power of talk",
-                "description": "",
-                "_link": "http://ezproxy.lib.monash.edu.au/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=bth&AN=9510041991&site=ehost-live&scope=site"
-            },
-            {
-                "_type": "link",
-                "title": "The necessary art of persuasion",
-                "description": "",
-                "_link": "http://ezproxy.lib.monash.edu.au/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=bth&AN=547143&site=ehost-live&scope=site"
+                "_link": "course/en/resources/monash-skills-in-need.docx"
             }
         ]
     },
