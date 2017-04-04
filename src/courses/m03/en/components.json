@@ -664,5 +664,1599 @@
         "_pageLevelProgress": {
             "_isEnabled": true
         }
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-75",
+        "_parentId": "b-75",
+        "_type": "component",
+        "_component": "accordion",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Two paths",
+        "displayTitle": "Two paths",
+        "body": "There are two types of portfolio careers. One is a parallel career path – where you may hold two positions at once. The other path is developed in series – one job after the other. They follow a different path but both result in a diverse career path for you.",
+        "instruction": "Select each heading to find out what each path may look like.",
+        "_items": [
+            {
+                "title": "In parallel",
+                "body": "Why have a parallel career? The driving force could be lack of full-time work or a desire to pursue two or more interests simultaneously. What does it look like? You have two jobs – one in graphic design and one in architecture. Although the two might be related, they are nonetheless different and you hold both careers simultaneously and develop them in parallel. You might be developing a high-school-student tutoring business while doing your PhD. Or you may be using online marketing to sell t-shirts with science prints while doing your Post-Doc."
+            },
+            {
+                "title": "In series",
+                "body": "You start off as a PhD student, followed by a Post-Doc in a research lab or group – all research so far. Your research is going well, but the lab or group as a whole isn't going so well and your position is uncertain. There's an opportunity to work with a major collaborator as the Head of Business Development in their Research and Development (R & D) team – so you take it. Now you've switched careers, focusing on business development, but you still have a link to research. You enjoy that position and the company funds your marketing and sales training – you're then promoted to Head of Business Development for the entire organisation, not just the R&D team. Now, you're in an entirely different career with no links back to research."
+            }
+        ]
+    },
+    {
+        "_id": "c-80",
+        "_parentId": "b-80",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "play",
+        "_useClosedCaptions": true,
+        "_allowFullScreen": true,
+        "title": "The diverse path",
+        "displayTitle": "The diverse path",
+        "body": "Why should graduate researchers expect a portfolio career? Why are both career paths increasingly common? Are there advantages to having a diverse career path? Hear from our expert and get some answers.",
+        "instruction": "Select Play.",
+        "_media": {
+            "mp4": "course/en/video/c-80.mp4",
+            "poster": "course/en/video/c-80.jpg"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-85",
+        "_parentId": "b-85",
+        "_type": "component",
+        "_component": "mcq",
+        "_classes": "",
+        "_layout": "full",
+        "_attempts": 1,
+        "_shouldDisplayAttempts": false,
+        "_questionWeight": 1,
+        "_isRandom": false,
+        "_selectable": 6,
+        "_canShowModelAnswer": true,
+        "_canShowMarking": true,
+        "_recordInteraction": true,
+        "title": "What does this mean for you?",
+        "displayTitle": "What does this mean for you?",
+        "body": "Although the research techniques you are learning in your PhD are important to your next role, your ability to communicate, lead and collaborate, amongst others will be considered more important. This shift holds true for jobs within research as well as outside research. Which of the following skills might you develop during your PhD?",
+        "instruction": "Select one or more from the following options and select Submit.",
+        "_items": [
+            {
+                "text": "Negotiation",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Problem-solving",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Project management",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Collaboration",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Communication",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Leadership",
+                "_shouldBeSelected": true
+            }
+        ],
+        "_feedback": {
+            "correct": "As a PhD student, and subsequently as a researcher, you're honing <strong>all</strong> these sought-after behaviours on a daily basis and in multiple settings. All of which are important skills to a potential employer. Now, you need to translate and highlight them to potential future employers. For example, during your PhD you may publish papers, present at conferences, and of course you write your thesis. These PhD tasks translate to communication skills. It involves you organising information, presenting complex ideas and delivering messages to varied audiences. Also, completing a PhD is a project in itself – it involves planning and delivering to agreed timelines. Time to think about your employability skills. Select your <strong>CDP</strong> and complete the activity: <strong>Skills analysis</strong>.",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "As a PhD student, and subsequently as a researcher, you're honing <strong>all</strong> these sought-after behaviours on a daily basis and in multiple settings. All of which are important skills to a potential employer. Now, you need to translate and highlight them to potential future employers. For example, during your PhD you may publish papers, present at conferences, and of course you write your thesis. These PhD tasks translate to communication skills. It involves you organising information, presenting complex ideas and delivering messages to varied audiences. Also, completing a PhD is a project in itself – it involves planning and delivering to agreed timelines. Time to think about your employability skills. Select your <strong>CDP</strong> and complete the activity: <strong>Skills analysis</strong>."
+            },
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "As a PhD student, and subsequently as a researcher, you're honing <strong>all</strong> these sought-after behaviours on a daily basis and in multiple settings. All of which are important skills to a potential employer. Now, you need to translate and highlight them to potential future employers. For example, during your PhD you may publish papers, present at conferences, and of course you write your thesis. These PhD tasks translate to communication skills. It involves you organising information, presenting complex ideas and delivering messages to varied audiences. Also, completing a PhD is a project in itself – it involves planning and delivering to agreed timelines. Time to think about your employability skills. Select your <strong>CDP</strong> and complete the activity: <strong>Skills analysis</strong>."
+            }
+        },
+        "_buttons": {
+            "_submit": {
+                "buttonText": "Submit",
+                "ariaLabel": "Select here to submit your answer."
+            },
+            "_reset": {
+                "buttonText": "Reset",
+                "ariaLabel": ""
+            },
+            "_showCorrectAnswer": {
+                "buttonText": "Correct Answer",
+                "ariaLabel": ""
+            },
+            "_hideCorrectAnswer": {
+                "buttonText": "My Answer",
+                "ariaLabel": ""
+            },
+            "_showFeedback": {
+                "buttonText": "Show feedback",
+                "ariaLabel": ""
+            },
+            "remainingAttemptsText": "attempts remaining",
+            "remainingAttemptText": "final attempt"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-90",
+        "_parentId": "b-90",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "play",
+        "_useClosedCaptions": true,
+        "_allowFullScreen": true,
+        "title": "How networks help",
+        "displayTitle": "How networks help",
+        "body": "How does networking help your career? It can help you build on relationships and start reaching out beyond your institution and your immediate circle. The people you connect with may become future academic collaborators, or people who provide an additional source of inspiration for the future. Let's hear why broadening your horizons works.",
+        "instruction": "Select Play.",
+        "_media": {
+            "mp4": "course/en/video/c-90.mp4",
+            "poster": "course/en/video/c-90.jpg"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-95",
+        "_parentId": "b-95",
+        "_type": "component",
+        "_component": "accordion",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Work the network",
+        "displayTitle": "Work the network",
+        "body": "For career success, you need to be consciously aware of your networks. That is, you need to actively build and maintain them. It can't be something you do at the time of success, or when you want to move you career forward. It needs to be something you do from the get go.",
+        "instruction": "Select each heading to find out more.",
+        "_items": [
+            {
+                "title": "Get comforatble",
+                "body": "Get better at talking to new people. Don't wait until the next important event with important people to do this. Practise all the time. Talk with people at your local shop, café or gym. Get to know them. Be comfortable introducing yourself to strangers.",
+                "_graphic": {
+                    "src": "course/en/images/c-95-001.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Be ready",
+                "body": "Know how you will answer simple get to know you questions, such as \"what do you do?\". A detailed or technical response is probably not suitable – even for other researchers. Think about how what you do might relate to something they know. Finally, for most people the hardest and scariest part is the very start. The introduction. Make it easy for them, by being the person to start the conversation off. Who knows, they might even thank you for it.",
+                "_graphic": {
+                    "src": "course/en/images/c-95-002.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Make it valuable",
+                "body": "Now that you're prepared, the next part is to do it with some purpose. There's little point to building a large network of random people. Although it might look good on LinkedIn or Facebook to have 100s or 1,000s of connections or friends, they need to have value to you. Think about people you can collaborate with, cooperate with or learn from in the long-term.",
+                "_graphic": {
+                    "src": "course/en/images/c-95-002.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Plan it out",
+                "body": "Create a list of traits, skills or connections that you think you need. This could be what you currently lack and need to learn, or something that you cannot learn and can only borrow from someone else. If the list is long, prioritise it. What do you need now – what can wait? Next to each item, put a name (if you know someone), type (e.g. Post-Doctoral Fellow or Group Head) or role title (e.g. CEO, Dean) of who can help. Then, make a note of how you will reach out or connect with them. Will it be via phone, email, LinkedIn, Facebook, twitter, at an event or something else?",
+                "_graphic": {
+                    "src": "course/en/images/c-95-002.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Reach out",
+                "body": "Time to act – so, reach out. Make sure you're clear on why the two of you should connect. Recognise that networking is for mutual benefit. Not one way. Consider what you can offer in return. Don't forget to stay in touch. Just a phone call or email every now and then will do. But make it count and make it real. Want to learn more, consider reading the book, Networking for Career Success. It covers the basics of networking to targeted techniques for making a career change.",
+                "_graphic": {
+                    "src": "course/en/images/c-95-003.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-100",
+        "_parentId": "b-100",
+        "_type": "component",
+        "_component": "mcq",
+        "_classes": "",
+        "_layout": "full",
+        "_attempts": 1,
+        "_shouldDisplayAttempts": false,
+        "_questionWeight": 1,
+        "_isRandom": true,
+        "_selectable": 6,
+        "_canShowModelAnswer": true,
+        "_canShowMarking": true,
+        "_recordInteraction": true,
+        "title": "The right questions",
+        "displayTitle": "The right questions",
+        "body": "You want to connect with someone that works in an area that really interests you. What's the next step? Know what to say when you make contact. Be cognisant of their time and decide what information you're looking for and the types of questions you should ask. Reflect on the questions below, which ones would help you get the most out of this connection?",
+        "instruction": "Select one or more of the following options and select Submit.",
+        "_items": [
+            {
+                "text": "What are the positive aspects of the job?",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Do you like the role?",
+                "_shouldBeSelected": false
+            },
+            {
+                "text": "How did you get into the role?",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "What skills and knowledge are required for the role?",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Is the role easy?",
+                "_shouldBeSelected": false
+            },
+            {
+                "text": "What are your typical daily, weekly activities?",
+                "_shouldBeSelected": true
+            }
+        ],
+        "_feedback": {
+            "correct": "That's right. Networks and relationships are an excellent way to gain information about future opportunities and to target positions and organisations where you'll be able to grow professionally. It's important to use open questions and try and elicit objective information from your network. Asking them if they like the role doesn't tell you enough about the actual role. What one person likes, another may not. Ask questions that will help you gain insight into the role and what you need to develop to make that a career path for you. Time to select your <strong>CDP</strong> to complete the activity: <strong>Grow your network</strong>.",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "That's not right. It's important to use open questions and try and elicit objective information from your network. Asking them if they like the role doesn't tell you enough about the actual role. What one person likes, another may not. Ask questions that will help you gain insight into the role and what you need to develop to make that a career path for you. Networks and relationships are an excellent way to gain information about future opportunities and to target positions and organisations where you'll be able to grow professionally. Time to select your <strong>CDP</strong> to complete the activity: <strong>Grow your network</strong>."
+            },
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "That's not quite right. It's important to use open questions and try and elicit objective information from your network. Asking them if they like the role doesn't tell you enough about the actual role. What one person likes, another may not. Ask questions that will help you gain insight into the role and what you need to develop to make that a career path for you. Networks and relationships are an excellent way to gain information about future opportunities and to target positions and organisations where you'll be able to grow professionally. Time to select your <strong>CDP</strong> to complete the activity: <strong>Grow your network</strong>."
+            }
+        },
+        "_buttons": {
+            "_submit": {
+                "buttonText": "Submit",
+                "ariaLabel": "Select here to submit your answer."
+            },
+            "_reset": {
+                "buttonText": "Reset",
+                "ariaLabel": ""
+            },
+            "_showCorrectAnswer": {
+                "buttonText": "Correct Answer",
+                "ariaLabel": ""
+            },
+            "_hideCorrectAnswer": {
+                "buttonText": "My Answer",
+                "ariaLabel": ""
+            },
+            "_showFeedback": {
+                "buttonText": "Show feedback",
+                "ariaLabel": ""
+            },
+            "remainingAttemptsText": "attempts remaining",
+            "remainingAttemptText": "final attempt"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-105",
+        "_parentId": "b-105",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "play",
+        "_useClosedCaptions": true,
+        "_allowFullScreen": true,
+        "title": "The mentor impact",
+        "displayTitle": "The mentor impact",
+        "body": "Having a mentor, an experienced and trusted advisor, has been shown to have benefits for both academic achievement (better marks at university) and career development (career and job satisfaction). What are the benefits to you? Let's hear from some of our graduate researchers.",
+        "instruction": "Select Play.",
+        "_media": {
+            "mp4": "course/en/video/c-105.mp4",
+            "poster": "course/en/video/c-105.jpg"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-110",
+        "_parentId": "b-110",
+        "_type": "component",
+        "_component": "narrative",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "allItems",
+        "_hasNavigationInTextArea": false,
+        "title": "Mentor types",
+        "displayTitle": "Mentor types",
+        "body": "When thinking about having a mentor, or if you're a mentor to someone else, you should be clear on the type of mentor you need or need to be. There's a saying that's often applied to friends that's also true for mentors – mentors for a reason, for a season and for life. In fact, it's possible to have all three at once.",
+        "instruction": "Select the arrows to find out more.",
+        "mobileInstruction": "Select the arrows and then the plus icons to find out more.",
+        "_items": [
+            {
+                "title": "For a reason",
+                "body": "You need the mentor for a specific purpose. It could be to navigate a particularly difficult period at work or in your PhD, develop a skill, or go through a job application process. Other than that specific purpose, you (and the mentor) agree that there doesn't need to be any further contact. The relationship is limited by purpose.",
+                "_graphic": {
+                    "src": "course/en/images/c-110-001.jpg",
+                    "alt": ""
+                },
+                "strapline": "For a reason"
+            },
+            {
+                "title": "For a season",
+                "body": "The relationship is limited by time – not by purpose. Although the relationship could last a long time, you should be open to it being temporary (e.g. a few weeks, months or years). The relationship is (somewhat) less defined, but nonetheless useful. It might cover getting you through your PhD, but nothing specific within your PhD.",
+                "_graphic": {
+                    "src": "course/en/images/c-110-002.jpg",
+                    "alt": ""
+                },
+                "strapline": "For a season"
+            },
+            {
+                "title": "For life",
+                "body": "These relationships are longer, and may indeed go for a lifetime. But, more than likely, they result in you better understanding life, not just your PhD. Thus, life implies life-long lessons, not a lifetime relationship.",
+                "_graphic": {
+                    "src": "course/en/images/c-110-003.jpg",
+                    "alt": ""
+                },
+                "strapline": "For life"
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-115",
+        "_parentId": "b-115",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "full",
+        "title": "What's your need?",
+        "displayTitle": "What's your need?",
+        "body": "You may need a mentor during different parts of your career/ life and for different reasons. A mentor who motivates you. Whenever you meet, you find yourself inspired to take action in your career, in your PhD or life in general. A separate mentor who keeps you accountable and expects you to have made progress between meetings, not just to have been inspired. The one who always asks \"what have you done?\"; or \"show me your results?\"; or \"can I read it?\". A mentor for your PhD – a person a few years ahead of you helping you get through it. Then there's the career mentor, someone who's helping you get your dream first job. Or is your mentor the one helping you set the perfect balance between career, personal relationships and self-fulfilment. Regardless of the reason, it's important to be clear about the role you both play and each other's expectations. Select the <strong>Mentoring relationships</strong> document from the Resources menu to learn more.",
+        "instruction": "",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-120",
+        "_parentId": "b-120",
+        "_type": "component",
+        "_component": "accordion",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Find your perfect match",
+        "displayTitle": "Find your perfect match",
+        "body": "You want a mentor and are clear about why you need them. Take a look through your network – does anyone fit your criteria? If so, get in touch and see if they would like to be your mentor. Propose a trial period, to allow you (or them) to opt-out if things aren't progressing well. What if you don't have any suitable candidates in your network?",
+        "instruction": "Select each heading to discover your options.",
+        "_items": [
+            {
+                "title": "Multiple mentors",
+                "body": "Consider having multiple mentors – useful as it is, make sure you are progressing and the load of being a mentor can be shared."
+            },
+            {
+                "title": "Grow your network",
+                "body": "Look for new people who fit your mentor criteria or approach people already in your network and ask if they know anyone suitable."
+            },
+            {
+                "title": "Use a paid mentor",
+                "body": "There are many people out there across a range of fields and sectors who mentor others as fee-for-service. Paid mentors have the advantage of working with many people in the same situation, they know what works and what doesn't. They also are well aware of what being a good mentor looks like."
+            },
+            {
+                "title": "What's a sponsor?",
+                "body": "A career advocate – someone that's supportive of your career progression. They work in the field that you're interested in and have the opportunity to talk about you and your value to an organisation. For example, if you're looking to change organisation, they'll be in the new organisation. If you're looking to get an internal promotion they'll be in your current organisation. A sponsor provides advice on the specific role they think you're suitable for. Time to consider your mentor relationships. Open your <strong>CDP</strong> to complete the activity: <strong>Mentor goals</strong>."
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-125",
+        "_parentId": "b-125",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "play",
+        "_useClosedCaptions": true,
+        "_allowFullScreen": true,
+        "title": "Sharpen your focus",
+        "displayTitle": "Sharpen your focus",
+        "body": "Having a clear career vision or plan allows us to be focussed. It ensures that we make choices about how we spend our time to achieve our vision. Setting career goals helps us accomplish that vision and sharpen our focus. Let's hear how setting goals has helped.",
+        "instruction": "Select Play.",
+        "_media": {
+            "mp4": "course/en/video/c-125.mp4",
+            "poster": "course/en/video/c-125.jpg"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-130",
+        "_parentId": "b-130",
+        "_type": "component",
+        "_component": "hotgraphic",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "allItems",
+        "_canCycleThroughPagination": false,
+        "_hidePagination": false,
+        "_useGraphicsAsPins": false,
+        "title": "Good goals",
+        "displayTitle": "Good goals",
+        "body": "Some goals are simple, while others are complex and long-term, and rely on others for their success. Well written goals should follow the SMART principle.",
+        "instruction": "Select the icons to find out more.",
+        "mobileInstruction": "Select the arrows and then the plus icons to find out more.",
+        "_graphic": {
+            "src": "course/en/images/c-130-001.jpg",
+            "alt": ""
+        },
+        "_items": [
+            {
+                "title": "Stated",
+                "body": "You can clearly see what it is you want to achieve. They're written down somewhere so as to make a commitment to them. For example, in a journal or student file that you share with your supervisor, mentor and/or other people important to your career progression.",
+                "_graphic": {
+                    "src": "course/en/images/c-130-002.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Stated",
+                "_classes": "",
+                "_top": 10,
+                "_left": 10
+            },
+            {
+                "title": "Measurable",
+                "body": "You need a way to measure your progress and achievement. For example, achievement (e.g. attain a new skill or qualification) and progress (e.g. enrolment in a course, completing the first model, making a list of mentors). This is important to help you stay motivated and enjoy the process of achieving your goal.",
+                "_graphic": {
+                    "src": "course/en/images/c-130-003.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Measurable",
+                "_classes": "",
+                "_top": 10,
+                "_left": 20
+            },
+            {
+                "title": "Agreed",
+                "body": "In projects, this usually means across the team. For personal goal setting (as in the case of a career), the goals should be agreed with people key to success such as your mentor, sponsor or your supervisor.",
+                "_graphic": {
+                    "src": "course/en/images/c-130-004.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Agreed",
+                "_classes": "",
+                "_top": 10,
+                "_left": 30
+            },
+            {
+                "title": "Realistic",
+                "body": "Can you see a realistic path to achieving your goals? Do you have the power to achieve them, without relying on a lot of work from others? Are they in reach? Goals should be in reach, in terms of timeframe or your current expertise level. Aiming for CEO of a large multinational straight after graduation, or even aiming for a senior research position after graduation, may be slightly out of reach.",
+                "_graphic": {
+                    "src": "course/en/images/c-130-005.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Realistic",
+                "_classes": "",
+                "_top": 10,
+                "_left": 40
+            },
+            {
+                "title": "Timed",
+                "body": "You set a duration for the task/activity/goal and it has an end-date. i.e. this outcome by this time/date. This makes sure you have some kind of deadline for achievement.",
+                "_graphic": {
+                    "src": "course/en/images/c-130-006.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Timed",
+                "_classes": "",
+                "_top": 10,
+                "_left": 50
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-135",
+        "_parentId": "b-135",
+        "_type": "component",
+        "_component": "matching",
+        "_classes": "",
+        "_layout": "full",
+        "_attempts": 1,
+        "_questionWeight": 1,
+        "_canShowModelAnswer": true,
+        "_shouldDisplayAttempts": false,
+        "_isRandom": true,
+        "title": "Are they smart?",
+        "displayTitle": "Are they smart?",
+        "body": "The best goals are SMART goals. Reflect on the goals below. Which of the following do you believe follow the SMART principle?",
+        "instruction": "Select your response from the options below and select Submit.",
+        "placeholder": "Select an option",
+        "_items": [
+            {
+                "text": "Build my network by attending:",
+                "_options": [
+                    {
+                        "text": "conferences regularly and talk to people.",
+                        "_isCorrect": false
+                    },
+                    {
+                        "text": "one event per month and talk with at least two people at each.",
+                        "_isCorrect": true
+                    }
+                ]
+            },
+            {
+                "text": "Create impact and disseminate my research by writing:",
+                "_options": [
+                    {
+                        "text": "a blog and publishing it by the 31st March.",
+                        "_isCorrect": true
+                    },
+                    {
+                        "text": "a blog as soon as possible.",
+                        "_isCorrect": false
+                    }
+                ]
+            },
+            {
+                "text": "Receive guidance for my career path as a Competitive Intelligence Analyst by:",
+                "_options": [
+                    {
+                        "text": "meeting with my mentor in the field once a month for 12 months.",
+                        "_isCorrect": true
+                    },
+                    {
+                        "text": "engaging a mentor who has experience in the field.",
+                        "_isCorrect": false
+                    }
+                ]
+            }
+        ],
+        "_feedback": {
+            "correct": "That's right. If your goals are a little vague, or they don't have a clear end date, they're probably more like a wish. Unfortunately, if your goals are vague, then you will probably not achieve them. On the other hand, clear goals that are stated, measurable, agreed, realistic and timed provide focus and direction. When you work on making your career goals SMART you program your subconscious mind to work for you.",
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "That's not quite right. If your goals are a little vague, or they don't have a clear end date, they're probably more like a wish. Unfortunately, if your goals are vague, then you will probably not achieve them. On the other hand, clear goals that are stated, measurable, agreed, realistic and timed provide focus and direction. When you work on making your career goals SMART you program your subconscious mind to work for you."
+            },
+            "_incorrect": {
+                "notFinal": "",
+                "final": "That's not right. If your goals are a little vague, or they don't have a clear end date, they're probably more like a wish. Unfortunately, if your goals are vague, then you will probably not achieve them. On the other hand, clear goals that are stated, measurable, agreed, realistic and timed provide focus and direction. When you work on making your career goals SMART you program your subconscious mind to work for you."
+            }
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-140",
+        "_parentId": "b-140",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Your career goals",
+        "displayTitle": "Your career goals",
+        "body": "<p>How do you determine what your career goals should be? We'll cover this in the topic 'Build your Plan'.  However, broadly speaking, goals should:</p><ul><li>relate to what you want from life – not just work or career. Doing volunteer work might be laudable, but it won't support an extravagant lifestyle</li><li>be broken down into activities, actions, processes or rituals that'll move you closer to your goal. For example, if the goal is to get a job in research, you might be writing regularly, reading grants or reviewing possible universities to work in</li><li>be reviewed regularly to make sure you're on track and/or that they remain relevant to your current career aspirations.</li></ul><p>What do your PhD and career goals look like? Are they SMART? What can you do to improve on them? Open your <strong>CDP</strong> to complete the activity: <strong>Your goals</strong>.</p>",
+        "instruction": "",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-145",
+        "_parentId": "b-145",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "play",
+        "_useClosedCaptions": true,
+        "_allowFullScreen": true,
+        "title": "Your image",
+        "displayTitle": "Your image",
+        "body": "You're clear on what you want from your career, but what do others see. Consider the views and perceptions of those who work in your research team, the University, Industry and your broader network through the University. What do they see?",
+        "instruction": "Select Play.",
+        "_media": {
+            "mp4": "course/en/video/c-145.mp4",
+            "poster": "course/en/video/c-145.jpg"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-150",
+        "_parentId": "b-150",
+        "_type": "component",
+        "_component": "accordion",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Act as an employee",
+        "displayTitle": "Act as an employee",
+        "body": "Think about treating your PhD as if it were a job, not as if you were a student. Here are some tips that may help.",
+        "instruction": "Select each heading to find out more.",
+        "_items": [
+            {
+                "title": "9 to 5",
+                "body": "It's tempting to arrive late or leave early, especially when there's no data to collect or analyse. It's also tempting to justify late arrivals or early finishes against working longer – that is working on the weekend or after hours. Try to keep regular hours – this means being at work from 9am to 5pm. Although the nature of research work means it's possible to do work from home, (e.g. literature reviews and data analysis), you should resist this temptation."
+            },
+            {
+                "title": "Dress appropriately",
+                "body": "Many research environments are relaxed. This can sometimes encourage workwear that's more like what you wear on a lazy Sunday at home. As a student, most researchers wouldn't take a second look. However, if you want train yourself in the correct behaviours, this means dressing appropriately all day, every day."
+            },
+            {
+                "title": "Breaks",
+                "body": "For most researchers, breaks are timed around their work. Morning or afternoon tea, as well as lunch, will be taken when there's a break in the work. As students there's the temptation to let breaks extend as long as the break in research. Look to your Post Doc peers as to what's appropriate, but generally limit morning and afternoon tea to 15 minutes and lunch to 45 minutes."
+            },
+            {
+                "title": "Communicate professionally",
+                "body": "In the age of social media it's tempting to write emails in the same tone and style as an SMS to your friends arranging Saturday night drinks. Adopt a more formal tone and professional style. Academics have earned their titles, so use these titles when you address them in formal communication – particularly when it's the first time you're engaging them. Avoid abbreviations and spell out those you feel you must use. In person, or via phone or video conference, formal titles might not be appropriate, but the language you use certainly is. At the very least, avoid swearing and slang."
+            },
+            {
+                "title": "Be collegiate",
+                "body": "Be collegiate, not adversarial. Sometimes research can feel like it's you versus the rest of the world. However, that is not the case. When you give feedback, make sure it relates to the work and not the person. When you receive feedback, recognise your peers are trying to help you out. When it comes to accessing equipment, reagents, samples, cohorts, data, etc. understand these are likely to be finite resources that need to be shared for the success of the group, department, faculty or University as a whole."
+            },
+            {
+                "title": "Social media",
+                "body": "Social media is an essential part of modern research, but it's important you learn to modulate its use. It should not be a distraction from getting your research work done. If you're keen on developing a social profile related to your research, allocate time to when you'll post and make use of tools that can help schedule posts and manage multiple platforms. Don't be the person who's always on social media – get efficient at it. Understand that other people may not be as comfortable with social media as you. They may not want to be tagged, mentioned or photographed. They may not see social media as a priority for research."
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-155",
+        "_parentId": "b-155",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Be professional",
+        "displayTitle": "Be professional",
+        "body": "<p>Are you professional? How do you currently treat your PhD? The same as you did your degree? Or do you treat it like work? When working with others keep the following in mind:</p><ul><li>Do you think you're projecting the right image? If not, what areas could you improve on?</li><li>When people are talking about you, what would you like them to say?</li><li>How would you like people to feel after they interact with you?</li><li>What can you do to leave a positive impression on others?</li></ul><p>Think about the answers to these questions Open your CDP to complete the activity: <strong>My behaviours</strong>.</p>",
+        "instruction": "",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-160",
+        "_parentId": "b-160",
+        "_type": "component",
+        "_component": "hotgraphic",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "allItems",
+        "_canCycleThroughPagination": false,
+        "_hidePagination": false,
+        "_useGraphicsAsPins": false,
+        "title": "10 year back-casting",
+        "displayTitle": "10 year back-casting",
+        "body": "Do you like to plan ahead – way ahead? This may be the method for you. It involves back casting, not forecasting. It's about reflecting on your ideal life in 10 years' time. What could you do in 10 years? You could change your whole life – get a new degree and even another PhD.",
+        "instruction": "Select the icons to find out more.",
+        "mobileInstruction": "Select the arrows and then the plus icons to find out more.",
+        "_graphic": {
+            "src": "course/en/images/c-160-001.jpg",
+            "alt": ""
+        },
+        "_items": [
+            {
+                "title": "Life in 10 years",
+                "body": "Project yourself forward 10 years – establish what your life looks like. Partner, children, living arrangements as well as work. All of the things that will need to be supported by your income, thus implying what your income will be and what potential career options fit that income.",
+                "_graphic": {
+                    "src": "course/en/images/c-160-002.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Life in 10 years",
+                "_classes": "",
+                "_top": 10,
+                "_left": 10
+            },
+            {
+                "title": "Life in five years",
+                "body": "Once you have your 10-year life sorted, it's a matter of back-casting. What does that mean for life five years before that? For example, what work-roles are required to get you to your 10 year goals.",
+                "_graphic": {
+                    "src": "course/en/images/c-160-003.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Life in five years",
+                "_classes": "",
+                "_top": 10,
+                "_left": 20
+            },
+            {
+                "title": "Life in three years",
+                "body": "Repeat the process for three years from now. At this point, there needs to be some continuity between your current situation and your projected self. If you're in the first or second year of your PhD, then in three years you'll be completing (or have completed) your PhD. You'll probably be in or about to start your first Post-Doctoral role. Both of these should be on your list. Your list should also relate to your current experiences and expertise.",
+                "_graphic": {
+                    "src": "course/en/images/c-160-004.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Life in three years",
+                "_classes": "",
+                "_top": 10,
+                "_left": 30
+            },
+            {
+                "title": "Life in one year",
+                "body": "Next, consider what life would like a year from now. Now the process might be getting a little scary. But, bear in mind we overestimate how much we can get done in a week, but under estimate what we can get done in a year. So, you have plenty of time.",
+                "_graphic": {
+                    "src": "course/en/images/c-160-005.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Life in one year",
+                "_classes": "",
+                "_top": 10,
+                "_left": 40
+            },
+            {
+                "title": "Life now",
+                "body": "Once you have what your life looks like in a year from now, you then start forecasting – what do I need to do today (or over the next 365 days) to reach that point? Break the next 12 months down into a series of four 90 day blocks (i.e. groups of three months). Once you have the 90 day blocks planned out, allocate different career building activities to each block. Some will likely span several blocks, others will not. Some might even span the entire year.",
+                "_graphic": {
+                    "src": "course/en/images/c-160-006.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Life now",
+                "_classes": "",
+                "_top": 10,
+                "_left": 50
+            },
+            {
+                "title": "Time to review",
+                "body": "Plans change all the time – that's why reviews are critical. Set yourself a reminder to review your 90-day plans every – you guessed it, 90 days. Set a second reminder to review your entire plan every 12 months. Look across the plan and consider – is it plausible? If yes, start taking action on the items in your first 90-day block. If not, change the plan so it makes sense. <br><br>Does this method interest you? Select <strong>The 10-year plan</strong> from the Resources menu to learn more and identify questions that'll help you get started.",
+                "_graphic": {
+                    "src": "course/en/images/c-160-007.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Time to review",
+                "_classes": "",
+                "_top": 10,
+                "_left": 60
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-165",
+        "_parentId": "b-165",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "play",
+        "_useClosedCaptions": true,
+        "_allowFullScreen": true,
+        "title": "Skills of the future",
+        "displayTitle": "Skills of the future",
+        "body": "Do you want to be in high demand? This approach to career planning may be for you? It's all about identifying and developing the skills for the future. It aims to create a worker who's in high demand – one that has the skills required by the workforce. Let's hear what our graduate researchers think about this approach. Then learn more about this approach. Select <strong>Skills in need</strong> from the Resources menu. This provides you with further insight into how to plan your career with future skills in mind.",
+        "instruction": "Select Play.",
+        "_media": {
+            "mp4": "course/en/video/c-165.mp4",
+            "poster": "course/en/video/c-165.jpg"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-170",
+        "_parentId": "b-170",
+        "_type": "component",
+        "_component": "narrative",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "allItems",
+        "_hasNavigationInTextArea": false,
+        "title": "The work I love",
+        "displayTitle": "The work I love",
+        "body": "Another way to work out your career goals is to start from what you love doing. That's not to say the rest of us don't love what we do – but loving work, versus liking it or putting up with it, might be more important to you.",
+        "instruction": "Select the arrows to find out more.",
+        "mobileInstruction": "Select the arrows and then the plus icons to find out more.",
+        "_items": [
+            {
+                "title": "What do you love?",
+                "body": "Make a list of all the things you love to do. At this stage, do not limit the list – it should include everything. Then, add what you're good at or what you have done well in the past. Compare the two lists. What's on both? What items do you like doing and are good at? Now we need to get pragmatic. Filter the list for things people could be paid to do – the jobs you might do. We're talking about your career here, after all.",
+                "_graphic": {
+                    "src": "course/en/images/c-170-001.jpg",
+                    "alt": ""
+                },
+                "strapline": "What do you love?"
+            },
+            {
+                "title": "Skills and experience",
+                "body": "Now you've considered the jobs you might do. Next, list the skills and experiences you have, versus the ones required to do the work you love. Put the skills and experiences in priority order – based on most needed, or easiest/quickest to acquire or some other priority order that makes sense to you.",
+                "_graphic": {
+                    "src": "course/en/images/c-170-002.jpg",
+                    "alt": ""
+                },
+                "strapline": "Skills and experience"
+            },
+            {
+                "title": "Make a plan",
+                "body": "Now, note down what you need to do in the next little while (e.g. 90 days/3 months or 12 months) to make progress on each skill or experience. Each 90 days review your progress and plan for the next 90 days. Then, each 12 months review your progress and repeat the planning process. Cross things off the lists and add to them as you grow and develop and your ideas change. Like this approach? Select <strong>Work I Love</strong> from the Resources menu. This guide provides you further details in building your career plan using this approach.",
+                "_graphic": {
+                    "src": "course/en/images/c-170-003.jpg",
+                    "alt": ""
+                },
+                "strapline": "Make a plan"
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-175",
+        "_parentId": "b-175",
+        "_type": "component",
+        "_component": "matching",
+        "_classes": "",
+        "_layout": "full",
+        "_attempts": 1,
+        "_questionWeight": 1,
+        "_canShowModelAnswer": true,
+        "_shouldDisplayAttempts": false,
+        "_isRandom": true,
+        "title": "Know your skills",
+        "displayTitle": "Know your skills",
+        "body": "What skills have you acquired through formal study and other activities? Can you explain these to a potential employer – who wants to know what you can do? Reflect on the activities below and select the skill they translate to the most.",
+        "instruction": "Select your response from the options below and select Submit.",
+        "placeholder": "Select an option",
+        "_items": [
+            {
+                "text": "Testing assumptions by taking data into account.",
+                "_options": [
+                    {
+                        "text": "Communication",
+                        "_isCorrect": false
+                    },
+                    {
+                        "text": "Problem solving",
+                        "_isCorrect": true
+                    }
+                ]
+            },
+            {
+                "text": "Identifying new opportunities, not obvious to others.",
+                "_options": [
+                    {
+                        "text": "Initiative",
+                        "_isCorrect": true
+                    },
+                    {
+                        "text": "Communication",
+                        "_isCorrect": false
+                    }
+                ]
+            },
+            {
+                "text": "Coaching, mentoring and giving feedback to research team.",
+                "_options": [
+                    {
+                        "text": "Technology",
+                        "_isCorrect": false
+                    },
+                    {
+                        "text": "Team work",
+                        "_isCorrect": true
+                    }
+                ]
+            },
+            {
+                "text": "Establishing clear PhD goals and deliverables.",
+                "_options": [
+                    {
+                        "text": "Planning and organising",
+                        "_isCorrect": true
+                    },
+                    {
+                        "text": "Communication",
+                        "_isCorrect": false
+                    }
+                ]
+            },
+            {
+                "text": "Writing journal articles suited to a specific audience.",
+                "_options": [
+                    {
+                        "text": "Communication",
+                        "_isCorrect": true
+                    },
+                    {
+                        "text": "Learning",
+                        "_isCorrect": false
+                    }
+                ]
+            }
+        ],
+        "_feedback": {
+            "correct": "That's right. There are many everyday activities you do as a PhD student that contribute to your employability skills. Whether they're specialist skills such as technology, transferable skills such as communication and team work or self-management skills such as organisation and initiative. Now you've learnt about all three planning approaches, take the time to build your plan. Visit your <strong>CDP</strong> to complete the activity: <strong>Plan your career</strong>.",
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "That's not quite right. There are many everyday activities you do as a PhD student that contribute to your employability skills. Whether they're specialist skills such as technology, transferable skills such as communication and team work or self-management skills such as organisation and initiative. Now you've learnt about all three planning approaches, take the time to build your plan. Visit your <strong>CDP</strong> to complete the activity: <strong>Plan your career</strong>."
+            },
+            "_incorrect": {
+                "notFinal": "",
+                "final": "That's not right. There are many everyday activities you do as a PhD student that contribute to your employability skills. Whether they're specialist skills such as technology, transferable skills such as communication and team work or self-management skills such as organisation and initiative. Now you've learnt about all three planning approaches, take the time to build your plan. Visit your <strong>CDP</strong> to complete the activity: <strong>Plan your career</strong>."
+            }
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-180",
+        "_parentId": "b-180",
+        "_type": "component",
+        "_component": "accordion",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Get the experience",
+        "displayTitle": "Get the experience",
+        "body": "How can you build skills or gain experience during your PhD? Take the time to participate in free activities. Look for paid work. Then there's fee-for-service activities, where you pay to be involved. Let's look at some options you could take advantage of in each area.",
+        "instruction": "Select the headings to find out more.",
+        "_items": [
+            {
+                "title": "Free",
+                "body": "What's available for free? Volunteer to run student conferences or seminars. Join a club or society (e.g. University, sport or research) and participate in their management or event organisation committees. Complete free Monash short courses or get a free mentor. Approach a potential employer to do some free work experience over the holidays. Volunteer in a group aligned to your field, e.g. support people with a disability if you're in disability research.",
+                "_graphic": {
+                    "src": "course/en/images/c-180-001.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Paid",
+                "body": "Look for a part-time/casual job that can build the skills you need, e.g. event management if you're interested in project management or tutor if you're interested in teaching. Find out who employs graduates in your field and seek work as a casual (e.g. assistant or officer). Seek out jobs in related industries. Become a lab hand or research technician if you want a job in research – but aim for a different group to where you're doing your PhD. Work at a pharmacy if you want a career in the pharmaceutical industry – you'll learn lots about medicines and regulations.",
+                "_graphic": {
+                    "src": "course/en/images/c-180-002.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Fee for service",
+                "body": "It sometimes pays to pay! Enrol in short or long training courses at university or elsewhere. Look for a paid mentor. Complete experience-based learning – there are many leadership courses of this type. Or pay to use diagnostic tools that help you understand yourself and your working style or preferences.",
+                "_graphic": {
+                    "src": "course/en/images/c-180-003.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-185",
+        "_parentId": "b-185",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "play",
+        "_useClosedCaptions": true,
+        "_allowFullScreen": true,
+        "title": "Positive outcomes",
+        "displayTitle": "Positive outcomes",
+        "body": "Investing money or time in your future has many personal and professional benefits. It can be a positive point of difference to a future employer, increase your career opportunities and of course there's the personal growth. Let's hear more about the benefits.",
+        "instruction": "Select Play.",
+        "_media": {
+            "mp4": "course/en/video/c-185.mp4",
+            "poster": "course/en/video/c-185.jpg"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-190",
+        "_parentId": "b-190",
+        "_type": "component",
+        "_component": "mcq",
+        "_classes": "",
+        "_layout": "full",
+        "_attempts": 1,
+        "_shouldDisplayAttempts": false,
+        "_questionWeight": 1,
+        "_isRandom": true,
+        "_selectable": 3,
+        "_canShowModelAnswer": true,
+        "_canShowMarking": true,
+        "_recordInteraction": true,
+        "title": "Consider this!",
+        "displayTitle": "Consider this!",
+        "body": "How will you decide on which development activities are for you? First, step back and reflect on why you're choosing them. Reflect on the considerations below. Which do you believe are important when it comes to picking your development opportunities?",
+        "instruction": "Select one or more of the following options and select Submit.",
+        "_items": [
+            {
+                "text": "Matched to the required skills or experiences identified in your career plan.",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "The impact on the progress of your PhD.",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Your supervisor's opinion and advice.",
+                "_shouldBeSelected": true
+            }
+        ],
+        "_feedback": {
+            "correct": "That's right. It's important you consider all these factors. Weigh up the cost of not getting a job, versus not having the necessary skills (or experience), versus the impact on the progress of your PhD. Chat with your supervisor about how these activities might impact your PhD. It's not necessarily about getting permission – although that might be what it feels like. It's about ensuring your supervisor is informed. Also, match the activity to the skills or experiences you're missing – it's one step further to achieving your career plan. Visit your <strong>CDP</strong> to complete the activity: <strong>Your opportunities</strong>.",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "That's not right. It's important you consider all these factors. Weigh up the cost of not getting a job, versus not having the necessary skills (or experience), versus the impact on the progress of your PhD. Chat with your supervisor about how these activities might impact your PhD. It's not necessarily about getting permission – although that might be what it feels like. It's about ensuring your supervisor is informed. Also, match the activity to the skills or experiences you're missing – it's one step further to achieving your career plan. Visit your <strong>CDP</strong> to complete the activity: <strong>Your opportunities</strong>."
+            },
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "That's not quite right. It's important you consider all these factors. Weigh up the cost of not getting a job, versus not having the necessary skills (or experience), versus the impact on the progress of your PhD. Chat with your supervisor about how these activities might impact your PhD. It's not necessarily about getting permission – although that might be what it feels like. It's about ensuring your supervisor is informed. Also, match the activity to the skills or experiences you're missing – it's one step further to achieving your career plan. Visit your <strong>CDP</strong> to complete the activity: <strong>Your opportunities</strong>."
+            }
+        },
+        "_buttons": {
+            "_submit": {
+                "buttonText": "Submit",
+                "ariaLabel": "Select here to submit your answer."
+            },
+            "_reset": {
+                "buttonText": "Reset",
+                "ariaLabel": ""
+            },
+            "_showCorrectAnswer": {
+                "buttonText": "Correct Answer",
+                "ariaLabel": ""
+            },
+            "_hideCorrectAnswer": {
+                "buttonText": "My Answer",
+                "ariaLabel": ""
+            },
+            "_showFeedback": {
+                "buttonText": "Show feedback",
+                "ariaLabel": ""
+            },
+            "remainingAttemptsText": "attempts remaining",
+            "remainingAttemptText": "final attempt"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-195",
+        "_parentId": "b-195",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "play",
+        "_useClosedCaptions": true,
+        "_allowFullScreen": true,
+        "title": "Make it work",
+        "displayTitle": "Make it work",
+        "body": "The best career plan is the one that works for you. The one easy to use. If your career development plan is not useful, change it. If the plan is too big, make it smaller. If the process is too long, make it shorter. If tables and lists are not your style, use graphs, graphics, mind-maps, pictures or drawings. Let's hear how this graduate researcher made it work.",
+        "instruction": "Select Play.",
+        "_media": {
+            "mp4": "course/en/video/c-195.mp4",
+            "poster": "course/en/video/c-195.jpg"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-200",
+        "_parentId": "b-200",
+        "_type": "component",
+        "_component": "narrative",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "allItems",
+        "_hasNavigationInTextArea": false,
+        "title": "Stick to the plan",
+        "displayTitle": "Stick to the plan",
+        "body": "You're committed to your career plan and have the best of intentions. So, why do plans go off course? Day to day activities get in the way or you fail to achieve a goal and feel demotivated. Here are some tips to help you stick to the plan.",
+        "instruction": "Select the arrows to find out more.",
+        "mobileInstruction": "Select the arrows and then the plus icons to find out more.",
+        "_items": [
+            {
+                "title": "Keep your PHD in mind",
+                "body": "Create your career plan with your PhD in mind. That's not to say your PhD should drive your career, but your career plan isn't an excuse to do less in your PhD, change direction in your PhD or give up on your PhD. If you think any of these changes are necessary, speak to your supervisor or other key people in your life. Discuss your options, e.g. deferring, rather than dropping out.",
+                "_graphic": {
+                    "src": "course/en/images/c-200-001.jpg",
+                    "alt": ""
+                },
+                "strapline": "Keep your PHD in mind"
+            },
+            {
+                "title": "Own it",
+                "body": "It's your plan, so own it. Only you can make it real. No matter who might have provided input along the way – this is your working life being planned out. Make sure you're happy with the plan. If not, change it! It's just a plan.",
+                "_graphic": {
+                    "src": "course/en/images/c-200-002.jpg",
+                    "alt": ""
+                },
+                "strapline": "Own it"
+            },
+            {
+                "title": "Change is okay",
+                "body": "Is change okay? Yes! Sticking to the plan helps you make quick progress, but circumstances change. During your regular reviews take the time to assess, update or change the plan entirely. Use a different planning approach if the previous method didn't work for you. If you decide not to do something, own that decision. Note you did not complete that task/activity and then update your plan.",
+                "_graphic": {
+                    "src": "course/en/images/c-200-003.jpg",
+                    "alt": ""
+                },
+                "strapline": "Change is okay"
+            },
+            {
+                "title": "Keep it visbile",
+                "body": "In photography, there's a saying the best camera is the one you have with you. There's no point seeing the best photo opportunity, but not having a camera to capture the moment. This is why some people prefer their smart phone as their camera, rather than a big and bulky DSLR (digital, single reflex camera). The same is true of plans. The best plans are the ones you have with you. Keep your plan visible. It will help you keep track of your progress.",
+                "_graphic": {
+                    "src": "course/en/images/c-200-003.jpg",
+                    "alt": ""
+                },
+                "strapline": "Keep it visbile"
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-205",
+        "_parentId": "b-205",
+        "_type": "component",
+        "_component": "mcq",
+        "_classes": "",
+        "_layout": "full",
+        "_attempts": 1,
+        "_shouldDisplayAttempts": false,
+        "_questionWeight": 1,
+        "_isRandom": true,
+        "_selectable": 6,
+        "_canShowModelAnswer": true,
+        "_canShowMarking": true,
+        "_recordInteraction": true,
+        "title": "Have the conversation",
+        "displayTitle": "Have the conversation",
+        "body": "Want to actively manage your career? Want help with your plan? Take the time to hold career conversations with people who can help. Who can support you during your career development?",
+        "instruction": "Select one or more of the following options and select Submit.",
+        "_items": [
+            {
+                "text": "Mentor",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Supervisor",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Parent",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Partner",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Friend",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Monash career planner",
+                "_shouldBeSelected": true
+            }
+        ],
+        "_feedback": {
+            "correct": "Any of these people could play an integral part in your career development. It's important you identify and use the right support system for you. Talk to them about your career of interest. Use their experience and knowledge to guide you towards your career goals. Prepare for your career conversations by identifying questions you want to ask or make a list of goals and development ideas you'd like to discuss. Open your <strong>CDP</strong> to complete the activity: <strong>Career conversations</strong>.",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "Any of these people could play an integral part in your career development. It's important you identify and use the right support system for you. Talk to them about your career of interest. Use their experience and knowledge to guide you towards your career goals. Prepare for your career conversations by identifying questions you want to ask or make a list of goals and development ideas you'd like to discuss. Open your <strong>CDP</strong> to complete the activity: <strong>Career conversations</strong>."
+            },
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "Any of these people could play an integral part in your career development. It's important you identify and use the right support system for you. Talk to them about your career of interest. Use their experience and knowledge to guide you towards your career goals. Prepare for your career conversations by identifying questions you want to ask or make a list of goals and development ideas you'd like to discuss. Open your <strong>CDP</strong> to complete the activity: <strong>Career conversations</strong>."
+            }
+        },
+        "_buttons": {
+            "_submit": {
+                "buttonText": "Submit",
+                "ariaLabel": "Select here to submit your answer."
+            },
+            "_reset": {
+                "buttonText": "Reset",
+                "ariaLabel": ""
+            },
+            "_showCorrectAnswer": {
+                "buttonText": "Correct Answer",
+                "ariaLabel": ""
+            },
+            "_hideCorrectAnswer": {
+                "buttonText": "My Answer",
+                "ariaLabel": ""
+            },
+            "_showFeedback": {
+                "buttonText": "Show feedback",
+                "ariaLabel": ""
+            },
+            "remainingAttemptsText": "attempts remaining",
+            "remainingAttemptText": "final attempt"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-210",
+        "_parentId": "b-210",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "play",
+        "_useClosedCaptions": true,
+        "_allowFullScreen": true,
+        "title": "Realise the plan",
+        "displayTitle": "Realise the plan",
+        "body": "It's time to act on the plan – be creative, take risks and snatch up the development opportunities you've identified. Are you up for the challenge? What could go wrong? Let's hear from some of our graduate researchers and the lessons they've learnt.",
+        "instruction": "Select Play.",
+        "_media": {
+            "mp4": "course/en/video/c-210.mp4",
+            "poster": "course/en/video/c-210.jpg"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-215",
+        "_parentId": "b-215",
+        "_type": "component",
+        "_component": "hotgraphic",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "allItems",
+        "_canCycleThroughPagination": false,
+        "_hidePagination": false,
+        "_useGraphicsAsPins": false,
+        "title": "Get it going",
+        "displayTitle": "Get it going",
+        "body": "Just like any other plan implementation is the key to success. There are many things you can do to make sure implementation goes smoothly – here are some tips.",
+        "instruction": "Select the icons to find out more.",
+        "mobileInstruction": "Select the arrows and then the plus icons to find out more.",
+        "_graphic": {
+            "src": "course/en/images/c-215-001.jpg",
+            "alt": ""
+        },
+        "_items": [
+            {
+                "title": "Make it clear",
+                "body": "Write your goals and action steps down. Use a journal, student file or any approach that allows you to visualise your goals and also allows you to share your plans with others.",
+                "_graphic": {
+                    "src": "course/en/images/c-215-002.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Make it clear",
+                "_classes": "",
+                "_top": 10,
+                "_left": 10
+            },
+            {
+                "title": "Share it",
+                "body": "The plan does not have to be on Facebook or other social media, but key people, (e.g. your mentor and/or your supervisor) will need to know about it. People will need to know their role in your success – at the very least let others know what you're looking for. For some people, that will mean sharing the whole plan, for others that will mean sharing parts of it.",
+                "_graphic": {
+                    "src": "course/en/images/c-215-003.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Share it",
+                "_classes": "",
+                "_top": 10,
+                "_left": 20
+            },
+            {
+                "title": "Partner up",
+                "body": "Ask people you trust to hold you accountable. Their role is to know the plan, or parts of it, and check in on your progress periodically. Encourage them to ask you the hard questions. They need to be able to motivate you, using carrots or sticks, if necessary.",
+                "_graphic": {
+                    "src": "course/en/images/c-215-004.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Partner up",
+                "_classes": "",
+                "_top": 10,
+                "_left": 30
+            },
+            {
+                "title": "Remove distractions",
+                "body": "Eliminate distractions and avoid multitasking. Avoid trying to develop too many skills or have too many experiences simultaneously. There's a large amount of evidence to show that it's less efficient to multitask than monotask. Also, partial progress on several goals, is less fulfilling than complete progress on one goal. Some people can feel disheartened when nothing is complete, but many things are started.",
+                "_graphic": {
+                    "src": "course/en/images/c-215-005.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Remove distractions",
+                "_classes": "",
+                "_top": 10,
+                "_left": 40
+            },
+            {
+                "title": "Sharp focus",
+                "body": "In his book on strategy, Ben Hunt-Davis talks of his Great Brittan rowing teams' effort to win gold at the Sydney Olympics. Every decision they made was viewed through the lens of \"will it make the boat go faster?\" They didn't think about winning gold, just making the boat faster. You could do the same with your career goals. Ask the question \"will it help me achieve my career goals?\".",
+                "_graphic": {
+                    "src": "course/en/images/c-215-006.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Sharp focus",
+                "_classes": "",
+                "_top": 10,
+                "_left": 50
+            },
+            {
+                "title": "Process not outcome",
+                "body": "Action comes before motivation. You need to do the work, or some work, before you'll feel motivated to do work. It seems somewhat counter intuitive – but it's backed by research. So, get doing! Focusing on process allows you to go beyond your original goals – it can help set habits that allow you to achieve your goals. Once they're habits, they can hold you in good stead for the rest of your career.",
+                "_graphic": {
+                    "src": "course/en/images/c-215-007.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Process not outcome",
+                "_classes": "",
+                "_top": 10,
+                "_left": 60
+            },
+            {
+                "title": "Review",
+                "body": "You should review progress quarterly and update your plan annually. Make sure you write down the progress you made. That way you'll know where you're within your plan and what the next steps are – including celebrating the fantastic progress you've made.",
+                "_graphic": {
+                    "src": "course/en/images/c-215-008.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Review",
+                "_classes": "",
+                "_top": 10,
+                "_left": 70
+            },
+            {
+                "title": "Celebrate",
+                "body": "When you achieve a goal or reach a milestone – celebrate those wins! Reward yourself with something. It might even be useful to set the reward before you start the task, e.g. if I complete the course, I'll buy that special item.",
+                "_graphic": {
+                    "src": "course/en/images/c-215-009.jpg",
+                    "alt": "",
+                    "_classes": ""
+                },
+                "strapline": "Celebrate",
+                "_classes": "",
+                "_top": 10,
+                "_left": 80
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-220",
+        "_parentId": "b-220",
+        "_type": "component",
+        "_component": "mcq",
+        "_classes": "",
+        "_layout": "full",
+        "_attempts": 1,
+        "_shouldDisplayAttempts": false,
+        "_questionWeight": 1,
+        "_isRandom": true,
+        "_selectable": 7,
+        "_canShowModelAnswer": true,
+        "_canShowMarking": true,
+        "_recordInteraction": true,
+        "title": "Plan for the present. Prepare for the future.",
+        "displayTitle": "Plan for the present. Prepare for the future.",
+        "body": "Time to make some decisions. Ask yourself, \"What can I do to plan for a successful career?\"",
+        "instruction": "Select one or more of the following options and select Submit.",
+        "_items": [
+            {
+                "text": "Develop my networks further.",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Find a mentor.",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Set SMART career goals.",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Discuss future job options with supervisor, mentor, etc.",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Identify key employability skills in my field.",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Improve my professional image.",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Partake in skill development opportunities.",
+                "_shouldBeSelected": true
+            }
+        ],
+        "_feedback": {
+            "correct": "These are just a few suggestions. Take the time to identify what you would like to work on to plan your career. Identify a set of clear actions that you can take, in order to achieve your commitments. For example, you may want to develop expertise in a certain area by finding a mentor. Time to make the commitment! Open your <strong>CDP</strong> to complete the activity: <strong>Implement your plan</strong>. Then, go to the last page of your <strong>CDP</strong> to complete your <strong>CDP action plan</strong>. Discuss your plan with your supervisor, mentor, coach or industry expert and find out how they can help you implement your development plan.",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "These are just a few suggestions. Take the time to identify what you would like to work on to plan your career. Identify a set of clear actions that you can take, in order to achieve your commitments. For example, you may want to develop expertise in a certain area by finding a mentor. Time to make the commitment! Open your <strong>CDP</strong> to complete the activity: <strong>Implement your plan</strong>. Then, go to the last page of your <strong>CDP</strong> to complete your <strong>CDP action plan</strong>. Discuss your plan with your supervisor, mentor, coach or industry expert and find out how they can help you implement your development plan."
+            },
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "These are just a few suggestions. Take the time to identify what you would like to work on to plan your career. Identify a set of clear actions that you can take, in order to achieve your commitments. For example, you may want to develop expertise in a certain area by finding a mentor. Time to make the commitment! Open your <strong>CDP</strong> to complete the activity: <strong>Implement your plan</strong>. Then, go to the last page of your <strong>CDP</strong> to complete your <strong>CDP action plan</strong>. Discuss your plan with your supervisor, mentor, coach or industry expert and find out how they can help you implement your development plan."
+            }
+        },
+        "_buttons": {
+            "_submit": {
+                "buttonText": "Submit",
+                "ariaLabel": "Select here to submit your answer."
+            },
+            "_reset": {
+                "buttonText": "Reset",
+                "ariaLabel": ""
+            },
+            "_showCorrectAnswer": {
+                "buttonText": "Correct Answer",
+                "ariaLabel": ""
+            },
+            "_hideCorrectAnswer": {
+                "buttonText": "My Answer",
+                "ariaLabel": ""
+            },
+            "_showFeedback": {
+                "buttonText": "Show feedback",
+                "ariaLabel": ""
+            },
+            "remainingAttemptsText": "attempts remaining",
+            "remainingAttemptText": "final attempt"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
     }
 ]

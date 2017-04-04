@@ -27,6 +27,12 @@
             "_onAssessmentFailure": "incomplete"
         }
     },
+    "_imsmanifest": {
+        "man_id": "adapt_manifest_monolp_m01_leadership",
+        "org_id": "adapt_scorm_monolp_m01_leadership",
+        "title": "Unleash your leadership",
+        "description": "Why is learning to lead important and how will it help you during your PhD and beyond"
+    },
     "_tutor": {
         "_isEnabled": true
     },
