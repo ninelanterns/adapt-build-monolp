@@ -25,13 +25,12 @@
             "_comment": "Your options here are 'completed', 'passed', 'failed', and 'incomplete'",
             "_onTrackingCriteriaMet": "completed",
             "_onAssessmentFailure": "incomplete"
+        },
+        "_imsmanifest": {
+            "_id": "monolp_m02_communication",
+            "_title": "Unleash your communication",
+            "_description": "How well can you share your ideas"
         }
-    },
-    "_imsmanifest": {
-        "man_id": "adapt_manifest_monolp_m02_communication",
-        "org_id": "adapt_scorm_monolp_m02_communication",
-        "title": "Unleash your communication",
-        "description": "How well can you share your ideas"
     },
     "_tutor": {
         "_isEnabled": true
