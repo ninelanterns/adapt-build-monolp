@@ -36,7 +36,7 @@
                 "title": "Dashboard",
                 "body": "To help track your progress throughout the topics, in the top right of the screen you will have access to the dashboard. This dashboard is a useful tool that can tell you how you're tracking and will give you guidance on your progress.",
                 "_graphic": {
-                    "src": "course/en/images/c-05-002.jpg",
+                    "src": "course/en/images/c-05-003.jpg",
                     "alt": ""
                 },
                 "strapline": "Dashboard"
@@ -45,7 +45,7 @@
                 "title": "Resources",
                 "body": "Use the Resources menu at the top right of the page to explore further resources available in this course.",
                 "_graphic": {
-                    "src": "course/en/images/c-05-003.jpg",
+                    "src": "course/en/images/c-05-004.jpg",
                     "alt": ""
                 },
                 "strapline": "Resources"
@@ -219,8 +219,8 @@
         "body": "Have you thought about what you'll do after your PhD? As you plan, carry out and complete your PhD, the work you choose to do, or not do, will influence your career options once you graduate. From the choice of topic, to the methods you use, to the equipment you access and the other people you work/collaborate with. We plan these – so why not our career more broadly?",
         "instruction": "Select Play.",
         "_media": {
-            "mp4": "course/en/video/c-25.mp4",
-            "poster": "course/en/video/c-25.jpg"
+            "mp4": "course/en/video/c-00.mp4",
+            "poster": "course/en/video/c-00.jpg"
         },
         "_pageLevelProgress": {
             "_isEnabled": true
@@ -257,8 +257,8 @@
                 },
                 "strapline": "Topic",
                 "_classes": "",
-                "_top": 10,
-                "_left": 10
+                "_top": 2.5,
+                "_left": 47.5
             },
             {
                 "title": "Method",
@@ -270,8 +270,8 @@
                 },
                 "strapline": "Method",
                 "_classes": "",
-                "_top": 10,
-                "_left": 20
+                "_top": 29.8,
+                "_left": 70.2
             },
             {
                 "title": "Infrastructure",
@@ -283,8 +283,8 @@
                 },
                 "strapline": "Infrastructure",
                 "_classes": "",
-                "_top": 10,
-                "_left": 30
+                "_top": 60,
+                "_left": 47.5
             },
             {
                 "title": "People",
@@ -296,8 +296,8 @@
                 },
                 "strapline": "People",
                 "_classes": "",
-                "_top": 10,
-                "_left": 40
+                "_top": 30,
+                "_left": 24.8
             }
         ],
         "_pageLevelProgress": {
@@ -409,8 +409,8 @@
         "body": "Why should you regularly communicate your work? Well, it could make all the difference to your employment prospects, gain the respect of your peers, win you that research grant or help you climb the job ladder. Let's hear Sam's story.",
         "instruction": "Select Play.",
         "_media": {
-            "mp4": "course/en/video/c-40.mp4",
-            "poster": "course/en/video/c-40.jpg"
+            "mp4": "course/en/video/c-00.mp4",
+            "poster": "course/en/video/c-00.jpg"
         },
         "_pageLevelProgress": {
             "_isEnabled": true
@@ -520,7 +520,7 @@
         "instruction": "Select the icons to find out more.",
         "mobileInstruction": "Select the icons to find out more.",
         "_graphic": {
-            "src": "course/en/images/c-60.jpg",
+            "src": "course/en/images/c-60-001.jpg",
             "alt": ""
         },
         "_items": [
@@ -528,40 +528,40 @@
                 "title": "Australia",
                 "body": "<p>Per year, between 2011 and 2015, there were approximately:</p><ul><li>43,000 PhD enrolments (62,000 if you include overseas students)</li><li>6,500 completions (9,200 if you include overseas students)</li><li>only 2,500 head count growth in staff.</li></ul><p>Even allowing for 3,000 retirement positions to be taken up by new students, i.e. so there's no net growth in staff count, there's still an annual short-fall of approximately more than 1,000. This picture is further worsened if you look at the 2014-2015 figures, where total staff growth across the entire university sector in Australia was less than 700 people.</p>",
                 "_graphic": {
-                    "src": "course/en/images/c-60-001.jpg",
+                    "src": "course/en/images/c-60-002.jpg",
                     "alt": "",
                     "_classes": ""
                 },
                 "strapline": "Australia",
                 "_classes": "",
-                "_top": 10,
-                "_left": 10
+                "_top": 19,
+                "_left": 11
             },
             {
                 "title": "America",
                 "body": "Outside Australia, data from the American Association for Cell Biology indicates that within six years about 10% of PhD graduates will be faculty, and a further 15% will be research fellows. The remaining 75% will be outside university altogether.",
                 "_graphic": {
-                    "src": "course/en/images/c-60-002.jpg",
+                    "src": "course/en/images/c-60-003.jpg",
                     "alt": "",
                     "_classes": ""
                 },
                 "strapline": "America",
                 "_classes": "",
-                "_top": 10,
-                "_left": 20
+                "_top": 44,
+                "_left": 84
             },
             {
                 "title": "UK",
                 "body": "The UK Royal Society data states that, longer term, only 0.45% of PhD graduates become professors; 3.5% are permanent research staff, with the remainder not at university, but perhaps in research or outside research/university all together.",
                 "_graphic": {
-                    "src": "course/en/images/c-60-003.jpg",
+                    "src": "course/en/images/c-60-004.jpg",
                     "alt": "",
                     "_classes": ""
                 },
                 "strapline": "UK",
                 "_classes": "",
-                "_top": 10,
-                "_left": 30
+                "_top": 39,
+                "_left": 26
             }
         ],
         "_pageLevelProgress": {
@@ -583,8 +583,8 @@
         "body": "Some graduates go on to careers in universities. Others join major corporations or form companies of their own. Others use their skills to advise governments of all sizes or work for bodies such as the United nations. Let's hear from a researcher who chose an alternative career path and why it has worked for them.",
         "instruction": "Select Play.",
         "_media": {
-            "mp4": "course/en/video/c-65.mp4",
-            "poster": "course/en/video/c-65.jpg"
+            "mp4": "course/en/video/c-00.mp4",
+            "poster": "course/en/video/c-00.jpg"
         },
         "_pageLevelProgress": {
             "_isEnabled": true
@@ -712,8 +712,8 @@
         "body": "Why should graduate researchers expect a portfolio career? Why are both career paths increasingly common? Are there advantages to having a diverse career path? Hear from our expert and get some answers.",
         "instruction": "Select Play.",
         "_media": {
-            "mp4": "course/en/video/c-80.mp4",
-            "poster": "course/en/video/c-80.jpg"
+            "mp4": "course/en/video/c-00.mp4",
+            "poster": "course/en/video/c-00.jpg"
         },
         "_pageLevelProgress": {
             "_isEnabled": true
@@ -828,8 +828,8 @@
         "body": "How does networking help your career? It can help you build on relationships and start reaching out beyond your institution and your immediate circle. The people you connect with may become future academic collaborators, or people who provide an additional source of inspiration for the future. Let's hear why broadening your horizons works.",
         "instruction": "Select Play.",
         "_media": {
-            "mp4": "course/en/video/c-90.mp4",
-            "poster": "course/en/video/c-90.jpg"
+            "mp4": "course/en/video/c-00.mp4",
+            "poster": "course/en/video/c-00.jpg"
         },
         "_pageLevelProgress": {
             "_isEnabled": true
@@ -869,7 +869,7 @@
                 "title": "Make it valuable",
                 "body": "Now that you're prepared, the next part is to do it with some purpose. There's little point to building a large network of random people. Although it might look good on LinkedIn or Facebook to have 100s or 1,000s of connections or friends, they need to have value to you. Think about people you can collaborate with, cooperate with or learn from in the long-term.",
                 "_graphic": {
-                    "src": "course/en/images/c-95-002.jpg",
+                    "src": "course/en/images/c-95-003.jpg",
                     "alt": ""
                 },
                 "_classes": ""
@@ -878,7 +878,7 @@
                 "title": "Plan it out",
                 "body": "Create a list of traits, skills or connections that you think you need. This could be what you currently lack and need to learn, or something that you cannot learn and can only borrow from someone else. If the list is long, prioritise it. What do you need now – what can wait? Next to each item, put a name (if you know someone), type (e.g. Post-Doctoral Fellow or Group Head) or role title (e.g. CEO, Dean) of who can help. Then, make a note of how you will reach out or connect with them. Will it be via phone, email, LinkedIn, Facebook, twitter, at an event or something else?",
                 "_graphic": {
-                    "src": "course/en/images/c-95-002.jpg",
+                    "src": "course/en/images/c-95-004.jpg",
                     "alt": ""
                 },
                 "_classes": ""
@@ -887,7 +887,7 @@
                 "title": "Reach out",
                 "body": "Time to act – so, reach out. Make sure you're clear on why the two of you should connect. Recognise that networking is for mutual benefit. Not one way. Consider what you can offer in return. Don't forget to stay in touch. Just a phone call or email every now and then will do. But make it count and make it real. Want to learn more, consider reading the book, Networking for Career Success. It covers the basics of networking to targeted techniques for making a career change.",
                 "_graphic": {
-                    "src": "course/en/images/c-95-003.jpg",
+                    "src": "course/en/images/c-95-005.jpg",
                     "alt": ""
                 },
                 "_classes": ""
@@ -1006,8 +1006,8 @@
         "body": "Having a mentor, an experienced and trusted advisor, has been shown to have benefits for both academic achievement (better marks at university) and career development (career and job satisfaction). What are the benefits to you? Let's hear from some of our graduate researchers.",
         "instruction": "Select Play.",
         "_media": {
-            "mp4": "course/en/video/c-105.mp4",
-            "poster": "course/en/video/c-105.jpg"
+            "mp4": "course/en/video/c-00.mp4",
+            "poster": "course/en/video/c-00.jpg"
         },
         "_pageLevelProgress": {
             "_isEnabled": true
@@ -1133,8 +1133,8 @@
         "body": "Having a clear career vision or plan allows us to be focussed. It ensures that we make choices about how we spend our time to achieve our vision. Setting career goals helps us accomplish that vision and sharpen our focus. Let's hear how setting goals has helped.",
         "instruction": "Select Play.",
         "_media": {
-            "mp4": "course/en/video/c-125.mp4",
-            "poster": "course/en/video/c-125.jpg"
+            "mp4": "course/en/video/c-00.mp4",
+            "poster": "course/en/video/c-00.jpg"
         },
         "_pageLevelProgress": {
             "_isEnabled": true
@@ -1171,8 +1171,8 @@
                 },
                 "strapline": "Stated",
                 "_classes": "",
-                "_top": 10,
-                "_left": 10
+                "_top": 27,
+                "_left": 23
             },
             {
                 "title": "Measurable",
@@ -1184,8 +1184,8 @@
                 },
                 "strapline": "Measurable",
                 "_classes": "",
-                "_top": 10,
-                "_left": 20
+                "_top": 42,
+                "_left": 35
             },
             {
                 "title": "Agreed",
@@ -1197,8 +1197,8 @@
                 },
                 "strapline": "Agreed",
                 "_classes": "",
-                "_top": 10,
-                "_left": 30
+                "_top": 27,
+                "_left": 47
             },
             {
                 "title": "Realistic",
@@ -1210,8 +1210,8 @@
                 },
                 "strapline": "Realistic",
                 "_classes": "",
-                "_top": 10,
-                "_left": 40
+                "_top": 42,
+                "_left": 58.7
             },
             {
                 "title": "Timed",
@@ -1223,8 +1223,8 @@
                 },
                 "strapline": "Timed",
                 "_classes": "",
-                "_top": 10,
-                "_left": 50
+                "_top": 27,
+                "_left": 70.5
             }
         ],
         "_pageLevelProgress": {
@@ -1344,8 +1344,8 @@
         "body": "You're clear on what you want from your career, but what do others see. Consider the views and perceptions of those who work in your research team, the University, Industry and your broader network through the University. What do they see?",
         "instruction": "Select Play.",
         "_media": {
-            "mp4": "course/en/video/c-145.mp4",
-            "poster": "course/en/video/c-145.jpg"
+            "mp4": "course/en/video/c-00.mp4",
+            "poster": "course/en/video/c-00.jpg"
         },
         "_pageLevelProgress": {
             "_isEnabled": true
@@ -1448,8 +1448,8 @@
                 },
                 "strapline": "Life in 10 years",
                 "_classes": "",
-                "_top": 10,
-                "_left": 10
+                "_top": 9,
+                "_left": 48
             },
             {
                 "title": "Life in five years",
@@ -1461,8 +1461,8 @@
                 },
                 "strapline": "Life in five years",
                 "_classes": "",
-                "_top": 10,
-                "_left": 20
+                "_top": 25,
+                "_left": 69
             },
             {
                 "title": "Life in three years",
@@ -1474,8 +1474,8 @@
                 },
                 "strapline": "Life in three years",
                 "_classes": "",
-                "_top": 10,
-                "_left": 30
+                "_top": 52,
+                "_left": 68
             },
             {
                 "title": "Life in one year",
@@ -1487,8 +1487,8 @@
                 },
                 "strapline": "Life in one year",
                 "_classes": "",
-                "_top": 10,
-                "_left": 40
+                "_top": 70,
+                "_left": 48
             },
             {
                 "title": "Life now",
@@ -1500,8 +1500,8 @@
                 },
                 "strapline": "Life now",
                 "_classes": "",
-                "_top": 10,
-                "_left": 50
+                "_top": 52,
+                "_left": 28
             },
             {
                 "title": "Time to review",
@@ -1513,8 +1513,8 @@
                 },
                 "strapline": "Time to review",
                 "_classes": "",
-                "_top": 10,
-                "_left": 60
+                "_top": 25,
+                "_left": 26
             }
         ],
         "_pageLevelProgress": {
@@ -1536,8 +1536,8 @@
         "body": "Do you want to be in high demand? This approach to career planning may be for you? It's all about identifying and developing the skills for the future. It aims to create a worker who's in high demand – one that has the skills required by the workforce. Let's hear what our graduate researchers think about this approach. Then learn more about this approach. Select <strong>Skills in need</strong> from the Resources menu. This provides you with further insight into how to plan your career with future skills in mind.",
         "instruction": "Select Play.",
         "_media": {
-            "mp4": "course/en/video/c-165.mp4",
-            "poster": "course/en/video/c-165.jpg"
+            "mp4": "course/en/video/c-00.mp4",
+            "poster": "course/en/video/c-00.jpg"
         },
         "_pageLevelProgress": {
             "_isEnabled": true
@@ -1758,8 +1758,8 @@
         "body": "Investing money or time in your future has many personal and professional benefits. It can be a positive point of difference to a future employer, increase your career opportunities and of course there's the personal growth. Let's hear more about the benefits.",
         "instruction": "Select Play.",
         "_media": {
-            "mp4": "course/en/video/c-185.mp4",
-            "poster": "course/en/video/c-185.jpg"
+            "mp4": "course/en/video/c-00.mp4",
+            "poster": "course/en/video/c-00.jpg"
         },
         "_pageLevelProgress": {
             "_isEnabled": true
@@ -1862,8 +1862,8 @@
         "body": "The best career plan is the one that works for you. The one easy to use. If your career development plan is not useful, change it. If the plan is too big, make it smaller. If the process is too long, make it shorter. If tables and lists are not your style, use graphs, graphics, mind-maps, pictures or drawings. Let's hear how this graduate researcher made it work.",
         "instruction": "Select Play.",
         "_media": {
-            "mp4": "course/en/video/c-195.mp4",
-            "poster": "course/en/video/c-195.jpg"
+            "mp4": "course/en/video/c-00.mp4",
+            "poster": "course/en/video/c-00.jpg"
         },
         "_pageLevelProgress": {
             "_isEnabled": true
@@ -2034,8 +2034,8 @@
         "body": "It's time to act on the plan – be creative, take risks and snatch up the development opportunities you've identified. Are you up for the challenge? What could go wrong? Let's hear from some of our graduate researchers and the lessons they've learnt.",
         "instruction": "Select Play.",
         "_media": {
-            "mp4": "course/en/video/c-210.mp4",
-            "poster": "course/en/video/c-210.jpg"
+            "mp4": "course/en/video/c-00.mp4",
+            "poster": "course/en/video/c-00.jpg"
         },
         "_pageLevelProgress": {
             "_isEnabled": true
@@ -2072,8 +2072,8 @@
                 },
                 "strapline": "Make it clear",
                 "_classes": "",
-                "_top": 10,
-                "_left": 10
+                "_top": 0,
+                "_left": 58.5
             },
             {
                 "title": "Share it",
@@ -2085,8 +2085,8 @@
                 },
                 "strapline": "Share it",
                 "_classes": "",
-                "_top": 10,
-                "_left": 20
+                "_top": 19.5,
+                "_left": 72.5
             },
             {
                 "title": "Partner up",
@@ -2098,8 +2098,8 @@
                 },
                 "strapline": "Partner up",
                 "_classes": "",
-                "_top": 10,
-                "_left": 30
+                "_top": 46.5,
+                "_left": 71
             },
             {
                 "title": "Remove distractions",
@@ -2111,8 +2111,8 @@
                 },
                 "strapline": "Remove distractions",
                 "_classes": "",
-                "_top": 10,
-                "_left": 40
+                "_top": 67,
+                "_left": 58.5
             },
             {
                 "title": "Sharp focus",
@@ -2124,8 +2124,8 @@
                 },
                 "strapline": "Sharp focus",
                 "_classes": "",
-                "_top": 10,
-                "_left": 50
+                "_top": 67,
+                "_left": 38.5
             },
             {
                 "title": "Process not outcome",
@@ -2137,8 +2137,8 @@
                 },
                 "strapline": "Process not outcome",
                 "_classes": "",
-                "_top": 10,
-                "_left": 60
+                "_top": 48,
+                "_left": 24.5
             },
             {
                 "title": "Review",
@@ -2150,8 +2150,8 @@
                 },
                 "strapline": "Review",
                 "_classes": "",
-                "_top": 10,
-                "_left": 70
+                "_top": 20,
+                "_left": 26
             },
             {
                 "title": "Celebrate",
@@ -2163,8 +2163,8 @@
                 },
                 "strapline": "Celebrate",
                 "_classes": "",
-                "_top": 10,
-                "_left": 80
+                "_top": 0,
+                "_left": 38.5
             }
         ],
         "_pageLevelProgress": {
