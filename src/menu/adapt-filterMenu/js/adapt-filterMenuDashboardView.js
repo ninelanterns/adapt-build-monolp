@@ -38,12 +38,14 @@ define([ "core/js/adapt" ], function(Adapt) {
 		},
 
 		setUpTags: function() {
+			var config = this.model.get("_dashboard")._tags;
+
+			if (!config) return;
+
 			var tagsMap = {};
 
 			this.getMenuItems().each(function(item) {
 				var tags = item.get("_tags");
-
-				if (!tags) return;
 
 				for (var i = 0, j = tags.length; i < j; i++) {
 					var tag = tags[i];
@@ -54,7 +56,7 @@ define([ "core/js/adapt" ], function(Adapt) {
 				}
 			});
 
-			this.model.get("_dashboard")._tags._items = tagsMap;
+			config._items = tagsMap;
 		},
 
 		onMenuRoute: function(model) {
@@ -86,7 +88,11 @@ define([ "core/js/adapt" ], function(Adapt) {
 		filter: _.debounce(function() {
 			var activeFilters = this.getActiveFilters();
 			var activeTags = this.getActiveTags();
-			var isFiltering = !_.isEmpty(activeFilters) || !_.isEmpty(activeTags);
+			var activeTagsLength = activeTags.length;
+			var isFilteringByTag = activeTagsLength > 0;
+			var isFiltering = !_.isEmpty(activeFilters) || isFilteringByTag;
+			var tagsConfig = this.model.get("_dashboard")._tags;
+			var useOrLogic = tagsConfig && tagsConfig._logicType === "OR";
 			var shouldFilter = function(item) {
 				var tags = item.get("_tags");
 
@@ -97,11 +103,12 @@ define([ "core/js/adapt" ], function(Adapt) {
 					}
 				}
 
-				for (var i = 0, j = activeTags.length; i < j; i++) {
-					if (!_.contains(tags, activeTags[i])) return true;
+				for (var i = 0; i < activeTagsLength; i++) {
+					if (!useOrLogic && !_.contains(tags, activeTags[i])) return true;
+					if (useOrLogic && _.contains(tags, activeTags[i])) return false;
 				}
 
-				return false;
+				return useOrLogic && isFilteringByTag || false;
 			};
 			var shouldTriggerRender = false;
 
@@ -111,7 +118,7 @@ define([ "core/js/adapt" ], function(Adapt) {
 				var isFiltered = shouldFilter(item);
 
 				if (item.get("_isFiltered") === isFiltered) return;
-				
+
 				item.set("_isFiltered", isFiltered);
 				shouldTriggerRender = true;
 			});
@@ -126,9 +133,13 @@ define([ "core/js/adapt" ], function(Adapt) {
 		}, 250),
 
 		getActiveFilters: function() {
-			var filters = this.model.get("_dashboard")._filters._items;
-			var $checkboxes = this.$(".dashboard-filters").find("input");
+			var config = this.model.get("_dashboard")._filters;
 			var activeFilters = {};
+
+			if (!config) return activeFilters;
+
+			var filters = config._items;
+			var $checkboxes = this.$(".dashboard-filters").find("input");
 
 			for (var i = 0, j = filters.length; i < j; i++) {
 				if (!$checkboxes.eq(i).is(":checked")) continue;
@@ -142,9 +153,13 @@ define([ "core/js/adapt" ], function(Adapt) {
 		},
 
 		getActiveTags: function() {
-			var tags = this.model.get("_dashboard")._tags._items;
-			var $checkboxes = this.$(".dashboard-tags").find("input");
+			var config = this.model.get("_dashboard")._tags;
 			var activeTags = [];
+
+			if (!config) return activeTags;
+
+			var tags = config._items;
+			var $checkboxes = this.$(".dashboard-tags").find("input");
 
 			for (var tag in tags) {
 				if (tags.hasOwnProperty(tag) &&

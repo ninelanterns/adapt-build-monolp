@@ -1,9 +1,9 @@
 define([
 	"core/js/views/menuView",
 	"core/js/adapt",
-	"menu/adapt-filterMenu/js/adapt-filterMenuStripView",
+	"./adapt-filterMenuStripView",
 	"core/js/models/adaptModel",
-	"menu/adapt-filterMenu/js/adapt-filterMenuDashboardView"
+	"./adapt-filterMenuDashboardView"
 ], function(MenuView, Adapt, FilterMenuStripView, AdaptModel, FilterMenuDashboardView) {
 
 	var FilterMenuView = MenuView.extend({
@@ -75,47 +75,56 @@ define([
 
 		getProgress: function() {
 			var strips = this.model.get("_filterMenu")._strips;
-			var items = new Backbone.Collection();
+			var completed = 0;
+			var mandatory = 0;
 
 			for (var i = 0, j = strips.length; i < j; i++) {
-				items.add(strips[i]._items);
+				var items = strips[i]._items;
+
+				for (var k = 0, l = items.length; k < l; k++) {
+					var item = items[k];
+
+					if (!item.get("_isAvailable") || item.get("_isOptional")) continue;
+
+					if (item.get("_isComplete")) completed++;
+
+					mandatory++;
+				}
 			}
 
-			var completed = items.where({ _isOptional: false, _isComplete: true });
-			var mandatory = items.where({ _isOptional: false });
-
-			return parseInt(completed.length / mandatory.length * 100, 10) + "%";
-		}
+			return Math.round(completed / mandatory * 100) + "%";
+		},
 
 	}, { template: "filterMenu" });
 
-	function setUpModels(config) {
+	function setUpItems(config) {
 		var strips = config._strips;
 
 		for (var i = 0, j = strips.length; i < j; i++) {
 			var items = strips[i]._items;
 
 			for (var k = 0, l = items.length; k < l; k++) {
-				items[k] = getModel(items[k]);
+				items[k] = setUpModel(items[k]);
 			}
 		}
 	}
 
-	function getModel(item) {
+	function setUpModel(item) {
+		var isResource = item._type === "resource";
 		var id = item._id;
-		var model = item._type === "resource" ?
-			new AdaptModel(item) :
-			Adapt.findById(id);
+		var model = isResource ? new AdaptModel(item) : Adapt.findById(id);
 
 		if (!model) throw "Filter Menu: ID \"" + id + "\" not found";
 
 		var suspendData = Adapt.offlineStorage.get("filterMenu");
+		var isResourceComplete = suspendData && _.contains(suspendData.resources, id);
+
+		if (isResource && isResourceComplete) model.set("_isComplete", true);
 
 		return model.set({
-			_tags: item._tags,
+			_tags: item._tags || [],
 			_isFiltered: false,
-			_isPinned: suspendData && _.contains(suspendData.pinned, id) || false,
-			_isComplete: suspendData && _.contains(suspendData.resources, id) || false
+			_isPinned: suspendData && _.contains(suspendData.pinned, id) || false
 		});
 	}
 
@@ -130,12 +139,12 @@ define([
 		var config = menuRoot.get("_filterMenu");
 		var dashboard = config._dashboard;
 
-		setUpModels(config);
+		setUpItems(config);
 
 		if (dashboard && dashboard._isEnabled) {
 			new FilterMenuDashboardView({ model: new Backbone.Model(config) });
 		}
-		
+
 		Adapt.on("router:menu", function(model) {
 			if (model.get("_id") === menuRoot.get("_id")) {
 				$("#wrapper").append(new FilterMenuView({ model: model }).$el);

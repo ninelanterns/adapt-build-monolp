@@ -16,8 +16,10 @@
 		<div class="filter-menu-item-progress">
 			<div class="filter-menu-item-progress-inner"></div>
 		</div>
-		<input id="filter-menu-item-pin-{{_id}}" type="checkbox"{{#if _isPinned}} checked{{/if}}>
-		<label class="filter-menu-item-pin icon a11y-hideable" for="filter-menu-item-pin-{{_id}}"><span class="aria-label">{{_globals._menu._filterMenu.togglePinAria}}</span></label>
+		<div class="filter-menu-item-pin-container">
+			<input id="filter-menu-item-pin-{{_id}}" type="checkbox"{{#if _isPinned}} checked{{/if}}>
+			<label class="filter-menu-item-pin icon a11y-hideable" for="filter-menu-item-pin-{{_id}}"><span class="aria-label">{{_globals._menu._filterMenu.togglePinAria}}</span></label>
+		</div>
 	</div>
-	<span class="aria-label prevent-default" tabindex="0" role="region">{{_globals._menu._filterMenu.menuItemEndAria}}</span>
+	<span class="aria-label prevent-default" role="region" tabindex="0">{{_globals._menu._filterMenu.menuItemEndAria}}</span>
 </div>

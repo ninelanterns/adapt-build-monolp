@@ -1,6 +1,6 @@
 {
   "type": "object",
-  "$schema": "http://json-schema.org/draft-04/schema",
+  "$schema": "http://json-schema.org/draft-03/schema",
   "id": "http://jsonschema.net",
   "$ref": "http://localhost/plugins/content/menu/model.schema",
   "globals": {
@@ -34,7 +34,7 @@
     "stripEmpty": {
       "type": "string",
       "default": "All items filtered",
-      "title": "String empty",
+      "title": "Strip empty",
       "inputType": "Text",
       "translatable": true
     },
@@ -388,6 +388,19 @@
                           "title": "Is enabled",
                           "inputType": "Checkbox",
                           "help": "Enable the section to filter by tag"
+                        },
+                        "_logicType": {
+                          "type": "string",
+                          "default": "AND",
+                          "title": "Logic type",
+                          "inputType": {
+                            "type": "Select",
+                            "options": [
+                              "AND",
+                              "OR"
+                            ]
+                          },
+                          "help": "Choose the type of logic gate to use when filtering by tag"
                         },
                         "title": {
                           "type": "string",

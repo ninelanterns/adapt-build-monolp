@@ -1,5 +1,8 @@
 .filter-menu-dashboard-navigation {
 	float: left;
+	.dir-rtl & {
+		float: right;
+	}
 }
 
 .filter-menu-dashboard-button.icon {
@@ -13,6 +16,9 @@
 			color: @quaternary-color-inverted;
 		}
 	}
+	.dir-rtl & {
+		float: right;
+	}
 }
 
 .filter-menu-dashboard-notification {
@@ -24,12 +30,18 @@
 		border-radius: 50px;
 		margin: 10px;
 		background-color: @button-color;
+		.dir-rtl & {
+			float: right;
+		}
 	}
 	span {
 		float: left;
 		line-height: 34px;
 		padding: 0 5px;
 		color: @button-text-color;
+		.dir-rtl & {
+			float: right;
+		}
 	}
 	button.icon {
 		padding: 5px;
@@ -41,6 +53,9 @@
 		&::-moz-focus-inner {
 			padding: 0;
 			border-style: none;
+		}
+		.dir-rtl & {
+			float: right;
 		}
 		.no-touch &:hover {
 			background-color: darken(@validation-error, 10%);
@@ -136,6 +151,10 @@
 				width: 50%;
 				content: attr(data-off);
 				text-align: center;
+				.dir-rtl & {
+					right: inherit;
+					left: 4px;
+				}
 				.ie8 & {
 					content: none;
 				}
@@ -150,6 +169,10 @@
 				background-color: @background-color;
 				content: "";
 				transition: margin @duration, background @duration;
+				.dir-rtl & {
+					right: 4px;
+					left: inherit;
+				}
 				.ie8 & {
 					content: none;
 				}
@@ -169,9 +192,16 @@
 			&:before {
 				right: inherit;
 				content: attr(data-on);
+				.dir-rtl & {
+					left: inherit;
+				}
 			}
 			&:after {
 				margin-left: 30px;
+				.dir-rtl & {
+					margin-right: 30px;
+					margin-left: inherit;
+				}
 			}
 		}
 		> span {

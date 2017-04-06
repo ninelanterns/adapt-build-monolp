@@ -111,7 +111,7 @@ A menu where items sit in horizontal strips and are filterable via a dashboard.
 		<td><code>[]</code></td>
 	</tr>
 	<tr>
-		<td rowspan="12"><code>_dashboard</code></td>
+		<td rowspan="13"><code>_dashboard</code></td>
 		<td colspan="3"><code>_isEnabled</code></td>
 		<td>Boolean</td>
 		<td>Enables the dashboard functionality accessed via a button on the navigation bar</td>
@@ -162,11 +162,17 @@ A menu where items sit in horizontal strips and are filterable via a dashboard.
 		<td><code>""</code></td>
 	</tr>
 	<tr>
-		<td rowspan="4"><code>_tags</code></td>
+		<td rowspan="5"><code>_tags</code></td>
 		<td colspan="2"><code>_isEnabled</code></td>
 		<td>Boolean</td>
 		<td>Enables the section to filter by tag</td>
 		<td><code>false</code></td>
+	</tr>
+	<tr>
+		<td colspan="2"><code>_logicType</code></td>
+		<td>String</td>
+		<td>Specifies the type of logic gate to use when filtering by tag, either <code>"AND"</code> or <code>"OR"</code></td>
+		<td><code>"AND"</code></td>
 	</tr>
 	<tr>
 		<td colspan="2"><code>title</code></td>
@@ -187,3 +193,7 @@ A menu where items sit in horizontal strips and are filterable via a dashboard.
 		<td><code>""</code></td>
 	</tr>
 </table>
+
+## Known Issues
+
+* No support for pinned items when text direction is right-to-left on Apple devices running software lower than iOS 10.

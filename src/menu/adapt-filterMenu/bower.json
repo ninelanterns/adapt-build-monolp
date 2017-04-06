@@ -1,6 +1,6 @@
 {
 	"name": "adapt-filterMenu",
-	"version": "0.1.3",
+	"version": "0.3.1",
 	"framework": "^2.0.10",
 	"displayName": "Filter Menu",
 	"menu": "filterMenu",

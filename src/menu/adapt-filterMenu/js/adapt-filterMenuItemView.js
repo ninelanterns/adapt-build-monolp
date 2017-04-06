@@ -39,9 +39,11 @@ define([ "core/js/views/adaptView", "core/js/adapt" ], function(AdaptView, Adapt
 		},
 
 		isVisited: function() {
-			var components = this.model.findDescendants("components");
-
-			return components.findWhere("_isComplete", true);
+			return this.model.findDescendants("components").findWhere({
+				_isComplete: true,
+				_isAvailable: true,
+				_isOptional: false
+			});
 		},
 
 		onItemClick: function(e) {

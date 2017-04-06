@@ -103,9 +103,17 @@
 	}
 	&.left {
 		left: 0;
+		.dir-rtl & {
+			right: 0;
+			left: inherit;
+		}
 	}
 	&.right {
 		right: 0;
+		.dir-rtl & {
+			right: inherit;
+			left: 0;
+		}
 	}
 }
 
@@ -147,6 +155,10 @@
 	}
 	.touch &:last-child {
 		margin-right: @item-padding / 2;
+		.dir-rtl& {
+			margin-right: inherit;
+			margin-left: @item-padding / 2;
+		}
 	}
 }
 
@@ -173,9 +185,6 @@
 .filter-menu-item-details {
 	padding: @menu-block-padding-top @menu-block-padding-right @menu-block-padding-bottom @menu-block-padding-left;
 	background-color: @component-background-color;
-	.ie8 & input {
-		float: right;
-	}
 }
 
 .filter-menu-item-title {
@@ -202,11 +211,19 @@
 	top: 50%;
 	left: 50%;
 	height: 14px;
-	margin: -7px 0 0px -7px;
+	margin: -7px 0 0 -7px;
 	background: @foreground-color;
+	.dir-rtl & {
+		right: 50%;
+		left: inherit;
+		margin-right: -7px;
+	}
 	.visited & {
 		width: 7px;
-		border-radius: 14px 0px 0px 14px;
+		border-radius: 14px 0 0 14px;
+		.dir-rtl & {
+			border-radius: 0 14px 14px 0;
+		}
 	}
 	.completed & {
 		width: 14px;
@@ -214,11 +231,29 @@
 	}
 }
 
-.filter-menu-item-pin {
+.filter-menu-item-pin-container {
 	float: right;
+	font-size: 0;
+	.dir-rtl & {
+		float: left;
+		.iPad.version-8\.0&,
+		.iPhone.version-8\.0&,
+		.iPad.version-9\.0&,
+		.iPhone.version-9\.0& {
+			display: none;
+		}
+	}
+	input {
+		display: inline-block;
+		vertical-align: inherit;
+	}
+}
+
+.icon.filter-menu-item-pin {
+	display: inline-block;
 	&:before {
-		content: "\e613";
 		color: @disabled-color;
+		content: "\e613";
 		input:checked + & {
 			color: inherit;
 			content: "\e612";

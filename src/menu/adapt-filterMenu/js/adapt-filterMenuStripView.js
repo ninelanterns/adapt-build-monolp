@@ -1,7 +1,7 @@
 define([
 	"core/js/views/adaptView",
 	"core/js/adapt",
-	"menu/adapt-filterMenu/js/adapt-filterMenuItemView"
+	"./adapt-filterMenuItemView"
 ], function(AdaptView, Adapt, FilterMenuItemView) {
 
 	var FilterMenuStripView = AdaptView.extend({
@@ -36,6 +36,8 @@ define([
 				"filterMenu:updateProgress": this.setProgress
 			});
 
+			this.textDirection = this.getTextDirection();
+
 			AdaptView.prototype.initialize.call(this);
 		},
 
@@ -52,14 +54,20 @@ define([
 
 		onControlClick: function(event) {
 			var direction = $(event.currentTarget).hasClass("left") ? "left" : "right";
+			var itemLeft = this.getItemLeft(direction);
 
-			this.scroll(direction);
+			this.setControlsVisibility(itemLeft);
+			this.scroll(itemLeft, true);
 		},
 
 		onItemFocus: function(event) {
 			var $item = $(event.currentTarget).parents(".filter-menu-item");
+			var scrollWidth = this.$(".filter-menu-items-container")[0].scrollWidth;
+			var itemLeft = this.textDirection === "ltr" ?
+				$item.position().left :
+				scrollWidth - $item.position().left - $item.width();
 
-			this.$(".filter-menu-items-container").scrollLeft($item.position().left);
+			this.scroll(itemLeft, false);
 			this.setControlsVisibility();
 		},
 
@@ -67,14 +75,38 @@ define([
 			this.setControlsVisibility();
 		},
 
+		getTextDirection: function() {
+			var direction = Adapt.config.get("_defaultDirection");
+
+			if (direction === "ltr") return direction;
+
+			var $element = $("<div/>", {
+				css: { overflow: "scroll", width: "1px" },
+				html: "&nbsp;",
+			}).appendTo("body");
+
+			var element = $element[0];
+
+			direction = "rtlWebkit";
+
+			if (element.scrollLeft === 0) {
+				element.scrollLeft = 1;
+				direction = element.scrollLeft === 0 ? "rtlGecko" : "rtlIe";
+			}
+
+			$element.remove();
+
+			return direction;
+		},
+
 		setControlsVisibility: function(scrollLeft) {
 			if (Adapt.device.touch) return;
 
 			var $container = this.$(".filter-menu-items-container");
-			var $controls = this.$(".filter-menu-control");
 			var scrollWidth = this.$(".filter-menu-items")[0].scrollWidth;
+			var $controls = this.$(".filter-menu-control");
 
-			if (scrollLeft === undefined) scrollLeft = $container.scrollLeft();
+			if (scrollLeft === undefined) scrollLeft = this.getScrollLeft();
 
 			var showLeftControl = scrollLeft > 0;
 			var showRightControl = scrollLeft + $container.width() < scrollWidth;
@@ -83,28 +115,54 @@ define([
 			$controls.filter(".right").toggleClass("display-none", !showRightControl);
 		},
 
-		scroll: function(direction) {
-			var itemLeft;
+		getScrollLeft: function() {
 			var $container = this.$(".filter-menu-items-container");
 			var scrollLeft = $container.scrollLeft();
-			var width = $container.width();
 
-			this.$(".filter-menu-item").each(function() {
-				var $item = $(this);
+			switch (this.textDirection) {
+				case "rtlWebkit":
+					return $container[0].scrollWidth - $container.width() - scrollLeft;
+				case "rtlGecko":
+					return Math.abs(scrollLeft);
+				default:
+					return scrollLeft;
+			}
+		},
 
-				itemLeft = $item.position().left;
+		getItemLeft: function(direction) {
+			var scrollLeft = this.getScrollLeft();
+			var containerWidth = this.$(".filter-menu-items-container").width();
+			var items = this.$(".filter-menu-item").get();
+
+			if (this.textDirection !== "ltr") items.reverse();
+
+			for (var i = 0, j = items.length; i < j; i++) {
+				var $item = $(items[i]);
+				var itemLeft = $item.position().left;
+				var itemRight = itemLeft + $item.width();
 
 				switch (direction) {
 					case "left":
-						if (itemLeft > scrollLeft - width) return false;
+						if (itemLeft > scrollLeft - containerWidth) return itemLeft;
 						break;
 					case "right":
-						if (itemLeft + $item.width() > scrollLeft + width) return false;
+						if (itemRight > scrollLeft + containerWidth) return itemLeft;
 				}
-			});
+			}
+		},
 
-			this.setControlsVisibility(itemLeft);
-			$container.animate({ scrollLeft: itemLeft });
+		scroll: function(itemLeft, shouldAnimate) {
+			var $container = this.$(".filter-menu-items-container");
+
+			switch (this.textDirection) {
+				case "rtlWebkit":
+					itemLeft = $container[0].scrollWidth - $container.width() - itemLeft;
+					break;
+				case "rtlGecko":
+					itemLeft = -itemLeft;
+			}
+
+			$container.animate({ scrollLeft: itemLeft }, shouldAnimate ? 400 : 0);
 		},
 
 		setUpItems: function() {
@@ -114,7 +172,7 @@ define([
 			for (var i = 0, j = items.length; i < j; i++) {
 				var item = items[i];
 
-				if (item.get("_isFiltered")) continue;
+				if (!item.get("_isAvailable") || item.get("_isFiltered")) continue;
 
 				var view = new FilterMenuItemView({ model: item });
 
@@ -159,11 +217,21 @@ define([
 		},
 
 		getProgress: function() {
-			var items = new Backbone.Collection(this.model.get("_items"));
-			var completed = items.where({ _isOptional: false, _isComplete: true });
-			var mandatory = items.where({ _isOptional: false });
+			var items = this.model.get("_items");
+			var completed = 0;
+			var mandatory = 0;
 
-			return parseInt(completed.length / mandatory.length * 100, 10) + "%";
+			for (var i = 0, j = items.length; i < j; i++) {
+				var item = items[i];
+
+				if (!item.get("_isAvailable") || item.get("_isOptional")) continue;
+
+				if (item.get("_isComplete")) completed++;
+
+				mandatory++;
+			}
+
+			return Math.round(completed / mandatory * 100) + "%";
 		},
 
 		remove: function() {
