@@ -45,6 +45,7 @@
         "title": "Take a look inside",
         "displayTitle": "Take a look inside",
         "pageBody": "Explore twelve short topics to learn all about project management, why it's important to you, key project management principles and practices and what's involved in creating your project management profile.",
+        "body": "Learn about the structure and key components of the course.",
         "_graphic": {
             "wide": "course/en/images/co-15-page.jpg",
             "narrow": "course/en/images/co-15-page-narrow.jpg",
@@ -81,7 +82,7 @@
         "_classes": "",
         "title": "Communication and your career",
         "displayTitle": "Communication and your career",
-        "pageBody": "In the book, Communicate or Die, Thomas Zweifel talks about the value of good communication to success as a leader. In research, this plays out as the mantra \"publish or perish\". Essentially, it's the importance of communicating the findings of your PhD research. For career success, you should plan your PhD publications with your career in mind – not just your research (career) in mind. Written communication will be key to realising your future opportunities, inside or outside research. So, \"publish or perish\"; \"communicate or die\".",
+        "pageBody": "In the book, <cite>Communicate or Die</cite>, Thomas Zweifel talks about the value of good communication to success as a leader. In research, this plays out as the mantra \"publish or perish\". Essentially, it's the importance of communicating the findings of your PhD research. For career success, you should plan your PhD publications with your career in mind – not just your research (career) in mind. Written communication will be key to realising your future opportunities, inside or outside research. So, \"publish or perish\"; \"communicate or die\".",
         "body": "Discover how publishing impacts your career.",
         "_graphic": {
             "wide": "course/en/images/co-25-page.jpg",
@@ -98,9 +99,9 @@
         "_parentId": "course",
         "_type": "page",
         "_classes": "",
-        "title": "Beyond your phd",
-        "displayTitle": "Beyond your phd",
-        "pageBody": "What does your post PhD career look like? Are you looking to stay in academia? Is a non-academic career for you? The opportunities are endless – but do you know what you want to do? What do the statistics suggest? Is academia a likely career? Let's find out.",
+        "title": "Beyond your PhD",
+        "displayTitle": "Beyond your PhD",
+        "pageBody": "What does your post PhD career look like? Are you looking to stay in academia? Is academia a likely career? Is a non-academic career for you? What do the statistics suggest? The opportunities are endless – but do you know what you want to do?  Let's find out.",
         "body": "Time to think about what life looks like after your PhD.",
         "_graphic": {
             "wide": "course/en/images/co-30-page.jpg",
@@ -157,7 +158,7 @@
         "_classes": "",
         "title": "The mentor factor",
         "displayTitle": "The mentor factor",
-        "pageBody": "Can a mentor positively impact your career – indeed your life in general? The answer is yes. The right mentor can be critical in helping you to understand your strengths and weaknesses, and then leverage your strengths and address your weaknesses. However, few of us act on this knowledge in a formal sense. If pressed on the question \"do you have a mentor\" many of us would stumble for a few seconds before saying \"kind of\". It's as if verbal confirmation of such a relationship might make it all disappear. Or worse still, the response is the truth and we only kind of have a mentor.",
+        "pageBody": "Can a mentor positively impact your career – indeed your life in general? The answer is yes. The right mentor can be critical in helping you to understand your strengths and weaknesses, and then leverage your strengths and address your weaknesses. However, few of us act on this knowledge in a formal sense. If pressed on the question \"do you have a mentor?\" many of us would stumble for a few seconds before saying \"kind of\". It's as if verbal confirmation of such a relationship might make it all disappear. Or worse still, the response is the truth and we only kind of have a mentor.",
         "body": "Do you have a mentor? Find out why they can make all the difference.",
         "_graphic": {
             "wide": "course/en/images/co-45-page.jpg",
@@ -214,7 +215,7 @@
         "_classes": "",
         "title": "Build your plan",
         "displayTitle": "Build your plan",
-        "pageBody": "Great – you've decided that a career plan is for you. Now, how to build one. In this section, we outline three different approaches that can set you on the right course. So, what are you waiting for – it's time to identify the steps and factors that will bring your career to life.",
+        "pageBody": "Great – you've decided that a career plan is for you. Now, how to build one? In this section, we outline three different approaches that can set you on the right course. So, what are you waiting for – it's time to identify the steps and factors that will bring your career to life.",
         "body": "Learn three different ways of career planning.",
         "_graphic": {
             "wide": "course/en/images/co-60-page.jpg",
@@ -252,7 +253,7 @@
         "_classes": "",
         "title": "It's just a plan",
         "displayTitle": "It's just a plan",
-        "pageBody": "You've spent a great amount of time thinking about your goals and putting a plan together. It's important to realise all you've done is created a plan. The plan is not a substitute for work and it certainly can't get you skills, experience or a job. The plan, is just the beginning. It's an indication that you're on the wrong side of a lot of hard work – in the best possible way of course.",
+        "pageBody": "You've spent a great amount of time thinking about your goals and putting a plan together. It's important to realise all you've done is created a plan. The plan is not a substitute for work and it certainly can't get you skills, experience or a job. The plan is just the beginning. It's an indication that you're on the wrong side of a lot of hard work – in the best possible way of course.",
         "body": "Learn tips to make the plan work for you.",
         "_graphic": {
             "wide": "course/en/images/co-70-page.jpg",

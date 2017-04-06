@@ -174,7 +174,7 @@
             },
             {
                 "title": "Path to career success",
-                "body": "Want to achieve clear results? This may be difficult, especially when you have things pulling you in different directions –  research, work, family, etc. Develop and maintain a career development plan – it will give you the confidence, knowledge and self–awareness you need to plan your career goals and implement steps to achieve them.",
+                "body": "Want to achieve clear results? This may be difficult, especially when you have things pulling you in different directions –  research, work, family, etc. Develop and maintain a career development plan – it will give you the confidence, knowledge and self-awareness you need to plan your career goals and implement steps to achieve them.",
                 "_graphic": {
                     "src": "course/en/images/c-20-002.jpg",
                     "alt": ""
@@ -262,7 +262,7 @@
             },
             {
                 "title": "Method",
-                "body": "As a student, planning your career, think about how your method is relevant to the data you are collecting, as well as your research question. But, also think about how useful the techniques will be beyond your PhD. For example, is this a method you can see yourself performing in the years after your PhD?",
+                "body": "As a student planning your career, think about how your method is relevant to the data you are collecting, as well as your research question. Also think about how useful those techniques will be beyond your PhD. For example, is this a method you can see yourself performing in the years after your PhD?",
                 "_graphic": {
                     "src": "course/en/images/c-30-003.jpg",
                     "alt": "",
@@ -321,7 +321,7 @@
         "_recordInteraction": true,
         "title": "You and your career",
         "displayTitle": "You and your career",
-        "body": "Career planning involves knowing what you're good at, what kind of work you want to be doing and how you'll make a difference. The clearer the plan, the clearer your career opportunities will become. So, why do people fail to plan for their career? Some people make some career mistakes because they have misconceptions about how to build and sustain a long-term career: Do any of the common misconceptions below resonate with you?",
+        "body": "Career planning involves knowing what you're good at, what kind of work you want to be doing and how you'll make a difference. The clearer the plan, the clearer your career opportunities will become. So why do people fail to plan for their career? Some people make some career mistakes because they have misconceptions about how to build and sustain a long-term career: Do any of the common misconceptions below resonate with you?",
         "instruction": "Select one or more of the following options and select Submit.",
         "_items": [
             {
@@ -420,13 +420,39 @@
         "_id": "c-45",
         "_parentId": "b-45",
         "_type": "component",
-        "_component": "text",
+        "_component": "accordion",
         "_classes": "",
         "_layout": "full",
         "title": "Your communication plan",
         "displayTitle": "Your communication plan",
-        "body": "<p>As a PhD student it's important to document, or at least have in mind, a peer reviewed journal plan – a publication plan. However, it's better to think of this as a communication plan – including all of the different ways you might discuss your research in public. When doing so, start with the end in mind – think about what sort of academic, scholar or worker you want to be. These answers then inform the rest of your decisions. The following are some key factors to take into account when considering what you could communicate or publish:</p><ul><li>Writing up the work – from log books to (journal) manuscript.</li><li>Research topic – the overall topic or field of research the work fits within. Could you write about your broader field as a blog?</li><li>Journal selection – take into account various factors such as topic, potential for impact, manuscript length and significance to the field.</li><li>Submission/Review – journal requirements, but also what review process might be necessary for a blog or other social or new media post.</li><li>Revision – what your response will be regarding revisions (or other comments received), if any.</li><li>Publication – what you might do once the article is published. For journal articles this might mean emailing co-authors and/or other researchers referenced in the work. The same is also true for blogs. You might choose to send out a tweet or post information on Facebook or Instagram using relevant hashtags or @ mentions.</li></ul>",
+        "body": "As a PhD student it's important to document, or at least have in mind, a peer reviewed journal plan – a publication plan. However, it's better to think of this as a communication plan – including all of the different ways you might discuss your research in public. When doing so, start with the end in mind – think about what sort of academic, scholar or worker you want to be. These answers then inform the rest of your decisions. The following are some key factors to take into account when considering what you could communicate or publish:",
         "instruction": "",
+        "_items": [
+            {
+                "title": "Writing up the work",
+                "body": "From log books to (journal) manuscript."
+            },
+            {
+                "title": "Research topic",
+                "body": "The overall topic or field of research the work fits within. Could you write about your broader field as a blog?"
+            },
+            {
+                "title": "Journal selection",
+                "body": "Take into account various factors such as topic, potential for impact, manuscript length and significance to the field."
+            },
+            {
+                "title": "Submission/Review",
+                "body": "Journal requirements, but also what review process might be necessary for a blog or other social or new media post."
+            },
+            {
+                "title": "Revision",
+                "body": "What your response will be regarding revisions (or other comments received), if any."
+            },
+            {
+                "title": "Publication",
+                "body": "What you might do once the article is published. For journal articles this might mean emailing co-authors and/or other researchers referenced in the work. The same is also true for blogs. You might choose to post information on social media, using relevant hashtags or @ mentions"
+            }
+        ],
         "_pageLevelProgress": {
             "_isEnabled": true
         }
@@ -448,7 +474,7 @@
         "_items": [
             {
                 "title": "New approaches",
-                "body": "The idea of publish or perish was put forward when publish was limited to peer reviewed journals and newspapers – printed on paper. In the current web 2.0 and social media climate, publication can be in many forms – from blogs, to tweets, to videos or sound bites. This isn't about giving away or disclosing intellectual property, it's about maintaining regular communication with the research and non-research public. Hence, \"communicate or die\" might be a better description – it's certainly a starker one.",
+                "body": "The idea of publish or perish was put forward when publish was limited to peer reviewed journals and newspapers – printed on paper. In the current web 2.0 and social media climate, publication can be in many forms – from blogs, to posts, to videos or sound bites. This isn't about giving away or disclosing intellectual property, it's about maintaining regular communication with the research and non-research public. Hence, \"communicate or die\" might be a better description – it's certainly a starker one.",
                 "_graphic": {
                     "src": "course/en/images/c-50-001.jpg",
                     "alt": ""
@@ -466,7 +492,7 @@
             },
             {
                 "title": "Career impact",
-                "body": "Publishing (peer reviewed publishing) is a difficult and demanding skill. Working on it early, and more often, is key to your success. Think about how you might get publications earlier in your PhD. For example, could a literature review, arguably required for greater understanding of a field, be properly documented and turned into a peer reviewed publication? Also challenge yourself to get that article written quicker. Select 'Write that journal article – in 7 days!' from the Resources menu to learn more.",
+                "body": "What do these decisions mean for your career? There's a correlation between peer reviewed publications during your PhD and long-term publication success. That is, those who publish more (and earlier) in their PhD, statistically publish more as researchers (i.e. post their PhD). Although quantity is important, always consider the quality and impact of your publication. Take the time to plan your PhD publications – it's important not only for the completion of your PhD or the dissemination of findings, but also to your future career.",
                 "_graphic": {
                     "src": "course/en/images/c-50-003.jpg",
                     "alt": ""
@@ -599,7 +625,7 @@
         "_layout": "full",
         "title": "Your impact",
         "displayTitle": "Your impact",
-        "body": "Perhaps you will successfully achieve an academic career. If not, have you considered a future career-path? A UK survey of third year PhD students found 50% didn't know what they wanted from their career. The same study also found fewer than one in six doctoral researchers had well-formed career ideas when they started. It seems, PhD students, and students in general, lack a career plan – they don't know why they're doing something. Do you know what you want to do? Have you developed a plan?",
+        "body": "Perhaps you will successfully achieve an academic career. If not, have you considered a future career-path? A UK survey of third year PhD students found 50% didn't know what they wanted from their career. The same study also found fewer than one in six doctoral researchers had well-formed career ideas when they started. It seems PhD students, and students in general, lack a career plan – they don't know why they're doing something. Do you know what you want to do? Have you developed a plan?",
         "disabledBody": "You need to measure your confidence in the linked part before you can do this part.",
         "instruction": "Select one of the following options and select Submit.",
         "_attempts": 1,
@@ -610,8 +636,8 @@
         "_showNumber": true,
         "_showScaleIndicator": true,
         "_showScale": true,
-        "labelStart": "I don't have a clear career plan.",
-        "labelEnd": "I know what I want to do and have a plan.",
+        "labelStart": "Nothing's planned",
+        "labelEnd": "Everything's planned",
         "_scaleStart": 1,
         "_scaleEnd": 10,
         "_scaleStep": 1,
@@ -693,7 +719,7 @@
             },
             {
                 "title": "In series",
-                "body": "You start off as a PhD student, followed by a Post-Doc in a research lab or group – all research so far. Your research is going well, but the lab or group as a whole isn't going so well and your position is uncertain. There's an opportunity to work with a major collaborator as the Head of Business Development in their Research and Development (R & D) team – so you take it. Now you've switched careers, focusing on business development, but you still have a link to research. You enjoy that position and the company funds your marketing and sales training – you're then promoted to Head of Business Development for the entire organisation, not just the R&D team. Now, you're in an entirely different career with no links back to research."
+                "body": "You start off as a PhD student, followed by a Post-Doc in a research lab or group – all research so far. Your research is going well, but the lab or group as a whole isn't going so well and your position is uncertain. There's an opportunity to work with a major collaborator as the Head of Business Development in their Research and Development (R&D) team – so you take it. Now you've switched careers, focusing on business development, but you still have a link to research. You enjoy that position and the company funds your marketing and sales training – you're then promoted to Head of Business Development for the entire organisation, not just the R&D team. Now, you're in an entirely different career with no links back to research."
             }
         ]
     },
@@ -876,7 +902,7 @@
             },
             {
                 "title": "Plan it out",
-                "body": "Create a list of traits, skills or connections that you think you need. This could be what you currently lack and need to learn, or something that you cannot learn and can only borrow from someone else. If the list is long, prioritise it. What do you need now – what can wait? Next to each item, put a name (if you know someone), type (e.g. Post-Doctoral Fellow or Group Head) or role title (e.g. CEO, Dean) of who can help. Then, make a note of how you will reach out or connect with them. Will it be via phone, email, LinkedIn, Facebook, twitter, at an event or something else?",
+                "body": "Create a list of traits, skills or connections that you think you need. This could be what you currently lack and need to learn, or something that you cannot learn and can only borrow from someone else. If the list is long, prioritise it. What do you need now – what can wait? Next to each item, put a name (if you know someone), type (e.g. Post-Doctoral Fellow or Group Head) or role title (e.g. CEO, Dean) of who can help. Then, make a note of how you will reach out or connect with them. Will it be via phone, email, social media, at an event or something else?",
                 "_graphic": {
                     "src": "course/en/images/c-95-004.jpg",
                     "alt": ""
@@ -885,7 +911,7 @@
             },
             {
                 "title": "Reach out",
-                "body": "Time to act – so, reach out. Make sure you're clear on why the two of you should connect. Recognise that networking is for mutual benefit. Not one way. Consider what you can offer in return. Don't forget to stay in touch. Just a phone call or email every now and then will do. But make it count and make it real. Want to learn more, consider reading the book, Networking for Career Success. It covers the basics of networking to targeted techniques for making a career change.",
+                "body": "Time to act – so, reach out. Make sure you're clear on why the two of you should connect. Recognise that networking is for mutual benefit. Not one way. Consider what you can offer in return. Don't forget to stay in touch. Just a phone call or email every now and then will do. But make it count and make it real. Want to learn more, consider reading the book, <cite>Networking for Career Success</cite>. It covers the basics of networking to targeted techniques for making a career change.",
                 "_graphic": {
                     "src": "course/en/images/c-95-005.jpg",
                     "alt": ""
@@ -1130,7 +1156,7 @@
         "_allowFullScreen": true,
         "title": "Sharpen your focus",
         "displayTitle": "Sharpen your focus",
-        "body": "Having a clear career vision or plan allows us to be focussed. It ensures that we make choices about how we spend our time to achieve our vision. Setting career goals helps us accomplish that vision and sharpen our focus. Let's hear how setting goals has helped.",
+        "body": "Having a clear career vision or plan allows us to be focused. It ensures that we make choices about how we spend our time to achieve our vision. Setting career goals helps us accomplish that vision and sharpen our focus. Let's hear how setting goals has helped.",
         "instruction": "Select Play.",
         "_media": {
             "mp4": "course/en/video/c-00.mp4",
@@ -1341,7 +1367,7 @@
         "_allowFullScreen": true,
         "title": "Your image",
         "displayTitle": "Your image",
-        "body": "You're clear on what you want from your career, but what do others see. Consider the views and perceptions of those who work in your research team, the University, Industry and your broader network through the University. What do they see?",
+        "body": "You're clear on what you want from your career, but what do others see? Consider the views and perceptions of those who work in your research team, the University, Industry and your broader network through the University. What do they see?",
         "instruction": "Select Play.",
         "_media": {
             "mp4": "course/en/video/c-00.mp4",
@@ -1373,7 +1399,7 @@
             },
             {
                 "title": "Breaks",
-                "body": "For most researchers, breaks are timed around their work. Morning or afternoon tea, as well as lunch, will be taken when there's a break in the work. As students there's the temptation to let breaks extend as long as the break in research. Look to your Post Doc peers as to what's appropriate, but generally limit morning and afternoon tea to 15 minutes and lunch to 45 minutes."
+                "body": "For most researchers, breaks are timed around their work. Morning or afternoon tea, as well as lunch, will be taken when there's a break in the work. As students there's the temptation to let breaks extend as long as the break in research. Look to your Post-Doc peers as to what's appropriate, but generally limit morning and afternoon tea to 15 minutes and lunch to 45 minutes."
             },
             {
                 "title": "Communicate professionally",
@@ -1428,9 +1454,9 @@
         "_canCycleThroughPagination": false,
         "_hidePagination": false,
         "_useGraphicsAsPins": false,
-        "title": "10 year back-casting",
-        "displayTitle": "10 year back-casting",
-        "body": "Do you like to plan ahead – way ahead? This may be the method for you. It involves back casting, not forecasting. It's about reflecting on your ideal life in 10 years' time. What could you do in 10 years? You could change your whole life – get a new degree and even another PhD.",
+        "title": "10 year backcasting",
+        "displayTitle": "10 year backcasting",
+        "body": "Do you like to plan ahead – way ahead? This may be the method for you. It involves backcasting, not forecasting. It's about reflecting on your ideal life in 10 years' time. What could you do in 10 years? You could change your whole life – get a new degree and even another PhD.",
         "instruction": "Select the icons to find out more.",
         "mobileInstruction": "Select the arrows and then the plus icons to find out more.",
         "_graphic": {
@@ -1453,7 +1479,7 @@
             },
             {
                 "title": "Life in five years",
-                "body": "Once you have your 10-year life sorted, it's a matter of back-casting. What does that mean for life five years before that? For example, what work-roles are required to get you to your 10 year goals.",
+                "body": "Once you have your 10-year life sorted, it's a matter of backcasting. What does that mean for life five years before that? For example, what work-roles are required to get you to your 10 year goals.",
                 "_graphic": {
                     "src": "course/en/images/c-160-003.jpg",
                     "alt": "",
@@ -1533,7 +1559,7 @@
         "_allowFullScreen": true,
         "title": "Skills of the future",
         "displayTitle": "Skills of the future",
-        "body": "Do you want to be in high demand? This approach to career planning may be for you? It's all about identifying and developing the skills for the future. It aims to create a worker who's in high demand – one that has the skills required by the workforce. Let's hear what our graduate researchers think about this approach. Then learn more about this approach. Select <strong>Skills in need</strong> from the Resources menu. This provides you with further insight into how to plan your career with future skills in mind.",
+        "body": "Do you want to be in high demand? This approach to career planning may be for you. It's all about identifying and developing the skills for the future. It aims to create a worker who's in high demand – one that has the skills required by the workforce. Let's hear what our graduate researchers think about this approach, then learn more about this approach. Select <strong>Skills in need</strong> from the Resources menu which will provide you with further insight into how to plan your career with future skills in mind.",
         "instruction": "Select Play.",
         "_media": {
             "mp4": "course/en/video/c-00.mp4",
@@ -1730,7 +1756,7 @@
                 "_classes": ""
             },
             {
-                "title": "Fee for service",
+                "title": "Fee-for-service",
                 "body": "It sometimes pays to pay! Enrol in short or long training courses at university or elsewhere. Look for a paid mentor. Complete experience-based learning – there are many leadership courses of this type. Or pay to use diagnostic tools that help you understand yourself and your working style or preferences.",
                 "_graphic": {
                     "src": "course/en/images/c-180-003.jpg",
@@ -1885,7 +1911,7 @@
         "mobileInstruction": "Select the arrows and then the plus icons to find out more.",
         "_items": [
             {
-                "title": "Keep your PHD in mind",
+                "title": "Keep your PhD in mind",
                 "body": "Create your career plan with your PhD in mind. That's not to say your PhD should drive your career, but your career plan isn't an excuse to do less in your PhD, change direction in your PhD or give up on your PhD. If you think any of these changes are necessary, speak to your supervisor or other key people in your life. Discuss your options, e.g. deferring, rather than dropping out.",
                 "_graphic": {
                     "src": "course/en/images/c-200-001.jpg",
@@ -2116,7 +2142,7 @@
             },
             {
                 "title": "Sharp focus",
-                "body": "In his book on strategy, Ben Hunt-Davis talks of his Great Brittan rowing teams' effort to win gold at the Sydney Olympics. Every decision they made was viewed through the lens of \"will it make the boat go faster?\" They didn't think about winning gold, just making the boat faster. You could do the same with your career goals. Ask the question \"will it help me achieve my career goals?\".",
+                "body": "In his book on strategy, Ben Hunt-Davis talks of Great Britain's rowing teams' effort to win gold at the Sydney Olympics. Every decision they made was viewed through the lens of \"will it make the boat go faster?\" They didn't think about winning gold, just making the boat faster. You could do the same with your career goals. Ask the question \"will it help me achieve my career goals?\".",
                 "_graphic": {
                     "src": "course/en/images/c-215-006.jpg",
                     "alt": "",
