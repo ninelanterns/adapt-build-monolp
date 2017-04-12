@@ -1,0 +1,43 @@
+{
+    "_defaultLanguage": "en",
+    "_defaultDirection": "ltr",
+    "_questionWeight": 1,
+    "_accessibility": {
+        "_isEnabled": true,
+        "_shouldSupportLegacyBrowsers": true,
+        "_isTextProcessorEnabled": true
+    },
+    "_drawer": {
+        "_showEasing": "easeOutQuart",
+        "_hideEasing": "easeInQuart",
+        "_duration": 400
+    },
+    "_spoor": {
+        "_isEnabled": true,
+        "_tracking": {
+            "_requireCourseCompleted": true,
+            "_requireAssessmentPassed": false,
+            "_shouldSubmitScore": true,
+            "_shouldStoreResponses": true,
+            "_shouldRecordInteractions": true
+        },
+        "_reporting": {
+            "_comment": "Your options here are 'completed', 'passed', 'failed', and 'incomplete'",
+            "_onTrackingCriteriaMet": "completed",
+            "_onAssessmentFailure": "incomplete"
+        },
+        "_imsmanifest": {
+            "_id": "monolp_m03_career",
+            "_title": "Unleash your career",
+            "_description": "Why is a career plan important"
+        }
+    },
+    "_tutor": {
+        "_isEnabled": true
+    },
+    "_disableAnimationFor": [
+        ".ie8",
+        ".iPhone.version-7\\.0"
+    ],
+    "build": {}
+}

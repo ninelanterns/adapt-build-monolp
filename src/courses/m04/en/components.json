@@ -1,0 +1,2249 @@
+[
+    {
+        "_id": "c-05",
+        "_parentId": "b-05",
+        "_type": "component",
+        "_component": "narrative",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "allItems",
+        "_hasNavigationInTextArea": false,
+        "title": "Getting around",
+        "displayTitle": "Getting around",
+        "body": "To help you tailor the course to your preferences, we've broken the content down into short topics. You're able to filter what you see on the menu and pin the things you find most helpful.",
+        "instruction": "Select the arrows to find out more.",
+        "mobileInstruction": "Select the arrows and then the plus icons to find out more.",
+        "_items": [
+            {
+                "title": "The way you want",
+                "body": "Use the filter menu at the top left of the page to organise the content on the screen by completion status, bookmarked items or sections of interest.",
+                "_graphic": {
+                    "src": "course/en/images/c-05-001.jpg",
+                    "alt": ""
+                },
+                "strapline": "The way you want"
+            },
+            {
+                "title": "Bookmarking",
+                "body": "If you find something you like or want to save it for later, you can pin it to your menu by selecting the pin icon. The filter menu at the top left allows you to display pinned items only.",
+                "_graphic": {
+                    "src": "course/en/images/c-05-002.jpg",
+                    "alt": ""
+                },
+                "strapline": "Bookmarking"
+            },
+            {
+                "title": "Dashboard",
+                "body": "To help track your progress throughout the topics, in the top right of the screen you will have access to the dashboard. This dashboard is a useful tool that can tell you how you're tracking and will give you guidance on your progress.",
+                "_graphic": {
+                    "src": "course/en/images/c-05-003.jpg",
+                    "alt": ""
+                },
+                "strapline": "Dashboard"
+            },
+            {
+                "title": "Resources",
+                "body": "Use the Resources menu at the top right of the page to explore further resources available in this course.",
+                "_graphic": {
+                    "src": "course/en/images/c-05-004.jpg",
+                    "alt": ""
+                },
+                "strapline": "Resources"
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-10",
+        "_parentId": "b-10",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "play",
+        "_useClosedCaptions": true,
+        "_allowFullScreen": true,
+        "title": "A world of possibilities",
+        "displayTitle": "A world of possibilities",
+        "body": "Whether you're thinking local or global, the Monash Doctoral Program will support your research journey and professional development so you emerge ready to make the greatest possible impact.",
+        "instruction": "Select Play to hear from our Vice Chancellor.",
+        "_media": {
+            "mp4": "course/en/video/c-10.mp4",
+            "poster": "course/en/video/c-10.jpg"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-15",
+        "_parentId": "b-15",
+        "_type": "component",
+        "_component": "accordion",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Whats in this course",
+        "displayTitle": "What's in this course",
+        "body": "Let's take a look at what's involved in completing this course.",
+        "instruction": "Select each heading to find out more.",
+        "_items": [
+            {
+                "title": "Straight to the point",
+                "body": "Each topic has been broken down into small, focused learning bites using video, graphics and web articles. Scroll down the menu page to find the topic you want, then use the navigation arrows to cycle through the learning bites. You can explore the topics in any order, but we suggest you start with 'Your career starts now' and work your way through.",
+                "_graphic": {
+                    "src": "course/en/images/c-15-001.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Want to know more?",
+                "body": "We've incorporated additional resources to help you develop your leadership skills. These include quick reference guides, documents and web articles with extra insights into leadership. You can access them via the Resources menu at the top right of the page. This reading is estimated to take approximately 30 minutes and can be included in your professional development hours.",
+                "_graphic": {
+                    "src": "course/en/images/c-15-002.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "The next steps",
+                "body": "We want you to think about how you can build skills for the 21st century – career development being one of them. That's why this course includes a Career Development Plan (CDP). It's a critical component, which once completed, will need to be given to your supervisor for review and sign-off. Download and save the CDP from the Resources menu. We'll refer you to CDP activities throughout this course, which need to be completed offline. It's estimated that these activities will take approximately 90 minutes and can be recorded as part of your professional development hours.",
+                "_graphic": {
+                    "src": "course/en/images/c-15-003.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-20",
+        "_parentId": "b-20",
+        "_type": "component",
+        "_component": "accordion",
+        "_classes": "",
+        "_layout": "full",
+        "title": "What's a project?",
+        "displayTitle": "What's a project?",
+        "body": "<strong><i>A Guide to the Project Management Body of Knowledge ( PMBOK® Guide )-Fifth Edition</i></strong> is the preeminent global standard for project management. It states a project is, \"… a temporary endeavour to create a unique product, service or result. The temporary nature of a project indicates that a project has a definite beginning and end.\"",
+        "instruction": "Select each heading to find out more.",
+        "_items": [
+            {
+                "title": "Unique",
+                "body": "What makes a project unique? It’s a one-off activity to create a distinctive result, product or service. The steps may be similar, however each project has a unique set of requirements, with different inputs and outputs. Consider building a house – how is each project unique? It may be in a different location, use an altered design, be based on sustainable principles, etc.",
+                "_graphic": {
+                    "src": "",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Temporary",
+                "body": "Projects are temporary activities put together to accomplish a goal, within a specific time-frame. For example, once the house is built – the project ends.",
+                "_graphic": {
+                    "src": "",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Beginning and end",
+                "body": "Every project has a defined start date and end date. It begins when the project is initiated (e.g. the contract is signed) and its concept is developed (e.g. house plans are drafted). Projects end when all goals have been met (e.g. the house is built). Sometimes projects can’t be completed and end with unmet goals.",
+                "_graphic": {
+                    "src": "",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Lasting outcome",
+                "body": "While the project itself is temporary, the outcomes of a project are generally expected to create a lasting outcome.",
+                "_graphic": {
+                    "src": "",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Broken down",
+                "body": "Projects can be broken down into sub-projects, with each sub-project being temporary and focusing on a unique output. Each sub-project also has a clear beginning and end. Consider the house again – a sub project may be ‘constructing the frame’ or ‘getting to lock-up stage’.",
+                "_graphic": {
+                    "src": "",
+                    "alt": ""
+                },
+                "_classes": ""
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-25",
+        "_parentId": "b-25",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "play",
+        "_useClosedCaptions": true,
+        "_allowFullScreen": true,
+        "title": "Is your PHD a project?",
+        "displayTitle": "Is your PHD a project?",
+        "body": "How does your research project align to the above project characteristics? Is it unique? Can it be broken down? Let’s find out.",
+        "instruction": "Select Play.",
+        "_media": {
+            "mp4": "course/en/video/c-00.mp4",
+            "poster": "course/en/video/c-00.jpg"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-30",
+        "_parentId": "b-30",
+        "_type": "component",
+        "_component": "confidenceSlider",
+        "_classes": "",
+        "_layout": "full",
+        "title": "What's your experience?",
+        "displayTitle": "What's your experience?",
+        "body": "Without realising it, while working on your research project you’re developing your project management skills. Think about it. Do you manage complex budgets; delegate tasks to other researchers; synthesise data and information from varied sources? What’s your project management experience?",
+        "instruction": "Select one of the following options and select Submit.",
+        "_attempts": 1,
+        "_canShowFeedback": true,
+        "_recordInteraction": true,
+        "_shouldStoreResponses": false,
+        "_linkedToId": "",
+        "_showNumber": true,
+        "_showScaleIndicator": true,
+        "_showScale": true,
+        "labelStart": "Little experience",
+        "labelEnd": "Very experienced",
+        "_scaleStart": 1,
+        "_scaleEnd": 10,
+        "_scaleStep": 1,
+        "_buttons": {
+            "_submit": {
+                "buttonText": "Submit",
+                "ariaLabel": "Submit your answer by clicking here."
+            },
+            "_reset": {
+                "buttonText": "Reset",
+                "ariaLabel": "Reset the question by clicking here."
+            },
+            "_showFeedback": {
+                "buttonText": "Show feedback",
+                "ariaLabel": "View the question feedback again by clicking here."
+            }
+        },
+        "_feedback": {
+            "feedbackSeparator": " ",
+            "generic": "Thanks for measuring your confidence.",
+            "_comparison": {
+                "lower": "Oh you like it less? That's a shame.",
+                "same": "Well, at least you don't like it less.",
+                "higher": "It looks like you're seeing the benefits more and more!"
+            },
+            "_threshold": [
+                {
+                    "_values": {
+                        "_low": 1,
+                        "_high": 3
+                    },
+                    "text": "As you haven’t worked on many projects in the past it’s great that you’re completing this course. It’s time to start thinking of your research as a project – time to identify how it aligns to project management. And remember that this course is not about transforming you into a project manager. What it is about, is showing you that your PhD research project has a high degree of similarities with the principles and practices associated with project management.<br/><br/>Open your <strong>PMDP</strong> from the Resources menu to complete the activity: <strong>Your project</strong>."
+                },
+                {
+                    "_values": {
+                        "_low": 4,
+                        "_high": 7
+                    },
+                    "text": "It’s great that you have some experience in project management that you can build on! You should take a look at this course and see if it answers some of your questions. It’s time to start thinking of your research as a project – time to identify how it aligns to project management. And remember that this course is not about transforming you into a project manager. What it is about, is showing you that your PhD research project has a high degree of similarities with the principles and practices associated with project management.<br/><br/>Open your <strong>PMDP</strong> from the Resources menu to complete the activity: <strong>Your project</strong>"
+                },
+                {
+                    "_values": {
+                        "_low": 8,
+                        "_high": 10
+                    },
+                    "text": "Sounds like you’re pretty confident! While it’s great that you have a solid foundation to build on, it’s probably still good that you take a look at this course to make sure you’re up to speed with the most current information on project management. There might even be a few hints or bits of information that are new to you. Time now to consider your PhD research project. And remember that this course is not about transforming you into a project manager. What it is about, is showing you that your PhD research project has a high degree of similarities with the principles and practices associated with project management.<br/><br/>Open your <strong>PMDP</strong> from the Resources menu to complete the activity: <strong>Your project</strong>"
+                }
+            ]
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-35",
+        "_parentId": "b-35",
+        "_type": "component",
+        "_component": "accordion",
+        "_classes": "",
+        "_layout": "full",
+        "title": "The roles",
+        "displayTitle": "The roles",
+        "body": "Who plays a part in the success of a project? Distinct roles exist so that a project can be completed. How do these compare to the various roles associated with the completion of your PhD?",
+        "instruction": "Select each heading to find out more.",
+        "_items": [
+            {
+                "title": "Sponsor",
+                "body": "The individual (often a manager or executive) with overall accountability for the project. From a research perspective, your sponsors are your supervisors. They’re appointed by your faculty and are accountable for supporting you and guiding you throughout your PhD research. "
+            },
+            {
+                "title": "Leader",
+                "body": "Projects have a formal leader – they ensure the project is delivered on time, to budget and to the required standard. In the context of your research project, <strong>you</strong> are the leader. "
+            },
+            {
+                "title": "Team member",
+                "body": "The people who actively work on the project. From a research project perspective, a team member is someone who needs to complete a task so the project can progress. For example, supervisors, research assistants, laboratory staff, confirmation panel members, etc."
+            },
+            {
+                "title": "Customers and users",
+                "body": "All projects have customers and users. <i>The PMBOK© Guide Fifth Edition</i> defines customers as, \"…the persons or organisations who will approve and manage the project’s product, service or result.\" Users are defined as, \"…the persons or organisations who will use the projects product, service or result.\" Research projects also have customers and users – both with expectations that relate to the project’s outcome. It’s good practice to identify their expectations early. This allows you to manage their expectations and create a communication plan to keep them informed of the project’s progress."
+            },
+            {
+                "title": "Resource managers",
+                "body": "Resource managers provide project leaders with access to resources, these could be human resources, materials or equipment. From the perspective of a PhD project, these are the people who act as a gatekeeper for access to people or other resources. In a research project, this may include administration staff who manage the booking of laboratories and other physical spaces, organisational staff who provide access to research participants, academics who provide access to their research teams, library staff who provide knowledge regarding relevant journals or supervisors who put you in contact with relevant academics."
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-40",
+        "_parentId": "b-40",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "play",
+        "_useClosedCaptions": true,
+        "_allowFullScreen": true,
+        "title": "A multi-function team",
+        "displayTitle": "A multi-function team",
+        "body": "In project management, there are generally two approaches to creating project teams. The first approach is where team members are hired to work 100% on a project. These people focus on a single project and on completion move on to new projects. The second approach utilises multi-function project teams. Let’s hear how this approach impacts your research team.",
+        "instruction": "Select Play.",
+        "_media": {
+            "mp4": "course/en/video/c-10.mp4",
+            "poster": "course/en/video/c-10.jpg"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-45",
+        "_parentId": "b-45",
+        "_type": "component",
+        "_component": "mcq",
+        "_classes": "",
+        "_layout": "full",
+        "_attempts": 1,
+        "_shouldDisplayAttempts": false,
+        "_questionWeight": 1,
+        "_isRandom": false,
+        "_selectable": 1,
+        "_canShowModelAnswer": true,
+        "_canShowMarking": true,
+        "_recordInteraction": true,
+        "title": "The challenges",
+        "displayTitle": "The challenges",
+        "body": "The membership of your research team is constantly changing. Do you think your research project team is more complex than a ‘normal’ project team?  ",
+        "instruction": "Select one or more from the following options and select Submit.",
+        "_items": [
+            {
+                "text": "Yes",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "No",
+                "_shouldBeSelected": false
+            }
+        ],
+        "_feedback": {
+            "correct": "That’s right. Your project team is more complex than a ‘normal’ project team because your supervisors are both sponsors and team members. You have nil authority over the members of your team and your ‘Resource Managers’ can come from a wide range of external universities and organisations. Even though you may have never considered this point, you are working with a very complex team. As such, you are developing some amazing skills as you complete your research. We’ll talk about these a little later in the course. What does your team look like? Select your <strong>PMDP</strong> from the Resources menu to complete the activity: <strong>My project team</strong>.",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "In fact, your project team is more complex than a ‘normal’ project team because your supervisors are both sponsors and team members. You have nil authority over the members of your team and your ‘Resource Managers’ can come from a wide range of external universities and organisations. Even though you may have never considered this point, you are working with a very complex team. As such, you are developing some amazing skills as you complete your research. We’ll talk about these a little later in the course. What does your team look like? Select your <strong>PMDP</strong> from the Resources menu to complete the activity: <strong>My project team</strong>."
+            },
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "In fact, your project team is more complex than a ‘normal’ project team because your supervisors are both sponsors and team members. You have nil authority over the members of your team and your ‘Resource Managers’ can come from a wide range of external universities and organisations. Even though you may have never considered this point, you are working with a very complex team. As such, you are developing some amazing skills as you complete your research. We’ll talk about these a little later in the course. What does your team look like? Select your <strong>PMDP</strong> from the Resources menu to complete the activity: <strong>My project team</strong>."
+            }
+        },
+        "_buttons": {
+            "_submit": {
+                "buttonText": "Submit",
+                "ariaLabel": "Select here to submit your answer."
+            },
+            "_reset": {
+                "buttonText": "Reset",
+                "ariaLabel": ""
+            },
+            "_showCorrectAnswer": {
+                "buttonText": "Correct Answer",
+                "ariaLabel": ""
+            },
+            "_hideCorrectAnswer": {
+                "buttonText": "My Answer",
+                "ariaLabel": ""
+            },
+            "_showFeedback": {
+                "buttonText": "Show feedback",
+                "ariaLabel": ""
+            },
+            "remainingAttemptsText": "attempts remaining",
+            "remainingAttemptText": "final attempt"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-50",
+        "_parentId": "b-50",
+        "_type": "component",
+        "_component": "narrative",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "allItems",
+        "_hasNavigationInTextArea": false,
+        "title": "Project lifecycle",
+        "displayTitle": "Project lifecycle",
+        "body": "Project management is the application of knowledge, skills, tools and techniques to project manage activities to meet the project requirements. <i>A Guide to the Project Management Body of Knowledge ( PMBOK® Guide ) — Fifth Edition  —</i> is the preeminent global standard for project management. It suggests projects pass through <strong>four stages</strong> and have <strong>five sets of process groups</strong> that are used to manage projects throughout their life-cycles. ",
+        "instruction": "Select the icons to find out about each process group.",
+        "mobileInstruction": "Select the arrows and then the plus icons to find out about each process group.",
+        "_items": [
+            {
+                "title": "Initiating",
+                "body": "Identify and confirming a project’s scope. Defines and authorises the project or a project phase.",
+                "_graphic": {
+                    "src": "course/en/images/c-50_001.jpg",
+                    "alt": ""
+                },
+                "strapline": "Initiating"
+            },
+            {
+                "title": "Planning",
+                "body": "Creating a detailed project plan. Defines and refines objectives, and plans the course of action required to attain the objectives and scope.",
+                "_graphic": {
+                    "src": "course/en/images/c-50_002.jpg",
+                    "alt": ""
+                },
+                "strapline": "Planning"
+            },
+            {
+                "title": "Execution",
+                "body": "Doing the work required to produce the product, service or result. Integrates people and other resources to carry out the project management plan.",
+                "_graphic": {
+                    "src": "course/en/images/c-50_003.jpg",
+                    "alt": ""
+                },
+                "strapline": "Execution"
+            },
+            {
+                "title": "Closing",
+                "body": "Identifying and reporting on the project outcome and lessons and recommendations for future projects.",
+                "_graphic": {
+                    "src": "course/en/images/c-50_004.jpg",
+                    "alt": ""
+                },
+                "strapline": "Closing"
+            },
+            {
+                "title": "Monitoring and controlling",
+                "body": "Regularly measures and monitors progress to identify variances from the project management plan to allow corrective action when necessary. The monitoring and controlling process group exist alongside each of the four stages and are defined as, \"…those processes required to track, review, and regulate the progress and performance of the project, identify any areas in which changes to the plan are required, and initiate corresponding changes.\" <i>(PMBOK© Guide Fifth Edition)</i>",
+                "_graphic": {
+                    "src": "course/en/images/c-50_005.jpg",
+                    "alt": ""
+                },
+                "strapline": "Monitoring and controlling"
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-55",
+        "_parentId": "b-55",
+        "_type": "component",
+        "_component": "accordion",
+        "_classes": "",
+        "_layout": "full",
+        "title": "A shared journey",
+        "displayTitle": "A shared journey",
+        "body": "The similarities between a PhD research project and project management are easy to see. Let’s consider a few examples to see how the process groups align to PhD research.",
+        "instruction": "Select each heading to find out more.",
+        "_items": [
+            {
+                "title": "Getting started",
+                "body": "If you think about it, your PhD research journey also has a series of monitoring and controlling processes associated with it. There were certain things that you had to complete when you first enrolled. There are requirements for you to complete your Confirmation milestone, at which time you become a <strong>research candidate</strong>. There are specific rules for your PhD research pathway that you are required to follow if you wish to successfully complete your research. "
+            },
+            {
+                "title": "Forging the way",
+                "body": "Within project management a certain amount of work needs to be completed before a project is viable. It is at that point that it moves into the executing stage.<br/><br/>From a PhD research project perspective, the same is true. A certain amount of work, including your literature review and development of your research plan, is required before you can move into your data collection (or executing) stage."
+            },
+            {
+                "title": "Turning back",
+                "body": "A project could be terminated at any stage, although the costs (financial, effort, time, etc.) of stopping a project increase the more you progress through the stages. From a project management perspective, if a project needs to be terminated, it is best that it is terminated within the first two stages of the project. While it is never ideal for a PhD research project to cease, the same is also true. If it is to cease, it is best if it does before the data collection (executing) stage."
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-60",
+        "_parentId": "b-60",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "play",
+        "_useClosedCaptions": true,
+        "_allowFullScreen": true,
+        "title": "Why make the connection?",
+        "displayTitle": "Why make the connection?",
+        "body": "Why is it important to recognise the similarities between a research project and project management? It provides you with a ‘second language’ for communicating your project. Not all PhD graduates work in academia or laboratories. A high percentage work in industry, government agencies and not for profit organisations. Under these circumstances, it is essential that you have another way of telling your research story. Let’s hear why.",
+        "instruction": "Select Play to hear how one graduate researcher did just this.",
+        "_media": {
+            "mp4": "course/en/video/c-10.mp4",
+            "poster": "course/en/video/c-10.jpg"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-65",
+        "_parentId": "b-65",
+        "_classes": "",
+        "_layout": "full",
+        "_type": "component",
+        "_component": "matching",
+        "_attempts": 2,
+        "_shouldDisplayAttempts": false,
+        "_isRandom": true,
+        "_canShowModelAnswer": true,
+        "_recordInteraction": true,
+        "_questionWeight": 1,
+        "title": "Know your stage",
+        "displayTitle": "Know your stage",
+        "body": "The table below highlights the stages, outputs for each stage and relative costs associated with ending both a ‘typical project’ or a PhD project at that stage. <br/><br/><img src='' alt=''/><br/><br/>Consider the stages below. Select the corresponding PhD research output.",
+        "instruction": "Select your response from the options below and select Submit.",
+        "_buttons": {
+            "_submit": {
+                "buttonText": "Submit",
+                "ariaLabel": "Select here to submit your answer."
+            },
+            "_reset": {
+                "buttonText": "Reset",
+                "ariaLabel": ""
+            },
+            "_showCorrectAnswer": {
+                "buttonText": "Correct Answer",
+                "ariaLabel": ""
+            },
+            "_hideCorrectAnswer": {
+                "buttonText": "My Answer",
+                "ariaLabel": ""
+            },
+            "_showFeedback": {
+                "buttonText": "Show feedback",
+                "ariaLabel": ""
+            },
+            "remainingAttemptsText": "attempts remaining",
+            "remainingAttemptText": "final attempt"
+        },
+        "_feedback": {
+            "correct": "That’s right. The similarities between a PhD research project and project management are easy to see. It’s essential that you can articulate these similarities when sharing your research story with future employers.",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "That’s not right. Spend time getting clear on the similarities between a PhD research project and project management. This will help you communicate your research story with future employers."
+            },
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "That’s not quite right. Spend time getting clear on the similarities between a PhD research project and project management. This will help you communicate your research story with future employers. "
+            }
+        },
+        "placeholder": "select an option",
+        "_items": [{
+                "text": "A project charter to commence a project in the Initiating stage.",
+                "_options": [{
+                        "text": "Confirmation presentation and paper",
+                        "_isCorrect": true
+                    },
+                    {
+                        "text": "Close out report",
+                        "_isCorrect": false
+                    }
+                ]
+            },
+            {
+                "text": "A project plan during the Planning stage.",
+                "_options": [{
+                        "text": "Data collection",
+                        "_isCorrect": false
+                    },
+                    {
+                        "text": "PhD plan",
+                        "_isCorrect": true
+                    }
+                ]
+            },
+            {
+                "text": "Perform quality assurance during Executing phase.",
+                "_options": [{
+                        "text": "Thesis",
+                        "_isCorrect": false
+                    },
+                    {
+                        "text": "Data collection",
+                        "_isCorrect": true
+                    }
+                ]
+            },
+            {
+                "text": "Project recommendations during the Closing phase.",
+                "_options": [{
+                        "text": "Thesis",
+                        "_isCorrect": true
+                    },
+                    {
+                        "text": "PhD Plan",
+                        "_isCorrect": false
+                    }
+                ]
+            }
+        ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-90",
+        "_parentId": "b-90",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Get to know the waterfall",
+        "displayTitle": "Get to know the waterfall",
+        "body": "The Waterfall approach to project management was created in the late 1960s and is now the most commonly used methodology. The PMBOK© Guide Fifth Edition, released in 2013, is the current most up-to-date version of the principles and practices associated with Waterfall methodology. <br/><br/>In any project using this method, sequential stages are mapped out, each stage generally finishing before the next begins, hence the name Waterfall. Given that most PhD research journeys progress in defined stages, and because a thesis is submitted at a single point in time as a coherent, single document, can you see that this aligns very well Waterfall project management methodology? <br/><br/>To really get to know Waterfall you’ll need a basic understanding of process groups, knowledge areas and processes. Let’s drill down and take a closer look.",
+        "instruction": "",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-95",
+        "_parentId": "b-95",
+        "_type": "component",
+        "_component": "narrative",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "allItems",
+        "_hasNavigationInTextArea": false,
+        "title": "In detail",
+        "displayTitle": "In detail",
+        "body": "As described in detail in the <i>PMBOK© Guide</i>, the Waterfall methodology contains the elements below. Let’s take a look at what these are and how they fit together to manage a project. ",
+        "instruction": "Select the arrows to find out more.",
+        "mobileInstruction": "Select the arrows and then the plus icons to find out more.",
+        "_items": [
+            {
+                "title": "Process groups",
+                "body": "You can think about process groups as the major stages common to most projects — they cover what you need to do. There are five process groups: <br/><br/><ul><li>Initiating </li><li>Planning</li><li>Executing</li><li>Monitoring and controlling</li><li>Closing</li></ul> <br/>Take a look at the table to see how these process groups fit within the knowledge areas and project management processes to map out a project.",
+                "_graphic": {
+                    "src": "course/en/images/c-05-001.jpg",
+                    "alt": ""
+                },
+                "strapline": "Process groups"
+            },
+            {
+                "title": "Knowledge areas",
+                "body": "You can think about knowledge areas as what you need to <strong>know</strong> to successfully complete a project. There are ten knowledge areas: <br/><br/><ul><li>Integration</li><li>Scope</li><li>Time</li><li>Cost</li><li>Quality</li><li>Human resource</li><li>Communications</li><li>Risk</li><li>Procurement</li><li>Stakeholders</li></ul> <br/>Take a look at the table to see how these knowledge areas fit within the process groups and project management processes to map out a project. You’ll learn more about the ten knowledge areas in topic 10 of this course. ",
+                "_graphic": {
+                    "src": "course/en/images/c-05-002.jpg",
+                    "alt": ""
+                },
+                "strapline": "Knowledge areas"
+            },
+            {
+                "title": "Processes ",
+                "body": "You can think of the processes as <strong>tasks</strong>. There are 47 project management processes, that’s right 47! If you ever choose to become a qualified project manager then you will need to know all of the project management processes. Fortunately, for this course, you don’t need to go to that level of detail! <br/><br/>The table shows the relationship between the process groups, knowledge areas and project management processes.",
+                "_graphic": {
+                    "src": "course/en/images/c-05-003.jpg",
+                    "alt": ""
+                },
+                "strapline": "Processes "
+            },
+            {
+                "title": "PhD project mapping",
+                "body": "So what would it look like if you mapped a PhD research project using the Waterfall method? Take a look at the table. <br/><br/>As you can see PhD research tasks stages are like high level project management processes. The process groups and knowledge areas remain the same.",
+                "_graphic": {
+                    "src": "course/en/images/c-05-004.jpg",
+                    "alt": ""
+                },
+                "strapline": "PhD project mapping"
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-100",
+        "_parentId": "b-100",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "play",
+        "_useClosedCaptions": true,
+        "_allowFullScreen": true,
+        "title": "Make it work for you",
+        "displayTitle": "Make it work for you",
+        "body": "The Waterfall method aligns very well with a PhD research project journey. Your PhD journey unfolds from your initial application (initiating) right through to submitting your PhD (closing). Find out more about how a traditional PhD journey maps to the processes and stages used in Waterfall and how this method can help you now and post PhD.",
+        "instruction": "Select Play to find out more.",
+        "_media": {
+            "mp4": "course/en/video/c-10.mp4",
+            "poster": "course/en/video/c-10.jpg"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-105",
+        "_parentId": "b-105",
+        "_type": "component",
+        "_component": "mcq",
+        "_classes": "",
+        "_layout": "full",
+        "_attempts": 1,
+        "_shouldDisplayAttempts": false,
+        "_questionWeight": 1,
+        "_isRandom": false,
+        "_selectable": 6,
+        "_canShowModelAnswer": true,
+        "_canShowMarking": true,
+        "_recordInteraction": true,
+        "title": "Why waterfall?",
+        "displayTitle": "Why waterfall?",
+        "body": "You’ve explored the key characteristics of the Waterfall project management methodology. Take a look at the following statements and identify why Waterfall works for PhD research.",
+        "instruction": "Select one or more from the following options and select Submit.",
+        "_items": [
+            {
+                "text": "Most PhD theses are submitted as a coherent, single document",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Most PhD theses are submitted at a single point in time",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Each stage of a PhD is finished before the next stage begins ",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "In a PhD rapid production is more important than quality ",
+                "_shouldBeSelected": false
+            },
+            {
+                "text": "PhD research takes a linear approach ",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "PhD research is complex and benefits from the structure provided by Waterfall ",
+                "_shouldBeSelected": true
+            }
+        ],
+        "_feedback": {
+            "correct": "That’s right. Your PhD journey has defined stages. Once a stage is finished you move onto the next stage with the final outcome being to submit your work. Because this sequence of steps is linear, it maps well to Waterfall project management methodology. Now that you have a good understanding of Waterfall and how it aligns to your PhD journey, visit your <strong>PMDP</strong> in Resources to complete the activity: <strong>Plan your communications</strong>.",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "That’s not right. Waterfall aligns very closely to a PhD journey. One reason for this is that your PhD journey has defined stages. Once a stage is finished you move onto the next stage with the final outcome being to submit your work. Because this sequence of steps is linear, it maps well to Waterfall project management methodology. Now that you have a better understanding of Waterfall and how it aligns to your PhD journey, visit your <strong>PMDP</strong> in Resources to complete the activity: <strong>Plan your communications</strong>."
+            },
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "That’s not quite right. Waterfall aligns very closely to a PhD journey. One reason for this is that your PhD journey has defined stages. Once a stage is finished you move onto the next stage with the final outcome being to submit your work. Because this sequence of steps is linear, it maps well to Waterfall project management methodology. Now that you have a better understanding of Waterfall and how it aligns to your PhD journey, visit your <strong>PMDP</strong> in Resources to complete the activity: <strong>Plan your communications</strong>."
+            }
+        },
+        "_buttons": {
+            "_submit": {
+                "buttonText": "Submit",
+                "ariaLabel": "Select here to submit your answer."
+            },
+            "_reset": {
+                "buttonText": "Reset",
+                "ariaLabel": ""
+            },
+            "_showCorrectAnswer": {
+                "buttonText": "Correct Answer",
+                "ariaLabel": ""
+            },
+            "_hideCorrectAnswer": {
+                "buttonText": "My Answer",
+                "ariaLabel": ""
+            },
+            "_showFeedback": {
+                "buttonText": "Show feedback",
+                "ariaLabel": ""
+            },
+            "remainingAttemptsText": "attempts remaining",
+            "remainingAttemptText": "final attempt"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-110",
+        "_parentId": "b-110",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "full",
+        "title": "An outline or map",
+        "displayTitle": "An outline or map",
+        "body": "An easy way to think about a Work Breakdown Structure (WBS) is as an outline or map of a specific project. The main purpose of a WBS is to reduce complicated activities to a collection of tasks. ",
+        "instruction": "",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-115",
+        "_parentId": "b-115",
+        "_type": "component",
+        "_component": "graphic",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Build it",
+        "displayTitle": "Build it",
+        "body": "A WBS has the project as the top-level deliverable, and this is further broken down into sub-deliverables. <br/><br/>This WBS outlines the tasks needed to build a house.",
+        "instruction": "",
+        "_graphic": {
+            "alt": "Chart graphic",
+            "large": "course/en/images/chart_graphic.png",
+            "small": "course/en/images/chart_graphic.png"
+        }
+    },
+    {
+        "_id": "c-120",
+        "_parentId": "b-120",
+        "_type": "component",
+        "_component": "accordion",
+        "_classes": "",
+        "_layout": "full",
+        "title": "WBS tasks",
+        "displayTitle": "WBS tasks",
+        "body": "A WBS is created to identify all the tasks that must be completed in a project. This makes it easier to estimate the time associated with a task, its dependencies and who must complete the task. These become the milestones of the project. There are two types of tasks in a WBS: <strong>Work Packages</strong> and <strong>Summary Tasks</strong>.",
+        "instruction": "Select each heading to learn more about each WBS task.",
+        "_items": [
+            {
+                "title": "Summary tasks",
+                "body": "Summary Tasks are those that act as check points and summarise the work in some form. In the house building example, <i>Build house, Foundation, Building structure, Interiors and Landscaping</i> are all Summary Tasks. In a WBS for a research project <i>Enrolment or Entry of thesis abstract</i> could be Summary Tasks.",
+                "_graphic": {
+                    "src": "course/en/images/c-15-001.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Work packages",
+                "body": "According to <i>PMBOK© Guide Fifth Edition</i> a Work Package is the work, \"…defined at the lowest level of the work breakdown structure for which cost and duration can be estimated and managed.\" <br/><br/>In the house building example <i>Draw blueprint, Get materials, Design interiors and Design private/public areas</i> are all Work Packages. If you were doing a WBS for your research project <i>Write references and annexures or Prepare conference presentation</i> could be Work Packages.<br/><br/>The generally accepted rule of thumb for identifying a Work Package is that the tasks within that Work Package take between eight to eighty hours to complete.",
+                "_graphic": {
+                    "src": "course/en/images/c-15-002.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "How many tasks?",
+                "body": "There is no limit to the number of Summary Tasks and Work Packages that exist within a project. The larger and more complex a project is, the more Summary Tasks and Work Packages that will exist within it.",
+                "_graphic": {
+                    "src": "course/en/images/c-15-003.jpg",
+                    "alt": ""
+                },
+                "_classes": ""
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-125",
+        "_parentId": "b-125",
+        "_classes": "",
+        "_layout": "full",
+        "_type": "component",
+        "_component": "matching",
+        "_attempts": 2,
+        "_shouldDisplayAttempts": false,
+        "_isRandom": true,
+        "_canShowModelAnswer": true,
+        "_recordInteraction": true,
+        "_questionWeight": 1,
+        "title": "What's the task type?",
+        "displayTitle": "What's the task type?",
+        "body": "In the context of completing a PhD research project what might be an example of a Summary Task, what might be an example of a Work Package? ",
+        "instruction": "Select your response from the options below and select Submit.",
+        "_buttons": {
+            "_submit": {
+                "buttonText": "Submit",
+                "ariaLabel": "Select here to submit your answer."
+            },
+            "_reset": {
+                "buttonText": "Reset",
+                "ariaLabel": ""
+            },
+            "_showCorrectAnswer": {
+                "buttonText": "Correct Answer",
+                "ariaLabel": ""
+            },
+            "_hideCorrectAnswer": {
+                "buttonText": "My Answer",
+                "ariaLabel": ""
+            },
+            "_showFeedback": {
+                "buttonText": "Show feedback",
+                "ariaLabel": ""
+            },
+            "remainingAttemptsText": "attempts remaining",
+            "remainingAttemptText": "final attempt"
+        },
+        "_feedback": {
+            "correct": "That’s right. You seem to have a good grip on how tasks are categorised in a WBS. Are you starting to get a sense of what your WBS might look like? Visit your <strong>PMDP</strong> in Resources and complete the activity: <strong>Create a Work Breakdown Structure (WBS)</strong>.",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "That’s not right. Completing your table of contents is a sub-task of a broader Summary Task, which is likely to be <i>Write dissertation</i>. The mid-point review and enrolment are Summary Tasks and represent a key stage in the PhD journey. They can be further broken down into sub-tasks. Are you starting to get a sense of what your WBS might look like? Visit your <strong>PMDP</strong> in Resources and complete the activity: <strong>Create a Work Breakdown Structure (WBS)</strong>."
+            },
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "That’s not quite right. Completing your table of contents is a sub-task of a broader Summary Task, which is likely to be <i>Write dissertation</i>. The mid-point review and enrolment are Summary Tasks and represent a key stage in the PhD journey. They can be further broken down into sub-tasks. Are you starting to get a sense of what your WBS might look like? Visit your <strong>PMDP</strong> in Resources and complete the activity: <strong>Create a Work Breakdown Structure (WBS)</strong>."
+            }
+        },
+        "placeholder": "select an option",
+        "_items": [{
+                "text": "Complete the table of contents",
+                "_options": [{
+                        "text": "Summary Task ",
+                        "_isCorrect": false
+                    },
+                    {
+                        "text": "Work Package ",
+                        "_isCorrect": true
+                    }
+                ]
+            },
+            {
+                "text": "Enrolment",
+                "_options": [{
+                        "text": "Summary Task ",
+                        "_isCorrect": true
+                    },
+                    {
+                        "text": "Work Package",
+                        "_isCorrect": false
+                    }
+                ]
+            },
+            {
+                "text": "Mid-candidature review",
+                "_options": [{
+                        "text": "Summary Task ",
+                        "_isCorrect": true
+                    },
+                    {
+                        "text": "Work Package",
+                        "_isCorrect": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "c-130",
+        "_parentId": "b-130",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "play",
+        "_useClosedCaptions": true,
+        "_allowFullScreen": true,
+        "title": "Breaking it down",
+        "displayTitle": "Breaking it down",
+        "body": "Watch as one a graduate student experiments with a WBS using post-it-notes to create a first draft.",
+        "instruction": "Select Play.",
+        "_media": {
+            "mp4": "course/en/video/c-10.mp4",
+            "poster": "course/en/video/c-10.jpg"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-135",
+        "_parentId": "b-135",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "full",
+        "title": "An outline or map",
+        "displayTitle": "An outline or map",
+        "body": "A WBS can help you to divide your work into bite sized pieces. This makes it easier to estimate the time associated with a task, its dependencies and who must complete the task. <br/><br/>Having a structure for managing tasks can help you to plan your work. Having a plan can help you make sense of what can, at times, be a complex task and will help you from being overwhelmed by the enormity of your research project.",
+        "instruction": "",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-140",
+        "_parentId": "b-140",
+        "_type": "component",
+        "_component": "graphic",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Agile vs Waterfall",
+        "displayTitle": "Agile vs Waterfall",
+        "body": "Waterfall and Agile are both project management methodologies. However, a project run using Agile is vastly different to one run using Waterfall. You can see that Waterfall uses a linear approach and ends with one big final delivery; Agile is focused on early and continuous delivery with cumulative outcomes until the project ends.",
+        "instruction": "",
+        "_graphic": {
+            "alt": "Chart graphic",
+            "large": "course/en/images/chart_graphic.png",
+            "small": "course/en/images/chart_graphic.png"
+        }
+    },
+    {
+        "_id": "c-145",
+        "_parentId": "b-145",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "play",
+        "_useClosedCaptions": true,
+        "_allowFullScreen": true,
+        "title": "Agile or Waterfall",
+        "displayTitle": "Agile or Waterfall",
+        "body": "With the help of post-doctoral student Marie, James finds out more about Waterfall and Agile and how these methodologies relate to his PhD journey.",
+        "instruction": "Select Play.",
+        "_media": {
+            "mp4": "course/en/video/c-10.mp4",
+            "poster": "course/en/video/c-10.jpg"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-150",
+        "_parentId": "b-150",
+        "_type": "component",
+        "_component": "mcq",
+        "_classes": "",
+        "_layout": "full",
+        "_attempts": 1,
+        "_shouldDisplayAttempts": false,
+        "_questionWeight": 1,
+        "_isRandom": false,
+        "_selectable": 1,
+        "_canShowModelAnswer": true,
+        "_canShowMarking": true,
+        "_recordInteraction": true,
+        "title": "Know Agile",
+        "displayTitle": "Know Agile",
+        "body": "Is it true that the Agile methodology is designed to create a complete product, service or result before it is released?",
+        "instruction": "Select one of the following options and select Submit.",
+        "_items": [
+            {
+                "text": "True",
+                "_shouldBeSelected": false
+            },
+            {
+                "text": "False",
+                "_shouldBeSelected": true
+            }
+        ],
+        "_feedback": {
+            "correct": "That’s right. Agile methodology focuses on working ‘chunks’ that are released within specific timeframes, even though they contain flaws that will be discovered upon release (sometimes they are known at the point of release and the ‘fixes’ are already underway when the version of software is released). Want to know more? A useful resource for developing an understanding of the Agile methodology is the <i>Agile Project Management Quickstart Guide</i> (2014) by Clydebank Media LLC. ",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "That’s not right. Agile methodology focuses on working ‘chunks’ that are released within specific timeframes, even though they contain flaws that will be discovered upon release (sometimes they are known at the point of release and the ‘fixes’ are already underway when the version of software is released). Want to know more? A useful resource for developing an understanding of the Agile methodology is the <i>Agile Project Management Quickstart Guide</i> (2014) by Clydebank Media LLC."
+            },
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "That’s not right. Agile methodology focuses on working ‘chunks’ that are released within specific timeframes, even though they contain flaws that will be discovered upon release (sometimes they are known at the point of release and the ‘fixes’ are already underway when the version of software is released). Want to know more? A useful resource for developing an understanding of the Agile methodology is the <i>Agile Project Management Quickstart Guide</i> (2014) by Clydebank Media LLC."
+            }
+        },
+        "_buttons": {
+            "_submit": {
+                "buttonText": "Submit",
+                "ariaLabel": "Select here to submit your answer."
+            },
+            "_reset": {
+                "buttonText": "Reset",
+                "ariaLabel": ""
+            },
+            "_showCorrectAnswer": {
+                "buttonText": "Correct Answer",
+                "ariaLabel": ""
+            },
+            "_hideCorrectAnswer": {
+                "buttonText": "My Answer",
+                "ariaLabel": ""
+            },
+            "_showFeedback": {
+                "buttonText": "Show feedback",
+                "ariaLabel": ""
+            },
+            "remainingAttemptsText": "attempts remaining",
+            "remainingAttemptText": "final attempt"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-155",
+        "_parentId": "b-155",
+        "_type": "component",
+        "_component": "accordion",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Agile methodology",
+        "displayTitle": "Agile methodology",
+        "body": "Agile is based on a clear set of practices, principles, and values. Let’s drill down and find out a bit more about the founding principles of Agile and what’s important in this methodology.",
+        "instruction": "Select each heading to find out more.",
+        "_items": [
+            {
+                "title": "Drivers",
+                "body": "Agile is driven by four basic assumptions: <br/><br/> <ol><li>Individuals and interactions <strong>over</strong> process and tools</li><li>Working software <strong>over</strong> comprehensive documentation</li><li>Customer collaboration <strong>over</strong> contract negotiation</li><li>Responding to change <strong>over</strong> following a plan</li></ol>",
+                "_graphic": {
+                    "src": "",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Team",
+                "body": "Agile is designed for coherent teams who continue to work together over time. These team members usually share the same office space and literally work ‘in each other’s pockets’. Agile teams continuously reflect and refine what is suitable for the product they are delivering.",
+                "_graphic": {
+                    "src": "",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Evolution",
+                "body": "Scrum is an evolution of Agile that is applied beyond software development. The name derives from rugby union where a scrum is used to progress the ball forward. <br/><br/>Other variations of Agile include Lean, Crystal, and DSDM.",
+                "_graphic": {
+                    "src": "",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Manifesto",
+                "body": "The founders of the Agile approach created the <strong>Agile Manifesto</strong> which specifies 4 values and 12 principles for the Agile methodology. Select and read the <strong>Agile Manifesto</strong> from the Resources menu.",
+                "_graphic": {
+                    "src": "",
+                    "alt": ""
+                },
+                "_classes": ""
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-160",
+        "_parentId": "b-160",
+        "_type": "component",
+        "_component": "mcq",
+        "_classes": "",
+        "_layout": "full",
+        "_attempts": 1,
+        "_shouldDisplayAttempts": false,
+        "_questionWeight": 1,
+        "_isRandom": false,
+        "_selectable": 1,
+        "_canShowModelAnswer": true,
+        "_canShowMarking": true,
+        "_recordInteraction": true,
+        "title": "What really matters?",
+        "displayTitle": "What really matters?",
+        "body": "Are you starting to get a feel for the art of Agile and what lies at the heart of this methodology? (If you haven’t already done so, read the <strong>Agile Manifesto</strong> from the Resources menu).<br/><br/>What is Agile’s \"highest priority\"? ",
+        "instruction": "Select one of the following options and select Submit.",
+        "_items": [
+            {
+                "text": "To satisfy the customer through early and continuous delivery ",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "To create a team that engages in values-driven behaviour",
+                "_shouldBeSelected": false
+            },
+            {
+                "text": "To create a structured plan",
+                "_shouldBeSelected": false
+            },
+            {
+                "text": "To satisfy the customer by creating comprehensive documentation",
+                "_shouldBeSelected": false
+            }
+        ],
+        "_feedback": {
+            "correct": "That’s right. Early and continual delivery lies at the heart of the Agile methodology. It drives the whole approach. While it’s true that the team is driven by the values that lie at the core of Agile, this is secondary to the importance placed on early and continuous delivery. Agile values flexibility and change and gives less importance to a structured plan. As for documentation, it’s still there in an Agile project, it simply has less importance than it does in Waterfall methodology.",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "That’s not right. Early and continual delivery lies at the heart of the Agile methodology. It drives the whole approach. While it’s true that the team is driven by the values that lie at the core of Agile, this is secondary to the importance placed on early and continuous delivery. Agile values flexibility and change and gives less importance to a structured plan. As for documentation, it’s still there in an Agile project, it simply has less importance than it does in Waterfall methodology."
+            }
+        },
+        "_buttons": {
+            "_submit": {
+                "buttonText": "Submit",
+                "ariaLabel": "Select here to submit your answer."
+            },
+            "_reset": {
+                "buttonText": "Reset",
+                "ariaLabel": ""
+            },
+            "_showCorrectAnswer": {
+                "buttonText": "Correct Answer",
+                "ariaLabel": ""
+            },
+            "_hideCorrectAnswer": {
+                "buttonText": "My Answer",
+                "ariaLabel": ""
+            },
+            "_showFeedback": {
+                "buttonText": "Show feedback",
+                "ariaLabel": ""
+            },
+            "remainingAttemptsText": "attempts remaining",
+            "remainingAttemptText": "final attempt"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-165",
+        "_parentId": "b-165",
+        "_type": "component",
+        "_component": "mcq",
+        "_classes": "",
+        "_layout": "full",
+        "_attempts": 1,
+        "_shouldDisplayAttempts": false,
+        "_questionWeight": 1,
+        "_isRandom": false,
+        "_selectable": 1,
+        "_canShowModelAnswer": true,
+        "_canShowMarking": true,
+        "_recordInteraction": true,
+        "title": "Talking with the team",
+        "displayTitle": "Talking with the team",
+        "body": "You’ve probably picked up on the strong collaborative nature of Agile. So what is the recommended approach to communication? You probably use a broad range of communication tools (from face to face, to live chats and virtual hangouts). So, what does Agile recommend?<br/><br/>According to the Agile Manifesto the most effective method of conveying information within a team is… ",
+        "instruction": "Select one of the following options and select Submit.",
+        "_items": [
+            {
+                "text": "Face to face ",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Email",
+                "_shouldBeSelected": false
+            },
+            {
+                "text": "Publications",
+                "_shouldBeSelected": false
+            },
+            {
+                "text": "Live chat",
+                "_shouldBeSelected": false
+            }
+        ],
+        "_feedback": {
+            "correct": "That’s right. Agile places great value in people talking face to face (and often with a whiteboard for drawing and brainstorming ideas). Face to face communication is perceived as ideal as it fosters active communication and helps the team to develop personal relationships. Additionally, it is easier to pick up on non-verbal cues and can be used to do live demonstrations of products.",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "That’s not right. Agile places the most value in people talking face to face (and often with a whiteboard for drawing and brainstorming ideas). Face to face communication is perceived as ideal as it fosters active communication and helps the team to develop personal relationships. Additionally, it is easier to pick up on non-verbal cues and can be used to do live demonstrations of products."
+            }
+        },
+        "_buttons": {
+            "_submit": {
+                "buttonText": "Submit",
+                "ariaLabel": "Select here to submit your answer."
+            },
+            "_reset": {
+                "buttonText": "Reset",
+                "ariaLabel": ""
+            },
+            "_showCorrectAnswer": {
+                "buttonText": "Correct Answer",
+                "ariaLabel": ""
+            },
+            "_hideCorrectAnswer": {
+                "buttonText": "My Answer",
+                "ariaLabel": ""
+            },
+            "_showFeedback": {
+                "buttonText": "Show feedback",
+                "ariaLabel": ""
+            },
+            "remainingAttemptsText": "attempts remaining",
+            "remainingAttemptText": "final attempt"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-170",
+        "_parentId": "b-170",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "full",
+        "title": "The Agile way",
+        "displayTitle": "The Agile way",
+        "body": "Although Agile was born out of frustrations in the software industry with the Waterfall methodology it is now being used across many other industries. Agile is shaped by a strong collaborative team, releases ‘early and often’, and a foundational set of values and principles. <br/><br/>For many of you, it may be in your post-doctoral activities where you will find the Agile methodology — and its variations such as Scrum — more aligned to the research or work you’re doing.",
+        "instruction": "",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-175",
+        "_parentId": "b-175",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Two tools",
+        "displayTitle": "Two tools",
+        "body": "In your Work Breakdown Structure (WBS) you identified the specific milestones related to your PhD journey (Summary Tasks). You then broke down these Summary Tasks into smaller chunks called Work Packages. The next step is to start allocating time to each Work Package. Once this is done you can monitor the work to see if tasks are complete and see what dependencies exist between tasks. Two tools can help you do this. Let’s take a look.",
+        "instruction": "",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-180",
+        "_parentId": "b-180",
+        "_type": "component",
+        "_component": "graphic",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Gantt charts",
+        "displayTitle": "Gantt charts",
+        "body": "Gantt charts are visual tools that map out Work Packages and show the relationships between them. They show the duration of each task and if they are dependent on other tasks. Does one task need to be completed before another can begin? Before you have a go at creating your own Gantt chart you will need to think carefully about how one task might be dependent or linked to another. Let’s drill down and take a look at four types of task dependencies.",
+        "instruction": "",
+        "_graphic": {
+            "alt": "Chart graphic",
+            "large": "course/en/images/chart_graphic.png",
+            "small": "course/en/images/chart_graphic.png"
+        }
+    },
+    {
+        "_id": "c-185",
+        "_parentId": "b-185",
+        "_type": "component",
+        "_component": "narrative",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "allItems",
+        "_hasNavigationInTextArea": false,
+        "title": "Four types of dependency",
+        "displayTitle": "Four types of dependency",
+        "body": "A Task Dependency is when one task controls the timing of another. There are four types.",
+        "instruction": "Select the arrows to find out more.",
+        "mobileInstruction": "Select the arrows and then the plus icons to find out more.",
+        "_items": [
+            {
+                "title": "Finish to start",
+                "body": "One task must finish before another task can start (these are the most common types of dependencies) E.g., you must complete your Confirmation before you can commence your data collection.",
+                "_graphic": {
+                    "src": "course/en/images/c-05-001.jpg",
+                    "alt": ""
+                },
+                "strapline": "Finish to start"
+            },
+            {
+                "title": "Start to start",
+                "body": "When one task starts, another is triggered to start. E.g., when your enrolment is accepted you can commence your literature review.",
+                "_graphic": {
+                    "src": "course/en/images/c-05-002.jpg",
+                    "alt": ""
+                },
+                "strapline": "Start to start"
+            },
+            {
+                "title": "Finish to finish",
+                "body": "The finish of one task controls the finish of another. E.g., when you submit your thesis you finish the task of submitting your thesis, as well as the task of writing each chapter within your thesis.",
+                "_graphic": {
+                    "src": "course/en/images/c-05-003.jpg",
+                    "alt": ""
+                },
+                "strapline": "Finish to finish"
+            },
+            {
+                "title": "Start to finish",
+                "body": "The start of one task finishes another task. These are the rarest of dependencies and are the most confusing, so don’t be too worried if they don’t make sense, if you master the first three you’ll be okay! E.g., when you start a conference presentation your preparation for that presentation automatically ceases, no matter how well or how complete your preparation was for your presentation.",
+                "_graphic": {
+                    "src": "course/en/images/c-05-004.jpg",
+                    "alt": ""
+                },
+                "strapline": "Start to finish"
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-190",
+        "_parentId": "b-190",
+        "_classes": "",
+        "_layout": "full",
+        "_type": "component",
+        "_component": "matching",
+        "_attempts": 2,
+        "_shouldDisplayAttempts": false,
+        "_isRandom": true,
+        "_canShowModelAnswer": true,
+        "_recordInteraction": true,
+        "_questionWeight": 1,
+        "title": "Know your dependencies",
+        "displayTitle": "Know your dependencies",
+        "body": "When thinking about dependencies it’s useful to ask: <br/><br/> <ul><li>Which task controls the other?</li><li>Does the first task control the start or finish of the second task?</li><li>Does the start or finish date of the first task control the start or finish of the second task? </li></ul>",
+        "instruction": "Select your response from the options below and select Submit.",
+        "_buttons": {
+            "_submit": {
+                "buttonText": "Submit",
+                "ariaLabel": "Select here to submit your answer."
+            },
+            "_reset": {
+                "buttonText": "Reset",
+                "ariaLabel": ""
+            },
+            "_showCorrectAnswer": {
+                "buttonText": "Correct Answer",
+                "ariaLabel": ""
+            },
+            "_hideCorrectAnswer": {
+                "buttonText": "My Answer",
+                "ariaLabel": ""
+            },
+            "_showFeedback": {
+                "buttonText": "Show feedback",
+                "ariaLabel": ""
+            },
+            "remainingAttemptsText": "attempts remaining",
+            "remainingAttemptText": "final attempt"
+        },
+        "_feedback": {
+            "correct": "That’s right. You needed to finish compiling the copies of your documents before you could enrol so this is <strong>Finish</strong> (a task) to <strong>Start</strong> (the next task) dependency. Understanding dependencies will help you with your next step, which is to take your WBS and create a Gantt Chart. This requires a good understanding of how the tasks in your PhD research project relate to one another. Your <strong>PMDP</strong> in Resources has a list of steps to that will help you complete the activity: <strong>My Gantt chart</strong>. Set aside a good 20 minutes to do this task.",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "That’s not right. You needed to finish compiling the copies of your documents before you could enrol so this is <strong>Finish</strong> (a task) to <strong>Start</strong> (the next task) dependency. Understanding dependencies will help you with your next step, which is to take your WBS and create a Gantt Chart. This requires a good understanding of how the tasks in your PhD research project relate to one another. Your <strong>PMDP</strong> in Resources has a list of steps to that will help you complete the activity: <strong>My Gantt chart</strong>. Set aside a good 20 minutes to do this task."
+            },
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "That’s not right. You needed to finish compiling the copies of your documents before you could enrol so this is <strong>Finish</strong> (a task) to <strong>Start</strong> (the next task) dependency. Understanding dependencies will help you with your next step, which is to take your WBS and create a Gantt Chart. This requires a good understanding of how the tasks in your PhD research project relate to one another. Your <strong>PMDP</strong> in Resources has a list of steps to that will help you complete the activity: <strong>My Gantt chart</strong>. Set aside a good 20 minutes to do this task."
+            }
+        },
+        "placeholder": "select an option",
+        "_items": [{
+                "text": "You needed to obtain copies of certain documents such as your academic transcripts and proof of citizenship before you could submit your application for your PhD. What type of dependency is this?",
+                "_options": [{
+                        "text": "Finish to start",
+                        "_isCorrect": true
+                    },
+                    {
+                        "text": "Start to start",
+                        "_isCorrect": false
+                    },
+                    {
+                        "text": "Finish to finish",
+                        "_isCorrect": false
+                    },
+                    {
+                        "text": "Start to finish",
+                        "_isCorrect": false
+                    }
+                ]
+            }
+            
+        ]
+    },
+    {
+        "_id": "c-195",
+        "_parentId": "b-195",
+        "_type": "component",
+        "_component": "graphic",
+        "_classes": "",
+        "_layout": "full",
+        "title": "An alternative tool: (OPPM™)",
+        "displayTitle": "An alternative tool: (OPPM™)",
+        "body": "The OPPM™ suite of tools, created by Clark Campbell, provides a suite of downloadable tools and step by step instructions. They enable you to build an Excel spreadsheet which can provide you with all the information you need to effectively communicate your research project. Why consider it? These tools can be used to simplify all your project information into a one page Excel spreadsheet. For an example, use the link in your Resources to download the free OPPM™ Introduction materials, and open the <strong>Mount Olympus PMO OPPM™</strong> PDF.",
+        "instruction": "",
+        "_graphic": {
+            "alt": "Chart graphic",
+            "large": "course/en/images/chart_graphic.png",
+            "small": "course/en/images/chart_graphic.png"
+        }
+    },
+    {
+        "_id": "c-200",
+        "_parentId": "b-200",
+        "_type": "component",
+        "_component": "mcq",
+        "_classes": "",
+        "_layout": "full",
+        "_attempts": 1,
+        "_shouldDisplayAttempts": false,
+        "_questionWeight": 1,
+        "_isRandom": false,
+        "_selectable": 8,
+        "_canShowModelAnswer": true,
+        "_canShowMarking": true,
+        "_recordInteraction": true,
+        "title": "Review the OPPM™ spreadsheets",
+        "displayTitle": "Review the OPPM™ spreadsheets",
+        "body": "Use the link in your Resources to download the OPPM™ materials. Look at the Small Consulting Project and Mount Olympus Project PDFs. Review the two examples and identify the elements that form part of a typical one-page approach.",
+        "instruction": "Select one or more of the following options and select Submit.",
+        "_items": [
+            {
+                "text": "Objectives",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Task status",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Task owners",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Costs",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Summary and forecast",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Target dates",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Number of people on the project",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Timeline",
+                "_shouldBeSelected": true
+            }
+        ],
+        "_feedback": {
+            "correct": "That’s right. Not bad for a one page document! These standards components are common to most one-page approaches. Keep in mind that there may be multiple one-pages in any project. Also, a one-page approach may be used as a high-level overview with additional Gantt Charts (or other project management tools) used as needed throughout the project.",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "That’s not right. These are all standards components that are common to most one-page approaches. Not bad for a one page document! Keep in mind that there may be multiple one-pages in any project. Also, an one-page approach may be used as a high-level overview with additional Gantt Charts (or other project management tools) used as needed throughout the project."
+            },
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "That’s not quite right. These are all standards components that are common to most one-page approach. Not bad for a one page document! Keep in mind that there may be multiple one-pages in any project. Also, an one-page approach may be used as a high-level overview with additional Gantt Charts (or other project management tools) used as needed throughout the project."
+            }
+        },
+        "_buttons": {
+            "_submit": {
+                "buttonText": "Submit",
+                "ariaLabel": "Select here to submit your answer."
+            },
+            "_reset": {
+                "buttonText": "Reset",
+                "ariaLabel": ""
+            },
+            "_showCorrectAnswer": {
+                "buttonText": "Correct Answer",
+                "ariaLabel": ""
+            },
+            "_hideCorrectAnswer": {
+                "buttonText": "My Answer",
+                "ariaLabel": ""
+            },
+            "_showFeedback": {
+                "buttonText": "Show feedback",
+                "ariaLabel": ""
+            },
+            "remainingAttemptsText": "attempts remaining",
+            "remainingAttemptText": "final attempt"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-205",
+        "_parentId": "b-205",
+        "_type": "component",
+        "_component": "mcq",
+        "_classes": "",
+        "_layout": "full",
+        "_attempts": 1,
+        "_shouldDisplayAttempts": false,
+        "_questionWeight": 1,
+        "_isRandom": false,
+        "_selectable": 1,
+        "_canShowModelAnswer": true,
+        "_canShowMarking": true,
+        "_recordInteraction": true,
+        "title": "Why use a one-page approach?",
+        "displayTitle": "Why use a one-page approach?",
+        "body": "Can you begin to see how a one-page approach might be helpful? What is the main benefit of simplifying your project in this way into a one page overview?",
+        "instruction": "Select one of the following options and select Submit.",
+        "_items": [
+            {
+                "text": "It provides detailed descriptions of tasks and responsibilities.",
+                "_shouldBeSelected": false
+            },
+            {
+                "text": "It captures essential detail making it easy to share with stakeholders.",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "It is quick and easy to produce and does not require the rigour of other project management tools.",
+                "_shouldBeSelected": false
+            }
+        ],
+        "_feedback": {
+            "correct": "That’s right. Whilst there are many benefits to using a one-page approach, the main one is that with a quick glance your project stakeholders can scan essential project information and gauge the health of the project. Additionally, you can use the one-page approach to guide your discussions with your project stakeholders. But don’t be fooled. It still takes rigour, insight and hard work to capture a project’s critical information into this short one-pager. If you would like to have a go, download the materials and instructions from the OPPM™ website. The link is in your Resources. It will take between 40 to 60 minutes to set up your own.",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "That’s not right. Whilst there are many benefits to creating an using a one-page approach, the main one is that with a quick glance, your project stakeholders can scan essential project information and gauge the health of the project. Additionally, you can use the one-page approach to guide your discussions with your project stakeholders. But don’t be fooled. It still takes rigour, insight and hard work to capture a project’s critical information into this short one-pager. If you would like to have a go, download the materials and instructions from the OPPM™ website. The link is in your Resources. It will take between 40 to 60 minutes to set up your own."
+            }
+        },
+        "_buttons": {
+            "_submit": {
+                "buttonText": "Submit",
+                "ariaLabel": "Select here to submit your answer."
+            },
+            "_reset": {
+                "buttonText": "Reset",
+                "ariaLabel": ""
+            },
+            "_showCorrectAnswer": {
+                "buttonText": "Correct Answer",
+                "ariaLabel": ""
+            },
+            "_hideCorrectAnswer": {
+                "buttonText": "My Answer",
+                "ariaLabel": ""
+            },
+            "_showFeedback": {
+                "buttonText": "Show feedback",
+                "ariaLabel": ""
+            },
+            "remainingAttemptsText": "attempts remaining",
+            "remainingAttemptText": "final attempt"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-210",
+        "_parentId": "b-210",
+        "_type": "component",
+        "_component": "confidenceSlider",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Risk and you",
+        "displayTitle": "Risk and you",
+        "body": "What is your personal approach to risk? Do you manage it consciously and plan ahead? Perhaps you tackle challenges if and when they arise? Perhaps you already have a plan in place for reviewing risk throughout your PhD project?",
+        "instruction": "Drag the slider to make your choice and select Submit.",
+        "_attempts": 1,
+        "_canShowFeedback": true,
+        "_recordInteraction": true,
+        "_shouldStoreResponses": false,
+        "_linkedToId": "",
+        "_showNumber": true,
+        "_showScaleIndicator": true,
+        "_showScale": true,
+        "labelStart": "I don’t manage risks ",
+        "labelEnd": "I always manage risks well ",
+        "_scaleStart": 1,
+        "_scaleEnd": 10,
+        "_scaleStep": 1,
+        "_buttons": {
+            "_submit": {
+                "buttonText": "Submit",
+                "ariaLabel": "Submit your answer by clicking here."
+            },
+            "_reset": {
+                "buttonText": "Reset",
+                "ariaLabel": "Reset the question by clicking here."
+            },
+            "_showFeedback": {
+                "buttonText": "Show feedback",
+                "ariaLabel": "View the question feedback again by clicking here."
+            }
+        },
+        "_feedback": {
+            "feedbackSeparator": " ",
+            "generic": "Thanks for measuring your confidence.",
+            "_comparison": {
+                "lower": "Oh you like it less? That's a shame.",
+                "same": "Well, at least you don't like it less.",
+                "higher": "It looks like you're seeing the benefits more and more!"
+            },
+            "_threshold": [
+                {
+                    "_values": {
+                        "_low": 1,
+                        "_high": 3
+                    },
+                    "text": "Hopefully you are now thinking of your research as a project? If so it’s a great time to understand more about risk. Specifically, how you can plan ahead to identify, assess and mitigate risk events. Having a strategy for assessing risk is a key competency for project managers. So, let’s continue and we’ll take a look at a structured approach to managing risk called <strong>qualitative risk analysis.</strong>."
+                },
+                {
+                    "_values": {
+                        "_low": 4,
+                        "_high": 7
+                    },
+                    "text": "It’s great that you have some experience of managing risk. Being able to plan ahead and anticipate risk events (and having a strategy for managing them if they do occur) is a key competency for project managers. So, let’s continue and we’ll take a look at a structured approach to managing risk called <strong>qualitative risk analysis.</strong>"
+                },
+                {
+                    "_values": {
+                        "_low": 8,
+                        "_high": 10
+                    },
+                    "text": "As you are now thinking of your research as a project – it’s a great time to continue to learn more how you can plan ahead for potential risk events, and assess and manage risk. Having a strategy for assessing risk is a key competency for project managers. So, let’s continue and we’ll take a look at a structured approach to managing risk called <strong>qualitative risk analysis.</strong>"
+                }
+            ]
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-215",
+        "_parentId": "b-215",
+        "_type": "component",
+        "_component": "narrative",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "allItems",
+        "_hasNavigationInTextArea": false,
+        "title": "Qualitative risk analysis",
+        "displayTitle": "Qualitative risk analysis",
+        "body": "You can’t avoid problems and challenges, but you can manage the risk! One way you can do this is through qualitative risk analysis - a project management technique. It’s concerned with discovering two things: the probability of a risk event occurring and the impact the risk will have if it does occur. Shortly you’ll do your own qualitative risk analysis. So take a moment to find out how it works.",
+        "instruction": "Select the arrows to find out more.",
+        "mobileInstruction": "Select the arrows and then the plus icons to find out more.",
+        "_items": [
+            {
+                "title": "Probability",
+                "body": "The first thing a qualitative risk analysis is concerned with is probability. Probability is simply the likelihood that a risk event will occur.",
+                "_graphic": {
+                    "src": "course/en/images/c-05-001.jpg",
+                    "alt": ""
+                },
+                "strapline": "Probability"
+            },
+            {
+                "title": "Impact",
+                "body": "The second thing a qualitative risk analysis is concerned with is impact. Impact is the significance of the consequences of the risk event. It  can affect the project schedule, budget, resources, deliverables, costs, quality, scope and/or performance.",
+                "_graphic": {
+                    "src": "course/en/images/c-05-002.jpg",
+                    "alt": ""
+                },
+                "strapline": "Impact"
+            },
+            {
+                "title": "The method",
+                "body": "There are several methods for working out the probability and impact of a risk event. They range from brainstorming (which you’ll try in the activity), and interviewing, to the use of formal pre-defined rating scales (used by larger organisations).",
+                "_graphic": {
+                    "src": "course/en/images/c-05-003.jpg",
+                    "alt": ""
+                },
+                "strapline": "The method"
+            },
+            {
+                "title": "Priorities",
+                "body": "The highest priority risks are those that are assessed as high probability and high impact. These require further investigation and the development of strategies to mitigate them.",
+                "_graphic": {
+                    "src": "course/en/images/c-05-004.jpg",
+                    "alt": ""
+                },
+                "strapline": "Priorities"
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-220",
+        "_parentId": "b-220",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Risk assessment",
+        "displayTitle": "Risk assessment",
+        "body": "How can you enhance your project management skills? Commit to continually improving how you respond to and manage risk. Start to look at challenges in terms of risks, and commit to practising how you can mitigate that risk. Risk management is a way of thinking as well as action to undertake. Potential challenges become something to anticipate and plan for, rather than something to run away from or be overwhelmed by. <br/><br/>What is your next step? Visit your <strong>PMDP</strong> to complete the activity: <strong>Qualitative risk assessment</strong>.",
+        "instruction": "",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-225",
+        "_parentId": "b-225",
+        "_type": "component",
+        "_component": "accordion",
+        "_classes": "",
+        "_layout": "full",
+        "title": "A reminder",
+        "displayTitle": "A reminder",
+        "body": "Establishing evidence for your skill development can be done by identifying how you have put the ten knowledge areas of Project Management into practice. Before you have a go at the mapping task do a quick review of the knowledge areas, processes and the potential skills you are developing.",
+        "instruction": "Select each heading to find out more.",
+        "_items": [
+            {
+                "title": "Knowledge areas",
+                "body": "The ten knowledge areas listed in the <i>PMBOK© Guide</i> are: <br/><br/> <ul><li>Integration</li><li>Scope</li><li>Time</li><li>Cost</li><li>Quality</li><li>Human resource</li><li>Communications</li><li>Risk</li><li>Procurement</li><li>Stakeholders</li></ul>",
+                "_graphic": {
+                    "src": "",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Processes",
+                "body": "The 47 project management processes are discrete tasks such as: <br/><br/> <ul><li>Develop a project charter</li><li>Create WBS</li><li>Collect requirements</li><li>Sequence activities</li><li>Develop schedule</li></ul> <br/>These processes map easily to the tasks of a PhD research project. For example, the process ‘develop a project charter’ equates to the task of writing a description of research at enrolment.",
+                "_graphic": {
+                    "src": "",
+                    "alt": ""
+                },
+                "_classes": ""
+            },
+            {
+                "title": "Developing skills",
+                "body": "Some of the skills you may be developing include: <br/><br/> <ul><li>Communication</li><li>Leadership </li><li>Teamwork </li><li>Problem solving </li><li>Initiative and enterprise </li><li>Planning and organising </li><li>Self-management </li><li>Learning </li><li>Technology </li></ul> <br/>The skill demonstrated by being able to write a description of research is ‘communication’.",
+                "_graphic": {
+                    "src": "",
+                    "alt": ""
+                },
+                "_classes": ""
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-230",
+        "_parentId": "b-230",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Map your skills",
+        "displayTitle": "Map your skills",
+        "body": "This is a critical part of this course, where you come up with concrete examples that map your research project tasks to the project management knowledge areas and then to your skills. This will give you confidence not only as you complete your PhD but well into the future. <br/><br/>Your task: <ol><li>Identify how you put one of the processes associated with each Knowledge Area into practice. </li><li>Identify at least one skill you developed when you did each example process. </li></ol> <br/>Visit your <strong>PMDP</strong> and complete the <strong>Mapping my skills</strong> activity. <br/><br/>Your <strong>PMDP</strong> provides PhD research project examples (and further instruction) to make this task easier for you.",
+        "instruction": "",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-235",
+        "_parentId": "b-235",
+        "_type": "component",
+        "_component": "confidenceSlider",
+        "_classes": "",
+        "_layout": "full",
+        "title": "How confident are you?",
+        "displayTitle": "How confident are you?",
+        "body": "Having mapped your skills, how confident are you that you are developing skills that will help you now, and post PhD?",
+        "instruction": "Drag the slider to make your choice and select Submit.",
+        "_attempts": 1,
+        "_canShowFeedback": true,
+        "_recordInteraction": true,
+        "_shouldStoreResponses": false,
+        "_linkedToId": "",
+        "_showNumber": true,
+        "_showScaleIndicator": true,
+        "_showScale": true,
+        "labelStart": "Not confident ",
+        "labelEnd": "Very confident",
+        "_scaleStart": 1,
+        "_scaleEnd": 10,
+        "_scaleStep": 1,
+        "_buttons": {
+            "_submit": {
+                "buttonText": "Submit",
+                "ariaLabel": "Submit your answer by clicking here."
+            },
+            "_reset": {
+                "buttonText": "Reset",
+                "ariaLabel": "Reset the question by clicking here."
+            },
+            "_showFeedback": {
+                "buttonText": "Show feedback",
+                "ariaLabel": "View the question feedback again by clicking here."
+            }
+        },
+        "_feedback": {
+            "feedbackSeparator": " ",
+            "generic": "Thanks for measuring your confidence.",
+            "_comparison": {
+                "lower": "Oh you like it less? That's a shame.",
+                "same": "Well, at least you don't like it less.",
+                "higher": "It looks like you're seeing the benefits more and more!"
+            },
+            "_threshold": [
+                {
+                    "_values": {
+                        "_low": 1,
+                        "_high": 3
+                    },
+                    "text": "Building your confidence is something you can work on. Your PhD research project has a high degree of similarities with the principles and practices associated with project management. So whether you realise it or not you <strong>are</strong> developing your project management skills and therefore skills such as communication and leadership. You <strong>are</strong> a project leader, you <strong>do</strong> lead a team, and you <strong>do</strong> ‘manage up’. So continue to think about the synergy between your PhD research tasks and project management methodology, and the fact that the language of project management you are learning is the sort of language that future employers understand!"
+                },
+                {
+                    "_values": {
+                        "_low": 4,
+                        "_high": 7
+                    },
+                    "text": "Great! Keep going and continue to work on building your confidence. You <strong>are</strong> developing your project management skills and therefore skills such as communication and leadership. You <strong>are</strong> a project leader, you <strong>do</strong> lead a team, and you <strong>do</strong> ‘manage up’. So continue to think about the synergy between your PhD research tasks and project management methodology, and the fact that the language of project management you are learning is the sort of language that future employers understand!"
+                },
+                {
+                    "_values": {
+                        "_low": 8,
+                        "_high": 10
+                    },
+                    "text": "Great! If your confidence is high, you have a good understanding already that you <strong>are</strong> developing your project management skills and therefore skills such as communication and leadership. You probably have a good understanding that you <strong>are</strong> a project leader, you <strong>do</strong> lead a team, and you <strong>do</strong> ‘manage up’. So continue to think about the synergy between your PhD research tasks and project management methodology, and the fact that the language of project management you are learning is the sort of language that future employers understand!"
+                }
+            ]
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id": "c-240",
+        "_parentId": "b-240",
+        "_type": "component",
+        "_component": "mcq",
+        "_classes": "",
+        "_layout": "full",
+        "_attempts": 1,
+        "_shouldDisplayAttempts": false,
+        "_questionWeight": 1,
+        "_isRandom": false,
+        "_selectable": 6,
+        "_canShowModelAnswer": true,
+        "_canShowMarking": true,
+        "_recordInteraction": true,
+        "title": "Plan for the present. Prepare for the future.",
+        "displayTitle": "Plan for the present. Prepare for the future.",
+        "body": "Take the time now to identify what project management skills you would like to improve. Developing these skills will help you to prepare for life after your degree. Start by asking yourself, \"What key attributes of effective project management can I work on to improve how I manage projects\"?",
+        "instruction": "Select one or more from the following options and select Submit.",
+        "_items": [
+            {
+                "text": "The ability to communicate a clear vision",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "The ability to embrace challenges and manage risk",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "The ability to set a positive tone and build a strong team",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "The ability to structure a project",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "The ability to sort and prioritise information",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "The ability to lead and take ownership",
+                "_shouldBeSelected": true
+            }
+        ],
+        "_feedback": {
+            "correct": "These are just a few attributes of great project managers. Identify a set of clear actions you can take, to achieve your commitments. For example, you may want to build your confidence by creating a clear strategy for how you will manage risk, or by seeing Agile in action. Time to make the commitment! Open your <strong>PMDP</strong> to complete your <strong>PMDP action plan</strong>. Discuss your plan with your supervisors and find out how they can help you implement it. Don’t forget – keep it simple and focus on just one or two things you can change that are specific and achievable.",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "These are just a few attributes of great project managers. Identify a set of clear actions you can take, to achieve your commitments. For example, you may want to build your confidence by creating a clear strategy for how you will manage risk, or by seeing Agile in action. Time to make the commitment! Open your <strong>PMDP</strong> to complete your <strong>PMDP action plan</strong>. Discuss your plan with your supervisors and find out how they can help you implement it. Don’t forget – keep it simple and focus on just one or two things you can change that are specific and achievable."
+            }
+        }
+    },
+    {
+        "_id": "c-245",
+        "_parentId": "b-245",
+        "_type": "component",
+        "_component": "media",
+        "_classes": "",
+        "_layout": "full",
+        "_setCompletionOn": "play",
+        "_useClosedCaptions": true,
+        "_allowFullScreen": true,
+        "title": "It's all up to you",
+        "displayTitle": "It's all up to you",
+        "body": "In today’s world, career paths are becoming more flexible and diverse and new opportunities are appearing. Be prepared to take advantage of such opportunities by developing your ability to manage projects. It could very well be a critical factor in your career success. Let’s hear how developing these skills made all the difference.",
+        "instruction": "Select Play.",
+        "_media": {
+            "mp4": "course/en/video/c-10.mp4",
+            "poster": "course/en/video/c-10.jpg"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "c-250",
+        "_parentId": "b-250",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "full",
+        "title": "So, is your PhD a project?",
+        "displayTitle": "So, is your PhD a project?",
+        "body": "Did you start this course with a limited understanding about project management? Were you aware then that your PhD is a project? Hopefully you now have a better understanding of how your PhD research has a high degree of similarities with the principles and practices of project management. You’ll know the language of project management too. Understanding what is meant by Agile, a WBS, a sponsor and so on will help you to communicate your research to people who do not have a research background. It will also be immensely useful post PhD in the workplace helping you to have an impact in your chosen field.",
+        "instruction": "",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    }
+]

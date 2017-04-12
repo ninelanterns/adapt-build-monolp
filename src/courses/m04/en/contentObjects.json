@@ -1,0 +1,249 @@
+[
+    {
+        "_id": "co-05",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "How to use this course",
+        "displayTitle": "How to use this course",
+        "pageBody": "We want you to have control of your learning. We're giving you complete freedom over what you view and when you view it, so you can have things just the way you like them.",
+        "body": "Some quick tips to help you get the most out of your course and give it your personal touch.",
+        "_graphic": {
+            "wide": "course/en/images/co-05-page.jpg",
+            "narrow": "course/en/images/co-05-page-narrow.jpg",
+            "src": "course/en/images/co-05-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "1 min"
+    },
+    {
+        "_id": "co-10",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "Hear from our Vice Chancellor",
+        "displayTitle": "Hear from our Vice Chancellor",
+        "pageBody": "The Monash Doctoral Program provides you with a variety of innovative training opportunities that help you build a dynamic combination of skills. No matter where you see yourself going, these skills will complement your thesis and improve the range of opportunities available to you.",
+        "body": "Hear how the Monash Doctoral Program supports the development of your professional skills.",
+        "_graphic": {
+            "wide": "course/en/images/co-10-page.jpg",
+            "narrow": "course/en/images/co-10-page-narrow.jpg",
+            "src": "course/en/images/co-10-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "2 mins"
+    },
+    {
+        "_id": "co-15",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "Take a look inside",
+        "displayTitle": "Take a look inside",
+        "pageBody": "Explore twelve short topics to learn all about project management, why it's important to you, key project management principles and practices and what's involved in creating your project management profile.",
+        "body": "Learn about the structure and key components of the course.",
+        "_graphic": {
+            "wide": "course/en/images/co-15-page.jpg",
+            "narrow": "course/en/images/co-15-page-narrow.jpg",
+            "src": "course/en/images/co-15-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "1 min"
+    },
+    {
+        "_id": "co-20",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "The PHD project",
+        "displayTitle": "The PHD project",
+        "pageBody": "Is your PhD a project? A PhD is in fact a type of project. Whether you’re writing a PhD dissertation or writing a grant proposal, you won't finish unless you manage your project and time very well. So what are the similarities between a PhD and a project? Let’s find out.",
+        "body": "Consider if your PhD is in fact a project.",
+        "_graphic": {
+            "wide": "course/en/images/co-20-page.jpg",
+            "narrow": "course/en/images/co-20-page-narrow.jpg",
+            "src": "course/en/images/co-20-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "5 mins"
+    },
+    {
+        "_id": "co-25",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "Project manage your research",
+        "displayTitle": "Project manage your research",
+        "pageBody": "Do you have a structured way of managing your PhD research? Knowing the principles and practices associated with project management will not only help you with your PhD research project, but will also help you to communicate your research to people who do not have an academic background. Let’s consider the role you play and who else is involved.",
+        "body": "Discover a structured way to manage your PhD research.",
+        "_graphic": {
+            "wide": "course/en/images/co-25-page.jpg",
+            "narrow": "course/en/images/co-25-page-narrow.jpg",
+            "src": "course/en/images/co-25-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "4 mins"
+    },
+    {
+        "_id": "co-30",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "Your project journey",
+        "displayTitle": "Your project journey",
+        "pageBody": "Projects pass through four stages and have five sets of process groups that are used to manage the project throughout its life-cycle. We’ll now look at the alignment between a typical project management journey and your research journey.",
+        "body": "A research project and project management are similar. Find out how.",
+        "_graphic": {
+            "wide": "course/en/images/co-30-page.jpg",
+            "narrow": "course/en/images/co-30-page-narrow.jpg",
+            "src": "course/en/images/co-30-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "5 mins"
+    },
+    {
+        "_id": "co-35",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "What's Waterfall?",
+        "displayTitle": "What's Waterfall?",
+        "pageBody": "In a sense, you are already a program manager, wrestling with issues of scope, quality, timing and resourcing. Having a good understanding of the structures and processes used in traditional Waterfall project management — and the terminology used within it — will hold you in good stead now and post PhD! So let’s get to know Waterfall.",
+        "body": "Find out about traditional Waterfall project management.",
+        "_graphic": {
+            "wide": "course/en/images/co-35-page.jpg",
+            "narrow": "course/en/images/co-35-page-narrow.jpg",
+            "src": "course/en/images/co-35-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "5 mins"
+    },
+    {
+        "_id": "co-40",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "Break it down",
+        "displayTitle": "Break it down",
+        "pageBody": "Understanding the tasks that need to be completed, how long they will take and who must complete them, is essential if you want to plan, track and manage your PhD effectively. A Work Breakdown Structure (WBS) is a project management strategy used for organising project work into manageable ‘chunks’.",
+        "body": "Discover how you can break work down into manageable tasks.",
+        "_graphic": {
+            "wide": "course/en/images/co-40-page.jpg",
+            "narrow": "course/en/images/co-40-page-narrow.jpg",
+            "src": "course/en/images/co-40-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "8 mins"
+    },
+    {
+        "_id": "co-45",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "What's Agile?",
+        "displayTitle": "What's Agile?",
+        "pageBody": "Agile is becoming increasing popular as a way of managing software projects. It evolved out of frustrations with the Waterfall approach. An ‘Agile’ project is very different to one that follows Waterfall methodology. Agile values flexibility, collaboration and small iterative releases. Let’s take a closer look.",
+        "body": "Learn about the Agile approach to project management.",
+        "_graphic": {
+            "wide": "course/en/images/co-45-page.jpg",
+            "narrow": "course/en/images/co-45-page-narrow.jpg",
+            "src": "course/en/images/co-45-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "9 mins"
+    },
+    {
+        "_id": "co-50",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "Monitor the work",
+        "displayTitle": "Monitor the work",
+        "pageBody": "Hopefully you’ve now developed your WBS, but how can you monitor your progress? Two tools you’ll find useful are Gantt Charts and the One-Page Project Manager (OPPM™). These tools can also be used to effectively communicate with your key stakeholders about the progress of your research project.",
+        "body": "Discover two tools that can help you monitor your progress.",
+        "_graphic": {
+            "wide": "course/en/images/co-50-page.jpg",
+            "narrow": "course/en/images/co-50-page-narrow.jpg",
+            "src": "course/en/images/co-50-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "10 mins"
+    },
+    {
+        "_id": "co-55",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "Consider the risks",
+        "displayTitle": "Consider the risks",
+        "pageBody": "Risk isn’t a bad thing! If you’re aware of risk you can come up with strategies to mitigate it. Risk management is a way of thinking and acting that is useful in work and in your personal life too! According to the PMBOK© Guide, risk management is one of the ten knowledge areas in which a project manager must be competent.",
+        "body": "Learn a strategy for managing risk.",
+        "_graphic": {
+            "wide": "course/en/images/co-55-page.jpg",
+            "narrow": "course/en/images/co-55-page-narrow.jpg",
+            "src": "course/en/images/co-55-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "6 mins"
+    },
+    {
+        "_id": "co-60",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "Map your skills",
+        "displayTitle": "Map your skills",
+        "pageBody": "Using a project management perspective on your PhD research project will enable you to develop a number of skills. Without realising it, you will have already been taking action that is both developing your project management skills and other skills such as communication and teamwork. The purpose of this section is map your skills to make that development explicit.",
+        "body": "Discover your key skills.",
+        "_graphic": {
+            "wide": "course/en/images/co-60-page.jpg",
+            "narrow": "course/en/images/co-60-page-narrow.jpg",
+            "src": "course/en/images/co-60-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "4 mins"
+    },
+    {
+        "_id": "co-65",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "title": "Develop an Action Plan",
+        "displayTitle": "Develop an Action Plan",
+        "pageBody": "It’s time to put a plan in place and set yourself up for success! How? By reflecting on your knowledge and experience of project management and planning for your future development. You’ll do this by reflecting on what you know and meeting up with your supervisors to talk through your experiences so far.",
+        "body": "Put what you’ve learned into practice.",
+        "_graphic": {
+            "wide": "course/en/images/co-65-page.jpg",
+            "narrow": "course/en/images/co-65-page-narrow.jpg",
+            "src": "course/en/images/co-65-menu.jpg",
+            "alt": ""
+        },
+        "linkText": "View",
+        "durationLabel": "Duration:",
+        "duration": "5 mins"
+    }
+]
