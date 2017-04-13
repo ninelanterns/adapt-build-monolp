@@ -627,7 +627,7 @@
         "_questionWeight": 1,
         "title": "Know your stage",
         "displayTitle": "Know your stage",
-        "body": "The table below highlights the stages, outputs for each stage and relative costs associated with ending both a ‘typical project’ or a PhD project at that stage. <br/><br/><img src='' alt=''/><br/><br/>Consider the stages below. Select the corresponding PhD research output.",
+        "body": "The table below highlights the stages, outputs for each stage and relative costs associated with ending both a ‘typical project’ or a PhD project at that stage. <br/><br/><img src='course/en/images/c-65.png' alt='Table of process groups'/><br/><br/>Consider the stages below. Select the corresponding PhD research output.",
         "instruction": "Select your response from the options below and select Submit.",
         "_buttons": {
             "_submit": {
@@ -764,7 +764,7 @@
                 "title": "Process groups",
                 "body": "You can think about process groups as the major stages common to most projects — they cover what you need to do. There are five process groups: <br/><br/><ul><li>Initiating </li><li>Planning</li><li>Executing</li><li>Monitoring and controlling</li><li>Closing</li></ul> <br/>Take a look at the table to see how these process groups fit within the knowledge areas and project management processes to map out a project.",
                 "_graphic": {
-                    "src": "course/en/images/c-05-001.jpg",
+                    "src": "course/en/images/c-95_001.png",
                     "alt": ""
                 },
                 "strapline": "Process groups"
@@ -773,7 +773,7 @@
                 "title": "Knowledge areas",
                 "body": "You can think about knowledge areas as what you need to <strong>know</strong> to successfully complete a project. There are ten knowledge areas: <br/><br/><ul><li>Integration</li><li>Scope</li><li>Time</li><li>Cost</li><li>Quality</li><li>Human resource</li><li>Communications</li><li>Risk</li><li>Procurement</li><li>Stakeholders</li></ul> <br/>Take a look at the table to see how these knowledge areas fit within the process groups and project management processes to map out a project. You’ll learn more about the ten knowledge areas in topic 10 of this course. ",
                 "_graphic": {
-                    "src": "course/en/images/c-05-002.jpg",
+                    "src": "course/en/images/c-95_002.png",
                     "alt": ""
                 },
                 "strapline": "Knowledge areas"
@@ -782,7 +782,7 @@
                 "title": "Processes ",
                 "body": "You can think of the processes as <strong>tasks</strong>. There are 47 project management processes, that’s right 47! If you ever choose to become a qualified project manager then you will need to know all of the project management processes. Fortunately, for this course, you don’t need to go to that level of detail! <br/><br/>The table shows the relationship between the process groups, knowledge areas and project management processes.",
                 "_graphic": {
-                    "src": "course/en/images/c-05-003.jpg",
+                    "src": "course/en/images/c-95_003.png",
                     "alt": ""
                 },
                 "strapline": "Processes "
@@ -791,7 +791,7 @@
                 "title": "PhD project mapping",
                 "body": "So what would it look like if you mapped a PhD research project using the Waterfall method? Take a look at the table. <br/><br/>As you can see PhD research tasks stages are like high level project management processes. The process groups and knowledge areas remain the same.",
                 "_graphic": {
-                    "src": "course/en/images/c-05-004.jpg",
+                    "src": "course/en/images/c-95_004.png",
                     "alt": ""
                 },
                 "strapline": "PhD project mapping"
@@ -952,8 +952,8 @@
         "instruction": "",
         "_graphic": {
             "alt": "Chart graphic",
-            "large": "course/en/images/chart_graphic.png",
-            "small": "course/en/images/chart_graphic.png"
+            "large": "course/en/images/c-115.png",
+            "small": "course/en/images/c-115.png"
         }
     },
     {
@@ -972,7 +972,7 @@
                 "title": "Summary tasks",
                 "body": "Summary Tasks are those that act as check points and summarise the work in some form. In the house building example, <i>Build house, Foundation, Building structure, Interiors and Landscaping</i> are all Summary Tasks. In a WBS for a research project <i>Enrolment or Entry of thesis abstract</i> could be Summary Tasks.",
                 "_graphic": {
-                    "src": "course/en/images/c-15-001.jpg",
+                    "src": "course/en/images/c-120_001.png",
                     "alt": ""
                 },
                 "_classes": ""
@@ -981,7 +981,7 @@
                 "title": "Work packages",
                 "body": "According to <i>PMBOK© Guide Fifth Edition</i> a Work Package is the work, \"…defined at the lowest level of the work breakdown structure for which cost and duration can be estimated and managed.\" <br/><br/>In the house building example <i>Draw blueprint, Get materials, Design interiors and Design private/public areas</i> are all Work Packages. If you were doing a WBS for your research project <i>Write references and annexures or Prepare conference presentation</i> could be Work Packages.<br/><br/>The generally accepted rule of thumb for identifying a Work Package is that the tasks within that Work Package take between eight to eighty hours to complete.",
                 "_graphic": {
-                    "src": "course/en/images/c-15-002.jpg",
+                    "src": "course/en/images/c-120_002.png",
                     "alt": ""
                 },
                 "_classes": ""
@@ -990,7 +990,7 @@
                 "title": "How many tasks?",
                 "body": "There is no limit to the number of Summary Tasks and Work Packages that exist within a project. The larger and more complex a project is, the more Summary Tasks and Work Packages that will exist within it.",
                 "_graphic": {
-                    "src": "course/en/images/c-15-003.jpg",
+                    "src": "course/en/images/c-120_003.jpg",
                     "alt": ""
                 },
                 "_classes": ""
