@@ -619,7 +619,7 @@
         "_layout": "full",
         "_type": "component",
         "_component": "matching",
-        "_attempts": 2,
+        "_attempts": 1,
         "_shouldDisplayAttempts": false,
         "_isRandom": true,
         "_canShowModelAnswer": true,
@@ -1007,7 +1007,7 @@
         "_layout": "full",
         "_type": "component",
         "_component": "matching",
-        "_attempts": 2,
+        "_attempts": 1,
         "_shouldDisplayAttempts": false,
         "_isRandom": true,
         "_canShowModelAnswer": true,
@@ -1154,8 +1154,8 @@
         "instruction": "",
         "_graphic": {
             "alt": "Chart graphic",
-            "large": "course/en/images/chart_graphic.png",
-            "small": "course/en/images/chart_graphic.png"
+            "large": "course/en/images/c-140.png",
+            "small": "course/en/images/c-140.png"
         }
     },
     {
@@ -1500,15 +1500,32 @@
         "_type": "component",
         "_component": "graphic",
         "_classes": "",
-        "_layout": "full",
+        "_layout": "left",
         "title": "Gantt charts",
         "displayTitle": "Gantt charts",
+        "body": "",
+        "instruction": "",
+        "_graphic": {
+            "alt": "Chart graphic",
+            "large": "course/en/images/c-180.jpg",
+            "small": "course/en/images/c-180.jpg"
+        }
+    },
+    {
+        "_id": "c-182",
+        "_parentId": "b-180",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "right",
+        "title": "Gantt charts",
+        "displayTitle": " ",
         "body": "Gantt charts are visual tools that map out Work Packages and show the relationships between them. They show the duration of each task and if they are dependent on other tasks. Does one task need to be completed before another can begin? Before you have a go at creating your own Gantt chart you will need to think carefully about how one task might be dependent or linked to another. Let’s drill down and take a look at four types of task dependencies.",
         "instruction": "",
         "_graphic": {
             "alt": "Chart graphic",
-            "large": "course/en/images/chart_graphic.png",
-            "small": "course/en/images/chart_graphic.png"
+            "large": "",
+            "small": ""
         }
     },
     {
@@ -1530,7 +1547,7 @@
                 "title": "Finish to start",
                 "body": "One task must finish before another task can start (these are the most common types of dependencies) E.g., you must complete your Confirmation before you can commence your data collection.",
                 "_graphic": {
-                    "src": "course/en/images/c-05-001.jpg",
+                    "src": "course/en/images/c-185_001.jpg",
                     "alt": ""
                 },
                 "strapline": "Finish to start"
@@ -1539,7 +1556,7 @@
                 "title": "Start to start",
                 "body": "When one task starts, another is triggered to start. E.g., when your enrolment is accepted you can commence your literature review.",
                 "_graphic": {
-                    "src": "course/en/images/c-05-002.jpg",
+                    "src": "course/en/images/c-185_002.jpg",
                     "alt": ""
                 },
                 "strapline": "Start to start"
@@ -1548,7 +1565,7 @@
                 "title": "Finish to finish",
                 "body": "The finish of one task controls the finish of another. E.g., when you submit your thesis you finish the task of submitting your thesis, as well as the task of writing each chapter within your thesis.",
                 "_graphic": {
-                    "src": "course/en/images/c-05-003.jpg",
+                    "src": "course/en/images/c-185_003.jpg",
                     "alt": ""
                 },
                 "strapline": "Finish to finish"
@@ -1557,7 +1574,7 @@
                 "title": "Start to finish",
                 "body": "The start of one task finishes another task. These are the rarest of dependencies and are the most confusing, so don’t be too worried if they don’t make sense, if you master the first three you’ll be okay! E.g., when you start a conference presentation your preparation for that presentation automatically ceases, no matter how well or how complete your preparation was for your presentation.",
                 "_graphic": {
-                    "src": "course/en/images/c-05-004.jpg",
+                    "src": "course/en/images/c-185_004.jpg",
                     "alt": ""
                 },
                 "strapline": "Start to finish"
@@ -1574,7 +1591,7 @@
         "_layout": "full",
         "_type": "component",
         "_component": "matching",
-        "_attempts": 2,
+        "_attempts": 1,
         "_shouldDisplayAttempts": false,
         "_isRandom": true,
         "_canShowModelAnswer": true,
@@ -1656,8 +1673,8 @@
         "instruction": "",
         "_graphic": {
             "alt": "Chart graphic",
-            "large": "course/en/images/chart_graphic.png",
-            "small": "course/en/images/chart_graphic.png"
+            "large": "course/en/images/c-195.jpg",
+            "small": "course/en/images/c-195.jpg"
         }
     },
     {
@@ -1931,7 +1948,7 @@
                 "title": "Probability",
                 "body": "The first thing a qualitative risk analysis is concerned with is probability. Probability is simply the likelihood that a risk event will occur.",
                 "_graphic": {
-                    "src": "course/en/images/c-05-001.jpg",
+                    "src": "course/en/images/c-215_001.jpg",
                     "alt": ""
                 },
                 "strapline": "Probability"
@@ -1940,7 +1957,7 @@
                 "title": "Impact",
                 "body": "The second thing a qualitative risk analysis is concerned with is impact. Impact is the significance of the consequences of the risk event. It  can affect the project schedule, budget, resources, deliverables, costs, quality, scope and/or performance.",
                 "_graphic": {
-                    "src": "course/en/images/c-05-002.jpg",
+                    "src": "course/en/images/c-215_002.jpg",
                     "alt": ""
                 },
                 "strapline": "Impact"
@@ -1949,7 +1966,7 @@
                 "title": "The method",
                 "body": "There are several methods for working out the probability and impact of a risk event. They range from brainstorming (which you’ll try in the activity), and interviewing, to the use of formal pre-defined rating scales (used by larger organisations).",
                 "_graphic": {
-                    "src": "course/en/images/c-05-003.jpg",
+                    "src": "course/en/images/c-215_003.jpg",
                     "alt": ""
                 },
                 "strapline": "The method"
@@ -1958,7 +1975,7 @@
                 "title": "Priorities",
                 "body": "The highest priority risks are those that are assessed as high probability and high impact. These require further investigation and the development of strategies to mitigate them.",
                 "_graphic": {
-                    "src": "course/en/images/c-05-004.jpg",
+                    "src": "course/en/images/c-215_003.jpg",
                     "alt": ""
                 },
                 "strapline": "Priorities"
