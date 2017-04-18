@@ -742,7 +742,7 @@
         "_layout": "full",
         "title": "Get to know the waterfall",
         "displayTitle": "Get to know the waterfall",
-        "body": "The Waterfall approach to project management was created in the late 1960s and is now the most commonly used methodology. The PMBOK© Guide Fifth Edition, released in 2013, is the current most up-to-date version of the principles and practices associated with Waterfall methodology. <br/><br/>In any project using this method, sequential stages are mapped out, each stage generally finishing before the next begins, hence the name Waterfall. Given that most PhD research journeys progress in defined stages, and because a thesis is submitted at a single point in time as a coherent, single document, can you see that this aligns very well Waterfall project management methodology? <br/><br/>To really get to know Waterfall you’ll need a basic understanding of process groups, knowledge areas and processes. Let’s drill down and take a closer look.",
+        "body": "The Waterfall approach to project management was created in the late 1960s and is now the most commonly used methodology. The <i>PMBOK© Guide Fifth Edition</i>, released in 2013, is the current most up-to-date version of the principles and practices associated with Waterfall methodology. <br/><br/>In any project using this method, sequential stages are mapped out, each stage generally finishing before the next begins, hence the name Waterfall. Given that most PhD research journeys progress in defined stages, and because a thesis is submitted at a single point in time as a coherent, single document, can you see that this aligns very well Waterfall project management methodology? <br/><br/>To really get to know Waterfall you’ll need a basic understanding of process groups, knowledge areas and processes. Let’s drill down and take a closer look.",
         "instruction": "",
         "_pageLevelProgress": {
             "_isEnabled": true
@@ -1737,11 +1737,11 @@
             "correct": "That’s right. Not bad for a one page document! These standards components are common to most one-page approaches. Keep in mind that there may be multiple one-pages in any project. Also, a one-page approach may be used as a high-level overview with additional Gantt Charts (or other project management tools) used as needed throughout the project.",
             "_incorrect": {
                 "notFinal": "",
-                "final": "That’s not right. These are all standards components that are common to most one-page approaches. Not bad for a one page document! Keep in mind that there may be multiple one-pages in any project. Also, an one-page approach may be used as a high-level overview with additional Gantt Charts (or other project management tools) used as needed throughout the project."
+                "final": "That’s not right. These are all standards components that are common to most one-page approaches. Not bad for a one page document! Keep in mind that there may be multiple one-pages in any project. Also, a one-page approach may be used as a high-level overview with additional Gantt Charts (or other project management tools) used as needed throughout the project."
             },
             "_partlyCorrect": {
                 "notFinal": "",
-                "final": "That’s not quite right. These are all standards components that are common to most one-page approach. Not bad for a one page document! Keep in mind that there may be multiple one-pages in any project. Also, an one-page approach may be used as a high-level overview with additional Gantt Charts (or other project management tools) used as needed throughout the project."
+                "final": "That’s not quite right. These are all standards components that are common to most one-page approaches. Not bad for a one page document! Keep in mind that there may be multiple one-pages in any project. Also, a one-page approach may be used as a high-level overview with additional Gantt Charts (or other project management tools) used as needed throughout the project."
             }
         },
         "_buttons": {
@@ -2075,7 +2075,7 @@
         "_layout": "full",
         "title": "Map your skills",
         "displayTitle": "Map your skills",
-        "body": "This is a critical part of this course, where you come up with concrete examples that map your research project tasks to the project management knowledge areas and then to your skills. This will give you confidence not only as you complete your PhD but well into the future. <br/><br/>Your task: <ol><li>Identify how you put one of the processes associated with each Knowledge Area into practice. </li><li>Identify at least one skill you developed when you did each example process. </li></ol> <br/>Visit your <strong>PMDP</strong> and complete the <strong>Mapping my skills</strong> activity. <br/><br/>Your <strong>PMDP</strong> provides PhD research project examples (and further instruction) to make this task easier for you.",
+        "body": "This is a critical part of this course, where you come up with concrete examples that map your research project tasks to the project management knowledge areas and then to your skills. This will give you confidence not only as you complete your PhD but well into the future. <br/><br/>Your tasks: <br/><br/><ol><li>Identify how you put one of the processes associated with each Knowledge Area into practice. </li><li>Identify at least one skill you developed when you did each example process. </li></ol> <br/>Visit your <strong>PMDP</strong> and complete the <strong>Mapping my skills</strong> activity. <br/><br/>Your <strong>PMDP</strong> provides PhD research project examples (and further instruction) to make this task easier for you.",
         "instruction": "",
         "_pageLevelProgress": {
             "_isEnabled": true
