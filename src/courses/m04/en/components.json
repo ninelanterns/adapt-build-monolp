@@ -145,9 +145,9 @@
             },
             {
                 "title": "The next steps",
-                "body": "We want you to think about how you can build skills for the 21st century – career development being one of them. That's why this course includes a Career Development Plan (CDP). It's a critical component, which once completed, will need to be given to your supervisor for review and sign-off. Download and save the CDP from the Resources menu. We'll refer you to CDP activities throughout this course, which need to be completed offline. It's estimated that these activities will take approximately 90 minutes and can be recorded as part of your professional development hours.",
+                "body": "We want you to think about how you can build skills for the 21st century – project management being one of them. That’s why this course includes a Project Management Development Plan (<strong>PMDP</strong>). It’s a critical component, which once completed, will need to be given to your supervisor for review and sign-off. Download and save the <strong>PMDP</strong> from the Resources menu. We’ll refer you to <strong>PMDP</strong> activities throughout this course. They need to be completed offline. It’s estimated that these activities will take approximately 90 minutes and can be recorded as part of your professional development hours.",
                 "_graphic": {
-                    "src": "course/en/images/c-15-003.jpg",
+                    "src": "course/en/images/c-15_003.jpg",
                     "alt": ""
                 },
                 "_classes": ""
@@ -186,7 +186,7 @@
         "_layout": "full",
         "title": "What's a project?",
         "displayTitle": "What's a project?",
-        "body": "<strong><i>A Guide to the Project Management Body of Knowledge ( PMBOK® Guide )-Fifth Edition</i></strong> is the preeminent global standard for project management. It states a project is, \"… a temporary endeavour to create a unique product, service or result. The temporary nature of a project indicates that a project has a definite beginning and end.\"",
+        "body": "<i>A Guide to the Project Management Body of Knowledge ( PMBOK® Guide )-Fifth Edition</i> is the preeminent global standard for project management. It states a project is, \"… a temporary endeavour to create a unique product, service or result. The temporary nature of a project indicates that a project has a definite beginning and end.\"",
         "instruction": "Select each heading to find out more.",
         "_items": [
             {
@@ -713,7 +713,10 @@
                     }
                 ]
             }
-        ]
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
     },
 
 
