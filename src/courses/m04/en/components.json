@@ -1667,12 +1667,29 @@
         "_id": "c-195",
         "_parentId": "b-195",
         "_type": "component",
-        "_component": "graphic",
+        "_component": "text",
         "_classes": "",
-        "_layout": "full",
+        "_layout": "left",
         "title": "An alternative tool: (OPPM™)",
         "displayTitle": "An alternative tool: (OPPM™)",
         "body": "The OPPM™ suite of tools, created by Clark Campbell, provides a suite of downloadable tools and step by step instructions. They enable you to build an Excel spreadsheet which can provide you with all the information you need to effectively communicate your research project. Why consider it? These tools can be used to simplify all your project information into a one page Excel spreadsheet. For an example, use the link in your Resources to download the free OPPM™ Introduction materials, and open the <strong>Mount Olympus PMO OPPM™</strong> PDF.",
+        "instruction": "",
+        "_graphic": {
+            "alt": "Chart graphic",
+            "large": "",
+            "small": ""
+        }
+    },
+    {
+        "_id": "c-195-2",
+        "_parentId": "b-195",
+        "_type": "component",
+        "_component": "graphic",
+        "_classes": "",
+        "_layout": "right",
+        "title": "An alternative tool: (OPPM™)",
+        "displayTitle": "<br/>",
+        "body": "",
         "instruction": "",
         "_graphic": {
             "alt": "Chart graphic",
