@@ -49,7 +49,20 @@ define(function(require) {
         },
 
         onResourceClicked: function(event) {
-            window.top.open($(event.currentTarget).data("href"));
+            var data = $(event.currentTarget).data();
+
+            if (data.type !== 'document') {
+                window.top.open(data.href);
+                return;
+            }
+            var dummyLink = document.createElement('a');
+            dummyLink.download = data.filename;
+            dummyLink.href = data.href;
+
+            document.body.appendChild(dummyLink);
+            dummyLink.click();
+            document.body.removeChild(dummyLink);
+            delete dummyLink;
         }
     });
 

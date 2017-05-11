@@ -4,6 +4,14 @@
   "id": "http://jsonschema.net",
   "required": false,
   "globals": {
+    "navigationBarLabel": {
+      "type": "string",
+      "required": true,
+      "default": "Select course language",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
   },
   "properties": {
     "pluginLocations": {
@@ -71,6 +79,15 @@
                   "inputType": "Text",
                   "validators": [],
                   "help": "Your default options here are: icon-globe, icon-language-1, icon-language-2"
+                },
+                "_classes": {
+                  "type": "string",
+                  "required": false,
+                  "default": "",
+                  "title": "Classes",
+                  "inputType": "Text",
+                  "validators": [],
+                  "help": ""
                 },
                 "_languages": {
                   "type": "array",

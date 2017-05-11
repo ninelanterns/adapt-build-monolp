@@ -81,9 +81,9 @@
             "translatable": true
           },
           "_shouldBeSelected": {
-            "type":"boolean",
-            "required":true,
-            "default": true,
+            "type": "boolean",
+            "required": true,
+            "default": false,
             "title": "Should Be Selected",
             "inputType": {"type": "Boolean", "options": [true, false]},
             "validators": [],
@@ -128,6 +128,14 @@
       "inputType": {"type": "Boolean", "options": [true, false]},
       "validators": [],
       "help": "Select 'true' to allow the user to view feedback on their answer"
+    },
+    "_canShowMarking": {
+      "type": "boolean",
+      "default": true,
+      "title": "Display Marking",
+      "inputType": { "type": "Boolean", "options": [ true, false ] },
+      "validators": [],
+      "help": "Select 'true' to display ticks and crosses on question completion"
     },
     "_shouldDisplayAttempts": {
       "type":"boolean",
@@ -185,31 +193,31 @@
     },
     "_feedback": {
       "type":"object",
-      "required":true,
+      "required": false,
       "title": "Feedback",
       "properties":{
         "correct": {
           "type":"string",
-          "required":true,
+          "required": false,
           "default": "",
           "title": "Correct",
           "inputType": "TextArea",
-          "validators": ["required"],
+          "validators": [],
           "help": "Correct feedback for this question",
           "translatable": true
         },
         "_incorrect": {
           "type":"object",
-          "required":true,
+          "required": false,
           "title": "Incorrect Feedback",
           "properties":{
             "final": {
               "type":"string",
-              "required": true,
+              "required": false,
               "default": "",
               "title": "Incorrect Final",
               "inputType": "TextArea",
-              "validators": ["required"],
+              "validators": [],
               "help": "Incorrect feedback for the final attempt",
               "translatable": true
             },
@@ -277,7 +285,7 @@
               "required": false,
               "default": "",
               "title": "",
-              "inputType": "Text",
+              "inputType": "QuestionButton",
               "validators": [],
               "help": "Aria label for the submit button",
               "translatable": true
@@ -303,7 +311,7 @@
               "required": false,
               "default": "",
               "title": "",
-              "inputType": "Text",
+              "inputType": "QuestionButton",
               "validators": [],
               "help": "Aria label for the reset button",
               "translatable": true
@@ -329,7 +337,7 @@
               "required": false,
               "default": "",
               "title": "",
-              "inputType": "Text",
+              "inputType": "QuestionButton",
               "validators": [],
               "help": "Aria label for the show model answer button",
               "translatable": true
@@ -355,7 +363,7 @@
               "required": false,
               "default": "",
               "title": "",
-              "inputType": "Text",
+              "inputType": "QuestionButton",
               "validators": [],
               "help": "Aria label for the hide model answer button",
               "translatable": true
@@ -381,7 +389,7 @@
               "required": false,
               "default": "",
               "title": "",
-              "inputType": "Text",
+              "inputType": "QuestionButton",
               "validators": [],
               "help": "Aria label for the show feedback button",
               "translatable": true
@@ -393,7 +401,7 @@
           "required": false,
           "default": "",
           "title": "Attempts Remaining Text",
-          "inputType": "Text",
+          "inputType": "QuestionButton",
           "validators": [],
           "help": "Shown when there are multiple attempts left",
           "translatable": true
@@ -403,7 +411,7 @@
           "required": false,
           "default": "",
           "title": "Final Attempt Text",
-          "inputType": "Text",
+          "inputType": "QuestionButton",
           "validators": [],
           "help": "Shown when there is one attempt left",
           "translatable": true

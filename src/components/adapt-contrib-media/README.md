@@ -50,10 +50,12 @@ guide the learner’s interaction with the component.
 
 **_allowFullScreen** (boolean): Determines whether fullscreen mode is available or not. Note that changing this setting has no effect in Internet Explorer 9 as this browser does not support fullscreen mode for HTML video.
 
+**_playsinline** (boolean): If set to `true`, videos will play 'inline' on iPhones (the same way they do on iPads). Note that this feature is only available in iOS10 and above. The default is `false`.        
+
 **_startLanguage** (string): If using closed captions with multiple languages, use this property to specify which language should be shown by default. The value of this property must match one of the **srclang** values.  
 
 **_media** (object): The media attributes group will contain different values depending on the type of media: video or audio.  
-For video it contains values for **mp4**, **ogv**, **poster**, and **cc**. Both **mp4** and **ogv** are optional, but at least one is required (see below for alternate properties for YouTube video).  
+For video it contains values for **mp4**, **webm**, **ogv**, **poster**, and **cc**. The properties **mp4**, **webm** and **ogv** are all optional, but at least one is required (see below for alternate properties for YouTube/Vimeo video).  
 For audio it contains **mp3** and **ogg**. As with video, both are optional, but at least one is required.  
 The decision to include more than one file format is typically based on the browser/s used by the targeted audience. The mostly widely supported video file format is [mp4](http://caniuse.com/#feat=mpeg4) (specifically [H.264/MPEG-4 Part 10 AVC](https://en.wikipedia.org/wiki/H.264/MPEG-4_AVC)). The most widely supported audio format is mp3.
 
@@ -93,7 +95,7 @@ The decision to include more than one file format is typically based on the brow
 
 >**transcriptLink** (string): File name (including path) of the optional external transcript. Path should be relative to the *src* folder (e.g., *course/en/pdf/video01_transcript.pdf*).  
 
-**_playerOptions** (object): This optional object can be used to customize the player. Visit the [MediaElement website](http://mediaelementjs.com/#options) for a list of what options are available. Options are configured in components.json. See [*example.json*](https://github.com/adaptlearning/adapt-contrib-media/blob/master/example.json) for a suggested configuration that has been confirmed as working on the full range of Adapt's supported devices.
+**_playerOptions** (object): This optional object can be used to customize the player. Visit the [MediaElement website](http://mediaelementjs.com/#options) for a list of what options are available. Options are configured in components.json. See [*example.json*](https://github.com/adaptlearning/adapt-contrib-media/blob/master/example.json) for a suggested configuration.
 >**Note:**  
 >The **_playerOptions** feature is experimental. As these settings are not implemented by the Adapt community, there is no guarantee that all features and combinations thereof will be compatible with your device set up.    
 
@@ -155,8 +157,8 @@ IE9 | Vimeo: ‘Sorry this video does not exist’.
 IE8 | <ul><li>Due to the lack of support for HTML audio/video, users will need to have [Adobe Flash Player](https://get.adobe.com/flashplayer/) v10 (or better) or Microsoft [Silverlight](https://www.microsoft.com/getsilverlight/get-started/install/) installed to enable media playback.</li><li>YouTube: control bar missing</li><li>YouTube/Vimeo: doesn’t track play/ended events</li></ul>
 
 ----------------------------
-**Version number:**  2.0.5   <a href="https://community.adaptlearning.org/" target="_blank"><img src="https://github.com/adaptlearning/documentation/blob/master/04_wiki_assets/plug-ins/images/adapt-logo-mrgn-lft.jpg" alt="adapt learning logo" align="right"></a> 
-**Framework versions:** 2.0  
+**Version number:**  2.0.6   <a href="https://community.adaptlearning.org/" target="_blank"><img src="https://github.com/adaptlearning/documentation/blob/master/04_wiki_assets/plug-ins/images/adapt-logo-mrgn-lft.jpg" alt="adapt learning logo" align="right"></a> 
+**Framework versions:** 2.0.13  
 **Author / maintainer:** Adapt Core Team with [contributors](https://github.com/adaptlearning/adapt-contrib-media/graphs/contributors)  
 **Accessibility support:** WAI AA   
 **RTL support:** yes  

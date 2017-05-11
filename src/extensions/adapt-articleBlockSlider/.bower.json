@@ -1,7 +1,7 @@
 {
   "name": "adapt-articleBlockSlider",
   "repository": "git://github.com/cgkineo/adapt-articleBlockSlider",
-  "framework": "^2.0.0",
+  "framework": "^2.0.13",
   "homepage": "https://github.com/cgkineo/adapt-articleBlockSlider",
   "issues": "https://github.com/cgkineo/adapt-articleBlockSlider/issues/",
   "displayName": "Article Block Slider",
@@ -14,11 +14,11 @@
   ],
   "license": "GPLv3",
   "targetAttribute": "_articleBlockSlider",
-  "_release": "f544986920",
+  "_release": "6db284d857",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "f54498692042a3b4573175cdfcf4dc5c139df1b8"
+    "commit": "6db284d857115075a80fc174141b902f2c4aed5f"
   },
   "_source": "git://github.com/cgkineo/adapt-articleBlockSlider.git",
   "_target": "*",

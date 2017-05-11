@@ -1,10 +1,9 @@
-define(function(require) {
-
-    var mep = require('components/adapt-contrib-media/js/mediaelement-and-player');
-    require('components/adapt-contrib-media/js/mediaelement-and-player-accessible-captions');
-
-    var ComponentView = require('coreViews/componentView');
-    var Adapt = require('coreJS/adapt');
+define([
+    'core/js/adapt',
+    'core/js/views/componentView',
+    'libraries/mediaelement-and-player',
+    'libraries/mediaelement-and-player-accessible-captions'
+], function(Adapt, ComponentView) {
 
     var froogaloopAdded = false;
     
@@ -40,6 +39,14 @@ define(function(require) {
             this.listenTo(Adapt, 'device:changed', this.onDeviceChanged);
             this.listenTo(Adapt, 'accessibility:toggle', this.onAccessibilityToggle);
 
+            _.bindAll(this, 'onMediaElementPlay', 'onMediaElementPause', 'onMediaElementEnded');
+
+            // set initial player state attributes
+            this.model.set({
+                '_isMediaEnded': false,
+                '_isMediaPlaying': false
+            });
+
             if (this.model.get('_media').source) {
                 // Remove the protocol for streaming service.
                 // This prevents conflicts with HTTP/HTTPS
@@ -56,7 +63,6 @@ define(function(require) {
         postRender: function() {
             this.setupPlayer();
         },
-
 
         setupPlayer: function() {
             if (!this.model.get('_playerOptions')) this.model.set('_playerOptions', {});
@@ -149,11 +155,38 @@ define(function(require) {
         setupEventListeners: function() {
             this.completionEvent = (!this.model.get('_setCompletionOn')) ? 'play' : this.model.get('_setCompletionOn');
 
-            if (this.completionEvent !== 'inview') {
-                this.onCompletion = _.bind(this.onCompletion, this);
-                this.mediaElement.addEventListener(this.completionEvent, this.onCompletion);
-            } else {
+            if (this.completionEvent === 'inview') {
                 this.$('.component-widget').on('inview', _.bind(this.inview, this));
+            }
+
+            // handle other completion events in the event Listeners 
+            $(this.mediaElement).on({
+            	'play': this.onMediaElementPlay,
+            	'pause': this.onMediaElementPause,
+            	'ended': this.onMediaElementEnded
+            });
+        },
+
+        onMediaElementPlay: function(event) {
+            this.model.set({
+                '_isMediaPlaying': true,
+                '_isMediaEnded': false
+            });
+            
+            if (this.completionEvent === 'play') {
+                this.setCompletionStatus();
+            }
+        },
+
+        onMediaElementPause: function(event) {
+            this.model.set('_isMediaPlaying', false);
+        },
+
+        onMediaElementEnded: function(event) {
+            this.model.set('_isMediaEnded', true);
+
+            if (this.completionEvent === 'ended') {
+                this.setCompletionStatus();
             }
         },
 
@@ -244,10 +277,6 @@ define(function(require) {
                 }
             }
             if (this.mediaElement && this.mediaElement.player) {
-                if (this.completionEvent !== 'inview') {
-                    this.mediaElement.removeEventListener(this.completionEvent, this.onCompletion);
-                }
-
                 var player_id = this.mediaElement.player.id;
 
                 purge(this.$el[0]);
@@ -257,19 +286,20 @@ define(function(require) {
                     delete mejs.players[player_id];
                 }
             }
+
             if (this.mediaElement) {
+                $(this.mediaElement).off({
+                	'play': this.onMediaElementPlay,
+                	'pause': this.onMediaElementPause,
+                	'ended': this.onMediaElementEnded
+                });
+
                 this.mediaElement.src = "";
                 $(this.mediaElement.pluginElement).remove();
                 delete this.mediaElement;
             }
+
             ComponentView.prototype.remove.call(this);
-        },
-
-        onCompletion: function() {
-            this.setCompletionStatus();
-
-            // removeEventListener needs to pass in the method to remove the event in firefox and IE10
-            this.mediaElement.removeEventListener(this.completionEvent, this.onCompletion);
         },
 
         onDeviceChanged: function() {
