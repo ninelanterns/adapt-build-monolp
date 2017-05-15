@@ -66,6 +66,8 @@ The attributes listed below are used in *course.json* to configure **Resources**
 
 >>**description** (string):  This optional text appears (along with **title**) as a label on the button that links to the item.    
 
+>>**filename** (string): This can be used to set the name of the file when downloaded by the user, if different from the source filename. (This feature is not supported on IE8-IE11, or Safari 10.)
+
 >>**_link** (string):  This value is the URI that accesses the resource item, e.g., *course/en/pdf/diagram.pdf*.
 
 <div float align=right><a href="#top">Back to Top</a></div>
@@ -80,4 +82,4 @@ No known limitations.
 **Author / maintainer:** Adapt Core Team with [contributors](https://github.com/adaptlearning/adapt-contrib-resources/graphs/contributors)    
 **Accessibility support:** WAI AA   
 **RTL support:** yes  
-**Cross-platform coverage:** Chrome, Chrome for Android, Firefox (ESR + latest version), Edge 12, IE 11, IE10, IE9, IE8, IE Mobile 11, Safari for iPhone (iOS 8+9), Safari for iPad (iOS 8+9), Safari 8, Opera   
+**Cross-platform coverage:** Chrome, Chrome for Android, Firefox (ESR + latest version), Edge 12, IE 11, IE10, IE9, IE8, IE Mobile 11, Safari iOS 9+10, Safari OS X 9+10, Opera   

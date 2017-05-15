@@ -1,22 +1,22 @@
 define([
   'coreViews/questionView',
   'coreJS/adapt',
-  './rangeslider.js'
+  'libraries/rangeslider'
 ], function(QuestionView, Adapt, Rangeslider) {
 
     var Slider = QuestionView.extend({
 
-        tempValue:true,
+        tempValue: true,
 
         events: {
             'click .slider-scale-number': 'onNumberSelected',
-            'focus input[type="range"]':'onHandleFocus',
-            'blur input[type="range"]':'onHandleBlur'
+            'focus input[type="range"]': 'onHandleFocus',
+            'blur input[type="range"]': 'onHandleBlur'
         },
 
         // Used by the question to reset the question when revisiting the component
         resetQuestionOnRevisit: function() {
-            this.setAllItemsEnabled(true);
+            this.setAllItemsEnabled();
             this.deselectAllItems();
             this.resetQuestion();
         },
@@ -46,9 +46,9 @@ define([
                 onSlide: _.bind(this.handleSlide, this)
             });
             this.oldValue = 0;
-            
+
             if (this._deferEnable) {
-                this.setAllItemsEnabled(true);
+                this.setAllItemsEnabled();
             }
         },
 
@@ -78,6 +78,13 @@ define([
             this.tempValue = true;
         },
 
+        /**
+         * Returns the number of decimal places in a specified number
+         */
+        getDecimalPlaces: function(num) {
+            return (num.toString().split('.')[1] || []).length;
+        },
+
         setupModelItems: function() {
             var items = [];
             var answer = this.model.get('_correctAnswer');
@@ -86,7 +93,15 @@ define([
             var end = this.model.get('_scaleEnd');
             var step = this.model.get('_scaleStep') || 1;
 
+            var dp = this.getDecimalPlaces(step);
+
             for (var i = start; i <= end; i += step) {
+                if (dp !== 0) {
+                    // Ensure that steps with decimal places are handled correctly.
+                    i = parseFloat(i.toFixed(dp));
+                }
+
+                // Format number
                 if (answer) {
                     items.push({value: i, selected: false, correct: (i == answer)});
                 } else {
@@ -105,7 +120,7 @@ define([
                     _userAnswer: undefined
                 });
                 return;
-            };
+            }
 
             var items = this.model.get('_items');
             var userAnswer = this.model.get('_userAnswer');
@@ -127,27 +142,30 @@ define([
 
         // Used by question to disable the question during submit and complete stages
         disableQuestion: function() {
-            this.setAllItemsEnabled(false);
+            this.setAllItemsEnabled();
         },
 
         // Used by question to enable the question during interactions
         enableQuestion: function() {
-            this.setAllItemsEnabled(true);
+            this.setAllItemsEnabled();
         },
 
-        setAllItemsEnabled: function(isEnabled) {
-            if (isEnabled) {
-                if (this.$slider) {
+        setAllItemsEnabled: function() {
+            var isEnabled = this.model.get('_isEnabled');
+
+            if (this.$slider) {
+                if (isEnabled) {
                     this.$('.slider-widget').removeClass('disabled');
                     this.$slider.prop('disabled', false);
                     this.$slider.rangeslider('update', true);
+
                 } else {
-                    this._deferEnable = true; // slider is not yet ready
+                    this.$('.slider-widget').addClass('disabled');
+                    this.$slider.prop('disabled', true);
+                    this.$slider.rangeslider('update', true);
                 }
             } else {
-                this.$('.slider-widget').addClass('disabled');
-                this.$slider.prop('disabled', true);
-                this.$slider.rangeslider('update', true);
+                this._deferEnable = true; // slider is not yet ready
             }
         },
 
@@ -166,17 +184,6 @@ define([
         animateToPosition: function(newPosition) {
             if (!this.$sliderScaleMarker) return;
 
-            if(this.model.get('_marginDir') == 'right'){
-                this.$sliderScaleMarker
-                  .velocity('stop')
-                  .velocity({
-                    right: newPosition
-                  }, {
-                    duration: 200,
-                    easing: "linear"
-                  });
-            }
-            else{
                 this.$sliderScaleMarker
                   .velocity('stop')
                   .velocity({
@@ -185,14 +192,13 @@ define([
                     duration: 200,
                     easing: "linear"
                   });
-            }
         },
 
         // this shoud give the index of item using given slider value
         getIndexFromValue: function(itemValue) {
             var scaleStart = this.model.get('_scaleStart'),
                 scaleEnd = this.model.get('_scaleEnd');
-            return Math.floor(this.mapValue(itemValue, scaleStart, scaleEnd, 0, this.model.get('_items').length - 1));
+            return Math.round(this.mapValue(itemValue, scaleStart, scaleEnd, 0, this.model.get('_items').length - 1));
         },
 
         // this should set given value to slider handle
@@ -271,12 +277,12 @@ define([
               return;
             }
 
-            var itemValue = parseInt($(event.currentTarget).attr('data-id'));
+            var itemValue = parseFloat($(event.currentTarget).attr('data-id'));
             var index = this.getIndexFromValue(itemValue);
             this.selectItem(index);
             this.animateToPosition(this.mapIndexToPixels(index));
             this.setAltText(itemValue);
-            this.setSliderValue(itemValue)
+            this.setSliderValue(itemValue);
         },
 
         getValueFromIndex: function(index) {
@@ -416,6 +422,13 @@ define([
             this.$('.slider-handle').css({left: left + 'px'});
             this.$('.slider-scale-marker').css({left: left + 'px'});
             this.$('.slider-bar').width(left);
+            //updated position of rangeslider bar on window resize for RTL 
+            if (this.model.get('_marginDir') == 'right') {
+                _.delay(function() {
+                    this.$('.rangeslider__handle').css('left', left);
+                    this.$('.rangeslider__fill').css('width', left + (this.$('.rangeslider__handle').width() / 2));
+                }, 300, this);
+            }
         },
 
         onScreenSizeChanged: function() {
@@ -455,7 +468,7 @@ define([
                     answer += step;
                 }
             } else {
-                console.log("adapt-contrib-slider::WARNING: no correct answer or correct range set in JSON")
+                console.log("adapt-contrib-slider::WARNING: no correct answer or correct range set in JSON");
             }
 
             var middleAnswer = answers[Math.floor(answers.length / 2)];

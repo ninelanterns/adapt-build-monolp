@@ -26,6 +26,7 @@ define([
         initialize: function() {
             this.listenTo(Adapt, "assessments:complete", this._onAssessmentsComplete);
             this.listenTo(Adapt, "router:location", this._checkResetAssessmentsOnRevisit);
+            this.listenTo(Adapt, "app:dataReady", this._onDataReady);
         },
 
         _onAssessmentsComplete: function(state) {
@@ -80,6 +81,13 @@ define([
             }
 
             this._setPageProgress();
+        },
+
+        _onDataReady: function() {
+            this._assessments = _.extend([], {
+                _byPageId: {},
+                _byAssessmentId: {}
+            });
         },
 
         _checkAssessmentsComplete: function() {
@@ -286,7 +294,7 @@ define([
             var scoreAsPercent = Math.round((score / maxScore) * 100);
 
             if ((assessmentsConfig._scoreToPass || 100) && isComplete) {
-                if (assessmentsConfig._isPercentageBased || true) {
+                if (assessmentsConfig._isPercentageBased !== false) {
                     if (scoreAsPercent >= assessmentsConfig._scoreToPass) isPass = true;
                 } else {
                     if (score >= assessmentsConfig._scoreToPass) isPass = true;

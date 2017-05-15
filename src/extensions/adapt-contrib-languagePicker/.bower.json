@@ -2,7 +2,7 @@
   "name": "adapt-contrib-languagePicker",
   "repository": "git://github.com/adaptlearning/adapt-contrib-languagePicker.git",
   "framework": "^2.0.14",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "homepage": "https://github.com/adaptlearning/adapt-contrib-languagePicker",
   "issues": "https://github.com/adaptlearning/adapt_framework/issues",
   "displayName": "Language Picker",
@@ -15,14 +15,14 @@
   ],
   "license": "GPLv3",
   "targetAttribute": "_languagePicker",
-  "_release": "1.0.0",
+  "_release": "1.0.3",
   "_resolution": {
     "type": "version",
-    "tag": "v1.0.0",
-    "commit": "6e8e54cc71aa400d346bc658fe6e51652eb2f0c3"
+    "tag": "v1.0.3",
+    "commit": "eb026867b546ab5f626bc52bcb8617bc83a8e053"
   },
   "_source": "git://github.com/adaptlearning/adapt-contrib-languagePicker.git",
-  "_target": "~1.0.0",
+  "_target": "^1.0.3",
   "_originalSource": "adapt-contrib-languagePicker",
   "_direct": true
 }

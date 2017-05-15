@@ -244,6 +244,10 @@ define([
                 newSettings._canShowModelAnswer = questionConfig._canShowModelAnswer;
             }
 
+            if (questionConfig.hasOwnProperty('_canShowMarking')) {
+                newSettings._canShowMarking = questionConfig._canShowMarking;
+            }
+
             if(!_.isEmpty(newSettings)) {
                 for (var i = 0, l = questionComponents.length; i < l; i++) {
                     questionComponents[i].set(newSettings, { pluginName: "_assessment" });
@@ -560,8 +564,27 @@ define([
 
         getSaveState: function() {
             var state = this.getState();
-            var questions = state.questions;
-            var indexByIdQuestions = _.indexBy(questions, "_id");
+            var indexByIdQuestions = [];
+            var cfg = this.getConfig();
+            var banksActive = cfg._banks && cfg._banks._isEnabled && cfg._banks._split.length > 1;
+            var randomisationActive = cfg._randomisation && cfg._randomisation._isEnabled;
+
+            if (!banksActive && !randomisationActive) {
+                // include presentation component IDs in save state so that blocks without questions aren't removed
+                this.findDescendants("components").each(function(component) {
+                    var componentModel = {
+                        _id: component.get("_id"),
+                        _isCorrect: component.get("_isCorrect") === undefined ? null : component.get("_isCorrect")
+                    };
+
+                    indexByIdQuestions.push(componentModel);
+                    
+                });
+
+                indexByIdQuestions = _.indexBy(indexByIdQuestions, "_id");
+            } else {
+                indexByIdQuestions = _.indexBy(state.questions, "_id");
+            }
 
             for (var id in indexByIdQuestions) {
                 indexByIdQuestions[id] = indexByIdQuestions[id]._isCorrect
@@ -612,7 +635,7 @@ define([
             this.set("_score", score || 0);
 
             if (score) {
-                scoreAsPercent = Math.floor( score / maxScore  * 100);
+                scoreAsPercent = Math.round( score / maxScore  * 100);
             } else {
                 scoreAsPercent = 0;
             }
@@ -623,10 +646,12 @@ define([
             
             var questions = [];
             for (var id in indexByIdQuestions) {
-                questions.push({
-                    _id: id,
-                    _isCorrect: indexByIdQuestions[id]
-                });
+                if (Adapt.findById(id).get("_isQuestionType")) {
+                    questions.push({
+                        _id: id,
+                        _isCorrect: indexByIdQuestions[id]
+                    });
+                }
             }
 
             
@@ -669,19 +694,17 @@ define([
 
         getConfig: function() {
             var assessmentConfig = this.get("_assessment");
-
-            if (assessmentConfig._id === undefined) {
-                assessmentConfig._id = "givenId"+(givenIdCount++);
-            } else {
-                return assessmentConfig;
-            }
-
+            
             if (!assessmentConfig) {
                 assessmentConfig = $.extend(true, {}, assessmentConfigDefaults);
             } else {
                 assessmentConfig = $.extend(true, {}, assessmentConfigDefaults, assessmentConfig);
             }
-
+            
+            if (assessmentConfig._id === undefined) {
+                assessmentConfig._id = "givenId"+(givenIdCount++);
+            }
+            
             this.set("_assessment", assessmentConfig);
 
             return assessmentConfig;
