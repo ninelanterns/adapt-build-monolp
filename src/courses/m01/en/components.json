@@ -880,7 +880,7 @@
     "displayTitle": "What do the experts say?",
     "body": "Leadership is quite complex. Behaviours, personality, influence, ethics and situation all play some part in how leadership is defined and practised. ",
     "instruction": "Select Play to find out more.",
-    "_media": {
+    "_media": { 
       "mp4": "course/en/video/c-115.mp4",
       "poster": "course/en/video/c-00.jpg"
     },
